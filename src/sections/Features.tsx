@@ -1,3 +1,5 @@
+'use client';
+
 const tabs = [
   {
     title: "Search Engine Optimization (SEO)",
@@ -45,7 +47,6 @@ export const Features = () => {
               key={index}
               className="relative p-7 flex flex-col justify-between h-full rounded-lg group bg-black cursor-pointer"
             >
-            
               <div
                 className="absolute inset-0 rounded-lg z-0 top-[-1px] left-[-1px] right-[-1px] bottom-[-1px]"
                 style={{
@@ -56,11 +57,13 @@ export const Features = () => {
                 }}
               ></div>
 
-           
               <h3 className="text-2xl font-semibold mb-4 z-10">{tab.title}</h3>
-           
               <p className="text-sm text-white/60 mt-auto z-10">{tab.description}</p>
 
+
+              <p className="text-white mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:text-white/80">
+                Learn More <i className="fa-solid fa-arrow-right ml-1"></i>
+              </p>
             </div>
           ))}
         </div>
