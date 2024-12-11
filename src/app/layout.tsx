@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,13 +17,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <script
+      <head></head>
+      <body className={`${inter.className} bg-black`}>
+        {/* Load the FontAwesome script asynchronously */}
+        <Script
           src="https://kit.fontawesome.com/d836a1d31c.js"
           crossOrigin="anonymous"
-        ></script>
-      </head>
-      <body className={`${inter.className} bg-black`}>
+          strategy="lazyOnload"
+        />
         {children}
       </body>
     </html>
