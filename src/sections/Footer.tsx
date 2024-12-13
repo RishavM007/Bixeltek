@@ -106,7 +106,7 @@ export const Footer = () => {
         </div>
         <div className="px-4 md:w-1/4 md:ml-auto mt-6 sm:mt-4 md:mt-0">
         <button className="bg-gradient-to-t from-[#4a208a] to-[#13012e] border border-[#8a45f2] text-white font-normal  text-sm py-2 px-4 rounded-lg shadow-custom">
-            <span className="tracking-wider">Let's Talk <i className="fa fa-arrow-right text-sm ml-1" aria-hidden="true"></i></span>
+            <span className="tracking-wider">Lets Talk <i className="fa fa-arrow-right text-sm ml-1" aria-hidden="true"></i></span>
           </button>
         </div>
       </div>
