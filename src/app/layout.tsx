@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head></head>
-      <body className={`${inter.className} bg-black`}>
+      <body className={`${inter.className} bg-[black]`}>
         {/* Load the FontAwesome script asynchronously */}
         <Script
           src="https://kit.fontawesome.com/d836a1d31c.js"

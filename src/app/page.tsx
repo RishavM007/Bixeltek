@@ -7,6 +7,7 @@ import { Testimonials } from "@/sections/Testimonials";
 import { CallToAction } from "@/sections/CallToAction";
 import { Casestudy } from "@/sections/Casestudies";
 import { About } from "@/sections/About";
+import { Footer } from "@/sections/Footer";
 export default function Home() {
   return (
     <>
@@ -19,6 +20,7 @@ export default function Home() {
     <Testimonials />
     <CallToAction />
     <Casestudy />
+    <Footer />
     </>
   );
 }
