@@ -23,7 +23,7 @@ const testimonials = [
   },
   {
     text: "“A one-stop solution for digital marketing. Their web design and PPC campaigns brought in excellent ROI for our business.”",
-    name: "Alec Whitten",
+    name: "Alec Henry",
     title: "CTO @ Tech Solutions",
   },
 ];
