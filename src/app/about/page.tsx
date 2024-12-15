@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import AbtImg from '@/assets/pexels-karolina-grabowska-7875953.jpg'
+import BgImg from '@/assets/Layer F.png'
 import { motion } from 'framer-motion';
 
 export default function AboutPage() {
@@ -34,12 +35,12 @@ export default function AboutPage() {
                         </p>
                         <div className='mt-5'>
 
-                       
-                        <button className="backdrop-blur-3xl border border-white text-white font-normal text-sm py-2 px-4 md:px-6 md:py-3 md:text-md rounded-lg md:mt-5 shadow-custom " >
-                            <span>
-                                Get a Quote<i className="fa-solid fa-arrow-right ml-2" id='get_a_quote'></i>
-                            </span>
-                        </button>
+
+                            <button className="backdrop-blur-3xl border border-white text-white font-normal text-sm py-2 px-4 md:px-6 md:py-3 md:text-md rounded-lg md:mt-5 shadow-custom " >
+                                <span>
+                                    Get a Quote<i className="fa-solid fa-arrow-right ml-2" id='get_a_quote'></i>
+                                </span>
+                            </button>
                         </div>
                     </div>
                 </motion.div>
@@ -53,7 +54,14 @@ export default function AboutPage() {
                     <Image src={AbtImg} height={600} width={600} alt="Digital Marketing Illustration" className="rounded-lg shadow-lg" />
                 </motion.div>
             </section>
-            <section className="px-8 md:px-20 py-20 bg-black border-t">
+            <section className=" overflow-hidden relative px-8 md:px-20 py-20 bg-black border-t">
+                <Image
+                src={BgImg}
+                height={1500}
+                width={1500}
+                alt=''
+                className='absolute right-0 top-[-100px] opacity-100'
+                 />
                 <div className="flex flex-col md:flex-row items-center justify-between gap-16">
                     <motion.div
                         className="max-w-lg text-left mb-12 md:mb-0"
@@ -63,19 +71,19 @@ export default function AboutPage() {
                     >
                         <h2 className="text-3xl md:text-4xl font-bold mb-4">Best pathway to our <span className='text-purple-700'>clients</span> .</h2>
                         <p className="text-lg md:text-[16px]  leading-wide">
-                        Our consulting process begins with a thorough assessment of your current IT infrastructure, workflows, and pain points.
+                            Our consulting process begins with a thorough assessment of your current IT infrastructure, workflows, and pain points.
                         </p>
                         <div className='mt-8 flex flex-col gap-5'>
 
-                        <p><i className="fa fa-arrow-circle-o-right mr-2 " aria-hidden="true"></i>24/7 Full Service Support</p>
+                            <p><i className="fa fa-arrow-circle-o-right mr-2 " aria-hidden="true"></i>24/7 Full Service Support</p>
 
-                        <p><i className="fa fa-arrow-circle-o-right mr-2" aria-hidden="true"></i>Immediate Response</p>
+                            <p><i className="fa fa-arrow-circle-o-right mr-2" aria-hidden="true"></i>Immediate Response</p>
 
-                        <p><i className="fa fa-arrow-circle-o-right mr-2" aria-hidden="true"></i>Easy to Approach us</p>
-                        
+                            <p><i className="fa fa-arrow-circle-o-right mr-2" aria-hidden="true"></i>Easy to Approach us</p>
+
 
                         </div>
-                        
+
                     </motion.div>
 
                     <motion.div
