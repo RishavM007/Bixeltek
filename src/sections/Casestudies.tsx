@@ -1,7 +1,5 @@
 import Image from 'next/image';
-import casestudy1image from '@/assets/casestudy-1.jpg';
-import casestudy2image from '@/assets/pexels-pixabay-270669.jpg';
-import casestudy3image from '@/assets/pexels-emilio-garcia-96280844-29700658.jpg';
+
 import Link from 'next/link';
 
 const Casestudies = [
@@ -9,19 +7,19 @@ const Casestudies = [
         title: "PPC Success: 90% Sales Growth",
         description:
             "This case study details how targeted PPC campaigns with optimized keywords and creative A/B testing drove a 90% increase in e-commerce sales for a fashion retailer.",
-        image: casestudy1image,
+        
     },
     {
         title: "Social Media Buzz for Fitness Brand",
         description:
             "Learn how influencer collaborations and engaging social media content helped a fitness brand double its followers and significantly increase customer engagement.",
-        image: casestudy3image,
+        
     },
     {
         title: "Local SEO Overhaul for Top Rankings",
         description:
             "Discover how a restaurant’s website optimization and local SEO strategies secured top Google rankings, leading to a 40% boost in customer visits and much more.",
-        image: casestudy3image,
+     
     },
 ];
 
@@ -54,20 +52,10 @@ export const Casestudy = () => {
                                 </p>
                                 <Link
                                     href="#"
-                                    className="relative text-sm w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-purple-400 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-left"
+                                    className="relative text-sm w-fit mb-10 block after:block after:content-[''] after:absolute after:h-[2px] after:bg-purple-400 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-left"
                                 >
                                     Learn More
                                 </Link>
-
-                                <div className="mt-10 md:mt-20 mb-44 md:mb-52 overflow-hidden">
-                                    <Image
-                                        src={caseStudy.image.src}
-                                        alt={caseStudy.title}
-                                        width={600}
-                                        height={400}
-                                        className="rounded-lg object-cover w-full h-auto absolute right-[-15%]"
-                                    />
-                                </div>
                             </div>
                         ))}
                     </div>

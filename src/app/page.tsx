@@ -16,8 +16,8 @@ export default function Home() {
     <Hero />
     <Screen />
     <LogoTicker />
-    <About />
     <Features />
+    <About />
     <Testimonials />
     <CallToAction />
     <Casestudy />
