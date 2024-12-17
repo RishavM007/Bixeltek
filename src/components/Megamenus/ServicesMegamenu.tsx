@@ -29,11 +29,11 @@ export const ServiceMegamenu: React.FC<ServiceProps> = ({ service }) => {
       transition={{ duration: 0.4, ease: "easeInOut" }}
       className={`relative ${
         service || isVisible ? 'visible' : 'hidden'
-      } z-[60] top-[-20px] w-[95%] mx-auto shadow-purple-custom`}
+      } z-[60] top-[-20px] w-full shadow-purple-custom`}
       onMouseEnter={mouseEnter}
       onMouseLeave={mouseLeave}
     >
-      <div className="absolute flex flex-row bg-black text-white w-full shadow-lg rounded-3xl">
+      <div className="absolute flex flex-row bg-white text-black w-full shadow-lg">
         <div className="flex w-3/4 flex-row gap-8 px-8 py-14">
           <div className="flex-1 flex flex-wrap gap-4 font-sans">
             {/** Column 1 */}
@@ -102,8 +102,8 @@ export const ServiceMegamenu: React.FC<ServiceProps> = ({ service }) => {
             </div>
           </div>
         </div>
-        {/** Right Image Section */}
-        <div className="w-1/2 flex flex-col bg-white items-start justify-center rounded-3xl">
+        
+        <div className="w-1/2 flex flex-col bg-white items-start justify-center border-l-2">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
