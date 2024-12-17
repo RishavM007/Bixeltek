@@ -3,13 +3,15 @@
 import { useEffect, useState } from "react";
 import { grid } from "ldrs";
 
-grid.register();
+if (typeof window !== "undefined") {
+  grid.register();
+}
 
-export default function Preloader({
+export const Preloader=({
   children,
 }: {
   children: React.ReactNode;
-}) {
+})=> {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
