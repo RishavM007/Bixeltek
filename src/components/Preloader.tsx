@@ -15,7 +15,6 @@ export const Preloader=({
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a short delay for the loader
     const timer = setTimeout(() => {
       setLoading(false);
     }, 3000);

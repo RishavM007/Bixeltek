@@ -4,6 +4,7 @@ import BgImg from '@/assets/Layer F.png';
 import { motion } from 'framer-motion';
 import { Bento } from '@/components/AbtHero/AbtHero';
 
+
 export default function AboutPage() {
     const timelineEvents = [
         { title: 'Discovery and Analysis', description: 'Perform a analysis of the clients existing IT systems.' },
@@ -13,8 +14,9 @@ export default function AboutPage() {
 
     return (
         <div className="bg-black text-white">
+            {/* Hero Section */}
             <section>
-                <div className="relative isolate mt-[-120px] mb-[-50px] overflow-hidden bg-black h-screen flex items-center justify-center">
+                <div className="relative isolate mt-[-120px] mb-[-70px] overflow-hidden bg-black h-[100vh] md:h-[100vh] lg:h-[100vh] xl:h-[70vh] flex items-center justify-center">
                     <svg
                         className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
                         aria-hidden="true">
@@ -55,8 +57,9 @@ export default function AboutPage() {
                 </div>
             </section>
 
+            {/* Service Section */}
             <Bento />
-        
+
             <section className="overflow-hidden relative px-8 md:px-20 py-20 bg-black">
                 <Image
                     src={BgImg}
@@ -121,32 +124,32 @@ export default function AboutPage() {
                 <div className="bg-black py-24 sm:py-32">
                     <div className="mx-auto flex flex-col md:flex-row lg:flex-row  max-w-7xl gap-20 px-6">
                         <div className="max-w-xl">
-                            <h2 className="text-pretty text-3xl font-semibold tracking-tight text-white/90 sm:text-4xl">Meet our leadership</h2>
+                            <h2 className="text-pretty text-3xl font-semibold tracking-tight text-white/90 sm:text-4xl">Meet our team</h2>
                             <p className="mt-6 text-lg/8 text-white/50">We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients.</p>
                         </div>
                         <div className='flex flex-wrap gap-x-32 gap-y-16'>
-                        <ul role="list" className="gap-x-8 gap-y-5 ">
-                            <li>
-                                <div className="flex items-center gap-x-6">
-                                    <img className="size-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-                                    <div>
-                                        <h3 className="text-base/7 font-semibold tracking-tight text-white">Leslie Alexander</h3>
-                                        <p className="text-sm/6 font-semibold text-indigo-600">Co-Founder / CEO</p>
+                            <ul role="list" className="gap-x-8 gap-y-5 ">
+                                <li>
+                                    <div className="flex items-center gap-x-6">
+                                        <img className="size-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+                                        <div>
+                                            <h3 className="text-base/7 font-semibold tracking-tight text-white">Leslie Alexander</h3>
+                                            <p className="text-sm/6 font-semibold text-indigo-600">Co-Founder / CEO</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul role="list" className=" gap-x-8 gap-y-5">
-                            <li>
-                                <div className="flex items-center gap-x-6">
-                                    <img className="size-16 rounded-full"  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-                                    <div>
-                                        <h3 className="text-base/7 font-semibold tracking-tight text-white">Leslie Alexander</h3>
-                                        <p className="text-sm/6 font-semibold text-indigo-600">Co-Founder / CEO</p>
+                                </li>
+                            </ul>
+                            <ul role="list" className=" gap-x-8 gap-y-5">
+                                <li>
+                                    <div className="flex items-center gap-x-6">
+                                        <img className="size-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+                                        <div>
+                                            <h3 className="text-base/7 font-semibold tracking-tight text-white">Leslie Alexander</h3>
+                                            <p className="text-sm/6 font-semibold text-indigo-600">Co-Founder / CEO</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
 
                         </div>
                     </div>

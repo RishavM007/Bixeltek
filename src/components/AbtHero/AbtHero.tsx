@@ -1,5 +1,6 @@
 import Phone from '@/assets/MyProfile-left.png'
 import Image from 'next/image'
+import code from '@/assets/codess.png'
 export const Bento = () => {
     return (
         <div className="bg-black  py-10 sm:py-20">
@@ -59,8 +60,6 @@ export const Bento = () => {
                                 <p className="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">Pay-Per-Click Advertising (PPC)</p>
                                 <p className="mt-2 max-w-lg text-sm/6 text-gray-200 max-lg:text-center">
                                     With researched digital marketing, we will ensure that new customers and clients are able to find your business.
-
-
                                 </p>
                             </div>
                             <div className="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
@@ -85,16 +84,27 @@ export const Bento = () => {
                                 </p>
                             </div>
                             <div className="relative min-h-[30rem] w-full grow">
-                                <div className="absolute bottom-0 left-10 right-0 top-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl">
+                                <div className="absolute bottom-0 left-10 top-10 right-0 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl">
                                     <div className="flex bg-gray-800/40 ring-1 ring-white/5">
-                                        <div className="-mb-px flex text-sm/6 font-medium text-gray-400">
+                                        <div className="-mb-px flex text-sm font-medium text-gray-400">
                                             <div className="border-b border-r border-b-white/20 border-r-white/10 bg-white/5 px-4 py-2 text-white">
                                                 NotificationSetting.jsx
                                             </div>
                                             <div className="border-r border-gray-600/10 px-4 py-2">App.jsx</div>
                                         </div>
                                     </div>
-                                    <div className="px-6 pb-14 pt-6">{/* Your code example */}</div>
+                                    <div className="relative h-full w-full overflow-x-auto">
+                                        <div className="absolute inset-0 h-full w-[250%]  transform">
+                                            <Image
+                                                src={code}
+                                                alt="code"
+                                                className="h-full w-full object-cover"
+                                                layout="responsive"
+                                                height={800}
+                                                width={1000}
+                                            />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -18,12 +18,14 @@ const config: Config = {
         sm: "375px",
         md: "768px",
         lg: "1200px",
+        xl: "1800px"
       },
     },
     screens: {
       sm: "375px",
       md: "768px",
       lg: "1200px",
+      xl: "1800px"
     },
     extend: {
       boxShadow: {
