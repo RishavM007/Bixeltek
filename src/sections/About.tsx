@@ -14,7 +14,7 @@ export const About = () => {
                                         The Tale of Our Achievement Story</h2>
                                     <p
                                         className="text-white/80 text-base font-sans font-normal leading-relaxed lg:text-start text-center">
-                                        Our achievement story is a testament to teamwork and perseverance. Together, we've
+                                        Our achievement story is a testament to teamwork and perseverance. Together, we have
                                         overcome challenges, celebrated victories, and created a narrative of progress and
                                         success.</p>
                                 </div>
