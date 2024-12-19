@@ -1,74 +1,73 @@
-import Image from 'next/image';
-import image1 from '@/assets/pexels-pixabay-270669.jpg';
-import image2 from '@/assets/pexels-product-school-1299359-2678468.jpg';
-import Link from 'next/link';
+
 export const About = () => {
     return (
-        <section className="py-8 md:py-20 xl:py-24 bg-black">
-            <div className="container mx-auto">
-                <div className="text-center">
-                    <h2 className="text-5xl font-medium tracking-tighter text-white">
-                        Who are we?
-                    </h2>
-                    <p className="text-white/70 text-md lg:text-lg tracking-tight mt-5">
-                        At our core, we prioritize pushing boundaries, embracing the unknown, and fostering a culture of continuous learning.
-                    </p>
-                    <Link href= '/about'>
-                    <button className="backdrop-blur-3xl border border-white text-white font-normal text-sm py-2 px-4 md:px-6 md:py-3 md:text-md rounded-lg mt-14 md:mt-16 mb-10 shadow-custom">
-                        <span>
-                            Read More<i className="fa-solid fa-arrow-right ml-2" id="get_a_quote"></i>
-                        </span>
-                    </button>
-                    </Link>
-                </div>
-            </div>
-
-
-            <div className="container mx-auto">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    
-                    <div className="card bg-black border rounded-3xl overflow-hidden">
-                        <div className="flex flex-col md:flex-row items-stretch h-full">
-                            <div className="w-full md:w-1/2 h-96 relative">
-                                <Image
-                                    src={image2}
-                                    alt="Why Choose Us?"
-                                    layout="fill"
-                                    objectFit="cover"
-                                    className="rounded-none"
-                                />
+        <section className="py-24 relative xl:mr-0 lg:mr-5 mr-0">
+            <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+                <div className="w-full justify-start items-center xl:gap-12 gap-10 grid lg:grid-cols-2 grid-cols-1">
+                    <div className="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
+                        <div className="w-full flex-col justify-center items-start gap-8 flex">
+                            <div className="flex-col justify-start lg:items-start items-center gap-4 flex">
+                                <h6 className="text-purple-500 text-base font-normal leading-relaxed">About Us</h6>
+                                <div className="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
+                                    <h2
+                                        className="text-white/90 text-4xl font-bold  leading-normal lg:text-start text-center">
+                                        The Tale of Our Achievement Story</h2>
+                                    <p
+                                        className="text-white/80 text-base font-sans font-normal leading-relaxed lg:text-start text-center">
+                                        Our achievement story is a testament to teamwork and perseverance. Together, we've
+                                        overcome challenges, celebrated victories, and created a narrative of progress and
+                                        success.</p>
+                                </div>
                             </div>
-                            <div className="w-full md:w-1/2 p-6 flex flex-col justify-center">
-                                <h2 className="text-2xl mb-4 text-white">Why Choose Us?</h2>
-                                <p className="text-white/70 text-[16px]">
-                                    With years of experience and deep industry knowledge, we have a proven track record of success and are pushing ourselves to stay ahead of the curve.
-                                </p>
+                            <div className="w-full flex-col justify-center items-start gap-6 flex">
+                                <div className="w-full justify-start items-center gap-8 grid md:grid-cols-2 grid-cols-1">
+                                    <div
+                                        className="w-full h-full p-3.5 rounded-xl border border-purple-600 hover:border-purple-300 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
+                                        <h4 className="text-white text-2xl font-bold font-sans leading-9">3+ Years</h4>
+                                        <p className="text-gray-200 text-base font-normal leading-relaxed">Influencing Digital
+                                            Landscapes Together</p>
+                                    </div>
+                                    <div
+                                        className="w-full h-full p-3.5 rounded-xl border border-purple-600 hover:border-purple-300 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
+                                        <h4 className="text-white text-2xl font-bold font-sans leading-9">25+ Projects
+                                        </h4>
+                                        <p className="text-gray-200 text-base font-normal leading-relaxed">Excellence Achieved
+                                            Through Success</p>
+                                    </div>
+                                </div>
+                                <div className="w-full h-full justify-start items-center gap-8 grid md:grid-cols-2 grid-cols-1">
+                                    <div
+                                        className="w-full p-3.5 rounded-xl border border-purple-600 hover:border-purple-300 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
+                                        <h4 className="text-white text-2xl font-bold font-sans leading-9">5+ Awards</h4>
+                                        <p className="text-gray-200 text-base font-normal leading-relaxed">Our Dedication to
+                                            Innovation Wins Understanding</p>
+                                    </div>
+                                    <div
+                                        className="w-full h-full p-3.5 rounded-xl border border-purple-600 hover:border-purple-300 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
+                                        <h4 className="text-white text-2xl font-bold font-sans leading-9">99% Happy
+                                            Clients</h4>
+                                        <p className="text-gray-200 text-base font-normal leading-relaxed">Mirrors our Focus on
+                                            Client Satisfaction.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <button className="backdrop-blur-3xl border border-white text-white font-normal text-sm py-2 px-4 md:px-6 md:py-3 md:text-md rounded-lg mt-5 md:mt-8 shadow-custom ">
+                            <span>
+                                Read More <i className="fa-solid fa-arrow-right ml-2" id='get_a_quote'></i>
+                            </span>
+                        </button>
                     </div>
-
-                    
-                    <div className="card bg-black border rounded-3xl overflow-hidden">
-                        <div className="flex flex-col md:flex-row items-stretch h-full">
-                            <div className="w-full md:w-1/2 h-96 relative">
-                                <Image
-                                    src={image1}
-                                    alt="Visionary Team"
-                                    layout="fill"
-                                    objectFit="cover"
-                                    className="rounded-none"
-                                />
-                            </div>
-                            <div className="w-full md:w-1/2 p-6 flex flex-col justify-center">
-                                <h2 className="text-2xl mb-4 text-white">Visionary Team</h2>
-                                <p className="text-white/70 text-[16px]">
-                                    With a team of visionary engineers, developers, and creative minds, we embark on a journey to transform complex challenges into ingenious technological solutions.
-                                </p>
-                            </div>
+                    <div className="w-full lg:justify-start justify-center items-start flex">
+                        <div
+                            className="sm:w-[564px] w-full sm:h-[646px] h-full  backdrop:blur-3xl  bg-purple-400 shadow-purple-custom2 rounded-3xl sm:border border-purple-700 relative">
+                            <img className="sm:mt-5 sm:ml-5 w-full h-full rounded-3xl object-cover"
+                                src="https://pagedone.io/asset/uploads/1717742431.png" alt="about Us image" />
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    );
-};
+
+    )
+}
