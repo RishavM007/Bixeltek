@@ -194,10 +194,15 @@ export default function Home() {
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-                            <div className="bg-white p-6 rounded-xl shadow-lg border-2 border-purple-600">
+                            <div className="">
+                                <div className='bg-white p-6 rounded-xl my-2 shadow-lg border-2 border-purple-600'>
                                 <h3 className="text-xl font-bold text-gray-900 mb-4">ROI Growth Trend</h3>
                                 <Line data={lineChartData} options={{ responsive: true }} />
+                                </div>
+                                <div className='bg-white p-6 rounded-xl my-2 shadow-lg border-2 border-purple-600'>
+                                <h3 className="text-xl font-bold text-gray-900 mb-4">ROI Growth Trend</h3>
                                 <Line data={lineChartData2} options={{ responsive: true }} />
+                                </div>
                             </div>
 
                             <div className="bg-white p-6 rounded-xl shadow-lg border-2 border-purple-600">
