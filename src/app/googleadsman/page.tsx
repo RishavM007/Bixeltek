@@ -3,14 +3,15 @@ import React from 'react';
 import Image from 'next/image';
 import rocket from '@/assets/rb_3704.png';
 import { motion } from 'framer-motion';
-import people from '@/assets/Group.png'
-import Head from 'next/head';
+import HoverDevCards from '@/components/Hovercards';
+import myplaceholder from '@/assets/pexels-emilio-garcia-96280844-29700658.jpg';
+import Link from 'next/link';
 
 export default function Home() {
     return (
         <>
             <section>
-                <div className="relative mt-[-90px]  isolate lg:mt-[-150px] mb-[0px] overflow-hidden bg-black h-[100vh] md:h-[100vh] lg:h-[100vh] xl:h-[70vh]  sm:h-[80vh]  flex items-center justify-center">
+                <div className="relative mt-[-90px]  isolate lg:mt-[-150px] mb-[0px] overflow-hidden bg-black h-[100vh] md:h-[100vh] lg:h-[105vh] xl:h-[105vh]  sm:h-[80vh]  flex items-center justify-center">
                     <svg
                         className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
                         aria-hidden="true">
@@ -23,7 +24,7 @@ export default function Home() {
                     </svg>
                     <motion.div
                         className="absolute right-0 bottom-[-100px] z-10"
-                        animate={{ y: [-20, 20, -20], x: [-20, 20, -20] }}
+                        animate={{ y: [-20, 20, -20], x: [-40, 40, -40] }}
                         transition={{
                             duration: 3,
                             repeat: Infinity,
@@ -43,15 +44,15 @@ export default function Home() {
                             }}
                         ></div>
                     </div>
-                    <div className="max-w-full px-4 text-center mb-[-120px] lg:max-w-3xl z-30">
-                        <h1 className="text-2xl font-bold tracking-tight text-white md:text-4xl xl:text-5xl">
+                    <div className="max-w-full px-1  text-center mb-[-120px] lg:max-w-5xl xl:max-w-7xl z-30">
+                        <h1 className="text-2xl font-bold tracking-tight text-white md:text-4xl xl:text-7xl">
                             Drive <span className="text-purple-500 px-1 leading-4">300%</span>More Traffic with Precision Google Ads Management by Bixeltek!
                         </h1>
-                        <p className="mt-10 text-sm lg:text-lg xl:text-xl leading-8 text-gray-200 ">
+                        <p className="mt-10 text-sm lg:text-lg  xl:text-3xl leading-8 text-gray-200 ">
                             Based in <span className="text-purple-600 px-1">Hyderabad</span>, trusted by 50+ businesses for scalable ad performance.
                         </p>
 
-                        <button className="backdrop-blur-3xl border border-white group text-white font-normal text-sm py-2 px-4 md:px-6 md:py-3 md:text-md rounded-lg mt-14 md:mt-16 shadow-custom ">
+                        <button className="backdrop-blur-3xl border border-white group text-white font-normal text-sm xl:text-lg py-2 px-4 md:px-6 md:py-3 xl:py-5 xl:px-5 md:text-md rounded-lg mt-14 md:mt-16 shadow-custom ">
                             <span>
                                 Get a Free Audit Today!{' '}
                                 <i className="fa fa-arrow-right ml-2 rotate-[-45deg] group-hover:rotate-[0deg] transition-all" aria-hidden="true"></i>
@@ -60,54 +61,45 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section>
-                <div className="relative py-20 sm:py-28 md:py-52 bg-black isolate">
-                    <Image
-                        src={people}
-                        alt="people"
-                        height={1000}
-                        width={1000}
-                        className="absolute z-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-fill"
-                    />
-                    <div className="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-15 relative z-10">
-                        <div className="flex flex-col lg:flex-row justify-between gap-10 sm:gap-20 lg:gap-96">
-                            <div className="flex flex-col justify-between space-y-6 sm:space-y-10 flex-1">
-                                <div className="bg-black backdrop-blur-3xl bg-transparent px-4 py-8 sm:px-6 sm:py-10 rounded-lg shadow-md">
-                                    <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">
-                                        Advanced Keyword Targeting
-                                    </h3>
-                                    <p className="text-gray-200 text-sm sm:text-base">
-                                        We pinpoint the right keywords to connect your ads with the perfect audience, ensuring every click counts.
-                                    </p>
-                                </div>
-                                <div className="bg-black backdrop-blur-3xl bg-transparent px-4 py-8 sm:px-6 sm:py-10 rounded-lg shadow-md">
-                                    <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">
-                                        Ad Copy That Converts
-                                    </h3>
-                                    <p className="text-gray-200 text-sm sm:text-base">
-                                        Our expertly written ad copy engages your audience, driving actions and turning views into valuable conversions.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex flex-col justify-between space-y-6 sm:space-y-10 flex-1">
-                                <div className="bg-black backdrop-blur-3xl bg-transparent px-4 py-8 sm:px-6 sm:py-10 rounded-lg shadow-md">
-                                    <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">
-                                        A/B Testing for Maximum ROI
-                                    </h3>
-                                    <p className="text-gray-200 text-sm sm:text-base">
-                                        Through continuous testing, we find the most effective strategies to optimize performance and maximize your returns.
-                                    </p>
-                                </div>
-                                <div className="bg-black backdrop-blur-3xl bg-transparent px-4 py-8 sm:px-6 sm:py-10 rounded-lg shadow-md">
-                                    <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">
-                                        Real-Time Analytics & Reporting
-                                    </h3>
-                                    <p className="text-gray-200 text-sm sm:text-base">
-                                        Track every detail with our transparent reporting and actionable insights to stay ahead of your campaign goals.
-                                    </p>
-                                </div>
-                            </div>
+            <section className='border-b'>
+                <div className="bg-white flex flex-col md:flex-row items-center justify-between py-6 px-6 md:px-20 md:py-32">
+
+                    <div className="text-center md:text-left md:w-1/2  space-y-4">
+                        <h2 className="text-2xl lg:text-5xl font-bold text-gray-800 leading-[32px] lg:leading-[53px] tracking-tight">80% of Google Ads Budgets Are Wasted Without Strategic Management.</h2>
+                        <p className="text-gray-600 text-sm lg:text-xl pt-3">
+                            Many businesses struggle to see results from their Google Ads campaigns due to poor targeting and ineffective strategies. Without proper management, high costs per click and low returns on investment become common hurdles.
+                        </p>
+                        <div className='my-2 lg:my-5 group'>
+                            <Link href="#" className="text-black font-semibold text-lg ">
+                                Lets Optimize Your Campaigns!  <i className="fa fa-arrow-right hidden rotate-[-45deg] ml-1 group-hover:rotate-[0deg] transition-all" aria-hidden="true"></i>
+                            </Link>
                         </div>
+                        <p className='text-gray-500 text-[13px] lg:text-[16px] pt-1 lg:pt-3'>Enhance your online presence with a professionally optimized website tailored to drive results.</p>
+                    </div>
+
+                    <div className="md:w-1/2 flex justify-center mt-4 mb-2 items-center ">
+                        <Image
+                            width={500}
+                            height={500}
+                            src={myplaceholder}
+                            alt="Description of the image"
+                            className="rounded-lg  shadow-md"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div className="bg-white flex flex-col pt-10 pb-20 items-center">
+                    <div className="text-center flex flex-col max-w-5xl">
+                        <h2 className="text-3xl lg:text-5xl font-bold text-gray-800">
+                            Maximize Every Click with Our Proven Strategies
+                        </h2>
+                        <p className="text-lg text-gray-700 py-10 font-sans">
+                            We focus on making your ad spend count by combining precision, creativity, and data-driven insights. Here's how we transform your campaigns into performance powerhouses:
+                        </p>
+                    </div>
+                    <div className="w-full py-10 flex justify-center">
+                        <HoverDevCards />
                     </div>
                 </div>
             </section>
