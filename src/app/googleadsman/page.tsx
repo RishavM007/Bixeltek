@@ -164,7 +164,7 @@ export default function Home() {
                         </div>
 
                         <p className="text-center text-lg text-gray-700 mb-12">
-                            We believe in results that matter. Here"s a glimpse of how we"ve empowered our clients to achieve measurable success.
+                            We believe in results that matter. Here is a glimpse of how we have empowered our clients to achieve measurable success.
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
