@@ -21,16 +21,18 @@ const HoverDevCards: React.FC = () => {
 
 const Card: React.FC<CardProps> = ({ title, href }) => {
     return (
-      <a
-        href={href}
-        className="w-full max-w-md py-10 px-6 rounded border-[1px] border-slate-300 relative overflow-hidden group bg-white"
-      >
-        <div className="absolute  inset-0 bg-gradient-to-r from-violet-600 to-indigo-600 translate-y-[100%] group-hover:translate-y-[0%] transition-transform duration-300" />
-        <h3 className="font-medium text-center text-lg text-slate-950 group-hover:text-white relative z-10 duration-300">
-          {title}
-        </h3>
-      </a>
-    );
+        <a
+          href={href}
+          className="w-full max-w-md py-10 px-6 rounded relative overflow-hidden bg-gradient-to-r from-purple-600 to-violet-400 z-20"
+        >
+          <div className="absolute inset-0 bg-white rounded m-[2px] z-10"></div>
+          <div className="relative z-20">
+            <h3 className="font-medium text-center text-lg text-black">
+              {title}
+            </h3>
+          </div>
+        </a>
+      );      
   };
   
 export default HoverDevCards;

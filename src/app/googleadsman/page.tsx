@@ -5,7 +5,56 @@ import rocket from '@/assets/rb_3704.png';
 import { motion } from 'framer-motion';
 import HoverDevCards from '@/components/Hovercards';
 import myplaceholder from '@/assets/pexels-emilio-garcia-96280844-29700658.jpg';
+import { FaChartLine, FaChartPie, FaChartBar, FaQuoteLeft, FaClock, FaHandshake, FaShieldAlt, FaUserTie } from "react-icons/fa";
+import { Line, Pie } from "react-chartjs-2";
+import {Accordion} from '@/components/Faq'
+import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, ArcElement } from "chart.js";
 import Link from 'next/link';
+ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, ArcElement);
+
+const lineChartData = {
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+    datasets: [
+        {
+            label: "ROI Growth",
+            data: [100, 120, 150, 170, 190, 200],
+            borderColor: "rgb(147, 51, 234)",
+            tension: 0.1
+        }
+    ]
+};
+const lineChartData2 = {
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+    datasets: [
+        {
+            label: "ROI Growth",
+            data: [100, 120, 110, 170, 150, 190],
+            borderColor: "rgb(147, 51, 234)",
+            tension: 0.1
+        },
+        {
+            label: "Traffic",
+            data: [120, 140, 110, 150, 180, 200],
+            borderColor: "rgb(147, 51, 234)",
+            tension: 0.1
+        }
+    ]
+}
+
+const pieChartData = {
+    labels: ["Traffic", "Leads", "Conversions", "ROI"],
+    datasets: [
+        {
+            data: [40, 35, 25, 50],
+            backgroundColor: [
+                "rgba(147, 51, 234, 0.8)",
+                "rgba(168, 85, 247, 0.8)",
+                "rgba(192, 132, 252, 0.8)",
+                "rgba(192, 90, 252, 0.8)"
+            ]
+        }
+    ]
+};
 
 export default function Home() {
     return (
@@ -83,7 +132,7 @@ export default function Home() {
                             height={500}
                             src={myplaceholder}
                             alt="Description of the image"
-                            className="rounded-lg  shadow-md"
+                            className="rounded-lg"
                         />
                     </div>
                 </div>
@@ -91,7 +140,7 @@ export default function Home() {
             <section>
                 <div className="bg-white flex flex-col pt-10 pb-20 items-center">
                     <div className="text-center flex flex-col max-w-5xl">
-                        <h2 className="text-3xl lg:text-5xl font-bold text-gray-800">
+                        <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">
                             Maximize Every Click with Our Proven Strategies
                         </h2>
                         <p className="text-lg text-gray-700 py-10 font-sans">
@@ -102,13 +151,87 @@ export default function Home() {
                         <HoverDevCards />
                     </div>
                     <Link href='#'>
-                    <p className='font-semibold text-lg text-center group'>See Our CaseStudies <i className="fa fa-arrow-right ml-1 rotate-[-45deg] group-hover:rotate-[0deg] transition-all" aria-hidden="true"></i></p>
+                        <p className='font-semibold text-lg text-center group'>See Our CaseStudies <i className="fa fa-arrow-right ml-1 rotate-[-45deg] group-hover:rotate-[0deg] transition-all" aria-hidden="true"></i></p>
                     </Link>
                 </div>
             </section>
+            <section>
+                <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+                    <div className="max-w-7xl mx-auto">
+                        <div className="text-center mb-16">
+                            <h2 className="text-5xl font-bold text-gray-900 mb-4">Proven Success: Over $2 Million In Revenue Generated For Clients</h2>
+                            <p className="text-xl text-gray-600">Numbers That Speak Louder Than Words</p>
+                        </div>
 
+                        <p className="text-center text-lg text-gray-700 mb-12">
+                            We believe in results that matter. Here"s a glimpse of how we"ve empowered our clients to achieve measurable success.
+                        </p>
 
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-2 border-purple-600">
+                                <FaChartLine className="text-4xl text-purple-600 mb-4" />
+                                <h3 className="text-2xl font-bold text-gray-900 mb-2">150%</h3>
+                                <p className="text-gray-600">Increase in CTR for e-commerce campaigns, driving targeted traffic that converts.</p>
+                            </div>
 
+                            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-2 border-purple-600">
+                                <FaChartBar className="text-4xl text-purple-600 mb-4" />
+                                <h3 className="text-2xl font-bold text-gray-900 mb-2">200%</h3>
+                                <p className="text-gray-600">Average ROI growth across all managed campaigns.</p>
+                            </div>
+
+                            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-2 border-purple-600">
+                                <FaChartLine className="text-4xl text-purple-600 mb-4" />
+                                <h3 className="text-2xl font-bold text-gray-900 mb-2">40%</h3>
+                                <p className="text-gray-600">Reduction in CPC while maintaining ad effectiveness.</p>
+                            </div>
+
+                            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-2 border-purple-600">
+                                <FaChartPie className="text-4xl text-purple-600 mb-4" />
+                                <h3 className="text-2xl font-bold text-gray-900 mb-2">300%</h3>
+                                <p className="text-gray-600">Boost in conversions in just 90 days for a leading retail client.</p>
+                            </div>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                            <div className="bg-white p-6 rounded-xl shadow-lg border-2 border-purple-600">
+                                <h3 className="text-xl font-bold text-gray-900 mb-4">ROI Growth Trend</h3>
+                                <Line data={lineChartData} options={{ responsive: true }} />
+                                <Line data={lineChartData2} options={{ responsive: true }} />
+                            </div>
+
+                            <div className="bg-white p-6 rounded-xl shadow-lg border-2 border-purple-600">
+                                <h3 className="text-xl font-bold text-gray-900 mb-4">Results Distribution</h3>
+                                <Pie data={pieChartData} options={{ responsive: true }} />
+                            </div>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                            <div className="bg-white p-8 rounded-xl shadow-lg border-2 border-purple-600">
+                                <FaQuoteLeft className="text-3xl text-purple-600 mb-4" />
+                                <p className="text-lg text-gray-700 mb-4">Partnering with Bixeltek transformed our campaigns. We saw a 3X increase in revenue within months.</p>
+                                <p className="font-semibold text-gray-900">Digital Marketing Director</p>
+                            </div>
+
+                            <div className="bg-white p-8 rounded-xl shadow-lg border-2 border-purple-600">
+                                <FaQuoteLeft className="text-3xl text-purple-600 mb-4" />
+                                <p className="text-lg text-gray-700 mb-4">Their expertise in keyword targeting reduced our ad spend by 35% while doubling conversions.</p>
+                                <p className="font-semibold text-gray-900">- E-commerce Manager</p>
+                            </div>
+                        </div>
+                        <div className="text-center">
+                            <button className="backdrop-blur-3xl border border-purple-600 text-black font-normal text-[16px] py-2 px-4 md:px-6 md:py-3 md:text-md rounded-lg md:mt-5 shadow-custom ">
+                                <span>
+                                    Want Results Like These? Let&apos;s Start Today
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+              <Accordion />
+            </section>
         </>
     );
 }
