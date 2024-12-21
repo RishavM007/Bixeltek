@@ -61,7 +61,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className='border-b'>
+            <section>
                 <div className="bg-white flex flex-col md:flex-row items-center justify-between py-6 px-6 md:px-20 md:py-32">
 
                     <div className="text-center md:text-left md:w-1/2  space-y-4">
@@ -95,12 +95,15 @@ export default function Home() {
                             Maximize Every Click with Our Proven Strategies
                         </h2>
                         <p className="text-lg text-gray-700 py-10 font-sans">
-                            We focus on making your ad spend count by combining precision, creativity, and data-driven insights. Here's how we transform your campaigns into performance powerhouses:
+                            We focus on making your ad spend count by combining precision, creativity, and data-driven insights. Here&apos;s how we transform your campaigns into performance powerhouses:
                         </p>
                     </div>
                     <div className="w-full py-10 flex justify-center">
                         <HoverDevCards />
                     </div>
+                    <Link href='#'>
+                    <p className='font-semibold text-lg text-center group'>See Our CaseStudies <i className="fa fa-arrow-right ml-1 rotate-[-45deg] group-hover:rotate-[0deg] transition-all" aria-hidden="true"></i></p>
+                    </Link>
                 </div>
             </section>
 
