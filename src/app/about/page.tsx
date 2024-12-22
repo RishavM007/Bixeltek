@@ -57,7 +57,6 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* Service Section */}
             <Bento />
 
             <section className="overflow-hidden relative px-8 md:px-20 py-20 bg-black">

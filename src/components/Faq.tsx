@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-// Accordion component with TypeScript
+
 export const Accordion = () => {
     return (
         <section className="relative z-20 overflow-hidden bg-white pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">

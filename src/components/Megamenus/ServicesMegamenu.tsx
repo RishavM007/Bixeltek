@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { link } from "fs";
 
 type ServiceProps = {
   service: boolean;
@@ -38,14 +39,23 @@ export const ServiceMegamenu: React.FC<ServiceProps> = ({ service }) => {
             <div>
               <h3 className="text-lg font-medium mb-4">Google Ads</h3>
               <ul>
-                {["Google Ads Management", "YT Ads Management", "CRO Audits", "EcommercePPC","Advertiser Verification and Policy"].map((item, index) => (
+                {[
+                  { label: "Google Ads Management", link: "/googleadsman" },
+                  { label: "YT Ads Management", link: "#" },
+                  { label: "CRO Audits", link: "#" },
+                  { label: "EcommercePPC", link: "#" },
+                  {
+                    label: "Advertiser Verification and Policy",
+                    link: "#",
+                  },
+                ].map((item, index) => (
                   <motion.li
                     key={index}
                     whileHover={{ scale: 1.05, color: "#A855F7" }}
                     transition={{ type: "spring", stiffness: 300 }}
                     className="text-sm py-2 cursor-pointer leading-5"
                   >
-                    {item}
+                    <Link href={item.link}>{item.label}</Link>
                   </motion.li>
                 ))}
               </ul>
@@ -53,9 +63,15 @@ export const ServiceMegamenu: React.FC<ServiceProps> = ({ service }) => {
             <div className="mt-6">
               <h3 className="text-lg font-bold">Case studies</h3>
               <ul className="gap-3 py-2">
-                <li className="text-sm font-light py-2 cursor-pointer leading-4"><Link href='#'>Casestudy</Link></li>
-                <li className="text-sm font-light py-2 cursor-pointer leading-4"><Link href='#'>Casestudy</Link></li>
-                <li className="text-sm font-light py-2 cursor-pointer leading-4"><Link href='#'>Casestudy</Link></li>
+                <li className="text-sm font-light py-2 cursor-pointer leading-4">
+                  <Link href="#">Casestudy</Link>
+                </li>
+                <li className="text-sm font-light py-2 cursor-pointer leading-4">
+                  <Link href="#">Casestudy</Link>
+                </li>
+                <li className="text-sm font-light py-2 cursor-pointer leading-4">
+                  <Link href="#">Casestudy</Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -65,14 +81,19 @@ export const ServiceMegamenu: React.FC<ServiceProps> = ({ service }) => {
             <div>
               <h3 className="text-lg font-medium mb-4">Social Media</h3>
               <ul>
-                {["Marketing", "Prototyping", "Wireframing", "Graphic Design"].map((item, index) => (
+                {[
+                  {label: "Social Media Management", link: "#"},
+                  {label:"Prototyping", link:"#"},
+                  {label:"Wireframing", link:"#"},
+                  {lable:"Graphic Design",link:"#"},
+                ].map((item, index) => (
                   <motion.li
                     key={index}
                     whileHover={{ scale: 1.05, color: "#A855F7" }}
                     transition={{ type: "spring", stiffness: 300 }}
                     className="text-sm py-2 cursor-pointer leading-5"
                   >
-                    {item}
+                    <Link href={item.link}>{item.label}</Link>
                   </motion.li>
                 ))}
               </ul>
@@ -80,9 +101,15 @@ export const ServiceMegamenu: React.FC<ServiceProps> = ({ service }) => {
             <div className="mt-6">
               <h3 className="text-lg font-bold">Industries</h3>
               <ul className="gap-3 py-2">
-                <li className="text-sm font-light py-2 cursor-pointer leading-4"><Link href='#'>Industry</Link></li>
-                <li className="text-sm font-light py-2 cursor-pointer leading-4"><Link href='#'>Industry</Link></li>
-                <li className="text-sm font-light py-2 cursor-pointer leading-4"><Link href='#'>Industry</Link></li>
+                <li className="text-sm font-light py-2 cursor-pointer leading-4">
+                  <Link href="#">Industry</Link>
+                </li>
+                <li className="text-sm font-light py-2 cursor-pointer leading-4">
+                  <Link href="#">Industry</Link>
+                </li>
+                <li className="text-sm font-light py-2 cursor-pointer leading-4">
+                  <Link href="#">Industry</Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -92,7 +119,12 @@ export const ServiceMegamenu: React.FC<ServiceProps> = ({ service }) => {
             <div>
               <h3 className="text-lg font-medium mb-4">SEO Optimization</h3>
               <ul>
-                {["SEO", "Social Media Marketing", "Content Marketing", "Email Campaigns"].map((item, index) => (
+                {[
+                  "SEO",
+                  "Social Media Marketing",
+                  "Content Marketing",
+                  "Email Campaigns",
+                ].map((item, index) => (
                   <motion.li
                     key={index}
                     whileHover={{ scale: 1.05, color: "#A855F7" }}
@@ -107,9 +139,15 @@ export const ServiceMegamenu: React.FC<ServiceProps> = ({ service }) => {
             <div className="mt-6">
               <h3 className="text-lg font-bold">Industries</h3>
               <ul className="gap-3 py-2">
-                <li className="text-sm font-light py-2 cursor-pointer leading-4"><Link href='#'>Industry</Link></li>
-                <li className="text-sm font-light py-2 cursor-pointer leading-4"><Link href='#'>Industry</Link></li>
-                <li className="text-sm font-light py-2 cursor-pointer leading-4"><Link href='#'>Industry</Link></li>
+                <li className="text-sm font-light py-2 cursor-pointer leading-4">
+                  <Link href="#">Industry</Link>
+                </li>
+                <li className="text-sm font-light py-2 cursor-pointer leading-4">
+                  <Link href="#">Industry</Link>
+                </li>
+                <li className="text-sm font-light py-2 cursor-pointer leading-4">
+                  <Link href="#">Industry</Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -119,7 +157,12 @@ export const ServiceMegamenu: React.FC<ServiceProps> = ({ service }) => {
             <div>
               <h3 className="text-lg font-medium mb-4">Web Development</h3>
               <ul>
-                {["Web Designing", "App Development", "WordPress", "Data Migration"].map((item, index) => (
+                {[
+                  "Web Designing",
+                  "App Development",
+                  "WordPress",
+                  "Data Migration",
+                ].map((item, index) => (
                   <motion.li
                     key={index}
                     whileHover={{ scale: 1.05, color: "#A855F7" }}
@@ -134,9 +177,15 @@ export const ServiceMegamenu: React.FC<ServiceProps> = ({ service }) => {
             <div className="mt-6">
               <h3 className="text-lg font-bold">Industries</h3>
               <ul className="gap-3 py-2">
-                <li className="text-sm font-light py-2 cursor-pointer leading-4"><Link href='#'>Industry</Link></li>
-                <li className="text-sm font-light py-2 cursor-pointer leading-4"><Link href='#'>Industry</Link></li>
-                <li className="text-sm font-light py-2 cursor-pointer leading-4"><Link href='#'>Industry</Link></li>
+                <li className="text-sm font-light py-2 cursor-pointer leading-4">
+                  <Link href="#">Industry</Link>
+                </li>
+                <li className="text-sm font-light py-2 cursor-pointer leading-4">
+                  <Link href="#">Industry</Link>
+                </li>
+                <li className="text-sm font-light py-2 cursor-pointer leading-4">
+                  <Link href="#">Industry</Link>
+                </li>
               </ul>
             </div>
           </div>

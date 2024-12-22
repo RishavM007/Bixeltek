@@ -40,19 +40,19 @@ export const Header = () => {
                   </a>
                 </li>
                 <li className="flex items-center py-7">
-                  <Link href="/googleadsman" className="text-white/70 hover:text-white transition">
+                  <Link href="/industries" className="text-white/70 hover:text-white transition">
                     Industries
                   </Link>
                 </li>
                 <li className="flex items-center py-7">
-                  <a href="#" className="text-white/70 hover:text-white transition">
+                  <Link href="" className="text-white/70 hover:text-white transition">
                     Case Studies <i className="fa-solid fa-chevron-down text-xs ml-1"></i>
-                  </a>
+                  </Link>
                 </li>
                 <li className="flex items-center py-7">
-                  <a href="#" className="text-white/70 hover:text-white transition">
+                  <Link href="/blog" className="text-white/70 hover:text-white transition">
                     Blog
-                  </a>
+                  </Link>
                 </li>
                 <li className="flex items-center py-7 lg:inline">
                   <Link href='/about' className="text-white/70 hover:text-white transition">
