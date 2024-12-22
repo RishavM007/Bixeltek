@@ -15,7 +15,7 @@ export default function BlogIndex() {
         {
             id: 2,
             title: "Top 5 SEO Strategies",
-            description: "Boost your website's traffic with these proven search engine optimization techniques."
+            description: "Boost your website traffic with these proven search engine optimization techniques."
         },
         {
             id: 3,
