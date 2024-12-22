@@ -25,7 +25,7 @@ export default function BlogIndex() {
         {
             id: 4,
             title: "Social Media Growth Hacks",
-            description: "Quick and effective tips to expand your brand's presence on social platforms."
+            description: "Quick and effective tips to expand your brands presence on social platforms."
         },
         {
             id: 5,
