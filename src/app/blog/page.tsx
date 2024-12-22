@@ -170,7 +170,7 @@ export default function BlogIndex() {
 
                 </div>
             </section>
-            <section className="max-w-[90%] md:max-w-[80%] lg:max-w-[70%] mx-auto mt-44 md:mt-24 lg:mt-44 mb-10 md:mb-16 lg:mb-20">
+            <section className="max-w-[90%] md:max-w-[80%] lg:max-w-[70%] xl:container mx-auto mt-44 md:mt-24 lg:mt-44 mb-10 md:mb-16 lg:mb-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="flex flex-col gap-y-10 md:gap-y-14">
                         {posts.slice(0, Math.ceil(posts.length / 2)).map((post) => (
