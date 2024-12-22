@@ -64,68 +64,68 @@ export default function BlogIndex() {
         <>
             {/* Hero Section */}
             <section>
-                <div className="relative isolate mt-[-120px] mb-[-70px] overflow-hidden bg-black h-[100vh] border-b border-fuchsia-600 md:h-[100vh] lg:h-[120vh] xl:h-[70vh] flex items-center justify-center">
+                <div className="relative isolate mt-[-20px] md:mt-[-60px] lg:mt-[-120px] mb-[-70px] overflow-hidden bg-black h-[100vh] border-b border-fuchsia-600 md:h-[100vh] lg:h-[120vh] xl:h-[70vh] flex items-center justify-center">
+                    <motion.div
+                        className="absolute w-8 sm:w-10 md:w-14 h-2 sm:h-3 md:h-4 bg-purple-500 top-[20%] left-[-15px] sm:left-[-20px] md:left-[-25px]"
+                        animate={{ scaleX: [0, 10, 0] }}
+                        transition={{
+                            duration: 6,
+                            repeat: Infinity,
+                            repeatType: "loop",
+                            ease: "easeInOut",
+                        }}
+                    />
+                    <motion.div
+                        className="absolute w-6 sm:w-8 md:w-8 h-2 sm:h-3 md:h-4 bg-violet-500 top-[30%] left-[-15px] sm:left-[-20px] md:left-[-25px]"
+                        animate={{ scaleX: [0, 10, 0] }}
+                        transition={{
+                            duration: 6,
+                            repeat: Infinity,
+                            repeatType: "loop",
+                            ease: "easeInOut",
+                        }}
+                    />
+                    <motion.div
+                        className="absolute w-6 sm:w-8 md:w-8 h-2 sm:h-3 md:h-4 bg-purple-500 top-[30%] right-[-15px] sm:right-[-20px] md:right-[-25px]"
+                        animate={{ scaleX: [0, 10, 0] }}
+                        transition={{
+                            duration: 6,
+                            repeat: Infinity,
+                            repeatType: "loop",
+                            ease: "easeInOut",
+                        }}
+                    />
+                    <motion.div
+                        className="absolute w-8 sm:w-10 md:w-12 h-2 sm:h-3 md:h-4 bg-purple-500 top-[60%] right-[-15px] sm:right-[-20px] md:right-[-25px]"
+                        animate={{ scaleX: [0, 10, 0] }}
+                        transition={{
+                            duration: 6,
+                            repeat: Infinity,
+                            repeatType: "loop",
+                            ease: "easeInOut",
+                        }}
+                    />
+                    <motion.div
+                        className="absolute w-2 sm:w-3 md:w-4 h-6 sm:h-8 md:h-10 bg-purple-500 bottom-[-15px] sm:bottom-[-20px] md:bottom-[-25px] left-[10%] sm:left-[15%] md:left-[20%]"
+                        animate={{ scaleY: [0, 10, 0] }}
+                        transition={{
+                            duration: 6,
+                            repeat: Infinity,
+                            repeatType: "loop",
+                            ease: "easeInOut",
+                        }}
+                    />
+                    <motion.div
+                        className="absolute w-2 sm:w-3 md:w-4 h-12 sm:h-14 md:h-16 bg-indigo-600 bottom-[-15px] sm:bottom-[-20px] md:bottom-[-25px] left-[70%] sm:left-[75%] md:left-[80%]"
+                        animate={{ scaleY: [0, 10, 0] }}
+                        transition={{
+                            duration: 6,
+                            repeat: Infinity,
+                            repeatType: "loop",
+                            ease: "easeInOut",
+                        }}
+                    />
 
-                    <motion.div
-                        className="absolute w-14 h-4 bg-purple-500 top-[20%] left-[-25px]"
-                        animate={{ scaleX: [0, 10, 0] }}
-                        transition={{
-                            duration: 6,
-                            repeat: Infinity,
-                            repeatType: 'loop',
-                            ease: 'easeInOut',
-                        }}
-                    />
-                    <motion.div
-                        className="absolute w-8 h-4 bg-violet-500 top-[30%] left-[-25px]"
-                        animate={{ scaleX: [0, 10, 0] }}
-                        transition={{
-                            duration: 6,
-                            repeat: Infinity,
-                            repeatType: 'loop',
-                            ease: 'easeInOut',
-                        }}
-                    />
-                    <motion.div
-                        className="absolute w-8 h-4 bg-purple-500 top-[30%] right-[-25px]"
-                        animate={{ scaleX: [0, 10, 0] }}
-                        transition={{
-                            duration: 6,
-                            repeat: Infinity,
-                            repeatType: 'loop',
-                            ease: 'easeInOut',
-                        }}
-                    />
-                    <motion.div
-                        className="absolute w-12 h-4 bg-purple-500 top-[60%] right-[-25px]"
-                        animate={{ scaleX: [0, 10, 0] }}
-                        transition={{
-                            duration: 6,
-                            repeat: Infinity,
-                            repeatType: 'loop',
-                            ease: 'easeInOut',
-                        }}
-                    />
-                    <motion.div
-                        className="absolute w-4 h-10 bg-purple-500 bottom-[-25px] left-[20%]"
-                        animate={{ scaleY: [0, 10, 0] }}
-                        transition={{
-                            duration: 6,
-                            repeat: Infinity,
-                            repeatType: 'loop',
-                            ease: 'easeInOut',
-                        }}
-                    />
-                    <motion.div
-                        className="absolute w-4 h-16 bg-indigo-600 bottom-[-25px] left-[80%]"
-                        animate={{ scaleY: [0, 10, 0] }}
-                        transition={{
-                            duration: 6,
-                            repeat: Infinity,
-                            repeatType: 'loop',
-                            ease: 'easeInOut',
-                        }}
-                    />
                     <svg
                         className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
                         aria-hidden="true">
@@ -170,23 +170,22 @@ export default function BlogIndex() {
 
                 </div>
             </section>
-            <section className="max-w-[70%] mx-auto mt-44 mb-20">
-    <div className="grid grid-cols-2 gap-8">
-       
-        <div className="flex flex-col gap-y-8">
-            {posts.slice(0, Math.ceil(posts.length / 2)).map((post) => (
-                <Blogcards key={post.id} title={post.title} description={post.description} />
-            ))}
-        </div>
+            <section className="max-w-[90%] md:max-w-[80%] lg:max-w-[70%] mx-auto mt-44 md:mt-24 lg:mt-44 mb-10 md:mb-16 lg:mb-20">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="flex flex-col gap-y-10 md:gap-y-14">
+                        {posts.slice(0, Math.ceil(posts.length / 2)).map((post) => (
+                            <Blogcards key={post.id} title={post.title} description={post.description} />
+                        ))}
+                    </div>
 
-        
-        <div className="flex flex-col pt-16 gap-y-8">
-            {posts.slice(Math.ceil(posts.length / 2)).map((post) => (
-                <Blogcards key={post.id} title={post.title} description={post.description} />
-            ))}
-        </div>
-    </div>
-</section>
+                    <div className="flex flex-col gap-y-10 md:gap-y-14 pt-8 md:pt-16">
+                        {posts.slice(Math.ceil(posts.length / 2)).map((post) => (
+                            <Blogcards key={post.id} title={post.title} description={post.description} />
+                        ))}
+                    </div>
+                </div>
+            </section>
+
 
 
         </>
