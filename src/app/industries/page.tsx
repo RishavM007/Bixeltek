@@ -15,7 +15,7 @@ export default function Industries() {
                         Transforming Industries with Digital Marketing
                     </h1>
                     <p className="text-gray-700 dark:text-gray-300 mx-auto max-w-2xl">
-                        From startups to global enterprises, we specialize in creating tailored strategies that drive engagement, amplify reach, and deliver measurable results. Let's redefine your digital journey.
+                        From startups to global enterprises, we specialize in creating tailored strategies that drive engagement, amplify reach, and deliver measurable results. Lets redefine your digital journey.
                     </p>
                     <div className="flex justify-center items-center flex-wrap mx-auto gap-4">
                         <Link href="#" className="flex items-center h-12 px-6 rounded-full bg-purple-300 backdrop-blur-2xl text-black border border-black">
