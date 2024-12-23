@@ -1,5 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
+import { MdOutlineHealthAndSafety } from "react-icons/md";
+import { FaCar, FaTree, FaBroom, FaBuilding, FaTooth } from "react-icons/fa";
+
+
 
 export default function Industries() {
     return (
@@ -80,9 +84,85 @@ export default function Industries() {
                     </div>
                 </div>
             </section>
-            <section>
-              
+
+            <section className="py-20 bg-black z-10">
+                <div className="w-full relative flex items-stretch justify-between">
+
+                    <div className="w-3/5 relative py-5 text-white" style={{ height: "600px" }}>
+
+                        <div className="absolute top-[20px]   left-[-650px] xl:left-[-800px] hover:left-[-50px] transition-all duration-700 flex items-center justify-between bg-purple-500 p-8  hover:shadow-purple-custom w-[90%] h-16 rounded-full">
+                            <span className="font-semibold text-lg ml-20">Healthcare</span>
+                            <span className="text-xl border border-black p-3 rounded-full">
+                                <i className="text-black">
+                                    <MdOutlineHealthAndSafety />
+                                </i>
+                            </span>
+                        </div>
+
+
+                        <div className="absolute top-[100px] left-[-650px] xl:left-[-800px] flex items-center justify-between hover:left-[-50px] transition-all duration-700 bg-blue-500 p-8 w-[90%] h-16 rounded-full">
+                            <span className="font-semibold text-lg ml-20">Automobiles</span>
+                            <span className="text-xl border border-black p-3 rounded-full">
+                                <i className="text-black">
+                                    <FaCar />
+                                </i>
+                            </span>
+                        </div>
+
+
+                        <div className="absolute top-[180px] left-[-650px] xl:left-[-800px] flex items-center hover:left-[-50px] transition-all duration-700 justify-between bg-green-500 p-8 w-[90%] h-16 rounded-full">
+                            <span className="font-semibold text-lg ml-20">Cleaning Companies</span>
+                            <span className="text-xl border border-black p-3 rounded-full">
+                                <i className="text-black">
+                                    <FaBroom />
+                                </i>
+                            </span>
+                        </div>
+
+
+                        <div className="absolute top-[260px] left-[-650px] xl:left-[-800px] flex items-center hover:left-[-50px] transition-all duration-700 justify-between bg-yellow-500 p-8 w-[90%] h-16 rounded-full">
+                            <span className="font-semibold text-lg ml-20">Roofing Companies</span>
+                            <span className="text-xl border border-black p-3 rounded-full">
+                                <i className="text-black">
+                                    <FaBuilding />
+                                </i>
+                            </span>
+                        </div>
+
+
+                        <div className="absolute top-[340px] left-[-650px] xl:left-[-800px] flex items-center hover:left-[-50px] transition-all duration-700 justify-between bg-fuchsia-500 p-8 w-[90%] h-16 rounded-full">
+                            <span className="font-semibold text-lg ml-20">Lawn Care & Landscaping</span>
+                            <span className="text-xl border border-black p-3 rounded-full">
+                                <i className="text-black">
+                                    <FaTree />
+                                </i>
+                            </span>
+                        </div>
+
+
+                        <div className="absolute top-[420px] left-[-650px] xl:left-[-800px] flex items-center hover:left-[-50px] transition-all duration-700 justify-between bg-red-500 p-4 w-[90%] h-16 rounded-full">
+                            <span className="font-semibold ml-20">Dental Clinic</span>
+                            <span className="text-xl border border-black p-3 rounded-full">
+                                <i className="text-black">
+                                    <FaTooth />
+                                </i>
+                            </span>
+                        </div>
+                    </div>
+                    <div className="w-2/5 absolute top-[20%] right-[15%] xl:right-[22%] flex py-5 justify-end items-center">
+                        <div className="flex flex-col items-end">                    
+                            <h1 className="rotate-90 text-fuchsia-600 text-[85px] xl:text-[100px] font-bold">
+                                INDUSTRIES
+                            </h1>
+                            <h1 className="rotate-90 text-gray-600 text-[85px] xl:text-[100px] font-bold mr-[120px] xl:mr-[130px]">
+                                WE SERVE
+                            </h1>
+                        </div>
+                    </div>
+
+                </div>
             </section>
+
         </>
     );
 }
