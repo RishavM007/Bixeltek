@@ -302,9 +302,8 @@ export default function Home() {
                 </div>
             </section>
             {/* 80% Google Ads */}
-            <section>
-                <div className="bg-white flex flex-col md:flex-row items-center justify-between py-6 px-6 md:px-20 md:py-32">
-
+            <section className='bg-gray-100'>
+                <div className="bg-gray-100  flex flex-col md:flex-row items-center justify-between py-6 px-6 md:px-20 md:py-32">
                     <div className="text-center md:text-left md:w-1/2  space-y-4">
                         <h2 className="text-2xl lg:text-5xl font-bold text-gray-800 leading-[32px] lg:leading-[53px] tracking-tight">80% of Google Ads Budgets Are Wasted Without Strategic Management.</h2>
                         <p className="text-gray-600 text-sm lg:text-xl pt-3">
