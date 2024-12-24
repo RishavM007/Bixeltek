@@ -18,7 +18,7 @@ export const Googleadecarosel = () => {
                         
                         <div className=' flex flex-1 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent)]'>
                             <motion.div
-                                initial={{ translateX: '50%' }}
+                                initial={{ translateX: '-50%' }}
                                 animate={{ translateX: '0' }}
                                 transition={{
                                     repeat: Infinity,
