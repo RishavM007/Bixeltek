@@ -1,13 +1,18 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
+import { Googleadecarosel } from '@/components/Googleadecarosel';
 import rocket from '@/assets/rb_3704.png';
+import laptop from '@/assets/carlos-muza-hpjSkU2UYSU-unsplash.jpg'
+import Teamimg from '@/assets/pexels-fauxels-3182834.jpg'
+import { Googlecard } from '@/components/Cards/Googleadscards';
 import { motion } from 'framer-motion';
 import HoverDevCards from '@/components/Hovercards';
 import myplaceholder from '@/assets/pexels-emilio-garcia-96280844-29700658.jpg';
 import { FaChartLine, FaChartPie, FaChartBar, FaQuoteLeft, FaClock, FaHandshake, FaShieldAlt, FaUserTie } from "react-icons/fa";
 import { Line, Pie } from "react-chartjs-2";
-import {Accordion} from '@/components/Faq'
+import { Timeline } from '@/components/timeline';
+import { Accordion } from '@/components/Faq'
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, ArcElement } from "chart.js";
 import Link from 'next/link';
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, ArcElement);
@@ -18,7 +23,7 @@ const lineChartData = {
         {
             label: "ROI Growth",
             data: [100, 120, 150, 170, 190, 200],
-            borderColor: "rgb(147, 51, 234)",
+            borderColor: "rgb(0, 0, 0",
             tension: 0.1
         }
     ]
@@ -29,34 +34,86 @@ const lineChartData2 = {
         {
             label: "ROI Growth",
             data: [100, 120, 110, 170, 150, 190],
-            borderColor: "rgb(147, 51, 234)",
+            borderColor: "rgb(0, 0, 0",
             tension: 0.1
         },
         {
             label: "Traffic",
             data: [120, 140, 110, 150, 180, 200],
-            borderColor: "rgb(147, 51, 234)",
+            borderColor: "rgb(0, 0, 0)",
             tension: 0.1
         }
     ]
 }
 
-const pieChartData = {
-    labels: ["Traffic", "Leads", "Conversions", "ROI"],
-    datasets: [
-        {
-            data: [40, 35, 25, 50],
-            backgroundColor: [
-                "rgba(147, 51, 234, 0.8)",
-                "rgba(168, 85, 247, 0.8)",
-                "rgba(192, 132, 252, 0.8)",
-                "rgba(192, 90, 252, 0.8)"
-            ]
-        }
-    ]
-};
 
 export default function Home() {
+    const data = [
+        {
+            title: "Step 1: Set Goals",
+            content: (
+                <div>
+                    <p className="text-neutral-800 text-sm md:text-lg font-normal">
+                        Define your advertising objectives, such as increasing website traffic, generating leads, or boosting sales.Clearly outline your target audience and what you aim to achieve with your Google Ads campaign.
+                    </p>
+                </div>
+            ),
+        },
+        {
+            title: "Step 2: Keyword Research",
+            content: (
+                <div>
+                    <p className="text-neutral-800 text-sm md:text-lg font-normal mb-8">
+                        Use tools like Google Keyword Planner to find relevant keywords for your campaign.Focus on keywords with high search intent that align with your goals.
+                    </p>
+                </div>
+            ),
+        },
+        {
+            title: "Step 3: Create Ad Groups",
+            content: (
+                <div>
+                    <p className="text-neutral-800  text-sm md:text-lg font-normal mb-8">
+                        Organize your keywords into tightly themed ad groups for better relevance and performance.Each ad group should focus on a specific set of related keywords.
+                    </p>
+
+                </div>
+            ),
+        },
+        {
+            title: "Step 4: Write Compelling Ads",
+            content: (
+                <div>
+                    <p className="text-neutral-800  text-sm md:text-lg font-normal mb-8">
+                        Create eye-catching ad copy that includes your keywords and a clear call-to-action.Ensure your ads match the intent of the keywords and resonate with your target audience.
+                    </p>
+                </div>
+            ),
+        },
+        {
+            title: "Step 5: Set Up Landing Pages",
+            content: (
+                <div>
+                    <p className="text-neutral-800  text-sm md:text-lg font-normal mb-8">
+                        Design user-friendly landing pages that align with your ad copy and goals.Optimize landing pages for conversions with clear headlines, relevant content, and strong CTAs.
+                    </p>
+
+                </div>
+            ),
+        },
+        {
+            title: "Step 6: Monitor and Optimize",
+            content: (
+                <div>
+                    <p className="text-neutral-800  text-sm md:text-lg font-normal mb-8">
+                        Track your campaign performance using metrics like CTR, CPC, and conversion rates. Adjust bids, refine keywords, and tweak ad copy to improve results continuously.
+                    </p>
+
+                </div>
+            ),
+        },
+    ];
+
     return (
         <>
             <section>
@@ -94,10 +151,10 @@ export default function Home() {
                         ></div>
                     </div>
                     <div className="max-w-full px-1  text-center mb-[-120px] lg:max-w-5xl xl:max-w-7xl z-30">
-                        <h1 className="text-2xl font-bold tracking-tight text-white md:text-4xl xl:text-7xl">
+                        <h1 className="text-2xl font-bold tracking-tight text-white md:text-4xl xl:text-6xl">
                             Drive <span className="text-purple-500 px-1 leading-4">300%</span>More Traffic with Precision Google Ads Management by Bixeltek!
                         </h1>
-                        <p className="mt-10 text-sm lg:text-lg  xl:text-3xl leading-8 text-gray-200 ">
+                        <p className="mt-10 text-sm lg:text-lg  xl:text-2xl leading-8 text-gray-200 ">
                             Based in <span className="text-purple-600 px-1">Hyderabad</span>, trusted by 50+ businesses for scalable ad performance.
                         </p>
 
@@ -110,6 +167,141 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            <section>
+                <div className='flex flex-row  justify-between bg-white'>
+                    <div className="w-1/3 relative">
+                        <motion.div
+                            className="absolute w-2 sm:w-3 md:w-3 h-10 bg-[#4285F4] top-0  right-0 origin-top"
+                            animate={{ scaleY: [0, 10, 0] }}
+                            transition={{
+                                duration: 8,
+                                repeat: Infinity,
+                                repeatType: "loop",
+                                ease: "easeInOut",
+                            }}
+                        />
+                        <Image src={Teamimg} alt="Team" />
+                    </div>
+
+
+                    <div className="w-1/3 flex flex-col items-start px-10 xl:px-16 py-10 xl:py-16 bg-gray-100">
+                        <h1 className="text-4xl lg:text-4xl xl:text-4xl xl:leading-[50px] font-bold text-left my-10 xl:my-14 text-zinc-700">
+                            Google Ads Agency Certified by{" "}
+                            <span className="text-[#4285F4]">G</span>
+                            <span className="text-[#EA4335]">o</span>
+                            <span className="text-[#FFBB00]">o</span>
+                            <span className="text-[#4285F4]">g</span>
+                            <span className="text-[#34AB53]">l</span>
+                            <span className="text-[#EA4335]">e</span>
+                        </h1>
+                        <p className="text-left mt-3 xl:mt-0 xl:text-lg mb-7 font-sans text-gray-700 leading-7">
+                            We hold the Google Partner certification, which confirms our adherence to
+                            all quality standards set by Google Ads for campaign management.
+                        </p>
+                        <p className="text-left mb-7 font-sans xl:text-lg  text-gray-700 leading-7">
+                            Additionally, this certification demonstrates that our team of experts
+                            possesses the necessary qualifications under the Google Partners agency
+                            program.
+                        </p>
+                        <p className="text-left font-sans xl:text-lg text-gray-700 leading-7">
+                            We will analyze your specific needs and suggest the most effective
+                            strategies on the platform to ensure optimal profitability.
+                        </p>
+                        <a
+                            href="https://www.google.com/partners/agency?id=2188074075"
+                            target="_blank"
+                            className="mt-10 flex justify-start"
+                        >
+                            <img
+                                src="https://www.gstatic.com/partners/badge/images/2024/PartnerBadgeClickable.svg"
+                                alt="Google Partner Badge"
+                                className="w-auto h-auto"
+                            />
+                        </a>
+                    </div>
+                    <div className="w-1/3 relative flex flex-col gap-14 px-10 pb-20 md:pt-16 xl:pt-36">
+                        <motion.div
+                            className="absolute w-2 sm:w-3 md:w-3 h-12 bg-[#EA4335] bottom-0 left-0 origin-bottom"
+                            animate={{ scaleY: [0, 10, 0] }}
+                            transition={{
+                                duration: 10,
+                                repeat: Infinity,
+                                repeatType: "loop",
+                                ease: "easeInOut",
+                            }}
+                        />
+                        <div className="flex flex-col items-center text-center">
+                            <h2 className="text-4xl xl:text-[44px] xl:leading-[44px] my-2 font-bold text-zinc-700">5+</h2>
+                            <p className="font-raleway text-gray-900 leading-6 tracking-wide text-sm xl:text-[17px] uppercase">Years creating campaigns</p>
+                            <p className=" text-gray-700 tracking-wide my-1 text-sm xl:text-lg">
+                                In Google Ads, the experience is a degree
+                            </p>
+                        </div>
+
+                        <div className="flex flex-col items-center text-center">
+                            <h2 className="text-4xl xl:text-[44px] xl:leading-[44px] my-2 font-bold text-zinc-700">0</h2>
+                            <p className="font-raleway text-gray-900 leading-6 tracking-wide uppercase text-sm xl:text-[17px]">Months of permanence</p>
+                            <p className=" text-gray-700 tracking-wide my-1 text-sm xl:text-lg">
+                                Our service does not have permanence
+                            </p>
+                        </div>
+
+                        <div className="flex flex-col items-center text-center">
+                            <h2 className="text-4xl xl:text-[44px] xl:leading-[44px] my-2 font-bold text-zinc-700">4</h2>
+                            <p className="font-raleway text-gray-900 leading-6 tracking-wide uppercase xl:text-[17px] text-sm">Experts</p>
+                            <p className=" text-gray-700 tracking-wide my-1 text-sm xl:text-lg">
+                                A large team of certified professionals
+                            </p>
+                        </div>
+
+                        <div className="flex flex-col items-center text-center">
+                            <h2 className="text-4xl xl:text-[44px] xl:leading-[44px] my-2 font-bold text-zinc-700">12</h2>
+                            <p className="font-raleway text-gray-900 leading-6 tracking-wide xl:text-[17px] uppercase text-sm">Years with us</p>
+                            <p className=" text-gray-700 my-1 tracking-wide text-sm xl:text-lg">
+                                Each customer is with us for an average of 12 years
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className='bg-white py-10'>
+                <div className='flex flex-col max-w-[90%] items-start justify-center bg-gray-100 rounded-s-3xl py-10 ml-auto'>
+                    <div className='flex flex-row'>
+                        <div className='w-2/3 px-20 xl:px-24 py-10 xl:py-20'>
+                            <h3 className='text-4xl font-bold text-gray-800 mb-4'>
+                                Why Google Ads PPC is Essential for Your Business?
+                            </h3>
+                            <p className='text-[17px] pt-3 xl:pt-4  xl:text-xl pr-14 xl:pr-16  text-gray-700 leading-[36px]'>
+                                Google Ads PPC offers instant visibility, targeted advertising, and measurable results, allowing businesses to drive traffic, enhance brand awareness, and achieve cost-effective, scalable growth. With precise targeting, real-time analytics, and the ability to optimize campaigns, it provides a competitive edge and improves conversion rates, ensuring maximum ROI.
+                            </p>
+                        </div>
+                        <div className='w-1/3'>
+                            <Image src={laptop} alt='Google Ads PPC' className=' shadow-lg' />
+                        </div>
+                    </div>
+                    <Timeline data={data} />
+                    <div className='flex w-full justify-center items-center'>
+                        <button className="backdrop-blur-3xl uppercase border bg-black text-white font-normal text-sm py-2 px-4 md:px-6 md:py-3 md:text-md rounded-lg  ">
+                            <span>
+                                I want to start a project<i className="fa-solid fa-arrow-right ml-2" id='get_a_quote'></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section className='bg-white py-20'>
+                <Googlecard />
+            </section>
+            <section className='bg-white py-20'>
+                <Googleadecarosel />
+            </section>
+            <section>
+                <div>
+
+                </div>
+            </section>
+            {/* 80% Google Ads */}
             <section>
                 <div className="bg-white flex flex-col md:flex-row items-center justify-between py-6 px-6 md:px-20 md:py-32">
 
@@ -137,6 +329,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            {/* End 80% Google Ads */}
             <section>
                 <div className="bg-white flex flex-col pt-10 pb-20 items-center">
                     <div className="text-center flex flex-col max-w-5xl">
@@ -193,23 +386,19 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-                            <div className="">
-                                <div className='bg-white p-6 rounded-xl my-2 shadow-lg border-2 border-purple-600'>
-                                <h3 className="text-xl font-bold text-gray-900 mb-4">ROI Growth Trend</h3>
-                                <Line data={lineChartData} options={{ responsive: true }} />
+                        <div className="mb-16">
+                            <div className="flex flex-row gap-10 w-full items-center">
+                                <div className="bg-white p-6 rounded-xl my-2 shadow-lg border-2 border-purple-600 w-full">
+                                    <h3 className="text-xl font-bold text-gray-900 mb-4">ROI Growth Trend</h3>
+                                    <Line data={lineChartData} options={{ responsive: true }} />
                                 </div>
-                                <div className='bg-white p-6 rounded-xl my-2 shadow-lg border-2 border-purple-600'>
-                                <h3 className="text-xl font-bold text-gray-900 mb-4">ROI Growth Trend</h3>
-                                <Line data={lineChartData2} options={{ responsive: true }} />
+                                <div className="bg-white p-6 rounded-xl my-2 shadow-lg border-2 border-purple-600 w-full">
+                                    <h3 className="text-xl font-bold text-gray-900 mb-4">ROI Growth Trend</h3>
+                                    <Line data={lineChartData2} options={{ responsive: true }} />
                                 </div>
-                            </div>
-
-                            <div className="bg-white p-6 rounded-xl shadow-lg border-2 border-purple-600">
-                                <h3 className="text-xl font-bold text-gray-900 mb-4">Results Distribution</h3>
-                                <Pie data={pieChartData} options={{ responsive: true }} />
                             </div>
                         </div>
+
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
                             <div className="bg-white p-8 rounded-xl shadow-lg border-2 border-purple-600">
@@ -235,7 +424,7 @@ export default function Home() {
                 </div>
             </section>
             <section>
-              <Accordion />
+                <Accordion />
             </section>
         </>
     );

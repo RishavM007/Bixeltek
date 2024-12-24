@@ -10,3 +10,10 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+  :root {
+    --font-inter: 'Inter', sans-serif;
+    --font-raleway: 'Raleway', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+  }
+  

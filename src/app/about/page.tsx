@@ -14,7 +14,7 @@ export default function AboutPage() {
 
     return (
         <div className="bg-black text-white">
-            {/* Hero Section */}
+            
             <section>
                 <div className="relative isolate mt-[-120px] mb-[-70px] overflow-hidden bg-black h-[100vh] md:h-[100vh] lg:h-[100vh] xl:h-[70vh] flex items-center justify-center">
                     <svg

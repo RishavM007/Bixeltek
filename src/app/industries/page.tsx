@@ -29,7 +29,7 @@ export default function Industries() {
                             Discover More
                         </Link>
                     </div>
-                    <div className="text-left grid lg:grid-cols-3 p-6 rounded-2xl bg-gradient-to-tr from-gray-50 shadow-purple-custom2 to-gray-200 dark:from-purple-100 dark:to-purple-100 border border-gray-100 dark:border-gray-800 max-w-2xl lg:max-w-5xl mx-auto lg:divide-x divide-y lg:divide-y-0 divide-gray-300 dark:divide-gray-800">
+                    <div className="text-left grid lg:grid-cols-3 p-6 rounded-2xl bg-gradient-to-tr from-gray-50 shadow-purple-custom to-gray-200 dark:from-purple-200 dark:to-white border border-gray-100 dark:border-gray-800 max-w-2xl lg:max-w-5xl mx-auto lg:divide-x divide-y lg:divide-y-0 divide-gray-300 dark:divide-gray-800">
                         <div className="flex items-start gap-6 lg:pr-6 pb-6 lg:pb-0">
                             <div className="w-10">
                                 <span className="p-3 rounded-xl bg-gray-200 dark:bg-gray-800 flex w-max text-gray-800 dark:text-gray-200">
@@ -86,71 +86,71 @@ export default function Industries() {
             </section>
 
             <section className="py-20 bg-black z-10">
-                <div className="w-full relative flex items-stretch justify-between">
+                <div className="w-full relative flex items-center justify-between">
 
-                    <div className="w-3/5 relative py-5 text-white" style={{ height: "600px" }}>
+                    <div className="w-3/5 relative py-5 pr-10 pl-16 flex flex-col gap-6 text-white" style={{ height: "600px" }}>
 
-                        <div className="absolute top-[20px]   left-[-650px] xl:left-[-800px] hover:left-[-50px] transition-all duration-700 flex items-center justify-between bg-purple-500 p-8  hover:shadow-purple-custom w-[90%] h-16 rounded-full">
-                            <span className="font-semibold text-lg ml-20">Healthcare</span>
-                            <span className="text-xl border border-black p-3 rounded-full">
-                                <i className="text-black">
+                        <div className=" flex items-center justify-between bg-black border border-fuchsia-500 p-9  hover:shadow-purple-custom w-[90%] h-16 rounded-full">
+                            <span className="font-semibold text-lg ">Healthcare</span>
+                            <span className="text-xl p-3 rounded-full">
+                                <i className="text-fuchsia-500 text-3xl">
                                     <MdOutlineHealthAndSafety />
                                 </i>
                             </span>
                         </div>
 
 
-                        <div className="absolute top-[100px] left-[-650px] xl:left-[-800px] flex items-center justify-between hover:left-[-50px] transition-all duration-700 bg-blue-500 p-8 w-[90%] h-16 rounded-full">
-                            <span className="font-semibold text-lg ml-20">Automobiles</span>
-                            <span className="text-xl border border-black p-3 rounded-full">
-                                <i className="text-black">
+                        <div className="flex items-center justify-between  bg-black border border-fuchsia-500 p-9 w-[90%] h-16 rounded-full">
+                            <span className="font-semibold text-lg">Automobiles</span>
+                            <span className="text-xl p-3 rounded-full">
+                                <i className="text-fuchsia-500 text-3xl">
                                     <FaCar />
                                 </i>
                             </span>
                         </div>
 
 
-                        <div className="absolute top-[180px] left-[-650px] xl:left-[-800px] flex items-center hover:left-[-50px] transition-all duration-700 justify-between bg-green-500 p-8 w-[90%] h-16 rounded-full">
-                            <span className="font-semibold text-lg ml-20">Cleaning Companies</span>
-                            <span className="text-xl border border-black p-3 rounded-full">
-                                <i className="text-black">
+                        <div className="flex items-center  justify-between bg-black border border-fuchsia-500 p-9 w-[90%] h-16 rounded-full">
+                            <span className="font-semibold text-lg ">Cleaning Companies</span>
+                            <span className="text-xl  p-3 rounded-full">
+                                <i className="text-fuchsia-500 text-3xl">
                                     <FaBroom />
                                 </i>
                             </span>
                         </div>
 
 
-                        <div className="absolute top-[260px] left-[-650px] xl:left-[-800px] flex items-center hover:left-[-50px] transition-all duration-700 justify-between bg-yellow-500 p-8 w-[90%] h-16 rounded-full">
-                            <span className="font-semibold text-lg ml-20">Roofing Companies</span>
-                            <span className="text-xl border border-black p-3 rounded-full">
-                                <i className="text-black">
+                        <div className=" flex items-center  justify-between bg-black border border-fuchsia-500 p-9 w-[90%] h-16 rounded-full">
+                            <span className="font-semibold text-lg">Roofing Companies</span>
+                            <span className="text-xl  p-3 rounded-full">
+                                <i className="text-fuchsia-500 text-3xl">
                                     <FaBuilding />
                                 </i>
                             </span>
                         </div>
 
 
-                        <div className="absolute top-[340px] left-[-650px] xl:left-[-800px] flex items-center hover:left-[-50px] transition-all duration-700 justify-between bg-fuchsia-500 p-8 w-[90%] h-16 rounded-full">
-                            <span className="font-semibold text-lg ml-20">Lawn Care & Landscaping</span>
-                            <span className="text-xl border border-black p-3 rounded-full">
-                                <i className="text-black">
+                        <div className=" flex items-center  justify-between bg-black border border-fuchsia-500 p-9 w-[90%] h-16 rounded-full">
+                            <span className="font-semibold text-lg ">Lawn Care & Landscaping</span>
+                            <span className="text-xl  p-3 rounded-full">
+                                <i className="text-fuchsia-500 text-3xl">
                                     <FaTree />
                                 </i>
                             </span>
                         </div>
 
 
-                        <div className="absolute top-[420px] left-[-650px] xl:left-[-800px] flex items-center hover:left-[-50px] transition-all duration-700 justify-between bg-red-500 p-4 w-[90%] h-16 rounded-full">
-                            <span className="font-semibold ml-20">Dental Clinic</span>
-                            <span className="text-xl border border-black p-3 rounded-full">
-                                <i className="text-black">
+                        <div className=" flex items-center justify-between bg-black border border-fuchsia-500 p-9 w-[90%] h-16 rounded-full">
+                            <span className="font-semibold ">Dental Clinic</span>
+                            <span className="text-xl p-3 rounded-full">
+                                <i className="text-fuchsia-500 text-3xl">
                                     <FaTooth />
                                 </i>
                             </span>
                         </div>
                     </div>
-                    <div className="w-2/5 absolute top-[20%] right-[15%] xl:right-[22%] flex py-5 justify-end items-center">
-                        <div className="flex flex-col items-end">                    
+                    <div className="w-2/5 flex py-5 justify-end items-center">
+                        <div className="flex flex-col items-end">
                             <h1 className="rotate-90 text-fuchsia-600 text-[85px] xl:text-[100px] font-bold">
                                 INDUSTRIES
                             </h1>
