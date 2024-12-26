@@ -1,7 +1,17 @@
+'use client';
 import Link from "next/link";
 import Image from "next/image";
+import roof from "@/assets/pexels-pixabay-45206.jpg";
+import Dental from "@/assets/ozkan-guner-AWqHc49SU-c-unsplash.jpg";
+import lawn from "@/assets/pexels-theshuttervision-17326319.jpg";
+import cleaning from '@/assets/pexels-tima-miroshnichenko-6196235.jpg'
+import doc from "@/assets/pexels-shvetsa-4225880.jpg";
+import Accordion from "@/components/Faq";
+import car from "@/assets/pexels-mayday-1545743.jpg"
 import { MdOutlineHealthAndSafety } from "react-icons/md";
 import { FaCar, FaTree, FaBroom, FaBuilding, FaTooth } from "react-icons/fa";
+import { RiLineChartLine, RiInstagramLine, RiCalendarEventLine, RiHeart2Line } from 'react-icons/ri';
+
 
 
 
@@ -89,65 +99,70 @@ export default function Industries() {
                 <div className="w-full relative flex items-center justify-between">
 
                     <div className="w-3/5 relative py-5 pr-10 pl-16 flex flex-col gap-6 text-white" style={{ height: "600px" }}>
-
-                        <div className=" flex items-center justify-between bg-black border border-fuchsia-500 p-9  hover:shadow-purple-custom w-[90%] h-16 rounded-full">
-                            <span className="font-semibold text-lg ">Healthcare</span>
+                        <a href="#health">
+                        <div className=" flex items-center justify-between bg-sky-200 hover:translate-x-4 transition-all duration-300 cursor-pointer   p-9  hover:shadow-purple-custom w-[90%] h-16 rounded-full">
+                            <span className="font-semibold text-lg text-black ">Healthcare</span>
                             <span className="text-xl p-3 rounded-full">
-                                <i className="text-fuchsia-500 text-3xl">
+                                <i className="text-black text-3xl">
                                     <MdOutlineHealthAndSafety />
                                 </i>
                             </span>
                         </div>
+                        </a>
 
-
-                        <div className="flex items-center justify-between  bg-black border border-fuchsia-500 p-9 w-[90%] h-16 rounded-full">
-                            <span className="font-semibold text-lg">Automobiles</span>
+                        <a href="#car">
+                        <div className="flex items-center justify-between  bg-rose-200  hover:translate-x-4 transition-all duration-300 cursor-pointer  p-9 w-[90%] h-16 rounded-full">
+                            <span className="font-semibold text-lg text-black">Automobiles</span>
                             <span className="text-xl p-3 rounded-full">
-                                <i className="text-fuchsia-500 text-3xl">
+                                <i className="text-black text-3xl">
                                     <FaCar />
                                 </i>
                             </span>
                         </div>
+                        </a>
 
-
-                        <div className="flex items-center  justify-between bg-black border border-fuchsia-500 p-9 w-[90%] h-16 rounded-full">
-                            <span className="font-semibold text-lg ">Cleaning Companies</span>
+                        <a href="#cleaning">
+                        <div className="flex items-center  justify-between bg-yellow-200 hover:translate-x-4 transition-all duration-300 cursor-pointer   p-9 w-[90%] h-16 rounded-full">
+                            <span className="font-semibold text-lg text-black ">Cleaning Companies</span>
                             <span className="text-xl  p-3 rounded-full">
-                                <i className="text-fuchsia-500 text-3xl">
+                                <i className="text-black text-3xl">
                                     <FaBroom />
                                 </i>
                             </span>
                         </div>
+                        </a>
 
-
-                        <div className=" flex items-center  justify-between bg-black border border-fuchsia-500 p-9 w-[90%] h-16 rounded-full">
-                            <span className="font-semibold text-lg">Roofing Companies</span>
+                        <a href="#roof">
+                        <div className=" flex items-center  justify-between bg-orange-200  hover:translate-x-4 transition-all duration-300 cursor-pointer  p-9 w-[90%] h-16 rounded-full">
+                            <span className="font-semibold text-lg text-black">Roofing Companies</span>
                             <span className="text-xl  p-3 rounded-full">
-                                <i className="text-fuchsia-500 text-3xl">
+                                <i className="text-black text-3xl">
                                     <FaBuilding />
                                 </i>
                             </span>
                         </div>
+                        </a>
 
-
-                        <div className=" flex items-center  justify-between bg-black border border-fuchsia-500 p-9 w-[90%] h-16 rounded-full">
-                            <span className="font-semibold text-lg ">Lawn Care & Landscaping</span>
+                        <a href="#lawn">
+                        <div className=" flex items-center  justify-between bg-green-200 hover:translate-x-4 transition-all duration-300 cursor-pointer   p-9 w-[90%] h-16 rounded-full">
+                            <span className="font-semibold text-lg text-black">Lawn Care & Landscaping</span>
                             <span className="text-xl  p-3 rounded-full">
-                                <i className="text-fuchsia-500 text-3xl">
+                                <i className="text-black text-3xl">
                                     <FaTree />
                                 </i>
                             </span>
                         </div>
-
-
-                        <div className=" flex items-center justify-between bg-black border border-fuchsia-500 p-9 w-[90%] h-16 rounded-full">
-                            <span className="font-semibold ">Dental Clinic</span>
+                        </a>
+                        <a href="#dental">
+                        <div className=" flex items-center justify-between bg-fuchsia-200  hover:translate-x-4 transition-all duration-300 cursor-pointer   p-9 w-[90%] h-16 rounded-full">
+                            <span className="font-semibold text-lg text-black">Dental Clinic</span>
                             <span className="text-xl p-3 rounded-full">
-                                <i className="text-fuchsia-500 text-3xl">
+                                <i className="text-black text-3xl ">
                                     <FaTooth />
                                 </i>
                             </span>
                         </div>
+                        </a>
                     </div>
                     <div className="w-2/5 flex py-5 justify-end items-center">
                         <div className="flex flex-col items-end">
@@ -162,7 +177,515 @@ export default function Industries() {
 
                 </div>
             </section>
+            <section id="dental" className="relative bg-white  rounded-2xl text-black w-[90%] ml-[-5%] shadow-purple-custom2 py-10 my-20 pl-8 overflow-hidden">
+                <div className="flex flex-col md:flex-row items-center justify-between">
 
+                    <div className="w-full md:w-1/2">
+                        <Image
+                            src={Dental}
+                            alt="Dental Clinic"
+                            className="rounded-xl"
+                        />
+                    </div>
+                    <div className="w-full md:w-1/2 mx-10 mt-6 flex flex-col md:mt-0 md:ml-8  text-zinc-800">
+                        <h2 className="text-4xl font-bold mb-6 mr-10 text-purple-600">Boost Your Dental Clinic's Visibility</h2>
+                        <p className="text-[17px] leading-relaxed mb-6 mr-10">
+                            At <strong>Bixeltek</strong>, we specialize in digital marketing strategies that help
+                            dental clinics attract more patients, enhance their online presence, and grow their
+                            practice. From SEO to social media campaigns, we tailor solutions to fit your unique
+                            needs.
+                        </p>
+                        <ul className="space-y-12 mt-10">
+
+                            <li className="flex items-center group">
+                                <div className="flex items-center justify-center bg-gray-100 text-purple-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiLineChartLine className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-purple-700 transition-colors">
+                                        SEO Optimization
+                                    </h3>
+                                    <p className="text-gray-700 text-sm tracking-wide xl:text-[16px] group-hover:text-zinc-800 transition-colors">
+                                        Rank higher in local searches and attract more patients.
+                                    </p>
+                                </div>
+                            </li>
+
+
+                            <li className="flex items-center group">
+                                <div className="flex items-center justify-center bg-gray-100 text-purple-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiInstagramLine className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-purple-700 transition-colors">
+                                        Social Media Campaigns
+                                    </h3>
+                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-zinc-800 transition-colors">
+                                        Engage with your audience on Instagram, Facebook, and more.
+                                    </p>
+                                </div>
+                            </li>
+
+
+                            <li className="flex items-center group">
+                                <div className="flex items-center justify-center bg-gray-100 text-purple-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiCalendarEventLine className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-purple-700 transition-colors">
+                                        Appointment Booking
+                                    </h3>
+                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-zinc-800 transition-colors">
+                                        Streamline patient scheduling with integrated solutions.
+                                    </p>
+                                </div>
+                            </li>
+
+
+                            <li className="flex items-center group">
+                                <div className="flex items-center  justify-center bg-gray-100 text-purple-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiHeart2Line className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg font-semibold tracking-widest group-hover:text-purple-700 transition-colors">
+                                        Reputation Management
+                                    </h3>
+                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-zinc-800 transition-colors">
+                                        Build trust with positive reviews and patient testimonials.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <button className="mt-16 bg-purple-700 text-white px-6 py-3 rounded hover:bg-purple-800 transition">
+                            Learn More
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+            <section id="roof" className="relative bg-white rounded-l-2xl text-black w-[90%] ml-[10%] shadow-purple-custom2 py-10 my-10 pr-6 overflow-hidden">
+                <div className="flex flex-col md:flex-row items-center justify-between">
+                    {/* Content Section */}
+                    <div className="w-full md:w-1/2 mx-10 mt-6 flex flex-col md:mt-0 md:ml-8 text-zinc-800">
+                        <h2 className="text-4xl font-bold mb-6 text-orange-600">Elevate Your Roofing Business</h2>
+                        <p className="text-[17px] leading-relaxed mb-6">
+                            At <strong>Bixeltek</strong>, we specialize in digital marketing solutions tailored for roofing companies.
+                            Boost your online presence, attract more leads, and grow your business with strategies designed for your unique needs.
+                        </p>
+
+                        {/* Features List */}
+                        <ul className="space-y-12 mt-10">
+                            <li className="flex items-center group">
+                                <div className="flex items-center justify-center bg-gray-100 text-orange-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiLineChartLine className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-orange-700 transition-colors">
+                                        SEO Optimization
+                                    </h3>
+                                    <p className="text-gray-700 text-sm tracking-wide xl:text-[16px] group-hover:text-zinc-800 transition-colors">
+                                        Rank higher in local searches and attract more clients in need of roofing services.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li className="flex items-center group">
+                                <div className="flex items-center justify-center bg-gray-100 text-orange-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiInstagramLine className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-orange-700 transition-colors">
+                                        Social Media Campaigns
+                                    </h3>
+                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-zinc-800 transition-colors">
+                                        Showcase your roofing projects on platforms like Instagram and Facebook.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li className="flex items-center group">
+                                <div className="flex items-center justify-center bg-gray-100 text-orange-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiCalendarEventLine className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-orange-700 transition-colors">
+                                        Lead Management
+                                    </h3>
+                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-zinc-800 transition-colors">
+                                        Capture and manage roofing inquiries with ease using integrated tools.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li className="flex items-center group">
+                                <div className="flex items-center justify-center bg-gray-100 text-orange-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiHeart2Line className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg font-semibold tracking-widest group-hover:text-orange-700 transition-colors">
+                                        Reputation Building
+                                    </h3>
+                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-zinc-800 transition-colors">
+                                        Strengthen your brand with positive client reviews and testimonials.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <button className="mt-16 bg-orange-600 text-white px-6 py-3 rounded hover:bg-orange-700 transition">
+                            Learn More
+                        </button>
+                    </div>
+                    <div className="w-full md:w-1/2">
+                        <Image
+                            src={roof}
+                            alt="Roofing Services"
+                            className="rounded-xl overflow-hidden"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section id="lawn" className="relative bg-white rounded-2xl text-black w-[90%] ml-[-5%] shadow-green-200 py-10 my-20 pl-8 overflow-hidden">
+                <div className="flex flex-col md:flex-row items-center justify-between">
+
+                    {/* Image Section */}
+                    <div className="w-full md:w-1/2">
+                        <Image
+                            src={lawn} // Replace with the actual lawn care image URL or import
+                            alt="Lawn and Cleaning Services"
+                            className="rounded-xl"
+                        />
+                    </div>
+
+                    {/* Content Section */}
+                    <div className="w-full md:w-1/2 mx-10 mt-6 flex flex-col md:mt-0 md:ml-8 text-zinc-800">
+                        <h2 className="text-4xl font-bold mb-6 mr-10 text-green-700">Transform Your Lawn and Cleaning Business</h2>
+                        <p className="text-[17px] leading-relaxed mb-6 mr-10">
+                            At <strong>Bixeltek</strong>, we craft tailored digital marketing strategies to help lawn care
+                            and cleaning companies grow their client base, enhance their online visibility,
+                            and increase bookings. From local SEO to engaging social campaigns, we bring you closer to your customers.
+                        </p>
+
+                        {/* Features Section */}
+                        <ul className="space-y-12 mt-10">
+
+                            <li className="flex items-center group">
+                                <div className="flex items-center justify-center bg-gray-200 text-green-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiLineChartLine className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-green-700 transition-colors">
+                                        Local SEO
+                                    </h3>
+                                    <p className="text-gray-700 text-sm tracking-wide xl:text-[16px] group-hover:text-zinc-800 transition-colors">
+                                        Appear in local searches and attract more homeowners in your area.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li className="flex items-center group">
+                                <div className="flex items-center justify-center bg-gray-200 text-green-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiInstagramLine className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-green-700 transition-colors">
+                                        Social Media Marketing
+                                    </h3>
+                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-zinc-800 transition-colors">
+                                        Share your before-and-after transformations to inspire and engage your audience.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li className="flex items-center group">
+                                <div className="flex items-center justify-center bg-gray-200 text-green-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiCalendarEventLine className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-green-700 transition-colors">
+                                        Online Booking
+                                    </h3>
+                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-zinc-800 transition-colors">
+                                        Simplify appointment scheduling and manage bookings seamlessly.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li className="flex items-center group">
+                                <div className="flex items-center justify-center bg-gray-200 text-green-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiHeart2Line className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg font-semibold tracking-widest group-hover:text-green-700 transition-colors">
+                                        Client Trust
+                                    </h3>
+                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-zinc-800 transition-colors">
+                                        Build credibility with client testimonials and showcase your expertise.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <button className="mt-16 bg-green-700 text-white px-6 py-3 rounded hover:bg-green-800 transition">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section id="car" className="relative bg-gray-100 rounded-l-2xl text-black w-[90%] ml-[10%] shadow-blue-custom py-10 my-10 pr-6 overflow-hidden">
+                <div className="flex flex-col md:flex-row items-center justify-between">
+                    {/* Content Section */}
+                    <div className="w-full md:w-1/2 mx-10 mt-6 flex flex-col md:mt-0 md:ml-8 text-gray-800">
+                        <h2 className="text-4xl font-bold mb-6 text-rose-700">Drive Your Automobile Business Forward</h2>
+                        <p className="text-[17px] leading-relaxed mb-6">
+                            At <strong>Bixeltek</strong>, we offer customized digital marketing solutions for automobile companies. Increase your visibility, attract more customers, and accelerate your business growth with strategies designed for the automotive industry.
+                        </p>
+
+                        {/* Features List */}
+                        <ul className="space-y-12 mt-10">
+                            <li className="flex items-center group">
+                                <div className="flex items-center justify-center bg-gray-200 text-rose-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiLineChartLine className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-rose-700 transition-colors">
+                                        SEO Optimization
+                                    </h3>
+                                    <p className="text-gray-600 text-sm tracking-wide xl:text-[16px] group-hover:text-gray-800 transition-colors">
+                                        Boost your ranking in search engines and drive more traffic to your dealership.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li className="flex items-center group">
+                                <div className="flex items-center justify-center bg-gray-200 text-rose-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiInstagramLine className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-rose-700 transition-colors">
+                                        Social Media Marketing
+                                    </h3>
+                                    <p className="text-gray-600 tracking-wide text-sm xl:text-[16px] group-hover:text-gray-800 transition-colors">
+                                        Showcase your latest models and offers on Instagram, Facebook, and more.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li className="flex items-center group">
+                                <div className="flex items-center justify-center bg-gray-200 text-rose-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiCalendarEventLine className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-rose-700 transition-colors">
+                                        Lead Management
+                                    </h3>
+                                    <p className="text-gray-600 tracking-wide text-sm xl:text-[16px] group-hover:text-gray-800 transition-colors">
+                                        Streamline inquiries and manage customer leads effectively.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li className="flex items-center group">
+                                <div className="flex items-center justify-center bg-gray-200 text-rose-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiHeart2Line className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg font-semibold tracking-widest group-hover:text-rose-700 transition-colors">
+                                        Brand Reputation
+                                    </h3>
+                                    <p className="text-gray-600 tracking-wide text-sm xl:text-[16px] group-hover:text-gray-800 transition-colors">
+                                        Build trust and credibility with positive customer testimonials.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <button className="mt-16 bg-rose-700 text-white px-6 py-3 rounded hover:bg-rose-800 transition">
+                            Learn More
+                        </button>
+                    </div>
+                    <div className="w-full md:w-1/2">
+                        <Image
+                            src={car}
+                            alt="Automobile Services"
+                            className="rounded-xl overflow-hidden"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section id="health" className="relative bg-blue-50 rounded-2xl text-black w-[90%] ml-[-5%] shadow-blue-200 py-10 my-20 pl-8 overflow-hidden">
+                <div className="flex flex-col md:flex-row items-center justify-between">
+
+                    {/* Image Section */}
+                    <div className="w-full md:w-1/2">
+                        <Image
+                            src={doc} // Replace with the actual healthcare image URL or import
+                            alt="Healthcare Services"
+                            className="rounded-xl"
+                        />
+                    </div>
+
+                    {/* Content Section */}
+                    <div className="w-full md:w-1/2 mx-10 mt-6 flex flex-col md:mt-0 md:ml-8 text-gray-800">
+                        <h2 className="text-4xl font-bold mb-6 mr-10 text-blue-700">
+                            Empowering Healthcare for a Healthier Tomorrow
+                        </h2>
+                        <p className="text-[17px] leading-relaxed mb-6 mr-10">
+                            At <strong>Bixeltek</strong>, we specialize in digital solutions for healthcare providers. Enhance patient engagement, streamline operations, and build trust with innovative marketing strategies tailored to your practice.
+                        </p>
+
+                        {/* Features Section */}
+                        <ul className="space-y-12 mt-10">
+
+                            <li className="flex items-center group">
+                                <div className="flex items-center justify-center bg-blue-100 text-blue-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiLineChartLine className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-blue-700 transition-colors">
+                                        Patient-Centered SEO
+                                    </h3>
+                                    <p className="text-gray-700 text-sm tracking-wide xl:text-[16px] group-hover:text-gray-800 transition-colors">
+                                        Improve your online presence and help patients find you easily.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li className="flex items-center group">
+                                <div className="flex items-center justify-center bg-blue-100 text-blue-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiInstagramLine className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-blue-700 transition-colors">
+                                        Social Media Awareness
+                                    </h3>
+                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-gray-800 transition-colors">
+                                        Share health tips and build a connection with your community.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li className="flex items-center group">
+                                <div className="flex items-center justify-center bg-blue-100 text-blue-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiCalendarEventLine className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-blue-700 transition-colors">
+                                        Online Appointments
+                                    </h3>
+                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-gray-800 transition-colors">
+                                        Simplify scheduling and provide seamless care to your patients.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li className="flex items-center group">
+                                <div className="flex items-center justify-center bg-blue-100 text-blue-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiHeart2Line className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg font-semibold tracking-widest group-hover:text-blue-700 transition-colors">
+                                        Build Trust
+                                    </h3>
+                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-gray-800 transition-colors">
+                                        Showcase patient testimonials and your commitment to quality care.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <button className="mt-16 bg-blue-700 text-white px-6 py-3 rounded hover:bg-blue-800 transition">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section id="clean" className="relative bg-white rounded-l-2xl text-black w-[90%] ml-[10%] shadow-blue-200 py-10 my-10 pr-6 overflow-hidden">
+                <div className="flex flex-col md:flex-row items-center justify-between">
+                    {/* Content Section */}
+                    <div className="w-full md:w-1/2 mx-10 mt-6 flex flex-col md:mt-0 md:ml-8 text-black">
+                        <h2 className="text-4xl font-bold mb-6 text-yellow-500">Elevate Your Cleaning Services</h2>
+                        <p className="text-[17px] leading-relaxed mb-6">
+                            At <strong>Bixeltek</strong>, we empower cleaning companies with targeted marketing strategies.
+                            Gain visibility, attract more clients, and establish a lasting impression with our tailored solutions.
+                        </p>
+
+                        {/* Features List */}
+                        <ul className="space-y-12 mt-10">
+                            <li className="flex items-center group">
+                                <div className="flex items-center justify-center  text-yellow-500 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiLineChartLine className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-yellow-500 transition-colors">
+                                        SEO Optimization
+                                    </h3>
+                                    <p className=" text-sm tracking-wide xl:text-[16px] transition-colors">
+                                        Increase your visibility on search engines and attract local clients effectively.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li className="flex items-center group">
+                                <div className="flex items-center justify-center  text-yellow-500 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiInstagramLine className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-yellow-500 transition-colors">
+                                        Social Media Presence
+                                    </h3>
+                                    <p className=" tracking-wide text-sm xl:text-[16px]  transition-colors">
+                                        Highlight your services and success stories to engage your audience effectively.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li className="flex items-center group">
+                                <div className="flex items-center justify-center  text-yellow-500 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiCalendarEventLine className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-yellow-500 transition-colors">
+                                        Online Booking
+                                    </h3>
+                                    <p className=" tracking-wide text-sm xl:text-[16px]  transition-colors">
+                                        Simplify scheduling with an intuitive online booking system.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li className="flex items-center group">
+                                <div className="flex items-center justify-center  text-yellow-500 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiHeart2Line className="text-2xl" />
+                                </div>
+                                <div className="ml-5">
+                                    <h3 className="text-lg font-semibold tracking-widest group-hover:text-yellow-500 transition-colors">
+                                        Client Trust
+                                    </h3>
+                                    <p className=" tracking-wide text-sm xl:text-[16px]  transition-colors">
+                                        Showcase testimonials to build credibility and enhance client trust.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <button className="mt-16 bg-yellow-500 text-white px-6 py-3 rounded hover:bg-yellow-600 transition">
+                            Learn More
+                        </button>
+                    </div>
+
+                    {/* Image Section */}
+                    <div className="w-full md:w-1/2">
+                        <Image
+                            src={cleaning} // Replace with your cleaning service image
+                            alt="Cleaning Services"
+                            className="rounded-xl overflow-hidden"
+                        />
+                    </div>
+                </div>
+            </section>
         </>
     );
 }
