@@ -188,7 +188,7 @@ export default function Industries() {
                         />
                     </div>
                     <div className="w-full md:w-1/2 mx-10 mt-6 flex flex-col md:mt-0 md:ml-8  text-zinc-800">
-                        <h2 className="text-4xl font-bold mb-6 mr-10 text-purple-600">Boost Your Dental Clinic's Visibility</h2>
+                        <h2 className="text-4xl font-bold mb-6 mr-10 text-purple-600">Boost Your Dental Clinic&apos;s Visibility</h2>
                         <p className="text-[17px] leading-relaxed mb-6 mr-10">
                             At <strong>Bixeltek</strong>, we specialize in digital marketing strategies that help
                             dental clinics attract more patients, enhance their online presence, and grow their
