@@ -1,21 +1,18 @@
 'use client';
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import roof from "@/assets/pexels-pixabay-45206.jpg";
 import Dental from "@/assets/ozkan-guner-AWqHc49SU-c-unsplash.jpg";
 import lawn from "@/assets/pexels-theshuttervision-17326319.jpg";
 import cleaning from '@/assets/pexels-tima-miroshnichenko-6196235.jpg'
 import doc from "@/assets/pexels-shvetsa-4225880.jpg";
-import Accordion from "@/components/Faq";
+import CarouselSection from "@/components/industriescarosel";
 import car from "@/assets/pexels-mayday-1545743.jpg"
-import { MdOutlineHealthAndSafety } from "react-icons/md";
-import { FaCar, FaTree, FaBroom, FaBuilding, FaTooth } from "react-icons/fa";
 import { RiLineChartLine, RiInstagramLine, RiCalendarEventLine, RiHeart2Line } from 'react-icons/ri';
-
-
-
-
 export default function Industries() {
+    
+
     return (
         <>
             <section className="min-h-max mt-[-130px] bg-black">
@@ -94,100 +91,102 @@ export default function Industries() {
                     </div>
                 </div>
             </section>
+            <CarouselSection />
+            <section id="dental" className="relative bg-white rounded-2xl text-black w-[80%] ml-[-5%] shadow-purple-custom2 py-7 mb-20 pl-8 overflow-hidden">
 
-            <section className="py-20 bg-black z-10">
-                <div className="w-full relative flex items-center justify-between">
+                {/* Top Floating Circles */}
+                <motion.div
+                    className="absolute w-10 rounded-full h-10 bg-orange-500"
+                    initial={{ y: -10, x: 0 }}
+                    animate={{ y: [-20, 20, -20], x: [0, 10, -10] }}
+                    transition={{ repeat: Infinity, duration: 5 }}
+                    style={{ top: '5%', left: '90%' }}
+                />
+                <motion.div
+                    className="absolute w-5 rounded-full h-5 bg-blue-500"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [10, -10, 10], x: [-10, 10, -10] }}
+                    transition={{ repeat: Infinity, duration: 6 }}
+                    style={{ top: '10%', left: '80%' }}
+                />
+                <motion.div
+                    className="absolute w-8 rounded-full h-8 bg-green-400"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [-15, 15, -15], x: [15, -15, 15] }}
+                    transition={{ repeat: Infinity, duration: 7 }}
+                    style={{ top: '15%', left: '60%' }}
+                />
+                <motion.div
+                    className="absolute w-6 rounded-full h-6 bg-purple-500"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [15, -15, 15], x: [-15, 15, -15] }}
+                    transition={{ repeat: Infinity, duration: 8 }}
+                    style={{ top: '7%', left: '40%' }}
+                />
+                <motion.div
+                    className="absolute w-4 rounded-full h-4 bg-yellow-400"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [-10, 10, -10], x: [10, -10, 10] }}
+                    transition={{ repeat: Infinity, duration: 6 }}
+                    style={{ top: '3%', left: '20%' }}
+                />
+                <motion.div
+                    className="absolute w-3 rounded-full h-3 bg-pink-500"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [10, -10, 10], x: [-10, 10, -10] }}
+                    transition={{ repeat: Infinity, duration: 9 }}
+                    style={{ top: '12%', left: '5%' }}
+                />
 
-                    <div className="w-3/5 relative py-5 pr-10 pl-16 flex flex-col gap-6 text-white" style={{ height: "600px" }}>
-                        <a href="#health">
-                        <div className=" flex items-center justify-between bg-sky-200 hover:translate-x-4 transition-all duration-300 cursor-pointer   p-9  hover:shadow-purple-custom w-[90%] h-16 rounded-full">
-                            <span className="font-semibold text-lg text-black ">Healthcare</span>
-                            <span className="text-xl p-3 rounded-full">
-                                <i className="text-black text-3xl">
-                                    <MdOutlineHealthAndSafety />
-                                </i>
-                            </span>
-                        </div>
-                        </a>
-
-                        <a href="#car">
-                        <div className="flex items-center justify-between  bg-rose-200  hover:translate-x-4 transition-all duration-300 cursor-pointer  p-9 w-[90%] h-16 rounded-full">
-                            <span className="font-semibold text-lg text-black">Automobiles</span>
-                            <span className="text-xl p-3 rounded-full">
-                                <i className="text-black text-3xl">
-                                    <FaCar />
-                                </i>
-                            </span>
-                        </div>
-                        </a>
-
-                        <a href="#cleaning">
-                        <div className="flex items-center  justify-between bg-yellow-200 hover:translate-x-4 transition-all duration-300 cursor-pointer   p-9 w-[90%] h-16 rounded-full">
-                            <span className="font-semibold text-lg text-black ">Cleaning Companies</span>
-                            <span className="text-xl  p-3 rounded-full">
-                                <i className="text-black text-3xl">
-                                    <FaBroom />
-                                </i>
-                            </span>
-                        </div>
-                        </a>
-
-                        <a href="#roof">
-                        <div className=" flex items-center  justify-between bg-orange-200  hover:translate-x-4 transition-all duration-300 cursor-pointer  p-9 w-[90%] h-16 rounded-full">
-                            <span className="font-semibold text-lg text-black">Roofing Companies</span>
-                            <span className="text-xl  p-3 rounded-full">
-                                <i className="text-black text-3xl">
-                                    <FaBuilding />
-                                </i>
-                            </span>
-                        </div>
-                        </a>
-
-                        <a href="#lawn">
-                        <div className=" flex items-center  justify-between bg-green-200 hover:translate-x-4 transition-all duration-300 cursor-pointer   p-9 w-[90%] h-16 rounded-full">
-                            <span className="font-semibold text-lg text-black">Lawn Care & Landscaping</span>
-                            <span className="text-xl  p-3 rounded-full">
-                                <i className="text-black text-3xl">
-                                    <FaTree />
-                                </i>
-                            </span>
-                        </div>
-                        </a>
-                        <a href="#dental">
-                        <div className=" flex items-center justify-between bg-fuchsia-200  hover:translate-x-4 transition-all duration-300 cursor-pointer   p-9 w-[90%] h-16 rounded-full">
-                            <span className="font-semibold text-lg text-black">Dental Clinic</span>
-                            <span className="text-xl p-3 rounded-full">
-                                <i className="text-black text-3xl ">
-                                    <FaTooth />
-                                </i>
-                            </span>
-                        </div>
-                        </a>
-                    </div>
-                    <div className="w-2/5 flex py-5 justify-end items-center">
-                        <div className="flex flex-col items-end">
-                            <h1 className="rotate-90 text-fuchsia-600 text-[85px] xl:text-[100px] font-bold">
-                                INDUSTRIES
-                            </h1>
-                            <h1 className="rotate-90 text-gray-600 text-[85px] xl:text-[100px] font-bold mr-[120px] xl:mr-[130px]">
-                                WE SERVE
-                            </h1>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-            <section id="dental" className="relative bg-white  rounded-2xl text-black w-[90%] ml-[-5%] shadow-purple-custom2 py-10 my-20 pl-8 overflow-hidden">
+                {/* Bottom Floating Circles */}
+                <motion.div
+                    className="absolute w-10 rounded-full h-10 bg-red-500"
+                    initial={{ y: 500, x: 500 }}
+                    animate={{ y: [-20, 20, -20], x: [20, -20, 20] }}
+                    transition={{ repeat: Infinity, duration: 9 }}
+                    style={{ bottom: '5%', left: '10%' }}
+                />
+                <motion.div
+                    className="absolute w-8 rounded-full h-8 bg-yellow-500"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [15, -15, 15], x: [-15, 15, -15] }}
+                    transition={{ repeat: Infinity, duration: 10 }}
+                    style={{ bottom: '10%', right: '15%' }}
+                />
+                <motion.div
+                    className="absolute w-6 rounded-full h-6 bg-blue-300"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [-10, 10, -10], x: [10, -10, 10] }}
+                    transition={{ repeat: Infinity, duration: 8 }}
+                    style={{ bottom: '15%', left: '40%' }}
+                />
+                <motion.div
+                    className="absolute w-4 rounded-full h-4 bg-green-500"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [10, -10, 10], x: [-10, 10, -10] }}
+                    transition={{ repeat: Infinity, duration: 6 }}
+                    style={{ bottom: '7%', left: '70%' }}
+                />
+                <motion.div
+                    className="absolute w-3 rounded-full h-3 bg-purple-300"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [-15, 15, -15], x: [15, -15, 15] }}
+                    transition={{ repeat: Infinity, duration: 7 }}
+                    style={{ bottom: '10%', right: '10%' }}
+                />
+                <motion.div
+                    className="absolute w-5 rounded-full h-5 bg-pink-400"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [20, -20, 20], x: [-20, 20, -20] }}
+                    transition={{ repeat: Infinity, duration: 9 }}
+                    style={{ bottom: '20%', left: '50%' }}
+                />
+                {/* Section Content */}
                 <div className="flex flex-col md:flex-row items-center justify-between">
-
-                    <div className="w-full md:w-1/2">
-                        <Image
-                            src={Dental}
-                            alt="Dental Clinic"
-                            className="rounded-xl"
-                        />
+                    <div className=" md:w-1/2">
+                        <Image src={Dental} alt="Dental Clinic" width={500} className="rounded-xl" />
                     </div>
-                    <div className="w-full md:w-1/2 mx-10 mt-6 flex flex-col md:mt-0 md:ml-8  text-zinc-800">
+                    <div className="w-full md:w-1/2 mx-10 mt-6 flex flex-col md:mt-0 md:ml-8 text-zinc-800">
                         <h2 className="text-4xl font-bold mb-6 mr-10 text-purple-600">Boost Your Dental Clinic&apos;s Visibility</h2>
                         <p className="text-[17px] leading-relaxed mb-6 mr-10">
                             At <strong>Bixeltek</strong>, we specialize in digital marketing strategies that help
@@ -196,7 +195,7 @@ export default function Industries() {
                             needs.
                         </p>
                         <ul className="space-y-12 mt-10">
-
+                            {/* Features */}
                             <li className="flex items-center group">
                                 <div className="flex items-center justify-center bg-gray-100 text-purple-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
                                     <RiLineChartLine className="text-2xl" />
@@ -210,8 +209,6 @@ export default function Industries() {
                                     </p>
                                 </div>
                             </li>
-
-
                             <li className="flex items-center group">
                                 <div className="flex items-center justify-center bg-gray-100 text-purple-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
                                     <RiInstagramLine className="text-2xl" />
@@ -225,50 +222,96 @@ export default function Industries() {
                                     </p>
                                 </div>
                             </li>
-
-
                             <li className="flex items-center group">
                                 <div className="flex items-center justify-center bg-gray-100 text-purple-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiCalendarEventLine className="text-2xl" />
+                                    <RiInstagramLine className="text-2xl" />
                                 </div>
                                 <div className="ml-5">
                                     <h3 className="text-lg tracking-widest font-semibold group-hover:text-purple-700 transition-colors">
-                                        Appointment Booking
+                                        Social Media Campaigns
                                     </h3>
                                     <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-zinc-800 transition-colors">
-                                        Streamline patient scheduling with integrated solutions.
+                                        Engage with your audience on Instagram, Facebook, and more.
                                     </p>
                                 </div>
                             </li>
-
-
                             <li className="flex items-center group">
-                                <div className="flex items-center  justify-center bg-gray-100 text-purple-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiHeart2Line className="text-2xl" />
+                                <div className="flex items-center justify-center bg-gray-100 text-purple-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
+                                    <RiInstagramLine className="text-2xl" />
                                 </div>
                                 <div className="ml-5">
-                                    <h3 className="text-lg font-semibold tracking-widest group-hover:text-purple-700 transition-colors">
-                                        Reputation Management
+                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-purple-700 transition-colors">
+                                        Social Media Campaigns
                                     </h3>
                                     <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-zinc-800 transition-colors">
-                                        Build trust with positive reviews and patient testimonials.
+                                        Engage with your audience on Instagram, Facebook, and more.
                                     </p>
                                 </div>
                             </li>
                         </ul>
-
                         <button className="mt-16 bg-purple-700 text-white px-6 py-3 rounded hover:bg-purple-800 transition">
                             Learn More
                         </button>
                     </div>
-
                 </div>
-            </section>
-            <section id="roof" className="relative bg-white rounded-l-2xl text-black w-[90%] ml-[10%] shadow-purple-custom2 py-10 my-10 pr-6 overflow-hidden">
+            </section>;
+
+            <section
+                id="roof"
+                className="relative bg-white rounded-l-2xl text-black w-[80%] ml-[20%] shadow-purple-custom2 py-7 my-10 pr-6 overflow-x-hidden"
+            >
+                {/* Random Floating Circles for Another Section */}
+                {/* Floating Circles Dominating the Left Side */}
+                <motion.div
+                    className="absolute w-12 rounded-full h-12 bg-teal-500"
+                    initial={{ y: -10, x: 0 }}
+                    animate={{ y: [-20, 20, -20], x: [0, 15, -15] }}
+                    transition={{ repeat: Infinity, duration: 7 }}
+                    style={{ top: '8%', left: '10%' }}
+                />
+                <motion.div
+                    className="absolute w-8 rounded-full h-8 bg-indigo-500"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [15, -15, 15], x: [-10, 10, -10] }}
+                    transition={{ repeat: Infinity, duration: 5 }}
+                    style={{ top: '18%', left: '5%' }}
+                />
+                <motion.div
+                    className="absolute w-8 rounded-full h-8 bg-sky-500"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [15, -15, 15], x: [-10, 10, -10] }}
+                    transition={{ repeat: Infinity, duration: 5 }}
+                    style={{ top: '10%', left: '50%' }}
+                />
+                <motion.div
+                    className="absolute w-6 rounded-full h-6 bg-amber-400"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [20, -20, 20], x: [-15, 15, -15] }}
+                    transition={{ repeat: Infinity, duration: 6 }}
+                    style={{ bottom: '15%', left: '15%' }}
+                />
+                <motion.div
+                    className="absolute w-10 rounded-full h-10 bg-rose-400"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [-25, 25, -25], x: [10, -10, 10] }}
+                    transition={{ repeat: Infinity, duration: 8 }}
+                    style={{ bottom: '5%', left: '5%' }}
+                />
+                <motion.div
+                    className="absolute w-5 rounded-full h-5 bg-lime-500"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [15, -15, 15], x: [-10, 10, -10] }}
+                    transition={{ repeat: Infinity, duration: 9 }}
+                    style={{ top: '10%', left: '20%' }}
+                />
+
+
                 <div className="flex flex-col md:flex-row items-center justify-between">
                     {/* Content Section */}
-                    <div className="w-full md:w-1/2 mx-10 mt-6 flex flex-col md:mt-0 md:ml-8 text-zinc-800">
-                        <h2 className="text-4xl font-bold mb-6 text-orange-600">Elevate Your Roofing Business</h2>
+                    <div className="w-full md:w-1/2 mx-12 mt-6 flex flex-col md:mt-0 text-zinc-800">
+                        <h2 className="text-4xl font-bold mb-6 text-orange-600">
+                            Elevate Your Roofing Business
+                        </h2>
                         <p className="text-[17px] leading-relaxed mb-6">
                             At <strong>Bixeltek</strong>, we specialize in digital marketing solutions tailored for roofing companies.
                             Boost your online presence, attract more leads, and grow your business with strategies designed for your unique needs.
@@ -337,22 +380,64 @@ export default function Industries() {
                             Learn More
                         </button>
                     </div>
+
+                    {/* Image Section */}
                     <div className="w-full md:w-1/2">
                         <Image
                             src={roof}
+                            width={500}
                             alt="Roofing Services"
                             className="rounded-xl overflow-hidden"
                         />
                     </div>
                 </div>
             </section>
-            <section id="lawn" className="relative bg-white rounded-2xl text-black w-[90%] ml-[-5%] shadow-green-200 py-10 my-20 pl-8 overflow-hidden">
+
+            <section id="lawn" className="relative bg-white rounded-2xl text-black w-[80%] ml-[-5%] shadow-green-200 py-7 my-20 pl-8 overflow-hidden">
+                {/* Floating Circles Dominating the Right Side */}
+                <motion.div
+                    className="absolute w-10 rounded-full h-10 bg-purple-500"
+                    initial={{ y: -10, x: 0 }}
+                    animate={{ y: [-20, 20, -20], x: [0, 15, -15] }}
+                    transition={{ repeat: Infinity, duration: 6 }}
+                    style={{ top: '10%', right: '8%' }}
+                />
+                <motion.div
+                    className="absolute w-8 rounded-full h-8 bg-cyan-400"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [20, -20, 20], x: [-10, 10, -10] }}
+                    transition={{ repeat: Infinity, duration: 5 }}
+                    style={{ top: '25%', right: '5%' }}
+                />
+                <motion.div
+                    className="absolute w-6 rounded-full h-6 bg-pink-600"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [10, -10, 10], x: [-15, 15, -15] }}
+                    transition={{ repeat: Infinity, duration: 7 }}
+                    style={{ bottom: '20%', right: '12%' }}
+                />
+                <motion.div
+                    className="absolute w-12 rounded-full h-12 bg-green-400"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [-25, 25, -25], x: [10, -10, 10] }}
+                    transition={{ repeat: Infinity, duration: 8 }}
+                    style={{ bottom: '10%', right: '8%' }}
+                />
+                <motion.div
+                    className="absolute w-5 rounded-full h-5 bg-yellow-500"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [15, -15, 15], x: [-10, 10, -10] }}
+                    transition={{ repeat: Infinity, duration: 6 }}
+                    style={{ top: '15%', right: '15%' }}
+                />
+
                 <div className="flex flex-col md:flex-row items-center justify-between">
 
                     {/* Image Section */}
                     <div className="w-full md:w-1/2">
                         <Image
-                            src={lawn} // Replace with the actual lawn care image URL or import
+                            src={lawn}
+                            width={500} // Replace with the actual lawn care image URL or import
                             alt="Lawn and Cleaning Services"
                             className="rounded-xl"
                         />
@@ -433,7 +518,52 @@ export default function Industries() {
                     </div>
                 </div>
             </section>
-            <section id="car" className="relative bg-gray-100 rounded-l-2xl text-black w-[90%] ml-[10%] shadow-blue-custom py-10 my-10 pr-6 overflow-hidden">
+            <section id="car" className="relative bg-gray-100 rounded-l-2xl text-black w-[80%] xl:w-[70%] ml-[20%] shadow-blue-custom py-7 my-10 pr-6 overflow-hidden">
+                {/* Floating Circles Dominating the Left Side */}
+                <motion.div
+                    className="absolute w-10 rounded-full h-10 bg-blue-500"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [-20, 20, -20], x: [0, 10, -10] }}
+                    transition={{ repeat: Infinity, duration: 6 }}
+                    style={{ top: '5%', left: '10%' }}
+                />
+                <motion.div
+                    className="absolute w-12 rounded-full h-12 bg-purple-400"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [-25, 25, -25], x: [0, 20, -20] }}
+                    transition={{ repeat: Infinity, duration: 8 }}
+                    style={{ bottom: '10%', left: '8%' }}
+                />
+                <motion.div
+                    className="absolute w-5 rounded-full h-5 bg-yellow-500"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [20, -20, 20], x: [-10, 10, -10] }}
+                    transition={{ repeat: Infinity, duration: 6 }}
+                    style={{ top: '30%', left: '18%' }}
+                />
+                <motion.div
+                    className="absolute w-7 rounded-full h-7 bg-pink-300"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [-15, 15, -15], x: [10, -10, 10] }}
+                    transition={{ repeat: Infinity, duration: 9 }}
+                    style={{ bottom: '5%', left: '12%' }}
+                />
+
+                <motion.div
+                    className="absolute w-9 rounded-full h-9 bg-red-500"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [25, -25, 25], x: [-15, 15, -15] }}
+                    transition={{ repeat: Infinity, duration: 7 }}
+                    style={{ top: '15%', left: '6%' }}
+                />
+                <motion.div
+                    className="absolute w-4 rounded-full h-4 bg-teal-400"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [-10, 10, -10], x: [10, -10, 10] }}
+                    transition={{ repeat: Infinity, duration: 5 }}
+                    style={{ bottom: '15%', left: '20%' }}
+                />
+
                 <div className="flex flex-col md:flex-row items-center justify-between">
                     {/* Content Section */}
                     <div className="w-full md:w-1/2 mx-10 mt-6 flex flex-col md:mt-0 md:ml-8 text-gray-800">
@@ -508,6 +638,7 @@ export default function Industries() {
                     <div className="w-full md:w-1/2">
                         <Image
                             src={car}
+                            width={500}
                             alt="Automobile Services"
                             className="rounded-xl overflow-hidden"
                         />
@@ -515,13 +646,72 @@ export default function Industries() {
                 </div>
             </section>
 
-            <section id="health" className="relative bg-blue-50 rounded-2xl text-black w-[90%] ml-[-5%] shadow-blue-200 py-10 my-20 pl-8 overflow-hidden">
+            <section id="health" className="relative bg-blue-50 rounded-2xl text-black w-[80%] ml-[-5%] shadow-blue-200 py-7 my-20 pl-8 overflow-hidden">
+                {/* Floating Circles Dominating the Right Side */}
+                <motion.div
+                    className="absolute w-12 rounded-full h-12 bg-orange-500"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [-20, 20, -20], x: [-10, 10, -10] }}
+                    transition={{ repeat: Infinity, duration: 7 }}
+                    style={{ top: '10%', right: '8%' }}
+                />
+                <motion.div
+                    className="absolute w-10 rounded-full h-10 bg-blue-600"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [15, -15, 15], x: [10, -10, 10] }}
+                    transition={{ repeat: Infinity, duration: 6 }}
+                    style={{ top: '25%', right: '5%' }}
+                />
+                <motion.div
+                    className="absolute w-8 rounded-full h-8 bg-purple-400"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [-25, 25, -25], x: [15, -15, 15] }}
+                    transition={{ repeat: Infinity, duration: 8 }}
+                    style={{ bottom: '15%', right: '10%' }}
+                />
+                <motion.div
+                    className="absolute w-6 rounded-full h-6 bg-green-500"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [20, -20, 20], x: [-20, 20, -20] }}
+                    transition={{ repeat: Infinity, duration: 5 }}
+                    style={{ bottom: '5%', right: '18%' }}
+                />
+                <motion.div
+                    className="absolute w-4 rounded-full h-4 bg-yellow-400"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [-15, 15, -15], x: [10, -10, 10] }}
+                    transition={{ repeat: Infinity, duration: 9 }}
+                    style={{ top: '35%', right: '12%' }}
+                />
+                <motion.div
+                    className="absolute w-9 rounded-full h-9 bg-pink-300"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [25, -25, 25], x: [-10, 10, -10] }}
+                    transition={{ repeat: Infinity, duration: 7 }}
+                    style={{ bottom: '25%', right: '15%' }}
+                />
+                <motion.div
+                    className="absolute w-7 rounded-full h-7 bg-red-500"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [10, -10, 10], x: [10, -10, 10] }}
+                    transition={{ repeat: Infinity, duration: 6 }}
+                    style={{ top: '5%', right: '20%' }}
+                />
+                <motion.div
+                    className="absolute w-5 rounded-full h-5 bg-teal-400"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [-20, 20, -20], x: [-15, 15, -15] }}
+                    transition={{ repeat: Infinity, duration: 8 }}
+                    style={{ bottom: '10%', right: '8%' }}
+                />
+
                 <div className="flex flex-col md:flex-row items-center justify-between">
 
                     {/* Image Section */}
                     <div className="w-full md:w-1/2">
                         <Image
-                            src={doc} // Replace with the actual healthcare image URL or import
+                            src={doc}
+                            width={500} // Replace with the actual healthcare image URL or import
                             alt="Healthcare Services"
                             className="rounded-xl"
                         />
@@ -602,7 +792,44 @@ export default function Industries() {
                     </div>
                 </div>
             </section>
-            <section id="clean" className="relative bg-white rounded-l-2xl text-black w-[90%] ml-[10%] shadow-blue-200 py-10 my-10 pr-6 overflow-hidden">
+            <section id="clean" className="relative bg-white rounded-l-2xl text-black w-[80%] ml-[20%] shadow-blue-200 py-7 my-10 pr-6 overflow-hidden">
+                {/* Floating Circles Dominating the Left Side */}
+                <motion.div
+                    className="absolute w-6 rounded-full h-6 bg-blue-500"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [20, -20, 20], x: [-20, 20, -20] }}
+                    transition={{ repeat: Infinity, duration: 5 }}
+                    style={{ bottom: '10%', left: '18%' }}
+                />
+                <motion.div
+                    className="absolute w-4 rounded-full h-4 bg-yellow-400"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [-15, 15, -15], x: [10, -10, 10] }}
+                    transition={{ repeat: Infinity, duration: 9 }}
+                    style={{ top: '40%', left: '10%' }}
+                />
+                <motion.div
+                    className="absolute w-9 rounded-full h-9 bg-pink-300"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [25, -25, 25], x: [-10, 10, -10] }}
+                    transition={{ repeat: Infinity, duration: 7 }}
+                    style={{ bottom: '30%', left: '15%' }}
+                />
+                <motion.div
+                    className="absolute w-7 rounded-full h-7 bg-red-500"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [10, -10, 10], x: [-10, 10, -10] }}
+                    transition={{ repeat: Infinity, duration: 6 }}
+                    style={{ top: '5%', left: '20%' }}
+                />
+                <motion.div
+                    className="absolute w-5 rounded-full h-5 bg-teal-400"
+                    initial={{ y: 0, x: 0 }}
+                    animate={{ y: [-20, 20, -20], x: [15, -15, 15] }}
+                    transition={{ repeat: Infinity, duration: 8 }}
+                    style={{ bottom: '15%', left: '7%' }}
+                />
+
                 <div className="flex flex-col md:flex-row items-center justify-between">
                     {/* Content Section */}
                     <div className="w-full md:w-1/2 mx-10 mt-6 flex flex-col md:mt-0 md:ml-8 text-black">
@@ -679,7 +906,8 @@ export default function Industries() {
                     {/* Image Section */}
                     <div className="w-full md:w-1/2">
                         <Image
-                            src={cleaning} // Replace with your cleaning service image
+                            src={cleaning}
+                            width={500} // Replace with your cleaning service image
                             alt="Cleaning Services"
                             className="rounded-xl overflow-hidden"
                         />

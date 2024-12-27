@@ -41,7 +41,7 @@ export const ServiceMegamenu: React.FC<ServiceProps> = ({ service }) => {
               <ul>
                 {[
                   { label: "Google Ads Management", link: "/googleadsman" },
-                  { label: "YT Ads Management", link: "#" },
+                  { label: "YT Ads Management", link: "/seo" },
                   { label: "CRO Audits", link: "#" },
                   { label: "EcommercePPC", link: "#" },
                   {
