@@ -83,6 +83,7 @@ export const ServiceMegamenu: React.FC<ServiceProps> = ({ service }) => {
               <ul>
                 {[
                   {label: "Social Media Management", link: "#"},
+                  {label:"Social Media Marketing",link:"#"},
                   {label:"Prototyping", link:"#"},
                   {label:"Wireframing", link:"#"},
                   {lable:"Graphic Design",link:"#"},
@@ -121,7 +122,6 @@ export const ServiceMegamenu: React.FC<ServiceProps> = ({ service }) => {
               <ul>
                 {[
                   "SEO",
-                  "Social Media Marketing",
                   "Content Marketing",
                   "Email Campaigns",
                 ].map((item, index) => (

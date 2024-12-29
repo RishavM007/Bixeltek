@@ -2,918 +2,297 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import roof from "@/assets/pexels-pixabay-45206.jpg";
-import Dental from "@/assets/ozkan-guner-AWqHc49SU-c-unsplash.jpg";
-import lawn from "@/assets/pexels-theshuttervision-17326319.jpg";
-import cleaning from '@/assets/pexels-tima-miroshnichenko-6196235.jpg'
-import doc from "@/assets/pexels-shvetsa-4225880.jpg";
+import cleaningcomp from "@/assets/digital marketing servies for cleaning companies.jpg";
+import oil from "@/assets/digital marketing for oil refinaries.jpg";
+import pet from "@/assets/digital marketing for pet stores.jpg";
+import { Screen } from "@/sections/Screen";
+import roofing from "@/assets/digital marketing for roofing industries.jpg";
+import dental from "@/assets/digital marketing for health care practices.jpg";
+import lawncare from "@/assets/digital marketing for lawn care services.jpg";
+import blackcar from "@/assets/digital marketing for car detailers.jpg";
+import { FaChartLine, FaCogs, FaUserTie, FaBullseye, FaMoneyBillWave, FaChartBar, FaSeedling, FaDatabase } from 'react-icons/fa';
+import healthcare from "@/assets/digital marketing for health care practices.jpg";
 import CarouselSection from "@/components/industriescarosel";
-import car from "@/assets/pexels-mayday-1545743.jpg"
+
 import { RiLineChartLine, RiInstagramLine, RiCalendarEventLine, RiHeart2Line } from 'react-icons/ri';
 export default function Industries() {
-    
+
+
+
+    const industries = [
+        { id: "healthcare", img: dental, text: "Healthcare" },
+        { id: "auto", img: blackcar, text: "Automobile" },
+        { id: "cleaning", img: cleaningcomp, text: "Cleaning Companies" },
+        { id: "roofing", img: roofing, text: "Roofing Companies" },
+        { id: "lawncare", img: lawncare, text: "Lawn Care" },
+        { id: "pet", img: pet, text: "Pet Stores" },
+        { id: "oil", img: oil, text: "Oil Refineries" },
+    ];
+    const cards = [
+        {
+            title: 'Proven Results',
+            description: 'Experience transformative outcomes that propel your business to new heights.',
+            icon: <FaChartLine size={50} />,
+        },
+        {
+            title: 'Customized Approach',
+            description: 'Tailored strategies designed specifically for your business goals and target audience.',
+            icon: <FaCogs size={50} />,
+        },
+        {
+            title: 'Industry Expertise',
+            description: 'Specialized knowledge to create strategies that resonate with your market.',
+            icon: <FaUserTie size={50} />,
+        },
+        {
+            title: 'Targeted Lead Generation',
+            description: 'Drive qualified leads and maximize conversions with strategic campaigns.',
+            icon: <FaBullseye size={50} />,
+        },
+        {
+            title: 'Cost-Effective Marketing',
+            description: 'Achieve higher ROI with efficient digital marketing strategies.',
+            icon: <FaMoneyBillWave size={50} />,
+        },
+        {
+            title: 'Measurable ROI',
+            description: 'Track success with detailed analytics for data-driven decision-making.',
+            icon: <FaChartBar size={50} />,
+        },
+        {
+            title: 'Continuous Growth',
+            description: 'Optimize strategies for sustainable, long-term business growth.',
+            icon: <FaSeedling size={50} />,
+        },
+        {
+            title: 'Data-driven Decision Making',
+            description: 'Utilize data analytics and insights to make informed decisions and continually optimize your digital marketing strategies.',
+            icon: <FaDatabase size={50} />,
+        },
+    ];
+
 
     return (
         <>
-            <section className="min-h-max mt-[-130px] bg-black">
-                <div className="absolute top-0 inset-x-0 h-64 flex items-start">
-                    <div className="h-24 w-2/3 bg-gradient-to-br from-purple-500 opacity-20 blur-2xl dark:from-purple-700 dark:invisible dark:opacity-40"></div>
-                    <div className="h-52 w-3/5 bg-gradient-to-r from-blue-500 opacity-40 blur-2xl dark:from-purple-700 dark:opacity-40"></div>
+            <section>
+                <div className="relative isolate mt-[-120px] mb-[-70px] overflow-hidden bg-black h-[100vh] md:h-[100vh] lg:h-[100vh] xl:h-[70vh] flex items-center justify-center">
+                    <svg
+                        className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+                        aria-hidden="true">
+                        <defs>
+                            <pattern id="hero-pattern" width="200" height="200" x="100%" y="-1" patternUnits="userSpaceOnUse">
+                                <path d="M.5 200V.5H200" fill="none"></path>
+                            </pattern>
+                        </defs>
+                        <rect width="100%" height="100%" fill="url(#hero-pattern)"></rect>
+                    </svg>
+                    <div
+                        className="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]"
+                        aria-hidden="true">
+                        <div
+                            className="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#8653f5] to-[#ae07e6] opacity-50"
+                            style={{
+                                clipPath:
+                                    "polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)",
+                            }}
+                        ></div>
+                    </div>
+                    <div className="max-w-full px-4 text-center lg:max-w-3xl">
+                        <h1 className="text-5xl font-bold tracking-tight text-white sm:text-6xl">
+                            About
+                            <span className="text-purple-500"> Bixeltek</span>
+                        </h1>
+                        <p className="mt-10 text-sm lg:text-lg leading-8 text-gray-300 ">
+                            At <span className="text-purple-500 px-1">Bixeltek</span>we have worked with 100s of Brands in North American Market our team has come a long way understanding the needs of each individual brand. <span className='hidden md:block '>We are no freelancers but we work as your in-house team that knows exactly what your business needs.</span>
+                        </p>
+
+                        <button className="backdrop-blur-3xl border border-white text-white font-normal text-sm py-2 px-4 md:px-6 md:py-3 md:text-md rounded-lg mt-14 md:mt-16 shadow-custom ">
+                            <span>
+                                Get a Quote <i className="fa-solid fa-arrow-right ml-2" id='get_a_quote'></i>
+                            </span>
+                        </button>
+                    </div>
+
                 </div>
-                <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-2/5 aspect-[2/0.5] bg-gradient-to-br from-purple-600 to-violet-400 rounded-full opacity-50 blur-2xl"></div>
-                <div className="relative mx-auto pt-48 pb-24 lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 text-center space-y-10">
-                    <h1 className="text-gray-900 dark:text-white mx-auto max-w-5xl font-bold text-4xl/tight sm:text-5xl/tight lg:text-6xl/tight xl:text-7xl/tight">
-                        Transforming Industries with Digital Marketing
-                    </h1>
-                    <p className="text-gray-700 dark:text-gray-300 mx-auto max-w-2xl">
-                        From startups to global enterprises, we specialize in creating tailored strategies that drive engagement, amplify reach, and deliver measurable results. Lets redefine your digital journey.
+            </section>
+            <Screen />
+
+            <section>
+                <div className="relative pt-20 pb-32 max-w-[90%] mx-auto xl:max-w-full ">
+                    <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
+                        <div className="relative mx-auto max-w-7xl justify-between sm:static sm:px-6">
+                            <div className="sm:max-w-lg">
+                                <h1 className="font text-4xl xl:text-[42px] font-bold tracking-tight text-white sm:text-6xl">Why Bixeltek?</h1>
+                                <p className="mt-4 text-lg xl:text-xl text-gray-100"> <span className="text-fuchsia-500 font-bold italic">Are you ready to revolutionize your business?</span> At Bixeltek, we specialize in empowering industries like dentistry, automobile, landscaping, cleaning services, construction, real estate, and more. Our secret weapon? A strategic blend of Google Ads PPC, SEO wizardry, captivating social media management, and visually stunning web designs.</p>
+                            </div>
+                            <div>
+                                <div className="mt-10 ">
+                                    <div aria-hidden="true" className="pointer-events-none relative lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl">
+                                        <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
+                                            <div className="flex items-center space-x-6 lg:space-x-8">
+                                                <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                                                    <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
+                                                        <Image src={healthcare} alt="digital marketing image for healthcare" className="h-full w-full object-center" />
+                                                    </div>
+                                                    <div className="h-64 w-44 overflow-hidden rounded-lg">
+                                                        <Image src={blackcar} alt="digital marketing image for automobiles" className="h-full w-full  object-center" />
+                                                    </div>
+                                                </div>
+                                                <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                                                    <div className="h-64 w-44 overflow-hidden rounded-lg">
+                                                        <Image src={lawncare} alt="lawncare" className="h-full w-full  object-center" />
+                                                    </div>
+                                                    <div className="h-64 w-44 overflow-hidden rounded-lg">
+                                                        <Image src={dental} alt="dental" className="h-full w-full  object-center" />
+                                                    </div>
+                                                    <div className="h-64 w-44 overflow-hidden rounded-lg">
+                                                        <Image src={cleaningcomp} alt="cleaning" className="h-full w-full object-cover object-center" />
+                                                    </div>
+                                                </div>
+                                                <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                                                    <div className="h-64 w-44 overflow-hidden rounded-lg">
+                                                        <Image src={pet} alt="digital marketing image for pet store" className="h-full w-full  object-center" />
+                                                    </div>
+                                                    <div className="h-64 w-44 overflow-hidden rounded-lg">
+                                                        <Image src={oil} alt="digital marketing for oil company" className="h-full w-full object-center" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <Link href="/about" className="inline-block rounded-md  bg-black border border-fuchsia-600 py-3 px-8 text-center font-medium opacity-95 text-white hover:opacity-80">Know more about us</Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="max-w-[90%] xl:max-w-[80%] py-10 mx-auto">
+                <div className="py-10 px-10">
+                    <h2 className="text-5xl font-semibold text-white mb-5">Why Choose Us?</h2>
+                    <p className="text-lg xl:text-xl max-w-lg text-gray-100">
+                        Experience the unrivaled power of our proven methods that have catapulted countless businesses to new heights.
                     </p>
-                    <div className="flex justify-center items-center flex-wrap mx-auto gap-4">
-                        <Link href="#" className="flex items-center h-12 px-6 rounded-full bg-purple-300 backdrop-blur-2xl text-black border border-black">
-                            Get Started
-                        </Link>
-                        <Link href="#" className="flex items-center h-12 px-6 rounded-full bg-gray-100 dark:bg-gray-900 text-purple-700 dark:text-gray-300 border border-purple-500 ">
-                            Discover More
-                        </Link>
-                    </div>
-                    <div className="text-left grid lg:grid-cols-3 p-6 rounded-2xl bg-gradient-to-tr from-gray-50 shadow-purple-custom to-gray-200 dark:from-purple-200 dark:to-white border border-gray-100 dark:border-gray-800 max-w-2xl lg:max-w-5xl mx-auto lg:divide-x divide-y lg:divide-y-0 divide-gray-300 dark:divide-gray-800">
-                        <div className="flex items-start gap-6 lg:pr-6 pb-6 lg:pb-0">
-                            <div className="w-10">
-                                <span className="p-3 rounded-xl bg-gray-200 dark:bg-gray-800 flex w-max text-gray-800 dark:text-gray-200">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M21 10.5h.375c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125H21M4.5 10.5H18V15H4.5v-4.5zM3.75 18h15A2.25 2.25 0 0021 15.75v-6a2.25 2.25 0 00-2.25-2.25h-15A2.25 2.25 0 001.5 9.75v6A2.25 2.25 0 003.75 18z" />
-                                    </svg>
-                                </span>
-                            </div>
-                            <div className="flex-1 space-y-1">
-                                <h2 className="text-gray-900  font-semibold text-lg">
-                                    Industry Expertise
-                                </h2>
-                                <p className="text-gray-700  text-xs">
-                                    Our solutions are designed to cater to diverse industries, ensuring strategies that align with your business goals.
-                                </p>
+                </div>
+                <div className="grid grid-cols-4 gap-4 justify-items-center items-center h-auto w-full bg-black text-white">
+                    {cards.map((card, index) => (
+                        <div
+                            key={index}
+                            className={`card-wrapper mx-4 my-1 h-[350px] w-[300px] bg-slate-800 rounded-lg shadow-lg transform transition-transform ${index < cards.length / 2
+                                    ? "translate-x-10" // Upper-row cards
+                                    : "-translate-x-10" // Bottom-row cards
+                                }`}
+                        >
+                            <div className="card-content flex flex-col items-center justify-start text-center p-4">
+                                <div className="icon mb-4 text-purple-400 pt-10 pb-5">{card.icon}</div>
+                                <h3 className="font-bold text-xl mb-4">{card.title}</h3>
+                                <p className="text-sm text-gray-300">{card.description}</p>
                             </div>
                         </div>
-                        <div className="flex items-start gap-6 lg:px-6 py-6 lg:py-0">
-                            <div className="w-10">
-                                <span className="p-3 rounded-xl bg-gray-200 dark:bg-gray-800 flex w-max text-gray-800 dark:text-gray-200">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-                                    </svg>
-                                </span>
-                            </div>
-                            <div className="flex-1 space-y-1">
-                                <h2 className="text-gray-900  font-semibold text-lg">
-                                    Innovative Solutions
-                                </h2>
-                                <p className="text-gray-700 text-xs">
-                                    Harness the power of data, creativity, and technology to craft campaigns that stand out in a competitive market.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="flex items-start gap-6 pt-6 lg:pt-0 lg:pl-6">
-                            <div className="w-10">
-                                <span className="p-3 rounded-xl bg-gray-200 dark:bg-gray-800 flex w-max text-gray-800 dark:text-gray-200">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M21 10.5h.375c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125H21M4.5 10.5H18V15H4.5v-4.5zM3.75 18h15A2.25 2.25 0 0021 15.75v-6a2.25-2.25 0 00-2.25-2.25h-15A2.25 2.25 0 001.5 9.75v6A2.25 2.25 0 003.75 18z" />
-                                    </svg>
-                                </span>
-                            </div>
-                            <div className="flex-1 space-y-1">
-                                <h2 className="text-gray-900  font-semibold text-lg">
-                                    Measurable Results
-                                </h2>
-                                <p className="text-gray-700  text-xs">
-                                    Stay ahead with transparent analytics and insights that showcase the impact of our digital marketing efforts.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    ))}
+                </div>
+                <div className="flex text-lg cursor-pointer justify-center text-white group items-center mt-10">
+                    <p>
+                        View our services{" "}
+                        <i
+                            className="fa fa-arrow-right rotate-[-45deg] group-hover:rotate-[0deg] transition-all"
+                            aria-hidden="true"
+                        ></i>
+                    </p>
+                </div>
+            </section>
+
+            <section className="flex relative flex-col md:flex-row items-center mx-auto justify-between bg-black text-white px-40 py-20">
+                <motion.div
+                    className="absolute w-2 sm:w-3 md:w-3 h-[33px] bg-[#4285F4] top-0 right-0 origin-top"
+                    animate={{ scaleY: [0, 10, 0] }}
+                    transition={{
+                        duration: 8,
+                        repeat: Infinity,
+                        repeatType: "loop",
+                        ease: "easeInOut",
+                        delay: 4, // Starts first
+                    }}
+                />
+
+                {/* Horizontal Scaling (Top - Red) */}
+                <motion.div
+                    className="absolute top-0 left-0 origin-left h-[6px] bg-[#EA4335]"
+                    initial={{ scaleX: 0 }}
+                    animate={{ scaleX: [0, 1, 0] }}
+                    transition={{
+                        duration: 8,
+                        repeat: Infinity,
+                        repeatType: "loop",
+                        ease: "easeInOut",
+                        delay: 0, // Starts after the first motion ends
+                    }}
+                    style={{ width: "100%" }}
+                />
+
+                {/* Vertical Scaling (Left Side - Green) */}
+                <motion.div
+                    className="absolute left-0 w-2 origin-bottom bg-[#34A853]"
+                    initial={{ scaleY: 0 }}
+                    animate={{ scaleY: [0, 1, 0] }}
+                    transition={{
+                        duration: 8,
+                        repeat: Infinity,
+                        repeatType: "loop",
+                        ease: "easeInOut",
+                        delay: 12, // Starts after the second motion ends
+                    }}
+                    style={{ height: "100%" }}
+                />
+
+                {/* Horizontal Scaling (Bottom - Yellow) */}
+                <motion.div
+                    className="absolute bottom-0 left-0 origin-right h-[6px] bg-[#FBBC05]"
+                    initial={{ scaleX: 0 }}
+                    animate={{ scaleX: [0, 1, 0] }}
+                    transition={{
+                        duration: 8,
+                        repeat: Infinity,
+                        repeatType: "loop",
+                        ease: "easeInOut",
+                        delay: 8, // Starts after the third motion ends
+                    }}
+                    style={{ width: "100%" }}
+                />
+
+
+                <div className="w-full md:w-1/2 mb-6 md:mb-0 text-center md:text-left">
+                    <h2 className="text-4xl font-semibold mb-4">
+                        "Hey <span className="text-blue-500">G</span>
+                        <span className="text-red-500">o</span>
+                        <span className="text-yellow-500">o</span>
+                        <span className="text-blue-500">g</span>
+                        <span className="text-green-500">l</span>
+                        <span className="text-red-500">e</span>, We’re Certified!"
+                    </h2>
+                    <p className="text-xl md:text-2xl font-light leading-relaxed">
+                        Proud to be a part of the Google Partners family. Leveraging the power of Google tools to help businesses grow smarter and faster.
+                    </p>
+                </div>
+
+
+                <div className="w-full md:w-1/3 flex justify-center md:justify-end">
+                    <a
+                        href="https://www.google.com/partners/agency?id=2188074075"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="https://www.gstatic.com/partners/badge/images/2024/PartnerBadgeClickable.svg"
+                            alt="Google Partners Badge"
+                            className="w-48"
+                        />
+                    </a>
                 </div>
             </section>
             <CarouselSection />
-            <section id="dental" className="relative bg-white rounded-2xl text-black w-[80%] ml-[-5%] shadow-purple-custom2 py-7 mb-20 pl-8 overflow-hidden">
 
-                {/* Top Floating Circles */}
-                <motion.div
-                    className="absolute w-10 rounded-full h-10 bg-orange-500"
-                    initial={{ y: -10, x: 0 }}
-                    animate={{ y: [-20, 20, -20], x: [0, 10, -10] }}
-                    transition={{ repeat: Infinity, duration: 5 }}
-                    style={{ top: '5%', left: '90%' }}
-                />
-                <motion.div
-                    className="absolute w-5 rounded-full h-5 bg-blue-500"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [10, -10, 10], x: [-10, 10, -10] }}
-                    transition={{ repeat: Infinity, duration: 6 }}
-                    style={{ top: '10%', left: '80%' }}
-                />
-                <motion.div
-                    className="absolute w-8 rounded-full h-8 bg-green-400"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [-15, 15, -15], x: [15, -15, 15] }}
-                    transition={{ repeat: Infinity, duration: 7 }}
-                    style={{ top: '15%', left: '60%' }}
-                />
-                <motion.div
-                    className="absolute w-6 rounded-full h-6 bg-purple-500"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [15, -15, 15], x: [-15, 15, -15] }}
-                    transition={{ repeat: Infinity, duration: 8 }}
-                    style={{ top: '7%', left: '40%' }}
-                />
-                <motion.div
-                    className="absolute w-4 rounded-full h-4 bg-yellow-400"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [-10, 10, -10], x: [10, -10, 10] }}
-                    transition={{ repeat: Infinity, duration: 6 }}
-                    style={{ top: '3%', left: '20%' }}
-                />
-                <motion.div
-                    className="absolute w-3 rounded-full h-3 bg-pink-500"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [10, -10, 10], x: [-10, 10, -10] }}
-                    transition={{ repeat: Infinity, duration: 9 }}
-                    style={{ top: '12%', left: '5%' }}
-                />
-
-                {/* Bottom Floating Circles */}
-                <motion.div
-                    className="absolute w-10 rounded-full h-10 bg-red-500"
-                    initial={{ y: 500, x: 500 }}
-                    animate={{ y: [-20, 20, -20], x: [20, -20, 20] }}
-                    transition={{ repeat: Infinity, duration: 9 }}
-                    style={{ bottom: '5%', left: '10%' }}
-                />
-                <motion.div
-                    className="absolute w-8 rounded-full h-8 bg-yellow-500"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [15, -15, 15], x: [-15, 15, -15] }}
-                    transition={{ repeat: Infinity, duration: 10 }}
-                    style={{ bottom: '10%', right: '15%' }}
-                />
-                <motion.div
-                    className="absolute w-6 rounded-full h-6 bg-blue-300"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [-10, 10, -10], x: [10, -10, 10] }}
-                    transition={{ repeat: Infinity, duration: 8 }}
-                    style={{ bottom: '15%', left: '40%' }}
-                />
-                <motion.div
-                    className="absolute w-4 rounded-full h-4 bg-green-500"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [10, -10, 10], x: [-10, 10, -10] }}
-                    transition={{ repeat: Infinity, duration: 6 }}
-                    style={{ bottom: '7%', left: '70%' }}
-                />
-                <motion.div
-                    className="absolute w-3 rounded-full h-3 bg-purple-300"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [-15, 15, -15], x: [15, -15, 15] }}
-                    transition={{ repeat: Infinity, duration: 7 }}
-                    style={{ bottom: '10%', right: '10%' }}
-                />
-                <motion.div
-                    className="absolute w-5 rounded-full h-5 bg-pink-400"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [20, -20, 20], x: [-20, 20, -20] }}
-                    transition={{ repeat: Infinity, duration: 9 }}
-                    style={{ bottom: '20%', left: '50%' }}
-                />
-                {/* Section Content */}
-                <div className="flex flex-col md:flex-row items-center justify-between">
-                    <div className=" md:w-1/2">
-                        <Image src={Dental} alt="Dental Clinic" width={500} className="rounded-xl" />
-                    </div>
-                    <div className="w-full md:w-1/2 mx-10 mt-6 flex flex-col md:mt-0 md:ml-8 text-zinc-800">
-                        <h2 className="text-4xl font-bold mb-6 mr-10 text-purple-600">Boost Your Dental Clinic&apos;s Visibility</h2>
-                        <p className="text-[17px] leading-relaxed mb-6 mr-10">
-                            At <strong>Bixeltek</strong>, we specialize in digital marketing strategies that help
-                            dental clinics attract more patients, enhance their online presence, and grow their
-                            practice. From SEO to social media campaigns, we tailor solutions to fit your unique
-                            needs.
-                        </p>
-                        <ul className="space-y-12 mt-10">
-                            {/* Features */}
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center bg-gray-100 text-purple-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiLineChartLine className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-purple-700 transition-colors">
-                                        SEO Optimization
-                                    </h3>
-                                    <p className="text-gray-700 text-sm tracking-wide xl:text-[16px] group-hover:text-zinc-800 transition-colors">
-                                        Rank higher in local searches and attract more patients.
-                                    </p>
-                                </div>
-                            </li>
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center bg-gray-100 text-purple-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiInstagramLine className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-purple-700 transition-colors">
-                                        Social Media Campaigns
-                                    </h3>
-                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-zinc-800 transition-colors">
-                                        Engage with your audience on Instagram, Facebook, and more.
-                                    </p>
-                                </div>
-                            </li>
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center bg-gray-100 text-purple-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiInstagramLine className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-purple-700 transition-colors">
-                                        Social Media Campaigns
-                                    </h3>
-                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-zinc-800 transition-colors">
-                                        Engage with your audience on Instagram, Facebook, and more.
-                                    </p>
-                                </div>
-                            </li>
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center bg-gray-100 text-purple-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiInstagramLine className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-purple-700 transition-colors">
-                                        Social Media Campaigns
-                                    </h3>
-                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-zinc-800 transition-colors">
-                                        Engage with your audience on Instagram, Facebook, and more.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                        <button className="mt-16 bg-purple-700 text-white px-6 py-3 rounded hover:bg-purple-800 transition">
-                            Learn More
-                        </button>
-                    </div>
-                </div>
-            </section>;
-
-            <section
-                id="roof"
-                className="relative bg-white rounded-l-2xl text-black w-[80%] ml-[20%] shadow-purple-custom2 py-7 my-10 pr-6 overflow-x-hidden"
-            >
-                {/* Random Floating Circles for Another Section */}
-                {/* Floating Circles Dominating the Left Side */}
-                <motion.div
-                    className="absolute w-12 rounded-full h-12 bg-teal-500"
-                    initial={{ y: -10, x: 0 }}
-                    animate={{ y: [-20, 20, -20], x: [0, 15, -15] }}
-                    transition={{ repeat: Infinity, duration: 7 }}
-                    style={{ top: '8%', left: '10%' }}
-                />
-                <motion.div
-                    className="absolute w-8 rounded-full h-8 bg-indigo-500"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [15, -15, 15], x: [-10, 10, -10] }}
-                    transition={{ repeat: Infinity, duration: 5 }}
-                    style={{ top: '18%', left: '5%' }}
-                />
-                <motion.div
-                    className="absolute w-8 rounded-full h-8 bg-sky-500"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [15, -15, 15], x: [-10, 10, -10] }}
-                    transition={{ repeat: Infinity, duration: 5 }}
-                    style={{ top: '10%', left: '50%' }}
-                />
-                <motion.div
-                    className="absolute w-6 rounded-full h-6 bg-amber-400"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [20, -20, 20], x: [-15, 15, -15] }}
-                    transition={{ repeat: Infinity, duration: 6 }}
-                    style={{ bottom: '15%', left: '15%' }}
-                />
-                <motion.div
-                    className="absolute w-10 rounded-full h-10 bg-rose-400"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [-25, 25, -25], x: [10, -10, 10] }}
-                    transition={{ repeat: Infinity, duration: 8 }}
-                    style={{ bottom: '5%', left: '5%' }}
-                />
-                <motion.div
-                    className="absolute w-5 rounded-full h-5 bg-lime-500"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [15, -15, 15], x: [-10, 10, -10] }}
-                    transition={{ repeat: Infinity, duration: 9 }}
-                    style={{ top: '10%', left: '20%' }}
-                />
-
-
-                <div className="flex flex-col md:flex-row items-center justify-between">
-                    {/* Content Section */}
-                    <div className="w-full md:w-1/2 mx-12 mt-6 flex flex-col md:mt-0 text-zinc-800">
-                        <h2 className="text-4xl font-bold mb-6 text-orange-600">
-                            Elevate Your Roofing Business
-                        </h2>
-                        <p className="text-[17px] leading-relaxed mb-6">
-                            At <strong>Bixeltek</strong>, we specialize in digital marketing solutions tailored for roofing companies.
-                            Boost your online presence, attract more leads, and grow your business with strategies designed for your unique needs.
-                        </p>
-
-                        {/* Features List */}
-                        <ul className="space-y-12 mt-10">
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center bg-gray-100 text-orange-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiLineChartLine className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-orange-700 transition-colors">
-                                        SEO Optimization
-                                    </h3>
-                                    <p className="text-gray-700 text-sm tracking-wide xl:text-[16px] group-hover:text-zinc-800 transition-colors">
-                                        Rank higher in local searches and attract more clients in need of roofing services.
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center bg-gray-100 text-orange-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiInstagramLine className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-orange-700 transition-colors">
-                                        Social Media Campaigns
-                                    </h3>
-                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-zinc-800 transition-colors">
-                                        Showcase your roofing projects on platforms like Instagram and Facebook.
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center bg-gray-100 text-orange-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiCalendarEventLine className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-orange-700 transition-colors">
-                                        Lead Management
-                                    </h3>
-                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-zinc-800 transition-colors">
-                                        Capture and manage roofing inquiries with ease using integrated tools.
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center bg-gray-100 text-orange-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiHeart2Line className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg font-semibold tracking-widest group-hover:text-orange-700 transition-colors">
-                                        Reputation Building
-                                    </h3>
-                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-zinc-800 transition-colors">
-                                        Strengthen your brand with positive client reviews and testimonials.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-
-                        <button className="mt-16 bg-orange-600 text-white px-6 py-3 rounded hover:bg-orange-700 transition">
-                            Learn More
-                        </button>
-                    </div>
-
-                    {/* Image Section */}
-                    <div className="w-full md:w-1/2">
-                        <Image
-                            src={roof}
-                            width={500}
-                            alt="Roofing Services"
-                            className="rounded-xl overflow-hidden"
-                        />
-                    </div>
-                </div>
-            </section>
-
-            <section id="lawn" className="relative bg-white rounded-2xl text-black w-[80%] ml-[-5%] shadow-green-200 py-7 my-20 pl-8 overflow-hidden">
-                {/* Floating Circles Dominating the Right Side */}
-                <motion.div
-                    className="absolute w-10 rounded-full h-10 bg-purple-500"
-                    initial={{ y: -10, x: 0 }}
-                    animate={{ y: [-20, 20, -20], x: [0, 15, -15] }}
-                    transition={{ repeat: Infinity, duration: 6 }}
-                    style={{ top: '10%', right: '8%' }}
-                />
-                <motion.div
-                    className="absolute w-8 rounded-full h-8 bg-cyan-400"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [20, -20, 20], x: [-10, 10, -10] }}
-                    transition={{ repeat: Infinity, duration: 5 }}
-                    style={{ top: '25%', right: '5%' }}
-                />
-                <motion.div
-                    className="absolute w-6 rounded-full h-6 bg-pink-600"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [10, -10, 10], x: [-15, 15, -15] }}
-                    transition={{ repeat: Infinity, duration: 7 }}
-                    style={{ bottom: '20%', right: '12%' }}
-                />
-                <motion.div
-                    className="absolute w-12 rounded-full h-12 bg-green-400"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [-25, 25, -25], x: [10, -10, 10] }}
-                    transition={{ repeat: Infinity, duration: 8 }}
-                    style={{ bottom: '10%', right: '8%' }}
-                />
-                <motion.div
-                    className="absolute w-5 rounded-full h-5 bg-yellow-500"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [15, -15, 15], x: [-10, 10, -10] }}
-                    transition={{ repeat: Infinity, duration: 6 }}
-                    style={{ top: '15%', right: '15%' }}
-                />
-
-                <div className="flex flex-col md:flex-row items-center justify-between">
-
-                    {/* Image Section */}
-                    <div className="w-full md:w-1/2">
-                        <Image
-                            src={lawn}
-                            width={500} // Replace with the actual lawn care image URL or import
-                            alt="Lawn and Cleaning Services"
-                            className="rounded-xl"
-                        />
-                    </div>
-
-                    {/* Content Section */}
-                    <div className="w-full md:w-1/2 mx-10 mt-6 flex flex-col md:mt-0 md:ml-8 text-zinc-800">
-                        <h2 className="text-4xl font-bold mb-6 mr-10 text-green-700">Transform Your Lawn and Cleaning Business</h2>
-                        <p className="text-[17px] leading-relaxed mb-6 mr-10">
-                            At <strong>Bixeltek</strong>, we craft tailored digital marketing strategies to help lawn care
-                            and cleaning companies grow their client base, enhance their online visibility,
-                            and increase bookings. From local SEO to engaging social campaigns, we bring you closer to your customers.
-                        </p>
-
-                        {/* Features Section */}
-                        <ul className="space-y-12 mt-10">
-
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center bg-gray-200 text-green-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiLineChartLine className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-green-700 transition-colors">
-                                        Local SEO
-                                    </h3>
-                                    <p className="text-gray-700 text-sm tracking-wide xl:text-[16px] group-hover:text-zinc-800 transition-colors">
-                                        Appear in local searches and attract more homeowners in your area.
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center bg-gray-200 text-green-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiInstagramLine className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-green-700 transition-colors">
-                                        Social Media Marketing
-                                    </h3>
-                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-zinc-800 transition-colors">
-                                        Share your before-and-after transformations to inspire and engage your audience.
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center bg-gray-200 text-green-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiCalendarEventLine className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-green-700 transition-colors">
-                                        Online Booking
-                                    </h3>
-                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-zinc-800 transition-colors">
-                                        Simplify appointment scheduling and manage bookings seamlessly.
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center bg-gray-200 text-green-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiHeart2Line className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg font-semibold tracking-widest group-hover:text-green-700 transition-colors">
-                                        Client Trust
-                                    </h3>
-                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-zinc-800 transition-colors">
-                                        Build credibility with client testimonials and showcase your expertise.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-
-                        <button className="mt-16 bg-green-700 text-white px-6 py-3 rounded hover:bg-green-800 transition">
-                            Get Started
-                        </button>
-                    </div>
-                </div>
-            </section>
-            <section id="car" className="relative bg-gray-100 rounded-l-2xl text-black w-[80%] xl:w-[70%] ml-[20%] shadow-blue-custom py-7 my-10 pr-6 overflow-hidden">
-                {/* Floating Circles Dominating the Left Side */}
-                <motion.div
-                    className="absolute w-10 rounded-full h-10 bg-blue-500"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [-20, 20, -20], x: [0, 10, -10] }}
-                    transition={{ repeat: Infinity, duration: 6 }}
-                    style={{ top: '5%', left: '10%' }}
-                />
-                <motion.div
-                    className="absolute w-12 rounded-full h-12 bg-purple-400"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [-25, 25, -25], x: [0, 20, -20] }}
-                    transition={{ repeat: Infinity, duration: 8 }}
-                    style={{ bottom: '10%', left: '8%' }}
-                />
-                <motion.div
-                    className="absolute w-5 rounded-full h-5 bg-yellow-500"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [20, -20, 20], x: [-10, 10, -10] }}
-                    transition={{ repeat: Infinity, duration: 6 }}
-                    style={{ top: '30%', left: '18%' }}
-                />
-                <motion.div
-                    className="absolute w-7 rounded-full h-7 bg-pink-300"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [-15, 15, -15], x: [10, -10, 10] }}
-                    transition={{ repeat: Infinity, duration: 9 }}
-                    style={{ bottom: '5%', left: '12%' }}
-                />
-
-                <motion.div
-                    className="absolute w-9 rounded-full h-9 bg-red-500"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [25, -25, 25], x: [-15, 15, -15] }}
-                    transition={{ repeat: Infinity, duration: 7 }}
-                    style={{ top: '15%', left: '6%' }}
-                />
-                <motion.div
-                    className="absolute w-4 rounded-full h-4 bg-teal-400"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [-10, 10, -10], x: [10, -10, 10] }}
-                    transition={{ repeat: Infinity, duration: 5 }}
-                    style={{ bottom: '15%', left: '20%' }}
-                />
-
-                <div className="flex flex-col md:flex-row items-center justify-between">
-                    {/* Content Section */}
-                    <div className="w-full md:w-1/2 mx-10 mt-6 flex flex-col md:mt-0 md:ml-8 text-gray-800">
-                        <h2 className="text-4xl font-bold mb-6 text-rose-700">Drive Your Automobile Business Forward</h2>
-                        <p className="text-[17px] leading-relaxed mb-6">
-                            At <strong>Bixeltek</strong>, we offer customized digital marketing solutions for automobile companies. Increase your visibility, attract more customers, and accelerate your business growth with strategies designed for the automotive industry.
-                        </p>
-
-                        {/* Features List */}
-                        <ul className="space-y-12 mt-10">
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center bg-gray-200 text-rose-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiLineChartLine className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-rose-700 transition-colors">
-                                        SEO Optimization
-                                    </h3>
-                                    <p className="text-gray-600 text-sm tracking-wide xl:text-[16px] group-hover:text-gray-800 transition-colors">
-                                        Boost your ranking in search engines and drive more traffic to your dealership.
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center bg-gray-200 text-rose-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiInstagramLine className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-rose-700 transition-colors">
-                                        Social Media Marketing
-                                    </h3>
-                                    <p className="text-gray-600 tracking-wide text-sm xl:text-[16px] group-hover:text-gray-800 transition-colors">
-                                        Showcase your latest models and offers on Instagram, Facebook, and more.
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center bg-gray-200 text-rose-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiCalendarEventLine className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-rose-700 transition-colors">
-                                        Lead Management
-                                    </h3>
-                                    <p className="text-gray-600 tracking-wide text-sm xl:text-[16px] group-hover:text-gray-800 transition-colors">
-                                        Streamline inquiries and manage customer leads effectively.
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center bg-gray-200 text-rose-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiHeart2Line className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg font-semibold tracking-widest group-hover:text-rose-700 transition-colors">
-                                        Brand Reputation
-                                    </h3>
-                                    <p className="text-gray-600 tracking-wide text-sm xl:text-[16px] group-hover:text-gray-800 transition-colors">
-                                        Build trust and credibility with positive customer testimonials.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-
-                        <button className="mt-16 bg-rose-700 text-white px-6 py-3 rounded hover:bg-rose-800 transition">
-                            Learn More
-                        </button>
-                    </div>
-                    <div className="w-full md:w-1/2">
-                        <Image
-                            src={car}
-                            width={500}
-                            alt="Automobile Services"
-                            className="rounded-xl overflow-hidden"
-                        />
-                    </div>
-                </div>
-            </section>
-
-            <section id="health" className="relative bg-blue-50 rounded-2xl text-black w-[80%] ml-[-5%] shadow-blue-200 py-7 my-20 pl-8 overflow-hidden">
-                {/* Floating Circles Dominating the Right Side */}
-                <motion.div
-                    className="absolute w-12 rounded-full h-12 bg-orange-500"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [-20, 20, -20], x: [-10, 10, -10] }}
-                    transition={{ repeat: Infinity, duration: 7 }}
-                    style={{ top: '10%', right: '8%' }}
-                />
-                <motion.div
-                    className="absolute w-10 rounded-full h-10 bg-blue-600"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [15, -15, 15], x: [10, -10, 10] }}
-                    transition={{ repeat: Infinity, duration: 6 }}
-                    style={{ top: '25%', right: '5%' }}
-                />
-                <motion.div
-                    className="absolute w-8 rounded-full h-8 bg-purple-400"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [-25, 25, -25], x: [15, -15, 15] }}
-                    transition={{ repeat: Infinity, duration: 8 }}
-                    style={{ bottom: '15%', right: '10%' }}
-                />
-                <motion.div
-                    className="absolute w-6 rounded-full h-6 bg-green-500"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [20, -20, 20], x: [-20, 20, -20] }}
-                    transition={{ repeat: Infinity, duration: 5 }}
-                    style={{ bottom: '5%', right: '18%' }}
-                />
-                <motion.div
-                    className="absolute w-4 rounded-full h-4 bg-yellow-400"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [-15, 15, -15], x: [10, -10, 10] }}
-                    transition={{ repeat: Infinity, duration: 9 }}
-                    style={{ top: '35%', right: '12%' }}
-                />
-                <motion.div
-                    className="absolute w-9 rounded-full h-9 bg-pink-300"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [25, -25, 25], x: [-10, 10, -10] }}
-                    transition={{ repeat: Infinity, duration: 7 }}
-                    style={{ bottom: '25%', right: '15%' }}
-                />
-                <motion.div
-                    className="absolute w-7 rounded-full h-7 bg-red-500"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [10, -10, 10], x: [10, -10, 10] }}
-                    transition={{ repeat: Infinity, duration: 6 }}
-                    style={{ top: '5%', right: '20%' }}
-                />
-                <motion.div
-                    className="absolute w-5 rounded-full h-5 bg-teal-400"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [-20, 20, -20], x: [-15, 15, -15] }}
-                    transition={{ repeat: Infinity, duration: 8 }}
-                    style={{ bottom: '10%', right: '8%' }}
-                />
-
-                <div className="flex flex-col md:flex-row items-center justify-between">
-
-                    {/* Image Section */}
-                    <div className="w-full md:w-1/2">
-                        <Image
-                            src={doc}
-                            width={500} // Replace with the actual healthcare image URL or import
-                            alt="Healthcare Services"
-                            className="rounded-xl"
-                        />
-                    </div>
-
-                    {/* Content Section */}
-                    <div className="w-full md:w-1/2 mx-10 mt-6 flex flex-col md:mt-0 md:ml-8 text-gray-800">
-                        <h2 className="text-4xl font-bold mb-6 mr-10 text-blue-700">
-                            Empowering Healthcare for a Healthier Tomorrow
-                        </h2>
-                        <p className="text-[17px] leading-relaxed mb-6 mr-10">
-                            At <strong>Bixeltek</strong>, we specialize in digital solutions for healthcare providers. Enhance patient engagement, streamline operations, and build trust with innovative marketing strategies tailored to your practice.
-                        </p>
-
-                        {/* Features Section */}
-                        <ul className="space-y-12 mt-10">
-
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center bg-blue-100 text-blue-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiLineChartLine className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-blue-700 transition-colors">
-                                        Patient-Centered SEO
-                                    </h3>
-                                    <p className="text-gray-700 text-sm tracking-wide xl:text-[16px] group-hover:text-gray-800 transition-colors">
-                                        Improve your online presence and help patients find you easily.
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center bg-blue-100 text-blue-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiInstagramLine className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-blue-700 transition-colors">
-                                        Social Media Awareness
-                                    </h3>
-                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-gray-800 transition-colors">
-                                        Share health tips and build a connection with your community.
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center bg-blue-100 text-blue-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiCalendarEventLine className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-blue-700 transition-colors">
-                                        Online Appointments
-                                    </h3>
-                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-gray-800 transition-colors">
-                                        Simplify scheduling and provide seamless care to your patients.
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center bg-blue-100 text-blue-700 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiHeart2Line className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg font-semibold tracking-widest group-hover:text-blue-700 transition-colors">
-                                        Build Trust
-                                    </h3>
-                                    <p className="text-gray-700 tracking-wide text-sm xl:text-[16px] group-hover:text-gray-800 transition-colors">
-                                        Showcase patient testimonials and your commitment to quality care.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-
-                        <button className="mt-16 bg-blue-700 text-white px-6 py-3 rounded hover:bg-blue-800 transition">
-                            Get Started
-                        </button>
-                    </div>
-                </div>
-            </section>
-            <section id="clean" className="relative bg-white rounded-l-2xl text-black w-[80%] ml-[20%] shadow-blue-200 py-7 my-10 pr-6 overflow-hidden">
-                {/* Floating Circles Dominating the Left Side */}
-                <motion.div
-                    className="absolute w-6 rounded-full h-6 bg-blue-500"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [20, -20, 20], x: [-20, 20, -20] }}
-                    transition={{ repeat: Infinity, duration: 5 }}
-                    style={{ bottom: '10%', left: '18%' }}
-                />
-                <motion.div
-                    className="absolute w-4 rounded-full h-4 bg-yellow-400"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [-15, 15, -15], x: [10, -10, 10] }}
-                    transition={{ repeat: Infinity, duration: 9 }}
-                    style={{ top: '40%', left: '10%' }}
-                />
-                <motion.div
-                    className="absolute w-9 rounded-full h-9 bg-pink-300"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [25, -25, 25], x: [-10, 10, -10] }}
-                    transition={{ repeat: Infinity, duration: 7 }}
-                    style={{ bottom: '30%', left: '15%' }}
-                />
-                <motion.div
-                    className="absolute w-7 rounded-full h-7 bg-red-500"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [10, -10, 10], x: [-10, 10, -10] }}
-                    transition={{ repeat: Infinity, duration: 6 }}
-                    style={{ top: '5%', left: '20%' }}
-                />
-                <motion.div
-                    className="absolute w-5 rounded-full h-5 bg-teal-400"
-                    initial={{ y: 0, x: 0 }}
-                    animate={{ y: [-20, 20, -20], x: [15, -15, 15] }}
-                    transition={{ repeat: Infinity, duration: 8 }}
-                    style={{ bottom: '15%', left: '7%' }}
-                />
-
-                <div className="flex flex-col md:flex-row items-center justify-between">
-                    {/* Content Section */}
-                    <div className="w-full md:w-1/2 mx-10 mt-6 flex flex-col md:mt-0 md:ml-8 text-black">
-                        <h2 className="text-4xl font-bold mb-6 text-yellow-500">Elevate Your Cleaning Services</h2>
-                        <p className="text-[17px] leading-relaxed mb-6">
-                            At <strong>Bixeltek</strong>, we empower cleaning companies with targeted marketing strategies.
-                            Gain visibility, attract more clients, and establish a lasting impression with our tailored solutions.
-                        </p>
-
-                        {/* Features List */}
-                        <ul className="space-y-12 mt-10">
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center  text-yellow-500 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiLineChartLine className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-yellow-500 transition-colors">
-                                        SEO Optimization
-                                    </h3>
-                                    <p className=" text-sm tracking-wide xl:text-[16px] transition-colors">
-                                        Increase your visibility on search engines and attract local clients effectively.
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center  text-yellow-500 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiInstagramLine className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-yellow-500 transition-colors">
-                                        Social Media Presence
-                                    </h3>
-                                    <p className=" tracking-wide text-sm xl:text-[16px]  transition-colors">
-                                        Highlight your services and success stories to engage your audience effectively.
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center  text-yellow-500 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiCalendarEventLine className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg tracking-widest font-semibold group-hover:text-yellow-500 transition-colors">
-                                        Online Booking
-                                    </h3>
-                                    <p className=" tracking-wide text-sm xl:text-[16px]  transition-colors">
-                                        Simplify scheduling with an intuitive online booking system.
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li className="flex items-center group">
-                                <div className="flex items-center justify-center  text-yellow-500 p-3 rounded-full shadow-md transition-transform group-hover:scale-110">
-                                    <RiHeart2Line className="text-2xl" />
-                                </div>
-                                <div className="ml-5">
-                                    <h3 className="text-lg font-semibold tracking-widest group-hover:text-yellow-500 transition-colors">
-                                        Client Trust
-                                    </h3>
-                                    <p className=" tracking-wide text-sm xl:text-[16px]  transition-colors">
-                                        Showcase testimonials to build credibility and enhance client trust.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-
-                        <button className="mt-16 bg-yellow-500 text-white px-6 py-3 rounded hover:bg-yellow-600 transition">
-                            Learn More
-                        </button>
-                    </div>
-
-                    {/* Image Section */}
-                    <div className="w-full md:w-1/2">
-                        <Image
-                            src={cleaning}
-                            width={500} // Replace with your cleaning service image
-                            alt="Cleaning Services"
-                            className="rounded-xl overflow-hidden"
-                        />
-                    </div>
-                </div>
-            </section>
         </>
     );
 }
