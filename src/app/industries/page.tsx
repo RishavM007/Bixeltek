@@ -128,7 +128,7 @@ export default function Industries() {
                             <div>
                                 <div className="mt-10 ">
                                     <div aria-hidden="true" className="pointer-events-none relative lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl">
-                                        <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
+                                        <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lfg:-translate-y-1/2 lg:translate-x-8">
                                             <div className="flex items-center space-x-6 lg:space-x-8">
                                                 <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                                                     <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
@@ -264,12 +264,12 @@ export default function Industries() {
 
                 <div className="w-full md:w-1/2 mb-6 md:mb-0 text-center md:text-left">
                     <h2 className="text-4xl font-semibold mb-4">
-                        "Hey <span className="text-blue-500">G</span>
+                        &quot;Hey <span className="text-blue-500">G</span>
                         <span className="text-red-500">o</span>
                         <span className="text-yellow-500">o</span>
                         <span className="text-blue-500">g</span>
                         <span className="text-green-500">l</span>
-                        <span className="text-red-500">e</span>, We’re Certified!"
+                        <span className="text-red-500">e</span>, We&apos;re Certified!&quot;
                     </h2>
                     <p className="text-xl md:text-2xl font-light leading-relaxed">
                         Proud to be a part of the Google Partners family. Leveraging the power of Google tools to help businesses grow smarter and faster.
