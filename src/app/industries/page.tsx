@@ -115,59 +115,102 @@ export default function Industries() {
 
                 </div>
             </section>
-            <Screen />
 
             <section>
-                <div className="relative pt-20 pb-32 max-w-[90%] mx-auto xl:max-w-full ">
-                    <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
-                        <div className="relative mx-auto max-w-7xl justify-between sm:static sm:px-6">
-                            <div className="sm:max-w-lg">
-                                <h1 className="font text-4xl xl:text-[42px] font-bold tracking-tight text-white sm:text-6xl">Why Bixeltek?</h1>
-                                <p className="mt-4 text-lg xl:text-xl text-gray-100"> <span className="text-fuchsia-500 font-bold italic">Are you ready to revolutionize your business?</span> At Bixeltek, we specialize in empowering industries like dentistry, automobile, landscaping, cleaning services, construction, real estate, and more. Our secret weapon? A strategic blend of Google Ads PPC, SEO wizardry, captivating social media management, and visually stunning web designs.</p>
-                            </div>
-                            <div>
-                                <div className="mt-10 ">
-                                    <div aria-hidden="true" className="pointer-events-none relative lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl">
-                                        <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lfg:-translate-y-1/2 lg:translate-x-8">
-                                            <div className="flex items-center space-x-6 lg:space-x-8">
-                                                <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                                                    <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
-                                                        <Image src={healthcare} alt="digital marketing image for healthcare" className="h-full w-full object-center" />
-                                                    </div>
-                                                    <div className="h-64 w-44 overflow-hidden rounded-lg">
-                                                        <Image src={blackcar} alt="digital marketing image for automobiles" className="h-full w-full  object-center" />
-                                                    </div>
-                                                </div>
-                                                <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                                                    <div className="h-64 w-44 overflow-hidden rounded-lg">
-                                                        <Image src={lawncare} alt="lawncare" className="h-full w-full  object-center" />
-                                                    </div>
-                                                    <div className="h-64 w-44 overflow-hidden rounded-lg">
-                                                        <Image src={dental} alt="dental" className="h-full w-full  object-center" />
-                                                    </div>
-                                                    <div className="h-64 w-44 overflow-hidden rounded-lg">
-                                                        <Image src={cleaningcomp} alt="cleaning" className="h-full w-full object-cover object-center" />
-                                                    </div>
-                                                </div>
-                                                <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                                                    <div className="h-64 w-44 overflow-hidden rounded-lg">
-                                                        <Image src={pet} alt="digital marketing image for pet store" className="h-full w-full  object-center" />
-                                                    </div>
-                                                    <div className="h-64 w-44 overflow-hidden rounded-lg">
-                                                        <Image src={oil} alt="digital marketing for oil company" className="h-full w-full object-center" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+      <div className="relative pt-20 pb-32 max-w-[90%] mx-auto xl:max-w-full">
+        <div className="pt-16 pb-40 sm:pt-24 sm:pb-48 lg:pt-32 lg:pb-56">
+          <div className="relative mx-auto max-w-7xl flex flex-col lg:flex-row justify-between sm:px-6">
+            {/* Text Section */}
+            <div className="sm:max-w-lg">
+              <h1 className="text-4xl xl:text-[42px] font-bold tracking-tight text-white sm:text-6xl">
+                Why Bixeltek?
+              </h1>
+              <p className="mt-4 text-lg xl:text-xl text-gray-100">
+                <span className="text-fuchsia-500 font-bold italic">
+                  Are you ready to revolutionize your business?
+                </span>{" "}
+                At Bixeltek, we specialize in empowering industries like
+                dentistry, automobile, landscaping, cleaning services,
+                construction, real estate, and more. Our secret weapon? A
+                strategic blend of Google Ads PPC, SEO wizardry, captivating
+                social media management, and visually stunning web designs.
+              </p>
+              <Link
+                href="/about"
+                className="mt-6 inline-block rounded-md bg-black border border-fuchsia-600 py-3 px-8 text-center font-medium opacity-95 text-white hover:opacity-80"
+              >
+                Know more about us
+              </Link>
+            </div>
 
-                                    <Link href="/about" className="inline-block rounded-md  bg-black border border-fuchsia-600 py-3 px-8 text-center font-medium opacity-95 text-white hover:opacity-80">Know more about us</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            {/* Image Grid Section */}
+            <div className="relative mt-10 lg:mt-0 lg:absolute translate-y-[-25%] lg:inset-y-0 lg:right-0 lg:w-2/3">
+              <div className="flex justify-center items-center lg:items-start lg:justify-end lg:space-x-6">
+                {/* Column 1 */}
+                <div className="grid grid-cols-1 gap-6">
+                  <div className="h-64 w-44 overflow-hidden rounded-lg">
+                    <Image
+                      src={healthcare}
+                      alt="digital marketing image for healthcare"
+                      className="h-full w-full object-center"
+                    />
+                  </div>
+                  <div className="h-64 w-44 overflow-hidden rounded-lg">
+                    <Image
+                      src={blackcar}
+                      alt="digital marketing image for automobiles"
+                      className="h-full w-full object-center"
+                    />
+                  </div>
                 </div>
-            </section>
+                {/* Column 2 */}
+                <div className="grid grid-cols-1 gap-6 translate-y-[-16%]">
+                  <div className="h-64 w-44 overflow-hidden rounded-lg">
+                    <Image
+                      src={lawncare}
+                      alt="lawncare"
+                      className="h-full w-full object-center"
+                    />
+                  </div>
+                  <div className="h-64 w-44 overflow-hidden rounded-lg">
+                    <Image
+                      src={dental}
+                      alt="dental"
+                      className="h-full w-full object-center"
+                    />
+                  </div>
+                  <div className="h-64 w-44 overflow-hidden rounded-lg">
+                    <Image
+                      src={cleaningcomp}
+                      alt="cleaning"
+                      className="h-full w-full object-center"
+                    />
+                  </div>
+                </div>
+                {/* Column 3 */}
+                <div className="grid grid-cols-1 gap-6">
+                  <div className="h-64 w-44 overflow-hidden rounded-lg">
+                    <Image
+                      src={pet}
+                      alt="digital marketing image for pet store"
+                      className="h-full w-full object-center"
+                    />
+                  </div>
+                  <div className="h-64 w-44 overflow-hidden rounded-lg">
+                    <Image
+                      src={oil}
+                      alt="digital marketing for oil company"
+                      className="h-full w-full object-center"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
             <section className="max-w-[90%] xl:max-w-[80%] py-10 mx-auto">
                 <div className="py-10 px-10">
                     <h2 className="text-5xl font-semibold text-white mb-5">Why Choose Us?</h2>

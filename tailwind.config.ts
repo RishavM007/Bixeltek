@@ -39,7 +39,7 @@ const config: Config = {
         'inter': ['Inter', 'sans-serif'],
         'raleway': ['Raleway', 'sans-serif'],
         'roboto': ['Roboto', 'sans-serif'],
-        'poppins': ['Poppins', 'sans-serif'],
+        'poppins': ['Poppins', 'sans-serif']
       },
       keyframes:{
         'border-spin': {
