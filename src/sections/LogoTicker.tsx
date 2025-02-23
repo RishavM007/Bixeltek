@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 export const LogoTicker = () => {
   return (
-    <section className='pb-20 mt-[-50px] md:mt-[-50px] lg:mt-[-90px] flex flex-col gap-20'>
+    <section className='pb-20  mt-[-50px] md:mt-[-50px] lg:mt-[90px] flex flex-col gap-20'>
 
       <div className="w-[90%] md:w-[90%] lg:w-[90%] mx-auto">
         <div className='flex items-center'>

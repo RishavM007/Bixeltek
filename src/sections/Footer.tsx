@@ -1,6 +1,6 @@
 export const Footer = () => {
   return <footer className="footer-1 bg-black border-t-2 border-slate-600 text-neutral-300 pt-8 sm:pt-12 lg:pt-20 pb-5">
-    <div className="container mx-auto px-4">
+    <div className="max-w-7xl mx-auto px-4">
       <div className="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
         <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
           <h5 className="text-xl font-bold mb-6">Services</h5>

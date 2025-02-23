@@ -17,14 +17,14 @@ const config: Config = {
         sm: "375px",
         md: "768px",
         lg: "1200px",
-        xl: "1800px"
+        xl: "1500px"
       },
     },
     screens: {
       sm: "375px",
       md: "768px",
       lg: "1200px",
-      xl: "1800px"
+      xl: "1500px"
     },
     extend: {
       boxShadow: {
@@ -37,9 +37,11 @@ const config: Config = {
       },
       fontFamily:{
         'inter': ['Inter', 'sans-serif'],
-        'raleway': ['Raleway', 'sans-serif'],
-        'roboto': ['Roboto', 'sans-serif'],
-        'poppins': ['Poppins', 'sans-serif']
+        'montaga': ['Montaga', 'serif'],
+        'anton': [ 'Anton', 'sans-serif'],
+        'italiana': ['Italiana', 'serif'],
+        'antonio': ['Antonio', 'sans-serif'],
+        'sofiasanscondensed': ['Sofia Sans Condensed', 'sans-serif'],
       },
       keyframes:{
         'border-spin': {
