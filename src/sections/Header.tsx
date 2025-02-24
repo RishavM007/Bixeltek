@@ -153,7 +153,7 @@ export const Header = () => {
                       </div>
                     </div>
                     <div className="w-1/2 border-l border-gray-300 pl-6">
-                      <h3 className="text-lg font-semibold text-[#670ef7]">Blogs</h3>
+                      <h3 className="text-lg font-semibold text-[#670ef7]">Case Studies</h3>
                       <div className="grid grid-cols-2 gap-4">
                         <ul>
                           {posts.slice(0, Math.ceil(posts.length / 2)).map((post) => (

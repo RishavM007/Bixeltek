@@ -32,7 +32,7 @@ export const Hero = () => {
       duration: 60,
       repeat: Infinity,
       ease: "linear"}}
-     className='absolute h-[344px] w-[344px] md:h-[580px] md:w-[580px] opacity-20 rounded-full border top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+     className='absolute h-[344px] w-[344px] md:h-[580px] md:w-[580px] opacity-20 rounded-full border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
       <div className='absolute w-5 h-5 rounded-full border top-1/2 right-0 translate-x-2.5 -translate-y-1/2 flex justify-center items-center'>
         <div className='absolute w-2 h-2 rounded-full bg-white'></div>
       </div>
@@ -52,7 +52,7 @@ export const Hero = () => {
       repeat: Infinity,
 
     }}
-     className='absolute h-[444px] w-[444px] md:h-[780px] md:w-[780px] opacity-20 rounded-full border-dotted border-white border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'></motion.div>
+     className='absolute h-[444px] w-[444px] md:h-[780px] md:w-[780px] opacity-20 rounded-full border-dotted  z-40 border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'></motion.div>
 
     <motion.div style={{ translateY: '-50%', translateX: "-50%"}}
     animate={{

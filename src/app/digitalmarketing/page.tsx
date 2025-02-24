@@ -3,7 +3,10 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import image1 from '@/assets/wooble.png'
+import ProcessSection from '@/sections/ProcessSection';
+import SocialMediaTabs from '@/components/SocialMediaTabs';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube, FaSnapchatGhost, FaPinterestP, FaTiktok } from 'react-icons/fa';
+import { SiPolestar } from "react-icons/si";
 import heroimg from '@/assets/hero-img-flat3@2x.webp';
 
 const tabs = [
@@ -18,10 +21,14 @@ const tabs = [
                     <button className='border-2 border-[#570bd4] rounded-xl px-4 py-3 mt-5 text-lg text-[#570bd4]'>Read full Case Study</button>
                 </div>
                 <div className='w-1/3 bg-[#FFCE1B] border rounded-xl flex flex-col relative justify-between shadow-md'>
-                <Image src={image1} alt='wobble' className='w-full h-full absolute z-10' objectFit='contain'></Image>
-                    <p className='text-2xl italic z-20 p-10'>
-                        "Thanks to the PPC campaign, our online store saw a <strong>tremendous boost in sales</strong>. The strategy, keyword optimization, and A/B testing made a massive difference. We couldn’t be happier with the results!"
-                    </p>
+                    <div className='p-10'>
+                        <h2 className=' font-sofiasanscondensed text-5xl font-bold mb-3 text-white'>What Our Clients Say</h2>
+                        <p className='text-2xl italic z-20 '>
+
+                            "Thanks to the PPC campaign, our online store saw a <strong>tremendous boost in sales</strong>. The strategy, keyword optimization, and A/B testing made a massive difference. We couldn’t be happier with the results!"
+                        </p>
+                    </div>
+
                     <div className='mt-5 flex gap-3 p-10 z-20'>
                         <div>
                             <p className='font-semibold text-xl font-sofiasanscondensed'>Jane Doe</p>
@@ -61,6 +68,7 @@ const tabs = [
 
 export default function HeroSection() {
     const [activeTab, setActiveTab] = useState(tabs[0].key);
+    const [activetimelineTab, setActiveTimelineTab] = useState("process");
     const socialIcons = [
         { icon: <FaFacebookF />, top: "20%", left: "10%", animation: { y: [0, -10, 0] } },
         { icon: <FaTwitter />, top: "30%", left: "80%", animation: { rotate: [0, 360] } },
@@ -114,7 +122,7 @@ export default function HeroSection() {
             <section className="bg-white py-12">
                 <div className="max-w-full mx-auto px-6">
                     <div className="mb-12 ml-10">
-                        <h2 className="text-5xl font-bold text-black mb-4">Drive Real Results with Digital Marketing</h2>
+                        <h2 className="text-6xl font-bold font-sofiasanscondensed text-black mb-4">Drive Real Results with Digital Marketing</h2>
                         <p className="text-xl text-black pr-[30%]">
                             Unlock the power of data-driven strategies to attract, engage, and convert your audience. From tailored campaigns to seamless user experiences, we help brands maximize their online presence, boost engagement, and achieve measurable growth.
                         </p>
@@ -151,6 +159,119 @@ export default function HeroSection() {
                     </motion.div>
                 </div>
             </section>
+            <section className='bg-white mt-10'>
+                <div className='flex flex-col'>
+                    <h2 className='text-black ml-10 text-6xl px-6 mb-12 font-semibold font-sofiasanscondensed'>What we do</h2>
+
+                    {/* First Container - Google Yellow Theme */}
+                    <div className='w-[90%] mx-auto rounded-3xl flex border-l-[3px] py-14 z-10 hover:bg-[#EAAA00] group transition-all duration-300 border-l-[#EAAA00] mb-10 relative overflow-hidden'>
+                        <div className="absolute inset-0 z-0"
+                            style={{
+                                background: "linear-gradient(to right, rgba(234, 170, 0, 0.3), white)",
+                                maskImage: "linear-gradient(to right, white 10%, rgba(255,255,255,0) 80%)",
+                                WebkitMaskImage: "linear-gradient(to right, white 50%, rgba(255,255,255,0) 90%)"
+                            }}>
+                        </div>
+
+                        <div className="relative z-10 flex w-full">
+                            <div className="flex flex-col w-1/2 justify-center items-start text-3xl group-hover:text-white font-medium ml-10 text-[#8A5B00]">
+                                <p>Social Media</p>
+                                <p className="text-black group-hover:text-white">Marketing</p>
+                            </div>
+
+                            <div className='w-1/2 justify-center flex flex-col'>
+                                <p className='group-hover:text-white text-black'>
+                                    Our social media services create tailored strategies for each platform to elevate your brand's presence.
+                                    By combining engaging content with in-depth analytics, we drive growth and loyalty, connecting with your audience where it matters most.
+                                </p>
+
+                                <div className='flex flex-wrap gap-x-4 text-sm'>
+                                    {[
+                                        "Channel-Wise Strategy & Ideation",
+                                        "Impactful Copywriting",
+                                        "High-Quality Production",
+                                        "Reporting & Analysis",
+                                        "Graphic Design & Video Editing"
+                                    ].map((text, index) => (
+                                        <p key={index} className='border-l-[3px] border-l-[#EAAA00] py-2 px-4 mt-4 font-medium rounded-full inline-block bg-white'>
+                                            <SiPolestar className='text-[#EAAA00] font-semibold inline-block mr-2' /> {text}
+                                        </p>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Second Container - Google Blue Theme */}
+                    <div className='w-[90%] mx-auto rounded-3xl flex border-l-[3px] py-14 hover:bg-[#3367D6] group transition-all duration-300 border-l-[#3367D6] mb-10 relative overflow-hidden '>
+                        <div className="absolute inset-0 z-0"
+                            style={{
+                                background: "linear-gradient(to right, rgba(51, 103, 214, 0.3), white)",
+                                maskImage: "linear-gradient(to right, white 10%, rgba(255,255,255,0) 80%)",
+                                WebkitMaskImage: "linear-gradient(to right, white 50%, rgba(255,255,255,0) 90%)"
+                            }}>
+                        </div>
+
+                        <div className="relative z-10 flex w-full">
+                            <div className="flex flex-col w-1/2 justify-center items-start text-3xl group-hover:text-white font-medium ml-10 text-[#184C8C]">
+                                <p>Performance</p>
+                                <p className="text-black group-hover:text-white">Marketing</p>
+                            </div>
+
+                            <div className='w-1/2 justify-center flex flex-col'>
+                                <p className='group-hover:text-white text-black'>
+                                    We create data-driven marketing campaigns that fuel growth and maximize ROI. From precise paid search to engaging social ads, our strategies boost brand reach, generate qualified leads, and increase conversions across all channels, including e-commerce and social platforms.
+                                </p>
+
+                                <div className='flex flex-wrap gap-x-4 text-sm'>
+                                    {[
+                                        "Conversion Rate Optimization",
+                                        "Lead Generation",
+                                        "Boost Social Media Reach",
+                                        "App Installs",
+                                        "Increase Revenue",
+                                        "Brand Awareness & Increased Traffic"
+                                    ].map((text, index) => (
+                                        <p key={index} className='border-l-[3px] border-l-[#3367D6] py-2 px-4 mt-4 font-medium rounded-full inline-block bg-white'>
+                                            <SiPolestar className='text-[#3367D6] font-semibold inline-block mr-2' /> {text}
+                                        </p>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section className='overflow-hidden mt-20'>
+                <div className="w-full ml-10">
+                    <div>
+                        <div className="flex w-fit gap-6 ml-10 text-2xl font-medium font-sofiasanscondensed">
+                            <span
+                                className={`cursor-pointer ${activetimelineTab === "process"
+                                        ? "text-black underline decoration-blue-700 underline-offset-4 decoration-2"
+                                        : "hover:text-black text-black"
+                                    }`}
+                                onClick={() => setActiveTimelineTab("process")}
+                            >
+                                Performance
+                            </span>
+
+                            <span
+                                className={`cursor-pointer ${activetimelineTab === "social"
+                                        ? "text-black underline decoration-[#DB4437] underline-offset-4 decoration-2"
+                                        : "hover:text-black "
+                                    }`}
+                                onClick={() => setActiveTimelineTab("social")}
+                            >
+                                Social Media
+                            </span>
+                        </div>
+                        {activetimelineTab === "process" ? <ProcessSection /> : <SocialMediaTabs />}
+                    </div>
+                </div>
+            </section>
+
         </>
     );
 }
