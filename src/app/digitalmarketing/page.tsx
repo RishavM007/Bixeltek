@@ -1,12 +1,16 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { Googleadecarosel } from '@/components/Googleadecarosel';
+import image1 from '@/assets/woo-cs-hfm3.svg'
 import { motion } from 'framer-motion';
-import image1 from '@/assets/wooble.png'
+import Accordion from '@/components/Faq';
+import TestimonialSection from '@/components/TestimonialPage';
 import ProcessSection from '@/sections/ProcessSection';
 import SocialMediaTabs from '@/components/SocialMediaTabs';
+import { VscDebugBreakpointDataUnverified } from "react-icons/vsc";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube, FaSnapchatGhost, FaPinterestP, FaTiktok } from 'react-icons/fa';
-import { SiPolestar } from "react-icons/si";
+import { SiPolestar, SiGoogleads ,SiSemrush  } from "react-icons/si";
 import heroimg from '@/assets/hero-img-flat3@2x.webp';
 
 const tabs = [
@@ -25,7 +29,7 @@ const tabs = [
                         <h2 className=' font-sofiasanscondensed text-5xl font-bold mb-3 text-white'>What Our Clients Say</h2>
                         <p className='text-2xl italic z-20 '>
 
-                            "Thanks to the PPC campaign, our online store saw a <strong>tremendous boost in sales</strong>. The strategy, keyword optimization, and A/B testing made a massive difference. We couldn’t be happier with the results!"
+                            &quot;Thanks to the PPC campaign, our online store saw a <strong>tremendous boost in sales</strong>. The strategy, keyword optimization, and A/B testing made a massive difference. We couldn&apos;t be happier with the results!&quot;
                         </p>
                     </div>
 
@@ -36,7 +40,9 @@ const tabs = [
                         </div>
                     </div>
                 </div>
-                <div className='w-1/3 border rounded-xl'></div>
+                <div className='w-1/3 border rounded-xl'>
+                <Image src={image1} alt='image1' className='object-cover'></Image>
+                </div>
             </div>
         ),
     },
@@ -59,7 +65,7 @@ const tabs = [
             <div>
                 <h2 className="text-2xl font-bold">Pay-Per-Click Advertising</h2>
                 <p className="mt-2">
-                    See how Dan-O's Seasoning created a unique brand experience with WooCommerce.
+                    See how Dan-O&apos;s Seasoning created a unique brand experience with WooCommerce.
                 </p>
             </div>
         ),
@@ -68,16 +74,33 @@ const tabs = [
 
 export default function HeroSection() {
     const [activeTab, setActiveTab] = useState(tabs[0].key);
+    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen1, setIsOpen1] = useState(false);
+    const [isOpen2, setIsOpen2] = useState(false);
+
+    const toggleDropdown = () => {
+        setIsOpen(!isOpen);
+    }
+
+    const toggleDropdown1 = () =>{
+        setIsOpen1(!isOpen1);
+    }
+
+    const toggleDropdown2 = () =>{
+        setIsOpen2(!isOpen2);
+    }
+
     const [activetimelineTab, setActiveTimelineTab] = useState("process");
     const socialIcons = [
         { icon: <FaFacebookF />, top: "20%", left: "10%", animation: { y: [0, -10, 0] } },
         { icon: <FaTwitter />, top: "30%", left: "80%", animation: { rotate: [0, 360] } },
-        { icon: <FaLinkedinIn />, top: "65%", left: "60%", animation: { scale: [1, 1.3, 1] } },
+        { icon: <SiSemrush />, top: "65%", left: "60%", animation: { scale: [1, 1.3, 1] } },
         { icon: <FaInstagram />, top: "70%", left: "20%", animation: { x: [-10, 10, -10] } },
         { icon: <FaYoutube />, top: "17%", left: "50%", animation: { scale: [1, 1.5, 1] } },
         { icon: <FaSnapchatGhost />, top: "85%", left: "50%", animation: { rotate: [0, -360] } },
         { icon: <FaPinterestP />, top: "60%", left: "90%", animation: { y: [0, 15, 0] } },
         { icon: <FaTiktok />, top: "40%", left: "10%", animation: { x: [10, -10, 10] } },
+        { icon: <SiGoogleads />, top: "80%", left: "80%", animation: { x: [10,-10, 10] } },
     ];
 
     return (
@@ -114,11 +137,319 @@ export default function HeroSection() {
                     </motion.div>
                 ))}
             </section>
+            <section>
+                <div className="min-h-screen bg-white flex items-center justify-center px-4 py-10">
+                    <div className="max-w-full w-full bg-white text-black rounded-xl p-8 ml-10 flex flex-col md:flex-row">
 
-            {/* Social Icons Section */}
+                        <div className="md:w-1/2 p-6">
+                            <h2 className="text-6xl font-medium font-sofiasanscondensed  tracking-tight text-black mb-4">
+                                How <span className='text-[#6728cc]'>Digital Marketing</span> Transforms Businesses
+                            </h2>
+
+                            <p className="text-gray-800 relative font-sans text-lg py-5 leading-relaxed">
+                                Digital marketing is the key to establishing a strong online presence, reaching the right audience, and driving measurable results. It integrates various strategies like social media marketing, pay-per-click (PPC) advertising, email campaigns, and content marketing to boost brand awareness and customer engagement.
+                            </p>
+                            <p className="text-gray-800 font-sans text-lg leading-relaxed">
+                                In today&apos;s digital-first world, businesses that invest in well-structured digital marketing campaigns can significantly outperform their competitors. Whether it&apos;s generating quality leads, improving conversion rates, or increasing customer retention, a strategic approach ensures sustainable growth.
+                            </p>
+                            <p className="text-gray-800 font-sans text-lg leading-relaxed">
+                                With the right combination of creativity and data-driven insights, brands can craft compelling messages, target the right demographics, and optimize campaigns in real time. Digital marketing is not just about visibility—it&apos;s about creating meaningful connections with customers that lead to long-term success.
+                            </p>
+
+                            <div className='grid grid-cols-2 gap-y-5 pt-10 uppercase font-sofiasanscondensed  text-black'>
+                                <h3 className='font-semibold text-[18px] tracking-wide flex'>
+                                    <VscDebugBreakpointDataUnverified className="text-[#670ef7] mx-2 mt-1" /> ROI-Driven Campaigns
+                                </h3>
+                                <h3 className='font-semibold text-[18px] tracking-wide flex'>
+                                    <VscDebugBreakpointDataUnverified className="text-[#670ef7] mx-2 mt-1" /> Multi-Channel Strategies
+                                </h3>
+                                <h3 className='font-semibold text-[18px] tracking-wide flex'>
+                                    <VscDebugBreakpointDataUnverified className="text-[#670ef7] mx-2 mt-1" /> Creative & Data-Backed Approach
+                                </h3>
+                                <h3 className='font-semibold text-[18px] tracking-wide flex'>
+                                    <VscDebugBreakpointDataUnverified className="text-[#670ef7] mx-2 mt-1" /> Performance Analytics & Insights
+                                </h3>
+                                <h3 className='font-semibold text-[18px] tracking-wide flex'>
+                                    <VscDebugBreakpointDataUnverified className="text-[#670ef7] mx-2 mt-1" /> Targeted Audience Engagement
+                                </h3>
+                                <h3 className='font-semibold text-[18px] tracking-wide flex'>
+                                    <VscDebugBreakpointDataUnverified className="text-[#670ef7] mx-2 mt-1" /> Scalable Growth Solutions
+                                </h3>
+                            </div>
+                        </div>
 
 
-            {/* Services Section */}
+
+                        {/* Right Section: Contact Form */}
+                        <div className="md:w-1/2 p-6 relative bg-[#1a1a1a] rounded-lg">
+                            <h3 className="text-4xl  font-normal text-white mb-4">Get in Touch</h3>
+                            <div className='absolute w-40 h-1 bg-[#670ef7] translate-y-[-10px] translate-x-[5px]'></div>
+                            <form className="space-y-4">
+                                <div className='flex gap-5'>
+
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        className="w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                        placeholder="First Name"
+                                    />
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        className="w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                        placeholder="Last Name*"
+                                    />
+                                </div>
+                                <div className='flex gap-x-5'>
+
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        className="w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                        placeholder="Enter your email*"
+                                    />
+                                    <input
+                                        type="phone"
+                                        id="phone"
+                                        name="phone"
+                                        className="w-1/2 mt-2 p-3 border border-b-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                        placeholder="Enter your phone number"
+                                    />
+                                </div>
+                                <div className='flex gap-5'>
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        className="w-full mt-2 p-3 border-b border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                        placeholder="Company/Organisation*"
+                                    />
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        className="w-full mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                        placeholder="Website"
+                                    />
+
+                                </div>
+                                <div className='relative max-w-full flex gap-4'>
+                                <div className="relative max-w-[50%] inline-block text-left w-full">
+                                    <button
+                                        type="button"
+                                        className="inline-flex w-full justify-between text-left rounded-md border border-gray-600 bg-black px-4 py-3 text-sm font-medium text-gray-300 shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                        id="menu-button"
+                                        aria-expanded={isOpen1}
+                                        aria-haspopup="true"
+                                        onClick={toggleDropdown1}
+                                    >
+                                        How are you running your Marketing Department Currently?
+                                        <svg
+                                            className={`-mr-1 ml-2 h-5 w-5 text-gray-300 transition-transform ${isOpen1 ? 'rotate-180' : ''}`}
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                fillRule="evenodd"
+                                                d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                clipRule="evenodd"
+                                            />
+                                        </svg>
+                                    </button>
+
+                                    {/* Dropdown menu */}
+                                    {isOpen1 && (
+                                        <div
+                                            className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                            role="menu"
+                                            aria-orientation="vertical"
+                                            aria-labelledby="menu-button"
+                                        >
+                                            <div className="py-1" role="none">
+                                                <a
+                                                    href="#"
+                                                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                    role="menuitem"
+                                                >
+                                                    Inhouse
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                    role="menuitem"
+                                                >
+                                                    Outsourced
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                    role="menuitem"
+                                                >
+                                                    Myself
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                    role="menuitem"
+                                                >
+                                                   Freelancer
+                                                </a>
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
+                                <div className="relative max-w-[50%] inline-block text-left w-full">
+                                    <button
+                                        type="button"
+                                        className="inline-flex w-full justify-between rounded-md border text-left border-gray-600 bg-black px-4 py-3 text-sm font-medium text-gray-300 shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                        id="menu-button"
+                                        aria-expanded={isOpen2}
+                                        aria-haspopup="true"
+                                        onClick={toggleDropdown2}
+                                    >
+                                        What is the current marketing budget you are looking at?
+                                        <svg
+                                            className={`-mr-1 ml-2 h-5 w-5 text-gray-300 transition-transform ${isOpen2 ? 'rotate-180' : ''}`}
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                fillRule="evenodd"
+                                                d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                clipRule="evenodd"
+                                            />
+                                        </svg>
+                                    </button>
+
+                                    {/* Dropdown menu */}
+                                    {isOpen2 && (
+                                        <div
+                                            className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                            role="menu"
+                                            aria-orientation="vertical"
+                                            aria-labelledby="menu-button"
+                                        >
+                                            <div className="py-1" role="none">
+                                                <a
+                                                    href="#"
+                                                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                    role="menuitem"
+                                                >
+                                                    INR 1-2 Lacs a month
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                    role="menuitem"
+                                                >
+                                                    INR 2-5 Lacs a month
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                    role="menuitem"
+                                                >
+                                                    INR &gt;5 Lacs a month
+                                                </a>
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
+                                </div>
+                                <div className="relative max-w-full inline-block text-left w-full">
+                                    <button
+                                        type="button"
+                                        className="inline-flex w-full justify-between rounded-md border border-gray-600 bg-black px-4 py-3 text-sm font-medium text-gray-300 shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                        id="menu-button"
+                                        aria-expanded={isOpen}
+                                        aria-haspopup="true"
+                                        onClick={toggleDropdown}
+                                    >
+                                        Our Services
+                                        <svg
+                                            className={`-mr-1 ml-2 h-5 w-5 text-gray-300 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                fillRule="evenodd"
+                                                d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                clipRule="evenodd"
+                                            />
+                                        </svg>
+                                    </button>
+
+                                    {/* Dropdown menu */}
+                                    {isOpen && (
+                                        <div
+                                            className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                            role="menu"
+                                            aria-orientation="vertical"
+                                            aria-labelledby="menu-button"
+                                        >
+                                            <div className="py-1" role="none">
+                                                <a
+                                                    href="#"
+                                                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                    role="menuitem"
+                                                >
+                                                    Social Media Management
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                    role="menuitem"
+                                                >
+                                                    SEO Optimization
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                    role="menuitem"
+                                                >
+                                                    E-commerce Solutions
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                    role="menuitem"
+                                                >
+                                                    Content Marketing
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                    role="menuitem"
+                                                >
+                                                    PPC Campaigns
+                                                </a>
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
+                                <textarea name="textarea" id="" rows={5} placeholder='Tell us about your business'
+                                    className='w-full mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]'
+                                ></textarea>
+                                <button
+                                    type="submit"
+                                    className="w-full bg-[#670ef7] text-white py-3 rounded-lg hover:bg-[#5b0cd1] transition"
+                                >
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section className="bg-white py-12">
                 <div className="max-w-full mx-auto px-6">
                     <div className="mb-12 ml-10">
@@ -159,6 +490,9 @@ export default function HeroSection() {
                     </motion.div>
                 </div>
             </section>
+            <section className='mt-16 mb-10'>
+                <Googleadecarosel />
+            </section>
             <section className='bg-white mt-10'>
                 <div className='flex flex-col'>
                     <h2 className='text-black ml-10 text-6xl px-6 mb-12 font-semibold font-sofiasanscondensed'>What we do</h2>
@@ -181,7 +515,7 @@ export default function HeroSection() {
 
                             <div className='w-1/2 justify-center flex flex-col'>
                                 <p className='group-hover:text-white text-black'>
-                                    Our social media services create tailored strategies for each platform to elevate your brand's presence.
+                                    Our social media services create tailored strategies for each platform to elevate your brand&apos;s presence.
                                     By combining engaging content with in-depth analytics, we drive growth and loyalty, connecting with your audience where it matters most.
                                 </p>
 
@@ -243,14 +577,15 @@ export default function HeroSection() {
 
                 </div>
             </section>
+
             <section className='overflow-hidden mt-20'>
                 <div className="w-full ml-10">
                     <div>
                         <div className="flex w-fit gap-6 ml-10 text-2xl font-medium font-sofiasanscondensed">
                             <span
                                 className={`cursor-pointer ${activetimelineTab === "process"
-                                        ? "text-black underline decoration-blue-700 underline-offset-4 decoration-2"
-                                        : "hover:text-black text-black"
+                                    ? "text-black underline decoration-blue-700 underline-offset-4 decoration-2"
+                                    : "hover:text-black text-black"
                                     }`}
                                 onClick={() => setActiveTimelineTab("process")}
                             >
@@ -259,8 +594,8 @@ export default function HeroSection() {
 
                             <span
                                 className={`cursor-pointer ${activetimelineTab === "social"
-                                        ? "text-black underline decoration-[#DB4437] underline-offset-4 decoration-2"
-                                        : "hover:text-black "
+                                    ? "text-black underline decoration-[#DB4437] underline-offset-4 decoration-2"
+                                    : "hover:text-black "
                                     }`}
                                 onClick={() => setActiveTimelineTab("social")}
                             >
@@ -270,6 +605,13 @@ export default function HeroSection() {
                         {activetimelineTab === "process" ? <ProcessSection /> : <SocialMediaTabs />}
                     </div>
                 </div>
+            </section>
+
+            <section>
+                <TestimonialSection />
+            </section>
+            <section className=''>
+                <Accordion />
             </section>
 
         </>

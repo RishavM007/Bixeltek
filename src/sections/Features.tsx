@@ -40,8 +40,8 @@ const tabs = [
 
 export const Features = () => {
   return (
-    <section className="text-white mt-10 mb-10">
-      <div className="container flex flex-col items-center">
+    <section className="text-white mt-10 mb-10 ">
+      <div className="container flex flex-col items-center overflow-hidden">
         {/* Heading */}
         <motion.h2
           className="text-5xl font-medium text-center tracking-tighter"

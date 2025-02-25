@@ -4,10 +4,15 @@ import Bixeltek from '@/assets/BixelTek LOGO-01.png';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { HiChevronDown } from 'react-icons/hi';
+import { HiChevronDown, HiMenu, HiX } from 'react-icons/hi';
 
 export const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   const posts = [
 
@@ -80,7 +85,43 @@ export const Header = () => {
         <div className="text-white">
           <Image src={Bixeltek} alt="Bixeltek Logo" width={70} height={40} />
         </div>
-        <div className="hidden md:block text-[17px] tracking-widest">
+        <button className="md:hidden text-white text-3xl" onClick={toggleMenu}>
+          {isMenuOpen ? <HiX /> : <HiMenu />}
+        </button>
+        <motion.div
+          initial={{ x: "100%" }}
+          animate={{ x: isMenuOpen ? 0 : "100%" }}
+          transition={{ type: "spring", stiffness: 80, damping: 15 }}
+          className="fixed top-0 right-0 h-full w-full bg-black shadow-lg p-6 z-50 md:hidden"
+        >
+          <button className="absolute top-4 right-4 text-white text-3xl" onClick={toggleMenu}>
+            <HiX />
+          </button>
+          <nav className="mt-10">
+            <ul className="text-white text-xl font-sofiasanscondensed space-y-4">
+              <li><Link href="/" className="block py-2 px-4 hover:bg-purple-600  rounded">Home</Link></li>
+              <li>
+                <button onClick={() => setIsDropdownOpen(!isDropdownOpen)} className="flex justify-between w-full py-2 px-4 hover:bg-purple-600 rounded">
+                  Our Services <HiChevronDown className="text-xl" />
+                </button>
+                {isDropdownOpen && (
+                  <motion.ul initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="ml-4 text-lg space-y-2">
+                    <li><Link href="/googleadsman" className="block py-2 px-4 hover:bg-gray-700 rounded">Google Ads Management</Link></li>
+                    <li><Link href="/seo" className="block py-2 px-4 hover:bg-gray-700 rounded">SEO</Link></li>
+                    <li><Link href="/socialmedia" className="block py-2 px-4 hover:bg-gray-700 rounded">Social Media Management</Link></li>
+                    <li><Link href="/webdevelopment" className="block py-2 px-4 hover:bg-gray-700 rounded">Web Development</Link></li>
+                    <li><Link href="/digitalmarketing" className="block py-2 px-4 hover:bg-gray-700 rounded">Digital Marketing</Link></li>
+                  </motion.ul>
+                )}
+              </li>
+              <li><Link href="/industries" className="block py-2 px-4 hover:bg-purple-600 rounded">Industries</Link></li>
+              <li><Link href="/" className="block py-2 px-4 hover:bg-purple-600 rounded">Case Studies</Link></li>
+              <li><Link href="/blog" className="block py-2 px-4 hover:bg-purple-600 rounded">Blog</Link></li>
+              <li><Link href="/about" className="block py-2 px-4 hover:bg-purple-600 rounded">About Us</Link></li>
+            </ul>
+          </nav>
+        </motion.div>
+        <div className="hidden md:flex text-[17px] tracking-widest">
           <nav className="flex items-stretch">
             <ul className="flex gap-8 h-auto font-sofiasanscondensed font-normal tracking-widest">
               <li className="flex items-center py-7">
@@ -201,7 +242,7 @@ export const Header = () => {
             </ul>
           </nav>
         </div>
-        <div className="flex justify-center items-center gap-5 py-4">
+        <div className="hidden md:flex justify-center items-center gap-5 py-4">
           <button className="bg-gradient-to-t from-[#4a208a] to-[#13012e] border border-[#8a45f2] text-white font-normal text-sm py-2 px-4 rounded-lg shadow-custom">
             <span>Contact Us</span>
           </button>

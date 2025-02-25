@@ -25,6 +25,7 @@
     "react-charts": "^3.0.0-beta.57",
     "react-dom": "^18",
     "react-icons": "^5.4.0",
+    "swiper": "^11.2.4",
     "tailwind-merge": "^2.6.0",
     "three": "^0.171.0",
     "three-globe": "^2.39.1"
