@@ -106,17 +106,17 @@ export default function HeroSection() {
     return (
         <>
             {/* Hero Section */}
-            <section className="px-6 md:px-24 text-center bg-white min-h-[120vh] flex flex-col items-center justify-center relative mt-[-150px] overflow-hidden">
+            <section className="px-6 md:px-24 text-center bg-white min-h-[80vh] md:min-h-[100vh] lg:min-h-[120vh] flex flex-col items-center justify-center relative mt-[-130px] md:mt-[-150px] overflow-hidden">
                 <div className="max-w-4xl mx-auto relative z-10">
-                    <h1 className="text-3xl md:text-6xl font-bold mb-8">
+                    <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-8">
                         Reach more customers with our digital marketing services
                     </h1>
-                    <p className="text-lg md:text-xl font-normal mb-12">
+                    <p className="text-sm md:text-xl  font-normal mb-12">
                         <strong>Tap into new audiences</strong> and <strong>increase sales</strong> by selling across multiple channels, including popular marketplaces like Amazon, social media platforms like TikTok, and search engines like Google.
                     </p>
                     <a
                         href="#"
-                        className="bg-[#670ef7] text-white text-lg font-semibold px-7 py-4 rounded-lg shadow-md hover:bg-[#570bd4] transition"
+                        className="bg-[#670ef7] text-white text-sm md:text-lg font-semibold px-6 py-3 md:px-7 md:py-4 rounded-lg shadow-md hover:bg-[#570bd4] transition"
                     >
                         Get A Quote
                     </a>
@@ -124,7 +124,7 @@ export default function HeroSection() {
                 {socialIcons.map((item, index) => (
                     <motion.div
                         key={index}
-                        className="absolute text-[#670ef7] text-4xl"
+                        className="absolute text-[#670ef7] text-2xl md:text-3xl lg:text-4xl"
                         style={{
                             top: item.top,
                             left: item.left,
@@ -138,42 +138,42 @@ export default function HeroSection() {
                 ))}
             </section>
             <section>
-                <div className="min-h-screen bg-white flex items-center justify-center px-4 py-10">
-                    <div className="max-w-full w-full bg-white text-black rounded-xl p-8 ml-10 flex flex-col md:flex-row">
+                <div className="min-h-screen bg-white flex items-center justify-center px-4 py-0 md:py-10">
+                    <div className="max-w-full w-full bg-white text-black rounded-xl p-0 md:p-8 ml-0 md:ml-10 flex flex-col md:flex-row">
 
-                        <div className="md:w-1/2 p-6">
-                            <h2 className="text-6xl font-medium font-sofiasanscondensed  tracking-tight text-black mb-4">
+                        <div className="md:w-1/2 p-0 md:p-6">
+                            <h2 className="text-5xl md:text-6xl font-semibold md:font-medium font-sofiasanscondensed  tracking-tight text-black mb-4">
                                 How <span className='text-[#6728cc]'>Digital Marketing</span> Transforms Businesses
                             </h2>
 
-                            <p className="text-gray-800 relative font-sans text-lg py-5 leading-relaxed">
+                            <p className="text-gray-800 relative font-sans text-lg py-0 md:py-5 leading-relaxed">
                                 Digital marketing is the key to establishing a strong online presence, reaching the right audience, and driving measurable results. It integrates various strategies like social media marketing, pay-per-click (PPC) advertising, email campaigns, and content marketing to boost brand awareness and customer engagement.
                             </p>
                             <p className="text-gray-800 font-sans text-lg leading-relaxed">
                                 In today&apos;s digital-first world, businesses that invest in well-structured digital marketing campaigns can significantly outperform their competitors. Whether it&apos;s generating quality leads, improving conversion rates, or increasing customer retention, a strategic approach ensures sustainable growth.
                             </p>
-                            <p className="text-gray-800 font-sans text-lg leading-relaxed">
+                            <p className="text-gray-800 hidden font-sans text-lg leading-relaxed">
                                 With the right combination of creativity and data-driven insights, brands can craft compelling messages, target the right demographics, and optimize campaigns in real time. Digital marketing is not just about visibility—it&apos;s about creating meaningful connections with customers that lead to long-term success.
                             </p>
 
-                            <div className='grid grid-cols-2 gap-y-5 pt-10 uppercase font-sofiasanscondensed  text-black'>
-                                <h3 className='font-semibold text-[18px] tracking-wide flex'>
-                                    <VscDebugBreakpointDataUnverified className="text-[#670ef7] mx-2 mt-1" /> ROI-Driven Campaigns
+                            <div className='grid grid-cols-2 gap-y-5 pt-10 uppercase font-sofiasanscondensed pb-5  text-black'>
+                                <h3 className='font-bold md:font-semibold text-[16px] tracking-wide flex'>
+                                    <VscDebugBreakpointDataUnverified className="text-[#670ef7] lg:mx-2 mt-1" /> ROI-Driven Campaigns
                                 </h3>
-                                <h3 className='font-semibold text-[18px] tracking-wide flex'>
-                                    <VscDebugBreakpointDataUnverified className="text-[#670ef7] mx-2 mt-1" /> Multi-Channel Strategies
+                                <h3 className='font-bold md:font-semibold text-[16px] tracking-wide flex'>
+                                    <VscDebugBreakpointDataUnverified className="text-[#670ef7] lg:mx-2 mt-1" /> Multi-Channel Strategies
                                 </h3>
-                                <h3 className='font-semibold text-[18px] tracking-wide flex'>
-                                    <VscDebugBreakpointDataUnverified className="text-[#670ef7] mx-2 mt-1" /> Creative & Data-Backed Approach
+                                <h3 className='font-bold md:font-semibold text-[16px] tracking-wide flex'>
+                                    <VscDebugBreakpointDataUnverified className="text-[#670ef7] lg:mx-2 mt-1" /> Creative & Data-Backed Approach
                                 </h3>
-                                <h3 className='font-semibold text-[18px] tracking-wide flex'>
-                                    <VscDebugBreakpointDataUnverified className="text-[#670ef7] mx-2 mt-1" /> Performance Analytics & Insights
+                                <h3 className='font-bold md:font-semibold text-[16px] tracking-wide flex'>
+                                    <VscDebugBreakpointDataUnverified className="text-[#670ef7] lg:mx-2 mt-1" /> Performance Analytics & Insights
                                 </h3>
-                                <h3 className='font-semibold text-[18px] tracking-wide flex'>
-                                    <VscDebugBreakpointDataUnverified className="text-[#670ef7] mx-2 mt-1" /> Targeted Audience Engagement
+                                <h3 className='font-bold md:font-semibold text-[16px] tracking-wide flex'>
+                                    <VscDebugBreakpointDataUnverified className="text-[#670ef7] lg:mx-2 mt-1" /> Targeted Audience Engagement
                                 </h3>
-                                <h3 className='font-semibold text-[18px] tracking-wide flex'>
-                                    <VscDebugBreakpointDataUnverified className="text-[#670ef7] mx-2 mt-1" /> Scalable Growth Solutions
+                                <h3 className='font-bold md:font-semibold text-[16px] tracking-wide flex'>
+                                    <VscDebugBreakpointDataUnverified className="text-[#670ef7] lg:mx-2 mt-1" /> Scalable Growth Solutions
                                 </h3>
                             </div>
                         </div>
