@@ -546,7 +546,7 @@ export default function Seo() {
                                 className={`bg-black text-white p-6 border-2 rounded-2xl shadow-lg hover:shadow-xl ${item.color} transition-all ${item.style || ""}`}
                             >
                                 <h3 className="text-xl font-antonio tracking-wide font-semibold   text-gray-100 mt-4">{item.title}</h3>
-                                <p className="text-gray-200 mt-2">{item.description}</p>
+                                <p className="text-gray-200 mt-2 font-lg">{item.description}</p>
                             </div>
                         ))}
                     </div>
