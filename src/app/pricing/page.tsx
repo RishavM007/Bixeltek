@@ -58,13 +58,13 @@ const Pricing = () => {
 
   <div className="mt-5 font-bold text-2xl font-sans text-gray-800 dark:text-neutral-200">
     <span className="block text-lg font-medium">One Time Setup Fee</span>
-    <span className="font-bold text-lg ">₹</span>35,000
+    <span className="font-bold text-lg ">₹</span>50,000
     <span className="text-sm font-medium text-gray-500 dark:text-neutral-500"> +18% GST</span>
   </div>
 
   <div className="mt-4 font-bold text-2xl font-sans text-gray-800 dark:text-neutral-200">
     <span className="block text-lg font-medium">Monthly Fee</span>
-    <span className="font-bold text-lg">₹</span>35,000
+    <span className="font-bold text-lg">₹</span>50,000
     <span className="text-sm font-medium text-gray-500 dark:text-neutral-500"> +18% GST</span>
   </div>
 
@@ -104,13 +104,13 @@ const Pricing = () => {
   
   <div className="mt-5 font-bold text-2xl font-sans text-gray-800 dark:text-neutral-200">
     <span className="block text-lg font-medium">One Time Setup Fee</span>
-    <span className="font-bold text-2xl ">₹</span>60,000
+    <span className="font-bold text-2xl ">₹</span>80,000
     <span className="text-sm font-medium text-gray-500 dark:text-neutral-500"> +18% GST</span>
   </div>
 
   <div className="mt-4 font-bold text-2xl font-sans text-gray-800 dark:text-neutral-200">
     <span className="block text-lg font-medium">Monthly Fee</span>
-    <span className="font-bold text-2xl ">₹</span>60,000
+    <span className="font-bold text-2xl ">₹</span>80,000
     <span className="text-sm font-medium text-gray-500 dark:text-neutral-500"> +18% GST</span>
   </div>
 
