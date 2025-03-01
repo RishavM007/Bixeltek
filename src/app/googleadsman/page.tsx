@@ -13,6 +13,7 @@ import { FaChartLine, FaChartPie, FaChartBar, FaQuoteLeft, FaClock, FaHandshake,
 import { Line, Pie } from "react-chartjs-2";
 import { Timeline } from '@/components/timeline';
 import { Accordion } from '@/components/Faq'
+import { SiPolestar } from "react-icons/si";
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, ArcElement } from "chart.js";
 import Link from 'next/link';
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, ArcElement);
@@ -180,12 +181,12 @@ export default function Home() {
                                 ease: "easeInOut",
                             }}
                         />
-                        <Image src={Teamimg} alt="Team" />
+                        <Image src={Teamimg} alt="Team" className='h-full w-full object-cover' />
                     </div>
 
 
                     <div className="w-1/3 flex flex-col items-start px-10 xl:px-16 py-10 xl:py-16 bg-gray-100">
-                        <h1 className="text-4xl lg:text-4xl xl:text-4xl xl:leading-[50px] font-bold text-left my-10 xl:my-14 text-zinc-700">
+                        <h1 className="text-4xl font-sofiasanscondensed lg:text-5xl xl:text-5xl xl:leading-[50px] font-bold text-left my-10 xl:my-14 text-zinc-700">
                             Google Ads Agency Certified by{" "}
                             <span className="text-[#4285F4]">G</span>
                             <span className="text-[#EA4335]">o</span>
@@ -231,32 +232,32 @@ export default function Home() {
                             }}
                         />
                         <div className="flex flex-col items-center text-center">
-                            <h2 className="text-4xl xl:text-[44px] xl:leading-[44px] my-2 font-bold text-zinc-700">5+</h2>
-                            <p className="font-raleway text-gray-900 leading-6 tracking-wide text-sm xl:text-[17px] uppercase">Years creating campaigns</p>
-                            <p className=" text-gray-700 tracking-wide my-1 text-sm xl:text-lg">
+                            <h2 className="text-4xl xl:text-[44px] xl:leading-[44px] my-2 font-montaga font-bold text-zinc-700">5+</h2>
+                            <p className="font-sofiasanscondensed text-gray-900 leading-6 tracking-wide text-sm lg:text-xl uppercase">Years creating campaigns</p>
+                            <p className=" text-gray-700  tracking-wide my-1 text-sm xl:text-lg">
                                 In Google Ads, the experience is a degree
                             </p>
                         </div>
 
                         <div className="flex flex-col items-center text-center">
-                            <h2 className="text-4xl xl:text-[44px] xl:leading-[44px] my-2 font-bold text-zinc-700">0</h2>
-                            <p className="font-raleway text-gray-900 leading-6 tracking-wide uppercase text-sm xl:text-[17px]">Months of permanence</p>
+                            <h2 className="text-4xl xl:text-[44px] xl:leading-[44px] my-2 font-bold font-montaga text-zinc-700">0</h2>
+                            <p className="font-raleway text-gray-900 leading-6 tracking-wide uppercase font-sofiasanscondensed text-sm lg:text-xl">Months of permanence</p>
                             <p className=" text-gray-700 tracking-wide my-1 text-sm xl:text-lg">
                                 Our service does not have permanence
                             </p>
                         </div>
 
                         <div className="flex flex-col items-center text-center">
-                            <h2 className="text-4xl xl:text-[44px] xl:leading-[44px] my-2 font-bold text-zinc-700">4</h2>
-                            <p className="font-raleway text-gray-900 leading-6 tracking-wide uppercase xl:text-[17px] text-sm">Experts</p>
+                            <h2 className="text-4xl xl:text-[44px] xl:leading-[44px] my-2 font-bold font-montaga text-zinc-700">4</h2>
+                            <p className="font-raleway text-gray-900 leading-6 tracking-wide uppercase  font-sofiasanscondensed lg:text-xl text-sm">Experts</p>
                             <p className=" text-gray-700 tracking-wide my-1 text-sm xl:text-lg">
                                 A large team of certified professionals
                             </p>
                         </div>
 
                         <div className="flex flex-col items-center text-center">
-                            <h2 className="text-4xl xl:text-[44px] xl:leading-[44px] my-2 font-bold text-zinc-700">12</h2>
-                            <p className="font-raleway text-gray-900 leading-6 tracking-wide xl:text-[17px] uppercase text-sm">Years with us</p>
+                            <h2 className="text-4xl xl:text-[44px] xl:leading-[44px] my-2 font-bold font-montaga text-zinc-700">12</h2>
+                            <p className="font-raleway text-gray-900 leading-6 tracking-wide font-sofiasanscondensed uppercase text-sm lg:text-xl">Years with us</p>
                             <p className=" text-gray-700 my-1 tracking-wide text-sm xl:text-lg">
                                 Each customer is with us for an average of 12 years
                             </p>
@@ -265,48 +266,105 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className='bg-white py-10'>
-                <div className='flex flex-col max-w-[90%] items-start justify-center bg-gray-100 rounded-s-3xl py-10 ml-auto'>
-                    <div className='flex flex-row'>
-                        <div className='w-2/3 px-20 xl:px-24 py-10 xl:py-20'>
-                            <h3 className='text-4xl font-bold text-gray-800 mb-4'>
-                                Why Google Ads PPC is Essential for Your Business?
-                            </h3>
-                            <p className='text-[17px] pt-3 xl:pt-4  xl:text-xl pr-14 xl:pr-16  text-gray-700 leading-[36px]'>
-                                Google Ads PPC offers instant visibility, targeted advertising, and measurable results, allowing businesses to drive traffic, enhance brand awareness, and achieve cost-effective, scalable growth. With precise targeting, real-time analytics, and the ability to optimize campaigns, it provides a competitive edge and improves conversion rates, ensuring maximum ROI.
-                            </p>
-                        </div>
-                        <div className='w-1/3'>
-                            <Image src={laptop} alt='Google Ads PPC' className=' shadow-lg' />
-                        </div>
-                    </div>
-                    <Timeline data={data} />
-                    <div className='flex w-full justify-center items-center'>
-                        <button className="backdrop-blur-3xl uppercase border bg-black text-white font-normal text-sm py-2 px-4 md:px-6 md:py-3 md:text-md rounded-lg  ">
-                            <span>
-                                I want to start a project<i className="fa-solid fa-arrow-right ml-2" id='get_a_quote'></i>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-            </section>
+
             <section className='bg-white py-20'>
                 <Googlecard />
             </section>
             <section className='bg-white py-20'>
                 <Googleadecarosel />
             </section>
-            <section>
-                <div>
+            <section className='bg-white mb-20'>
+                <div className='flex flex-col'>
+                    <h2 className='text-black ml-24 text-6xl px-6 mb-12 font-semibold font-sofiasanscondensed'>What we do</h2>
 
+                    {/* First Container - Google Yellow Theme */}
+                    <div className='w-[85%] mx-auto rounded-3xl flex border-l-[3px] py-14 z-10 hover:bg-[#EAAA00] group transition-all duration-300 border-l-[#EAAA00] mb-10 relative overflow-hidden'>
+                        <div className="absolute hidden md:flex inset-0 z-0"
+                            style={{
+                                background: "linear-gradient(to right, rgba(234, 170, 0, 0.3), white)",
+                                maskImage: "linear-gradient(to right, white 10%, rgba(255,255,255,0) 80%)",
+                                WebkitMaskImage: "linear-gradient(to right, white 50%, rgba(255,255,255,0) 90%)"
+                            }}>
+                        </div>
+
+                        <div className="relative z-10 gap-4 flex flex-col md:flex-row ml-5 w-full">
+                            <div className="flex flex-col w-full md:w-1/2 justify-center items-start text-3xl group-hover:text-white font-medium ml-0 md:ml-10 text-[#8A5B00]">
+                                <p>Google Ads</p>
+                                <p className="text-black group-hover:text-white">Marketing</p>
+                            </div>
+
+                            <div className='w-full md:w-1/2 justify-center flex flex-col'>
+                                <p className='group-hover:text-white text-black'>
+                                    Our expert-driven Google Ads campaigns ensure your business reaches the right audience at the right time.
+                                    With strategic ad placements, compelling copy, and continuous optimization, we drive high-quality traffic,
+                                    increase conversions, and maximize your advertising budget.
+                                </p>
+
+                                <div className='flex flex-wrap gap-x-4 text-sm'>
+                                    {[
+                                        "Targeted Campaign Strategy",
+                                        "Conversion-Optimized Landing Pages",
+                                        "Search & Display Ads",
+                                        "Remarketing & Retargeting",
+                                        "Performance Tracking & Optimization",
+                                        "YouTube & Shopping Ads"
+                                    ].map((text, index) => (
+                                        <p key={index} className='border-l-[3px] border-l-[#EAAA00] py-2 px-4 mt-4 font-medium rounded-full inline-block bg-white'>
+                                            <SiPolestar className='text-[#EAAA00] font-semibold inline-block mr-2' /> {text}
+                                        </p>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    {/* Second Container - Google Blue Theme */}
+                    <div className='w-[85%] mx-auto rounded-3xl flex border-l-[3px] py-14 hover:bg-[#DB4437] group transition-all duration-300 border-l-[#DB4437] mb-10 relative overflow-hidden '>
+                        <div className="absolute hidden md:flex inset-0 z-0"
+                            style={{
+                                background: "linear-gradient(to right, rgba(219, 68, 55, 0.3), white)",
+                                maskImage: "linear-gradient(to right, white 10%, rgba(255,255,255,0) 80%)",
+                                WebkitMaskImage: "linear-gradient(to right, white 50%, rgba(255,255,255,0) 90%)"
+                            }}>
+                        </div>
+
+                        <div className="relative z-10 flex flex-col md:flex-row ml-5 gap-4 w-full">
+                            <div className="flex flex-col w-1/2 justify-center items-start text-3xl group-hover:text-white font-medium ml-0 md:ml-10 text-[#a2362c]">
+                                <p>Performance</p>
+                                <p className="text-black group-hover:text-white">Marketing</p>
+                            </div>
+
+                            <div className='w-full md:w-1/2 justify-center flex flex-col'>
+                                <p className='group-hover:text-white text-black'>
+                                    We create data-driven marketing campaigns that fuel growth and maximize ROI. From precise paid search to engaging social ads, our strategies boost brand reach, generate qualified leads, and increase conversions across all channels, including e-commerce and social platforms.
+                                </p>
+
+                                <div className='flex flex-wrap gap-x-4 text-sm'>
+                                    {[
+                                        "Conversion Rate Optimization",
+                                        "Lead Generation",
+                                        "Boost Social Media Reach",
+                                        "App Installs",
+                                        "Increase Revenue",
+                                        "Brand Awareness & Increased Traffic"
+                                    ].map((text, index) => (
+                                        <p key={index} className='border-l-[3px] border-l-[#3367D6] py-2 px-4 mt-4 font-medium rounded-full inline-block bg-white'>
+                                            <SiPolestar className='text-[#3367D6] font-semibold inline-block mr-2' /> {text}
+                                        </p>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             {/* 80% Google Ads */}
             <section className='bg-gray-100'>
-                <div className="bg-gray-100  flex flex-col md:flex-row items-center justify-between py-6 px-6 md:px-20 md:py-32">
+                <div className="bg-gray-100  flex flex-col md:flex-row items-center justify-between py-6 px-6 md:px-20 md:py-24">
                     <div className="text-center md:text-left md:w-1/2  space-y-4">
-                        <h2 className="text-2xl lg:text-5xl font-bold text-gray-800 leading-[32px] lg:leading-[53px] tracking-tight">80% of Google Ads Budgets Are Wasted Without Strategic Management.</h2>
-                        <p className="text-gray-600 text-sm lg:text-xl pt-3">
+                        <h2 className="text-2xl lg:text-5xl font-sofiasanscondensed font-bold text-gray-800 leading-[32px] lg:leading-[53px] tracking-tight">80% of Google Ads Budgets Are Wasted Without Strategic Management.</h2>
+                        <p className="text-gray-600 text-sm lg:text-lg pt-3">
                             Many businesses struggle to see results from their Google Ads campaigns due to poor targeting and ineffective strategies. Without proper management, high costs per click and low returns on investment become common hurdles.
                         </p>
                         <div className='my-2 lg:my-5 group'>

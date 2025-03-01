@@ -459,7 +459,7 @@ export default function HeroSection() {
                         </p>
                     </div>
                     <nav className="tab-menu__wrapper tab-menu__wrapper--is-style-secondary ml-0 md:ml-10">
-                        <ul className="tab-menu__tabs flex flex-col md:flex-row space-y-4 md:space-x-4" role="tablist">
+                        <ul className="tab-menu__tabs flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4" role="tablist">
                             {tabs.map((tab) => (
                                 <li
                                     key={tab.key}
@@ -537,22 +537,22 @@ export default function HeroSection() {
                     </div>
 
                     {/* Second Container - Google Blue Theme */}
-                    <div className='w-[90%] mx-auto rounded-3xl flex border-l-[3px] py-14 hover:bg-[#3367D6] group transition-all duration-300 border-l-[#3367D6] mb-10 relative overflow-hidden '>
-                        <div className="absolute inset-0 z-0"
+                    <div className='w-[90%] mx-auto rounded-3xl flex border-l-[3px] py-14 hover:bg-[#DB4437] group transition-all duration-300 border-l-[#DB4437] mb-10 relative overflow-hidden '>
+                        <div className="absolute hidden md:flex inset-0 z-0"
                             style={{
-                                background: "linear-gradient(to right, rgba(51, 103, 214, 0.3), white)",
+                                background: "linear-gradient(to right, rgba(219, 68, 55, 0.3), white)",
                                 maskImage: "linear-gradient(to right, white 10%, rgba(255,255,255,0) 80%)",
                                 WebkitMaskImage: "linear-gradient(to right, white 50%, rgba(255,255,255,0) 90%)"
                             }}>
                         </div>
 
-                        <div className="relative z-10 flex flex-col md:flex-row w-full">
-                            <div className="flex flex-col w-1/2 justify-center items-start text-3xl group-hover:text-white font-medium ml-0 md:ml-10 text-[#184C8C]">
+                        <div className="relative z-10 flex flex-col md:flex-row ml-5 gap-4 w-full">
+                            <div className="flex flex-col w-1/2 justify-center items-start text-3xl group-hover:text-white font-medium ml-0 md:ml-10 text-[#a2362c]">
                                 <p>Performance</p>
                                 <p className="text-black group-hover:text-white">Marketing</p>
                             </div>
 
-                            <div className='w-1/2 justify-center flex flex-col'>
+                            <div className='w-full md:w-1/2 justify-center flex flex-col'>
                                 <p className='group-hover:text-white text-black'>
                                     We create data-driven marketing campaigns that fuel growth and maximize ROI. From precise paid search to engaging social ads, our strategies boost brand reach, generate qualified leads, and increase conversions across all channels, including e-commerce and social platforms.
                                 </p>

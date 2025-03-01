@@ -22,7 +22,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Header />
-      <main className="min-h-screen">{children}</main>
+      <main className="min-h-screen bg-white">{children}</main>
       <Footer />
     </>
   );

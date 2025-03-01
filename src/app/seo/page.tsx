@@ -1,9 +1,11 @@
 'use client';
 import React, { useState } from 'react';
-import demoimage from '@/assets/digital marketing for lawn care services.jpg'
-import { FaComments } from "react-icons/fa";
+
+import TestimonialSection from '@/components/TestimonialPage';
 import { VscDebugBreakpointDataUnverified } from "react-icons/vsc";
+import { FaDatabase, FaUsers, FaHandshake, FaChartLine, FaEnvelope, FaClipboardList } from "react-icons/fa";
 import Image from 'next/image';
+import { color } from 'framer-motion';
 
 export default function Seo() {
 
@@ -12,6 +14,53 @@ export default function Seo() {
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
     }
+    const seoBenefits = [
+        {
+            icon: <FaDatabase className="text-blue-500 text-5xl" />,
+            title: "Experience Matters",
+            description:
+                "For more than 15 years, Thrive has helped businesses grow their online presence to drive more revenue.",
+            style: "col-span-2",
+            color: "border-blue-500",
+        },
+        {
+            icon: <FaUsers className="text-green-500 text-5xl" />,
+            title: "Dedicated SEO Professionals",
+            color: "border-green-500",
+            description:
+                "We make the complicated SEO process simple by providing each client with a single point of contact to manage their project.",
+        },
+        {
+            icon: <FaHandshake className="text-yellow-500 text-5xl" />,
+            title: "Relationships & Results",
+            color: "border-yellow-500",
+            description:
+                "Our core values: Relationships & Results. We help businesses of all sizes achieve exponential growth.",
+            style: "row-span-2",
+        },
+        {
+            icon: <FaChartLine className="text-red-500 text-5xl" />,
+            title: "We're Always Getting Better",
+            color: "border-red-500",
+            description:
+                "SEO is constantly evolving, and we stay ahead of the curve to ensure the best rankings and traffic growth.",
+        },
+        {
+            icon: <FaEnvelope className="text-purple-500 text-5xl" />,
+            title: "We Play Fair",
+            color: "border-purple-500",
+            description:
+                "We follow white hat SEO techniques to ensure long-term, penalty-free success for your business.",
+        },
+        {
+            icon: <FaClipboardList className="text-indigo-500 text-5xl" />,
+            title: "Transparent Reporting",
+            color: "border-indigo-500",
+            description:
+                "We provide detailed reports, keyword rankings, and video summaries so you know exactly how your SEO is improving.",
+            style: "col-span-2",
+        },
+    ];
 
     const seoServices = [
         {
@@ -105,7 +154,7 @@ export default function Seo() {
                             </div>
 
                             <a href="#" className="inline-flex items-center justify-center w-full px-8 py-3 text-base font-normal text-white transition-all duration-200 bg-black border border-gray-600 rounded-full sm:w-auto hover:border-white">
-                               Contact Us
+                                Contact Us
                             </a>
                         </div>
                     </div>
@@ -481,60 +530,63 @@ export default function Seo() {
                     </div>
                 </div>
             </section>
-
-            <section className="py-12 bg-black text-white">
+            <section className="bg-transparent py-20">
                 <div className="max-w-7xl mx-auto px-6">
-                    <h2 className="text-5xl font-bold text-center text-white">
-                        .: What Our Clients Say :.
+                    <h2 className="text-6xl font-sofiasanscondensed font-bold text-center text-gray-200 mb-6">
+                        Why Bixeltek&apos;s SEO Services Are Better Than the Rest
                     </h2>
-                    <p className="text-gray-200 text-center mt-2">
-                        Hear from our satisfied customers about our exceptional services.
+                    <p className="text-center text-white mb-12">
+                        Our SEO Solutions Work: We&apos;ve Proven it Over and Over Again
                     </p>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
-                        {testimonials.map((testimonial, index) => (
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        {seoBenefits.map((item, index) => (
                             <div
                                 key={index}
-                                className="max-w-md mx-auto overflow-hidden shadow-lg bg-white"
+                                className={`bg-black text-white p-6 border-2 rounded-2xl shadow-lg hover:shadow-xl ${item.color} transition-all ${item.style || ""}`}
                             >
-                                <div className="relative">
-                                    <Image
-                                        src={demoimage}
-                                        alt={testimonial.title}
-                                        className="w-full h-64 object-cover"
-                                    />
-                                    <div className="absolute top-5 right-7 bg-orange-500 text-white px-3 py-2 text-sm ">
-                                        <p className="text-center text-sm">14</p>
-                                        <p className="text-center text-sm">FEB</p>
-                                    </div>
-                                </div>
-                                <div className="p-6">
-                                    <div className="flex items-center gap-3">
-                                        <Image
-                                            src={demoimage}
-                                            alt="Admin"
-                                            className="w-10 h-10 rounded-full"
-                                        />
-                                        <span className="text-base font-semibold text-gray-700">
-                                            {testimonial.admin}
-                                        </span>
-                                    </div>
-                                    <p className="text-gray-600 text-base mt-3 flex items-center gap-2">
-                                        <FaComments className='text-orange-500' />
-                                        0 Comments
-                                    </p>
-                                    <h2 className="mt-5 text-xl font-bold text-gray-800">
-                                        {testimonial.title}
-                                    </h2>
-                                    <p className="text-orange-500 mt-3 group cursor-pointer flex items-center gap-2 font-medium">
-                                        Read More <i className="fa fa-arrow-right rotate-[-45deg] text-black group-hover:rotate-[0deg] transition-all duration-300" aria-hidden="true"></i>
-                                    </p>
-                                </div>
+                                <h3 className="text-xl font-antonio tracking-wide font-semibold   text-gray-100 mt-4">{item.title}</h3>
+                                <p className="text-gray-200 mt-2">{item.description}</p>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
 
+            <section className="relative bg-white overflow-hidden text-black  py-40">
+                {/* Top Wave */}
+                <div className="absolute top-0 left-0 w-full">
+                    <svg className="w-full h-24 rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                        <path className="fill-[#4285F4]" fillOpacity="1" d="M0,288L60,245.3C120,203,240,117,360,112C480,107,600,181,720,229.3C840,277,960,299,1080,256C1200,213,1320,107,1380,53.3L1440,0V320H0Z"></path>
+                        <path className="fill-[#34A853]" fillOpacity="0.6" d="M0,272L80,224C160,176,320,80,480,85.3C640,91,800,197,960,240C1120,283,1280,261,1360,250.7L1440,240V320H0Z"></path>
+                        <path className="fill-[#FBBC05]" fillOpacity="1" d="M0,256L100,202.7C200,149,400,43,600,64C800,85,1000,235,1200,245.3C1400,256,1600,128,1700,96L1800,80V320H0Z"></path>
+                        <path className="fill-[#EA4335]" fillOpacity="0.1" d="M0,240L120,186.7C240,133,480,27,720,42.7C960,59,1200,203,1440,224V320H0Z"></path>
+                    </svg>
+                </div>
+
+                {/* Content */}
+                <div className="relative z-10 max-w-7xl mx-auto px-6">
+                    <h2 className="text-5xl font-bold text-center text-black">
+                        .: What Our Clients Say :.
+                    </h2>
+                    <p className="text-gray-900 text-center mt-2">
+                        Hear from our satisfied customers about our exceptional services.
+                    </p>
+                </div>
+                <div className="max-w-full">
+                    <TestimonialSection />
+                </div>
+
+                {/* Bottom Wave */}
+                <div className="absolute bottom-0 left-0 w-full">
+                    <svg className="w-full h-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                        <path className="fill-[#4285F4] z-40" fillOpacity="1" d="M0,288L60,245.3C120,203,240,117,360,112C480,107,600,181,720,229.3C840,277,960,299,1080,256C1200,213,1320,107,1380,53.3L1440,0V320H0Z"></path>
+                        <path className="fill-[#34A853] z-30" fillOpacity="1" d="M0,272L80,224C160,176,320,80,480,85.3C640,91,800,197,960,240C1120,283,1280,261,1360,250.7L1440,240V320H0Z"></path>
+                        <path className="fill-[#FBBC05] z-20" fillOpacity="1" d="M0,256L100,202.7C200,149,400,43,600,64C800,85,1000,235,1200,245.3C1400,256,1600,128,1700,96L1800,80V320H0Z"></path>
+                        <path className="fill-[#EA4335] z-10" fillOpacity="0.3" d="M0,240L120,186.7C240,133,480,27,720,42.7C960,59,1200,203,1440,224V320H0Z"></path>
+                    </svg>
+                </div>
+            </section>
         </>
     );
 }
