@@ -4,4 +4,6 @@ export interface Post {
     content: { rendered: string };
     excerpt: { rendered: string };
     slug: string;
+    featured_media: number; 
+    featured_media_url?: string; 
 }

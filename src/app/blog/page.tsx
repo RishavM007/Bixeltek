@@ -7,7 +7,7 @@ export default function BlogIndex() {
     return (
         <>
             <section>
-                <div className="relative isolate mt-[-20px] md:mt-[-60px] lg:mt-[-120px] mb-[-70px] overflow-hidden bg-black h-[100vh] border-b border-fuchsia-600 md:h-[100vh] lg:h-[120vh] xl:h-[70vh] flex items-center justify-center">
+                <div className="relative isolate mt-[-20px] md:mt-[-60px] lg:mt-[-120px]  overflow-hidden bg-black h-[100vh] border-b border-fuchsia-600 md:h-[100vh] lg:h-[120vh] xl:h-[100vh] flex items-center justify-center">
                     
 
                     <svg
