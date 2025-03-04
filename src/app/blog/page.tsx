@@ -1,80 +1,13 @@
 'use client';
-
+import BlogList from '@/components/BlogList';
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Blogcards } from '@/components/Cards/Blogcards';
 import Image from 'next/image';
 
 export default function BlogIndex() {
-    const posts = [
-        
-            {
-                id: 1,
-                title: "How to Get Started with Digital Marketing",
-                description: "Learn essential steps to begin your journey in the digital marketing world effectively.",
-                glowcolor: "bg-purple-500",  
-            },
-            {
-                id: 2,
-                title: "Top 5 SEO Strategies",
-                description: "Boost your website traffic with these proven search engine optimization techniques.",
-                glowcolor: "bg-blue-500", 
-            },
-            {
-                id: 3,
-                title: "The Power of Google Ads",
-                description: "Discover how Google Ads can transform your marketing campaigns and increase ROI.",
-                glowcolor: "bg-green-500",  
-            },
-            {
-                id: 4,
-                title: "Social Media Growth Hacks",
-                description: "Quick and effective tips to expand your brands presence on social platforms.",
-                glowcolor: "bg-yellow-500",  
-            },
-            {
-                id: 5,
-                title: "AI in Digital Marketing",
-                description: "Explore how AI tools revolutionize customer targeting and campaign performance.",
-                glowcolor: "bg-fuchsia-500",  
-            },
-            {
-                id: 6,
-                title: "Email Marketing Best Practices",
-                description: "Enhance your email campaigns with proven techniques for higher engagement and conversions.",
-                glowcolor: "bg-emerald-500", 
-            },
-            {
-                id: 7,
-                title: "Content Marketing Made Simple",
-                description: "Master the art of creating content that captivates and converts your audience.",
-                glowcolor: "bg-sky-500", 
-            },
-            {
-                id: 8,
-                title: "Video Marketing Trends 2024",
-                description: "Stay ahead with these emerging trends in video content creation and promotion.",
-                glowcolor: "bg-rose-500",  
-            },
-            {
-                id: 9,
-                title: "Analytics for Better Marketing",
-                description: "Understand key metrics to optimize and refine your marketing strategies effectively.",
-                glowcolor: "bg-fuchsia-500", 
-            },
-            {
-                id: 10,
-                title: "Personalizing Customer Experiences",
-                description: "Use personalization techniques to build stronger connections and increase customer loyalty.",
-                glowcolor: "bg-purple-500", 
-            }
-        
-    ];
     return (
-
-
         <>
-            
             <section>
                 <div className="relative isolate mt-[-20px] md:mt-[-60px] lg:mt-[-120px] mb-[-70px] overflow-hidden bg-black h-[100vh] border-b border-fuchsia-600 md:h-[100vh] lg:h-[120vh] xl:h-[70vh] flex items-center justify-center">
                     <motion.div
@@ -177,27 +110,10 @@ export default function BlogIndex() {
                                 <span>View Our Services</span>
                             </button>
                         </div>
-
                     </div>
-
                 </div>
             </section>
-            <section className="max-w-[90%] md:max-w-[80%] lg:max-w-[70%] xl:container mx-auto mt-44 md:mt-24 lg:mt-44 mb-10 md:mb-16 lg:mb-20">
-                <div className="grid grid-cols-3 md:grid-cols-2 gap-8">
-                    <div className="flex flex-col gap-y-10 md:gap-y-14">
-                        {posts.slice(0, Math.ceil(posts.length / 2)).map((post) => (
-                            <Blogcards key={post.id} title={post.title} description={post.description} glowcolor={post.glowcolor} />
-                        ))}
-                    </div>
-
-                    <div className="flex flex-col gap-y-10 md:gap-y-14 pt-8 md:pt-16">
-                        {posts.slice(Math.ceil(posts.length / 2)).map((post) => (
-                            <Blogcards key={post.id} title={post.title} description={post.description} glowcolor={post.glowcolor} />
-                        ))}
-                    </div>
-                    
-                </div>
-            </section>
+            <BlogList />
         </>
     )
 }
