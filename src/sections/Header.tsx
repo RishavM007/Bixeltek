@@ -109,7 +109,7 @@ export const Header = () => {
                     <li><Link href="/googleadsman" className="block py-2 px-4 hover:bg-gray-700 rounded">Google Ads Management</Link></li>
                     <li><Link href="/seo" className="block py-2 px-4 hover:bg-gray-700 rounded">SEO</Link></li>
                     <li><Link href="/socialmedia" className="block py-2 px-4 hover:bg-gray-700 rounded">Social Media Management</Link></li>
-                    <li><Link href="/webdevelopment" className="block py-2 px-4 hover:bg-gray-700 rounded">Web Development</Link></li>
+                    <li><Link href="/webdev" className="block py-2 px-4 hover:bg-gray-700 rounded">Web Development</Link></li>
                     <li><Link href="/digitalmarketing" className="block py-2 px-4 hover:bg-gray-700 rounded">Digital Marketing</Link></li>
                   </motion.ul>
                 )}
@@ -179,7 +179,7 @@ export const Header = () => {
                             </Link>
                           </li>
                           <li>
-                            <Link href="/services/service4" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
+                            <Link href="/webdev" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
                               <h3 className="text-lg font-semibold text-black">Web Development</h3>
                               <p className="text-sm text-gray-500">Build scalable and modern web solutions.</p>
                             </Link>

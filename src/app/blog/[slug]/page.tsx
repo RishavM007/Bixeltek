@@ -5,7 +5,7 @@ interface BlogPostProps {
 }
 
 async function getBlogPost(slug: string) {
-  const res = await fetch(`https://demo.bixeltek.com/headless/wp-json/wp/v2/posts?slug=${slug}`);
+  const res = await fetch(`https://bixeltek.com/wp-json/wp/v2/posts?slug=${slug}`);
   if (!res.ok) return null;
 
   const data = await res.json();
@@ -20,11 +20,11 @@ export default async function BlogPost({ params }: BlogPostProps) {
   }
 
   return (
-    <main className="max-w-3xl mx-auto p-6">
+    <main className="max-w-[90%] mx-auto p-6">
       <h1 className="text-3xl font-bold mb-4 text-white">{post.title.rendered}</h1>
       <p className="text-gray-100 mb-4">{new Date(post.date).toLocaleDateString()}</p>
       <div
-        className="prose max-w-none text-white"
+        className="prose max-w-full text-white"
         dangerouslySetInnerHTML={{ __html: post.content.rendered }}
       />
     </main>

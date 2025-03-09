@@ -37,6 +37,7 @@ const config: Config = {
       },
       fontFamily:{
         'inter': ['Inter', 'sans-serif'],
+        'poppins': ['Poppins', 'sans-serif'],
         'montaga': ['Montaga', 'serif'],
         'anton': [ 'Anton', 'sans-serif'],
         'italiana': ['Italiana', 'serif'],

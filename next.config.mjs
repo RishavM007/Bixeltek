@@ -28,7 +28,7 @@ const nextConfig = {
     return config;
   },
   images: {
-    domains: ["demo.bixeltek.com"], // Add your domain here
+    domains: ["bixeltek.com"], // Add your domain here
   },
 };
 

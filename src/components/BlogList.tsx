@@ -26,7 +26,7 @@ export default async function BlogList() {
                                 alt={post.title.rendered}
                                 width={600}
                                 height={350}
-                                className="w-full h-[350px] object-cover rounded-lg mb-4"
+                                className="w-full h-auto object-cover rounded-lg mb-4"
                             />
                         )}
                         <Link href={`/blog/${post.slug}`} className="text-xl font-semibold hover:underline">

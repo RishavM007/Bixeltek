@@ -5,6 +5,8 @@ import TestimonialSection from '@/components/TestimonialPage';
 import healthcare from "@/assets/digital marketing for health care practices.jpg";
 import cleaningcomp from "@/assets/digital marketing servies for cleaning companies.jpg";
 import oil from "@/assets/digital marketing for oil refinaries.jpg";
+import { FaSearch, FaTachometerAlt, FaFileAlt, FaStar, FaMapMarkerAlt, FaCode } from "react-icons/fa";
+import { PiGreaterThan } from "react-icons/pi";
 import meeting from '@/assets/meeting.avif'
 import pet from "@/assets/digital marketing for pet stores.jpg";
 import roofing from "@/assets/digital marketing for roofing industries.jpg";
@@ -12,6 +14,7 @@ import dental from "@/assets/digital marketing for health care practices.jpg";
 import lawncare from "@/assets/digital marketing for lawn care services.jpg";
 import blackcar from "@/assets/digital marketing for car detailers.jpg";
 import { VscDebugBreakpointDataUnverified } from "react-icons/vsc";
+import { FaTooth, FaHospital, FaDog, FaGasPump, FaCar, FaBroom, FaGraduationCap, FaBuilding, FaTree, FaSeedling } from "react-icons/fa";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { TbReportAnalytics } from "react-icons/tb";
 import { GrFlag } from "react-icons/gr";
@@ -23,12 +26,35 @@ import Image from 'next/image';
 
 export default function Seo() {
     const [isOpen, setIsOpen] = useState(false);
-        const [openIndex, setOpenIndex] = useState<number | null>(null);
+    const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-        const toggleFAQ = (index: number) => {
-            setOpenIndex(openIndex === index ? null : index);
-        };
-    
+    const toggleFAQ = (index: number) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
+
+
+    const industries = [
+        { name: "Dental", icon: <FaTooth /> },
+        { name: "Healthcare", icon: <FaHospital /> },
+        { name: "Pet Shops", icon: <FaDog /> },
+        { name: "Oil & Gas", icon: <FaGasPump /> },
+        { name: "Automobile", icon: <FaCar /> },
+        { name: "Roof Cleaning", icon: <FaBroom /> },
+        { name: "Education", icon: <FaGraduationCap /> },
+        { name: "Real Estate", icon: <FaBuilding /> },
+        { name: "Arborist & Tree Removal", icon: <FaTree /> },
+        { name: "Lawn Care", icon: <FaSeedling /> },
+    ];
+
+    const seoChallenges = [
+        { icon: <FaSearch />, title: "Poor Keyword Targeting", desc: "Missing high-intent search queries that bring in buyers." },
+        { icon: <FaTachometerAlt />, title: "Slow Website Speed", desc: "A slow site leads to higher bounce rates & lower rankings." },
+        { icon: <FaFileAlt />, title: "Weak Content Strategy", desc: "Google favors sites with valuable, engaging, and optimized content." },
+        { icon: <FaStar />, title: "Low Domain Authority", desc: "Without high-quality backlinks, your competitors will outrank you." },
+        { icon: <FaMapMarkerAlt />, title: "Incomplete Google My Business", desc: "Losing local customers due to poor local SEO optimization." },
+        { icon: <FaCode />, title: "Lack of Technical SEO", desc: "Site structure, schema markup & mobile optimization need fixes." }
+    ];
+
     const faqs = [
         {
             question: " How long does SEO take to work?",
@@ -133,6 +159,7 @@ export default function Seo() {
     return (
         <>
             <section className="relative pt-12 overflow-hidden bg-black sm:pt-16">
+                <div className="absolute bottom-0 left-0 w-full z-30 h-40 bg-gradient-to-t from-black to-transparent"></div>
                 <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                     <div className="max-w-4xl mx-auto text-center">
                         <p className="text-sm font-normal tracking-widest uppercase">
@@ -234,155 +261,27 @@ export default function Seo() {
                     </div>
                 </div>
             </section>
-            <section>
+            <section className="max-w-4xl mx-auto text-center py-12">
+                <h2 className="text-5xl font-sofiasanscondensed font-medium text-white mb-1">Why Your Website Isn&apos;t Ranking</h2>
+                <h2 className='text-5xl font-sofiasanscondensed text-purple-500 mb-6'>The SEO Challenge</h2>
 
-                <div className="bg-black">
-
-                    <div className="max-w-[80%] px-4 xl:px-0 py-10 lg:pt-20 lg:pb-20 mx-auto">
-
-                        <div className="max-w-3xl mb-10 lg:mb-14">
-                            <h2 className="text-white font-semibold text-2xl md:text-5xl font-sofiasanscondensed md:leading-tight">Why Your Website Isn&apos;t Ranking – <span className='text-purple-500'>The SEO Challenge</span></h2>
-                            <p className="mt-1 text-[18px] text-neutral-400">If your website isn’t driving traffic or leads, you might be facing:</p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    {seoChallenges.map((item, index) => (
+                        <div key={index} className="p-6 text-white flex flex-col justify-center items-center bg-transparent">
+                            <div className="text-white text-3xl mb-3">{item.icon}</div>
+                            <h3 className="text-lg font-semibold text-center">{item.title}</h3>
+                            <p className="text-sm text-gray-300 text-center">{item.desc}</p>
                         </div>
-
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 lg:items-center">
-                            <div className="aspect-w-16  flex justify-center  aspect-h-9 lg:aspect-none">
-                                <Image className="w-[70%] object-cover rounded-xl" src={meeting} alt="Features" />
-                            </div>
-
-                            <div>
-                                <div className="mb-4">
-                                    <h3 className="text-purple-500 text-xs font-medium uppercase">
-                                        Causes
-                                    </h3>
-                                </div>
-
-
-
-                                <div className="flex gap-x-5 ms-1">
-
-                                    <div className="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800">
-                                        <div className="relative z-10 size-8 flex justify-center items-center">
-                                            <span className="flex shrink-0 justify-center items-center size-8 border border-neutral-800 text-purple-500 font-semibold text-xs uppercase rounded-full">
-                                                1
-                                            </span>
-                                        </div>
-                                    </div>
-
-
-
-                                    <div className="grow pt-0.5 pb-8 sm:pb-12">
-                                        <p className="text-sm lg:text-base text-neutral-400">
-                                            <span className="text-white">Poor Keyword Targeting:</span>
-                                            &nbsp;Missing high-intent search queries that bring in buyers.
-                                        </p>
-                                    </div>
-
-                                </div>
-
-
-
-                                <div className="flex gap-x-5 ms-1">
-
-                                    <div className="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800">
-                                        <div className="relative z-10 size-8 flex justify-center items-center">
-                                            <span className="flex shrink-0 justify-center items-center size-8 border border-neutral-800 text-purple-500 font-semibold text-xs uppercase rounded-full">
-                                                2
-                                            </span>
-                                        </div>
-                                    </div>
-
-
-
-                                    <div className="grow pt-0.5 pb-8 sm:pb-12">
-                                        <p className="text-sm lg:text-base text-neutral-400">
-                                            <span className="text-white">Slow Website Speed:</span>
-                                            &nbsp;A slow site leads to higher bounce rates & lower rankings.
-                                        </p>
-                                    </div>
-
-                                </div>
-
-
-
-                                <div className="flex gap-x-5 ms-1">
-
-                                    <div className="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800">
-                                        <div className="relative z-10 size-8 flex justify-center items-center">
-                                            <span className="flex shrink-0 justify-center items-center size-8 border border-neutral-800 text-purple-500 font-semibold text-xs uppercase rounded-full">
-                                                3
-                                            </span>
-                                        </div>
-                                    </div>
-
-
-
-                                    <div className="grow pt-0.5 pb-8 sm:pb-12">
-                                        <p className="text-sm md:text-base text-neutral-400">
-                                            <span className="text-white">Weak Content Strategy:</span>
-                                            &nbsp;Google favors sites with valuable, engaging, and optimized content.
-                                        </p>
-                                    </div>
-
-                                </div>
-
-
-
-                                <div className="flex gap-x-5 ms-1">
-
-                                    <div className="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800">
-                                        <div className="relative z-10 size-8 flex justify-center items-center">
-                                            <span className="flex shrink-0 justify-center items-center size-8 border border-neutral-800 text-purple-500 font-semibold text-xs uppercase rounded-full">
-                                                4
-                                            </span>
-                                        </div>
-                                    </div>
-
-
-
-                                    <div className="grow pt-0.5 pb-8 sm:pb-12">
-                                        <p className="text-sm md:text-base text-neutral-400">
-                                            <span className="text-white">Low Domain Authority:</span>
-                                            &nbsp;Without high-quality backlinks, your competitors will outrank you.
-                                        </p>
-                                    </div>
-
-                                </div>
-                                <div className="flex gap-x-5 ms-1">
-
-                                    <div className="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800">
-                                        <div className="relative z-10 size-8 flex justify-center items-center">
-                                            <span className="flex shrink-0 justify-center items-center size-8 border border-neutral-800 text-purple-500 font-semibold text-xs uppercase rounded-full">
-                                                5
-                                            </span>
-                                        </div>
-                                    </div>
-
-
-
-                                    <div className="grow pt-0.5 pb-8 sm:pb-12">
-                                        <p className="text-sm md:text-base text-neutral-400">
-                                            <span className="text-white">Incomplete Google My Business Profile:</span>
-                                            &nbsp;Losing local customers due to poor local SEO optimization.
-                                        </p>
-                                    </div>
-
-                                </div>
-
-
-                                <a className="group inline-flex items-center gap-x-2 py-2 px-3 bg-purple-700 font-medium text-sm text-neutral-200 rounded-full focus:outline-none" href="#">
-                                    <svg className="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path><path className="opacity-0 group-hover:opacity-100 group-focus:opacity-100 group-hover:delay-100 transition" d="M14.05 2a9 9 0 0 1 8 7.94"></path><path className="opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition" d="M14.05 6A5 5 0 0 1 18 10"></path></svg>
-                                    Schedule a call
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
+                    ))}
                 </div>
 
+                <div className="mt-8">
+                    <a href="#" className="text-white text-xl font-sans group font-semibold ">
+                        Book A Call With An <span className='text-purple-500 text-xl'>SEO Expert<PiGreaterThan className='inline-block text-lg group-hover:translate-x-2 transition-all duration-300 ml-1 mb-1' /></span>
+                    </a>
+                </div>
             </section>
-            
+
 
             <section>
                 <section>
@@ -679,7 +578,7 @@ export default function Seo() {
                 </div>
             </section> */}
 
-            
+
             <section className='py-24'>
                 <div>
                     <div className=' max-w-[90%] mx-auto'>
@@ -717,37 +616,37 @@ export default function Seo() {
             </section>
 
 
-            <section className='pt-20 pb-10'>
+            <section className='pt-20 pb-20'>
                 <div className='flex flex-col items-center gap-3'>
                     <h2 className='text-5xl text-center text-white font-sofiasanscondensed'>We&apos;re an <span className='text-[#670ef7]'>ROI-led</span> SEO agency. What does that mean?</h2>
                     <p className='text-white max-w-5xl text-center text-[16px] '>It&apos;s simple. We&apos;re not just about ticking boxes or chasing vanity metrics. As SEO specialists,every campaign, every strategy, every decision we make is geared towards one goal: maximising your return on investment through our expert SEO services. Here&apos;s how we make it happen:</p>
                 </div>
-                <div className="grid grid-cols-2 grid-rows-2 py-10 gap-0 max-w-5xl text-white mx-auto text-center">
-                    {/* Top-left */}
-                    <div className="flex flex-col gap-3 text-3xl items-center justify-center p-20 border-b-2 border-r-2  border-[#670ef7]">
+                <div className="grid grid-cols-4 py-10 gap-0 max-w-7xl text-white mx-auto text-center">
+
+                    <div className="flex flex-col gap-3 text-xl items-center border-r border-dashed  border-[#670ef7] justify-center p-6 ">
                         {items[0].icon}
-                        <h3 className="mt-2 font-semibold font-antonio">{items[0].text}</h3>
+                        <h3 className="mt-2 font-semibold font-poppins">{items[0].text}</h3>
                         <p className="text-sm mt-2">{items[0].description}</p>
                     </div>
 
                     {/* Top-right */}
-                    <div className="flex flex-col gap-3 text-3xl items-center border-b-2 border-[#670ef7] justify-center p-6">
+                    <div className="flex flex-col gap-3 text-xl items-center border-r border-dashed  border-[#670ef7] justify-center p-6">
                         {items[1].icon}
-                        <h3 className="mt-2 font-semibold font-antonio">{items[1].text}</h3>
+                        <h3 className="mt-2 font-semibold font-poppins">{items[1].text}</h3>
                         <p className="text-sm mt-2">{items[1].description}</p>
                     </div>
 
                     {/* Bottom-left */}
-                    <div className="flex flex-col gap-3 text-3xl items-center justify-center p-6 border-r-2 border-[#670ef7]">
+                    <div className="flex flex-col gap-3 text-xl items-center justify-center p-6  border-r border-dashed  border-[#670ef7]">
                         {items[2].icon}
-                        <h3 className="mt-2 font-semibold font-antonio">{items[2].text}</h3>
+                        <h3 className="mt-2 font-semibold font-poppins">{items[2].text}</h3>
                         <p className="text-sm mt-2">{items[2].description}</p>
                     </div>
 
                     {/* Bottom-right */}
-                    <div className="flex flex-col gap-3 text-3xl items-center justify-center p-6 ">
+                    <div className="flex flex-col gap-3 text-xl items-center  justify-center p-6">
                         {items[3].icon}
-                        <h3 className="mt-2 font-semibold font-antonio">{items[3].text}</h3>
+                        <h3 className="mt-2 font-semibold font-poppins">{items[3].text}</h3>
                         <p className="text-sm mt-2 ">{items[3].description}</p>
                     </div>
                 </div>
@@ -767,6 +666,14 @@ export default function Seo() {
                         Explore how our tailored approach delivers measurable success, increasing engagement, conversions, and brand visibility
                         in a competitive landscape.
                     </p>
+                    <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        {industries.map((industry, index) => (
+                            <div key={index} className="flex items-center text-lg text-white">
+                                <span className="text-white text-xl inline-block  mr-3">{industry.icon}</span>
+                                <h2 className='font-poppins text-sm'>{industry.name}&nbsp;SEO</h2>
+                            </div>
+                        ))}
+                    </div>
                     <button className="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
                         Learn More
                     </button>

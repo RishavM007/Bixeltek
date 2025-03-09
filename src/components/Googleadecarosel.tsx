@@ -8,9 +8,9 @@ import looker from '@/assets/Looker_6f803d7fdc.webp';
 export const Googleadecarosel = () => {
     return (
         <>  
-            <section className='pb-20 mb-10 flex flex-col gap-20'>
+            <section className='pb-10 md:pb-20 mb-10 flex flex-col gap-20'>
                 <div className='flex flex-col items-center'>
-                    <h2 className='text-4xl font-bold text-center xl:text-5xl mb-2 text-zinc-700'>We work with the best tools</h2>
+                    <h2 className='text-3xl md:text-4xl font-bold text-center xl:text-5xl mb-2 text-zinc-700'>We work with the best tools</h2>
                     <p className='text-center text-sm xl:text-lg text-gray-700'>We use the best tools to provide the best service to our clients.</p>
                    </div>
                 <div className="w-[90%] md:w-[90%] lg:w-[90%] mx-auto">
@@ -41,7 +41,7 @@ export const Googleadecarosel = () => {
                                     looker,
                                 ].map((logo, index) => (
                                     <div key={index}>
-                                        <Image src={logo} alt={`Company Logo ${index + 1}`} className=' h-16 w-auto object-contain' />
+                                        <Image src={logo} alt={`Company Logo ${index + 1}`} className=' h-12 md:h-16 w-auto object-contain' />
                                     </div>
                                 ))}
                             </motion.div>
