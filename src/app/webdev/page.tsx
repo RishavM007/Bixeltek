@@ -3,7 +3,7 @@ import React from 'react'
 import { useState } from 'react'
 import { HeroParallax } from '@/components/parallexHero'
 
-export default function page() {
+export default function Webdev() {
     const [isOpen, setIsOpen] = useState(false);
     const [isOpen1, setIsOpen1] = useState(false);
     const [isOpen2, setIsOpen2] = useState(false);

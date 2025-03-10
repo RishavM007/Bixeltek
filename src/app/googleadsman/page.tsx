@@ -764,7 +764,7 @@ export default function Home() {
 
                         <div className="mb-8">
                             <h2 className=" text-3xl text-gray-800 font-bold lg:text-4xl  ">
-                                It's all about 
+                                It&apos;s all about 
                             </h2>
                             <span className='text-yellow-500 text-xl mb-2 font-medium font-poppins'>More Call. More Leads. More Conversions.</span> 
                             <p className="text-gray-600 ">
