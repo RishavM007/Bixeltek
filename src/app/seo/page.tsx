@@ -57,26 +57,47 @@ export default function Seo() {
 
     const faqs = [
         {
-            question: " How long does SEO take to work?",
-            answer:
-                "SEO is a long-term strategy. Most websites see results in 3-6 months, but major improvements take longer.",
+            question: "How much does a website cost in Hyderabad?",
+            answer: "The cost of a website in Hyderabad depends on its features, design, and complexity. Contact us for a custom quote based on your business needs.",
         },
         {
-            question: "Do you guarantee Page 1 rankings?",
-            answer:
-                "No ethical SEO agency can guarantee #1 rankings, but we ensure consistent growth and long-term success.",
+            question: "Do you provide web development services outside Hyderabad?",
+            answer: "Yes! We serve clients across India, the USA, the UK, the UAE, Canada, and other countries with professional web development services.",
         },
         {
-            question: "What industries do you specialize in?",
-            answer:
-                "We work with automotive, healthcare, education, e-commerce, real estate, and more.",
+            question: "Can you improve my website’s Google ranking with SEO in Hyderabad?",
+            answer: "Yes, we offer SEO-optimized web design to help your website rank higher on Google and increase online visibility.",
         },
         {
-            question: " How much does SEO cost?",
-            answer:
-                "Our SEO packages are customized based on your business needs and competition level. Get a free consultation to learn more!",
+            question: "Which payment gateways can you integrate into my website?",
+            answer: "We integrate popular payment gateways like Razorpay, PayU, Stripe, PayPal, and other secure options for smooth online transactions.",
+        },
+        {
+            question: "Do you offer website maintenance and support services?",
+            answer: "Yes, we provide ongoing website maintenance, security updates, and technical support to ensure your site runs smoothly.",
+        },
+        {
+            question: "How long does it take to develop a website?",
+            answer: "Website development timelines vary based on project complexity. Most business websites are completed within 2-6 weeks.",
+        },
+        {
+            question: "Do you build custom e-commerce websites in Hyderabad?",
+            answer: "Yes, we specialize in e-commerce website development with secure payment integration, product management, and a seamless user experience.",
+        },
+        {
+            question: "Will my website be mobile-friendly and responsive?",
+            answer: "Absolutely! We design fully responsive websites that work seamlessly on mobile phones, tablets, and desktops.",
+        },
+        {
+            question: "Can I edit and manage my website content myself?",
+            answer: "Yes, we provide CMS-based websites (like WordPress or Strapi) that allow you to update content easily without coding knowledge.",
+        },
+        {
+            question: "Do you provide domain registration and website hosting services?",
+            answer: "Yes, we offer domain registration and reliable web hosting solutions to ensure your website remains online 24/7.",
         },
     ];
+    
 
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
@@ -742,23 +763,17 @@ export default function Seo() {
             <section className="py-24">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
-                        <div className="w-full lg:w-1/2">
-                            <img
-                                src="https://pagedone.io/asset/uploads/1696230182.png"
-                                alt="FAQ Section"
-                                className="w-full rounded-xl object-cover"
-                            />
-                        </div>
-                        <div className="w-full lg:w-1/2">
-                            <div className="lg:max-w-xl">
-                                <h6 className="text-lg font-medium text-indigo-600 mb-2">FAQs</h6>
-                                <h2 className="text-5xl font-sofiasanscondensed font-bold text-gray-100 mb-5">Looking for answers?</h2>
+                        
+                        <div className="w-full lg:w-full">
+                            <div className="lg:max-w-full">
+                                <h6 className="text-lg text-center font-medium text-indigo-600 mb-2">FAQs</h6>
+                                <h2 className="text-5xl text-center font-sofiasanscondensed font-bold text-gray-100 mb-5">Looking for answers?</h2>
                                 <div className="space-y-4">
                                     {faqs.map((faq, index) => (
                                         <div key={index} className="border-b border-gray-200 pb-4">
                                             <button
                                                 onClick={() => toggleFAQ(index)}
-                                                className="flex justify-between items-center w-full text-xl pt-5 pb-5 text-white font-normal transition duration-500 hover:text-indigo-600"
+                                                className="flex justify-between items-center w-full text-xl pt-4 pb-4 text-white font-normal transition duration-500 hover:text-indigo-600"
                                             >
                                                 {faq.question}
                                                 <svg
