@@ -1,13 +1,11 @@
 'use client';
 import React, { useState } from 'react';
 import Link from 'next/link';
-import TestimonialSection from '@/components/TestimonialPage';
 import healthcare from "@/assets/digital marketing for health care practices.jpg";
 import cleaningcomp from "@/assets/digital marketing servies for cleaning companies.jpg";
 import oil from "@/assets/digital marketing for oil refinaries.jpg";
 import { FaSearch, FaTachometerAlt, FaFileAlt, FaStar, FaMapMarkerAlt, FaCode } from "react-icons/fa";
 import { PiGreaterThan } from "react-icons/pi";
-import meeting from '@/assets/meeting.avif'
 import pet from "@/assets/digital marketing for pet stores.jpg";
 import roofing from "@/assets/digital marketing for roofing industries.jpg";
 import dental from "@/assets/digital marketing for health care practices.jpg";
@@ -18,9 +16,7 @@ import { FaTooth, FaHospital, FaDog, FaGasPump, FaCar, FaBroom, FaGraduationCap,
 import { BsGraphUpArrow } from "react-icons/bs";
 import { TbReportAnalytics } from "react-icons/tb";
 import { GrFlag } from "react-icons/gr";
-
 import { LuFileClock } from "react-icons/lu";
-import { FaDatabase, FaUsers, FaHandshake, FaChartLine, FaEnvelope, FaClipboardList } from "react-icons/fa";
 import Image from 'next/image';
 
 
@@ -57,44 +53,44 @@ export default function Seo() {
 
     const faqs = [
         {
-            question: "How much does a website cost in Hyderabad?",
-            answer: "The cost of a website in Hyderabad depends on its features, design, and complexity. Contact us for a custom quote based on your business needs.",
+            question: "How much does SEO cost in Hyderabad, and what factors affect pricing?",
+            answer: "The cost of SEO services in Hyderabad varies based on keyword competition, website size, and optimization level. We offer affordable SEO packages tailored to your business goals.",
         },
         {
-            question: "Do you provide web development services outside Hyderabad?",
-            answer: "Yes! We serve clients across India, the USA, the UK, the UAE, Canada, and other countries with professional web development services.",
+            question: "Do you provide SEO services outside Hyderabad?",
+            answer: "Yes! We offer professional SEO services to businesses across India, the USA, the UK, the UAE, Canada, and more, helping brands improve their Google rankings worldwide.",
         },
         {
-            question: "Can you improve my website’s Google ranking with SEO in Hyderabad?",
-            answer: "Yes, we offer SEO-optimized web design to help your website rank higher on Google and increase online visibility.",
+            question: "How can SEO improve my website’s Google ranking and organic traffic?",
+            answer: "SEO helps boost your website’s visibility on Google by optimizing content, keywords, backlinks, and technical aspects. Our expert SEO strategies drive organic traffic and improve search rankings.",
         },
         {
-            question: "Which payment gateways can you integrate into my website?",
-            answer: "We integrate popular payment gateways like Razorpay, PayU, Stripe, PayPal, and other secure options for smooth online transactions.",
+            question: "What are the key benefits of investing in SEO for my business?",
+            answer: "SEO increases organic traffic, improves brand credibility, generates high-quality leads, enhances user experience, and delivers long-term results for your online business growth.",
         },
         {
-            question: "Do you offer website maintenance and support services?",
-            answer: "Yes, we provide ongoing website maintenance, security updates, and technical support to ensure your site runs smoothly.",
+            question: "How long does it take to see results from SEO optimization?",
+            answer: "SEO is a long-term strategy, and results typically take 3-6 months, depending on competition, keyword ranking, and website optimization efforts.",
         },
         {
-            question: "How long does it take to develop a website?",
-            answer: "Website development timelines vary based on project complexity. Most business websites are completed within 2-6 weeks.",
+            question: "Do you offer local SEO services for businesses in Hyderabad?",
+            answer: "Yes! Our **local SEO services** help businesses rank higher in Google My Business and local search results, attracting more customers from Hyderabad and surrounding areas.",
         },
         {
-            question: "Do you build custom e-commerce websites in Hyderabad?",
-            answer: "Yes, we specialize in e-commerce website development with secure payment integration, product management, and a seamless user experience.",
+            question: "Do you provide e-commerce SEO for online stores?",
+            answer: "Yes! We offer E-Commerce SEO services, including product page optimization, technical SEO, schema markup, and conversion rate optimization to boost sales and traffic.",
         },
         {
-            question: "Will my website be mobile-friendly and responsive?",
-            answer: "Absolutely! We design fully responsive websites that work seamlessly on mobile phones, tablets, and desktops.",
+            question: "Will SEO make my website mobile-friendly and faster?",
+            answer: "Yes! Our SEO services include mobile optimization, page speed improvements, and core web vitals optimization to enhance user experience and search rankings.",
         },
         {
-            question: "Can I edit and manage my website content myself?",
-            answer: "Yes, we provide CMS-based websites (like WordPress or Strapi) that allow you to update content easily without coding knowledge.",
+            question: "Can I track my SEO performance and keyword rankings?",
+            answer: "Absolutely! We provide regular SEO reports, keyword ranking updates, Google Analytics tracking, and insights to monitor your website’s growth and ROI.",
         },
         {
-            question: "Do you provide domain registration and website hosting services?",
-            answer: "Yes, we offer domain registration and reliable web hosting solutions to ensure your website remains online 24/7.",
+            question: "Why should I choose Bixeltek for SEO services in Hyderabad?",
+            answer: "Bixeltek is a trusted SEO agency in Hyderabad, specializing in on-page SEO, off-page SEO, link building, technical SEO, and content marketing to boost your website’s search engine rankings.",
         },
     ];
     

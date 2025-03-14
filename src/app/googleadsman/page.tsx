@@ -3,67 +3,72 @@ import React from 'react';
 import Image from 'next/image';
 import { useState } from 'react';
 import { Googleadecarosel } from '@/components/Googleadecarosel';
-import { FaSearch, FaBullseye, FaRocket, FaLightbulb } from "react-icons/fa";
 import rocket from '@/assets/rb_3704.png';
-import laptop from '@/assets/carlos-muza-hpjSkU2UYSU-unsplash.jpg'
 import { LuTrendingUp, LuTarget, LuFlaskConical, LuClipboardList, LuLayoutDashboard, LuLayers } from "react-icons/lu";
 import Teamimg from '@/assets/pexels-fauxels-3182834.jpg'
 import { Googlecard } from '@/components/Cards/Googleadscards';
 import { motion } from 'framer-motion';
 import HoverDevCards from '@/components/Hovercards';
-import myplaceholder from '@/assets/pexels-emilio-garcia-96280844-29700658.jpg';
-import { FaChartLine, FaChartPie, FaChartBar, FaQuoteLeft } from "react-icons/fa";
-import { Line } from "react-chartjs-2";
-import { Accordion } from '@/components/Faq'
+import { FaChartLine, FaChartPie, FaChartBar } from "react-icons/fa";
 import { SiPolestar } from "react-icons/si";
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, ArcElement } from "chart.js";
 import Link from 'next/link';
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, ArcElement);
 
-const lineChartData = {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-    datasets: [
-        {
-            label: "ROI Growth",
-            data: [100, 120, 150, 170, 190, 200],
-            borderColor: "rgb(160, 32, 140)",
-            tension: 0.1
-        }
-    ]
-};
-
-const steps = [
-    { icon: <FaSearch />, title: "Research", description: "We analyze your market and competitors." },
-    { icon: <FaChartLine />, title: "Strategy", description: "We craft data-driven ad strategies." },
-    { icon: <FaBullseye />, title: "Targeting", description: "We refine audience targeting for better reach." },
-    { icon: <FaRocket />, title: "Optimization", description: "We continuously optimize your ads." },
-    { icon: <FaLightbulb />, title: "Scaling", description: "We scale winning campaigns for growth." }
+const faqs = [
+    {
+        question: "What is Google Ads, and how can it help my business grow?",
+        answer: "Google Ads is a powerful pay-per-click (PPC) advertising platform that helps businesses appear at the top of Google search results. By targeting high-intent keywords, businesses can attract more leads, increase sales, and improve brand visibility.",
+    },
+    {
+        question: "How much does it cost to run a Google Ads campaign?",
+        answer: "The cost of running a Google Ads campaign depends on factors like industry competition, keyword bidding, and ad quality. We create **cost-effective PPC campaigns** tailored to your budget, ensuring maximum ROI.",
+    },
+    {
+        question: "Can Google Ads generate high-quality leads for my business?",
+        answer: "Yes! Google Ads allows **laser-focused audience targeting** based on location, interests, demographics, and search intent. This ensures you attract **qualified leads** who are ready to convert.",
+    },
+    {
+        question: "How long does it take to see results with Google Ads?",
+        answer: "Unlike SEO, which takes months to rank, Google Ads delivers **instant traffic** to your website. However, optimizing your ad campaigns for maximum **click-through rate (CTR)** and conversions may take 2-4 weeks.",
+    },
+    {
+        question: "What types of Google Ads campaigns should I run?",
+        answer: "The best **Google Ads campaign** type depends on your business goals. We offer: **Search Ads** (for high-intent keywords), **Display Ads** (for brand awareness), **Shopping Ads** (for e-commerce), **Video Ads** (for YouTube marketing), and **Remarketing Ads** (to retarget past visitors).",
+    },
+    {
+        question: "Can I target a specific audience using Google Ads?",
+        answer: "Absolutely! Google Ads provides advanced targeting options like **geo-targeting, device targeting, demographic filters, keyword intent targeting**, and remarketing. This ensures your ads reach the right people at the right time.",
+    },
+    {
+        question: "How do I measure the success of my Google Ads campaign?",
+        answer: "We track key performance metrics like **CTR (Click-Through Rate), Conversion Rate, Quality Score, Cost Per Click (CPC), and Return on Ad Spend (ROAS)** to ensure you get the best results from your ad budget.",
+    },
+    {
+        question: "Do I need a large budget to start Google Ads?",
+        answer: "No, you can start with a **small Google Ads budget** and scale as you see positive ROI. We optimize ad spending to minimize costs and **maximize lead generation** within your budget.",
+    },
+    {
+        question: "Can you manage my Google Ads campaigns for me?",
+        answer: "Yes! Our **Google Ads management services** include **campaign setup, keyword research, A/B testing, conversion tracking, bid optimization, and continuous performance monitoring** to boost your ad results.",
+    },
+    {
+        question: "Why should I choose Bixeltek for Google Ads management?",
+        answer: "Bixeltek is a **trusted Google Ads agency** specializing in **high-performance PPC campaigns**. We focus on **increasing conversions, reducing ad spend wastage, and delivering measurable growth** for your business.",
+    },
 ];
 
-const lineChartData2 = {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-    datasets: [
-        {
-            label: "ROI Growth",
-            data: [100, 102, 106, 103, 123, 115, 120, 110, 170, 150, 190],
-            borderColor: "rgb(160,32, 140)",
-            tension: 0.1
-        },
-        {
-            label: "Traffic",
-            data: [120, 140, 110, 150, 180, 200],
-            borderColor: "rgb(160,32,140)",
-            tension: 0.1
-        }
-    ]
-}
 
 
 export default function Home() {
     const [isOpen, setIsOpen] = useState(false);
     const [isOpen1, setIsOpen1] = useState(false);
     const [isOpen2, setIsOpen2] = useState(false);
+    const [openIndex, setOpenIndex] = useState<number | null>(null);
 
+    const toggleFAQ = (index: number) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
 
     const toggleDropdown1 = () => {
         setIsOpen1(!isOpen1);
@@ -76,72 +81,6 @@ export default function Home() {
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
     };
-
-    const data = [
-        {
-            title: "Step 1: Set Goals",
-            content: (
-                <div>
-                    <p className="text-neutral-800 text-sm md:text-lg font-normal">
-                        Define your advertising objectives, such as increasing website traffic, generating leads, or boosting sales.Clearly outline your target audience and what you aim to achieve with your Google Ads campaign.
-                    </p>
-                </div>
-            ),
-        },
-        {
-            title: "Step 2: Keyword Research",
-            content: (
-                <div>
-                    <p className="text-neutral-800 text-sm md:text-lg font-normal mb-8">
-                        Use tools like Google Keyword Planner to find relevant keywords for your campaign.Focus on keywords with high search intent that align with your goals.
-                    </p>
-                </div>
-            ),
-        },
-        {
-            title: "Step 3: Create Ad Groups",
-            content: (
-                <div>
-                    <p className="text-neutral-800  text-sm md:text-lg font-normal mb-8">
-                        Organize your keywords into tightly themed ad groups for better relevance and performance.Each ad group should focus on a specific set of related keywords.
-                    </p>
-
-                </div>
-            ),
-        },
-        {
-            title: "Step 4: Write Compelling Ads",
-            content: (
-                <div>
-                    <p className="text-neutral-800  text-sm md:text-lg font-normal mb-8">
-                        Create eye-catching ad copy that includes your keywords and a clear call-to-action.Ensure your ads match the intent of the keywords and resonate with your target audience.
-                    </p>
-                </div>
-            ),
-        },
-        {
-            title: "Step 5: Set Up Landing Pages",
-            content: (
-                <div>
-                    <p className="text-neutral-800  text-sm md:text-lg font-normal mb-8">
-                        Design user-friendly landing pages that align with your ad copy and goals.Optimize landing pages for conversions with clear headlines, relevant content, and strong CTAs.
-                    </p>
-
-                </div>
-            ),
-        },
-        {
-            title: "Step 6: Monitor and Optimize",
-            content: (
-                <div>
-                    <p className="text-neutral-800  text-sm md:text-lg font-normal mb-8">
-                        Track your campaign performance using metrics like CTR, CPC, and conversion rates. Adjust bids, refine keywords, and tweak ad copy to improve results continuously.
-                    </p>
-
-                </div>
-            ),
-        },
-    ];
 
     const benefits = [
         {
@@ -368,201 +307,75 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="w-[90%] md:w-1/2 p-6 relative bg-[#1a1a1a] rounded-lg">
-                            <h3 className="text-3xl md:text-4xl  font-normal text-white mb-4">Get in Touch</h3>
-                            <div className='absolute w-40 h-1 bg-[#670ef7] translate-y-[-10px] translate-x-[5px]'></div>
-                            <form className="space-y-4">
-                                <div className='flex flex-col md:flex-row gap-5'>
+                        <h3 className="text-3xl md:text-4xl  font-normal text-white mb-4">Get in Touch</h3>
+                        <div className='absolute w-40 h-1 bg-[#670ef7] translate-y-[-10px] translate-x-[5px]'></div>
+                        <form className="space-y-4">
+                            <div className='flex flex-col md:flex-row gap-5'>
 
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        name="name"
-                                        className="w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                        placeholder="First Name"
-                                    />
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        name="name"
-                                        className="w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                        placeholder="Last Name*"
-                                    />
-                                </div>
-                                <div className='flex flex-col md:flex-row gap-5'>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    className="w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                    placeholder="First Name"
+                                />
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    className="w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                    placeholder="Last Name*"
+                                />
+                            </div>
+                            <div className='flex flex-col md:flex-row gap-5'>
 
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        className=" w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                        placeholder="Enter your email*"
-                                    />
-                                    <input
-                                        type="phone"
-                                        id="phone"
-                                        name="phone"
-                                        className=" w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                        placeholder="Enter your phone number"
-                                    />
-                                </div>
-                                <div className='flex flex-col md:flex-row gap-5'>
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        name="name"
-                                        className="w-full md:w-1/2 mt-2 p-3 border-b border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                        placeholder="Company/Organisation*"
-                                    />
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        name="name"
-                                        className="w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                        placeholder="Website"
-                                    />
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    className=" w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                    placeholder="Enter your email*"
+                                />
+                                <input
+                                    type="phone"
+                                    id="phone"
+                                    name="phone"
+                                    className=" w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                    placeholder="Enter your phone number"
+                                />
+                            </div>
+                            <div className='flex flex-col md:flex-row gap-5'>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    className="w-full md:w-1/2 mt-2 p-3 border-b border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                    placeholder="Company/Organisation*"
+                                />
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    className="w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                    placeholder="Website"
+                                />
 
-                                </div>
-                                <div className='relative max-w-full flex flex-col md:flex-row gap-4'>
-                                    <div className="relative max-w-full md:max-w-[50%] inline-block text-left w-full">
-                                        <button
-                                            type="button"
-                                            className="inline-flex w-full justify-between text-left rounded-md border border-gray-600 bg-black px-4 py-3 text-sm font-medium text-gray-300 shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                            id="menu-button"
-                                            aria-expanded={isOpen1}
-                                            aria-haspopup="true"
-                                            onClick={toggleDropdown1}
-                                        >
-                                            How are you running your Marketing Department Currently?
-                                            <svg
-                                                className={`-mr-1 ml-2 h-5 w-5 text-gray-300 transition-transform ${isOpen1 ? 'rotate-180' : ''}`}
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 15 15"
-                                                fill="currentColor"
-                                                aria-hidden="true"
-                                            >
-                                                <path
-                                                    fillRule="evenodd"
-                                                    d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                    clipRule="evenodd"
-                                                />
-                                            </svg>
-                                        </button>
-
-                                        {/* Dropdown menu */}
-                                        {isOpen1 && (
-                                            <div
-                                                className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                                                role="menu"
-                                                aria-orientation="vertical"
-                                                aria-labelledby="menu-button"
-                                            >
-                                                <div className="py-1" role="none">
-                                                    <a
-                                                        href="#"
-                                                        className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                                        role="menuitem"
-                                                    >
-                                                        Inhouse
-                                                    </a>
-                                                    <a
-                                                        href="#"
-                                                        className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                                        role="menuitem"
-                                                    >
-                                                        Outsourced
-                                                    </a>
-                                                    <a
-                                                        href="#"
-                                                        className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                                        role="menuitem"
-                                                    >
-                                                        Myself
-                                                    </a>
-                                                    <a
-                                                        href="#"
-                                                        className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                                        role="menuitem"
-                                                    >
-                                                        Freelancer
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        )}
-                                    </div>
-                                    <div className="relative max-w-full md:max-w-[50%] inline-block text-left w-full">
-                                        <button
-                                            type="button"
-                                            className="inline-flex w-full justify-between rounded-md border text-left border-gray-600 bg-black px-4 py-3 text-sm font-medium text-gray-300 shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                            id="menu-button"
-                                            aria-expanded={isOpen2}
-                                            aria-haspopup="true"
-                                            onClick={toggleDropdown2}
-                                        >
-                                            What is the current marketing budget you are looking at?
-                                            <svg
-                                                className={`-mr-1 ml-2 h-5 w-5 text-gray-300 transition-transform ${isOpen2 ? 'rotate-180' : ''}`}
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 15 15"
-                                                fill="currentColor"
-                                                aria-hidden="true"
-                                            >
-                                                <path
-                                                    fillRule="evenodd"
-                                                    d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                    clipRule="evenodd"
-                                                />
-                                            </svg>
-                                        </button>
-
-                                        {/* Dropdown menu */}
-                                        {isOpen2 && (
-                                            <div
-                                                className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                                                role="menu"
-                                                aria-orientation="vertical"
-                                                aria-labelledby="menu-button"
-                                            >
-                                                <div className="py-1" role="none">
-                                                    <a
-                                                        href="#"
-                                                        className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                                        role="menuitem"
-                                                    >
-                                                        INR 1-2 Lacs a month
-                                                    </a>
-                                                    <a
-                                                        href="#"
-                                                        className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                                        role="menuitem"
-                                                    >
-                                                        INR 2-5 Lacs a month
-                                                    </a>
-                                                    <a
-                                                        href="#"
-                                                        className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                                        role="menuitem"
-                                                    >
-                                                        INR &gt;5 Lacs a month
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        )}
-                                    </div>
-                                </div>
-                                <div className="relative max-w-full inline-block text-left w-full">
+                            </div>
+                            <div className='relative max-w-full flex flex-col md:flex-row gap-4'>
+                                <div className="relative max-w-full md:max-w-[50%] inline-block text-left w-full">
                                     <button
                                         type="button"
-                                        className="inline-flex w-full justify-between rounded-md border border-gray-600 bg-black px-4 py-3 text-sm font-medium text-gray-300 shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                        className="inline-flex w-full justify-between text-left rounded-md border border-gray-600 bg-black px-4 py-3 text-sm font-medium text-gray-300 shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                                         id="menu-button"
-                                        aria-expanded={isOpen}
+                                        aria-expanded={isOpen1}
                                         aria-haspopup="true"
-                                        onClick={toggleDropdown}
+                                        onClick={toggleDropdown1}
                                     >
-                                        Our Services
+                                        How are you running your Marketing Department Currently?
                                         <svg
-                                            className={`-mr-1 ml-2 h-5 w-5 text-gray-300 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+                                            className={`-mr-1 ml-2 h-5 w-5 text-gray-300 transition-transform ${isOpen1 ? 'rotate-180' : ''}`}
                                             xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20"
+                                            viewBox="0 0 15 15"
                                             fill="currentColor"
                                             aria-hidden="true"
                                         >
@@ -575,7 +388,7 @@ export default function Home() {
                                     </button>
 
                                     {/* Dropdown menu */}
-                                    {isOpen && (
+                                    {isOpen1 && (
                                         <div
                                             className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                                             role="menu"
@@ -588,52 +401,178 @@ export default function Home() {
                                                     className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
                                                     role="menuitem"
                                                 >
-                                                    Social Media Management
+                                                    Inhouse
                                                 </a>
                                                 <a
                                                     href="#"
                                                     className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
                                                     role="menuitem"
                                                 >
-                                                    SEO Optimization
+                                                    Outsourced
                                                 </a>
                                                 <a
                                                     href="#"
                                                     className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
                                                     role="menuitem"
                                                 >
-                                                    E-commerce Solutions
+                                                    Myself
                                                 </a>
                                                 <a
                                                     href="#"
                                                     className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
                                                     role="menuitem"
                                                 >
-                                                    Content Marketing
-                                                </a>
-                                                <a
-                                                    href="#"
-                                                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                                    role="menuitem"
-                                                >
-                                                    PPC Campaigns
+                                                    Freelancer
                                                 </a>
                                             </div>
                                         </div>
                                     )}
                                 </div>
-                                <textarea name="textarea" id="" rows={5} placeholder='Tell us about your business'
-                                    className='w-full mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]'
-                                ></textarea>
+                                <div className="relative max-w-full md:max-w-[50%] inline-block text-left w-full">
+                                    <button
+                                        type="button"
+                                        className="inline-flex w-full justify-between rounded-md border text-left border-gray-600 bg-black px-4 py-3 text-sm font-medium text-gray-300 shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                        id="menu-button"
+                                        aria-expanded={isOpen2}
+                                        aria-haspopup="true"
+                                        onClick={toggleDropdown2}
+                                    >
+                                        What is the current marketing budget you are looking at?
+                                        <svg
+                                            className={`-mr-1 ml-2 h-5 w-5 text-gray-300 transition-transform ${isOpen2 ? 'rotate-180' : ''}`}
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 15 15"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                fillRule="evenodd"
+                                                d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                clipRule="evenodd"
+                                            />
+                                        </svg>
+                                    </button>
+
+                                    {/* Dropdown menu */}
+                                    {isOpen2 && (
+                                        <div
+                                            className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                            role="menu"
+                                            aria-orientation="vertical"
+                                            aria-labelledby="menu-button"
+                                        >
+                                            <div className="py-1" role="none">
+                                                <a
+                                                    href="#"
+                                                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                    role="menuitem"
+                                                >
+                                                    INR 1-2 Lacs a month
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                    role="menuitem"
+                                                >
+                                                    INR 2-5 Lacs a month
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                    role="menuitem"
+                                                >
+                                                    INR &gt;5 Lacs a month
+                                                </a>
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+                            <div className="relative max-w-full inline-block text-left w-full">
                                 <button
-                                    type="submit"
-                                    className="w-full bg-[#670ef7] text-white py-3 rounded-lg hover:bg-[#5b0cd1] transition"
+                                    type="button"
+                                    className="inline-flex w-full justify-between rounded-md border border-gray-600 bg-black px-4 py-3 text-sm font-medium text-gray-300 shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                    id="menu-button"
+                                    aria-expanded={isOpen}
+                                    aria-haspopup="true"
+                                    onClick={toggleDropdown}
                                 >
-                                    Submit
+                                    Our Services
+                                    <svg
+                                        className={`-mr-1 ml-2 h-5 w-5 text-gray-300 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            fillRule="evenodd"
+                                            d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clipRule="evenodd"
+                                        />
+                                    </svg>
                                 </button>
-                            </form>
-                        </div>
+
+                                {/* Dropdown menu */}
+                                {isOpen && (
+                                    <div
+                                        className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                        role="menu"
+                                        aria-orientation="vertical"
+                                        aria-labelledby="menu-button"
+                                    >
+                                        <div className="py-1" role="none">
+                                            <a
+                                                href="#"
+                                                className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                role="menuitem"
+                                            >
+                                                Social Media Management
+                                            </a>
+                                            <a
+                                                href="#"
+                                                className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                role="menuitem"
+                                            >
+                                                SEO Optimization
+                                            </a>
+                                            <a
+                                                href="#"
+                                                className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                role="menuitem"
+                                            >
+                                                E-commerce Solutions
+                                            </a>
+                                            <a
+                                                href="#"
+                                                className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                role="menuitem"
+                                            >
+                                                Content Marketing
+                                            </a>
+                                            <a
+                                                href="#"
+                                                className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                role="menuitem"
+                                            >
+                                                PPC Campaigns
+                                            </a>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
+                            <textarea name="textarea" id="" rows={5} placeholder='Tell us about your business'
+                                className='w-full mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]'
+                            ></textarea>
+                            <button
+                                type="submit"
+                                className="w-full bg-[#670ef7] text-white py-3 rounded-lg hover:bg-[#5b0cd1] transition"
+                            >
+                                Submit
+                            </button>
+                        </form>
                     </div>
+                </div>
             </section>
 
             <section className='bg-white py-20'>
@@ -764,9 +703,9 @@ export default function Home() {
 
                         <div className="mb-8">
                             <h2 className=" text-3xl text-gray-800 font-bold lg:text-4xl  ">
-                                It&apos;s all about 
+                                It&apos;s all about
                             </h2>
-                            <span className='text-yellow-500 text-xl mb-2 font-medium font-poppins'>More Call. More Leads. More Conversions.</span> 
+                            <span className='text-yellow-500 text-xl mb-2 font-medium font-poppins'>More Call. More Leads. More Conversions.</span>
                             <p className="text-gray-600 ">
                                 We provide you with a test account that can be set up in seconds. Our main focus is getting responses to you as soon as we can.
                             </p>
@@ -804,7 +743,7 @@ export default function Home() {
 
                             <ul className="grid grid-cols-2  divide-y-2 divide-x-2 divide-gray-200 overflow-hidden dark:divide-neutral-700">
                                 <li className="flex flex-col -m-0.5 p-4 md:p-8">
-                                    <div className="flex items-end gap-x-2 text-3xl sm:text-5xl font-bold text-blue-600">
+                                    <div className="flex items-end gap-x-0 md:gap-x-2 text-4xl md:text-5xl font-bold text-blue-600">
                                         45k+
                                     </div>
                                     <p className="text-sm sm:text-base text-gray-600">
@@ -813,7 +752,7 @@ export default function Home() {
                                 </li>
 
                                 <li className="flex flex-col -m-0.5 p-4 lg:p-8">
-                                    <div className="flex items-end gap-x-2 text-3xl sm:text-5xl font-bold text-red-600">
+                                    <div className="flex items-end gap-x-0 md:gap-x-2 text-4xl md:text-5xl font-bold text-red-600">
                                         <svg className="shrink-0 size-5 text-red-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7" /><path d="M12 19V5" /></svg>
                                         23%
                                     </div>
@@ -823,8 +762,8 @@ export default function Home() {
                                 </li>
 
                                 <li className="flex flex-col -m-0.5 p-4 lg:p-8">
-                                    <div className="flex items-end gap-x-2 text-3xl sm:text-5xl font-bold text-yellow-500 mb-2">
-                                        <svg className="shrink-0 size-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7" /><path d="M12 19V5" /></svg>
+                                    <div className="flex items-end gap-x-0 md:gap-x-2 text-4xl md:text-5xl font-bold text-yellow-500 mb-2">
+                                        <svg className="shrink-0 size-4 text-yellow-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7" /><path d="M12 19V5" /></svg>
                                         9.3%
                                     </div>
                                     <p className="text-sm sm:text-base text-gray-600 ">
@@ -833,7 +772,7 @@ export default function Home() {
                                 </li>
 
                                 <li className="flex flex-col -m-0.5 p-4 lg:p-8">
-                                    <div className="flex items-end gap-x-2 text-3xl sm:text-5xl font-bold text-indigo-600 mb-2">
+                                    <div className="flex items-end gap-x-0 md:gap-x-2 text-4xl md:text-5xl font-bold text-indigo-600 mb-2">
                                         2x
                                     </div>
                                     <p className="text-sm sm:text-base text-gray-600">
@@ -872,13 +811,13 @@ export default function Home() {
                             </div>
 
                             <div className='w-full md:w-1/2 justify-center flex flex-col'>
-                                <p className='group-hover:text-white text-black'>
+                                <p className='group-hover:text-white text-sm md:text-lg mr-10 md:mr-0 text-black'>
                                     Our expert-driven Google Ads campaigns ensure your business reaches the right audience at the right time.
                                     With strategic ad placements, compelling copy, and continuous optimization, we drive high-quality traffic,
                                     increase conversions, and maximize your advertising budget.
                                 </p>
 
-                                <div className='flex flex-wrap gap-x-4 text-sm'>
+                                <div className='flex flex-wrap gap-x-4 mt-4'>
                                     {[
                                         "Targeted Campaign Strategy",
                                         "Conversion-Optimized Landing Pages",
@@ -887,7 +826,7 @@ export default function Home() {
                                         "Performance Tracking & Optimization",
                                         "YouTube & Shopping Ads"
                                     ].map((text, index) => (
-                                        <p key={index} className='border-l-[3px] border-l-[#EAAA00] py-2 px-4 mt-4 font-medium rounded-full inline-block bg-white'>
+                                        <p key={index} className='border-l-[3px] border-l-[#EAAA00] py-2 px-4 mt-4 font-medium rounded-full text-xs md:text-sm inline-block bg-white'>
                                             <SiPolestar className='text-[#EAAA00] font-semibold inline-block mr-2' /> {text}
                                         </p>
                                     ))}
@@ -914,11 +853,11 @@ export default function Home() {
                             </div>
 
                             <div className='w-full md:w-1/2 justify-center flex flex-col'>
-                                <p className='group-hover:text-white text-black'>
+                                <p className='group-hover:text-white text-sm md:text-lg mr-10 md:mr-0  text-black'>
                                     We create data-driven marketing campaigns that fuel growth and maximize ROI. From precise paid search to engaging social ads, our strategies boost brand reach, generate qualified leads, and increase conversions across all channels, including e-commerce and social platforms.
                                 </p>
 
-                                <div className='flex flex-wrap gap-x-4 text-sm'>
+                                <div className='flex flex-wrap gap-x-4 text-xs md:text-sm mt-4'>
                                     {[
                                         "Conversion Rate Optimization",
                                         "Lead Generation",
@@ -927,8 +866,8 @@ export default function Home() {
                                         "Increase Revenue",
                                         "Brand Awareness & Increased Traffic"
                                     ].map((text, index) => (
-                                        <p key={index} className='border-l-[3px] border-l-[#3367D6] py-2 px-4 mt-4 font-medium rounded-full inline-block bg-white'>
-                                            <SiPolestar className='text-[#3367D6] font-semibold inline-block mr-2' /> {text}
+                                        <p key={index} className='border-l-[3px] border-l-[#a2362c] py-2 px-4 mt-4 font-medium rounded-full inline-block bg-white'>
+                                            <SiPolestar className='text-[#a2362c] font-semibold inline-block mr-2' /> {text}
                                         </p>
                                     ))}
                                 </div>
@@ -938,14 +877,14 @@ export default function Home() {
                 </div>
             </section>
 
-            
+
             <section>
                 <div className="bg-white flex flex-col pt-10 pb-20 items-center">
                     <div className="text-center flex flex-col max-w-5xl">
                         <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">
                             Maximize Every Click with Our Proven Strategies
                         </h2>
-                        <p className="text-lg text-gray-700 py-10 font-sans">
+                        <p className="text-sm md:text-lg text-gray-700 py-10 max-w-[80%] mx-auto md:max-w-full font-sans">
                             We focus on making your ad spend count by combining precision, creativity, and data-driven insights. Here&apos;s how we transform your campaigns into performance powerhouses:
                         </p>
                     </div>
@@ -963,11 +902,11 @@ export default function Home() {
                 <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
                     <div className="max-w-7xl mx-auto">
                         <div className="text-center mb-16">
-                            <h2 className="text-5xl font-bold text-gray-900 mb-4">Proven Success: Over $2 Million In Revenue Generated For Clients</h2>
-                            <p className="text-xl text-gray-600">Numbers That Speak Louder Than Words</p>
+                            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Proven Success: Over $2 Million In Revenue Generated For Clients</h2>
+                            <p className="text-lg md:text-xl text-gray-600">Numbers That Speak Louder Than Words</p>
                         </div>
 
-                        <p className="text-center text-lg text-gray-700 mb-12">
+                        <p className="text-center text-sm md:text-lg text-gray-700 mb-12">
                             We believe in results that matter. Here is a glimpse of how we have empowered our clients to achieve measurable success.
                         </p>
 
@@ -999,8 +938,49 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section>
-                <Accordion />
+            <section className="py-24">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
+
+                        <div className="w-full lg:w-full">
+                            <div className="lg:max-w-full">
+                                <h6 className="text-lg text-center font-medium text-indigo-700 mb-2">FAQs</h6>
+                                <h2 className="text-5xl text-center font-sofiasanscondensed font-bold text-gray-900 mb-5">Looking for answers?</h2>
+                                <div className="space-y-4">
+                                    {faqs.map((faq, index) => (
+                                        <div key={index} className="border-b border-gray-200 pb-4">
+                                            <button
+                                                onClick={() => toggleFAQ(index)}
+                                                className="flex justify-between items-center w-full text-sm md:text-xl pt-4 pb-4 text-black font-normal transition duration-500 hover:text-indigo-600"
+                                            >
+                                                {faq.question}
+                                                <svg
+                                                    className={`transition-transform duration-500 ${openIndex === index ? "rotate-180 text-indigo-700" : "text-gray-900"}`}
+                                                    width="22"
+                                                    height="22"
+                                                    viewBox="0 0 22 22"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25"
+                                                        stroke="currentColor"
+                                                        strokeWidth="1.6"
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round"
+                                                    />
+                                                </svg>
+                                            </button>
+                                            {openIndex === index && (
+                                                <p className="text-sm md:text-base text-gray-900 mt-2 pt-5 pb-5  transition-all duration-300 ">{faq.answer}</p>
+                                            )}
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </>
     );
