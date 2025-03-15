@@ -598,8 +598,8 @@ export default function Webdev() {
                 <div className='flex items-center justify-center'>
                     <p className="text-sm bg-gray-100 inline-block px-3 py-1 rounded-md">About Agency</p>
                 </div>
-                <div className="flex flex-col  text-white  md:flex-row items-center max-w-[93%] mx-auto justify-between px-6 md:px-20 py-5">
-                    <div className="relative flex flex-col items-center md:items-start translate-x-16 -translate-y-28  space-y-6">
+                <div className="flex flex-col  text-white  md:flex-row items-center max-w-[93%] mx-auto justify-between px-6 md:px-20 py-5 overflow-hidden">
+                    <div className="relative flex flex-col items-center md:items-start -translate-x-1/3 md:translate-x-16 md:-translate-y-28 mb-52 md:mb-0 space-y-6">
                         <div className="w-40 h-40 border border-white bg-white rounded-full flex items-center  justify-center text-black font-medium">
                             Development
                         </div>
@@ -636,7 +636,7 @@ export default function Webdev() {
                 </div>
 
             </section>
-            <section className="py-10 h-[40vh] max-w-7xl mx-auto">
+            <section className="py-10 h-auto md:h-[40vh] max-w-7xl mx-auto">
                 <div className="flex justify-center items-center">
                     <div className="relative flex w-full max-w-5xl">
                         {/* Background Image */}
@@ -648,7 +648,7 @@ export default function Webdev() {
                         />
 
                         {/* Stats Container */}
-                        <div className="relative z-10 py-14 flex w-full justify-evenly items-center text-black p-8 rounded-3xl shadow-lg">
+                        <div className="relative z-10 py-14 flex w-full flex-col md:flex-row justify-evenly items-center text-black p-8 rounded-3xl shadow-lg">
                             {/* Stat 1 */}
                             <div className="text-left">
                                 <Counter end={250} />
@@ -688,7 +688,7 @@ export default function Webdev() {
                     </div>
                 </div>
             </section>
-            
+
             <section>
                 <Smfeatures />
             </section>

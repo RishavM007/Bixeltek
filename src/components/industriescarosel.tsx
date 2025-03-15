@@ -15,11 +15,11 @@ export default function CarouselSection(): JSX.Element {
     const [carouselOffset, setCarouselOffset] = useState<number>(0);
 
     const cardWidth: number = 450;
-    const visibleCards: number = 3; 
+    const visibleCards: number = 3;
     const totalCards: number = 8;
-    const containerWidth: number = cardWidth * visibleCards; 
-    const maxOffset: number = 0; 
-    const minOffset: number = -(cardWidth * totalCards - containerWidth); 
+    const containerWidth: number = cardWidth * visibleCards;
+    const maxOffset: number = 0;
+    const minOffset: number = -(cardWidth * totalCards - containerWidth);
 
     const handleScroll = (direction: "left" | "right"): void => {
         setCarouselOffset((prev: number) => {
@@ -32,7 +32,7 @@ export default function CarouselSection(): JSX.Element {
     };
 
     return (
-        <section className="py-20  bg-black z-10">
+        <section className="py-20  bg-black z-10 overflow-hidden">
             <div className="w-full relative text-center text-white pb-10">
                 <h1 className="text-6xl xl:text-7xl font-bold mb-2">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-600 to-gray-800">
@@ -55,18 +55,18 @@ export default function CarouselSection(): JSX.Element {
                 >
                     {[
                         { id: "health", img: healthcare, label: "Digital Marketing for Healthcare", text: "Health Care Practices" },
-                        { id: "auto", img: blackcar, label: "Digital Marketing for Automobiles", text:"Automobile industries" },
-                        { id: "cleaning", img: cleaningcomp, label: "Digital Marketing for Cleaning Companies" ,text:"Cleaning Industries" },
-                        { id: "roofing", img: roofing, label: "Digital Marketing for Roofing Companies", text:"Roofing Industries" },
-                        { id: "lawncare", img: lawncare, label: "Digital Marketing for Lawn Care and Landscaping", text:"Lawn Care Industries" },
-                        { id: "dental", img: dental, label: "Digital Marketing for Dental Clinic" ,text:"Dental Clinics"},
-                        { id:"pet", img: pet, label: "Digital Marketing for Pet Stores", text:"Pet Stores"},
-                        { id:"oil", img: oil, label: "Digital Marketing for Oil Refineries", text:"Oil Refineries"}
-                    ].map(({ id, img, label,text }) => (
+                        { id: "auto", img: blackcar, label: "Digital Marketing for Automobiles", text: "Automobile industries" },
+                        { id: "cleaning", img: cleaningcomp, label: "Digital Marketing for Cleaning Companies", text: "Cleaning Industries" },
+                        { id: "roofing", img: roofing, label: "Digital Marketing for Roofing Companies", text: "Roofing Industries" },
+                        { id: "lawncare", img: lawncare, label: "Digital Marketing for Lawn Care and Landscaping", text: "Lawn Care Industries" },
+                        { id: "dental", img: dental, label: "Digital Marketing for Dental Clinic", text: "Dental Clinics" },
+                        { id: "pet", img: pet, label: "Digital Marketing for Pet Stores", text: "Pet Stores" },
+                        { id: "oil", img: oil, label: "Digital Marketing for Oil Refineries", text: "Oil Refineries" }
+                    ].map(({ id, img, label, text }) => (
                         <a
                             key={id}
                             href={`#${id}`}
-                            className="card relative bg-sky-200 p-6 rounded-lg group text-center 
+                            className="card relative bg-transparent p-6 rounded-lg group text-center 
                    min-w-[300px] min-h-[400px] lg:min-w-[350px] lg:min-h-[500px] 
                    xl:min-w-[350px] xl:min-h-[450px] overflow-hidden"
                         >

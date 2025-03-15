@@ -61,6 +61,7 @@ const faqs = [
 
 
 export default function Home() {
+    
     const [isOpen, setIsOpen] = useState(false);
     const [isOpen1, setIsOpen1] = useState(false);
     const [isOpen2, setIsOpen2] = useState(false);
