@@ -83,7 +83,7 @@ export default function SocialMedia() {
                             </div>
                             <div className="">
                                 <p className="mb-2">Experienced Professionals</p>
-                                <span className="font-normal text-sm md:text-lg text-gray-50">Skilled social media strategists with deep expertise in Hyderabad's local business ecosystem.</span>
+                                <span className="font-normal text-sm md:text-lg text-gray-50">Skilled social media strategists with deep expertise in Hyderabad&apos;s local business ecosystem.</span>
                             </div>
                         </div>
                         <div className="mb-5 flex font-medium">

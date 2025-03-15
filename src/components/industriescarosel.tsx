@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { MdOutlineHealthAndSafety } from "react-icons/md";
 import Image from "next/image";
 import cleaningcomp from "@/assets/digital marketing servies for cleaning companies.jpg";
 import oil from "@/assets/digital marketing for oil refinaries.jpg"
@@ -8,7 +7,6 @@ import roofing from "@/assets/digital marketing for roofing industries.jpg"
 import dental from "@/assets/digital marketing for health care practices.jpg"
 import lawncare from "@/assets/digital marketing for lawn care services.jpg"
 import blackcar from "@/assets/digital marketing for car detailers.jpg"
-import { FaCar, FaBroom, FaBuilding, FaTree, FaTooth } from "react-icons/fa";
 import healthcare from "@/assets/digital marketing for health care practices.jpg"
 
 export default function CarouselSection(): JSX.Element {
