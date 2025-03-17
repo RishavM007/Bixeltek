@@ -3,15 +3,14 @@ import React from 'react'
 import { motion, useAnimation } from 'framer-motion';
 import TechWeUse from '@/components/TechWeUse';
 import { useState, useEffect } from 'react'
+import landingpage from '@/assets/abstract-sales-landing-page-with-photo.png'
 import { FaTooth, FaHospital, FaDog, FaGasPump, FaCar, FaBroom, FaGraduationCap, FaBuilding, FaTree, FaSeedling } from "react-icons/fa";
 import author from '@/assets/author4.jpg'
 import dottedbg from '@/assets/counter-bg-with-dots.png'
 import { useInView } from "react-intersection-observer";
 import { HeroParallax } from '@/components/parallexHero'
-import counterImage from '@/assets/counter.webp'
 import { BiSolidQuoteSingleRight } from "react-icons/bi";
 import Smfeatures from '@/components/smfeatures';
-import Accordion from '@/components/Faq';
 import Image from 'next/image';
 import pet from "@/assets/digital marketing for pet stores.jpg";
 import roofing from "@/assets/digital marketing for roofing industries.jpg";
@@ -129,77 +128,77 @@ export default function Webdev() {
         {
             title: "Product 1",
             link: "/product-1",
-            thumbnail: "/images/product1.jpg",
+            thumbnail: landingpage.src,
         },
         {
             title: "Product 2",
             link: "/product-2",
-            thumbnail: "/images/product2.jpg",
+            thumbnail:landingpage.src,
         },
         {
             title: "Product 3",
             link: "/product-3",
-            thumbnail: "/images/product3.jpg",
+            thumbnail: landingpage.src,
         },
         {
             title: "Product 4",
             link: "/product-4",
-            thumbnail: "/images/product4.jpg",
+            thumbnail: landingpage.src,
         },
         {
             title: "Product 5",
             link: "/product-5",
-            thumbnail: "/images/product5.jpg",
+            thumbnail:landingpage.src,
         },
         {
             title: "Product 6",
             link: "/product-6",
-            thumbnail: "/images/product6.jpg",
+            thumbnail: landingpage.src,
         },
         {
             title: "Product 7",
             link: "/product-7",
-            thumbnail: "/images/product7.jpg",
+            thumbnail: landingpage.src,
         },
         {
             title: "Product 8",
             link: "/product-8",
-            thumbnail: "/images/product8.jpg",
+            thumbnail:landingpage.src,
         },
         {
             title: "Product 9",
             link: "/product-9",
-            thumbnail: "/images/product9.jpg",
+            thumbnail: landingpage.src,
         },
         {
             title: "Product 10",
             link: "/product-10",
-            thumbnail: "/images/product10.jpg",
+            thumbnail: landingpage.src,
         },
         {
             title: "Product 11",
             link: "/product-11",
-            thumbnail: "/images/product11.jpg",
+            thumbnail: landingpage.src,
         },
         {
             title: "Product 12",
             link: "/product-12",
-            thumbnail: "/images/product12.jpg",
+            thumbnail: landingpage.src,
         },
         {
             title: "Product 13",
             link: "/product-13",
-            thumbnail: "/images/product13.jpg",
+            thumbnail: landingpage.src,
         },
         {
             title: "Product 14",
             link: "/product-14",
-            thumbnail: "/images/product14.jpg",
+            thumbnail: landingpage.src,
         },
         {
             title: "Product 15",
             link: "/product-15",
-            thumbnail: "/images/product15.jpg",
+            thumbnail:landingpage.src,
         },
     ];
     const industries = [
