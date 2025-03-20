@@ -1,6 +1,6 @@
 "use client";
 import Image from 'next/image';
-import Bixeltek from '@/assets/BixelTek LOGO-01.png';
+import Bixeltek from '@/assets/BIXELTEKLOGO.png';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
@@ -83,7 +83,7 @@ export const Header = () => {
     <header className="px-3 py-5 max-w-7xl mx-auto sticky top-0 z-[60]">
       <div className="container bg-black flex justify-between items-center border-white/15 border-solid border-2 rounded-xl shadow-purple-custom backdrop:blur-3xl">
         <div className="text-white">
-          <Image src={Bixeltek} alt="Bixeltek Logo" width={70} height={40} />
+          <Image src={Bixeltek} alt="Bixeltek Logo"  className='h-7  w-auto' />
         </div>
         <button className="md:hidden text-white text-3xl" onClick={toggleMenu}>
           {isMenuOpen ? <HiX /> : <HiMenu />}
@@ -141,7 +141,7 @@ export const Header = () => {
                 </a>
 
                 {/* Dropdown Wrapper */}
-                <div className={`absolute top-full left-1/2 -translate-x-[35%] w-[1240px] bg-white rounded-b-2xl shadow-lg py-4 transition-all duration-300 ${isDropdownOpen ? "opacity-100 visible pointer-events-auto" : "opacity-0 invisible pointer-events-none"}`}>
+                <div className={`absolute top-full left-1/2 -translate-x-[37%] w-[1240px] bg-white rounded-b-2xl shadow-lg py-4 transition-all duration-300 ${isDropdownOpen ? "opacity-100 visible pointer-events-auto" : "opacity-0 invisible pointer-events-none"}`}>
                   <motion.div
                     initial={{ opacity: 0, y: -10 }}
                     animate={isDropdownOpen ? { opacity: 1, y: 0 } : { opacity: 0, y: -10 }}

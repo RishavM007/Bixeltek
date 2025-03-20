@@ -26,6 +26,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Header />
       <main className="min-h-screen bg-white text-black" >{children}</main>
       <Footer />
+
     </>
   );
 };
