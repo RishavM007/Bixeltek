@@ -601,6 +601,7 @@ export default function SocialMedia() {
             </section >
             <HowItWorks />
             <StackingCarousel />
+            <CarouselSection />
             <section className="pt-2 pb-20 bg-white">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div
@@ -613,7 +614,7 @@ export default function SocialMedia() {
                                 Ready to Elevate Your Social Media?
                             </h2>
                             <p className="text-xl max-w-2xl text-indigo-100">
-                            Partner with Hyderabad’s premier social media management agency to unlock new opportunities.
+                            Partner with Hyderabad&apos;s premier social media management agency to unlock new opportunities.
                             </p>
                         </div>
                         <a
@@ -639,7 +640,6 @@ export default function SocialMedia() {
                     </div>
                 </div>
             </section>
-            <CarouselSection />
             <section className="py-24 bg-white">
                 <div className="mx-auto max-w-7xl  px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col lg:flex-row justify-between items-center gap-8">

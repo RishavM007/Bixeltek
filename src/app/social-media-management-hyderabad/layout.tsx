@@ -7,9 +7,9 @@ interface LayoutProps {
 }
 
 export const metadata = {
-  title: "Bixeltek | Best Social Media Management Services in Hyderabad",
+  title: "Social Media Management Agency in Hyderabad | Instagram & Facebook Ads | Bixeltek",
   description:
-    "Bixeltek offers expert social media management services in Hyderabad. From content creation to ad management, we help businesses grow their online presence and boost engagement. Book a free consultation today!",
+    "Elevate your brand with Bixeltek, Hyderabad’s leading social media management agency. Specialized Instagram ads, Facebook ads, and tailored social media marketing services to drive growth and conversions. Schedule your free strategy session today!",
   keywords:
     "Bixeltek social media, Social media management Hyderabad, Best social media agency Hyderabad, Instagram marketing, Facebook ads, LinkedIn marketing, Twitter management, Social media strategy, Content creation, Brand growth, Online presence",
   openGraph: {

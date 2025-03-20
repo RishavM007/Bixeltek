@@ -45,7 +45,7 @@ const HowItWorks = () => {
                   Our Proven Social Media Process
                 </h2>
                 <p className="mb-10 text-lg text-gray-400">
-                  Optimize your brand's social media presence with a strategic, data-driven approach tailored for growth and engagement.
+                  Optimize your brand&apos;s social media presence with a strategic, data-driven approach tailored for growth and engagement.
                 </p>
                 <a
                   className="inline-block px-8 py-3 text-white font-bold bg-purple-600 hover:bg-purple-700 rounded-full shadow-lg transition duration-200"
