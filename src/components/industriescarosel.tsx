@@ -30,7 +30,7 @@ export default function CarouselSection(): JSX.Element {
     };
 
     return (
-        <section className="py-20  bg-black z-10 overflow-hidden">
+        <section className="pt-0 pb-20  bg-white z-10 overflow-hidden">
             <div className="w-full relative text-center text-white pb-10">
                 <h1 className="text-6xl xl:text-7xl font-bold mb-2">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-600 to-gray-800">
@@ -42,7 +42,7 @@ export default function CarouselSection(): JSX.Element {
                         SERVE
                     </span>
                 </h1>
-                <p className="text-[16px] xl:text-lg text-gray-400 max-w-2xl mx-auto">
+                <p className="text-[16px] xl:text-lg text-gray-700 max-w-2xl mx-auto">
                     Discover the diverse industries we proudly cater to, offering innovative solutions to help you excel in your field.
                 </p>
             </div>
@@ -89,13 +89,13 @@ export default function CarouselSection(): JSX.Element {
 
             <div className="controls flex justify-center mt-6">
                 <button
-                    className="bg-transparent text-white p-3 rounded-full mr-4 "
+                    className="bg-transparent text-black p-3 rounded-full mr-4 "
                     onClick={() => handleScroll("left")}
                 >
                     &larr;
                 </button>
                 <button
-                    className="bg-transparent text-white p-3 rounded-full"
+                    className="bg-transparent text-black  p-3 rounded-full"
                     onClick={() => handleScroll("right")}
                 >
                     &rarr;

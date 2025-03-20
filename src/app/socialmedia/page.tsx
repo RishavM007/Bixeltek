@@ -1,37 +1,76 @@
 'use client';
 import CarouselSection from "@/components/industriescarosel";
 import { useState } from "react";
+import HowItWorks from "@/components/howitworksSm";
 import Image from "next/image";
+import { FaUserTie, FaTasks, FaCommentDots, FaClock } from "react-icons/fa";
 import cursorimg from '@/assets/images/cursor.png';
+import StackingCarousel from "@/components/horcaroselSm";
 import messageimage from '@/assets/images/message.png'
 import { MdArrowRightAlt } from "react-icons/md";
 export default function SocialMedia() {
 
-        const [isOpen, setIsOpen] = useState(false);
-        const [isOpen1, setIsOpen1] = useState(false);
-        const [isOpen2, setIsOpen2] = useState(false);
-        const [openIndex, setOpenIndex] = useState<number | null>(null);
-    
-        const toggleFAQ = (index: number) => {
-            setOpenIndex(openIndex === index ? null : index);
-        };
-    
-        const toggleDropdown1 = () => {
-            setIsOpen1(!isOpen1);
-        }
-    
-        const toggleDropdown2 = () => {
-            setIsOpen2(!isOpen2);
-        }
-    
-        const toggleDropdown = () => {
-            setIsOpen(!isOpen);
-        };
+    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen1, setIsOpen1] = useState(false);
+    const [isOpen2, setIsOpen2] = useState(false);
+    const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+    const toggleFAQ = (index: number) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
+
+    const toggleDropdown1 = () => {
+        setIsOpen1(!isOpen1);
+    }
+
+    const toggleDropdown2 = () => {
+        setIsOpen2(!isOpen2);
+    }
+
+    const toggleDropdown = () => {
+        setIsOpen(!isOpen);
+    };
+
+    const faqs = [
+        {
+          question: "Which social media platforms does Bixeltek manage?",
+          answer: "Bixeltek expertly manages Instagram, Facebook, LinkedIn, Twitter, and other major social media platforms tailored to your needs.",
+        },
+        {
+          question: "Can Bixeltek tailor social media campaigns specifically for my business?",
+          answer: "Yes! Our agency specializes in developing highly customized social media strategies aligned with your specific goals and target audience in Hyderabad.",
+        },
+        {
+          question: "How quickly will I see results?",
+          answer: "Typically, clients begin to see noticeable results within the first few weeks of launching a campaign, with significant improvements becoming evident over 2-3 months.",
+        },
+        {
+          question: "What is included in your monthly reporting?",
+          answer: "Our comprehensive monthly reports include detailed analytics, performance metrics, audience insights, campaign effectiveness, and actionable recommendations.",
+        },
+        {
+          question: "Do you provide photo and video content services?",
+          answer: "Yes, we offer professional photo and video production services tailored specifically for social media platforms to enhance your visual content strategy.",
+        },
+        {
+          question: "How do you determine the right social media strategy for my business?",
+          answer: "We conduct an initial discovery session, analyzing your business objectives, market competition, audience behavior, and previous social media performance to develop a tailored strategy.",
+        },
+        {
+          question: "Can Bixeltek help manage social media ads budget?",
+          answer: "Absolutely! We optimize and manage your advertising budgets carefully, ensuring you achieve maximum ROI from your Instagram, Facebook, LinkedIn, and Twitter ad campaigns.",
+        },
+        {
+          question: "Do I have to commit to a long-term contract?",
+          answer: "We offer flexible contract options, including month-to-month plans, allowing you to scale or adjust services as needed.",
+        },
+      ];      
+
 
     return (
         <>
             <section className="bg-black h-[90vh] text-white bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] py-[72px] relative overflow-hidden">
-            <div className="absolute bottom-0 left-0 w-full z-30 h-40 bg-gradient-to-t from-black to-transparent"></div>
+                <div className="absolute hidden md:inline bottom-0 left-0 w-full z-30 h-40 bg-gradient-to-t from-black to-transparent"></div>
                 <div className="container relative mx-auto px-4">
                     <div className="flex items-center justify-center">
                         <a href="#" className="border py-1 px-2 inline-flex gap-3 rounded-lg border-white/30">
@@ -405,7 +444,7 @@ export default function SocialMedia() {
                         </svg>
 
                         <div className="absolute max-w-[60%] left-[19%] md:left-[13%] md:max-w-[75%] z-20 top-0 text-center text-white max-h-[300px] pt-3 md:!pt-12 overflow-hidden">
-                            <h1 className="text-xl mt-16 md:text-lg font-semibold text-[#FFCE1B] dark:text-white md:my-2">
+                            <h1 className="text-xl mt-16 md:text-lg font-semibold text-[#FFCE1B] mx-2 dark:text-white md:my-2">
                                 Strategic Content<span className="text-[#FFCE1B]"> Creation & Management </span>
                             </h1>
                             <p className="w-full md:text-sm text-md my-3 md:mt-6 line-clamp-4 md:line-clamp-none">
@@ -435,7 +474,7 @@ export default function SocialMedia() {
                             </defs>
                         </svg>
                         <div className="absolute max-w-[60%] left-[19%] md:left-[13%] md:max-w-[75%] z-20 top-0 text-center text-white max-h-[300px] pt-3 md:!pt-12 overflow-hidden">
-                            <h1 className="text-xl mt-16 md:text-lg font-semibold text-[#0096FF] dark:text-white md:my-2">
+                            <h1 className="text-xl mt-16 md:text-lg font-semibold text-[#0096FF] mx-2 dark:text-white md:my-2">
                                 Instagram & Facebook  <span className="text-[#0096FF]">Ads Management </span>
                             </h1>
                             <p className="w-full md:text-sm text-md my-3 md:mt-6 line-clamp-4 md:line-clamp-none">
@@ -560,7 +599,90 @@ export default function SocialMedia() {
                     </div>
                 </div>
             </section >
+            <HowItWorks />
+            <StackingCarousel />
+            <section className="pt-2 pb-20 bg-white">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div
+                        className="lg:py-14 lg:px-20 p-10 rounded-2xl bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-between flex-col lg:flex-row"
+                    >
+                        <div className="block text-center mb-5 lg:text-left lg:mb-0">
+                            <h2
+                                className="font-manrope text-4xl text-white font-semibold mb-5 lg:mb-2"
+                            >
+                                Ready to Elevate Your Social Media?
+                            </h2>
+                            <p className="text-xl max-w-2xl text-indigo-100">
+                            Partner with Hyderabad’s premier social media management agency to unlock new opportunities.
+                            </p>
+                        </div>
+                        <a
+                            href="#"
+                            className="flex items-center gap-2 bg-white rounded-full shadow-sm text-lg text-indigo-600 font-semibold py-4 px-8 transition-all duration-500"
+                        >Get In Touch
+                            <svg
+                                width="19"
+                                height="14"
+                                viewBox="0 0 19 14"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M1.75 7L16.4167 7M11.8333 12.5L16.6852 7.64818C16.9907 7.34263 17.1435 7.18985 17.1435 7C17.1435 6.81015 16.9907 6.65737 16.6852 6.35182L11.8333 1.5"
+                                    stroke="#4F46E5"
+                                    stroke-width="2.4"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
             <CarouselSection />
+            <section className="py-24 bg-white">
+                <div className="mx-auto max-w-7xl  px-4 sm:px-6 lg:px-8">
+                    <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
+                        <div className="w-full lg:w-full">
+                            <div className="lg:max-w-full">
+                                <h6 className="text-lg text-center font-medium text-indigo-700 mb-2">FAQs</h6>
+                                <h2 className="text-5xl text-center font-sofiasanscondensed font-bold text-gray-800 mb-5">Looking for answers?</h2>
+                                <div className="space-y-4">
+                                    {faqs.map((faq, index) => (
+                                        <div key={index} className="border-b border-gray-200 pb-4">
+                                            <button
+                                                onClick={() => toggleFAQ(index)}
+                                                className="flex justify-between items-center w-full text-xl pt-4 pb-4 text-black font-normal transition duration-500 hover:text-indigo-700"
+                                            >
+                                                {faq.question}
+                                                <svg
+                                                    className={`transition-transform duration-500 ${openIndex === index ? "rotate-180 text-indigo-800" : "text-gray-800"}`}
+                                                    width="22"
+                                                    height="22"
+                                                    viewBox="0 0 22 22"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25"
+                                                        stroke="currentColor"
+                                                        strokeWidth="1.6"
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round"
+                                                    />
+                                                </svg>
+                                            </button>
+                                            {openIndex === index && (
+                                                <p className="text-base text-gray-950 mt-2 pt-5 pb-5 transition-all duration-300 ">{faq.answer}</p>
+                                            )}
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </>
 
