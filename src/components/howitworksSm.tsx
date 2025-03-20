@@ -41,11 +41,11 @@ const HowItWorks = () => {
             <div className="w-full lg:w-1/2 px-5 mb-20 lg:mb-0">
               <div className="max-w-md">
                 <span className="text-lg font-bold text-purple-600 dark:text-purple-400">How it works</span>
-                <h2 className="mt-4 mb-2 text-5xl font-extrabold font-sofiasanscondensed leading-tight text-gray-800 dark:text-gray-200">
-                  Our Proven Social Media Process
+                <h2 className="mt-4 mb-2 text-4xl font-extrabold font-sofiasanscondensed leading-tight text-gray-800 dark:text-gray-200">
+                  Our Proven Social Media Process for Facebook Ads and Instagram Ads
                 </h2>
                 <p className="mb-10 text-lg text-gray-400">
-                  Optimize your brand&apos;s social media presence with a strategic, data-driven approach tailored for growth and engagement.
+                  Optimize your brand&apos;s social media presence with a strategic, data-driven approach tailored for growth and engagement on platforms like Facebook, Instagram, Snapchat, Youtube and Linkedin .
                 </p>
                 <a
                   className="inline-block px-8 py-3 text-white font-bold bg-purple-600 hover:bg-purple-700 rounded-full shadow-lg transition duration-200"

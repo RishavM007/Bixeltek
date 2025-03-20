@@ -77,10 +77,6 @@ export default function SocialMedia() {
                             <span className="bg-[linear-gradient(to_right,#F87AFF,#FB93D0,#FFDD99,#C3F0B2,#2FD8FE)] text-transparent bg-clip-text [-webkit-background-clip:text]">
                                 Transform Your Social Media Presence
                             </span>
-                            <span className="inline-flex items-center gap-1">
-                                <span>Read More</span>
-                                <MdArrowRightAlt />
-                            </span>
                         </a>
                     </div>
 
@@ -89,13 +85,13 @@ export default function SocialMedia() {
                         <div className="relative w-full max-w-5xl px-4">
                             <Image src={cursorimg} alt="cursor" height={200} width={200} className="absolute right-[876px] top-[108px] hidden md:inline" />
                             <Image src={messageimage} alt="message" height={200} width={200} className="absolute left-[85%] top-[106px] hidden md:inline" />
-                            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-7xl font-bold tracking-tighter text-center">
-                                Transform Your Social Media Presence
+                            <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl font-bold tracking-tighter text-center">
+                                Top Social Media Marketing Agency in Hyderabad
                             </h1>
                         </div>
                     </div>
 
-                    <p className="text-center text-xl mt-8 max-w-md m-auto">
+                    <p className="text-center text-xl mt-8 max-w-[650px]  m-auto">
                         Partner with Hyderabad&apos;s premier social media management agency to drive growth, engagement, and conversions through targeted Instagram ads, Facebook ads, and more.
                     </p>
 
@@ -149,7 +145,7 @@ export default function SocialMedia() {
                         </div>
                     </div>
                     <div className="w-[90%] md:w-1/2 p-6 relative bg-[#1a1a1a] rounded-lg">
-                        <h3 className="text-3xl md:text-4xl  font-normal text-white mb-4">Get in Touch</h3>
+                        <h3 className="text-3xl md:text-3xl  font-normal text-white mb-4">Get in Touch with a Social Media Manager</h3>
                         <div className='absolute w-40 h-1 bg-[#670ef7] translate-y-[-10px] translate-x-[5px]'></div>
                         <form className="space-y-4">
                             <div className='flex flex-col md:flex-row gap-5'>

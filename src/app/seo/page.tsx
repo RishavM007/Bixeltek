@@ -180,12 +180,12 @@ export default function Seo() {
                 <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                     <div className="max-w-4xl mx-auto text-center">
                         <p className="text-sm font-normal tracking-widest uppercase">
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-500">
-                                Your startup needs a kick
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r  from-cyan-500 to-purple-500">
+                                Your Business Needs Visibility, And We Can Help you rank on <span className='font-bold italic'>Google</span> 
                             </span>
                         </p>
                         <h1 className="mt-8 text-xl font-normal text-white lg:text-6xl xl:text-6xl">
-                            Bixeltek – Leading SEO & Digital Marketing Agency in Hyderabad,India
+                            Bixeltek – A Premier SEO Agency in Hyderabad,India
                         </h1>
 
                         <div className="flex flex-col items-center justify-center px-8 mt-12 space-y-5 sm:space-y-0 sm:px-0 sm:space-x-5 sm:flex-row">
@@ -244,7 +244,7 @@ export default function Seo() {
                                     <div className="flex mt-20 mb-6 mx-2 px-5 gap-8">
                                         <div className="flex flex-col text-white">
                                             <h1 className="text-[#6728cc] text-5xl font-semibold">278%</h1>
-                                            <p className="text-gray-100 text-sm mt-2">Increase in organic traffic within six months</p>
+                                            <p className="text-gray-100 text-sm mt-2">Increase in organic traffic <br/> within six months for our clients</p>
                                         </div>
                                         <div className="flex flex-col text-white">
                                             <h1 className="text-[#6728cc] text-5xl font-semibold">4.2X</h1>
@@ -266,7 +266,7 @@ export default function Seo() {
                                         </li>
                                         <li className="flex items-start gap-4 text-2xl ml-8 ">
                                             <span>
-                                                <Link href={'#'}>Want to dominate search rankings? <span className='text-[#670ef7]'>Get a Free SEO Audit today!</span> </Link>
+                                                <Link href={'#'}>Want to dominate search engine rankings? <span className='text-[#670ef7]'>Get a Free SEO Audit today!</span> </Link>
                                             </span>
                                         </li>
                                     </ul>

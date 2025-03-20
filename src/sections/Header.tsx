@@ -165,7 +165,7 @@ export const Header = () => {
                             </Link>
                           </li>
                           <li>
-                            <Link href="/social-media-management-hyderabad" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
+                            <Link href="/social-media-marketing-agency-hyderabad" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
                               <h3 className="text-lg font-semibold text-black">Social Media Management</h3>
                               <p className="text-sm text-gray-500">Enhance your online presence with expert strategies.</p>
                             </Link>
