@@ -20,7 +20,7 @@ export const metadata = {
   
 };
 
-export const dynamic = "force-dynamic"; // Ensures SSR (must be below metadata)
+export const dynamic = "force-dynamic";
 
 import { Header } from "@/sections/Header";
 import { Hero } from "@/sections/Hero";

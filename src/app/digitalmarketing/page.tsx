@@ -9,9 +9,8 @@ import TestimonialSection from '@/components/TestimonialPage';
 import ProcessSection from '@/sections/ProcessSection';
 import SocialMediaTabs from '@/components/SocialMediaTabs';
 import { VscDebugBreakpointDataUnverified } from "react-icons/vsc";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube, FaSnapchatGhost, FaPinterestP, FaTiktok } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaSnapchatGhost, FaPinterestP, FaTiktok } from 'react-icons/fa';
 import { SiPolestar, SiGoogleads, SiSemrush } from "react-icons/si";
-import heroimg from '@/assets/hero-img-flat3@2x.webp';
 
 const tabs = [
     {

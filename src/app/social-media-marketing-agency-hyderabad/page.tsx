@@ -3,11 +3,9 @@ import CarouselSection from "@/components/industriescarosel";
 import { useState } from "react";
 import HowItWorks from "@/components/howitworksSm";
 import Image from "next/image";
-import { FaUserTie, FaTasks, FaCommentDots, FaClock } from "react-icons/fa";
 import cursorimg from '@/assets/images/cursor.png';
 import StackingCarousel from "@/components/horcaroselSm";
 import messageimage from '@/assets/images/message.png'
-import { MdArrowRightAlt } from "react-icons/md";
 export default function SocialMedia() {
 
     const [isOpen, setIsOpen] = useState(false);

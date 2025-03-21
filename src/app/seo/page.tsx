@@ -805,23 +805,23 @@ export default function Seo() {
             <section className='w-full flex flex-wrap max-w-[90%] mx-auto lg:flex-nowrap overflow-y-hidden items-center'>
                 {/* Left Content Section */}
                 <div className='w-full lg:w-1/2 px-6 py-10 lg:py-14'>
-                    <h2 className="text-5xl font-semibold text-gray-800 font-sofiasanscondensed dark:text-white">
+                    <h2 className="text-4xl md:text-5xl font-semibold text-gray-800 font-sofiasanscondensed dark:text-white">
                         Proven Results Across <span className='text-purple-500'>Diverse Industries</span>
                     </h2>
-                    <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+                    <p className="mt-4 text-[16px] md:text-lg text-gray-600 dark:text-gray-300">
                         Our expertise spans multiple industries, helping businesses achieve growth through data-driven strategies and
                         innovative solutions. From technology and finance to healthcare and retail, we empower brands with actionable insights
                         and cutting-edge digital solutions.
                     </p>
-                    <p className="mt-2 text-lg text-gray-600 dark:text-gray-300">
+                    <p className="mt-2 text-[16px] md:text-lg text-gray-600 dark:text-gray-300">
                         Explore how our tailored approach delivers measurable success, increasing engagement, conversions, and brand visibility
                         in a competitive landscape.
                     </p>
-                    <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div className="mt-6 grid grid-cols-2 md:grid-cols-2 gap-5">
                         {industries.map((industry, index) => (
                             <div key={index} className="flex items-center text-lg text-white">
                                 <span className="text-white text-xl inline-block  mr-3">{industry.icon}</span>
-                                <h2 className='font-poppins text-sm'>{industry.name}&nbsp;SEO</h2>
+                                <h2 className='font-poppins text-xs md:text-sm'>{industry.name}&nbsp;SEO</h2>
                             </div>
                         ))}
                     </div>
@@ -831,7 +831,7 @@ export default function Seo() {
                 </div>
 
 
-                <div className="flex w-full lg:w-1/2 justify-center gap-4 p-10">
+                <div className="flex w-full lg:w-1/2 justify-center gap-4 p-1 md:p-10">
                     <div className='w-1/3 flex flex-col  items-center justify-center gap-3'>
                         <Image src={healthcare} alt='healthcare' className='rounded-xl'></Image>
                         <Image src={oil} alt='oil' className='rounded-xl'></Image>
@@ -851,7 +851,7 @@ export default function Seo() {
 
                 <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
 
-                    <div className="w-2/3 sm:w-1/2 lg:w-1/3 mx-auto text-center mb-6">
+                    <div className="w-2/3  lg:w-1/3 mx-auto text-center mb-6">
                         <h2 className="text-gray-600 text-xl dark:text-neutral-200 ">Trusted by Open Source, enterprise, and more than 99,000 of you</h2>
                     </div>
 
@@ -890,20 +890,20 @@ export default function Seo() {
                     </div>
                 </div>
             </section>
-            <section className="py-24">
+            <section className="pt-14 pb-24">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
 
                         <div className="w-full lg:w-full">
                             <div className="lg:max-w-full">
                                 <h6 className="text-lg text-center font-medium text-indigo-600 mb-2">FAQs</h6>
-                                <h2 className="text-5xl text-center font-sofiasanscondensed font-bold text-gray-100 mb-5">Looking for answers?</h2>
+                                <h2 className="text-4xl md:text-5xl text-center font-sofiasanscondensed font-bold text-gray-100 mb-5">Looking for answers?</h2>
                                 <div className="space-y-4">
                                     {faqs.map((faq, index) => (
                                         <div key={index} className="border-b border-gray-200 pb-4">
                                             <button
                                                 onClick={() => toggleFAQ(index)}
-                                                className="flex justify-between items-center w-full text-xl pt-4 pb-4 text-white font-normal transition duration-500 hover:text-indigo-600"
+                                                className="flex justify-between items-center w-full text-[16px] md:text-xl pt-4 pb-4 text-white font-normal transition duration-500 hover:text-indigo-600"
                                             >
                                                 {faq.question}
                                                 <svg
@@ -924,7 +924,7 @@ export default function Seo() {
                                                 </svg>
                                             </button>
                                             {openIndex === index && (
-                                                <p className="text-base text-gray-100 mt-2 pt-5 pb-5 transition-all duration-300 ">{faq.answer}</p>
+                                                <p className="text-sm md:text-base text-gray-100 mt-2 pt-5 pb-5 transition-all duration-300 ">{faq.answer}</p>
                                             )}
                                         </div>
                                     ))}
