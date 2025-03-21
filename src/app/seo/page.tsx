@@ -22,11 +22,21 @@ import Image from 'next/image';
 
 export default function Seo() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isOpen1, setIsOpen1] = useState(false);
+    const [isOpen2, setIsOpen2] = useState(false);
     const [openIndex, setOpenIndex] = useState<number | null>(null);
 
     const toggleFAQ = (index: number) => {
         setOpenIndex(openIndex === index ? null : index);
     };
+
+    const toggleDropdown1 = () => {
+        setIsOpen1(!isOpen1);
+    }
+
+    const toggleDropdown2 = () => {
+        setIsOpen2(!isOpen2);
+    }
 
 
     const industries = [
@@ -93,7 +103,7 @@ export default function Seo() {
             answer: "Bixeltek is a trusted SEO agency in Hyderabad, specializing in on-page SEO, off-page SEO, link building, technical SEO, and content marketing to boost your website’s search engine rankings.",
         },
     ];
-    
+
 
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
@@ -179,12 +189,12 @@ export default function Seo() {
                 <div className="absolute bottom-0 left-0 w-full z-30 h-40 bg-gradient-to-t from-black to-transparent"></div>
                 <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                     <div className="max-w-4xl mx-auto text-center">
-                        <p className="text-sm font-normal tracking-widest uppercase">
+                        <p className="text-xs md:text-sm font-normal tracking-widest uppercase">
                             <span className="text-transparent bg-clip-text bg-gradient-to-r  from-cyan-500 to-purple-500">
-                                Your Business Needs Visibility, And We Can Help you rank on <span className='font-bold italic'>Google</span> 
+                                Your Business Needs Visibility, And We Can Help you rank on <span className='font-bold italic'>Google</span>
                             </span>
                         </p>
-                        <h1 className="mt-8 text-xl font-normal text-white lg:text-6xl xl:text-6xl">
+                        <h1 className="mt-8 text-2xl font-normal text-white lg:text-6xl xl:text-6xl">
                             Bixeltek – A Premier SEO Agency in Hyderabad,India
                         </h1>
 
@@ -234,20 +244,20 @@ export default function Seo() {
                         </div>
 
 
-                        <div className="bg-[#7b00e0] max-w-full pt-5 mx-auto shadow-purple-custom2 rounded-t-2xl">
-                            <div className="max-w-[97%] pt-10 pb-5  px-5 mx-auto bg-black rounded-t-2xl flex flex-col lg:flex-row justify-center items-center">
+                        <div className="bg-[#7b00e0] max-w-full pt-2 md:pt-5 mx-auto shadow-purple-custom2 rounded-t-2xl">
+                            <div className="max-w-[97%] pt-4 md:pt-10 pb-5  px-5 mx-auto bg-black rounded-t-2xl flex flex-col lg:flex-row justify-center items-center">
                                 {/* Left side */}
-                                <div className="w-1/2 flex flex-col">
-                                    <h2 className="text-4xl text-white mt-10 mx-7">
+                                <div className=" w-full md:w-1/2 flex flex-col">
+                                    <h2 className="text-xl md:text-2xl lg:text-4xl text-white mt-4 md:mt-10 mx-2 md:mx-5 lg:mx-7">
                                         <span className="text-[#7b00e0]">Rank Higher, Get More Traffic</span> & Skyrocket Your Business Growth
                                     </h2>
-                                    <div className="flex mt-20 mb-6 mx-2 px-5 gap-8">
-                                        <div className="flex flex-col text-white">
-                                            <h1 className="text-[#6728cc] text-5xl font-semibold">278%</h1>
-                                            <p className="text-gray-100 text-sm mt-2">Increase in organic traffic <br/> within six months for our clients</p>
+                                    <div className="flex mt-10 md:mt-20 mb-6 mx-2 px-0 gap-8">
+                                        <div className=" w-1/2 flex flex-col text-white">
+                                            <h1 className="text-[#6728cc] text-3xl md:text-5xl font-semibold">278%</h1>
+                                            <p className="text-gray-100 text-sm mt-2">Increase in organic traffic <br /> within six months for our clients</p>
                                         </div>
-                                        <div className="flex flex-col text-white">
-                                            <h1 className="text-[#6728cc] text-5xl font-semibold">4.2X</h1>
+                                        <div className="w-1/2 flex flex-col text-white">
+                                            <h1 className="text-[#6728cc] text-3xl md:text-5xl font-semibold">4.2X</h1>
                                             <p className="text-gray-100 text-sm mt-2">
                                                 Higher lead conversions from targeted SEO campaigns.
                                             </p>
@@ -256,9 +266,9 @@ export default function Seo() {
                                 </div>
 
                                 {/* Right side */}
-                                <div className="w-1/2">
-                                    <ul className="flex flex-col text-gray-100 gap-10 px-6">
-                                        <li className="flex items-start gap-4">
+                                <div className="w-full md:w-1/2 pb-10 md:pb-0">
+                                    <ul className="flex flex-col text-gray-100 gap-10 px-2 md:px-6">
+                                        <li className="flex items-start gap-4 text-sm md:text-[16px]">
                                             <VscDebugBreakpointDataUnverified className="text-[#670ef7] mt-[-17px] text-6xl" />
                                             <span>
                                                 <span className='font-semibold'>Is your website struggling to generate leads and sales?</span> You&apos;re not alone. Over 91% of online content gets zero traffic from Google, meaning businesses without a strong SEO strategy are missing out on valuable customers.
@@ -279,12 +289,12 @@ export default function Seo() {
                 </div>
             </section>
             <section className="max-w-4xl mx-auto text-center py-12">
-                <h2 className="text-5xl font-sofiasanscondensed font-medium text-white mb-1">Why Your Website Isn&apos;t Ranking</h2>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-sofiasanscondensed font-medium text-white mb-1">Why Your Website Isn&apos;t Ranking</h2>
                 <h2 className='text-5xl font-sofiasanscondensed text-purple-500 mb-6'>The SEO Challenge</h2>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-2 px-2 md:px-0 md:grid-cols-3 gap-6">
                     {seoChallenges.map((item, index) => (
-                        <div key={index} className="p-6 text-white flex flex-col justify-center items-center bg-transparent">
+                        <div key={index} className="px-2 py-6 md:px-6 text-white flex flex-col justify-center items-center bg-transparent">
                             <div className="text-white text-3xl mb-3">{item.icon}</div>
                             <h3 className="text-lg font-semibold text-center">{item.title}</h3>
                             <p className="text-sm text-gray-300 text-center">{item.desc}</p>
@@ -302,11 +312,11 @@ export default function Seo() {
 
             <section>
                 <section>
-                    <div className="min-h-screen bg-black flex items-center justify-center px-4 py-10">
+                    <div className="min-h-screen bg-black flex items-center justify-center px-0 md:px-4 py-10">
                         <div className="max-w-7xl w-full bg-black text-white rounded-xl shadow-md p-8 flex flex-col md:flex-row">
 
-                            <div className="md:w-1/2 p-6">
-                                <h2 className="text-5xl font-normal tracking-tight text-white mb-4 ">
+                            <div className="w-full md:w-1/2 p-0 md:p-6">
+                                <h2 className="text-3xl md:text-5xl font-normal tracking-tight text-white mb-4 ">
                                     What is <span className='text-[#6728cc]'>SEO</span> and how it impacts businesses?
                                 </h2>
 
@@ -316,7 +326,7 @@ export default function Seo() {
                                 <p className="text-gray-300 leading-relaxed font-sans text-lg">
                                     Businesses with a strong SEO presence gain a competitive edge, reaching users organically without relying heavily on paid advertisements. Investing in SEO is a sustainable approach to long-term success in the digital landscape.
                                 </p>
-                                <div className='grid grid-cols-2 gap-y-5 pt-10 uppercase text-white'>
+                                <div className='grid grid-cols-1 md:grid-cols-2 gap-y-5 pb-10 pt-10 uppercase text-white'>
                                     <h3 className='font-light text-[17px] tracking-wide flex'><VscDebugBreakpointDataUnverified className="text-[#670ef7] mx-2 mt-1" />  Proven Track Record</h3>
                                     <h3 className='font-light text-[17px] tracking-wide flex'><VscDebugBreakpointDataUnverified className="text-[#670ef7] mx-2 mt-1" />Customized Strategies</h3>
                                     <h3 className='font-light text-[17px] tracking-wide  flex'><VscDebugBreakpointDataUnverified className="text-[#670ef7] mx-2 mt-1" />Expert Team</h3>
@@ -326,60 +336,187 @@ export default function Seo() {
                             </div>
 
                             {/* Right Section: Contact Form */}
-                            <div className="md:w-1/2 p-6 relative bg-[#1a1a1a] rounded-lg">
-                                <h3 className="text-4xl  font-normal text-white mb-4">Get in Touch</h3>
+                            <div className="w-[95%] md:w-1/2 p-6 relative bg-[#1a1a1a] rounded-lg">
+                                <h3 className="text-3xl md:text-3xl  font-normal text-white mb-4">Get in Touch </h3>
                                 <div className='absolute w-40 h-1 bg-[#670ef7] translate-y-[-10px] translate-x-[5px]'></div>
                                 <form className="space-y-4">
-                                    <div className='flex gap-5'>
+                                    <div className='flex flex-col md:flex-row gap-5'>
 
                                         <input
                                             type="text"
                                             id="name"
                                             name="name"
-                                            className="w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                            className="w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                                             placeholder="First Name"
                                         />
                                         <input
                                             type="text"
                                             id="name"
                                             name="name"
-                                            className="w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                            className="w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                                             placeholder="Last Name*"
                                         />
                                     </div>
-                                    <div className='flex gap-x-5'>
+                                    <div className='flex flex-col md:flex-row gap-5'>
 
                                         <input
                                             type="email"
                                             id="email"
                                             name="email"
-                                            className="w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                            className=" w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                                             placeholder="Enter your email*"
                                         />
                                         <input
                                             type="phone"
                                             id="phone"
                                             name="phone"
-                                            className="w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                            className=" w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                                             placeholder="Enter your phone number"
                                         />
                                     </div>
-                                    <div className='flex gap-5'>
+                                    <div className='flex flex-col md:flex-row gap-5'>
                                         <input
                                             type="text"
                                             id="name"
                                             name="name"
-                                            className="w-full mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                            className="w-full md:w-1/2 mt-2 p-3 border-b border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                                             placeholder="Company/Organisation*"
                                         />
                                         <input
                                             type="text"
                                             id="name"
                                             name="name"
-                                            className="w-full mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                            className="w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                                             placeholder="Website"
                                         />
 
+                                    </div>
+                                    <div className='relative max-w-full flex flex-col md:flex-row gap-4'>
+                                        <div className="relative max-w-full md:max-w-[50%] inline-block text-left w-full">
+                                            <button
+                                                type="button"
+                                                className="inline-flex w-full justify-between text-left rounded-md border border-gray-600 bg-black px-4 py-3 text-sm font-medium text-gray-300 shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                                id="menu-button"
+                                                aria-expanded={isOpen1}
+                                                aria-haspopup="true"
+                                                onClick={toggleDropdown1}
+                                            >
+                                                How are you running your Marketing Department Currently?
+                                                <svg
+                                                    className={`-mr-1 ml-2 h-5 w-5 text-gray-300 transition-transform ${isOpen1 ? 'rotate-180' : ''}`}
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 15 15"
+                                                    fill="currentColor"
+                                                    aria-hidden="true"
+                                                >
+                                                    <path
+                                                        fillRule="evenodd"
+                                                        d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                        clipRule="evenodd"
+                                                    />
+                                                </svg>
+                                            </button>
+
+                                            {/* Dropdown menu */}
+                                            {isOpen1 && (
+                                                <div
+                                                    className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                                    role="menu"
+                                                    aria-orientation="vertical"
+                                                    aria-labelledby="menu-button"
+                                                >
+                                                    <div className="py-1" role="none">
+                                                        <a
+                                                            href="#"
+                                                            className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                            role="menuitem"
+                                                        >
+                                                            Inhouse
+                                                        </a>
+                                                        <a
+                                                            href="#"
+                                                            className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                            role="menuitem"
+                                                        >
+                                                            Outsourced
+                                                        </a>
+                                                        <a
+                                                            href="#"
+                                                            className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                            role="menuitem"
+                                                        >
+                                                            Myself
+                                                        </a>
+                                                        <a
+                                                            href="#"
+                                                            className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                            role="menuitem"
+                                                        >
+                                                            Freelancer
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            )}
+                                        </div>
+                                        <div className="relative max-w-full md:max-w-[50%] inline-block text-left w-full">
+                                            <button
+                                                type="button"
+                                                className="inline-flex w-full justify-between rounded-md border text-left border-gray-600 bg-black px-4 py-3 text-sm font-medium text-gray-300 shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                                id="menu-button"
+                                                aria-expanded={isOpen2}
+                                                aria-haspopup="true"
+                                                onClick={toggleDropdown2}
+                                            >
+                                                What is the current marketing budget you are looking at?
+                                                <svg
+                                                    className={`-mr-1 ml-2 h-5 w-5 text-gray-300 transition-transform ${isOpen2 ? 'rotate-180' : ''}`}
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 15 15"
+                                                    fill="currentColor"
+                                                    aria-hidden="true"
+                                                >
+                                                    <path
+                                                        fillRule="evenodd"
+                                                        d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                        clipRule="evenodd"
+                                                    />
+                                                </svg>
+                                            </button>
+
+                                            {/* Dropdown menu */}
+                                            {isOpen2 && (
+                                                <div
+                                                    className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                                    role="menu"
+                                                    aria-orientation="vertical"
+                                                    aria-labelledby="menu-button"
+                                                >
+                                                    <div className="py-1" role="none">
+                                                        <a
+                                                            href="#"
+                                                            className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                            role="menuitem"
+                                                        >
+                                                            INR 1-2 Lacs a month
+                                                        </a>
+                                                        <a
+                                                            href="#"
+                                                            className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                            role="menuitem"
+                                                        >
+                                                            INR 2-5 Lacs a month
+                                                        </a>
+                                                        <a
+                                                            href="#"
+                                                            className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                                            role="menuitem"
+                                                        >
+                                                            INR &gt;5 Lacs a month
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            )}
+                                        </div>
                                     </div>
                                     <div className="relative max-w-full inline-block text-left w-full">
                                         <button
@@ -454,12 +591,9 @@ export default function Seo() {
                                             </div>
                                         )}
                                     </div>
-                                    <textarea name="textarea" id="" placeholder='Tell us about your business'
+                                    <textarea name="textarea" id="" rows={5} placeholder='Tell us about your business'
                                         className='w-full mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]'
                                     ></textarea>
-
-
-
                                     <button
                                         type="submit"
                                         className="w-full bg-[#670ef7] text-white py-3 rounded-lg hover:bg-[#5b0cd1] transition"
@@ -633,28 +767,28 @@ export default function Seo() {
             </section>
 
 
-            <section className='pt-20 pb-20'>
+            <section className='pt-20 pb-10 md:pb-20'>
                 <div className='flex flex-col items-center gap-3'>
-                    <h2 className='text-5xl text-center text-white font-sofiasanscondensed'>We&apos;re an <span className='text-[#670ef7]'>ROI-led</span> SEO agency. What does that mean?</h2>
-                    <p className='text-white max-w-5xl text-center text-[16px] '>It&apos;s simple. We&apos;re not just about ticking boxes or chasing vanity metrics. As SEO specialists,every campaign, every strategy, every decision we make is geared towards one goal: maximising your return on investment through our expert SEO services. Here&apos;s how we make it happen:</p>
+                    <h2 className='text-4xl md:text-5xl text-center text-white font-sofiasanscondensed'>We&apos;re an <span className='text-[#670ef7]'>ROI-led</span> SEO agency. What does that mean?</h2>
+                    <p className='text-white max-w-[90%] md:max-w-5xl text-center text-[15px] md:text-[16px] '>It&apos;s simple. We&apos;re not just about ticking boxes or chasing vanity metrics. As SEO specialists,every campaign, every strategy, every decision we make is geared towards one goal: maximising your return on investment through our expert SEO services. Here&apos;s how we make it happen:</p>
                 </div>
-                <div className="grid grid-cols-4 py-10 gap-0 max-w-7xl text-white mx-auto text-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 gap-0 max-w-7xl text-white mx-auto text-center">
 
-                    <div className="flex flex-col gap-3 text-xl items-center border-r border-dashed  border-[#670ef7] justify-center p-6 ">
+                    <div className="flex flex-col gap-3 text-xl items-center border-none md:border-r md:border-dashed  border-[#670ef7] justify-center p-6 ">
                         {items[0].icon}
                         <h3 className="mt-2 font-semibold font-poppins">{items[0].text}</h3>
                         <p className="text-sm mt-2">{items[0].description}</p>
                     </div>
 
                     {/* Top-right */}
-                    <div className="flex flex-col gap-3 text-xl items-center border-r border-dashed  border-[#670ef7] justify-center p-6">
+                    <div className="flex flex-col gap-3 text-xl items-center border-none md:border-r md:border-dashed  border-[#670ef7] justify-center p-6">
                         {items[1].icon}
                         <h3 className="mt-2 font-semibold font-poppins">{items[1].text}</h3>
                         <p className="text-sm mt-2">{items[1].description}</p>
                     </div>
 
                     {/* Bottom-left */}
-                    <div className="flex flex-col gap-3 text-xl items-center justify-center p-6  border-r border-dashed  border-[#670ef7]">
+                    <div className="flex flex-col gap-3 text-xl items-center justify-center p-6  border-none md:border-r md:border-dashed  border-[#670ef7]">
                         {items[2].icon}
                         <h3 className="mt-2 font-semibold font-poppins">{items[2].text}</h3>
                         <p className="text-sm mt-2">{items[2].description}</p>
@@ -759,7 +893,7 @@ export default function Seo() {
             <section className="py-24">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
-                        
+
                         <div className="w-full lg:w-full">
                             <div className="lg:max-w-full">
                                 <h6 className="text-lg text-center font-medium text-indigo-600 mb-2">FAQs</h6>
