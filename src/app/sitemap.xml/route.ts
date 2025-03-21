@@ -1,10 +1,10 @@
-import { MetadataRoute } from "next";
+import { NextResponse } from "next/server";
 
 export async function GET() {
   const baseUrl = "https://compweb-lemon.vercel.app";
 
   // Define static pages
-  const staticPages: MetadataRoute.Sitemap = [
+  const staticPages = [
     { url: `${baseUrl}/`, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/about`, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/services`, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 0.8 },
@@ -16,15 +16,15 @@ export async function GET() {
   ];
 
   // Fetch WordPress blog posts
-  let blogPosts: MetadataRoute.Sitemap = [];
+  let blogPosts = [];
   try {
-    const res = await fetch("https://bixeltek.com/wp-json/wp/v2/posts?per_page=10");
+    const res = await fetch("https://bixeltek.com/wp-json/wp/v2/posts?per_page=10", { cache: "no-store" });
     if (res.ok) {
       const posts = await res.json();
       blogPosts = posts.map((post: { slug: string }) => ({
         url: `${baseUrl}/blog/${post.slug}`,
         lastModified: new Date().toISOString(),
-        changeFrequency: "weekly" as const, // ✅ Explicitly set type
+        changeFrequency: "weekly",
         priority: 0.7,
       }));
     }
@@ -35,7 +35,7 @@ export async function GET() {
   // Combine all URLs
   const allUrls = [...staticPages, ...blogPosts];
 
-  // ✅ Convert JSON to XML format
+  // Convert JSON to XML format
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   ${allUrls
@@ -51,8 +51,8 @@ export async function GET() {
     .join("")}
 </urlset>`;
 
-  // ✅ Return XML response
-  return new Response(xml, {
+  // Return XML response
+  return new NextResponse(xml, {
     headers: {
       "Content-Type": "application/xml",
     },
