@@ -21,7 +21,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }));
 
   // Fetch all WordPress blog posts dynamically
-  const blogPosts = await fetch("https://bixeltek.com/wp-json/wp/v2/posts?per_page=100")
+  const blogPosts = await fetch("https://bixeltek.com/wp-json/wp/v2/posts?per_page=10")
     .then((res) => res.json())
     .then((posts) =>
       posts.map((post: { slug: string }) => ({
