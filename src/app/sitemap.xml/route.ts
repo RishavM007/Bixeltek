@@ -1,0 +1,60 @@
+import { MetadataRoute } from "next";
+
+export async function GET() {
+  const baseUrl = "https://compweb-lemon.vercel.app";
+
+  // Define static pages
+  const staticPages: MetadataRoute.Sitemap = [
+    { url: `${baseUrl}/`, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/about`, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/services`, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/pricing`, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/industries`, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/googleadsman`, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/digitalmarketing`, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/webdev`, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 0.8 },
+  ];
+
+  // Fetch WordPress blog posts
+  let blogPosts: MetadataRoute.Sitemap = [];
+  try {
+    const res = await fetch("https://bixeltek.com/wp-json/wp/v2/posts?per_page=10");
+    if (res.ok) {
+      const posts = await res.json();
+      blogPosts = posts.map((post: { slug: string }) => ({
+        url: `${baseUrl}/blog/${post.slug}`,
+        lastModified: new Date().toISOString(),
+        changeFrequency: "weekly" as const, // ✅ Explicitly set type
+        priority: 0.7,
+      }));
+    }
+  } catch (error) {
+    console.error("Error fetching blog posts:", error);
+  }
+
+  // Combine all URLs
+  const allUrls = [...staticPages, ...blogPosts];
+
+  // ✅ Convert JSON to XML format
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  ${allUrls
+    .map(
+      (page) => `
+    <url>
+      <loc>${page.url}</loc>
+      <lastmod>${page.lastModified}</lastmod>
+      <changefreq>${page.changeFrequency}</changefreq>
+      <priority>${page.priority}</priority>
+    </url>`
+    )
+    .join("")}
+</urlset>`;
+
+  // ✅ Return XML response
+  return new Response(xml, {
+    headers: {
+      "Content-Type": "application/xml",
+    },
+  });
+}
