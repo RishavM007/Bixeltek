@@ -42,10 +42,10 @@ const ProcessSection: React.FC = () => {
 
     return (
         <section className="py-6 px-6 md:px-20">
-            <h2 className="text-6xl font-sofiasanscondensed font-bold text-center md:text-left mb-10">
+            <h2 className="text-5xl md:text-6xl font-sofiasanscondensed font-bold text-left md:text-left mb-10">
                 Our Process of Work
             </h2>
-            <p className="text-gray-600 max-w-2xl text-center md:text-left mb-8">
+            <p className="text-gray-600 max-w-2xl text-left md:text-left mb-8">
                 Achieve measurable growth with our phased approach. Each step optimizes
                 your marketing strategy, driving precision and results from start to
                 finish.

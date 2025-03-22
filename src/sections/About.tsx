@@ -16,7 +16,7 @@ export const About = () => {
                     initial={{ opacity: 0, x: -50 }}
                     animate={isInView ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.8 }}
-                    className="md:w-1/2"
+                    className="w-full md:w-1/2"
                 >
                     <p className="px-4 py-1 mb-4 rounded-lg border w-fit text-white font-poppins text-sm">
                         About Us
@@ -29,7 +29,7 @@ export const About = () => {
                         innovative IT solutions. With a strong focus on customer satisfaction, we prioritize
                         understanding our clients&apos; unique needs and delivering tailored solutions.
                     </p>
-                    <div className="mt-14 flex items-center gap-4">
+                    <div className="mt-4 md:mt-10 flex flex-col md:flex-row items-start md:items-center gap-4">
                         <motion.button
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
@@ -37,7 +37,7 @@ export const About = () => {
                         >
                             Know More &nbsp; &rarr;
                         </motion.button>
-                        <div className="text-[16px] ml-20 text-white font-semibold">
+                        <div className="text-[16px] ml-1 md:ml-20 mt-4 md:mt-0 text-white font-semibold">
                             <p>
                                 (6k) <span className="font-bold">Highest rated</span>
                             </p>
@@ -51,9 +51,9 @@ export const About = () => {
                     initial={{ opacity: 0, x: 50 }}
                     animate={isInView ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="md:w-1/2 mt-20 relative bg-transparent"
+                    className="md:w-1/2 mt-5 md:mt-20 relative bg-transparent"
                 >
-                    <Image src={image1} alt="Team" className="rounded-lg w-auto h-[400px]" />
+                    <Image src={image1} alt="Team" className="rounded-lg w-auto h-[350px] md:h-[400px]" />
                     <motion.a
                         href="https://www.google.com/partners/agency?id=2188074075"
                         target="_blank"
@@ -71,7 +71,7 @@ export const About = () => {
                 </motion.div>
             </div>
 
-            {/* Features Section */}
+            
             <motion.div
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
@@ -102,7 +102,7 @@ export const About = () => {
                         <span className="text-purple-600 text-lg">☑</span>
                         <div>
                             <h3 className="text-lg text-white font-semibold">{item.title}</h3>
-                            <p className="text-white text-[15px]">
+                            <p className="text-white mt-2 text-[15px]">
                                 Clearly articulate what sets your company apart from competitors, such as
                                 specialized expertise, innovative solutions, or exceptional customer service.
                             </p>

@@ -63,14 +63,13 @@ const TestimonialSection = () => {
 
     return (
         <section className="py-12">
-            <div className="mx-auto max-w-full px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-full px-0 lg:px-8">
                 <div className="flex flex-col lg:flex-row items-center gap-8">
-                    {/* Left Section with Buttons */}
-                    <div className="w-1/3 text-center ml-10 lg:text-left">
+                    <div className="w-full md:w-1/3 text-center ml-0 md:ml-10 lg:text-left">
                         <span className="text-lg text-gray-600 font-sofiasanscondensed font-medium mb-4 block">
                             Testimonial
                         </span>
-                        <h2 className="text-6xl font-bold text-gray-900 font-sofiasanscondensed leading-[3.25rem] mb-8">
+                        <h2 className="text-6xl font-bold text-gray-900 mt-2 font-sofiasanscondensed leading-[3.25rem] mb-8">
                             3k+ Customers gave their{" "}
                             <span className="text-transparent bg-clip-text">
                                 <span className="text-blue-500">F</span>
@@ -126,7 +125,7 @@ const TestimonialSection = () => {
                     </div>
 
                     {/* Testimonials Section */}
-                    <div className="w-2/3 overflow-hidden relative">
+                    <div className="w-full  md:w-2/3 overflow-hidden relative">
                         <motion.div
                             className="flex"
                             animate={{ x: `-${index * 100}%` }}
@@ -144,7 +143,7 @@ const TestimonialSection = () => {
                                         .map((testimonial) => (
                                             <div
                                                 key={testimonial.id}
-                                                className={`group bg-white border-2 rounded-2xl max-w-md min-h-[250px] flex flex-col justify-center p-6 transition-all duration-500 ${
+                                                className={`group bg-white border-2 rounded-2xl max-w-md min-h-[250px] flex flex-col justify-center p-2 md:p-6 transition-all duration-500 ${
                                                     testimonial.id === 1
                                                         ? "border-indigo-500"
                                                         : testimonial.id === 2

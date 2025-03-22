@@ -18,7 +18,7 @@ export default function DmHero() {
         { icon: <SiGoogleads />, top: "80%", left: "80%", animation: { x: [10, -10, 10] } },
     ];
   return (
-    <section className="px-6 md:px-24 text-center bg-white min-h-[80vh] md:min-h-[100vh] lg:min-h-[120vh] flex flex-col items-center justify-center relative mt-[-150px] overflow-hidden">
+    <section className="px-6 md:px-24 text-center bg-white min-h-[100vh] md:min-h-[100vh] lg:min-h-[120vh] flex flex-col items-center justify-center relative mt-[-120px] md:mt-[-150px] overflow-hidden">
                     <div className="max-w-4xl mx-auto relative z-10">
                         <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-8">
                             Reach more customers with our digital marketing services

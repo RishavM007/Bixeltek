@@ -8,7 +8,7 @@ export default function DmSteps() {
     const [activetimelineTab, setActiveTimelineTab] = useState("process");
   return (
     <section className='overflow-hidden mt-20'>
-                <div className="w-full ml-10">
+                <div className="w-full ml-0 md:ml-10">
                     <div>
                         <div className="flex w-fit gap-6 ml-10 text-2xl font-medium font-sofiasanscondensed">
                             <span

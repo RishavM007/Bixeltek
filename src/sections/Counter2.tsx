@@ -2,7 +2,6 @@
 import { useEffect, useRef, useState } from "react";
 import teamimage from "@/assets/annie-spratt-QckxruozjRg-unsplash.jpg"
 
-// Counter Component
 interface CounterProps {
   start?: number;
   end: number;
@@ -48,7 +47,6 @@ const Counter: React.FC<CounterProps> = ({ start = 0, end, duration = 1.5 }) => 
   );
 };
 
-// Main Section Component
 const TeamStatsSection = () => {
   const bgRef = useRef<HTMLDivElement>(null);
 
