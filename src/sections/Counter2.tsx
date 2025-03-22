@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useRef, useState } from "react";
 import teamimage from "@/assets/annie-spratt-QckxruozjRg-unsplash.jpg"
 

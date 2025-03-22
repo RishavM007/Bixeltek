@@ -27,7 +27,7 @@ export const About = () => {
                     <p className="mt-4 text-gray-100 text-[16px] mr-16">
                         Our company stands out as the preferred choice for clients seeking reliable and
                         innovative IT solutions. With a strong focus on customer satisfaction, we prioritize
-                        understanding our clients' unique needs and delivering tailored solutions.
+                        understanding our clients&apos; unique needs and delivering tailored solutions.
                     </p>
                     <div className="mt-14 flex items-center gap-4">
                         <motion.button
