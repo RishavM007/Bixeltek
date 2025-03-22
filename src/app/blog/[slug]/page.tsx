@@ -24,7 +24,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
       <h1 className="text-3xl font-bold mb-4 text-white">{post.title.rendered}</h1>
       <p className="text-gray-100 mb-4">{new Date(post.date).toLocaleDateString()}</p>
       <div
-        className="prose max-w-full text-white"
+        className="prose prose-invert max-w-full"
         dangerouslySetInnerHTML={{ __html: post.content.rendered }}
       />
     </main>

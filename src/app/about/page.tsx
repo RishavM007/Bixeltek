@@ -3,9 +3,7 @@ import Image from "next/image";
 import BgImg from "@/assets/Layer F.png";
 import { motion } from "framer-motion";
 import { Bento } from "@/components/AbtHero/AbtHero";
-import { NextSeo } from "next-seo";
-import { useEffect } from "react";
-import Head from "next/head";
+
 
 export default function AboutPage() {
   const timelineEvents = [
@@ -26,12 +24,6 @@ export default function AboutPage() {
 
   return (
     <>
-      {/* Use NextSeo exclusively to handle metadata */}
-
-      <NextSeo
-        title="About Bixeltek"
-        description="At Bixeltek, we specialize in providing tailored IT solutions."
-      />
 
       <div className="bg-black text-white">
         <section>

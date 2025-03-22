@@ -1,7 +1,5 @@
 import BlogList from '@/components/BlogList';
 import React from 'react';
-import { Blogcards } from '@/components/Cards/Blogcards';
-import Image from 'next/image';
 
 export default function BlogIndex() {
     return (

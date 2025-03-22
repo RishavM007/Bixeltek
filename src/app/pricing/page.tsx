@@ -1,7 +1,7 @@
 'use client';
 import React, { ReactNode } from "react";
 import { useState } from "react";
-import { motion } from "framer-motion";
+
 import PricingTable from "@/components/pricecomp";
 const Pricing = () => {
     const [isChecked, setIsChecked] = useState(false);

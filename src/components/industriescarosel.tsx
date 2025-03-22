@@ -1,3 +1,4 @@
+'use client';
 import { useState } from "react";
 import Image from "next/image";
 import cleaningcomp from "@/assets/digital marketing servies for cleaning companies.jpg";

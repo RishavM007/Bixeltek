@@ -1,8 +1,9 @@
-'use client';
-import React, { useState } from 'react';
+
+import React from 'react';
+import DarkFaqSection from '@/components/DarkFaq';
+import ContactFrom from '@/components/ContactFrom';
 import Link from 'next/link';
 import healthcare from "@/assets/digital marketing for health care practices.jpg";
-import cleaningcomp from "@/assets/digital marketing servies for cleaning companies.jpg";
 import oil from "@/assets/digital marketing for oil refinaries.jpg";
 import { FaSearch, FaTachometerAlt, FaFileAlt, FaStar, FaMapMarkerAlt, FaCode } from "react-icons/fa";
 import { PiGreaterThan } from "react-icons/pi";
@@ -21,22 +22,7 @@ import Image from 'next/image';
 
 
 export default function Seo() {
-    const [isOpen, setIsOpen] = useState(false);
-    const [isOpen1, setIsOpen1] = useState(false);
-    const [isOpen2, setIsOpen2] = useState(false);
-    const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-    const toggleFAQ = (index: number) => {
-        setOpenIndex(openIndex === index ? null : index);
-    };
-
-    const toggleDropdown1 = () => {
-        setIsOpen1(!isOpen1);
-    }
-
-    const toggleDropdown2 = () => {
-        setIsOpen2(!isOpen2);
-    }
 
 
     const industries = [
@@ -105,9 +91,7 @@ export default function Seo() {
     ];
 
 
-    const toggleDropdown = () => {
-        setIsOpen(!isOpen);
-    }
+   
     const items = [
         { text: "Measurable Goals", icon: <GrFlag />, description: "Set clear, achievable objectives that align with your business growth. Our SEO strategies focus on measurable success indicators, ensuring transparency and progress tracking." },
         { text: "Data-Driven Strategies", icon: <BsGraphUpArrow />, description: "Utilizing analytics and performance insights, we craft SEO plans backed by data. This ensures your website ranks higher and reaches the right audience effectively." },
@@ -159,27 +143,6 @@ export default function Seo() {
             title: 'Conversion Rate Optimization (CRO)',
             description: 'Increase website conversions using A/B testing and user data insights to optimize pages and drive higher user actions, such as purchases or sign-ups.',
 
-        },
-    ];
-
-    const testimonials = [
-        {
-            image: "/images/testimonial1.jpg",
-            adminImage: "/images/admin1.jpg",
-            admin: "ADMIN",
-            title: "Crafting a Digital Identity: The Art of Agency Web Design",
-        },
-        {
-            image: "/images/testimonial2.jpg",
-            adminImage: "/images/admin2.jpg",
-            admin: "ADMIN",
-            title: "Achieving Fashion Elegance: Runway to Real Life",
-        },
-        {
-            image: "/images/testimonial3.jpg",
-            adminImage: "/images/admin3.jpg",
-            admin: "ADMIN",
-            title: "Facebook design is dedicated to whats new in design",
         },
     ];
 
@@ -336,272 +299,7 @@ export default function Seo() {
                             </div>
 
                             {/* Right Section: Contact Form */}
-                            <div className="w-[95%] md:w-1/2 p-6 relative bg-[#1a1a1a] rounded-lg">
-                                <h3 className="text-3xl md:text-3xl  font-normal text-white mb-4">Get in Touch </h3>
-                                <div className='absolute w-40 h-1 bg-[#670ef7] translate-y-[-10px] translate-x-[5px]'></div>
-                                <form className="space-y-4">
-                                    <div className='flex flex-col md:flex-row gap-5'>
-
-                                        <input
-                                            type="text"
-                                            id="name"
-                                            name="name"
-                                            className="w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                            placeholder="First Name"
-                                        />
-                                        <input
-                                            type="text"
-                                            id="name"
-                                            name="name"
-                                            className="w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                            placeholder="Last Name*"
-                                        />
-                                    </div>
-                                    <div className='flex flex-col md:flex-row gap-5'>
-
-                                        <input
-                                            type="email"
-                                            id="email"
-                                            name="email"
-                                            className=" w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                            placeholder="Enter your email*"
-                                        />
-                                        <input
-                                            type="phone"
-                                            id="phone"
-                                            name="phone"
-                                            className=" w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                            placeholder="Enter your phone number"
-                                        />
-                                    </div>
-                                    <div className='flex flex-col md:flex-row gap-5'>
-                                        <input
-                                            type="text"
-                                            id="name"
-                                            name="name"
-                                            className="w-full md:w-1/2 mt-2 p-3 border-b border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                            placeholder="Company/Organisation*"
-                                        />
-                                        <input
-                                            type="text"
-                                            id="name"
-                                            name="name"
-                                            className="w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                            placeholder="Website"
-                                        />
-
-                                    </div>
-                                    <div className='relative max-w-full flex flex-col md:flex-row gap-4'>
-                                        <div className="relative max-w-full md:max-w-[50%] inline-block text-left w-full">
-                                            <button
-                                                type="button"
-                                                className="inline-flex w-full justify-between text-left rounded-md border border-gray-600 bg-black px-4 py-3 text-sm font-medium text-gray-300 shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                                id="menu-button"
-                                                aria-expanded={isOpen1}
-                                                aria-haspopup="true"
-                                                onClick={toggleDropdown1}
-                                            >
-                                                How are you running your Marketing Department Currently?
-                                                <svg
-                                                    className={`-mr-1 ml-2 h-5 w-5 text-gray-300 transition-transform ${isOpen1 ? 'rotate-180' : ''}`}
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 15 15"
-                                                    fill="currentColor"
-                                                    aria-hidden="true"
-                                                >
-                                                    <path
-                                                        fillRule="evenodd"
-                                                        d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                        clipRule="evenodd"
-                                                    />
-                                                </svg>
-                                            </button>
-
-                                            {/* Dropdown menu */}
-                                            {isOpen1 && (
-                                                <div
-                                                    className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                                                    role="menu"
-                                                    aria-orientation="vertical"
-                                                    aria-labelledby="menu-button"
-                                                >
-                                                    <div className="py-1" role="none">
-                                                        <a
-                                                            href="#"
-                                                            className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                                            role="menuitem"
-                                                        >
-                                                            Inhouse
-                                                        </a>
-                                                        <a
-                                                            href="#"
-                                                            className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                                            role="menuitem"
-                                                        >
-                                                            Outsourced
-                                                        </a>
-                                                        <a
-                                                            href="#"
-                                                            className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                                            role="menuitem"
-                                                        >
-                                                            Myself
-                                                        </a>
-                                                        <a
-                                                            href="#"
-                                                            className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                                            role="menuitem"
-                                                        >
-                                                            Freelancer
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            )}
-                                        </div>
-                                        <div className="relative max-w-full md:max-w-[50%] inline-block text-left w-full">
-                                            <button
-                                                type="button"
-                                                className="inline-flex w-full justify-between rounded-md border text-left border-gray-600 bg-black px-4 py-3 text-sm font-medium text-gray-300 shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                                id="menu-button"
-                                                aria-expanded={isOpen2}
-                                                aria-haspopup="true"
-                                                onClick={toggleDropdown2}
-                                            >
-                                                What is the current marketing budget you are looking at?
-                                                <svg
-                                                    className={`-mr-1 ml-2 h-5 w-5 text-gray-300 transition-transform ${isOpen2 ? 'rotate-180' : ''}`}
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 15 15"
-                                                    fill="currentColor"
-                                                    aria-hidden="true"
-                                                >
-                                                    <path
-                                                        fillRule="evenodd"
-                                                        d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                        clipRule="evenodd"
-                                                    />
-                                                </svg>
-                                            </button>
-
-                                            {/* Dropdown menu */}
-                                            {isOpen2 && (
-                                                <div
-                                                    className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                                                    role="menu"
-                                                    aria-orientation="vertical"
-                                                    aria-labelledby="menu-button"
-                                                >
-                                                    <div className="py-1" role="none">
-                                                        <a
-                                                            href="#"
-                                                            className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                                            role="menuitem"
-                                                        >
-                                                            INR 1-2 Lacs a month
-                                                        </a>
-                                                        <a
-                                                            href="#"
-                                                            className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                                            role="menuitem"
-                                                        >
-                                                            INR 2-5 Lacs a month
-                                                        </a>
-                                                        <a
-                                                            href="#"
-                                                            className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                                            role="menuitem"
-                                                        >
-                                                            INR &gt;5 Lacs a month
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            )}
-                                        </div>
-                                    </div>
-                                    <div className="relative max-w-full inline-block text-left w-full">
-                                        <button
-                                            type="button"
-                                            className="inline-flex w-full justify-between rounded-md border border-gray-600 bg-black px-4 py-3 text-sm font-medium text-gray-300 shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                            id="menu-button"
-                                            aria-expanded={isOpen}
-                                            aria-haspopup="true"
-                                            onClick={toggleDropdown}
-                                        >
-                                            Our Services
-                                            <svg
-                                                className={`-mr-1 ml-2 h-5 w-5 text-gray-300 transition-transform ${isOpen ? 'rotate-180' : ''}`}
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20"
-                                                fill="currentColor"
-                                                aria-hidden="true"
-                                            >
-                                                <path
-                                                    fillRule="evenodd"
-                                                    d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                    clipRule="evenodd"
-                                                />
-                                            </svg>
-                                        </button>
-
-                                        {/* Dropdown menu */}
-                                        {isOpen && (
-                                            <div
-                                                className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                                                role="menu"
-                                                aria-orientation="vertical"
-                                                aria-labelledby="menu-button"
-                                            >
-                                                <div className="py-1" role="none">
-                                                    <a
-                                                        href="#"
-                                                        className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                                        role="menuitem"
-                                                    >
-                                                        Social Media Management
-                                                    </a>
-                                                    <a
-                                                        href="#"
-                                                        className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                                        role="menuitem"
-                                                    >
-                                                        SEO Optimization
-                                                    </a>
-                                                    <a
-                                                        href="#"
-                                                        className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                                        role="menuitem"
-                                                    >
-                                                        E-commerce Solutions
-                                                    </a>
-                                                    <a
-                                                        href="#"
-                                                        className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                                        role="menuitem"
-                                                    >
-                                                        Content Marketing
-                                                    </a>
-                                                    <a
-                                                        href="#"
-                                                        className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                                        role="menuitem"
-                                                    >
-                                                        PPC Campaigns
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        )}
-                                    </div>
-                                    <textarea name="textarea" id="" rows={5} placeholder='Tell us about your business'
-                                        className='w-full mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]'
-                                    ></textarea>
-                                    <button
-                                        type="submit"
-                                        className="w-full bg-[#670ef7] text-white py-3 rounded-lg hover:bg-[#5b0cd1] transition"
-                                    >
-                                        Submit
-                                    </button>
-                                </form>
-                            </div>
+                            <ContactFrom />                   
                         </div>
                     </div>
                 </section>
@@ -889,53 +587,8 @@ export default function Seo() {
                         </a>
                     </div>
                 </div>
-            </section>
-            <section className="pt-14 pb-24">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
-
-                        <div className="w-full lg:w-full">
-                            <div className="lg:max-w-full">
-                                <h6 className="text-lg text-center font-medium text-indigo-600 mb-2">FAQs</h6>
-                                <h2 className="text-4xl md:text-5xl text-center font-sofiasanscondensed font-bold text-gray-100 mb-5">Looking for answers?</h2>
-                                <div className="space-y-4">
-                                    {faqs.map((faq, index) => (
-                                        <div key={index} className="border-b border-gray-200 pb-4">
-                                            <button
-                                                onClick={() => toggleFAQ(index)}
-                                                className="flex justify-between items-center w-full text-[16px] md:text-xl pt-4 pb-4 text-white font-normal transition duration-500 hover:text-indigo-600"
-                                            >
-                                                {faq.question}
-                                                <svg
-                                                    className={`transition-transform duration-500 ${openIndex === index ? "rotate-180 text-indigo-400" : "text-gray-100"}`}
-                                                    width="22"
-                                                    height="22"
-                                                    viewBox="0 0 22 22"
-                                                    fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                >
-                                                    <path
-                                                        d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25"
-                                                        stroke="currentColor"
-                                                        strokeWidth="1.6"
-                                                        strokeLinecap="round"
-                                                        strokeLinejoin="round"
-                                                    />
-                                                </svg>
-                                            </button>
-                                            {openIndex === index && (
-                                                <p className="text-sm md:text-base text-gray-100 mt-2 pt-5 pb-5 transition-all duration-300 ">{faq.answer}</p>
-                                            )}
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
+            </section>      
+            <DarkFaqSection faqs={faqs}/>
         </>
     );
 }

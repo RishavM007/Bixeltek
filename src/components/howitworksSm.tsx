@@ -1,3 +1,4 @@
+'use client';
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { FaRegLightbulb, FaCogs, FaChartLine, FaUserTie } from "react-icons/fa";
