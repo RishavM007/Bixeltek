@@ -56,7 +56,7 @@ const TeamStatsSection = () => {
     const handleScroll = () => {
       if (bgRef.current) {
         const scrollY = window.scrollY;
-        bgRef.current.style.backgroundPositionY = `${scrollY * 0.1}px`;
+        bgRef.current.style.backgroundPositionY = `${scrollY * 0.5}px`;
       }
     };
 
