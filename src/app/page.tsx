@@ -33,6 +33,7 @@ import { Casestudy } from "@/sections/Casestudies";
 import { About } from "@/sections/About";
 import { Footer } from "@/sections/Footer";
 import { ContactButton } from "@/sections/contactButton";
+import TeamStatsSection from "@/sections/Counter2";
 
 export default function Home() {
   return (
@@ -42,6 +43,7 @@ export default function Home() {
       <Screen />
       <LogoTicker />
       <About />
+      <TeamStatsSection />
       <Features />
       <Testimonials />
       <CallToAction />

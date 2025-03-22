@@ -1,140 +1,115 @@
 "use client";
 import Image from "next/image";
-import { useRef, useState } from "react";
-import { FaPlayCircle, FaPauseCircle } from "react-icons/fa";
-import googlepartner from "@/assets/thumbnail_Partner-RGB.png";
+import image1 from "@/assets/01-3.jpg";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 export const About = () => {
-    const videoRef = useRef<HTMLVideoElement>(null);
-    const [isPlaying, setIsPlaying] = useState(false);
-    const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
-    const [showCursor, setShowCursor] = useState(false);
-
-    // Track mouse movement inside the video
-    const handleMouseMove = (e: React.MouseEvent) => {
-        setCursorPos({ x: e.clientX, y: e.clientY });
-    };
-
-    // Toggle play/pause on click
-    const handleVideoClick = () => {
-        if (videoRef.current) {
-            if (videoRef.current.paused) {
-                videoRef.current.play();
-                setIsPlaying(true);
-            } else {
-                videoRef.current.pause();
-                setIsPlaying(false);
-            }
-        }
-    };
+    const sectionRef = useRef(null);
+    const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
     return (
-        <>
-            {/* Custom Cursor - Always on Top */}
-            {showCursor && (
-                <div
-                    className="fixed pointer-events-none transition-transform duration-150 ease-in-out"
-                    style={{
-                        left: `${cursorPos.x}px`,
-                        top: `${cursorPos.y}px`,
-                        transform: "translate(-50%, -50%)",
-                        zIndex: 99999, // Ensures it's above everything
-                        position: "fixed",
-                    }}
+        <section ref={sectionRef} className="py-16 px-6 md:px-16 bg-black">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+                {/* Left Content */}
+                <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={isInView ? { opacity: 1, x: 0 } : {}}
+                    transition={{ duration: 0.8 }}
+                    className="md:w-1/2"
                 >
-                    {isPlaying ? (
-                        <FaPauseCircle size={70} className="text-white/80 drop-shadow-lg" />
-                    ) : (
-                        <FaPlayCircle size={70} className="text-white/80 drop-shadow-lg" />
-                    )}
-                </div>
-            )}
-
-            <section className="py-24 relative xl:mr-0 lg:mr-5 mr-0">
-                <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
-                    <div className="w-full justify-start items-center xl:gap-12 gap-10 grid lg:grid-cols-2 grid-cols-1">
-                        <div className="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
-                            <div className="w-full flex-col justify-center items-start gap-8 flex">
-                                <div className="flex-col justify-start lg:items-start items-center gap-4 flex">
-                                    <h6 className="text-purple-500 text-base font-normal leading-relaxed">About Us</h6>
-                                    <div className="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
-                                        <h2 className="text-white/90 text-4xl font-bold leading-normal lg:text-start text-center">
-                                            The Tale of Our Achievement Story
-                                        </h2>
-                                        <p className="text-white/80 text-base font-sans font-normal leading-relaxed lg:text-start text-center">
-                                            Our achievement story is a testament to teamwork and perseverance. Together, we have overcome challenges, celebrated victories, and created a narrative of progress and success.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* ✅ MISSING SECTION IS RESTORED HERE */}
-                            <div className="w-full flex-col justify-center items-start gap-6 flex">
-                                <div className="w-full justify-start items-center gap-8 grid md:grid-cols-2 grid-cols-1">
-                                    <div className="w-full h-full p-3.5 rounded-xl border border-purple-600 hover:border-purple-300 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
-                                        <h4 className="text-white text-2xl font-bold font-sans leading-9">8+ Years</h4>
-                                        <p className="text-gray-200 text-base font-normal leading-relaxed">
-                                            Influencing Digital Landscapes Together
-                                        </p>
-                                    </div>
-                                    <div className="w-full h-full p-3.5 rounded-xl border border-purple-600 hover:border-purple-300 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
-                                        <h4 className="text-white text-2xl font-bold font-sans leading-9">250+ Projects</h4>
-                                        <p className="text-gray-200 text-base font-normal leading-relaxed">
-                                            Excellence Achieved Through Success
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div className="w-full h-full justify-start items-center gap-8 grid md:grid-cols-2 grid-cols-1">
-                                    <div className="w-full p-3.5 rounded-xl border border-purple-600 hover:border-purple-300 transition-all duration-700 ease-in-out flex-row justify-start items-start inline-flex">
-                                        <div className="w-1/2 pr-2">
-                                            <Image src={googlepartner} alt="google partner" />
-                                        </div>
-                                        <div className="w-1/2 pl-4">
-                                            <h4 className="text-white text-2xl font-bold font-sans leading-9">
-                                                Google Partner Agency
-                                            </h4>
-                                        </div>
-                                    </div>
-                                    <div className="w-full h-full p-3.5 rounded-xl border border-purple-600 hover:border-purple-300 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
-                                        <h4 className="text-white text-2xl font-bold font-sans leading-9">92% Client Retention</h4>
-                                        <p className="text-gray-200 text-base font-normal leading-relaxed">
-                                            Mirrors our Focus on Client Satisfaction.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <button className="backdrop-blur-3xl border border-white text-white font-normal text-sm py-2 px-4 md:px-6 md:py-3 md:text-md rounded-lg mt-5 md:mt-8 shadow-custom">
-                                <span>
-                                    Read More <i className="fa-solid fa-arrow-right ml-2" id="get_a_quote"></i>
-                                </span>
-                            </button>
-                        </div>
-
-                        {/* Video Section */}
-                        <div className="w-full lg:justify-start justify-center items-start flex">
-                            <div
-                                className="sm:w-[564px] w-full sm:h-[646px] h-full backdrop:blur-3xl bg-transparent shadow-purple-custom2 rounded-3xl relative"
-                                onMouseEnter={() => setShowCursor(true)}
-                                onMouseLeave={() => setShowCursor(false)}
-                                onMouseMove={handleMouseMove}
-                            >
-                                {/* Video Element */}
-                                <video
-                                    ref={videoRef}
-                                    loop
-                                    className="object-cover rounded-3xl z-0 h-full w-full opacity-100 cursor-none hover:scale-105 transition-all duration-1000"
-                                    onClick={handleVideoClick}
-                                >
-                                    <source src="/assets/lottie/IMG_5291.mov" type="video/webm" />
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
+                    <p className="px-4 py-1 mb-4 rounded-lg border w-fit text-white font-poppins text-sm">
+                        About Us
+                    </p>
+                    <h2 className="text-4xl font-bold text-gray-50 leading-tight">
+                        Why customers <br /> select our company
+                    </h2>
+                    <p className="mt-4 text-gray-100 text-[16px] mr-16">
+                        Our company stands out as the preferred choice for clients seeking reliable and
+                        innovative IT solutions. With a strong focus on customer satisfaction, we prioritize
+                        understanding our clients' unique needs and delivering tailored solutions.
+                    </p>
+                    <div className="mt-14 flex items-center gap-4">
+                        <motion.button
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                            className="border border-gray-200 px-5 py-3 rounded-md text-white flex items-center hover:bg-purple-700 hover:border-purple-700 hover:text-white transition"
+                        >
+                            Know More &nbsp; &rarr;
+                        </motion.button>
+                        <div className="text-[16px] ml-20 text-white font-semibold">
+                            <p>
+                                (6k) <span className="font-bold">Highest rated</span>
+                            </p>
+                            <p className="text-purple-400 mt-2 font-bold">Upwork ⭐⭐⭐⭐⭐</p>
                         </div>
                     </div>
-                </div>
-            </section>
-        </>
+                </motion.div>
+
+                {/* Right Image */}
+                <motion.div
+                    initial={{ opacity: 0, x: 50 }}
+                    animate={isInView ? { opacity: 1, x: 0 } : {}}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    className="md:w-1/2 mt-20 relative bg-transparent"
+                >
+                    <Image src={image1} alt="Team" className="rounded-lg w-auto h-[400px]" />
+                    <motion.a
+                        href="https://www.google.com/partners/agency?id=2188074075"
+                        target="_blank"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={isInView ? { opacity: 1, y: 0 } : {}}
+                        transition={{ duration: 0.8, delay: 0.4 }}
+                        className="mt-10 flex absolute bottom-0 left-[0%] justify-start"
+                    >
+                        <img
+                            src="https://www.gstatic.com/partners/badge/images/2024/PartnerBadgeClickable.svg"
+                            alt="Google Partner Badge"
+                            className="w-auto h-auto"
+                        />
+                    </motion.a>
+                </motion.div>
+            </div>
+
+            {/* Features Section */}
+            <motion.div
+                initial="hidden"
+                animate={isInView ? "visible" : "hidden"}
+                variants={{
+                    hidden: { opacity: 0, y: 50 },
+                    visible: {
+                        opacity: 1,
+                        y: 0,
+                        transition: { staggerChildren: 0.3 },
+                    },
+                }}
+                className="max-w-7xl mx-auto mt-10 grid md:grid-cols-3 gap-6"
+            >
+                {[
+                    { title: "Unique Value Proposition" },
+                    { title: "Client-Centric Approach" },
+                    { title: "Expert Team Members" },
+                ].map((item, index) => (
+                    <motion.div
+                        key={index}
+                        variants={{
+                            hidden: { opacity: 0.3, scale: 0.8 },
+                            visible: { opacity: 1, scale: 1 },
+                        }}
+                        transition={{ duration: 0.8, ease: "easeInOut" }}
+                        className="flex items-start gap-3 p-10 border-2 rounded-3xl hover:border-purple-500 transition-all duration-300"
+                    >
+                        <span className="text-purple-600 text-lg">☑</span>
+                        <div>
+                            <h3 className="text-lg text-white font-semibold">{item.title}</h3>
+                            <p className="text-white text-[15px]">
+                                Clearly articulate what sets your company apart from competitors, such as
+                                specialized expertise, innovative solutions, or exceptional customer service.
+                            </p>
+                        </div>
+                    </motion.div>
+                ))}
+            </motion.div>
+        </section>
     );
 };

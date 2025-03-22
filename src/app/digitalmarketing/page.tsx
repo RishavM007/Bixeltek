@@ -10,7 +10,9 @@ export const metadata = {
       title: "Bixeltek | Expert Digital Marketing Services in Hyderabad",
       description:
         "Maximize your online presence with Bixeltek’s top-tier digital marketing services. From SEO and PPC to social media management, we help businesses grow effectively.",
+        siteName: "Bixeltek",
       type: "website",
+      
     },
   };
 
