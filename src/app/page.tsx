@@ -40,7 +40,6 @@ export default function Home() {
     <>
       <Header />
       <Hero />
-      <Screen />
       <LogoTicker />
       <About />
       <TeamStatsSection />
