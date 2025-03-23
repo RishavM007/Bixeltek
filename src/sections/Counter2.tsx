@@ -65,7 +65,7 @@ const TeamStatsSection = () => {
   return (
     <section
       ref={bgRef}
-      className="relative w-full h-[500px] md:h-[600px] bg-cover bg-center flex items-center justify-center"
+      className="relative w-full h-[500px] md:h-[600px] bg-cover mt-20 mb-20 bg-center flex items-center justify-center"
       style={{ backgroundImage: `url(${teamimage.src})` }}
     >
       {/* Stats Section */}
