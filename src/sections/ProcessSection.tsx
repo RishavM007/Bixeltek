@@ -29,7 +29,7 @@ const tabs: Tab[] = [
     {
         title: "Strategy & Scaling",
         steps: [
-            "Retargeting - Implement advanced audience retargeting strategies.",
+            "Retargeting - Implemented advanced audience retargeting strategies.",
             "Scaling Campaigns - Expand successful campaigns for higher ROI.",
             "Automation - Set up automated workflows for efficiency.",
             "Advanced Insights - Leverage data analytics for precise decision-making.",
