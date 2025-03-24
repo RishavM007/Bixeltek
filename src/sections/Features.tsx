@@ -181,9 +181,9 @@ const BentoGrid = () => {
       </div>
 
 
-      <div className="grid gap-10 grid-cols-1 lg:grid-cols-2 p-8 mx-10">
+      <div className="grid gap-10 grid-cols-1 lg:grid-cols-2 p-8 mx-0 md:mx-10">
 
-        <div className="relative px-6 h-[650px] flex  rounded-2xl overflow-hidden bg-white/25">
+        <div className="relative px-6 h-[650px] w-auto flex  rounded-2xl overflow-hidden bg-white/25">
           {/* Background Image */}
           <div
             className="absolute inset-0 bg-cover bg-center "
@@ -191,8 +191,8 @@ const BentoGrid = () => {
           ></div>
 
           {/* Content */}
-          <div className="relative z-10 pt-20 mr-20">
-            <h3 className="text-4xl font-semibold mr-10">New reworked theme settings panel.</h3>
+          <div className="relative z-10 pt-20 mr-2 md:mr-20">
+            <h3 className="text-4xl font-semibold mr-2 md:mr-10">New reworked theme settings panel.</h3>
             <p className="text-gray-700 mt-5">
               Our redesigned theme settings panel offers a fresh and intuitive interface to deliver the best configuration experience.
             </p>
@@ -213,9 +213,10 @@ const BentoGrid = () => {
           {/* Background Image */}
 
           {/* Content */}
-          <div className="relative z-10 pt-10 mr-20">
+          <div className="relative z-10 pt-10 mr-2 md:mr-20">
             <p className="border border-black text-sm bg-gray-100 text-black py-1 px-5 mb-2 rounded-lg w-fit">Popular</p>
-            <h3 className="text-4xl font-semibold mr-10">New reworked theme settings panel.</h3>
+            <h3 className="text-4xl font-semibold mr-0 md:mr-10
+            ">New reworked theme settings panel.</h3>
             <p className="text-gray-700 mt-5">
               Our redesigned theme settings panel offers a fresh and intuitive interface to deliver the best configuration experience.
             </p>
