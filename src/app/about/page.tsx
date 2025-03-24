@@ -3,7 +3,8 @@ import Image from "next/image";
 import BgImg from "@/assets/Layer F.png";
 import { motion } from "framer-motion";
 import { Bento } from "@/components/AbtHero/AbtHero";
-
+import CreativeSection from "@/components/AbtSection1";
+import TeamStatsSection from "@/components/Counter2New";
 
 export default function AboutPage() {
   const timelineEvents = [
@@ -154,6 +155,10 @@ export default function AboutPage() {
               ))}
             </motion.div>
           </div>
+        </section>
+        <section>
+          <CreativeSection />
+          <TeamStatsSection />
         </section>
       </div>
     </>
