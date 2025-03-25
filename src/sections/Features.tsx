@@ -152,9 +152,10 @@ const BentoGrid = () => {
 
 
           {/* Responsive Image Card */}
-          <motion.div className="p-6 bg-gray-100 flex pr-20 pb-6  flex-col overflow-hidden justify-end relative items-start rounded-2xl">
-            <Image src={webdevimg} alt="webdevimg" className="-top-14 -left-0 absolute rounded-xl"></Image>
-            <h3 className="text-4xl font-poppins font-semibold">ResponSive and retina ready images.</h3>
+          <motion.div className="p-6 bg-gray-100 flex pr-10 pb-6  flex-col overflow-hidden justify-end relative items-start rounded-2xl">
+            <Image src={webdevimg} alt="webdevimg" className="-top-0 -left-0 absolute rounded-xl"></Image>
+            <h2 className="text-3xl font-poppins font-semibold">Responsive Web Design</h2>
+            <h2 className="text-3xl font-poppins font-semibold"> and Development.</h2>
             <p className="text-gray-600 text-[16px] mt-4">Deliver a perfect website experience with high-resolution images and graphics.</p>
             <div>
               <button className="rounded-lg font-sofiasanscondensed tracking-wider font-bold text-lg hover:bg-white hover:text-black text-white bg-black px-6 py-2 mt-10 transition-all duration-300">
@@ -240,7 +241,7 @@ const BentoGrid = () => {
           <motion.div ref={ref} className="p-6 bg-gray-100 rounded-2xl">
             <h3 className="text-4xl font-semibold">Optimized for fast loading.</h3>
             <p className="text-gray-600 text-[16px] mt-4">Ohio is a highly performant WordPress theme with a good structure and well-written source code to make your site fast and SEO optimized.</p>
-            <div className="flex items-center gap-6 mt-32">
+            <div className="flex items-center gap-6 mt-44">
               <div>
                 <motion.span className="text-5xl font-bold text-black">{count.speed}</motion.span>%
                 <p className="text-gray-600">PageSpeed score</p>

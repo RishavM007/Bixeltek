@@ -6,8 +6,6 @@ export default function BlogIndex() {
         <>
             <section>
                 <div className="relative isolate mt-[-20px] md:mt-[-60px] lg:mt-[-120px]  overflow-hidden bg-black h-[100vh] border-b border-fuchsia-600 md:h-[100vh] lg:h-[120vh] xl:h-[100vh] flex items-center justify-center">
-                    
-
                     <svg
                         className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
                         aria-hidden="true">
