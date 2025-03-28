@@ -7,6 +7,7 @@ import {
     useSpring,
     MotionValue,
 } from "framer-motion";
+import { RiArrowRightSLine } from "react-icons/ri";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -104,24 +105,26 @@ export const HeroParallax = ({
 export const Header = () => {
     return (
         <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full z-50  left-0 top-0">
-            <h1 className="text-2xl md:text-6xl mr-36 font-bold dark:text-white">
-                Websites that Drive Results.<br /> Built in Hyderabad, Inspired Globally.
+            <h1 className="text-2xl md:text-5xl mr-36 font-bold dark:text-white">
+            We Build Websites That Do More Than Look Good — They Perform.
             </h1>
 
-            <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-                Expertly crafted, custom-coded websites designed to scale your business.</p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 ">
+
+            <h2 className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
+            Work With the Best Web Design and Development Company in Hyderabad That Builds to Convert.</h2>
+            <div className="mt-8 flex flex-col sm:flex-row gap-1 ">
+               
                 <a
                     href="#"
-                    className="px-8 py-3 text-base font-semibold text-white bg-black  border rounded-full hover:bg-purple-700 transition"
+                    className="px-8 py-3 text-base font-semibold border bg-white text-purple-900 border-white rounded-full hover:bg-white hover:text-black transition"
                 >
-                    Get A Quote
+                     Book a 1:1 Strategy Call
                 </a>
                 <a
                     href="#"
-                    className="px-8 py-3 text-base font-semibold border bg-white text-purple-700 border-white rounded-full hover:bg-white hover:text-black transition"
+                    className="px-8 py-3 text-base font-semibold text-white group  rounded-full "
                 >
-                    Book A Call
+                     Get a Free Website Audit <RiArrowRightSLine className="inline-block text-xl  group-hover:translate-x-2  transition duration-300 ml-1 mb-[3px]" />
                 </a>
             </div>
         </div>

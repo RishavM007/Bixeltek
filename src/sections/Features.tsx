@@ -1,11 +1,13 @@
 "use client";
 import { useEffect, useState } from "react";
-import pinkbg from "@/assets/lp_ThemeSettings.webp"
+import pinkbg from "@/assets/meta ads.webp"
 import Image from "next/image";
+import Link from "next/link";
 import yticon from "@/assets/4375133_logo_youtube_icon.png"
 import remarketingicon from "@/assets/business-website.png"
+import { FaArrowRightLong } from "react-icons/fa6";
 import geotargetingicon from "@/assets/geo-location-white.png"
-import bgimage2 from "@/assets/lp_CompareLight.webp"
+import bgimage2 from "@/assets/Google Analytics.png"
 import bgimage from "@/assets/lp_bannerPatternBg.webp"
 import { motion, useInView } from "framer-motion";
 import webdevimg from '@/assets/lp_bannerResponsive.webp'
@@ -96,12 +98,13 @@ const BentoGrid = () => {
 
             {/* Main Content */}
             <div className="relative flex flex-col justify-between  z-10 text-start">
-              <h2 className="text-3xl md:text-4xl font-semibold">
-                Google Ads & PPC Services
+              <h2 className="text-3xl md:text-3xl font-semibold">
+              Google Ads <br />Management Services
               </h2>
               <p className="mt-7 text-white/60">
-                Unlock rapid business growth with professionally managed Pay Per Click (PPC) campaigns. Specializing in Ecommerce Ads, precise Retargeting, and impactful YouTube Ads, we deliver measurable results.
+              Launch and manage high-performing PPC campaigns that bring real leads and measurable results with our certified experts.
               </p>
+              <Link href={'/google-ads-agency-hyderabad'} className="mt-5 font-poppins group">Learn More About Google Ads <FaArrowRightLong className="group-hover:translate-x-2 transition-all duration-500 inline" /></Link>
 
               {/* Icons & Font Options */}
               <div className="mt-32 flex justify-center items-center gap-16">
@@ -153,14 +156,14 @@ const BentoGrid = () => {
 
           {/* Responsive Image Card */}
           <motion.div className="p-6 bg-gray-100 flex pr-10 pb-6  flex-col overflow-hidden justify-end relative items-start rounded-2xl">
-            <Image src={webdevimg} alt="webdevimg" className="-top-0 -left-0 absolute rounded-xl"></Image>
-            <h2 className="text-3xl font-poppins font-semibold">Responsive Web Design</h2>
-            <h2 className="text-3xl font-poppins font-semibold"> and Development.</h2>
-            <p className="text-gray-600 text-[16px] mt-4">Deliver a perfect website experience with high-resolution images and graphics.</p>
-            <div>
-              <button className="rounded-lg font-sofiasanscondensed tracking-wider font-bold text-lg hover:bg-white hover:text-black text-white bg-black px-6 py-2 mt-10 transition-all duration-300">
-                Learn More
-              </button>
+            <Image src={webdevimg} alt="webdevimg" className="-top-10 -left-0 absolute rounded-xl"></Image>
+            <h2 className="text-3xl font-poppins font-semibold">Website Design </h2>
+            <h2 className="text-3xl font-poppins font-semibold"> & Development Services.</h2>
+            <p className="text-gray-600 text-[16px] mt-4">We craft beautiful, responsive websites optimized for speed, user experience, and conversions—tailored to your goals.</p>
+            <div className="mt-7">
+              <Link href={'/web-design-services-hyderabad'} className="rounded-lg  font-sofiasanscondensed tracking-wider font-bold text-lg group text-black ">
+              Discover Our Web Design Process <FaArrowRightLong className="group-hover:translate-x-2 transition-all duration-500 inline" />
+              </Link>
             </div>
           </motion.div>
 
@@ -171,14 +174,13 @@ const BentoGrid = () => {
               <Image src={redicon} alt="redicon" className="h-16 w-auto"></Image>
             </div>
             <div className="mr-1 md:mr-14">
-              <h3 className="text-4xl font-poppins font-semibold mt-5">Reliable and regular updates.</h3>
-              <p className="text-[16px] text-white/80 mt-4">Get a life-time consistent and dependable updates featuring innovative new functionalities, performance enhancements, and resolved issues.
-              </p>
+              <h3 className="text-3xl font-poppins font-semibold mt-5">SEO Services to Boost Google Rankings</h3>
+              <p className="text-[16px] text-white/80 mt-4">Climb the search rankings and increase traffic with on-page SEO, backlink strategies, and local optimization.</p>
             </div>
-            <div>
-              <button className="rounded-lg font-sofiasanscondensed tracking-wider font-bold text-lg bg-white text-black hover:text-white hover:bg-black px-6 py-2 mt-10 md:mt-20 transition-all duration-300">
-                Learn More
-              </button>
+            <div className="mt-7">
+              <Link href={'#'} className="rounded-lg  font-sofiasanscondensed tracking-wider group font-bold text-lg text-white ">
+              See How Our SEO Works <FaArrowRightLong className="group-hover:translate-x-2 transition-all duration-500 inline" />
+              </Link>
             </div>
           </motion.div>
         </div>
@@ -186,7 +188,7 @@ const BentoGrid = () => {
 
         <div className="grid gap-10 grid-cols-1 lg:grid-cols-2 p-8 mx-0 md:mx-10">
 
-          <div className="relative px-6 h-[650px] w-auto flex  rounded-2xl overflow-hidden bg-white/25">
+          <div className="relative px-6 h-[720px] w-auto flex  rounded-2xl overflow-hidden bg-white/25">
             {/* Background Image */}
             <div
               className="absolute inset-0 bg-cover bg-center "
@@ -195,38 +197,47 @@ const BentoGrid = () => {
 
             {/* Content */}
             <div className="relative z-10 pt-20 mr-2 md:mr-20">
-              <h3 className="text-4xl font-semibold mr-2 md:mr-10">New reworked theme settings panel.</h3>
+              <h3 className="text-4xl font-semibold mr-2 md:mr-10">Social Media Management Services.</h3>
               <p className="text-gray-700 mt-5">
-                Our redesigned theme settings panel offers a fresh and intuitive interface to deliver the best configuration experience.
-              </p>
+              Grow your brand&apos;s online presence with engaging content, targeted ads, and consistent social media strategies.</p>
+              <div className="mt-5">
+              <Link href={'#'} className="rounded-lg  font-sofiasanscondensed group tracking-wider group font-bold text-lg text-black ">
+              Explore Our Social Media Plans <FaArrowRightLong className="group-hover:translate-x-2 transition-all duration-500 inline" />
+              </Link>
             </div>
+            </div>
+            
 
 
-            <div className="absolute -bottom-10 -right-20 overflow-hidden">
+            <div className="absolute -bottom-32 -right-0 overflow-hidden">
               <Image
                 src={pinkbg}
                 alt="pinkBg"
-                className="object-cover w-full rounded-xl h-full"
+                className="object-cover w-auto rounded-xl h-[600px]"
               />
             </div>
           </div>
 
           {/* Dark Mode Card */}
-          <motion.div className="relative px-6 h-[650px] flex  rounded-2xl overflow-hidden bg-white/95">
+          <motion.div className="relative px-6 h-[720px] flex  rounded-2xl overflow-hidden bg-white/95">
             {/* Background Image */}
 
             {/* Content */}
             <div className="relative z-10 pt-10 mr-2 md:mr-20">
               <p className="border border-black text-sm bg-gray-100 text-black py-1 px-5 mb-2 rounded-lg w-fit">Popular</p>
               <h3 className="text-4xl font-semibold mr-0 md:mr-10
-            ">New reworked theme settings panel.</h3>
+            ">Marketing Analytics & Reporting Services.</h3>
               <p className="text-gray-700 mt-5">
-                Our redesigned theme settings panel offers a fresh and intuitive interface to deliver the best configuration experience.
-              </p>
+              Understand what&apos;s driving your marketing performance with easy-to-digest reports and real-time tracking.</p>
+              <div className="mt-5">
+              <Link href={'#'} className="rounded-lg  font-sofiasanscondensed tracking-wider group font-bold text-lg text-black ">
+              Learn About Our Reporting Tools <FaArrowRightLong className="group-hover:translate-x-2 transition-all duration-500 inline" />
+              </Link>
+            </div>
             </div>
 
 
-            <div className="absolute -bottom-10 -right-20 overflow-hidden">
+            <div className="absolute -bottom-10 -right-60 overflow-hidden">
               <Image
                 src={bgimage2}
                 alt="pinkBg"
@@ -237,6 +248,21 @@ const BentoGrid = () => {
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 p-8 mx-10">
+
+
+
+        <motion.div className="p-6 bg-gray-100 flex pr-10 relative pb-6 flex-col overflow-hidden justify-end items-start rounded-2xl">
+            <Image src={bluebg} alt="bluebg" className="-top-20 -left-20 absolute rounded-xl"></Image>
+            <h3 className="text-3xl font-poppins font-semibold">Conversion Rate Optimization Services</h3>
+            <p className="text-gray-600 text-[16px] mt-4">Turn more visitors into customers with A/B testing, funnel analysis, and user behavior insights tailored for growth.</p>
+            <div className="mt-3">
+              <Link href={'#'} className="rounded-lg  font-sofiasanscondensed tracking-wider font-bold text-lg text-black group">
+              Find Out How CRO Helps You <FaArrowRightLong className="group-hover:translate-x-2 transition-all duration-500 inline" />
+              </Link>
+            </div>
+          </motion.div>
+
+
           {/* Performance Card with Counters */}
           <motion.div ref={ref} className="p-6 bg-gray-100 rounded-2xl">
             <h3 className="text-4xl font-semibold">Optimized for fast loading.</h3>
@@ -254,13 +280,7 @@ const BentoGrid = () => {
           </motion.div>
 
           {/* Simple Import Card */}
-          <motion.div className="p-6 bg-gray-100 flex pr-10 relative pb-6 flex-col overflow-hidden justify-end items-start rounded-2xl">
-            <Image src={bluebg} alt="bluebg" className="-top-20 -left-20 absolute rounded-xl"></Image>
-            <h3 className="text-4xl font-poppins font-semibold">Simple demo import.</h3>
-            <p className="text-gray-600 text-[16px] mt-4">Easy customize your demo setup, choose only the parts you are required for.          </p>
-            <div>
-            </div>
-          </motion.div>
+
 
 
           {/* Translation Card */}

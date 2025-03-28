@@ -24,7 +24,7 @@ export const dynamic = "force-dynamic";
 
 import { Header } from "@/sections/Header";
 import { Hero } from "@/sections/Hero";
-import { Screen } from "@/sections/Screen";
+import MetricsSection from "@/components/Counter3";
 import { LogoTicker } from "@/sections/LogoTicker";
 import BentoGrid from "@/sections/Features";
 import { Testimonials } from "@/sections/Testimonials";
@@ -44,6 +44,7 @@ export default function Home() {
       <About />
       <TeamStatsSection />
       <BentoGrid />
+      <MetricsSection/>
       <Testimonials />
       <CallToAction />
       <Casestudy />
