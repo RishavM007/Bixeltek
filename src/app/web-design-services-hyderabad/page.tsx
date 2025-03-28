@@ -254,7 +254,7 @@ export default function Webdev() {
                     At Bixeltek, we don&apos;t just build websites — we build growth engines.<br />
 
 From sleek landing pages for funded startups to high-performance platforms for clinics and real estate brands, we&apos;ve delivered over 100+ websites that look sharp, load fast, and actually perform.
-We're a full-stack, results-driven team of developers, designers, and digital marketers who live and breathe performance. <br />
+We&apos;re a full-stack, results-driven team of developers, designers, and digital marketers who live and breathe performance. <br />
  <span className='font-medium italic text-lg text-purple-500'>And yes, we&apos;re proudly Hyderabad-based.</span>
                     </p>
                 </div>

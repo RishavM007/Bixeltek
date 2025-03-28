@@ -31,7 +31,7 @@ const ComparisonTable = () => {
             <li>“We lost 3 months and still had to start over with you guys.”</li>
           </ul>
           <p className="text-gray-300 mt-4">
-            A freelance website designer in Hyderabad might promise speed and savings. But when you're investing in your digital presence, you need more than just someone with a Canva account and a Gmail address.
+            A freelance website designer in Hyderabad might promise speed and savings. But when you&apos;re investing in your digital presence, you need more than just someone with a Canva account and a Gmail address.
           </p>
         </div>
 

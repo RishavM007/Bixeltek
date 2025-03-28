@@ -64,7 +64,7 @@ const IndustrySolutions = () => {
                     </span>
                 </h2>
                 <p className="mb-8 text-gray-300 max-w-2xl ">
-                    Whether you're a founder, a franchise, or a family-run local service — your business needs a website that gets discovered, delivers value, and drives real results.
+                    Whether you&apos;re a founder, a franchise, or a family-run local service — your business needs a website that gets discovered, delivers value, and drives real results.
                     At <span className="font-semibold text-primary-600 dark:text-primary-300">Bixeltek</span>, we specialize in industry-specific website solutions that speak your audience’s language and solve their exact problems.
                 </p>
 
