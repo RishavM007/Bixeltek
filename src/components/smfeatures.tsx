@@ -4,30 +4,31 @@ import Smfeature from './smfeature'
 
 const features = [
     {
-        title: "Custom Web Design & Development",
-        description: "We offer bespoke website design services for businesses in Hyderabad and beyond, ensuring high UX/UI standards and optimal conversion-focused designs. Our development stack includes React.js, Next.js, HTML, CSS, PHP, and JavaScript."
+        title: "Custom WordPress Development",
+        description: "We craft 100% custom, high-performance WordPress websites with zero templates and lightning-fast load speeds. Our builds are SEO-optimized, mobile-friendly, and designed for long-term scalability."
     },
     {
-        title: "eCommerce Website Development",
-        description: "From WooCommerce to Magento and custom-built solutions, we build high-converting online stores with secure payment gateway integrations and multi-currency support."
+        title: "WooCommerce Ecommerce Websites",
+        description: "Sell smarter with high-converting, fully responsive eCommerce stores. We optimize product pages, checkout flows, and secure payment integrations to boost sales, user engagement, and search engine rankings."
     },
     {
-        title: "B2B & Corporate Websites",
-        description: "For businesses in Hyderabad’s booming IT and startup ecosystem, we develop lead-generation-focused corporate websites with CRM, automation, and digital transformation solutions.",
+        title: "Mobile-Responsive Web Design",
+        description: "With over 70% of traffic coming from mobile, we create pixel-perfect, ultra-fast, mobile-first designs for a seamless user experience, lower bounce rates, and higher conversions."
     },
     {
         title: "CMS Website Development",
-        description: "Our CMS solutions include WordPress, Drupal, Shopify, and Joomla, offering easy content management and SEO-optimized architecture."
+        description: "Our CMS solutions include WordPress, Drupal, Shopify, and Joomla, offering easy content management and SEO-optimized architecture to improve search rankings and user experience."
     },
     {
         title: "Payment Gateway Integration",
-        description: "We integrate leading Indian and international payment gateways, including Razorpay, PayU, Stripe, PayPal, Square, and Authorize.net, ensuring secure transactions and fraud protection."
+        description: "We integrate leading Indian and international payment gateways, including Razorpay, PayU, Stripe, PayPal, Square, and Authorize.net, ensuring frictionless checkout flows, secure transactions, PCI compliance, and fraud protection."
     },
     {
         title: "Web App Development",
-        description: "We develop Progressive Web Apps (PWAs) and full-stack web applications using React.js, Node.js, and Laravel to enhance business operations."
+        description: "We build Progressive Web Apps (PWAs) and full-stack web applications using React.js, Node.js, and Laravel, ensuring scalability, performance, and seamless business automation."
     }
-]
+];
+
 
 export default function Smfeatures() {
     return (

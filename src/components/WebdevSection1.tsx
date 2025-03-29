@@ -55,15 +55,15 @@ const IndustrySolutions = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 viewport={{ once: true }}
-                className="py-12 px-6 mx-auto max-w-screen-xl text-start"
+                className="py-12 px-6 mx-auto max-w-screen-xl"
             >
-                <h2 className="mb-4 font-sofiasanscondensed text-5xl max-w-[70%] font-extrabold text-white">
+                <h2 className="mb-4 font-sofiasanscondensed text-center text-5xl max-w-[80%] mx-auto font-extrabold text-white">
                     From Real Estate Web Design in Hyderabad to Clinic Platforms —{" "}<br />
                     <span className="text-primary-100">
                         We Build for Your Industry
                     </span>
                 </h2>
-                <p className="mb-8 text-gray-300 max-w-2xl ">
+                <p className="mb-8 text-gray-300 text-center max-w-[85%] mx-auto ">
                     Whether you&apos;re a founder, a franchise, or a family-run local service — your business needs a website that gets discovered, delivers value, and drives real results.
                     At <span className="font-semibold text-primary-600 dark:text-primary-300">Bixeltek</span>, we specialize in industry-specific website solutions that speak your audience’s language and solve their exact problems.
                 </p>
@@ -88,11 +88,11 @@ const IndustrySolutions = () => {
                         </motion.div>
                     ))}
                 </div>
-                <div className="max-w-[70%] flex flex-col justify-center items-center mx-auto">
-                    <p className="mt-12 text-lg text-center  text-gray-300">
+                <div className="max-w-[70%] flex flex-col font-sofiasanscondensed justify-center items-center mx-auto">
+                    <p className="mt-12 text-2xl text-center  text-gray-300 trackinw-g-wide font-semibold">
                         Looking for real estate websites in Hyderabad that actually bring in leads? Or a local business website that ranks for “near me” searches?
                     </p>
-                    <p className="mt-2 italic text-purple-500 text-lg font-semibold">
+                    <p className="mt-2 italic text-purple-500 text-xl tracking-wide font-semibold">
                         We&apos;ve built them — and we can build yours next.
                     </p>
                 </div>

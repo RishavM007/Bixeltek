@@ -266,10 +266,9 @@ We&apos;re a full-stack, results-driven team of developers, designers, and digit
                             <FiUploadCloud size={24} className="text-white" />
                         </div>
                         <div>
-                            <h3 className="font-bold text-xl">Push to deploy</h3>
+                            <h3 className="font-bold text-xl">Strategy First</h3>
                             <p className="text-gray-400 mt-3 leading-relaxed tracking-wide">
-                                Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse
-                                semper morbi. Odio urna massa nunc massa.
+                            We ask the right questions, conduct deep research, and develop a data-driven strategy before writing a single line of code.
                             </p>
                         </div>
                     </div>
@@ -280,10 +279,9 @@ We&apos;re a full-stack, results-driven team of developers, designers, and digit
                             <FiLock size={24} className="text-white" />
                         </div>
                         <div>
-                            <h3 className="font-bold text-xl">SSL certificates</h3>
+                            <h3 className="font-bold text-xl">Speed Obsessed</h3>
                             <p className="text-gray-400 mt-3 leading-relaxed tracking-wide">
-                                Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget.
-                                Sem sodales gravida quam turpis enim lacus amet.
+                            We design, develop, and deliver high-performance, mobile-optimized websites within 10–14 days, ensuring fast loading speed and seamless user experience.
                             </p>
                         </div>
                     </div>
@@ -294,10 +292,9 @@ We&apos;re a full-stack, results-driven team of developers, designers, and digit
                             <FiRepeat size={24} className="text-white" />
                         </div>
                         <div>
-                            <h3 className="font-bold text-xl">Simple queues</h3>
+                            <h3 className="font-bold text-xl">SEO-Built from Day One</h3>
                             <p className="text-gray-400 mt-3 leading-relaxed tracking-wide">
-                                Quisque est vel vulputate cursus. Risus proin diam nunc commodo.
-                                Lobortis auctor congue commodo diam neque.
+                            Our websites feature technical SEO, keyword mapping, and mobile-first design to help your business rank higher on search engines.
                             </p>
                         </div>
                     </div>
@@ -308,10 +305,9 @@ We&apos;re a full-stack, results-driven team of developers, designers, and digit
                             <LuFingerprint size={24} className="text-white" />
                         </div>
                         <div>
-                            <h3 className="font-bold text-xl">Advanced security</h3>
+                            <h3 className="font-bold text-xl">Real Support, Hyderabad-Based Team</h3>
                             <p className="text-gray-400 mt-3 leading-relaxed tracking-wide">
-                                Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis
-                                aliquet hac quis. Id hac maecenas ac donec pharetra eget.
+                                AOur expert team provides quick responses, hands-on assistance, and personalized support to ensure your website runs smoothly and efficiently.
                             </p>
                         </div>
                     </div>
@@ -405,70 +401,63 @@ We&apos;re a full-stack, results-driven team of developers, designers, and digit
             <section>
                 <IndustrySolutions />
             </section>
-            <section className="py-24 relative">
-                <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
-                    <div className="w-full flex-col justify-start items-center lg:gap-12 gap-10 inline-flex">
-                        <div className="w-full flex-col justify-start items-center gap-3 flex">
-                            <span className="py-1 px-4 bg-indigo-100 rounded-full text-xs font-medium text-indigo-500 text-center">Process</span>
-                            <h2 className="w-full text-center text-gray-100 text-4xl font-bold font-manrope leading-normal">Our Process – How We Work</h2>
-                        </div>
-                        <div className="w-full justify-start items-center gap-4 flex md:flex-row flex-col">
-                            <div className="grow shrink basis-0 flex-col justify-start items-center gap-2.5 inline-flex">
-                                <h3 className="text-center text-purple-500 text-4xl font-extrabold font-manrope">1</h3>
-                                <h4 className="text-center text-gray-100 text-xl font-semibold">Discovery & Strategy</h4>
-                                <p className="text-center text-white text-base font-normal">Understanding your business goals, target audience, and market opportunities.</p>
-                            </div>
-                            <svg className="md:flex hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M5.5 6L11.5 12L5.5 18M12.5 6L18.5 12L12.5 18" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            <div className="grow shrink basis-0 flex-col justify-start items-center gap-2.5 inline-flex">
-                                <h3 className="text-center text-purple-500 text-4xl font-extrabold font-manrope">2</h3>
-                                <h4 className="text-center text-gray-100 text-xl font-semibold">UI/UX Design</h4>
-                                <p className="text-center text-white text-base font-normal">Creating wireframes, mockups, and user-centric prototypes.</p>
-                            </div>
-                            <svg className="md:flex hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M5.5 6L11.5 12L5.5 18M12.5 6L18.5 12L12.5 18" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            <div className="grow shrink basis-0 flex-col justify-start items-center gap-2.5 inline-flex">
-                                <h3 className="text-center text-purple-500 text-4xl font-extrabold font-manrope">3</h3>
-                                <h4 className="text-center text-gray-100 text-xl font-semibold">Development & Coding</h4>
-                                <p className="text-center text-white text-base font-normal">Building secure, scalable, and fast web solutions aligned with industry best practices.</p>
-                            </div>
-                        </div>
+            <section className="bg-white py-12 sm:py-16 lg:py-20 border-none rounded-tr-[150px] rounded-tl-[150px] shadow-glow xl:py-24">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div className="text-center">
+                        <p className="text-sm font-bold uppercase tracking-widest text-gray-700">How It Works</p>
+                        <h2 className="mt-6 text-3xl font-semibold font-sofiasanscondensed tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
+                        How Our Website Design Process Works at Bixeltek — <br /> <span className='text-purple-500 tracking-wide'>Fast, Focused & Built for Growth</span>
+                        </h2>
+                        <p className="mx-auto mt-4 max-w-4xl text-lg font-normal text-gray-700 lg:text-lg lg:leading-1">
+                        Most agencies overcomplicate web design. We don&apos;t.<br />
+                        At Bixeltek, we use a streamlined, transparent process that gets you from strategy to live site — without endless meetings, bloated timelines, or tech headaches.
+Whether you&apos;re a startup founder or a growing business looking for a top-tier <span className='text-purple-700 italic font-semibold'>website development company in Hyderabad</span> , this is how we get it done:
 
-
-                        <div className="w-full flex justify-end items-center pr-44 py-4">
-                            <svg className="md:flex hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M6 5.5L12 11.5L18 5.5M6 12.5L12 18.5L18 12.5" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-
-                        </div>
-
-
-                        <div className="w-full justify-start items-center gap-4 flex md:flex-row flex-col-reverse">
-                            <div className="grow shrink basis-0 flex-col justify-start items-center gap-2.5 inline-flex">
-                                <h3 className="text-center text-purple-500 text-4xl font-extrabold font-manrope">6</h3>
-                                <h4 className="text-center text-gray-100 text-xl font-semibold">Launch & Growth Support</h4>
-                                <p className="text-center text-white text-base font-normal">Providing ongoing maintenance, SEO, and digital marketing strategies for sustained success.</p>
-                            </div>
-                            <svg className="md:flex hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M18.5 6L12.5 12L18.5 18M11.5 6L5.5 12L11.5 18" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            <div className="grow shrink basis-0 flex-col justify-start items-center gap-2.5 inline-flex">
-                                <h3 className="text-center text-purple-500 text-4xl font-extrabold font-manrope">5</h3>
-                                <h4 className="text-center text-gray-100 text-xl font-semibold">Testing & Quality Assurance</h4>
-                                <p className="text-center text-white text-base font-normal">Ensuring page speed, security, and mobile responsiveness for a seamless experience.</p>
-                            </div>
-                            <svg className="md:flex hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M18.5 6L12.5 12L18.5 18M11.5 6L5.5 12L11.5 18" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            <div className="grow shrink basis-0 flex-col justify-start items-center gap-2.5 inline-flex">
-                                <h3 className="text-center text-purple-500 text-4xl font-extrabold font-manrope">4</h3>
-                                <h4 className="text-center text-gray-100 text-xl font-semibold">SEO & Localization</h4>
-                                <p className="text-center text-white text-base font-normal">Optimizing for Hyderabad-based search rankings and global scalability.</p>
-                            </div>
-                        </div>
+                        </p>
                     </div>
+
+                    <ul className="mx-auto mt-12 grid max-w-md grid-cols-1 gap-10 sm:mt-16 lg:mt-20 lg:max-w-7xl lg:grid-cols-4">
+                        <li className="flex-start group relative flex lg:flex-col">
+                            <span className="absolute left-[18px] top-14 h-[calc(100%_-_32px)] w-px bg-gray-300 lg:right-0 lg:left-auto lg:top-[18px] lg:h-px lg:w-[calc(100%_-_72px)]" aria-hidden="true"></span>
+                            <div className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-gray-300 bg-gray-50 transition-all duration-200 group-hover:border-purple-800 group-hover:bg-purple-800">
+                                <i className="fas fa-database text-purple-800 group-hover:text-white"></i>
+                            </div>
+                            <div className="ml-6 lg:ml-0 lg:mt-10">
+                                <h2 className="text-xl font-bold text-gray-900"> Discovery & Strategy Call</h2>
+                                <h4 className="mt-2 text-base text-gray-700"> We understand your goals, audience, and current challenges. What makes your business tick — and what your website needs to do.</h4>
+                            </div>
+                        </li>
+                        <li className="flex-start group relative flex lg:flex-col">
+                            <span className="absolute left-[18px] top-14 h-[calc(100%_-_32px)] w-px bg-gray-300 lg:right-0 lg:left-auto lg:top-[18px] lg:h-px lg:w-[calc(100%_-_72px)]" aria-hidden="true"></span>
+                            <div className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-gray-300 bg-gray-50 transition-all duration-200 group-hover:border-purple-800 group-hover:bg-purple-800">
+                                <i className="fas fa-map text-purple-800 group-hover:text-white"></i>
+                            </div>
+                            <div className="ml-6 lg:ml-0 lg:mt-10">
+                                <h2 className="text-xl font-bold text-gray-900">Wireframe & Content Flow</h2>
+                                <h4 className="mt-2 text-base text-gray-700">We craft layouts and messaging that convert — combining UX best practices with persuasive copy.</h4>
+                            </div>
+                        </li>
+                        <li className="flex-start group relative flex lg:flex-col">
+                            <span className="absolute left-[18px] top-14 h-[calc(100%_-_32px)] w-px bg-gray-300 lg:right-0 lg:left-auto lg:top-[18px] lg:h-px lg:w-[calc(100%_-_72px)]" aria-hidden="true"></span>
+                            <div className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-gray-300 bg-gray-50 transition-all duration-200 group-hover:border-purple-800 group-hover:bg-purple-800">
+                                <i className="fas fa-globe text-purple-800 group-hover:text-white"></i>
+                            </div>
+                            <div className="ml-6 lg:ml-0 lg:mt-10">
+                                <h2 className="text-xl font-bold text-gray-900">Design, Development<br /> & SEO</h2>
+                                <h4 className="mt-2 text-base text-gray-700"> We build your site using clean, scalable code. Optimized for mobile, speed, Google, and your customer&apos;s attention span.</h4>
+                            </div>
+                        </li>
+                        <li className="flex-start group relative flex lg:flex-col">
+                            <div className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-gray-300 bg-gray-50 transition-all duration-200 group-hover:border-purple-800 group-hover:bg-purple-800">
+                                <i className="fas fa-rocket text-purple-800 group-hover:text-white"></i>
+                            </div>
+                            <div className="ml-6 lg:ml-0 lg:mt-10">
+                                <h2 className="text-xl font-bold text-gray-900">Launch + Support</h2>
+                                <h4 className="mt-2 text-base text-gray-700">Final QA, testing, and go-live. You get 30 days of support, site ownership, and access to performance analytics.</h4>
+                            </div>
+                        </li>
+
+                    </ul>
                 </div>
             </section>
             <TestimonialWebdev />
