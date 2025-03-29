@@ -40,8 +40,8 @@ export default function TestimonialWebdev() {
 
   return (
 <section className='py-20'>
-                <div className="max-w-7xl flex mx-auto p-8 text-center">
-                    <div className='flex text-white justify-start items-start text-left flex-col w-1/2'>
+                <div className="max-w-7xl flex flex-col md:flex-row mx-auto p-8 text-center">
+                    <div className='flex text-white justify-start items-start text-left flex-col w-full md:w-1/2'>
                         <div className='mb-5'>
                             <p className='py-2 px-4 font-poppins border rounded-md mx-auto'>Our Testimonials</p>
                         </div>
@@ -57,7 +57,7 @@ export default function TestimonialWebdev() {
                             ))}
                         </div>
                     </div>
-                    <div className='w-1/2 ml-2'>
+                    <div className='w-full md:w-1/2 ml-0 mt-10 md:mt-0 md:ml-2'>
                         <motion.div
                             key={index}
                             initial={{ opacity: 0, x: 50 }}

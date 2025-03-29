@@ -60,7 +60,7 @@ export default function Counter() {
     
     
   return (
-   <section className="py-10 h-auto md:h-[40vh] max-w-7xl mx-auto">
+   <section className="py-10 h-auto md:h-[40vh] max-w-[85%] md:max-w-7xl mx-auto">
                    <div className="flex justify-center items-center">
                        <div className="relative flex w-full max-w-5xl">
                            {/* Background Image */}

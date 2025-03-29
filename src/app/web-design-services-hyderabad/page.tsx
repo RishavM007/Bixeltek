@@ -247,15 +247,15 @@ export default function Webdev() {
             <section className="bg-black text-white py-16 px-6">
                 <div className="max-w-4xl xl:max-w-5xl  mx-auto text-center">
                     <p className="text-purple-500 font-medium">Deploy faster</p>
-                    <h2 className="text-4xl max-w-4xl mx-auto font-bold mt-2">
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl max-w-4xl mx-auto font-bold mt-2">
                     Why Businesses Trust Bixeltek as the Best Website Design And Development Company in Hyderabad
                     </h2>
-                    <p className="text-gray-400 mt-6 leading-relaxed">
+                    <p className="text-gray-400 mt-6 text-sm md:text-base leading-relaxed">
                     At Bixeltek, we don&apos;t just build websites — we build growth engines.<br />
 
 From sleek landing pages for funded startups to high-performance platforms for clinics and real estate brands, we&apos;ve delivered over 100+ websites that look sharp, load fast, and actually perform.
 We&apos;re a full-stack, results-driven team of developers, designers, and digital marketers who live and breathe performance. <br />
- <span className='font-medium italic text-lg text-purple-500'>And yes, we&apos;re proudly Hyderabad-based.</span>
+ <span className='font-medium italic text-base md:text-lg text-purple-500'>And yes, we&apos;re proudly Hyderabad-based.</span>
                     </p>
                 </div>
 
@@ -333,11 +333,11 @@ We&apos;re a full-stack, results-driven team of developers, designers, and digit
 
                     <div className="md:w-[55%] mt-16  md:mt-0 text-center md:text-left">
 
-                        <h2 className="text-3xl text-white  md:text-[40px] leading-[50px] font-bold mt-4 ">
+                        <h2 className="text-3xl text-white  md:text-[40px] leading-[35px] md:leading-[50px] font-bold mt-4 ">
                             Technology Transforming Ideas Into Reality Empowering Brands With
                             <span className="bg-purple-500 px-2 ml-4">BIXELTEK</span>
                         </h2>
-                        <p className="text-gray-300 mt-10 leading-7">
+                        <p className="text-gray-300 mt-10 text-sm md:text-base leading-2 md:leading-7">
                             At our web design agency, we specialize in creating visually stunning and highly functional websites that help businesses stand out in the digital world. Our team of talented designers and developers are passionate about crafting.
                         </p>
 
@@ -401,14 +401,14 @@ We&apos;re a full-stack, results-driven team of developers, designers, and digit
             <section>
                 <IndustrySolutions />
             </section>
-            <section className="bg-white py-12 sm:py-16 lg:py-20 border-none rounded-tr-[150px] rounded-tl-[150px] shadow-glow xl:py-24">
+            <section className="bg-white py-20 lg:py-20 border-none rounded-tr-[150px] rounded-tl-[150px] shadow-glow xl:py-24">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="text-center">
                         <p className="text-sm font-bold uppercase tracking-widest text-gray-700">How It Works</p>
-                        <h2 className="mt-6 text-3xl font-semibold font-sofiasanscondensed tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
+                        <h2 className="mt-6 text-3xl font-semibold font-sofiasanscondensed tracking-tight text-gray-900 sm:text-3xl lg:text-5xl">
                         How Our Website Design Process Works at Bixeltek — <br /> <span className='text-purple-500 tracking-wide'>Fast, Focused & Built for Growth</span>
                         </h2>
-                        <p className="mx-auto mt-4 max-w-4xl text-lg font-normal text-gray-700 lg:text-lg lg:leading-1">
+                        <p className="mx-auto mt-4  max-w-4xl text-sm md:text-lg font-normal text-gray-700 lg:text-lg lg:leading-1">
                         Most agencies overcomplicate web design. We don&apos;t.<br />
                         At Bixeltek, we use a streamlined, transparent process that gets you from strategy to live site — without endless meetings, bloated timelines, or tech headaches.
 Whether you&apos;re a startup founder or a growing business looking for a top-tier <span className='text-purple-700 italic font-semibold'>website development company in Hyderabad</span> , this is how we get it done:
@@ -424,7 +424,7 @@ Whether you&apos;re a startup founder or a growing business looking for a top-ti
                             </div>
                             <div className="ml-6 lg:ml-0 lg:mt-10">
                                 <h2 className="text-xl font-bold text-gray-900"> Discovery & Strategy Call</h2>
-                                <h4 className="mt-2 text-base text-gray-700"> We understand your goals, audience, and current challenges. What makes your business tick — and what your website needs to do.</h4>
+                                <h4 className="mt-2 text-sm lg:text-base text-gray-700"> We understand your goals, audience, and current challenges. What makes your business tick — and what your website needs to do.</h4>
                             </div>
                         </li>
                         <li className="flex-start group relative flex lg:flex-col">
@@ -434,7 +434,7 @@ Whether you&apos;re a startup founder or a growing business looking for a top-ti
                             </div>
                             <div className="ml-6 lg:ml-0 lg:mt-10">
                                 <h2 className="text-xl font-bold text-gray-900">Wireframe & Content Flow</h2>
-                                <h4 className="mt-2 text-base text-gray-700">We craft layouts and messaging that convert — combining UX best practices with persuasive copy.</h4>
+                                <h4 className="mt-2 text-sm lg:text-base text-gray-700">We craft layouts and messaging that convert — combining UX best practices with persuasive copy.</h4>
                             </div>
                         </li>
                         <li className="flex-start group relative flex lg:flex-col">
@@ -444,7 +444,7 @@ Whether you&apos;re a startup founder or a growing business looking for a top-ti
                             </div>
                             <div className="ml-6 lg:ml-0 lg:mt-10">
                                 <h2 className="text-xl font-bold text-gray-900">Design, Development<br /> & SEO</h2>
-                                <h4 className="mt-2 text-base text-gray-700"> We build your site using clean, scalable code. Optimized for mobile, speed, Google, and your customer&apos;s attention span.</h4>
+                                <h4 className="mt-2 text-sm lg:text-base text-gray-700"> We build your site using clean, scalable code. Optimized for mobile, speed, Google, and your customer&apos;s attention span.</h4>
                             </div>
                         </li>
                         <li className="flex-start group relative flex lg:flex-col">
@@ -453,7 +453,7 @@ Whether you&apos;re a startup founder or a growing business looking for a top-ti
                             </div>
                             <div className="ml-6 lg:ml-0 lg:mt-10">
                                 <h2 className="text-xl font-bold text-gray-900">Launch + Support</h2>
-                                <h4 className="mt-2 text-base text-gray-700">Final QA, testing, and go-live. You get 30 days of support, site ownership, and access to performance analytics.</h4>
+                                <h4 className="mt-2 text-sm lg:text-base text-gray-700">Final QA, testing, and go-live. You get 30 days of support, site ownership, and access to performance analytics.</h4>
                             </div>
                         </li>
 
@@ -551,16 +551,16 @@ Whether you&apos;re a startup founder or a growing business looking for a top-ti
             <TechWeUse />
             <section className='w-full flex flex-wrap max-w-[90%] mx-auto lg:flex-nowrap overflow-y-hidden items-center'>
                 {/* Left Content Section */}
-                <div className='w-full lg:w-1/2 px-6 py-10 lg:py-14'>
-                    <h2 className="text-5xl font-semibold text-gray-800 font-sofiasanscondensed dark:text-white">
+                <div className='w-full lg:w-1/2 px-1 md:px-6 py-10 lg:py-14'>
+                    <h2 className="text-4xl md:text-5xl font-semibold text-gray-800 font-sofiasanscondensed dark:text-white">
                         Proven Results Across <span className='text-purple-500'>Diverse Industries</span>
                     </h2>
-                    <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+                    <p className="mt-4 text-sm md:text-lg text-gray-600 dark:text-gray-300">
                         Our expertise spans multiple industries, helping businesses achieve growth through data-driven strategies and
                         innovative solutions. From technology and finance to healthcare and retail, we empower brands with actionable insights
                         and cutting-edge digital solutions.
                     </p>
-                    <p className="mt-2 text-lg text-gray-600 dark:text-gray-300">
+                    <p className="mt-2 text-sm md:text-lg text-gray-600 dark:text-gray-300">
                         Explore how our tailored approach delivers measurable success, increasing engagement, conversions, and brand visibility
                         in a competitive landscape.
                     </p>
@@ -576,7 +576,7 @@ Whether you&apos;re a startup founder or a growing business looking for a top-ti
                         Learn More
                     </button>
                 </div>
-                <div className="flex w-full lg:w-1/2 justify-center gap-4 p-10">
+                <div className="flex w-full lg:w-1/2 justify-center gap-4 p-1">
                     <div className='w-1/3 flex flex-col  items-center justify-center gap-3'>
                         <Image src={healthcare} alt='healthcare' className='rounded-xl'></Image>
                         <Image src={oil} alt='oil' className='rounded-xl'></Image>

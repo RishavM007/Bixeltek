@@ -41,7 +41,7 @@ export default function TechWeUse() {
     <section className="relative flex items-center justify-center h-screen bg-black text-white overflow-hidden">
       <div ref={ref} className="absolute text-center z-10">
       <span className="py-1 px-4 bg-indigo-100 rounded-full text-xs font-medium text-indigo-500 text-center">Technologies</span>
-        <h2 className="text-6xl font-sofiasanscondensed text-center font-bold mt-10">Integrating Cutting-edge Web Technologies</h2>
+        <h2 className="text-4xl md:text-6xl font-sofiasanscondensed text-center font-bold mt-10">Integrating Cutting-edge Web Technologies</h2>
         <p className="mt-4 font-poppins text-center  max-w-xl mx-auto">
           Integrating different systems, technologies, or tools is a crucial process that enables seamless communication and functionality.
         </p>

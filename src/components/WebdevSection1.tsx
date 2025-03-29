@@ -49,7 +49,7 @@ const industries = [
 
 const IndustrySolutions = () => {
     return (
-        <section className="bg-black max-w-[85%] py-20 mx-auto font-roboto">
+        <section className="bg-black max-w-[95%] md:max-w-[85%] py-20 mx-auto font-roboto">
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -57,18 +57,18 @@ const IndustrySolutions = () => {
                 viewport={{ once: true }}
                 className="py-12 px-6 mx-auto max-w-screen-xl"
             >
-                <h2 className="mb-4 font-sofiasanscondensed text-center text-5xl max-w-[80%] mx-auto font-extrabold text-white">
+                <h2 className="mb-4 font-sofiasanscondensed text-center text-3xl md:text-5xl max-w-[100%] md:max-w-[80%] mx-auto font-extrabold text-white">
                     From Real Estate Web Design in Hyderabad to Clinic Platforms —{" "}<br />
                     <span className="text-primary-100">
                         We Build for Your Industry
                     </span>
                 </h2>
-                <p className="mb-8 text-gray-300 text-center max-w-[85%] mx-auto ">
+                <p className="mb-8 text-gray-300 text-sm md:text-base text-center max-w-[95$] md:max-w-[85%] mx-auto ">
                     Whether you&apos;re a founder, a franchise, or a family-run local service — your business needs a website that gets discovered, delivers value, and drives real results.
                     At <span className="font-semibold text-primary-600 dark:text-primary-300">Bixeltek</span>, we specialize in industry-specific website solutions that speak your audience’s language and solve their exact problems.
                 </p>
 
-                <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-4 md:gap-8 sm:grid-cols-1 lg:grid-cols-3">
                     {industries.map((industry, index) => (
                         <motion.div
                             key={index}
@@ -76,23 +76,23 @@ const IndustrySolutions = () => {
                             whileInView={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: index * 0.2 }}
                             viewport={{ once: true }}
-                            className="flex flex-col items-start py-6 pr-6  rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+                            className="flex flex-col items-start md:items-start py-6 pr-6  rounded-lg shadow-lg hover:shadow-xl transition-shadow"
                         >
                             <div className="mb-4 p-2 bg-purple-300 border border-purple-300 rounded-xl ">{industry.icon}</div>
-                            <h3 className="mb-2 mt-1 text-xl font-bold text-gray-900 dark:text-white">
+                            <h3 className="mb-2 mt-1 text-left text-xl font-bold text-white">
                                 {industry.title}
                             </h3>
-                            <p className="text-gray-300 text-start">
+                            <p className="text-gray-300 text-center md:text-left ">
                                 {industry.description}
                             </p>
                         </motion.div>
                     ))}
                 </div>
-                <div className="max-w-[70%] flex flex-col font-sofiasanscondensed justify-center items-center mx-auto">
+                <div className="max-w-[95%] md:max-w-[80%] flex flex-col font-sofiasanscondensed justify-center items-center mx-auto">
                     <p className="mt-12 text-2xl text-center  text-gray-300 trackinw-g-wide font-semibold">
                         Looking for real estate websites in Hyderabad that actually bring in leads? Or a local business website that ranks for “near me” searches?
                     </p>
-                    <p className="mt-2 italic text-purple-500 text-xl tracking-wide font-semibold">
+                    <p className="mt-2 italic text-purple-500 text-xl text-center tracking-wide font-semibold">
                         We&apos;ve built them — and we can build yours next.
                     </p>
                 </div>
