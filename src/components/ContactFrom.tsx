@@ -3,7 +3,63 @@ import React from 'react'
 import { useState } from 'react';
 
 export default function ContactFrom() {
+
+    const [formData, setFormData] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        company: '',
+        website: '',
+        marketingDepartment: '',
+        marketingBudget: '',
+        services: '',
+        message: ''
+    });
     
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const handleDropdownSelect = (field: string, value: string) => {
+        setFormData({ ...formData, [field]: value });
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+    
+            if (!response.ok) throw new Error('Failed to send message.');
+            console.log(formData);
+            const result = await response.json();
+        console.log("API Response:", result); // Debug log
+            alert('Message sent successfully!');
+            setFormData({
+                firstName: '',
+                lastName: '',
+                email: '',
+                phone: '',
+                company: '',
+                website: '',
+                marketingDepartment: '',
+                marketingBudget: '',
+                services: '',
+                message: ''
+            });
+        } catch (error) {
+            console.log(formData);
+            console.error("Error submitting form:", error);
+            alert('Something went wrong. Please try again later.');
+        }
+    };
+    
+
         const [isOpen, setIsOpen] = useState(false);
         const [isOpen1, setIsOpen1] = useState(false);
         const [isOpen2, setIsOpen2] = useState(false);
@@ -18,25 +74,31 @@ export default function ContactFrom() {
             const toggleDropdown = () => {
                 setIsOpen(!isOpen);
             }
+
+
     return (
         <div className="w-[95%] md:w-1/2 p-6 relative bg-[#1a1a1a] rounded-lg">
             <h3 className="text-3xl md:text-3xl  font-normal text-white mb-4">Get in Touch </h3>
             <div className='absolute w-40 h-1 bg-[#670ef7] translate-y-[-10px] translate-x-[5px]'></div>
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={handleSubmit}>
                 <div className='flex flex-col md:flex-row gap-5'>
 
                     <input
                         type="text"
                         id="name"
-                        name="name"
-                        className="w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                        name="firstName"
+                        value={formData.firstName} 
+                        onChange={handleInputChange}
+                        className="w-full input-field md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                         placeholder="First Name"
                     />
                     <input
                         type="text"
                         id="name"
-                        name="name"
-                        className="w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                        name="lastName"
+                        value={formData.lastName}
+                        onChange={handleInputChange}
+                        className="w-full input-field md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                         placeholder="Last Name*"
                     />
                 </div>
@@ -46,14 +108,18 @@ export default function ContactFrom() {
                         type="email"
                         id="email"
                         name="email"
-                        className=" w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                        value={formData.email} 
+                        onChange={handleInputChange}
+                        className=" w-full input-field md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                         placeholder="Enter your email*"
                     />
                     <input
                         type="phone"
                         id="phone"
                         name="phone"
-                        className=" w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                        value={formData.phone} 
+                        onChange={handleInputChange}
+                        className=" w-full input-field md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                         placeholder="Enter your phone number"
                     />
                 </div>
@@ -61,15 +127,19 @@ export default function ContactFrom() {
                     <input
                         type="text"
                         id="name"
-                        name="name"
-                        className="w-full md:w-1/2 mt-2 p-3 border-b border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                        name="company"
+                        value={formData.company} 
+                        onChange={handleInputChange}
+                        className="w-full input-field md:w-1/2 mt-2 p-3 border-b border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                         placeholder="Company/Organisation*"
                     />
                     <input
                         type="text"
                         id="name"
-                        name="name"
-                        className="w-full md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                        name="website"
+                        value={formData.website}
+                        onChange={handleInputChange}
+                        className="w-full input-field md:w-1/2 mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                         placeholder="Website"
                     />
 
@@ -84,7 +154,7 @@ export default function ContactFrom() {
                             aria-haspopup="true"
                             onClick={toggleDropdown1}
                         >
-                            How are you running your Marketing Department Currently?
+                            { formData.marketingDepartment || 'How are you running your Marketing Department Currently?'}
                             <svg
                                 className={`-mr-1 ml-2 h-5 w-5 text-gray-300 transition-transform ${isOpen1 ? 'rotate-180' : ''}`}
                                 xmlns="http://www.w3.org/2000/svg"
@@ -102,43 +172,20 @@ export default function ContactFrom() {
 
                         {/* Dropdown menu */}
                         {isOpen1 && (
-                            <div
-                                className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                                role="menu"
-                                aria-orientation="vertical"
-                                aria-labelledby="menu-button"
-                            >
-                                <div className="py-1" role="none">
-                                    <a
-                                        href="#"
-                                        className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                        role="menuitem"
-                                    >
-                                        Inhouse
-                                    </a>
-                                    <a
-                                        href="#"
-                                        className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                        role="menuitem"
-                                    >
-                                        Outsourced
-                                    </a>
-                                    <a
-                                        href="#"
-                                        className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                        role="menuitem"
-                                    >
-                                        Myself
-                                    </a>
-                                    <a
-                                        href="#"
-                                        className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                        role="menuitem"
-                                    >
-                                        Freelancer
-                                    </a>
-                                </div>
-                            </div>
+                            <div className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5">
+                            {["Inhouse", "Outsourced", "Myself", "Freelancer"].map((option) => (
+                              <div
+                                key={option}
+                                onClick={() => {
+                                    handleDropdownSelect("marketingDepartment", option);
+                                    setIsOpen1(false);
+                                  }}
+                                className="cursor-pointer px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                              >
+                                {option}
+                              </div>
+                            ))}
+                          </div>
                         )}
                     </div>
                     <div className="relative max-w-full md:max-w-[50%] inline-block text-left w-full">
@@ -150,7 +197,7 @@ export default function ContactFrom() {
                             aria-haspopup="true"
                             onClick={toggleDropdown2}
                         >
-                            What is the current marketing budget you are looking at?
+                            {formData.marketingBudget || 'What is the current marketing budget you are looking at?'}
                             <svg
                                 className={`-mr-1 ml-2 h-5 w-5 text-gray-300 transition-transform ${isOpen2 ? 'rotate-180' : ''}`}
                                 xmlns="http://www.w3.org/2000/svg"
@@ -168,36 +215,20 @@ export default function ContactFrom() {
 
                         {/* Dropdown menu */}
                         {isOpen2 && (
-                            <div
-                                className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                                role="menu"
-                                aria-orientation="vertical"
-                                aria-labelledby="menu-button"
-                            >
-                                <div className="py-1" role="none">
-                                    <a
-                                        href="#"
-                                        className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                        role="menuitem"
-                                    >
-                                        INR 1-2 Lacs a month
-                                    </a>
-                                    <a
-                                        href="#"
-                                        className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                        role="menuitem"
-                                    >
-                                        INR 2-5 Lacs a month
-                                    </a>
-                                    <a
-                                        href="#"
-                                        className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                        role="menuitem"
-                                    >
-                                        INR &gt;5 Lacs a month
-                                    </a>
-                                </div>
-                            </div>
+                             <div className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5">
+                             {["INR 1-2 Lacs a month", "INR 2-5 Lacs a month", "INR >5 Lacs a month"].map((option) => (
+                               <div
+                                 key={option}
+                                 onClick={() => {
+                                   handleDropdownSelect("marketingBudget", option);
+                                   setIsOpen2(false);
+                                 }}
+                                 className="cursor-pointer px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                               >
+                                 {option}
+                               </div>
+                             ))}
+                           </div>
                         )}
                     </div>
                 </div>
@@ -210,7 +241,7 @@ export default function ContactFrom() {
                         aria-haspopup="true"
                         onClick={toggleDropdown}
                     >
-                        Our Services
+                        {formData.services || 'Our Services'}
                         <svg
                             className={`-mr-1 ml-2 h-5 w-5 text-gray-300 transition-transform ${isOpen ? 'rotate-180' : ''}`}
                             xmlns="http://www.w3.org/2000/svg"
@@ -228,54 +259,35 @@ export default function ContactFrom() {
 
                     {/* Dropdown menu */}
                     {isOpen && (
-                        <div
-                            className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                            role="menu"
-                            aria-orientation="vertical"
-                            aria-labelledby="menu-button"
-                        >
-                            <div className="py-1" role="none">
-                                <a
-                                    href="#"
-                                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                    role="menuitem"
-                                >
-                                    Social Media Management
-                                </a>
-                                <a
-                                    href="#"
-                                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                    role="menuitem"
-                                >
-                                    SEO Optimization
-                                </a>
-                                <a
-                                    href="#"
-                                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                    role="menuitem"
-                                >
-                                    E-commerce Solutions
-                                </a>
-                                <a
-                                    href="#"
-                                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                    role="menuitem"
-                                >
-                                    Content Marketing
-                                </a>
-                                <a
-                                    href="#"
-                                    className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                    role="menuitem"
-                                >
-                                    PPC Campaigns
-                                </a>
-                            </div>
-                        </div>
+                       <div className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5">
+                       {[
+                         "Social Media Management",
+                         "SEO Optimization",
+                         "E-commerce Solutions",
+                         "Content Marketing",
+                         "PPC Campaigns",
+                       ].map((option) => (
+                         <div
+                           key={option}
+                           onClick={() => {
+                             handleDropdownSelect("services", option);
+                             setIsOpen(false);
+                           }}
+                           className="cursor-pointer px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                         >
+                           {option}
+                         </div>
+                       ))}
+                     </div>
                     )}
                 </div>
-                <textarea name="textarea" id="" rows={5} placeholder='Tell us about your business'
-                    className='w-full mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]'
+                <textarea
+                    name="message"
+                    rows={5}
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    placeholder="Tell us about your business"
+                    className="w-full p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                 ></textarea>
                 <button
                     type="submit"

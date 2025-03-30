@@ -1,3 +1,17 @@
+export const metadata = {
+  title: "Best SEO Services in Hyderabad | Trusted SEO Company | Bixeltek",
+  description:
+    "Boost your online presence with Bixeltek, a top SEO agency in Hyderabad. Our proven strategies help businesses dominate search results and drive organic growth.",
+  keywords:
+    "SEO services Hyderabad, Best SEO agency Hyderabad, Digital marketing Hyderabad, Local SEO Hyderabad, Google ranking services, Technical SEO, On-page SEO, Off-page SEO, E-commerce SEO, SEO expert Hyderabad, Increase website traffic, SEO consultant Hyderabad",
+  openGraph: {
+    title: "Bixeltek – Hyderabad’s Top SEO & Digital Marketing Agency",
+    description:
+      "Bixeltek helps businesses rank higher on Google with expert SEO strategies. Get local, technical, and e-commerce SEO services for long-term online growth.",
+    type: "website",
+  },
+};
+
 
 import React from 'react';
 import DarkFaqSection from '@/components/DarkFaq';
@@ -307,21 +321,22 @@ export default function Seo() {
             <section className="pt-2 pb-20">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div
-                        className="lg:py-14 lg:px-20 p-10 rounded-2xl bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-between flex-col lg:flex-row"
+                        className="lg:py-14 lg:px-20 p-10 rounded-2xl bg-gradient-to-r from-indigo-800 to-violet-800 flex items-center justify-between flex-col lg:flex-row"
                     >
-                        <div className="block text-center mb-5 lg:text-left lg:mb-0">
+                        <div className="block text-center w-3/4 mb-5 lg:text-left lg:mb-0">
                             <h2
-                                className="font-manrope text-4xl text-white font-semibold mb-5 lg:mb-2"
+                                className="font-manrope text-2xl text-white font-semibold mb-5 lg:mb-2"
                             >
-                                Connect & grow with your targeted customers
+                                Dominate "Near Me" Searches in Hyderabad with Local SEO
                             </h2>
                             <p className="text-xl text-indigo-100">
-                                Contact us with any query or any idea.
+                            Capture high-intent customers who are actively searching for services nearby. Our targeted local SEO ensures your business appears at the top of “near me” results, driving foot traffic and real leads in Hyderabad.
                             </p>
                         </div>
+                        <div className='w-1/4 flex justify-end'>
                         <a
                             href="#"
-                            className="flex items-center gap-2 bg-white rounded-full shadow-sm text-lg text-indigo-600 font-semibold py-4 px-8 transition-all duration-500"
+                            className="flex w-fit items-center text-center gap-2 bg-white rounded-full shadow-sm text-lg text-indigo-600 font-semibold py-4 px-10 transition-all duration-500"
                         >Get In Touch
                             <svg
                                 width="19"
@@ -339,6 +354,8 @@ export default function Seo() {
                                 />
                             </svg>
                         </a>
+                        </div>
+                       
                     </div>
                 </div>
             </section>
