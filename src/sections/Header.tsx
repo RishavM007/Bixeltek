@@ -83,7 +83,9 @@ export const Header = () => {
     <header className="px-3 py-5 max-w-7xl mx-auto sticky top-0 z-[60]">
       <div className="container bg-black flex justify-between items-center border-white/15 border-solid border-2 rounded-xl shadow-purple-custom backdrop:blur-3xl">
         <div className="text-white py-3">
+          <Link href={"/"}>
           <Image src={Bixeltek} alt="Bixeltek Logo"  className='h-7 w-auto' />
+          </Link>
         </div>
         <button className="md:hidden text-white text-3xl" onClick={toggleMenu}>
           {isMenuOpen ? <HiX /> : <HiMenu />}
