@@ -18,9 +18,55 @@ export default function GaSection() {
                 }}
             />
             <div className='flex flex-col md:flex-row  justify-between bg-white'>
+                <div className="w-full md:w-2/3 flex flex-col items-start px-10 xl:px-16 py-10 xl:py-16 bg-gray-100">
+                    {/* Headline */}
+                    <h2 className="text-5xl font-sofiasanscondensed lg:text-5xl xl:text-5xl xl:leading-[50px] font-bold text-left my-10 xl:my-14 text-zinc-700">
+                        Meet <span className="text-purple-600">Bixeltek</span> — Your Performance Marketing Partner in Hyderabad
+                    </h2>
+
+                    {/* Copy */}
+                    <p className="text-left mt-3 xl:mt-0 xl:text-lg mb-7 font-sans text-gray-700 leading-7">
+                        We are a <strong>Google Partner Certified</strong> digital marketing agency headquartered in <strong>Suncity, Hyderabad</strong>.
+                        At Bixeltek, we specialize in delivering <strong>ROI-driven Google Ads campaigns</strong> for businesses that want results — not just impressions.
+                    </p>
+
+                    <p className="text-left mb-7 font-sans xl:text-lg text-gray-700 leading-7">
+                        Our team consists of <strong>certified PPC specialists, media buyers, conversion strategists, and analysts</strong> who bring together technical precision and creative execution.
+                        Every campaign is designed around your business goals, backed by real-time data, and optimized consistently to maximize returns.
+                    </p>
+
+                    {/* Success Metrics */}
+                    <h3 className="text-xl font-bold text-gray-800 mb-4">Over the years, we&apos;ve helped:</h3>
+                    <ul className="list-disc list-inside text-gray-700 xl:text-lg leading-7">
+                        <li><strong>Service-based businesses</strong> reduce their cost per lead by over <span className="text-purple-700">60%</span></li>
+                        <li><strong>Real estate companies</strong> generate <span className="text-purple-700">2–3x</span> more qualified inquiries</li>
+                        <li><strong>E-commerce brands</strong> scale Shopping Ads with consistent <span className="text-purple-700">5–6x ROAS</span></li>
+                    </ul>
+
+                    <p className="text-left mt-7 mb-7 font-sans xl:text-lg text-gray-700 leading-7">
+                        We understand how people search in Hyderabad. From <strong>Jubilee Hills to Gachibowli</strong>, from <strong>Banjara Hills to Madhapur</strong> —
+                        we craft strategies tailored to <strong>local buying behaviors, search intent, and competitor landscapes</strong>.
+                    </p>
+
+                    <p className="text-left mb-7 font-sans xl:text-lg text-gray-700 leading-7">
+                        Whether you&apos;re looking to target a specific pin code or expand nationally, our approach ensures your brand appears where and when it matters most.
+                    </p>
+
+                    <p className="text-left font-sans xl:text-lg text-gray-700 leading-7">
+                        We are more than just a Google Ads company — we’re your <strong>long-term growth partner</strong>.
+                    </p>
+
+                    {/* Google Partner Badge */}
+                    <a href="https://www.google.com/partners/agency?id=2188074075" target="_blank" className="mt-10 flex justify-start">
+                        <img src="https://www.gstatic.com/partners/badge/images/2024/PartnerBadgeClickable.svg"
+                            alt="Google Partner Badge"
+                            className="w-auto h-auto" />
+                    </a>
+                </div>
+
                 <div className="w-full md:w-1/3  relative">
                     <motion.div
-                        className="absolute w-2 sm:w-3 md:w-3 h-10 bg-[#4285F4] top-0  right-0 origin-top"
+                        className="absolute w-2 sm:w-3 md:w-3 h-20 bg-[#4285F4] top-0  left-0 origin-top"
                         animate={{ scaleY: [0, 10, 0] }}
                         transition={{
                             duration: 8,
@@ -30,42 +76,6 @@ export default function GaSection() {
                         }}
                     />
                     <Image src={Teamimg} alt="Team" className='h-full w-full object-cover' />
-                </div>
-
-
-                <div className="w-full md:w-2/3 flex flex-col items-start px-10 xl:px-16 py-10 xl:py-16 bg-gray-100">
-                    <h2 className="text-5xl font-sofiasanscondensed lg:text-5xl xl:text-5xl xl:leading-[50px] font-bold text-left my-10 xl:my-14 text-zinc-700">
-                        Google Ads Agency Certified by{" "}
-                        <span className="text-[#4285F4]">G</span>
-                        <span className="text-[#EA4335]">o</span>
-                        <span className="text-[#FFBB00]">o</span>
-                        <span className="text-[#4285F4]">g</span>
-                        <span className="text-[#34AB53]">l</span>
-                        <span className="text-[#EA4335]">e</span>
-                    </h2>
-                    <p className="text-left mt-3 xl:mt-0 xl:text-lg mb-7 font-sans text-gray-700 leading-7">
-                        As a <strong>Google Partner Certified Agency</strong>, we are recognized for delivering high-performance Google Ads campaigns.
-                        Our certification ensures we meet <strong>Google’s strict quality standards</strong>, driving better ROI and conversions.
-                    </p>
-                    <p className="text-left mb-7 font-sans xl:text-lg text-gray-700 leading-7">
-                        Our team of <strong>Google Ads specialists</strong> stays updated on the latest ad strategies, bidding techniques, and audience targeting
-                        to maximize your campaign results.
-                    </p>
-                    <p className="text-left mb-7 font-sans xl:text-lg text-gray-700 leading-7">
-                        With exclusive <strong>Google insights</strong> and beta features, we craft data-driven strategies tailored to your business goals,
-                        ensuring optimal ad performance and growth.
-                    </p>
-                    <a
-                        href="https://www.google.com/partners/agency?id=2188074075"
-                        target="_blank"
-                        className="mt-10 flex justify-start"
-                    >
-                        <img
-                            src="https://www.gstatic.com/partners/badge/images/2024/PartnerBadgeClickable.svg"
-                            alt="Google Partner Badge"
-                            className="w-auto h-auto"
-                        />
-                    </a>
                 </div>
             </div>
             <div className="= max-w-[97%] items-center relative flex flex-col md:flex-row pt-5 gap-5 md:gap-14 px-10 pb-20 md:pt-16 xl:pt-16">

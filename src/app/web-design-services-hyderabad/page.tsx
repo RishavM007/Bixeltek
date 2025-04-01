@@ -20,7 +20,7 @@ import TechWeUse from '@/components/TechWeUse';
 import landingpage from '@/assets/abstract-sales-landing-page-with-photo.png'
 import { FaTooth, FaHospital, FaDog, FaGasPump, FaCar, FaBroom, FaGraduationCap, FaBuilding, FaTree, FaSeedling } from "react-icons/fa";
 import { HeroParallax } from '@/components/parallexHero'
-import { FiUploadCloud, FiLock, FiRepeat} from "react-icons/fi";
+import { FiUploadCloud, FiLock, FiRepeat } from "react-icons/fi";
 import { LuFingerprint } from "react-icons/lu";
 import IndustrySolutions from '@/components/WebdevSection1';
 import Counter from '@/components/Counter';
@@ -248,14 +248,14 @@ export default function Webdev() {
                 <div className="max-w-4xl xl:max-w-5xl  mx-auto text-center">
                     <p className="text-purple-500 font-medium">Deploy faster</p>
                     <h2 className="text-2xl md:text-3xl lg:text-4xl max-w-4xl mx-auto font-bold mt-2">
-                    Why Businesses Trust Bixeltek as the Best Website Design And Development Company in Hyderabad
+                        Why Businesses Trust Bixeltek as the Best Website Design And Development Company in Hyderabad
                     </h2>
                     <p className="text-gray-400 mt-6 text-sm md:text-base leading-relaxed">
-                    At Bixeltek, we don&apos;t just build websites — we build growth engines.<br />
+                        At Bixeltek, we don&apos;t just build websites — we build growth engines.<br />
 
-From sleek landing pages for funded startups to high-performance platforms for clinics and real estate brands, we&apos;ve delivered over 100+ websites that look sharp, load fast, and actually perform.
-We&apos;re a full-stack, results-driven team of developers, designers, and digital marketers who live and breathe performance. <br />
- <span className='font-medium italic text-base md:text-lg text-purple-500'>And yes, we&apos;re proudly Hyderabad-based.</span>
+                        From sleek landing pages for funded startups to high-performance platforms for clinics and real estate brands, we&apos;ve delivered over 100+ websites that look sharp, load fast, and actually perform.
+                        We&apos;re a full-stack, results-driven team of developers, designers, and digital marketers who live and breathe performance. <br />
+                        <span className='font-medium italic text-base md:text-lg text-purple-500'>And yes, we&apos;re proudly Hyderabad-based.</span>
                     </p>
                 </div>
 
@@ -268,7 +268,7 @@ We&apos;re a full-stack, results-driven team of developers, designers, and digit
                         <div>
                             <h3 className="font-bold text-xl">Strategy First</h3>
                             <p className="text-gray-400 mt-3 leading-relaxed tracking-wide">
-                            We ask the right questions, conduct deep research, and develop a data-driven strategy before writing a single line of code.
+                                We ask the right questions, conduct deep research, and develop a data-driven strategy before writing a single line of code.
                             </p>
                         </div>
                     </div>
@@ -281,7 +281,7 @@ We&apos;re a full-stack, results-driven team of developers, designers, and digit
                         <div>
                             <h3 className="font-bold text-xl">Speed Obsessed</h3>
                             <p className="text-gray-400 mt-3 leading-relaxed tracking-wide">
-                            We design, develop, and deliver high-performance, mobile-optimized websites within 10–14 days, ensuring fast loading speed and seamless user experience.
+                                We design, develop, and deliver high-performance, mobile-optimized websites within 10–14 days, ensuring fast loading speed and seamless user experience.
                             </p>
                         </div>
                     </div>
@@ -294,7 +294,7 @@ We&apos;re a full-stack, results-driven team of developers, designers, and digit
                         <div>
                             <h3 className="font-bold text-xl">SEO-Built from Day One</h3>
                             <p className="text-gray-400 mt-3 leading-relaxed tracking-wide">
-                            Our websites feature technical SEO, keyword mapping, and mobile-first design to help your business rank higher on search engines.
+                                Our websites feature technical SEO, keyword mapping, and mobile-first design to help your business rank higher on search engines.
                             </p>
                         </div>
                     </div>
@@ -406,12 +406,12 @@ We&apos;re a full-stack, results-driven team of developers, designers, and digit
                     <div className="text-center">
                         <p className="text-sm font-bold uppercase tracking-widest text-gray-700">How It Works</p>
                         <h2 className="mt-6 text-3xl font-semibold font-sofiasanscondensed tracking-tight text-gray-900 sm:text-3xl lg:text-5xl">
-                        How Our Website Design Process Works at Bixeltek — <br /> <span className='text-purple-500 tracking-wide'>Fast, Focused & Built for Growth</span>
+                            How Our Website Design Process Works at Bixeltek — <br /> <span className='text-purple-500 tracking-wide'>Fast, Focused & Built for Growth</span>
                         </h2>
                         <p className="mx-auto mt-4  max-w-4xl text-sm md:text-lg font-normal text-gray-700 lg:text-lg lg:leading-1">
-                        Most agencies overcomplicate web design. We don&apos;t.<br />
-                        At Bixeltek, we use a streamlined, transparent process that gets you from strategy to live site — without endless meetings, bloated timelines, or tech headaches.
-Whether you&apos;re a startup founder or a growing business looking for a top-tier <span className='text-purple-700 italic font-semibold'>website development company in Hyderabad</span> , this is how we get it done:
+                            Most agencies overcomplicate web design. We don&apos;t.<br />
+                            At Bixeltek, we use a streamlined, transparent process that gets you from strategy to live site — without endless meetings, bloated timelines, or tech headaches.
+                            Whether you&apos;re a startup founder or a growing business looking for a top-tier <span className='text-purple-700 italic font-semibold'>website development company in Hyderabad</span> , this is how we get it done:
 
                         </p>
                     </div>

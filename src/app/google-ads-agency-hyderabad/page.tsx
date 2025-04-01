@@ -2,6 +2,26 @@
 import React from 'react';
 import GaHero from '@/components/GaHero';
 import GaSection from '@/components/GaSection';
+import {
+    FiUsers,
+    FiMapPin,
+    FiBarChart,
+    FiTarget,
+    FiDollarSign,
+    FiTrendingUp,
+    FiSearch,
+    FiGlobe,
+    FiMonitor
+} from "react-icons/fi";
+import Image from 'next/image';
+import pet from "@/assets/digital marketing for pet stores.jpg";
+import roofing from "@/assets/digital marketing for roofing industries.jpg";
+import { FaTooth, FaHospital, FaDog, FaGasPump, FaCar, FaBroom, FaGraduationCap, FaBuilding, FaTree, FaSeedling } from "react-icons/fa";
+import dental from "@/assets/digital marketing for health care practices.jpg";
+import healthcare from "@/assets/digital marketing for health care practices.jpg";
+import lawncare from "@/assets/digital marketing for lawn care services.jpg";
+import blackcar from "@/assets/digital marketing for car detailers.jpg";
+import oil from "@/assets/digital marketing for oil refinaries.jpg";
 import LightFaqSection from '@/components/LightFaq';
 import { Googleadecarosel } from '@/components/Googleadecarosel';
 import ContactFrom from '@/components/ContactFrom';
@@ -11,6 +31,20 @@ import HoverDevCards from '@/components/Hovercards';
 import { FaChartLine, FaChartPie, FaChartBar } from "react-icons/fa";
 import { SiPolestar } from "react-icons/si";
 import Link from 'next/link';
+
+
+ const industries = [
+        { name: "Dental", icon: <FaTooth /> },
+        { name: "Healthcare", icon: <FaHospital /> },
+        { name: "Pet Shops", icon: <FaDog /> },
+        { name: "Oil & Gas", icon: <FaGasPump /> },
+        { name: "Automobile", icon: <FaCar /> },
+        { name: "Roof Cleaning", icon: <FaBroom /> },
+        { name: "Education", icon: <FaGraduationCap /> },
+        { name: "Real Estate", icon: <FaBuilding /> },
+        { name: "Arborist & Tree Removal", icon: <FaTree /> },
+        { name: "Lawn Care", icon: <FaSeedling /> },
+    ];
 
 const faqs = [
     {
@@ -97,6 +131,29 @@ export default function Home() {
     return (
         <>
             <GaHero />
+            <section className='pb-20'>
+                <div className="bg-gradient-to-t from-[#140d21] to-[#7028e4] mt-10 p-10 max-w-[80%] mx-auto rounded-xl text-white text-center">
+                    {/* Headline */}
+                    <h2 className="text-2xl font-sofiasanscondensed md:text-3xl xl:text-5xl font-bold">
+                        You&apos;re Spending on Google Ads. But Are You Really Getting Results?
+                    </h2>
+
+                    {/* Copy */}
+                    <p className="mt-6 text-sm md:text-lg xl:text-lg leading-7 max-w-4xl mx-auto">
+                        Most businesses in Hyderabad waste <span className="font-bold">30–50%</span> of their Google Ads budget. Why? Poor targeting. Generic copy. No funnel. Or agencies who ‘set and forget’.
+                        At <span className="text-purple-200 font-bold">Bixeltek</span>, we fix all that — and make every click count.
+                    </p>
+                    <p className="mt-4 text-sm md:text-lg xl:text-lg leading-7 max-w-4xl mx-auto">
+                        We don&apos;t just manage ads. We unlock growth. And we do it with precision.
+                    </p>
+
+                    {/* CTA Button */}
+                    <button className="mt-8 bg-transparent text-white font-medium  rounded-lg text-sm md:text-lg xl:text-xl ">
+                        Find the Leaks in Your Campaign →
+                    </button>
+                </div>
+            </section>
+
             <GaSection />
             <section className=" pt-8 flex justify-center items-center max-w-[100%] md:max-w-[85%] mx-auto text-gray-800 sm:py-24">
                 <div className="mx-auto flex max-w-md flex-col md:flex-row justify-center items-center rounded-lg lg:max-w-screen-xl lg:flex-row">
@@ -145,6 +202,136 @@ export default function Home() {
             <section className='bg-white py-20'>
                 <Googlecard />
             </section>
+            <section className="max-w-6xl mx-auto pb-20 mt-20">
+                {/* Heading */}
+                <h2 className="text-3xl font-sofiasanscondensed font-bold text-black text-center mb-14 md:text-5xl">
+                    What You Get When You Work With Us
+                </h2>
+
+                {/* Feature Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 mt-10 text-gray-700">
+
+                    {/* Feature 1 */}
+                    <div className="flex items-start gap-5">
+                        <div className="bg-purple-500 p-3 rounded-xl">
+                            <FiUsers size={24} className="text-white" />
+                        </div>
+                        <div>
+                            <h3 className="text-xl font-bold text-black">In-House Google Ads Specialists</h3>
+                            <p className="mt-2 leading-relaxed">
+                                No freelancers, no outsourcing. Our expert team ensures precision in every campaign.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Feature 2 */}
+                    <div className="flex items-start gap-5">
+                        <div className="bg-purple-500 p-3 rounded-xl">
+                            <FiMapPin size={24} className="text-white" />
+                        </div>
+                        <div>
+                            <h3 className="text-xl font-bold text-black">Local Audience & Geo Targeting</h3>
+                            <p className="mt-2 leading-relaxed">
+                                We understand Hyderabad’s buyer behavior—down to the pin code level.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Feature 3 */}
+                    <div className="flex items-start gap-5">
+                        <div className="bg-purple-500 p-3 rounded-xl">
+                            <FiBarChart size={24} className="text-white" />
+                        </div>
+                        <div>
+                            <h3 className="text-xl font-bold text-black">Transparent Weekly Reporting</h3>
+                            <p className="mt-2 leading-relaxed">
+                                Get real-time insights on performance—know exactly what’s working.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Feature 4 */}
+                    <div className="flex items-start gap-5">
+                        <div className="bg-purple-500 p-3 rounded-xl">
+                            <FiTarget size={24} className="text-white" />
+                        </div>
+                        <div>
+                            <h3 className="text-xl font-bold text-black">Landing Page & Conversion Optimization</h3>
+                            <p className="mt-2 leading-relaxed">
+                                We don’t stop at ads—we optimize your landing pages for higher conversions.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Feature 5 */}
+                    <div className="flex items-start gap-5">
+                        <div className="bg-purple-500 p-3 rounded-xl">
+                            <FiDollarSign size={24} className="text-white" />
+                        </div>
+                        <div>
+                            <h3 className="text-xl font-bold text-black">Budget-Efficient Bidding Strategy</h3>
+                            <p className="mt-2 leading-relaxed">
+                                Every rupee counts. We fine-tune your budget for maximum ROI.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Feature 6 */}
+                    <div className="flex items-start gap-5">
+                        <div className="bg-purple-500 p-3 rounded-xl">
+                            <FiTrendingUp size={24} className="text-white" />
+                        </div>
+                        <div>
+                            <h3 className="text-xl font-bold text-black">Industry-Specific Funnel Execution</h3>
+                            <p className="mt-2 leading-relaxed">
+                                We craft unique ad funnels—because a plumber’s strategy isn’t the same as SaaS.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Feature 7 */}
+                    <div className="flex items-start gap-5">
+                        <div className="bg-purple-500 p-3 rounded-xl">
+                            <FiSearch size={24} className="text-white" />
+                        </div>
+                        <div>
+                            <h3 className="text-xl font-bold text-black">Competitive Benchmarking</h3>
+                            <p className="mt-2 leading-relaxed">
+                                We analyze competitors and find gaps to position your business strategically.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Feature 8 */}
+                    <div className="flex items-start gap-5">
+                        <div className="bg-purple-500 p-3 rounded-xl">
+                            <FiGlobe size={24} className="text-white" />
+                        </div>
+                        <div>
+                            <h3 className="text-xl font-bold text-black">Market Research & Insights</h3>
+                            <p className="mt-2 leading-relaxed">
+                                Get in-depth research on industry trends and market demand.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Feature 9 */}
+                    <div className="flex items-start gap-5">
+                        <div className="bg-purple-500 p-3 rounded-xl">
+                            <FiMonitor size={24} className="text-white" />
+                        </div>
+                        <div>
+                            <h3 className="text-xl font-bold text-black">Monthly Growth Strategy Sessions</h3>
+                            <p className="mt-2 leading-relaxed">
+                                We review performance, adjust tactics, and keep you ahead of the competition.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
             <section className='bg-white py-20'>
                 <Googleadecarosel />
             </section>
@@ -262,7 +449,6 @@ export default function Home() {
                     </ul>
                 </div>
             </section>
-
             <div className="max-w-[80%] px-0 py-10 lg:px-8 lg:py-14 mx-auto">
 
                 <div className="lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center lg:justify-between">
@@ -371,14 +557,14 @@ export default function Home() {
                             }}>
                         </div>
 
-                        <div className="relative z-10 gap-4 flex flex-col md:flex-row ml-5 w-full">
-                            <div className="flex flex-col w-full md:w-1/2 justify-center items-start text-3xl group-hover:text-white font-medium ml-0 md:ml-10 text-[#8A5B00]">
+                        <div className="relative z-10 gap-4 flex py-3 flex-col md:flex-row ml-5 w-full">
+                            <div className="flex flex-col w-full md:w-1/3 justify-center items-start text-4xl group-hover:text-white font-medium ml-0 md:ml-10 text-[#8A5B00]">
                                 <p>Google Ads</p>
                                 <p className="text-black group-hover:text-white">Marketing</p>
                             </div>
 
-                            <div className='w-full md:w-1/2 justify-center flex flex-col'>
-                                <p className='group-hover:text-white text-sm md:text-lg mr-10 md:mr-0 text-black'>
+                            <div className='w-full md:w-2/3 justify-center flex flex-col'>
+                                <p className='group-hover:text-white text-sm md:text-lg mr-10 md:mr-10 text-black'>
                                     Our expert-driven Google Ads campaigns ensure your business reaches the right audience at the right time.
                                     With strategic ad placements, compelling copy, and continuous optimization, we drive high-quality traffic,
                                     increase conversions, and maximize your advertising budget.
@@ -413,14 +599,14 @@ export default function Home() {
                             }}>
                         </div>
 
-                        <div className="relative z-10 flex flex-col md:flex-row ml-5 gap-4 w-full">
-                            <div className="flex flex-col w-1/2 justify-center items-start text-3xl group-hover:text-white font-medium ml-0 md:ml-10 text-[#a2362c]">
+                        <div className="relative z-10 flex flex-col md:flex-row ml-5  gap-4 w-full">
+                            <div className="flex flex-col w-1/3 justify-center items-start text-4xl group-hover:text-white font-medium ml-0 md:ml-10 text-[#a2362c]">
                                 <p>Performance</p>
                                 <p className="text-black group-hover:text-white">Marketing</p>
                             </div>
 
-                            <div className='w-full md:w-1/2 justify-center flex flex-col'>
-                                <p className='group-hover:text-white text-sm md:text-lg mr-10 md:mr-0  text-black'>
+                            <div className='w-full md:w-2/3 justify-center flex flex-col'>
+                                <p className='group-hover:text-white text-sm md:text-lg mr-10 md:mr-10  text-black'>
                                     We create data-driven marketing campaigns that fuel growth and maximize ROI. From precise paid search to engaging social ads, our strategies boost brand reach, generate qualified leads, and increase conversions across all channels, including e-commerce and social platforms.
                                 </p>
 
@@ -440,6 +626,49 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section className='w-full flex flex-wrap max-w-[90%] pt-20 pb-32 mx-auto lg:flex-nowrap overflow-y-hidden items-center'>
+                {/* Left Content Section */}
+                <div className='w-full lg:w-3/5 px-1 md:pl-8 md:pr-32  py-10 lg:py-14'>
+                    <h2 className="text-4xl md:text-5xl xl:text-6xl font-semibold text-gray-800 font-sofiasanscondensed ">
+                        Proven Results Across <span className='text-purple-500'>Diverse Industries</span>
+                    </h2>
+                    <p className="mt-4 text-sm md:text-lg text-gray-800">
+                        Our expertise spans multiple industries, helping businesses achieve growth through data-driven strategies and
+                        innovative solutions. From technology and finance to healthcare and retail, we empower brands with actionable insights
+                        and cutting-edge digital solutions.
+                    </p>
+                    <p className="mt-2 text-sm md:text-lg text-gray-800">
+                        Explore how our tailored approach delivers measurable success, increasing engagement, conversions, and brand visibility
+                        in a competitive landscape.
+                    </p>
+                    <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        {industries.map((industry, index) => (
+                            <div key={index} className="flex items-center text-lg text-black">
+                                <span className="text-black text-xl inline-block  mr-3">{industry.icon}</span>
+                                <h2 className='font-poppins text-sm'>PPC For {industry.name}</h2>
+                            </div>
+                        ))}
+                    </div>
+                    <button className="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
+                        Learn More
+                    </button>
+                </div>
+                <div className="flex w-full lg:w-2/5 justify-center gap-4 p-1">
+                    <div className='w-1/3 flex flex-col  items-center justify-center gap-3'>
+                        <Image src={healthcare} alt='healthcare' className='rounded-xl'></Image>
+                        <Image src={oil} alt='oil' className='rounded-xl'></Image>
+                    </div>
+                    <div className='w-1/3 flex flex-col gap-3'>
+                        <Image src={pet} alt='pet' className='rounded-xl'></Image>
+                        <Image src={roofing} alt='roofind' className='rounded-xl'></Image>
+                        <Image src={dental} alt='dental' className='rounded-xl'></Image>
+                    </div>
+                    <div className='w-1/3 flex flex-col justify-center gap-3'>
+                        <Image src={lawncare} alt='lawncare' className='rounded-xl'></Image>
+                        <Image src={blackcar} alt='automobiles' className='rounded-xl'></Image>
                     </div>
                 </div>
             </section>

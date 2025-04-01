@@ -8,12 +8,12 @@ interface LayoutProps {
 }
 
 export const metadata = {
-  title: "GoogleAds - Bixeltek",
-  description: "At Bixeltek, we specialize in providing tailored IT solutions.",
+  title: "Google Ads Agency in Hyderabad | Best Google Ads Management Company — Bixeltek",
+  description: "Looking for a trusted Google Ads agency in Hyderabad? Bixeltek is a Google Partner providing expert PPC services with proven ROI. Book your free Google Ads audit today!",
   keywords: "Google Ads, Marketing, SEO, PPC, Bixeltek",
   openGraph: {
-    title: "GoogleAds - Bixeltek",
-    description: "At Bixeltek, we specialize in providing tailored IT solutions.", 
+    title: "Google Ads Agency in Hyderabad | Best Google Ads Management Company — Bixeltek",
+    description: "Looking for a trusted Google Ads agency in Hyderabad? Bixeltek is a Google Partner providing expert PPC services with proven ROI. Book your free Google Ads audit today!", 
     type: "website",
   },
 };
