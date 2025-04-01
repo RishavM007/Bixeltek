@@ -22,13 +22,12 @@ export const About = () => {
                         About Us
                     </p>
                     <h2 className="text-4xl font-bold text-gray-50 leading-tight">
-                        Why customers <br /> select our company
+                        We are a leading <br />Digital Marketing Agency
                     </h2>
                     <p className="mt-4 text-gray-100 text-[16px] mr-16">
-                        Our company stands out as the preferred choice for clients seeking reliable and
-                        innovative IT solutions. With a strong focus on customer satisfaction, we prioritize
-                        understanding our clients&apos; unique needs and delivering tailored solutions.
-                    </p>
+                    Bixeltek is a performance-first digital marketing agency based in Hyderabad, helping businesses grow online with custom strategies that actually work.</p>
+                    <p className="py-2 text-gray-100 text-[16px] mr-16">We&apos;re not just marketers — we&apos;re your growth partners. Whether you need a high-converting website, better Google rankings, more leads through paid ads, or a stronger brand presence on social media — we bring creative thinking and data-driven execution under one roof. </p>
+                    <p className="text-gray-100 text-[16px] mr-16">Our team is Google-Certified, ROI-obsessed, and trusted by brands across India,</p>
                     <div className="mt-4 md:mt-10 flex flex-col md:flex-row items-start md:items-center gap-4">
                         <motion.button
                             whileHover={{ scale: 1.1 }}

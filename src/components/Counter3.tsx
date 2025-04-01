@@ -43,7 +43,7 @@ const Counter: React.FC<CounterProps> = ({
   return (
     <motion.h2
       ref={ref}
-      className="text-5xl font-sofiasanscondensed font-bold text-black"
+      className="text-5xl font-sofiasanscondensed font-bold text-white"
       initial={{ opacity: 0 }}
       animate={{ opacity: inView ? 1 : 0 }}
       transition={{ duration: 0.5 }}
@@ -56,42 +56,42 @@ const Counter: React.FC<CounterProps> = ({
 
 const MetricsSection = () => {
   return (
-    <div className="bg-[#EDF3FF] mt-10 p-10 max-w-[80%] mx-auto rounded-xl">
+    <div className="bg-gradient-to-t from-[#140d21] to-[#7028e4] mt-10 p-10 max-w-[80%] mx-auto rounded-xl">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 text-center">
         {/* Top Row */}
         <div>
           <Counter end={8} suffix="x" />
-          <p className="text-gray-600">ROAS Achieved on Average</p>
+          <p className="text-gray-50">ROAS Achieved on Average</p>
         </div>
         <div>
           <Counter end={182} suffix="%" />
-          <p className="text-gray-600">Marketing Strategy</p>
+          <p className="text-gray-50">Marketing Strategy</p>
         </div>
         <div>
           <Counter end={63} suffix="%" />
-          <p className="text-gray-600">Reduction in Cost Per Lead</p>
+          <p className="text-gray-50">Reduction in Cost Per Lead</p>
         </div>
         <div>
           <Counter end={490} suffix="%" />
-          <p className="text-gray-600">Increase in Reach</p>
+          <p className="text-gray-50">Increase in Reach</p>
         </div>
 
         {/* Bottom Row */}
         <div>
           <Counter end={113} suffix="+ Cr" />
-          <p className="text-gray-600">Revenue Generated</p>
+          <p className="text-gray-50">Revenue Generated</p>
         </div>
         <div>
           <Counter end={9} suffix="M" />
-          <p className="text-gray-600">Reach achieved till date</p>
+          <p className="text-gray-50">Reach achieved till date</p>
         </div>
         <div>
           <Counter end={60} suffix="+ Cr" />
-          <p className="text-gray-600">Ad spends managed</p>
+          <p className="text-gray-50">Ad spends managed</p>
         </div>
         <div>
           <Counter end={1} suffix="M" />
-          <p className="text-gray-600">Profile Visits Generated</p>
+          <p className="text-gray-50">Profile Visits Generated</p>
         </div>
       </div>
     </div>

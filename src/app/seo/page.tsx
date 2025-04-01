@@ -1,15 +1,15 @@
 export const metadata = {
-  title: "Best SEO Services in Hyderabad | Trusted SEO Company | Bixeltek",
-  description:
-    "Boost your online presence with Bixeltek, a top SEO agency in Hyderabad. Our proven strategies help businesses dominate search results and drive organic growth.",
-  keywords:
-    "SEO services Hyderabad, Best SEO agency Hyderabad, Digital marketing Hyderabad, Local SEO Hyderabad, Google ranking services, Technical SEO, On-page SEO, Off-page SEO, E-commerce SEO, SEO expert Hyderabad, Increase website traffic, SEO consultant Hyderabad",
-  openGraph: {
-    title: "Bixeltek – Hyderabad’s Top SEO & Digital Marketing Agency",
+    title: "Best SEO Services in Hyderabad | Trusted SEO Company | Bixeltek",
     description:
-      "Bixeltek helps businesses rank higher on Google with expert SEO strategies. Get local, technical, and e-commerce SEO services for long-term online growth.",
-    type: "website",
-  },
+        "Boost your online presence with Bixeltek, a top SEO agency in Hyderabad. Our proven strategies help businesses dominate search results and drive organic growth.",
+    keywords:
+        "SEO services Hyderabad, Best SEO agency Hyderabad, Digital marketing Hyderabad, Local SEO Hyderabad, Google ranking services, Technical SEO, On-page SEO, Off-page SEO, E-commerce SEO, SEO expert Hyderabad, Increase website traffic, SEO consultant Hyderabad",
+    openGraph: {
+        title: " Best SEO Services in Hyderabad | Trusted SEO Company | Bixeltek",
+        description:
+            "Boost your online presence with Bixeltek, a top SEO agency in Hyderabad. Our proven strategies help businesses dominate search results and drive organic growth.",
+        type: "website",
+    },
 };
 
 
@@ -63,8 +63,8 @@ export default function Seo() {
 
     const faqs = [
         {
-            question: "How much does SEO cost in Hyderabad, and what factors affect pricing?",
-            answer: "The cost of SEO services in Hyderabad varies based on keyword competition, website size, and optimization level. We offer affordable SEO packages tailored to your business goals.",
+            question: "How much does SEO services cost in Hyderabad ?",
+            answer: "The cost of SEO services in Hyderabad varies based on keyword competition, website size, and optimization level. We offer affordable SEO packages tailored to your business goals. Typically our packeges start from 25,000 INR per month.",
         },
         {
             question: "Do you provide SEO services outside Hyderabad?",
@@ -105,7 +105,7 @@ export default function Seo() {
     ];
 
 
-   
+
     const items = [
         { text: "Measurable Goals", icon: <GrFlag />, description: "Set clear, achievable objectives that align with your business growth. Our SEO strategies focus on measurable success indicators, ensuring transparency and progress tracking." },
         { text: "Data-Driven Strategies", icon: <BsGraphUpArrow />, description: "Utilizing analytics and performance insights, we craft SEO plans backed by data. This ensures your website ranks higher and reaches the right audience effectively." },
@@ -115,48 +115,42 @@ export default function Seo() {
     const seoServices = [
         {
             title: 'Keyword Research',
-            description: 'Identify high-performing keywords to target your audience and increase visibility and rankings.',
+            description: 'Discover high-volume, low-competition keywords to improve SEO rankings, drive organic traffic, and target the right audience.',
             color: "bg-zinc-500"
         },
         {
             title: 'On-Page Optimization',
-            description: 'Optimize content, meta tags, headings, and structure to ensure your site ranks higher and is relevant to search queries.',
+            description: 'Optimize meta tags, headings, URLs, and content structure to boost search engine rankings and enhance user experience.',
             color: "bg-violet-400"
         },
         {
             title: 'Link Building',
-            description: 'Build quality backlinks to enhance domain authority and improve organic traffic, boosting your website credibility and rank.',
+            description: 'Earn high-quality, authoritative backlinks using white-hat SEO techniques to improve domain authority and organic search rankings.',
             color: "bg-green-500"
         },
         {
             title: 'Content Marketing',
-            description: 'Develop high-quality content tailored to your target audience to drive traffic, engage users, and support SEO goals.',
-
+            description: 'Create keyword-rich, engaging, and SEO-optimized content to increase website traffic, improve search rankings, and drive conversions.',
         },
         {
             title: 'Technical SEO',
-            description: 'Optimize the technical aspects of your website, including site speed, mobile responsiveness, and URL structure for better crawling and indexing.',
-
+            description: 'Optimize site speed, mobile-friendliness, structured data, and indexing to ensure search engines crawl and rank your site effectively.',
         },
         {
             title: 'Mobile Optimization',
-            description: 'Optimize your website for mobile users, improving load times, mobile responsiveness, and user experience across devices.',
-
+            description: 'Enhance mobile responsiveness, loading speed, and UX to improve mobile search rankings and reduce bounce rates.',
         },
         {
             title: 'Local SEO',
-            description: 'Enhance visibility in local search results through keyword optimization, local listings, and backlinks to attract local customers and increase rankings.',
-
+            description: 'Boost local search rankings with Google My Business optimization, geo-targeted keywords, citations, and customer reviews.',
         },
         {
             title: 'SEO Audits',
-            description: 'Conduct detailed SEO audits to assess your websites performance and find areas of improvement, ensuring your site follows SEO best practices.',
-
+            description: 'Conduct in-depth website SEO audits to identify and fix errors, enhance performance, and improve search engine rankings.',
         },
         {
             title: 'Conversion Rate Optimization (CRO)',
-            description: 'Increase website conversions using A/B testing and user data insights to optimize pages and drive higher user actions, such as purchases or sign-ups.',
-
+            description: 'Optimize landing pages, CTAs, and user journey using A/B testing to increase conversions, sales, and lead generation.',
         },
     ];
 
@@ -174,6 +168,9 @@ export default function Seo() {
                         <h1 className="mt-8 text-2xl font-normal text-white lg:text-6xl xl:text-6xl">
                             Bixeltek – A Premier SEO Agency in Hyderabad,India
                         </h1>
+                        <p className='text-base text-white/80 mt-4'>
+                            Ready to outshine the competition and drive consistent leads? Bixeltek is your trusted SEO company in Hyderabad, offering cutting-edge SEO services that propel your business to the top of Google’s search results. Let’s turn organic traffic into tangible growth.
+                        </p>
 
                         <div className="flex flex-col items-center justify-center px-8 mt-12 space-y-5 sm:space-y-0 sm:px-0 sm:space-x-5 sm:flex-row">
                             <div className="relative inline-flex items-center justify-center w-full sm:w-auto group">
@@ -292,28 +289,38 @@ export default function Seo() {
                     <div className="min-h-screen bg-black flex items-center justify-center px-0 md:px-4 py-10">
                         <div className="max-w-7xl w-full bg-black text-white rounded-xl shadow-md p-8 flex flex-col md:flex-row">
 
-                            <div className="w-full md:w-1/2 p-0 md:p-6">
-                                <h2 className="text-3xl md:text-5xl font-normal tracking-tight text-white mb-4 ">
-                                    What is <span className='text-[#6728cc]'>SEO</span> and how it impacts businesses?
+                            <div className="w-full md:w-1/2 p-0 md:py-6 md:px-3">
+                                <h2 className="text-3xl md:text-5xl font-normal font-sofiasanscondensed tracking-wide text-white mb-4 ">
+                                    Why Choose <span className='text-[#6728cc]'>Bixeltek</span> – Your Trusted SEO Company in Hyderabad?
                                 </h2>
 
-                                <p className="text-gray-300 relative  font-sans text-lg py-5 leading-relaxed">
-                                    Search Engine Optimization (SEO) is the practice of enhancing your website&apos;s visibility on search engines like Google. It ensures that your business appears in front of potential customers when they search for relevant services or products.
+                                <p className="text-gray-300 relative font-sans text-lg py-5 leading-relaxed">
+                                Ready to outshine the competition and drive consistent leads? Bixeltek is your trusted SEO company in Hyderabad, offering cutting-edge SEO services that propel your business to the top of Google&apos;s search results. Let&apos;s turn organic traffic into tangible growth.
                                 </p>
-                                <p className="text-gray-300 leading-relaxed font-sans text-lg">
-                                    Businesses with a strong SEO presence gain a competitive edge, reaching users organically without relying heavily on paid advertisements. Investing in SEO is a sustainable approach to long-term success in the digital landscape.
-                                </p>
-                                <div className='grid grid-cols-1 md:grid-cols-2 gap-y-5 pb-10 pt-10 uppercase text-white'>
-                                    <h3 className='font-light text-[17px] tracking-wide flex'><VscDebugBreakpointDataUnverified className="text-[#670ef7] mx-2 mt-1" />  Proven Track Record</h3>
-                                    <h3 className='font-light text-[17px] tracking-wide flex'><VscDebugBreakpointDataUnverified className="text-[#670ef7] mx-2 mt-1" />Customized Strategies</h3>
-                                    <h3 className='font-light text-[17px] tracking-wide  flex'><VscDebugBreakpointDataUnverified className="text-[#670ef7] mx-2 mt-1" />Expert Team</h3>
-                                    <h3 className='font-light text-[17px] tracking-wide flex'><VscDebugBreakpointDataUnverified className="text-[#670ef7] mx-2 mt-1" />Data-Driven Insights</h3>
-                                </div>
 
+                                <div className='grid grid-cols-1 gap-y-7 pb-10 pt-5  text-white'>
+                                    <h3 className='font-light text-[16px] tracking-wide flex'>
+                                        <VscDebugBreakpointDataUnverified size={30} className="text-[#670ef7] mr-2 mt-1" />
+                                        Proven Local Expertise – We optimize your SEO for Hyderabad&apos;s unique market, ensuring high-intent local audiences find your business.
+                                    </h3>
+                                    <h3 className='font-light text-[16px] tracking-wide flex'>
+                                        <VscDebugBreakpointDataUnverified size={30} className="text-[#670ef7] mr-2 mt-1" />
+                                        Data-Driven Methodology – Our SEO strategies evolve with keyword analytics, competitor insights, and real-time performance tracking.
+                                    </h3>
+                                    <h3 className='font-light text-[16px] tracking-wide flex'>
+                                        <VscDebugBreakpointDataUnverified size={30} className="text-[#670ef7] mr-2 mt-1" />
+                                        Transparent & Collaborative – We provide clear reporting, regular updates, and involve you in key SEO strategy decisions.
+                                    </h3>
+                                    <h3 className='font-light text-[16px] tracking-wide flex'>
+                                        <VscDebugBreakpointDataUnverified size={30} className="text-[#670ef7] mr-2 mt-1" />
+                                        Cutting-Edge Tools – Advanced keyword research, auditing software, and optimization ensure peak SEO performance.
+                                    </h3>
+                                </div>
                             </div>
 
+
                             {/* Right Section: Contact Form */}
-                            <ContactFrom />                   
+                            <ContactFrom />
                         </div>
                     </div>
                 </section>
@@ -327,35 +334,35 @@ export default function Seo() {
                             <h2
                                 className="font-manrope text-2xl text-white font-semibold mb-5 lg:mb-2"
                             >
-                                Dominate "Near Me" Searches in Hyderabad with Local SEO
+                                Dominate &quot;Near Me&quot; Searches in Hyderabad with Local SEO
                             </h2>
                             <p className="text-xl text-indigo-100">
-                            Capture high-intent customers who are actively searching for services nearby. Our targeted local SEO ensures your business appears at the top of “near me” results, driving foot traffic and real leads in Hyderabad.
+                                Capture high-intent customers who are actively searching for services nearby. Our targeted local SEO ensures your business appears at the top of “near me” results, driving foot traffic and real leads in Hyderabad.
                             </p>
                         </div>
                         <div className='w-1/4 flex justify-end'>
-                        <a
-                            href="#"
-                            className="flex w-fit items-center text-center gap-2 bg-white rounded-full shadow-sm text-lg text-indigo-600 font-semibold py-4 px-10 transition-all duration-500"
-                        >Get In Touch
-                            <svg
-                                width="19"
-                                height="14"
-                                viewBox="0 0 19 14"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M1.75 7L16.4167 7M11.8333 12.5L16.6852 7.64818C16.9907 7.34263 17.1435 7.18985 17.1435 7C17.1435 6.81015 16.9907 6.65737 16.6852 6.35182L11.8333 1.5"
-                                    stroke="#4F46E5"
-                                    stroke-width="2.4"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                            </svg>
-                        </a>
+                            <a
+                                href="#"
+                                className="flex w-fit items-center text-center gap-2 bg-white rounded-full shadow-sm text-lg text-indigo-600 font-semibold py-4 px-10 transition-all duration-500"
+                            >Get In Touch
+                                <svg
+                                    width="19"
+                                    height="14"
+                                    viewBox="0 0 19 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1.75 7L16.4167 7M11.8333 12.5L16.6852 7.64818C16.9907 7.34263 17.1435 7.18985 17.1435 7C17.1435 6.81015 16.9907 6.65737 16.6852 6.35182L11.8333 1.5"
+                                        stroke="#4F46E5"
+                                        stroke-width="2.4"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
                         </div>
-                       
+
                     </div>
                 </div>
             </section>
@@ -447,9 +454,9 @@ export default function Seo() {
 
             <section className='py-24'>
                 <div>
-                    <div className=' max-w-[90%] mx-auto'>
-                        <h2 className='text-white text-5xl mb-3 font-semibold font-poppins'>Our SEO Services</h2>
-                        <p className='text-gray-100 text-[17px] tracking-wider'>Increase Your Search Rankings and Get Discovered More Online</p>
+                    <div className=' max-w-[90%] mx-auto mb-5 text-center'>
+                        <h2 className='text-white text-5xl font-sofiasanscondensed mb-3 font-semibold '>Our Comprehensive SEO Services in Hyderabad</h2>
+                        <p className='text-gray-100 text-[17px] tracking-wider max-w-3xl mx-auto'>We offer a full suite of strategies and solutions, meticulously designed to propel your website above the competition. Each service aims to improve your online presence, boost conversions, and ensure long-term digital growth.</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 max-w-[90%] mx-auto mt-10">
                         {seoServices.map((service, index) => (
@@ -536,11 +543,11 @@ export default function Seo() {
                         {industries.map((industry, index) => (
                             <div key={index} className="flex items-center text-lg text-white">
                                 <span className="text-white text-xl inline-block  mr-3">{industry.icon}</span>
-                                <h2 className='font-poppins text-xs md:text-sm'>{industry.name}&nbsp;SEO</h2>
+                                <h2 className='font-poppins text-xs md:text-sm'>SEO for {industry.name}</h2>
                             </div>
                         ))}
                     </div>
-                    <button className="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
+                    <button className=" mt-6 md:mt-8 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
                         Learn More
                     </button>
                 </div>
@@ -604,8 +611,8 @@ export default function Seo() {
                         </a>
                     </div>
                 </div>
-            </section>      
-            <DarkFaqSection faqs={faqs}/>
+            </section>
+            <DarkFaqSection faqs={faqs} />
         </>
     );
 }

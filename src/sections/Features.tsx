@@ -86,6 +86,7 @@ const BentoGrid = () => {
   return (
     <>
       <section className="pt-40 pb-20">
+        <h2 className="text-6xl font-semibold font-sofiasanscondensed mb-14 text-center text-white">Digital Marketing Services in Hyderabad, India</h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 p-8 mx-0 md:mx-10">
           {/* Text Carousel Card */}
           <div className="relative  mx-auto p-8 rounded-3xl bg-gradient-to-r from-[#3b0764] to-[#240046] text-white shadow-lg overflow-hidden">
