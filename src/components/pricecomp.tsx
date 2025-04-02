@@ -10,9 +10,30 @@ const PricingTable = () => {
     { category: "Sharing of all tracking codes", plans: [true, true, true] },
     { category: "Ad group & campaign optimization", plans: [true, true, true] },
     { category: "Reports", header: true },
-    { category: "Weekly Reports", includesMetrics: true },
-    { category: "Fortnightly Reports", includesMetrics: true },
-    { category: "Monthly Reports", includesMetrics: true },
+    { 
+      category: "Weekly Reports", 
+      plans: [
+        ["Impressions", "Clicks", "CPC", "CTR", "Conversion Rate", "Cost Per Conversion", "ROAS"],
+        ["Impressions", "Clicks", "CPC", "CTR", "Conversion Rate", "Cost Per Conversion", "ROAS"],
+        ["Impressions", "Clicks", "CPC", "CTR", "Conversion Rate", "Cost Per Conversion", "ROAS"]
+      ] 
+    },
+    { 
+      category: "Fortnightly Reports", 
+      plans: [
+        ["Impressions", "Clicks", "CPC", "CTR", "Conversion Rate", "Cost Per Conversion", "ROAS"],
+        ["Impressions", "Clicks", "CPC", "CTR", "Conversion Rate", "Cost Per Conversion", "ROAS"],
+        ["Impressions", "Clicks", "CPC", "CTR", "Conversion Rate", "Cost Per Conversion", "ROAS"]
+      ] 
+    },
+    { 
+      category: "Monthly Reports", 
+      plans: [
+        ["Impressions", "Clicks", "CPC", "CTR", "Conversion Rate", "Cost Per Conversion", "ROAS"],
+        ["Impressions", "Clicks", "CPC", "CTR", "Conversion Rate", "Cost Per Conversion", "ROAS"],
+        ["Impressions", "Clicks", "CPC", "CTR", "Conversion Rate", "Cost Per Conversion", "ROAS"]
+      ] 
+    },
     { category: "Revenue Channel Wise", plans: [true, true, true] },
     { category: "Strategy for Coming Month/Quarter", plans: [true, true, true] },
     { category: "Creative", header: true },
@@ -20,8 +41,6 @@ const PricingTable = () => {
     { category: "Statics", plans: ["₹2,000 + GST", "₹2,000 + GST", "₹2,000 + GST"] },
     { category: "Videos*", plans: ["₹3,500 + GST", "₹3,500 + GST", "₹3,500 + GST"] },
   ];
-
-  const reportMetrics = ["Impressions", "Clicks", "CPC", "CTR", "Conversion Rate", "Cost Per Conversion", "ROAS"];
 
   return (
     <section className="overflow-x-auto p-4">
@@ -38,33 +57,32 @@ const PricingTable = () => {
         <tbody>
           {data.map((item, index) => (
             item.header ? (
-              <tr key={index} className="bg-transparent text-white font-semibold">
-                <td colSpan={4} className="p-3 text-left text-purple-500 font-sofiasanscondensed text-2xl">{item.category}</td>
+              <tr key={index} className="text-white font-semibold">
+                <td colSpan={4} className="p-3 text-left bg-white rounded-2xl text-purple-500 font-sofiasanscondensed text-2xl">{item.category}</td>
               </tr>
             ) : (
-              <>
-                <tr key={index} className="text-white text-lg font-sans">
-                  <td className="p-3">{item.category}</td>
-                  {item.plans && item.plans.map((plan, i) => (
+              <tr key={index} className="text-white border-b border-gray-700 text-lg font-sans">
+                <td className="p-3">{item.category}</td>
+                {item.plans ? (
+                  item.plans.map((plan, i) => (
                     <td key={i} className="p-3 text-center">
-                      <div className="flex justify-center items-center h-full">
-                        {plan === true ? <IoMdCheckmark className="text-blue-500 text-xl" /> : plan}
+                      <div className="flex items-center justify-center h-full min-h-[50px]">
+                        {Array.isArray(plan) ? (
+                          <div className="flex flex-col gap-1 text-center">
+                            {plan.map((metric, metricIndex) => (
+                              <span key={metricIndex} className="block">{metric}</span>
+                            ))}
+                          </div>
+                        ) : plan === true ? (
+                          <IoMdCheckmark className="text-blue-500 text-xl" />
+                        ) : (
+                          plan
+                        )}
                       </div>
                     </td>
-                  ))}
-                </tr>
-                
-                {/* Add Report Metrics below each plan column when applicable */}
-                {item.includesMetrics &&
-                  reportMetrics.map((metric, metricIndex) => (
-                    <tr key={`${index}-${metricIndex}`} className="text-white text-lg font-sans">
-                      <td className="p-3 pl-6"></td>
-                      <td className="p-3 text-center">{metric}</td>
-                      <td className="p-3 text-center">{metric}</td>
-                      <td className="p-3 text-center">{metric}</td>
-                    </tr>
-                  ))}
-              </>
+                  ))
+                ) : null}
+              </tr>
             )
           ))}
         </tbody>
