@@ -112,7 +112,7 @@ export const Header = () => {
                     <li><Link href="/seo" className="block py-2 px-4 hover:bg-gray-700 rounded">SEO</Link></li>
                     <li><Link href="/socialmedia" className="block py-2 px-4 hover:bg-gray-700 rounded">Social Media Management</Link></li>
                     <li><Link href="/web-design-services-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Web Development</Link></li>
-                    <li><Link href="/digitalmarketing" className="block py-2 px-4 hover:bg-gray-700 rounded">Digital Marketing</Link></li>
+                    {/* <li><Link href="/digitalmarketing" className="block py-2 px-4 hover:bg-gray-700 rounded">Digital Marketing</Link></li> */}
                   </motion.ul>
                 )}
               </li>
@@ -174,29 +174,29 @@ export const Header = () => {
                           </li>
                         </ul>
                         <ul>
-                          <li>
+                          {/* <li>
                             <Link href="/services/service2" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
                               <h3 className="text-lg font-semibold text-black">Youtube Ads Management</h3>
                               <p className="text-sm text-gray-500">Reach more audience with tailored video ads.</p>
                             </Link>
-                          </li>
+                          </li> */}
                           <li>
                             <Link href="/web-design-services-hyderabad" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
                               <h3 className="text-lg font-semibold text-black">Web Development</h3>
                               <p className="text-sm text-gray-500">Build scalable and modern web solutions.</p>
                             </Link>
                           </li>
-                          <li>
+                          {/* <li>
                             <Link href="/digitalmarketing" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
                               <h3 className="text-lg font-semibold text-black">Digital Marketing</h3>
                               <p className="text-sm text-gray-500">Comprehensive marketing strategies for growth.</p>
                             </Link>
-                          </li>
+                          </li> */}
                         </ul>
                       </div>
                     </div>
                     <div className="w-1/2 border-l border-gray-300 pl-6">
-                      <h3 className="text-lg font-semibold text-[#670ef7]">Case Studies</h3>
+                      <h3 className="text-lg font-semibold text-[#670ef7]">Case Studies <span className='text-red-600'>(Coming Soon)</span></h3>
                       <div className="grid grid-cols-2 gap-4">
                         <ul>
                           {posts.slice(0, Math.ceil(posts.length / 2)).map((post) => (

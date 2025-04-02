@@ -19,6 +19,7 @@ import pet from "@/assets/digital marketing for pet stores.jpg";
 import roofing from "@/assets/digital marketing for roofing industries.jpg";
 import { FaTooth, FaHospital, FaDog, FaGasPump, FaCar, FaBroom, FaGraduationCap, FaBuilding, FaTree, FaSeedling } from "react-icons/fa";
 import dental from "@/assets/digital marketing for health care practices.jpg";
+import { RiShoppingCartFill } from "react-icons/ri";
 import healthcare from "@/assets/digital marketing for health care practices.jpg";
 import lawncare from "@/assets/digital marketing for lawn care services.jpg";
 import blackcar from "@/assets/digital marketing for car detailers.jpg";
@@ -45,6 +46,7 @@ import Link from 'next/link';
         { name: "Real Estate", icon: <FaBuilding /> },
         { name: "Arborist & Tree Removal", icon: <FaTree /> },
         { name: "Lawn Care", icon: <FaSeedling /> },
+        { name: "E-commerce", icon: <RiShoppingCartFill /> },
     ];
 
 const faqs = [
@@ -144,9 +146,9 @@ export default function Home() {
                         Most businesses in Hyderabad waste <span className="font-bold">30–50%</span> of their Google Ads budget. Why? Poor targeting. Generic copy. No funnel. Or agencies who ‘set and forget’.
                         At <span className="text-purple-200 font-bold">Bixeltek</span>, we fix all that — and make every click count.
                     </p>
-                    <p className="mt-4 text-sm md:text-lg xl:text-lg leading-7 max-w-4xl mx-auto">
+                    {/* <p className="mt-4 text-sm md:text-lg xl:text-lg leading-7 max-w-4xl mx-auto">
                         We don&apos;t just manage ads. We unlock growth. And we do it with precision.
-                    </p>
+                    </p> */}
 
                     {/* CTA Button */}
                     <button className="mt-8 bg-transparent text-white font-medium  rounded-lg text-sm md:text-lg xl:text-xl ">
@@ -205,8 +207,11 @@ export default function Home() {
             </section>
             <section className="max-w-6xl mx-auto pb-20 mt-20">
                 {/* Heading */}
-                <h2 className="text-3xl font-sofiasanscondensed font-bold text-black text-center mb-14 md:text-5xl">
+                <h2 className="text-3xl font-sofiasanscondensed font-bold text-black text-center mb-1 md:text-5xl">
                     What You Get When You Work With Us
+                </h2>
+                <h2 className="text-3xl font-sofiasanscondensed font-bold text-black text-center mb-14 md:text-4xl">
+                    We are A certified <Link href={'https://www.google.com/partners/agency?id=2188074075'} className='text-purple-700 '>Google Partner Agency</Link> 
                 </h2>
 
                 {/* Feature Grid */}
@@ -355,6 +360,9 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            <section>
+                <AdsFailureSection />
+            </section>
             <section className="pt-2">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div
@@ -405,7 +413,6 @@ export default function Home() {
                             Maximize your ad performance with our streamlined  4-step process.
                         </p>
                     </div>
-
                     <ul className="mx-auto mt-12 grid max-w-md grid-cols-1 gap-10 sm:mt-16 lg:mt-20 lg:max-w-7xl lg:grid-cols-4">
                         <li className="flex-start group relative flex lg:flex-col">
                             <span className="absolute left-[18px] top-14 h-[calc(100%_-_32px)] w-px bg-gray-300 lg:right-0 lg:left-auto lg:top-[18px] lg:h-px lg:w-[calc(100%_-_72px)]" aria-hidden="true"></span>
@@ -541,8 +548,6 @@ export default function Home() {
 
             </div>
 
-
-
             <section className='bg-white mb-20'>
                 <div className='flex flex-col'>
                     <h2 className='text-black ml-24 text-4xl md:text-6xl px-6 mb-12 font-semibold font-sofiasanscondensed'>What we do</h2>
@@ -632,8 +637,8 @@ export default function Home() {
             <section className='w-full flex flex-wrap max-w-[90%] pt-20 pb-32 mx-auto lg:flex-nowrap overflow-y-hidden items-center'>
                 {/* Left Content Section */}
                 <div className='w-full lg:w-3/5 px-1 md:pl-8 md:pr-32  py-10 lg:py-14'>
-                    <h2 className="text-4xl md:text-5xl xl:text-6xl font-semibold text-gray-800 font-sofiasanscondensed ">
-                        Proven Results Across <span className='text-purple-500'>Diverse Industries</span>
+                    <h2 className="text-4xl md:text-5xl xl:text-5xl font-semibold text-gray-800 font-sofiasanscondensed ">
+                        Proven Google Ads Results Across <br /><span className='text-purple-500'>Diverse Industries</span>
                     </h2>
                     <p className="mt-4 text-sm md:text-lg text-gray-800">
                         Our expertise spans multiple industries, helping businesses achieve growth through data-driven strategies and
@@ -673,15 +678,10 @@ export default function Home() {
                 </div>
             </section>
             <section>
-                <AdsFailureSection />
-            </section>
-
-
-            <section>
                 <div className="bg-white flex flex-col pt-10 pb-20 items-center">
                     <div className="text-center flex flex-col max-w-5xl">
                         <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">
-                            Maximize Every Click with Our Proven Strategies
+                            Maximize Leads, Sales and Conversions with Our Proven Google Ads Strategies
                         </h2>
                         <p className="text-sm md:text-lg text-gray-700 py-10 max-w-[80%] mx-auto md:max-w-full font-sans">
                             We focus on making your ad spend count by combining precision, creativity, and data-driven insights. Here&apos;s how we transform your campaigns into performance powerhouses:
@@ -691,7 +691,7 @@ export default function Home() {
                         <HoverDevCards />
                     </div>
                     <Link href='#'>
-                        <p className='font-semibold text-lg text-center group'>See Our CaseStudies <i className="fa fa-arrow-right ml-1 rotate-[-45deg] group-hover:rotate-[0deg] transition-all" aria-hidden="true"></i></p>
+                        <p className='font-semibold text-lg text-center group'>Read Our Case-Studies (Coming Soon) <i className="fa fa-arrow-right ml-1 rotate-[-45deg] group-hover:rotate-[0deg] transition-all" aria-hidden="true"></i></p>
                     </Link>
                 </div>
             </section>

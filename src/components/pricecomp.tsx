@@ -10,9 +10,9 @@ const PricingTable = () => {
     { category: "Sharing of all tracking codes", plans: [true, true, true] },
     { category: "Ad group & campaign optimization", plans: [true, true, true] },
     { category: "Reports", header: true },
-    { category: "Weekly Reports", plans: [true, true, true], includesMetrics: true },
-    { category: "Fortnightly Reports", plans: [true, true, true], includesMetrics: true },
-    { category: "Monthly Reports", plans: [true, true, true], includesMetrics: true },
+    { category: "Weekly Reports", includesMetrics: true },
+    { category: "Fortnightly Reports", includesMetrics: true },
+    { category: "Monthly Reports", includesMetrics: true },
     { category: "Revenue Channel Wise", plans: [true, true, true] },
     { category: "Strategy for Coming Month/Quarter", plans: [true, true, true] },
     { category: "Creative", header: true },
@@ -39,7 +39,7 @@ const PricingTable = () => {
           {data.map((item, index) => (
             item.header ? (
               <tr key={index} className="bg-transparent text-white font-semibold">
-                <td colSpan={4} className="p-3 text-left font-montaga text-3xl">{item.category}</td>
+                <td colSpan={4} className="p-3 text-left text-purple-500 font-sofiasanscondensed text-2xl">{item.category}</td>
               </tr>
             ) : (
               <>
@@ -60,8 +60,8 @@ const PricingTable = () => {
                     <tr key={`${index}-${metricIndex}`} className="text-white text-lg font-sans">
                       <td className="p-3 pl-6"></td>
                       <td className="p-3 text-center">{metric}</td>
-                      <td className="p-3 text-center">✔</td>
-                      <td className="p-3 text-center">✔</td>
+                      <td className="p-3 text-center">{metric}</td>
+                      <td className="p-3 text-center">{metric}</td>
                     </tr>
                   ))}
               </>

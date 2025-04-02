@@ -72,7 +72,7 @@ const AdsFailureSection = () => {
                         <thead>
                             <tr className="border-b border-black bg-purple-800 text-white">
                                 <th className="py-4 text-lg font-semibold text-left pl-5">Common Failures</th>
-                                <th className="py-4 text-lg font-semibold text-left pl-5">Our Promise</th>
+                                <th className="py-4 text-lg font-semibold text-left pl-5">Our Process</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -97,9 +97,9 @@ const AdsFailureSection = () => {
                 {/* Promise Section */}
                 <div className="mt-12 p-6 bg-white">
                     {/* Heading */}
-                    <h3 className="text-4xl font-sofiasanscondensed font-semibold mb-4 text-center">
-                        Our Promise: And What We Do Differently
-                    </h3>
+                    <h2 className="text-4xl font-sofiasanscondensed capitalize font-semibold mb-4 text-center">
+                        What we do different from Other Google Adwords company
+                    </h2>
                     <p className="mb-6 text-center max-w-5xl mx-auto text-lg">
                         We don&apos;t just run your ads — we engineer them to produce measurable leads and ROI,
                         with complete transparency and a local strategy tailored to Hyderabad&apos;s markets.
