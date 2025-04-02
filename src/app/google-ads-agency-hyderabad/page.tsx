@@ -13,6 +13,7 @@ import {
     FiGlobe,
     FiMonitor
 } from "react-icons/fi";
+import AdsFailureSection from '@/components/GaSection2';
 import Image from 'next/image';
 import pet from "@/assets/digital marketing for pet stores.jpg";
 import roofing from "@/assets/digital marketing for roofing industries.jpg";
@@ -232,7 +233,7 @@ export default function Home() {
                         <div>
                             <h3 className="text-xl font-bold text-black">Local Audience & Geo Targeting</h3>
                             <p className="mt-2 leading-relaxed">
-                                We understand Hyderabad’s buyer behavior—down to the pin code level.
+                                We understand Hyderabad&apos;s buyer behavior—down to the pin code level.
                             </p>
                         </div>
                     </div>
@@ -245,7 +246,7 @@ export default function Home() {
                         <div>
                             <h3 className="text-xl font-bold text-black">Transparent Weekly Reporting</h3>
                             <p className="mt-2 leading-relaxed">
-                                Get real-time insights on performance—know exactly what’s working.
+                                Get real-time insights on performance—know exactly what&apos;s working.
                             </p>
                         </div>
                     </div>
@@ -258,7 +259,7 @@ export default function Home() {
                         <div>
                             <h3 className="text-xl font-bold text-black">Landing Page & Conversion Optimization</h3>
                             <p className="mt-2 leading-relaxed">
-                                We don’t stop at ads—we optimize your landing pages for higher conversions.
+                                We don&apos;t stop at ads—we optimize your landing pages for higher conversions.
                             </p>
                         </div>
                     </div>
@@ -445,7 +446,6 @@ export default function Home() {
                                 <h4 className="mt-2 text-base text-gray-700">Get clear, data-driven insights with detailed reports on conversions, click-through rates, and overall effectiveness.</h4>
                             </div>
                         </li>
-
                     </ul>
                 </div>
             </section>
@@ -671,6 +671,9 @@ export default function Home() {
                         <Image src={blackcar} alt='automobiles' className='rounded-xl'></Image>
                     </div>
                 </div>
+            </section>
+            <section>
+                <AdsFailureSection />
             </section>
 
 
