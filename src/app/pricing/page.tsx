@@ -10,16 +10,16 @@ const Pricing = () => {
 
 <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-    <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Pricing</h2>
-    <p className="mt-1 text-gray-600 dark:text-neutral-400">Whatever your status, our offers evolve according to your needs.</p>
+    <h2 className="text-2xl font-bold md:text-4xl md:leading-tight text-white">Pricing</h2>
+    <p className="mt-1 text-neutral-400">Whatever your status, our offers evolve according to your needs.</p>
   </div>
 
   
 
 
   <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:items-center">
-  <div className="flex flex-col border border-gray-200 text-center rounded-xl p-8 dark:border-neutral-800">
-      <h4 className="font-medium text-lg text-gray-800 dark:text-neutral-200">Scope of Work</h4>
+  <div className="flex flex-col border  text-center rounded-xl p-8 border-neutral-800">
+      <h4 className="font-medium text-lg text-neutral-200">Scope of Work</h4>
       <span className="mt-7 font-bold text-3xl font-sans text-gray-800 dark:text-neutral-200">Pricing</span>
       <p className="mt-2 text-sm text-gray-500 dark:text-neutral-500">Transparent and scalable pricing</p>
       
