@@ -118,7 +118,7 @@ export const Header = () => {
               </li>
               <li><Link href="/industries" className="block py-2 px-4 hover:bg-purple-600 rounded">Industries</Link></li>
               <li><Link href="/" className="block py-2 px-4 hover:bg-purple-600 rounded">Case Studies</Link></li>
-              <li><Link href="/blog" className="block py-2 px-4 hover:bg-purple-600 rounded">Blog</Link></li>
+              <li><Link href="/" className="block py-2 px-4 hover:bg-purple-600 rounded">Blog</Link></li>
               <li><Link href="/about" className="block py-2 px-4 hover:bg-purple-600 rounded">About Us</Link></li>
             </ul>
           </nav>
