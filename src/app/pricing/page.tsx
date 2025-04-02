@@ -69,29 +69,7 @@ const Pricing = () => {
     All the basics for starting a new business
   </p>
 
-  <ul className="mt-7 space-y-2.5 text-sm">
-    <li className="flex gap-x-2">
-      <svg className="shrink-0 mt-0.5 size-4 text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="20 6 9 17 4 12"/>
-      </svg>
-      <span className="text-neutral-400">2 users</span>
-    </li>
-
-    <li className="flex gap-x-2">
-      <svg className="shrink-0 mt-0.5 size-4 text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="20 6 9 17 4 12"/>
-      </svg>
-      <span className="text-neutral-400">Plan features</span>
-    </li>
-
-    <li className="flex gap-x-2">
-      <svg className="shrink-0 mt-0.5 size-4 text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="20 6 9 17 4 12"/>
-      </svg>
-      <span className="text-neutral-400">Product support</span>
-    </li>
-  </ul>
-
+ 
   <a className="mt-5 py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
     Get Started
   </a>
@@ -105,7 +83,7 @@ const Pricing = () => {
     <span className="text-sm font-medium text-neutral-500"> +18% GST</span>
   </div>
 
-  <div className="mt-4 font-bold text-2xl font-sans text-gray-800 dark:text-neutral-200">
+  <div className="mt-4 font-bold text-2xl font-sans text-neutral-200">
     <span className="block text-lg font-medium">Monthly Fee</span>
     <span className="font-bold text-2xl ">₹</span>80,000
     <span className="text-sm font-medium text-neutral-500"> +18% GST</span>
@@ -113,22 +91,7 @@ const Pricing = () => {
 
   <p className="mt-2 text-sm text-neutral-500">Everything you need for a growing business</p>
 
-  <ul className="mt-7 space-y-2.5 text-sm">
-    <li className="flex gap-x-2">
-      <svg className="shrink-0 mt-0.5 size-4 text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-      <span className="text-neutral-400">5 users</span>
-    </li>
-
-    <li className="flex gap-x-2">
-      <svg className="shrink-0 mt-0.5 size-4 text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-      <span className="text-neutral-400">Plan features</span>
-    </li>
-
-    <li className="flex gap-x-2">
-      <svg className="shrink-0 mt-0.5 size-4 text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-      <span className="text-neutral-400">Product support</span>
-    </li>
-  </ul>
+ 
 
   <a className="mt-5 py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border  shadow-sm disabled:opacity-50 disabled:pointer-events-none focus:outline-none  bg-yellow-600 border-neutral-700 text-neutral-50 hover:bg-yellow-600 focus:bg-neutral-800" href="#">
     Get Started
