@@ -7,7 +7,7 @@ import { IoCheckmarkOutline } from "react-icons/io5";
 export default function GaHero() {
     return (
         <section>
-            <div className="relative mt-[-90px]  isolate lg:mt-[-150px] mb-[0px] overflow-hidden bg-black h-[100vh] md:h-[100vh] lg:h-[105vh] xl:h-[105vh]  sm:h-[80vh]  flex items-center justify-center">
+            <div className="relative mt-[-90px]  isolate lg:mt-[-150px] mb-[0px] overflow-hidden bg-black h-[100vh] md:h-[100vh] lg:h-[105vh] xl:h-[105vh]  sm:h-[120vh]  flex items-center justify-center">
                 <svg
                     className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
                     aria-hidden="true">
@@ -19,7 +19,7 @@ export default function GaHero() {
                     <rect width="100%" height="100%" fill="url(#hero-pattern)"></rect>
                 </svg>
                 <motion.div
-                    className="absolute right-0 bottom-[-100px] z-10"
+                    className="absolute right-0 bottom-[-140px] md:bottom-[-120px] z-10"
                     animate={{ y: [-20, 20, -20], x: [-40, 40, -40] }}
                     transition={{
                         duration: 3,
@@ -40,22 +40,22 @@ export default function GaHero() {
                         }}
                     ></div>
                 </div>
-                <div className="max-w-full px-1 text-center justify-center mb-[-120px] lg:max-w-5xl xl:max-w-7xl z-30">
-                    <h1 className="text-2xl font-sofiasanscondensed font-bold tracking-normal text-white md:text-4xl xl:text-7xl">
+                <div className="max-w-full px-1 text-center justify-center mb-[-10px] lg:mb-[-120px] lg:max-w-5xl xl:max-w-7xl z-30">
+                    <h1 className="text-4xl font-sofiasanscondensed font-bold tracking-normal text-white md:text-4xl xl:text-7xl">
                         Hyderabad&apos;s Top Google Ads Agency <br />
-                        <span className="text-purple-500 px-1 leading-4">Delivering Real ROI, Not Just Clicks</span>
+                        <span className="text-purple-500 px-1 text-2xl md:text-4xl leading-4">Delivering Real ROI, Not Just Clicks</span>
                     </h1>
-                    <p className="mt-10 max-w-3xl mx-auto text-sm lg:text-lg xl:text-xl leading-8 text-gray-200">
+                    <p className="mt-10 max-w-3xl mx-auto text-sm lg:text-lg xl:text-xl leading-0 md:leading-8 text-gray-200">
                         Get 2x–3x more qualified leads with smart, optimized Google Ads campaigns managed by certified professionals who understand your market.
                     </p>
 
                     {/* New Section with React Icons */}
-                    <div className="mt-6 flex items-center justify-center gap-4 text-white text-sm md:text-base">
-                        <div className="flex items-center border-r px-4 gap-2">
+                    <div className="mt-6 flex flex-col md:flex-row items-center justify-center gap-4 text-white text-sm md:text-base">
+                        <div className="flex items-center md:border-r md:px-4 gap-2">
                             <IoCheckmarkOutline className="text-purple-600 text-lg" />
                             Google Partner Certified
                         </div>
-                        <div className="flex items-center border-r pr-4 gap-2">
+                        <div className="flex items-center md:border-r md:pr-4 gap-2">
                             <IoCheckmarkOutline className="text-purple-600 text-lg" />
                             100+ Businesses Served
                         </div>

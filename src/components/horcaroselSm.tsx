@@ -29,7 +29,7 @@ export default function StackedCarousel() {
   };
 
   return (
-    <div className="relative flex flex-col rounded-tr-[70px] rounded-tl-[70px] overflow-hidden items-start w-full px-20 py-28 bg-white">
+    <div className="relative flex flex-col rounded-tr-[70px] rounded-tl-[70px] overflow-hidden items-start w-full px-3 md:px-20 py-28 bg-white">
       <h2 className="text-5xl font-sofiasanscondensed font-bold mb-4">
         Results Driven by <span className="text-purple-600">Bixeltek</span>
       </h2>
@@ -39,21 +39,28 @@ export default function StackedCarousel() {
       <div className="relative w-full max-w-4xl h-64">
         {cards.map((card, index) => (
           <motion.div
-            key={card.id}
-            initial={{ x: 0, scale: 1, zIndex: 1 }}
-            animate={{
-              x: index === 0 ? 0 : stackedIndex >= index ? 30*index : (index - stackedIndex) * (430+ index*2), 
-              scale: stackedIndex >= index ? 1 : 1,
-              zIndex: stackedIndex >= index ? 10 + index : index, 
-            }}
-            transition={{ duration: 0.5, type: "spring", stiffness: 80 }}
-            className={`absolute w-96 h-64 py-6 pl-12 pr-4 bg-white shadow-lg rounded-lg border-2 ${card.color} flex flex-col justify-center`}
-          >
+          key={card.id}
+          initial={{ x: 0, scale: 1, zIndex: 1 }}
+          animate={{
+            x: index === 0
+              ? 0
+              : stackedIndex >= index
+                ? (window.innerWidth < 768 ? 0 : 30 * index) // No gap on mobile, gap on larger screens
+                : (index - stackedIndex) * (window.innerWidth < 768 ? 350 : (430 + index * 2)), 
+            scale: stackedIndex >= index ? 1 : 1,
+            zIndex: stackedIndex >= index ? 10 + index : index, 
+          }}
+          transition={{ duration: 0.5, type: "spring", stiffness: 80 }}
+          className={`absolute w-[350px] md:w-96 h-64 py-6 pl-7 md:pl-12 pr-4 bg-white shadow-lg rounded-lg border-2 ${card.color} flex flex-col justify-center`}
+        >
+        
             <h3 className="text-2xl font-sofiasanscondensed font-bold">{card.title}</h3>
             <p className="mt-2 text-gray-900">{card.content}</p>
           </motion.div>
         ))}
       </div>
+
+
       <div className="flex gap-4 mt-10">
         <button
           className="p-3 bg-gray-800 text-white rounded-lg disabled:opacity-50"

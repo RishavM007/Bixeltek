@@ -330,17 +330,17 @@ export default function Seo() {
                     <div
                         className="lg:py-14 lg:px-20 p-10 rounded-2xl bg-gradient-to-r from-indigo-800 to-violet-800 flex items-center justify-between flex-col lg:flex-row"
                     >
-                        <div className="block text-center w-3/4 mb-5 lg:text-left lg:mb-0">
+                        <div className="block text-center w-full md:w-3/4 mb-5 lg:text-left lg:mb-0">
                             <h2
                                 className="font-manrope text-2xl text-white font-semibold mb-5 lg:mb-2"
                             >
                                 Dominate &quot;Near Me&quot; Searches in Hyderabad with Local SEO
                             </h2>
-                            <p className="text-xl text-indigo-100">
+                            <p className=" text-base md:text-xl text-indigo-100">
                                 Capture high-intent customers who are actively searching for services nearby. Our targeted local SEO ensures your business appears at the top of “near me” results, driving foot traffic and real leads in Hyderabad.
                             </p>
                         </div>
-                        <div className='w-1/4 flex justify-end'>
+                        <div className='w-full md:w-1/4 flex justify-center md:justify-end'>
                             <a
                                 href="#"
                                 className="flex w-fit items-center text-center gap-2 bg-white rounded-full shadow-sm text-lg text-indigo-600 font-semibold py-4 px-10 transition-all duration-500"
@@ -551,7 +551,6 @@ export default function Seo() {
                         Learn More
                     </button>
                 </div>
-
 
                 <div className="flex w-full lg:w-1/2 justify-center gap-4 p-1 md:p-10">
                     <div className='w-1/3 flex flex-col  items-center justify-center gap-3'>

@@ -49,7 +49,7 @@ export default function SocialMedia() {
     return (
         <>
             <section className="bg-black h-[90vh] text-white bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] py-[72px] relative overflow-hidden">
-                <div className="absolute hidden md:inline bottom-0 left-0 w-full z-30 h-40 bg-gradient-to-t from-black to-transparent"></div>
+                <div className="absolute bottom-0 left-0 w-full z-30 h-40 bg-gradient-to-t from-black to-transparent"></div>
                 <div className="container relative mx-auto px-4">
                     <div className="flex items-center justify-center">
                         <a href="#" className="border py-1 px-2 inline-flex gap-3 rounded-lg border-white/30">
@@ -64,17 +64,17 @@ export default function SocialMedia() {
                         <div className="relative w-full max-w-5xl px-4">
                             <Image src={cursorimg} alt="cursor" height={200} width={200} className="absolute right-[876px] top-[108px] hidden md:inline" />
                             <Image src={messageimage} alt="message" height={200} width={200} className="absolute left-[85%] top-[106px] hidden md:inline" />
-                            <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl font-bold tracking-tighter text-center">
+                            <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold tracking-tighter text-center">
                                 Top Social Media Marketing Agency in Hyderabad
                             </h1>
                         </div>
                     </div>
 
-                    <p className="text-center text-xl mt-8 max-w-[650px]  m-auto">
+                    <p className="text-center text-sm md:text-xl mt-8 max-w-[650px]  m-auto">
                         Partner with Hyderabad&apos;s premier social media management agency to drive growth, engagement, and conversions through targeted Instagram ads, Facebook ads, and more.
                     </p>
 
-                    <div className="flex justify-center mt-6">
+                    <div className="flex justify-center mt-6 mb-3">
                         <button className="bg-white text-black py-3 px-5 rounded-lg font-medium">Get a quote</button>
                     </div>
                 </div>
@@ -87,7 +87,7 @@ export default function SocialMedia() {
                 <div className="mx-auto flex max-w-md flex-col md:flex-row justify-center items-center rounded-lg lg:max-w-screen-xl lg:flex-row">
                     <div className="w-full md:w-1/2 px-4 pb-10 md:pb-0 lg:pr-24">
                         <h3 className="mb-2 text-purple-600">Why Choose Us?</h3>
-                        <h2 className="mb-5 text-3xl font-semibold"> Why Bixeltek is Hyderabad’s Trusted Social Media Marketing Agency</h2>
+                        <h2 className="mb-5 text-3xl font-semibold"> Why Bixeltek is Hyderabad&apos;s Trusted Social Media Marketing Agency</h2>
                         <p className="mb-16 text-sm md:text-lg text-gray-50">Bixeltek stands out as a leading social media management agency in Hyderabad, known for innovative strategies, exceptional creativity, and measurable results. Our specialized team delivers bespoke solutions designed to meet the unique needs of Hyderabad&apos;s dynamic market.</p>
                         <div className="mb-5 flex font-medium">
                             <div className="mr-4">
@@ -129,13 +129,13 @@ export default function SocialMedia() {
 
             <section className="py-20 w-full">
                 <div className="flex justify-center items-center">
-                    <h2 className="text-white text-5xl font-sofiasanscondensed">Our Specialized Social Media Management Services</h2>
+                    <h2 className="text-white text-center text-5xl font-sofiasanscondensed">Our Specialized Social Media Management Services</h2>
                 </div>
                 <div className="w-full flex flex-col md:flex-row py-24 bg-black">
                     <div className="relative w-full ml-auto mt-6 md:!mt-0 md:-mr-[68px] md:w-auto">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="relative z-10 rotate-90 mx-auto w-4/5 md:w-[300px] md:h-[300px]"
+                            className="relative z-10 rotate-90 mx-auto w-[90%] md:w-[300px] md:h-[300px]"
                             id="Layer_1"
                             viewBox="0 0 512 512"
                         >
@@ -157,8 +157,8 @@ export default function SocialMedia() {
                             <h1 className="text-xl mt-16 md:text-lg font-semibold text-[#FFCE1B] mx-2 dark:text-white md:my-2">
                                 Strategic Content<span className="text-[#FFCE1B]"> Creation & Management </span>
                             </h1>
-                            <p className="w-full md:text-sm text-md my-3 md:mt-6 line-clamp-4 md:line-clamp-none">
-                                Drive meaningful engagement through expertly curated content designed specifically for Hyderabad’s diverse audience.
+                            <p className="w-full md:text-sm text-sm my-3 md:mt-6 line-clamp-4 md:line-clamp-none">
+                                Drive meaningful engagement through expertly curated content designed specifically for Hyderabad&apos;s diverse audience.
                             </p>
                         </div>
                     </div>
@@ -166,7 +166,7 @@ export default function SocialMedia() {
                     <div className="relative w-full mt-6 md:w-auto md:mt-[141px] md:-mr-[21px]">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="relative z-10 rotate-90 mx-auto w-4/5 md:w-[300px] md:h-[300px]"
+                            className="relative z-10 rotate-90 mx-auto  w-[90%] md:w-[300px] md:h-[300px]"
                             id="Layer_1"
                             viewBox="0 0 512 512"
                         >
@@ -187,7 +187,7 @@ export default function SocialMedia() {
                             <h1 className="text-xl mt-16 md:text-lg font-semibold text-[#0096FF] mx-2 dark:text-white md:my-2">
                                 Instagram & Facebook  <span className="text-[#0096FF]">Ads Management </span>
                             </h1>
-                            <p className="w-full md:text-sm text-md my-3 md:mt-6 line-clamp-4 md:line-clamp-none">
+                            <p className="w-full md:text-sm text-sm my-3 md:mt-6 line-clamp-4 md:line-clamp-none">
                                 Expand your reach and attract quality leads with precision-targeted Instagram and Facebook advertising campaigns tailored to Hyderabad demographics.                        </p>
                         </div>
                     </div>
@@ -195,7 +195,7 @@ export default function SocialMedia() {
                     <div className="relative w-full mt-6 md:!mt-0 md:!w-auto md:-ml-[48px]">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="relative z-10 rotate-90 mx-auto w-4/5 md:w-[300px] md:h-[300px]"
+                            className="relative z-10 rotate-90 mx-auto  w-[90%] md:w-[300px] md:h-[300px]"
                             id="Layer_1"
                             viewBox="0 0 512 512"
                         >
@@ -217,7 +217,7 @@ export default function SocialMedia() {
                             <h1 className="text-2xl mt-16 md:text-xl font-semibold  dark:text-white md:my-2">
                                 Professional <span className="text-[#FF5733]">Photo & Video</span> Production
                             </h1>
-                            <p className="w-full md:text-sm text-md my-3 md:mt-6 line-clamp-4 md:line-clamp-none">
+                            <p className="w-full md:text-sm text-sm my-3 md:mt-6 line-clamp-4 md:line-clamp-none">
                                 Amplify your brand storytelling through professionally crafted photos and video content, resonating with Hyderabad consumers.
                             </p>
                         </div>
@@ -226,7 +226,7 @@ export default function SocialMedia() {
                     <div className="relative w-full mt-6 md:w-auto md:-ml-[302px] md:mt-[283px]">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="relative z-10 rotate-90 mx-auto w-4/5 md:w-[300px] md:h-[300px]"
+                            className="relative z-10 rotate-90 mx-auto  w-[95%] md:w-[300px] md:h-[300px]"
                             id="Layer_1"
                             viewBox="0 0 512 512"
                         >
@@ -246,7 +246,7 @@ export default function SocialMedia() {
                             <h1 className="text-2xl mt-16 md:text-xl font-semibold  dark:text-white md:my-2">
                                 Landing Page <span className="text-[#FF5733]">Development & Optimization</span>
                             </h1>
-                            <p className="w-full md:text-sm text-md my-3 md:mt-6 line-clamp-4 md:line-clamp-none">
+                            <p className="w-full md:text-sm text-sm my-3 md:mt-6 line-clamp-4 md:line-clamp-none">
                                 Maximize conversions with expertly designed landing pages aligned perfectly with your social media campaigns, optimized to capture leads effectively.</p>
                         </div>
                     </div>
@@ -254,7 +254,7 @@ export default function SocialMedia() {
                     <div className="relative w-full mt-6 md:w-auto md:mt-[141px] md:-ml-[68px]">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="relative z-10 rotate-90 mx-auto w-4/5 md:w-[300px] md:h-[300px]"
+                            className="relative z-10 rotate-90 mx-auto  w-[90%] md:w-[300px] md:h-[300px]"
                             id="Layer_1"
                             viewBox="0 0 512 512"
                         >
@@ -274,15 +274,15 @@ export default function SocialMedia() {
                             <h1 className="text-2xl mt-16 md:text-xl font-semibold text-emerald-400 dark:text-white md:my-2">
                                 Conversion Rate Optimization<span className="text-[#0096FF]"> (CRO)</span>
                             </h1>
-                            <p className="w-full md:text-sm text-md my-3 md:mt-6 line-clamp-4 md:line-clamp-none">
-                                Enhance your social media effectiveness by optimizing campaigns to deliver higher engagement, clicks, and sales conversions.                        </p>
+                            <p className="w-full md:text-sm text-sm my-3 md:mt-6 line-clamp-4 md:line-clamp-none">
+                                Enhance your social media effectiveness by optimizing campaigns to deliver higher engagement, clicks, and sales conversions.</p>
                         </div>
                     </div>
 
                     <div className="relative w-full mr-auto mt-6 md:!mt-0 md:w-auto md:-ml-[68px]">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="relative z-10 rotate-90 mx-auto w-4/5 md:w-[300px] md:h-[300px]"
+                            className="relative z-10 rotate-90 mx-auto  w-[90%] md:w-[300px] md:h-[300px]"
                             id="Layer_1"
                             viewBox="0 0 512 512"
                         >
@@ -302,7 +302,7 @@ export default function SocialMedia() {
                             <h1 className="text-2xl mt-16 md:text-xl font-semibold text-emerald-400 dark:text-white md:my-2">
                                 Comprehensive<span className="text-[#FFCE1B]"> Analytics & Reporting</span>
                             </h1>
-                            <p className="w-full md:text-sm text-md my-3 md:mt-6 line-clamp-4 md:line-clamp-none">
+                            <p className="w-full md:text-sm text-sm my-3 md:mt-6 line-clamp-4 md:line-clamp-none">
                                 Transparent monthly reporting offering actionable insights and data-driven recommendations to improve social media performance continuously.
                             </p>
                         </div>

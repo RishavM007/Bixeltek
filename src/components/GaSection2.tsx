@@ -71,21 +71,21 @@ const AdsFailureSection = () => {
                     <table className="w-full border-collapse">
                         <thead>
                             <tr className="border-b border-black bg-purple-800 text-white">
-                                <th className="py-4 text-lg font-semibold text-left pl-5">Common Failures</th>
-                                <th className="py-4 text-lg font-semibold text-left pl-5">Our Process</th>
+                                <th className="py-4 md:text-lg font-semibold text-left pl-5">Common Failures</th>
+                                <th className="py-4 md:text-lg font-semibold text-left pl-5">Our Process</th>
                             </tr>
                         </thead>
                         <tbody>
                             {failures.map((failure, index) => (
-                                <tr key={index} className=" group   transition-all">
+                                <tr key={index} className=" group transition-all">
                                     <td className="py-5 text-black border-b group-hover:border-purple-800 border-black text-left pl-5">
                                         <span className="flex items-center gap-2">
-                                            <RxCross2 className="text-red-500 text-lg" /> {failure}
+                                            <RxCross2 className="text-red-500 text-xs  md:text-lg" /> {failure}
                                         </span>
                                     </td>
                                     <td className="py-5 text-black border-b border-black group-hover:border-purple-800 text-left pl-5">
                                         <span className="flex items-center gap-2">
-                                            <IoCheckmarkOutline className="text-green-500 text-lg" /> {solutions[index]}
+                                            <IoCheckmarkOutline className="text-green-500 text-xs md:text-lg" /> {solutions[index]}
                                         </span>
                                     </td>
                                 </tr>

@@ -9,7 +9,7 @@ export const About = () => {
     const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
     return (
-        <section ref={sectionRef} className="py-16 px-6 md:px-16 bg-black">
+        <section ref={sectionRef} className="py-16 px-6 md:px-16 overflow-hidden bg-black">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
                 {/* Left Content */}
                 <motion.div
@@ -24,10 +24,10 @@ export const About = () => {
                     <h2 className="text-4xl font-bold text-gray-50 leading-tight">
                         We are a leading <br />Digital Marketing Agency
                     </h2>
-                    <p className="mt-4 text-gray-100 text-[16px] mr-16">
+                    <p className="mt-4 text-gray-100 text-[16px] md:mr-16">
                     Bixeltek is a performance-first digital marketing agency based in Hyderabad, helping businesses grow online with custom strategies that actually work.</p>
-                    <p className="py-2 text-gray-100 text-[16px] mr-16">We&apos;re not just marketers — we&apos;re your growth partners. Whether you need a high-converting website, better Google rankings, more leads through paid ads, or a stronger brand presence on social media — we bring creative thinking and data-driven execution under one roof. </p>
-                    <p className="text-gray-100 text-[16px] mr-16">Our team is Google-Certified, ROI-obsessed, and trusted by brands across India,</p>
+                    <p className="py-2 text-gray-100 text-[16px] md:mr-16">We&apos;re not just marketers — we&apos;re your growth partners. Whether you need a high-converting website, better Google rankings, more leads through paid ads, or a stronger brand presence on social media — we bring creative thinking and data-driven execution under one roof. </p>
+                    <p className="text-gray-100 text-[16px] md:mr-16">Our team is Google-Certified, ROI-obsessed, and trusted by brands across India,</p>
                     <div className="mt-4 md:mt-10 flex flex-col md:flex-row items-start md:items-center gap-4">
                         <motion.button
                             whileHover={{ scale: 1.1 }}
@@ -50,7 +50,7 @@ export const About = () => {
                     initial={{ opacity: 0, x: 50 }}
                     animate={isInView ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="md:w-1/2 mt-5 md:mt-20 relative bg-transparent"
+                    className="md:w-1/2 mt-2 md:mt-0 relative bg-transparent"
                 >
                     <Image src={image1} alt="Team" className="rounded-lg w-auto h-[350px] md:h-[400px]" />
                     <motion.a

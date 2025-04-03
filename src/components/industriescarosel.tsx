@@ -31,23 +31,23 @@ export default function CarouselSection(): JSX.Element {
     };
 
     return (
-        <section className="pt-0 pb-20  bg-white z-10 overflow-hidden">
+        <section className="pt-10 pb-20  bg-white z-10 overflow-hidden">
             <div className="w-full relative text-center text-white pb-10">
-                <h1 className="text-6xl xl:text-7xl font-bold mb-2">
+                <h1 className="text-5xl xl:text-7xl font-bold mb-2">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-600 to-gray-800">
                         INDUSTRIES WE
                     </span>
                 </h1>
-                <h1 className="text-6xl xl:text-7xl font-bold mb-4">
+                <h1 className="text-5xl xl:text-7xl font-bold mb-4">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
                         SERVE
                     </span>
                 </h1>
-                <p className="text-[16px] xl:text-lg text-gray-700 max-w-2xl mx-auto">
+                <p className="text-[16px] xl:text-lg text-gray-700 max-w-[90%] md:max-w-2xl mx-auto">
                     Discover the diverse industries we proudly cater to, offering innovative solutions to help you excel in your field.
                 </p>
             </div>
-            <div className="carousel-container pl-[700px] relative w-full overflow-hidden">
+            <div className="carousel-container md:pl-[700px] relative w-full overflow-hidden">
                 <div
                     className="carousel flex gap-6 px-8 w-max transform transition-transform duration-500"
                     style={{ transform: `translateX(${carouselOffset}px)` }}

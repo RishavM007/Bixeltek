@@ -9,14 +9,13 @@ import roofing from "@/assets/digital marketing for roofing industries.jpg";
 import dental from "@/assets/digital marketing for health care practices.jpg";
 import lawncare from "@/assets/digital marketing for lawn care services.jpg";
 import blackcar from "@/assets/digital marketing for car detailers.jpg";
+import { FaTooth, FaHospital, FaDog, FaGasPump, FaCar, FaBroom, FaGraduationCap, FaBuilding, FaTree } from "react-icons/fa";
 import { FaChartLine, FaCogs, FaUserTie, FaBullseye, FaMoneyBillWave, FaChartBar, FaSeedling, FaDatabase } from 'react-icons/fa';
 import healthcare from "@/assets/digital marketing for health care practices.jpg";
 import CarouselSection from "@/components/industriescarosel";
 
 import { RiLineChartLine, RiInstagramLine, RiCalendarEventLine, RiHeart2Line } from 'react-icons/ri';
 export default function Industries() {
-
-
 
   const industries = [
     { id: "healthcare", img: dental, text: "Healthcare" },
@@ -26,6 +25,18 @@ export default function Industries() {
     { id: "lawncare", img: lawncare, text: "Lawn Care" },
     { id: "pet", img: pet, text: "Pet Stores" },
     { id: "oil", img: oil, text: "Oil Refineries" },
+  ];
+  const industry = [
+    { name: "Dental", icon: <FaTooth /> },
+    { name: "Healthcare", icon: <FaHospital /> },
+    { name: "Pet Shops", icon: <FaDog /> },
+    { name: "Oil & Gas", icon: <FaGasPump /> },
+    { name: "Automobile", icon: <FaCar /> },
+    { name: "Roof Cleaning", icon: <FaBroom /> },
+    { name: "Education", icon: <FaGraduationCap /> },
+    { name: "Real Estate", icon: <FaBuilding /> },
+    { name: "Arborist & Tree Removal", icon: <FaTree /> },
+    { name: "Lawn Care", icon: <FaSeedling /> },
   ];
   const cards = [
     {
@@ -115,115 +126,63 @@ export default function Industries() {
         </div>
       </section>
 
-      <section>
-        <div className="relative pt-20 pb-32 max-w-[90%] mx-auto xl:max-w-full">
-          <div className="pt-16 pb-40 sm:pt-24 sm:pb-48 lg:pt-32 lg:pb-56">
-            <div className="relative mx-auto max-w-7xl flex flex-col lg:flex-row justify-between sm:px-6">
-              {/* Text Section */}
-              <div className="sm:max-w-lg">
-                <h1 className="text-4xl xl:text-[42px] font-bold tracking-tight text-white sm:text-6xl">
-                  Why Bixeltek?
-                </h1>
-                <p className="mt-4 text-lg xl:text-xl text-gray-100">
-                  <span className="text-fuchsia-500 font-bold italic">
-                    Are you ready to revolutionize your business?
-                  </span>{" "}
-                  At Bixeltek, we specialize in empowering industries like
-                  dentistry, automobile, landscaping, cleaning services,
-                  construction, real estate, and more. Our secret weapon? A
-                  strategic blend of Google Ads PPC, SEO wizardry, captivating
-                  social media management, and visually stunning web designs.
-                </p>
-                <Link
-                  href="/about"
-                  className="mt-6 inline-block rounded-md bg-black border border-fuchsia-600 py-3 px-8 text-center font-medium opacity-95 text-white hover:opacity-80"
-                >
-                  Know more about us
-                </Link>
+      <section className='w-full flex flex-wrap max-w-[90%] mx-auto my-20 lg:flex-nowrap overflow-y-hidden items-center'>
+        {/* Left Content Section */}
+        <div className='w-full lg:w-1/2 px-1 md:px-6 py-10 lg:py-14'>
+          <h2 className="text-4xl md:text-5xl font-semibold text-gray-800 font-sofiasanscondensed dark:text-white">
+            Proven Results Across <span className='text-purple-500'>Diverse Industries</span>
+          </h2>
+          <p className="mt-4 text-sm md:text-lg text-gray-600 dark:text-gray-300">
+            Our expertise spans multiple industries, helping businesses achieve growth through data-driven strategies and
+            innovative solutions. From technology and finance to healthcare and retail, we empower brands with actionable insights
+            and cutting-edge digital solutions.
+          </p>
+          <p className="mt-2 text-sm md:text-lg text-gray-600 dark:text-gray-300">
+            Explore how our tailored approach delivers measurable success, increasing engagement, conversions, and brand visibility
+            in a competitive landscape.
+          </p>
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {industry.map((industry, index) => (
+              <div key={index} className="flex items-center text-lg text-white">
+                <span className="text-white text-xl inline-block  mr-3">{industry.icon}</span>
+                <h2 className='font-poppins text-sm'>{industry.name}&nbsp;SEO</h2>
               </div>
-
-              {/* Image Grid Section */}
-              <div className="relative mt-10 lg:mt-0 lg:absolute translate-y-[-25%] lg:inset-y-0 lg:right-0 lg:w-2/3">
-                <div className="flex justify-center items-center lg:items-start lg:justify-end lg:space-x-6">
-                  {/* Column 1 */}
-                  <div className="grid grid-cols-1 gap-6">
-                    <div className="h-64 w-44 overflow-hidden rounded-lg">
-                      <Image
-                        src={healthcare}
-                        alt="digital marketing image for healthcare"
-                        className="h-full w-full object-center"
-                      />
-                    </div>
-                    <div className="h-64 w-44 overflow-hidden rounded-lg">
-                      <Image
-                        src={blackcar}
-                        alt="digital marketing image for automobiles"
-                        className="h-full w-full object-center"
-                      />
-                    </div>
-                  </div>
-                  {/* Column 2 */}
-                  <div className="grid grid-cols-1 gap-6 translate-y-[-16%]">
-                    <div className="h-64 w-44 overflow-hidden rounded-lg">
-                      <Image
-                        src={lawncare}
-                        alt="lawncare"
-                        className="h-full w-full object-center"
-                      />
-                    </div>
-                    <div className="h-64 w-44 overflow-hidden rounded-lg">
-                      <Image
-                        src={dental}
-                        alt="dental"
-                        className="h-full w-full object-center"
-                      />
-                    </div>
-                    <div className="h-64 w-44 overflow-hidden rounded-lg">
-                      <Image
-                        src={cleaningcomp}
-                        alt="cleaning"
-                        className="h-full w-full object-center"
-                      />
-                    </div>
-                  </div>
-                  {/* Column 3 */}
-                  <div className="grid grid-cols-1 gap-6">
-                    <div className="h-64 w-44 overflow-hidden rounded-lg">
-                      <Image
-                        src={pet}
-                        alt="digital marketing image for pet store"
-                        className="h-full w-full object-center"
-                      />
-                    </div>
-                    <div className="h-64 w-44 overflow-hidden rounded-lg">
-                      <Image
-                        src={oil}
-                        alt="digital marketing for oil company"
-                        className="h-full w-full object-center"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
+          </div>
+          <button className="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
+            Learn More
+          </button>
+        </div>
+        <div className="flex w-full lg:w-1/2 justify-center gap-4 p-1">
+          <div className='w-1/3 flex flex-col  items-center justify-center gap-3'>
+            <Image src={healthcare} alt='healthcare' className='rounded-xl'></Image>
+            <Image src={oil} alt='oil' className='rounded-xl'></Image>
+          </div>
+          <div className='w-1/3 flex flex-col gap-3'>
+            <Image src={pet} alt='pet' className='rounded-xl'></Image>
+            <Image src={roofing} alt='roofind' className='rounded-xl'></Image>
+            <Image src={dental} alt='dental' className='rounded-xl'></Image>
+          </div>
+          <div className='w-1/3 flex flex-col justify-center gap-3'>
+            <Image src={lawncare} alt='lawncare' className='rounded-xl'></Image>
+            <Image src={blackcar} alt='automobiles' className='rounded-xl'></Image>
           </div>
         </div>
       </section>
-
       <section className="max-w-[90%] xl:max-w-[80%] py-10 mx-auto">
-        <div className="py-10 px-10">
-          <h2 className="text-5xl font-semibold text-white mb-5">Why Choose Us?</h2>
-          <p className="text-lg xl:text-xl max-w-lg text-gray-100">
+        <div className="py-10  md:px-0 text-center">
+          <h2 className="text-4xl font-sofiasanscondensed md:text-5xl font-semibold text-white mb-5">Why Choose Us?</h2>
+          <p className="text-sm xl:text-xl max-w-xl mx-auto text-gray-100">
             Experience the unrivaled power of our proven methods that have catapulted countless businesses to new heights.
           </p>
         </div>
-        <div className="grid grid-cols-4 gap-4 justify-items-center items-center h-auto w-full bg-black text-white">
+        <div className="grid grid-cols-1  md:grid-cols-4 gap-4 justify-items-center items-center h-auto w-full bg-black text-white">
           {cards.map((card, index) => (
             <div
               key={index}
               className={`card-wrapper mx-4 my-1 h-[350px] w-[300px] bg-slate-800 rounded-lg shadow-lg transform transition-transform ${index < cards.length / 2
-                ? "translate-x-10" // Upper-row cards
-                : "-translate-x-10" // Bottom-row cards
+                ? "md:translate-x-10" // Upper-row cards
+                : "md:-translate-x-10" // Bottom-row cards
                 }`}
             >
               <div className="card-content flex flex-col items-center justify-start text-center p-4">
@@ -245,7 +204,7 @@ export default function Industries() {
         </div>
       </section>
 
-      <section className="flex relative flex-col md:flex-row items-center mx-auto justify-between bg-black text-white px-40 py-20">
+      <section className="flex relative flex-col md:flex-row items-center mx-auto justify-between bg-black text-white px-2 md:px-40 py-20">
         <motion.div
           className="absolute w-2 sm:w-3 md:w-3 h-[33px] bg-[#4285F4] top-0 right-0 origin-top"
           animate={{ scaleY: [0, 10, 0] }}
@@ -275,7 +234,7 @@ export default function Industries() {
 
         {/* Vertical Scaling (Left Side - Green) */}
         <motion.div
-          className="absolute left-0 w-2 origin-bottom bg-[#34A853]"
+          className="absolute left-0 bottom-0 w-2 origin-bottom bg-[#34A853]"
           initial={{ scaleY: 0 }}
           animate={{ scaleY: [0, 1, 0] }}
           transition={{

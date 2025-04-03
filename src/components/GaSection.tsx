@@ -66,7 +66,7 @@ export default function GaSection() {
 
                 <div className="w-full md:w-1/3  relative">
                     <motion.div
-                        className="absolute w-2 sm:w-3 md:w-3 h-20 bg-[#4285F4] top-0  left-0 origin-top"
+                        className="absolute w-2 sm:w-3 md:w-3 h-10 md:h-20 bg-[#4285F4] top-0  left-0 origin-top"
                         animate={{ scaleY: [0, 10, 0] }}
                         transition={{
                             duration: 8,

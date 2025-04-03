@@ -135,9 +135,9 @@ export default function Home() {
         <>
             <GaHero />
             <section className='pb-20'>
-                <div className="bg-gradient-to-t from-[#140d21] to-[#7028e4] mt-10 p-10 max-w-[80%] mx-auto rounded-xl text-white text-center">
+                <div className="bg-gradient-to-t from-[#140d21] to-[#7028e4] mt-10 p-10 max-w-[90%] md:max-w-[80%] mx-auto rounded-xl text-white text-center">
                     {/* Headline */}
-                    <h2 className="text-2xl font-sofiasanscondensed md:text-3xl xl:text-5xl font-bold">
+                    <h2 className="text-3xl font-sofiasanscondensed md:text-3xl xl:text-5xl font-bold">
                         You&apos;re Spending on Google Ads. But Are You Really Getting Results?
                     </h2>
 
@@ -205,7 +205,7 @@ export default function Home() {
             <section className='bg-white py-20'>
                 <Googlecard />
             </section>
-            <section className="max-w-6xl mx-auto pb-20 mt-20">
+            <section className=" max-w-[90%] md:max-w-6xl mx-auto pb-20 mt-20">
                 {/* Heading */}
                 <h2 className="text-3xl font-sofiasanscondensed font-bold text-black text-center mb-1 md:text-5xl">
                     What You Get When You Work With Us
@@ -634,7 +634,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className='w-full flex flex-wrap max-w-[90%] pt-20 pb-32 mx-auto lg:flex-nowrap overflow-y-hidden items-center'>
+            <section className='w-full flex flex-wrap max-w-[90%] pt-0 md:pt-10 pb-32 mx-auto lg:flex-nowrap overflow-y-hidden items-center'>
                 {/* Left Content Section */}
                 <div className='w-full lg:w-3/5 px-1 md:pl-8 md:pr-32  py-10 lg:py-14'>
                     <h2 className="text-4xl md:text-5xl xl:text-5xl font-semibold text-gray-800 font-sofiasanscondensed ">

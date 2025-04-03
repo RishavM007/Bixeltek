@@ -110,7 +110,7 @@ export const Header = () => {
                   <motion.ul initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="ml-4 text-lg space-y-2">
                     <li><Link href="/google-ads-agency-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Google Ads Management</Link></li>
                     <li><Link href="/seo" className="block py-2 px-4 hover:bg-gray-700 rounded">SEO</Link></li>
-                    <li><Link href="/socialmedia" className="block py-2 px-4 hover:bg-gray-700 rounded">Social Media Management</Link></li>
+                    <li><Link href="/social-media-marketing-agency-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Social Media Management</Link></li>
                     <li><Link href="/web-design-services-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Web Development</Link></li>
                     {/* <li><Link href="/digitalmarketing" className="block py-2 px-4 hover:bg-gray-700 rounded">Digital Marketing</Link></li> */}
                   </motion.ul>
