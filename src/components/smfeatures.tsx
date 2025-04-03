@@ -36,8 +36,8 @@ export default function Smfeatures() {
             <div className="container mx-auto px-4">
                 <div className="text-center">
                     <span className="py-1 px-4 bg-indigo-100 rounded-full text-xs font-medium text-indigo-500">Our Services</span>
-                    <h2 className='font-bold text-5xl font-sofiasanscondensed tracking-normal mt-4'>Our Website Development Services in Hyderabad <br /> Are Built for Visibility, Speed & ROI</h2>
-                    <p className='mt-5 text-xl max-w-[90%] mx-auto text-white/70'>We&apos;re not just building websites. We&apos;re solving business problems with strategy, design, and code.<br />
+                    <h2 className='font-bold  text-4xl md:text-5xl font-sofiasanscondensed tracking-normal mt-4'>Our Website Development Services in Hyderabad <br /> Are Built for Visibility, Speed & ROI</h2>
+                    <p className='mt-5 md:text-xl md:max-w-[90%] mx-auto text-white/70'>We&apos;re not just building websites. We&apos;re solving business problems with strategy, design, and code.<br />
                     As a leading website designing company in Hyderabad, we offer full-spectrum development solutions tailored to your goals — whether you&apos;re launching, scaling, or overhauling your online presence.</p>
                 </div>
                 

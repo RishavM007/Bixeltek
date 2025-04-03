@@ -82,7 +82,7 @@ const IndustrySolutions = () => {
                             <h3 className="mb-2 mt-1 text-left text-xl font-bold text-white">
                                 {industry.title}
                             </h3>
-                            <p className="text-gray-300 text-center md:text-left ">
+                            <p className="text-gray-300 text-left md:text-left ">
                                 {industry.description}
                             </p>
                         </motion.div>
