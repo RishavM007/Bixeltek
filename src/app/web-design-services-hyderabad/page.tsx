@@ -13,11 +13,17 @@ export const metadata = {
 };
 
 
+
+export const dynamic = "force-dynamic";
 import React from 'react'
 import ContactFrom from '@/components/ContactFrom';
 import DarkFaqSection from '@/components/DarkFaq';
 import TechWeUse from '@/components/TechWeUse';
 import landingpage from '@/assets/abstract-sales-landing-page-with-photo.png'
+import landingpage2 from '@/assets/landingpage2.jpg'
+import landingpage3 from '@/assets/landingpage3 (1).jpg'
+import landingpage4 from '@/assets/landingpage4 (1).jpg'
+import landingpage5 from '@/assets/gettyimages-1877336255-612x612 (1).jpg'
 import { FaTooth, FaHospital, FaDog, FaGasPump, FaCar, FaBroom, FaGraduationCap, FaBuilding, FaTree, FaSeedling } from "react-icons/fa";
 import { HeroParallax } from '@/components/parallexHero'
 import { FiUploadCloud, FiLock, FiRepeat } from "react-icons/fi";
@@ -51,22 +57,22 @@ export default function Webdev() {
         {
             title: "Product 2",
             link: "/product-2",
-            thumbnail: landingpage.src,
+            thumbnail: landingpage2.src,
         },
         {
             title: "Product 3",
             link: "/product-3",
-            thumbnail: landingpage.src,
+            thumbnail: landingpage4.src,
         },
         {
             title: "Product 4",
             link: "/product-4",
-            thumbnail: landingpage.src,
+            thumbnail: landingpage3.src,
         },
         {
             title: "Product 5",
             link: "/product-5",
-            thumbnail: landingpage.src,
+            thumbnail: landingpage5.src,
         },
         {
             title: "Product 6",
@@ -76,7 +82,7 @@ export default function Webdev() {
         {
             title: "Product 7",
             link: "/product-7",
-            thumbnail: landingpage.src,
+            thumbnail: landingpage5.src,
         },
         {
             title: "Product 8",
@@ -91,7 +97,7 @@ export default function Webdev() {
         {
             title: "Product 10",
             link: "/product-10",
-            thumbnail: landingpage.src,
+            thumbnail: landingpage5.src,
         },
         {
             title: "Product 11",
@@ -116,7 +122,7 @@ export default function Webdev() {
         {
             title: "Product 15",
             link: "/product-15",
-            thumbnail: landingpage.src,
+            thumbnail: landingpage5.src,
         },
     ];
     const industries = [

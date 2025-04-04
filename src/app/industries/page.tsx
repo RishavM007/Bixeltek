@@ -14,8 +14,6 @@ import { FaTooth, FaHospital, FaDog, FaGasPump, FaCar, FaBroom, FaGraduationCap,
 import { FaChartLine, FaCogs, FaUserTie, FaBullseye, FaMoneyBillWave, FaChartBar, FaSeedling, FaDatabase } from 'react-icons/fa';
 import healthcare from "@/assets/digital marketing for health care practices.jpg";
 import CarouselSection from "@/components/industriescarosel";
-
-import { RiLineChartLine, RiInstagramLine, RiCalendarEventLine, RiHeart2Line } from 'react-icons/ri';
 export default function Industries() {
 
   const industries = [

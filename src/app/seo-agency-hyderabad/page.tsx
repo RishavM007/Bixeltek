@@ -12,7 +12,7 @@ export const metadata = {
     },
 };
 
-
+export const dynamic = "force-dynamic";
 import React from 'react';
 import DarkFaqSection from '@/components/DarkFaq';
 import ContactFrom from '@/components/ContactFrom';

@@ -11,7 +11,7 @@ export const metadata = {
     type: "website",
   },
 };
-
+export const dynamic = "force-dynamic";
 import CarouselSection from "@/components/industriescarosel";
 import ContactFrom from "@/components/ContactFrom";
 import HowItWorks from "@/components/howitworksSm";

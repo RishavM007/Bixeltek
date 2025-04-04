@@ -14,9 +14,6 @@ const Pricing = () => {
     <p className="mt-1 text-neutral-400">Whatever your status, our offers evolve according to your needs.</p>
   </div>
 
-  
-
-
   <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:items-center">
   <div className="flex flex-col border  text-center rounded-xl p-8 border-neutral-800">
       <h4 className="font-medium text-lg text-neutral-200">Scope of Work</h4>
