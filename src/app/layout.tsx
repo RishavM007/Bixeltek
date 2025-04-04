@@ -59,7 +59,7 @@ export default function RootLayout({
           href="https://wa.me/9100032301?text=Hi%20I%20am%20interested%20in%20your%20services"
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed bottom-10 z-50 right-10 md:right-20 flex items-center space-x-3"
+          className="fixed hidden md:flex bottom-10 z-50 right-10 md:right-20  items-center space-x-3"
         >
           <p className="text-white font-sofiasanscondensed tracking-wide text-sm md:text-lg">Need Help? <span className="font-bold">Chat with us</span></p>
 

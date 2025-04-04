@@ -84,7 +84,7 @@ export const Header = () => {
       <div className="container bg-black flex justify-between items-center border-white/15 border-solid border-2 rounded-xl shadow-purple-custom backdrop:blur-3xl">
         <div className="text-white py-3">
           <Link href={"/"}>
-          <Image src={Bixeltek} alt="Bixeltek Logo"  className='h-7 w-auto' />
+            <Image src={Bixeltek} alt="Bixeltek Logo" className='h-7 w-auto' />
           </Link>
         </div>
         <button className="md:hidden text-white text-3xl" onClick={toggleMenu}>
@@ -96,10 +96,12 @@ export const Header = () => {
           transition={{ type: "spring", stiffness: 80, damping: 15 }}
           className="fixed top-0 right-0 h-full w-full bg-black shadow-lg p-6 z-50 md:hidden"
         >
+
           <button className="absolute top-4 right-4 text-white text-3xl" onClick={toggleMenu}>
             <HiX />
           </button>
           <nav className="mt-10">
+
             <ul className="text-white text-xl font-sofiasanscondensed space-y-4">
               <li><Link href="/" className="block py-2 px-4 hover:bg-purple-600  rounded">Home</Link></li>
               <li>
@@ -117,10 +119,18 @@ export const Header = () => {
                 )}
               </li>
               <li><Link href="/industries" className="block py-2 px-4 hover:bg-purple-600 rounded">Industries</Link></li>
-              <li><Link href="/" className="block py-2 px-4 hover:bg-purple-600 rounded">Case Studies</Link></li>
-              <li><Link href="/" className="block py-2 px-4 hover:bg-purple-600 rounded">Blog</Link></li>
+              {/* <li><Link href="/" className="block py-2 px-4 hover:bg-purple-600 rounded">Case Studies</Link></li>
+              <li><Link href="/" className="block py-2 px-4 hover:bg-purple-600 rounded">Blog</Link></li> */}
               <li><Link href="/about" className="block py-2 px-4 hover:bg-purple-600 rounded">About Us</Link></li>
             </ul>
+            <div className=" justify-center  items-center gap-5 py-4">
+            <a href="tel:+919100032301">
+              <button className="bg-gradient-to-t  from-[#4a208a] to-[#13012e] border border-[#8a45f2] text-white font-normal text-sm py-2 px-4 rounded-lg shadow-custom">
+                <span>Talk to a Specialist</span>
+              </button>
+            </a>
+          </div>
+
           </nav>
         </motion.div>
         <div className="hidden md:flex text-[17px] tracking-widest">
@@ -241,9 +251,11 @@ export const Header = () => {
           </nav>
         </div>
         <div className="hidden md:flex justify-center items-center gap-5 py-4">
-          <button className="bg-gradient-to-t from-[#4a208a] to-[#13012e] border border-[#8a45f2] text-white font-normal text-sm py-2 px-4 rounded-lg shadow-custom">
-            <span>Contact Us</span>
-          </button>
+          <a href="tel:+919100032301">
+            <button className="bg-gradient-to-t from-[#4a208a] to-[#13012e] border border-[#8a45f2] text-white font-normal text-sm py-2 px-4 rounded-lg shadow-custom">
+              <span>Talk to a Specialist</span>
+            </button>
+          </a>
         </div>
       </div>
     </header>
