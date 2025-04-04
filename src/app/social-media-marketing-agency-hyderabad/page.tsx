@@ -1,3 +1,16 @@
+export const metadata = {
+  title: "Social Media Marketing Company in Hyderabad | Instagram & Facebook Ads | Bixeltek",
+  description:
+    "Elevate your brand with Bixeltek, Hyderabad’s leading social media management agency. Specialized in Instagram ads, Facebook ads, and tailored social media marketing services to drive business growth and conversions.",
+  keywords:
+    "Bixeltek social media, Social media management Hyderabad, Best social media agency Hyderabad, Instagram marketing, Facebook ads, LinkedIn marketing, Twitter management, Social media strategy, Content creation, Brand growth, Online presence",
+  openGraph: {
+    title: "Bixeltek | Expert Social Media Marketing Services in Hyderabad",
+    description:
+      "Boost your brand’s online presence with Bixeltek’s professional social media management services. Drive engagement, increase reach, and build a strong brand identity.",
+    type: "website",
+  },
+};
 
 import CarouselSection from "@/components/industriescarosel";
 import ContactFrom from "@/components/ContactFrom";
