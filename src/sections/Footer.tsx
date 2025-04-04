@@ -80,13 +80,13 @@ export const Footer = () => {
         <div className="px-4 mt-4 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto">
           <h5 className="text-xl font-bold mb-6 sm:text-center xl:text-left">Stay connected</h5>
           <div className="flex sm:justify-center xl:justify-start">
-            <a href="" className="flex items-center justify-center w-8 h-8 border-2 border-gray-400 rounded-full text-gray-400 hover:text-white hover:bg-blue-600 hover:border-blue-600">
+            <a href="http://instagram.com/bixeltekagency/" className="flex items-center justify-center w-8 h-8 border-2 border-gray-400 rounded-full text-gray-400 hover:text-white hover:bg-blue-600 hover:border-blue-600">
               <i className="fa-brands fa-facebook"></i>
             </a>
-            <a href="" className="flex items-center justify-center w-8 h-8 border-2 border-gray-400 rounded-full ml-2 text-gray-400 hover:text-white hover:bg-blue-400 hover:border-blue-400">
+            <a href="https://www.linkedin.com/company/bixeltek" className="flex items-center justify-center w-8 h-8 border-2 border-gray-400 rounded-full ml-2 text-gray-400 hover:text-white hover:bg-blue-400 hover:border-blue-400">
             <i className="fa-brands fa-linkedin-in"></i>
             </a>
-            <a href="" className="flex items-center justify-center w-8 h-8 border-2 border-gray-400 rounded-full ml-2 text-gray-400 hover:text-white hover:bg-red-600 hover:border-red-600">
+            <a href="http://instagram.com/bixeltekagency/" className="flex items-center justify-center w-8 h-8 border-2 border-gray-400 rounded-full ml-2 text-gray-400 hover:text-white hover:bg-red-600 hover:border-red-600">
             <i className="fa-brands fa-instagram"></i>
             </a>
           </div>

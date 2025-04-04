@@ -1,5 +1,5 @@
 import React from "react";
-import webdevimage from "@/assets/websitedev.jpg"
+import webdevimage from "@/assets/7144801_3567637.jpg"
 import bgimage2 from "@/assets/Google Analytics.png"
 import digitalmarketingimage from "@/assets/firmbee-com-gcsNOsPEXfs-unsplash.jpg"
 import seoimage from '@/assets/seo-analytics-dashboard.png'
