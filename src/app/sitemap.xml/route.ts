@@ -16,24 +16,24 @@ export async function GET() {
   ];
 
   // Fetch WordPress blog posts
-  let blogPosts = [];
-  try {
-    const res = await fetch("https://bixeltek.com/wp-json/wp/v2/posts?per_page=10", { cache: "no-store" });
-    if (res.ok) {
-      const posts = await res.json();
-      blogPosts = posts.map((post: { slug: string }) => ({
-        url: `${baseUrl}/blog/${post.slug}`,
-        lastModified: new Date().toISOString(),
-        changeFrequency: "weekly",
-        priority: 0.7,
-      }));
-    }
-  } catch (error) {
-    console.error("Error fetching blog posts:", error);
-  }
+  // let blogPosts = [];
+  // try {
+  //   const res = await fetch("https://bixeltek.com/wp-json/wp/v2/posts?per_page=10", { cache: "no-store" });
+  //   if (res.ok) {
+  //     const posts = await res.json();
+  //     blogPosts = posts.map((post: { slug: string }) => ({
+  //       url: `${baseUrl}/blog/${post.slug}`,
+  //       lastModified: new Date().toISOString(),
+  //       changeFrequency: "weekly",
+  //       priority: 0.7,
+  //     }));
+  //   }
+  // } catch (error) {
+  //   console.error("Error fetching blog posts:", error);
+  // }
 
   // Combine all URLs
-  const allUrls = [...staticPages, ...blogPosts];
+  const allUrls = [...staticPages];
 
   // Convert JSON to XML format
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
