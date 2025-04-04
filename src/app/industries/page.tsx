@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import IndustrySections from "@/components/IndustrySection";
 import cleaningcomp from "@/assets/digital marketing servies for cleaning companies.jpg";
 import oil from "@/assets/digital marketing for oil refinaries.jpg";
 import pet from "@/assets/digital marketing for pet stores.jpg";
@@ -85,7 +86,7 @@ export default function Industries() {
   return (
     <>
       <section>
-        <div className="relative isolate mt-[-120px] mb-[-70px] overflow-hidden bg-black h-[100vh] md:h-[100vh] lg:h-[100vh] xl:h-[70vh] flex items-center justify-center">
+        <div className="relative isolate mt-[-60px] md:mt-[-120px] mb-[-70px] overflow-hidden bg-black h-[100vh] md:h-[100vh] lg:h-[100vh] xl:h-[100vh] flex items-center justify-center">
           <svg
             className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
             aria-hidden="true">
@@ -108,12 +109,11 @@ export default function Industries() {
             ></div>
           </div>
           <div className="max-w-full px-4 text-center lg:max-w-3xl">
-            <h1 className="text-5xl font-bold tracking-tight text-white sm:text-6xl">
-              About
-              <span className="text-purple-500"> Bixeltek</span>
+            <h1 className="text-5xl md:text-7xl font-bold font-sofiasanscondensed tracking-tight text-white ">
+            We Know Your Industry.<br /><span className="text-purple-500"> We Know How to Scale It.</span>
             </h1>
-            <p className="mt-10 text-sm lg:text-lg leading-8 text-gray-300 ">
-              At <span className="text-purple-500 px-1">Bixeltek</span>we have worked with 100s of Brands in North American Market our team has come a long way understanding the needs of each individual brand. <span className='hidden md:block '>We are no freelancers but we work as your in-house team that knows exactly what your business needs.</span>
+            <p className="mt-10 text-sm lg:text-lg md:leading-8 text-gray-300 ">
+            Bixeltek delivers laser-focused digital marketing strategies tailored to your niche — from dental clinics and e-commerce brands to real estate, education, and startups.<br /><span className="font-bold italic text-purple-500">We don&apos;t guess. We grow.</span> 
             </p>
 
             <button className="backdrop-blur-3xl border border-white text-white font-normal text-sm py-2 px-4 md:px-6 md:py-3 md:text-md rounded-lg mt-14 md:mt-16 shadow-custom ">
@@ -203,7 +203,9 @@ export default function Industries() {
           </p>
         </div>
       </section>
-
+      <section>
+<IndustrySections />
+      </section>
       <section className="flex relative flex-col md:flex-row items-center mx-auto justify-between bg-black text-white px-2 md:px-40 py-20">
         <motion.div
           className="absolute w-2 sm:w-3 md:w-3 h-[33px] bg-[#4285F4] top-0 right-0 origin-top"

@@ -43,6 +43,7 @@ export default function Home() {
       <LogoTicker />
       <About />
       <TeamStatsSection />
+      <BentoGrid />
       <MetricsSection/>
       <Testimonials />
       <CallToAction />

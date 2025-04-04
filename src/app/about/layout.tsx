@@ -8,8 +8,8 @@ interface LayoutProps {
 }
 
 export const metadata = {
-  title: "AboutUs - Bixeltek",
-  description: "At Bixeltek, we specialize in providing tailored IT solutions.",
+  title: "Bixeltek | Digital Marketing Agency That Drives Real Results",
+  description: "Bixeltek is a Google Partner digital marketing agency helping businesses grow with ROI-driven SEO, Google Ads, Web Design & Social Media Marketing. Trusted globally.",
   keywords: "Google Ads, Marketing, SEO, PPC, Bixeltek",
   openGraph: {
     title: "GoogleAds - Bixeltek",

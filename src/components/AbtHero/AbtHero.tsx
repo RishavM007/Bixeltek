@@ -6,18 +6,19 @@ export const Bento = () => {
         <div className="bg-black  py-10 sm:py-20">
             <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
                 <div className="flex flex-col justify-start items-start">
-                    <p className="text-sm text-purple-500 text-start ">Our Services</p>
-                    <p className="mt-4 max-w-lg text-balance text-start text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-                        What we offer?
-                    </p>
+                    <p className="px-4 py-1 text-sm w-fit border rounded-lg">Our Services</p>
+                    <h2 className="mt-4 max-w-lg text-balance text-start text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+                        What we do?
+                    </h2>
+                    <p className='mt-2'>We craft data-driven, conversion-focused digital strategies that drive measurable results.</p>
                 </div>
-                <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
+                <div className="mt-10 grid gap-4 sm:mt-12 lg:grid-cols-3 lg:grid-rows-2">
                     <div className="relative lg:row-span-2">
                         <div className="absolute inset-px rounded-lg bg-black border border-neutral-200 lg:rounded-l-[2rem]"></div>
                         <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
                             <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
-                                <p className="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">
-                                    Social Media Marketing
+                                <p className="mt-2 text-xl font-medium tracking-tight text-white max-lg:text-center">
+                                Social Media Marketing – Thumb-stopping content and Meta Ads that build your audience and drive action.
                                 </p>
                                 <p className="mt-2 max-w-lg text-sm/6 text-gray-200 max-lg:text-center">
                                     Our team of experts understands the importance of Social Media Marketing. We can help you build your brand using various social media platforms.
@@ -38,7 +39,7 @@ export const Bento = () => {
                         <div className="absolute inset-px rounded-lg bg-black border border-neutral-200 max-lg:rounded-t-[2rem]"></div>
                         <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
                             <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-                                <p className="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">SEO Optimzation</p>
+                                <p className="mt-2 text-xl font-medium tracking-tight text-white max-lg:text-center">Search Engine Optimization (SEO) – Long-term visibility through smart, semantic, and local SEO strategies.</p>
                                 <p className="mt-2 max-w-lg text-sm/6 text-gray-200 max-lg:text-center">
                                     Boost your visibility with keyword optimization and on-page strategies for better search rankings.
                                 </p>
@@ -57,7 +58,7 @@ export const Bento = () => {
                         <div className="absolute inset-px rounded-lg bg-black border border-neutral-200 "></div>
                         <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
                             <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-                                <p className="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">Pay-Per-Click Advertising (PPC)</p>
+                                <p className="mt-2 text-xl font-medium tracking-tight text-white max-lg:text-center">Google Ads – Search, Display, and Performance Max campaigns designed to deliver qualified leads.</p>
                                 <p className="mt-2 max-w-lg text-sm/6 text-gray-200 max-lg:text-center">
                                     With researched digital marketing, we will ensure that new customers and clients are able to find your business.
                                 </p>
@@ -76,9 +77,8 @@ export const Bento = () => {
                         <div className="absolute inset-px rounded-lg bg-black border border-neutral-200  max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
                         <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
                             <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
-                                <p className="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">
-                                    Web Development
-                                </p>
+                                <p className="mt-2 text-xl font-medium tracking-tight text-white max-lg:text-center">
+                                Web Design & Development – Mobile-first, lightning-fast websites that turn visitors into customers.</p>
                                 <p className="mt-2 max-w-lg text-sm/6 text-gray-200 max-lg:text-center">
                                     Our web design team has ample years of experience in the core areas of design to build a website that you need.
                                 </p>
