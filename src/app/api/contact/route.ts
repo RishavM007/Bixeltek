@@ -1,45 +1,53 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-export async function GET() {
-    return NextResponse.json({ message: "API is working!" });
-}
-
 export async function POST(req: Request) {
     try {
-        const { firstName, lastName, email, phone, company, website, marketingDepartment, marketingBudget, services, message } = await req.json();
+        const data = await req.json();
+        console.log("Received Form Data:", data); // ✅ Debugging
 
-        // Nodemailer transport setup
         let transporter = nodemailer.createTransport({
-            service: "gmail",
+            host: "smtp.hostinger.com", // ✅ Hostinger SMTP
+            port: 587,
+            secure: false,
             auth: {
-                user: 'solarisxavier@gmail.com',
-                pass: 'hlwe ejng jehy zdqh',
-              },
+                user: "noreply@bixeltek.com",
+                pass: "Bb9177805420@", 
+            },
         });
 
+        console.log("SMTP Connection Test...");
+        try {
+            await transporter.verify();
+            console.log("✅ SMTP Connection Successful!");
+        } catch (error) {
+            console.error("❌ SMTP Connection Failed:", error);
+            return NextResponse.json({ error: "SMTP connection failed", details: error  }, { status: 500 });
+        }
+
+
         let mailOptions = {
-            from: 'mondalrishav763@gmail.com',
-            to: email, 
-            subject: "New Contact Form Submission",
-            text: `
-                Name: ${firstName} ${lastName}
-                Email: ${email}
-                Phone: ${phone}
-                Company: ${company}
-                Website: ${website}
-                Marketing Department: ${marketingDepartment}
-                Marketing Budget: ${marketingBudget}
-                Interested Service: ${services}
-                Message: ${message}
-            `,
+            from: '"Bixeltek Support" <noreply@bixeltek.com>',
+            to: "zee@bixeltek.com", // ✅ Sending to the entered email
+            subject: " Bixeltek - New Contact Form Submission",
+            text: `Name: ${data.firstName} ${data.lastName}
+                Email: ${data.email}
+                Phone: ${data.phone}
+                Company: ${data.company}
+                country: ${data.country}
+                Marketing Budget: ${data.marketingBudget}
+                Interested Service: ${data.services}
+                Message: ${data.message}
+                Website: ${data.website}`,
         };
 
-        await transporter.sendMail(mailOptions);
+        let info = await transporter.sendMail(mailOptions);
+        console.log("Email Sent:", info.response); // ✅ Debugging
+
         return NextResponse.json({ message: "Email sent successfully!" }, { status: 200 });
 
-    } catch (error) {
-        console.error('Error sending email:', error);
-        return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
+    } catch (error : any) {
+        console.error("Server Error:", error);
+        return NextResponse.json({ error: error.message || "Failed to send email" }, { status: 500 });
     }
 }
