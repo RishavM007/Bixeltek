@@ -71,9 +71,9 @@ export const Hero = () => {
       <div className='absolute w-2 h-2 rounded-full bg-white bottom-0 left-1/2 -translate-x-1/2 translate-y-1'></div>
     </motion.div>
 
-    <div className="relative container text-white mt-16">
+    <div className="relative container text-white mt-16 z-40">
       <h1 className="text-7xl md:text-[168px] tracking-tighter font-semibold bg-white bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(74,32,138,0.5))] text-transparent bg-clip-text text-center">BIXELTEK</h1>
-      <div className="text-white/70 text-center text-sm md:text-xl  mt-2">
+      <div className="text-white/70 text-center text-sm md:text-xl   mt-2">
         <h2 className='text-2xl md:text-3xl'>Top-Rated Digital Marketing Agency in Hyderabad </h2>
         <p className='text-base max-w-2xl mx-auto mt-2'>From web design to Google Ads, SEO, and social media marketing — we help you grow fast and smart.</p>
       </div>
