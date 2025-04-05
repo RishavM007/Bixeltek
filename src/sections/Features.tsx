@@ -1,15 +1,16 @@
 import React from "react";
 import webdevimage from "@/assets/7144801_3567637.jpg"
 import bgimage2 from "@/assets/Google Analytics.png"
-import digitalmarketingimage from "@/assets/firmbee-com-gcsNOsPEXfs-unsplash.jpg"
 import seoimage from '@/assets/seo-analytics-dashboard.png'
 import dmimage from "@/assets/pexels-goumbik-577210.jpg"
 import socialmediaimg from '@/assets/pexels-pixabay-267389.jpg'
 import Image from "next/image";
+import Link from "next/link";
 export default function Services() {
   const services = [
     {
       title: "Website Development",
+      link: "/web-design-services-hyderabad",
       tag: "Website",
       img: webdevimage,
       description:
@@ -17,6 +18,7 @@ export default function Services() {
     },
     {
       title: "Digital Marketing",
+      link: "/digitalmarketing",
       tag: "Advertising",
       img: dmimage,
       description:
@@ -24,6 +26,7 @@ export default function Services() {
     },
     {
       title: "Google Ads Management",
+      link: "/google-ads-agency-hyderabad",
       tag: "PPC",
       img: bgimage2,
       description:
@@ -31,6 +34,7 @@ export default function Services() {
     },
     {
       title: "SEO Optimization",
+      link: "/seo-agency-hyderabad",
       tag: "SEO",
       img: seoimage,
       description:
@@ -38,6 +42,7 @@ export default function Services() {
     },
     {
       title: "Social Media Marketing",
+      link: "/social-media-marketing-agency-hyderabad",
       tag: "Social Media",
       img: socialmediaimg,
       description:
@@ -45,6 +50,7 @@ export default function Services() {
     },
     {
       title: "Conversion Rate Optimization (CRO)",
+      link: "/",
       tag: "CRO",
       img: "/images/cro.jpg",
       description:
@@ -81,9 +87,11 @@ export default function Services() {
                 {/* Bottom Section */}
                 <div className="mt-4 flex items-center justify-between">
                   <span className="bg-white/20 text-white text-sm px-4 py-[6px] rounded-3xl">{service.tag}</span>
+                  <Link href={service.link} className="group">
                   <button className="text-white text-sm flex items-center gap-1 hover:underline">
                     Learn More →
                   </button>
+                  </Link>
                 </div>
               </div>
             </div>
