@@ -297,6 +297,7 @@ export default function Seo() {
                                 <p className="text-gray-300 relative font-sans text-lg py-5 leading-relaxed">
                                 Ready to outshine the competition and drive consistent leads? Bixeltek is your trusted SEO company in Hyderabad, offering cutting-edge SEO services that propel your business to the top of Google&apos;s search results. Let&apos;s turn organic traffic into tangible growth.
                                 </p>
+                                
 
                                 <div className='grid grid-cols-1 gap-y-7 pb-10 pt-5  text-white'>
                                     <h3 className='font-light text-[16px] tracking-wide flex'>
@@ -316,6 +317,11 @@ export default function Seo() {
                                         Cutting-Edge Tools – Advanced keyword research, auditing software, and optimization ensure peak SEO performance.
                                     </h3>
                                 </div>
+                                <div className='mt-2 ml-2'>
+                                <a href="tel:+919100032301" >
+                                    <button className='px-4 py-3 hover:bg-[#670ef7] hover:text-white transition-all duration-300 bg-white font-medium text-black rounded-md'>Book An Appointment</button>
+                                </a>
+                                </div>      
                             </div>
 
 

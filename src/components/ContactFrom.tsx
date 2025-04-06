@@ -1,10 +1,12 @@
 'use client';
 import { count } from 'console';
 import React from 'react'
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 export default function ContactFrom() {
-
+    
+    const router = useRouter();
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
@@ -95,8 +97,9 @@ export default function ContactFrom() {
 
             if (!response.ok) throw new Error(result.error || 'Failed to send message.');
 
+            router.push('/thank-you'); // Redirect to thank you page
+
             console.log("API Response:", result); // Debugging
-            alert('Message sent successfully!');
             setFormData({
                 firstName: '',
                 lastName: '',
@@ -284,8 +287,8 @@ export default function ContactFrom() {
                         <input
                             type="text"
                             id="budget"
-                            name="budget"
-                            value={formData.website}
+                            name="marketingBudget"
+                            value={formData.marketingBudget}
                             onChange={handleInputChange}
                             className="w-full input-field mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                             placeholder="What is your marketing budget?"

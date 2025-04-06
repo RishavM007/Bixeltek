@@ -2,6 +2,7 @@
 import Image from "next/image";
 import image1 from "@/assets/01-3.jpg";
 import { motion, useInView } from "framer-motion";
+import Link from "next/link";
 import { useRef } from "react";
 
 export const About = () => {
@@ -34,7 +35,9 @@ export const About = () => {
                             whileTap={{ scale: 0.9 }}
                             className="border border-gray-200 px-5 py-3 rounded-md text-white flex items-center hover:bg-purple-700 hover:border-purple-700 hover:text-white transition"
                         >
+                            <Link href={"/about-us"}>
                             Know More &nbsp; &rarr;
+                            </Link>
                         </motion.button>
                         <div className="text-[16px] ml-1 md:ml-20 mt-4 md:mt-0 text-white font-semibold">
                             <p>

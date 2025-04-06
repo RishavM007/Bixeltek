@@ -5,6 +5,9 @@ import { motion } from "framer-motion";
 import { Bento } from "@/components/AbtHero/AbtHero";
 import CreativeSection from "@/components/AbtSection1";
 import TeamStatsSection from "@/components/Counter2New";
+import storyimg1 from "@/assets/roberto-cortese-ejhjSZKTeeg-unsplash.jpg"
+import storyimg2 from "@/assets/annie-spratt-MChSQHxGZrQ-unsplash.jpg"
+
 
 export default function AboutPage() {
   const timelineEvents = [
@@ -200,10 +203,10 @@ export default function AboutPage() {
             <div className="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
                 <div
                     className="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
-                    <div className="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
-                        <img className=" rounded-xl object-cover" src="https://pagedone.io/asset/uploads/1717741205.png" alt="about Us image" />
+                    <div className="pt-28 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
+                        <Image className=" rounded-xl object-cover" src={storyimg1} alt="about Us image" />
                     </div>
-                    <img className="sm:ml-0 ml-auto rounded-xl object-cover" src="https://pagedone.io/asset/uploads/1717741215.png"
+                    <Image className="sm:ml-0 ml-auto rounded-xl object-cover" src={storyimg2}
                         alt="about Us image" />
                 </div>
                 <div className="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">

@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { HiChevronDown, HiMenu, HiX } from 'react-icons/hi';
+import { link } from 'fs';
 
 export const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -18,64 +19,11 @@ export const Header = () => {
 
     {
       id: 1,
-      title: "How to Get Started with Digital Marketing",
+      title: "Tumblewash Case Study",
       description: "Learn essential steps to begin your journey in the digital marketing world effectively.",
+      link: "/casestudies-bixeltek/Tumblewash-Casestudy",
       glowcolor: "bg-purple-500",
     },
-    {
-      id: 2,
-      title: "Top 5 SEO Strategies",
-      description: "Boost your website traffic with these proven search engine optimization techniques.",
-      glowcolor: "bg-blue-500",
-    },
-    {
-      id: 3,
-      title: "The Power of Google Ads",
-      description: "Discover how Google Ads can transform your marketing campaigns and increase ROI.",
-      glowcolor: "bg-green-500",
-    },
-    {
-      id: 4,
-      title: "Social Media Growth Hacks",
-      description: "Quick and effective tips to expand your brands presence on social platforms.",
-      glowcolor: "bg-yellow-500",
-    },
-    {
-      id: 5,
-      title: "AI in Digital Marketing",
-      description: "Explore how AI tools revolutionize customer targeting and campaign performance.",
-      glowcolor: "bg-fuchsia-500",
-    },
-    {
-      id: 6,
-      title: "Email Marketing Best Practices",
-      description: "Enhance your email campaigns with proven techniques for higher engagement and conversions.",
-      glowcolor: "bg-emerald-500",
-    },
-    {
-      id: 7,
-      title: "Content Marketing Made Simple",
-      description: "Master the art of creating content that captivates and converts your audience.",
-      glowcolor: "bg-sky-500",
-    },
-    {
-      id: 8,
-      title: "Video Marketing Trends 2024",
-      description: "Stay ahead with these emerging trends in video content creation and promotion.",
-      glowcolor: "bg-rose-500",
-    },
-    {
-      id: 9,
-      title: "Analytics for Better Marketing",
-      description: "Understand key metrics to optimize and refine your marketing strategies effectively.",
-      glowcolor: "bg-fuchsia-500",
-    },
-    {
-      id: 10,
-      title: "Personalizing Customer Experiences",
-      description: "Use personalization techniques to build stronger connections and increase customer loyalty.",
-      glowcolor: "bg-purple-500",
-    }
 
   ];
 
@@ -119,17 +67,17 @@ export const Header = () => {
                 )}
               </li>
               <li><Link href="/industries" className="block py-2 px-4 hover:bg-purple-600 rounded">Industries</Link></li>
-               <li><Link href="/casestudies-bixeltek/Tumblewash-Casestudy" className="block py-2 px-4 hover:bg-purple-600 rounded">Case Studies</Link></li>
+              <li><Link href="/casestudies-bixeltek/Tumblewash-Casestudy" className="block py-2 px-4 hover:bg-purple-600 rounded">Case Studies</Link></li>
               {/*<li><Link href="/" className="block py-2 px-4 hover:bg-purple-600 rounded">Blog</Link></li> */}
               <li><Link href="/about-us" className="block py-2 px-4 hover:bg-purple-600 rounded">About Us</Link></li>
             </ul>
             <div className=" justify-center  items-center gap-5 py-4">
-            <a href="tel:+919100032301">
-              <button className="bg-gradient-to-t  from-[#4a208a] to-[#13012e] border border-[#8a45f2] text-white font-normal text-sm py-2 px-4 rounded-lg shadow-custom">
-                <span>Talk to a Specialist</span>
-              </button>
-            </a>
-          </div>
+              <a href="tel:+919100032301">
+                <button className="bg-gradient-to-t  from-[#4a208a] to-[#13012e] border border-[#8a45f2] text-white font-normal text-sm py-2 px-4 rounded-lg shadow-custom">
+                  <span>Talk to a Specialist</span>
+                </button>
+              </a>
+            </div>
 
           </nav>
         </motion.div>
@@ -153,7 +101,7 @@ export const Header = () => {
                 </a>
 
                 {/* Dropdown Wrapper */}
-                <div className={`absolute top-full left-1/2 -translate-x-[37%] w-[1240px] bg-white rounded-b-2xl shadow-lg py-4 transition-all duration-300 ${isDropdownOpen ? "opacity-100 visible pointer-events-auto" : "opacity-0 invisible pointer-events-none"}`}>
+                <div className={`absolute top-full left-1/2 -translate-x-[35%] w-[1240px] bg-white rounded-b-2xl shadow-lg py-4 transition-all duration-300 ${isDropdownOpen ? "opacity-100 visible pointer-events-auto" : "opacity-0 invisible pointer-events-none"}`}>
                   <motion.div
                     initial={{ opacity: 0, y: -10 }}
                     animate={isDropdownOpen ? { opacity: 1, y: 0 } : { opacity: 0, y: -10 }}
@@ -211,14 +159,18 @@ export const Header = () => {
                         <ul>
                           {posts.slice(0, Math.ceil(posts.length / 2)).map((post) => (
                             <li key={post.id} className="hover:text-[#670ef7] transition text-[17px] p-2 cursor-pointer">
-                              {post.title}
+                              <Link href={`${post.link}`}>
+                                {post.title}
+                              </Link>
                             </li>
                           ))}
                         </ul>
                         <ul>
                           {posts.slice(Math.ceil(posts.length / 2)).map((post) => (
                             <li key={post.id} className="hover:text-[#670ef7] transition text-[17px] p-2 cursor-pointer">
-                              {post.title}
+                              <Link href={`${post.link}`}>
+                                {post.title}
+                              </Link>
                             </li>
                           ))}
                         </ul>
@@ -232,11 +184,31 @@ export const Header = () => {
                   Industries
                 </Link>
               </li>
-              <li className="flex items-center py-7">
-                <Link href="/casestudies-bixeltek/Tumblewash-Casestudy" className="text-white/70 hover:text-white transition flex items-center">
+              <li className="relative group py-7">
+                <div className="flex items-center text-white/70 hover:text-white transition cursor-pointer">
                   Case Studies <HiChevronDown className="ml-1 text-xs" />
-                </Link>
+                </div>
+
+                <ul className="absolute top-full -left-7 mt-0 bg-white rounded-b-md shadow-lg hidden group-hover:block z-50 min-w-[200px]">
+                  <li>
+                    <Link
+                      href="/casestudies-bixeltek/Tumblewash-Casestudy"
+                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
+                    >
+                      Tumblewash Case Study
+                    </Link>
+                  </li>
+                  {/* <li>
+                    <Link
+                      href="/casestudies-bixeltek/Another-Casestudy"
+                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
+                    >
+                      Another Case Study
+                    </Link>
+                  </li> */}
+                </ul>
               </li>
+
               <li className="flex items-center py-7">
                 <Link href="/thank-you" className="text-white/70 hover:text-white transition">
                   Blog

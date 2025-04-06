@@ -1,12 +1,12 @@
 export const metadata = {
-  title: "Google Ads Agency in Hyderabad | Best Google Ads Management Company — Bixeltek",
-  description: "Looking for a trusted Google Ads agency in Hyderabad? Bixeltek is a Google Partner providing expert PPC services with proven ROI. Book your free Google Ads audit today!",
-  keywords: "Google Ads, Marketing, SEO, PPC, Bixeltek",
-  openGraph: {
     title: "Google Ads Agency in Hyderabad | Best Google Ads Management Company — Bixeltek",
-    description: "Looking for a trusted Google Ads agency in Hyderabad? Bixeltek is a Google Partner providing expert PPC services with proven ROI. Book your free Google Ads audit today!", 
-    type: "website",
-  },
+    description: "Looking for a trusted Google Ads agency in Hyderabad? Bixeltek is a Google Partner providing expert PPC services with proven ROI. Book your free Google Ads audit today!",
+    keywords: "Google Ads, Marketing, SEO, PPC, Bixeltek",
+    openGraph: {
+        title: "Google Ads Agency in Hyderabad | Best Google Ads Management Company — Bixeltek",
+        description: "Looking for a trusted Google Ads agency in Hyderabad? Bixeltek is a Google Partner providing expert PPC services with proven ROI. Book your free Google Ads audit today!",
+        type: "website",
+    },
 };
 
 import React from 'react';
@@ -45,19 +45,19 @@ import { SiPolestar } from "react-icons/si";
 import Link from 'next/link';
 
 
- const industries = [
-        { name: "Dental", icon: <FaTooth /> },
-        { name: "Healthcare", icon: <FaHospital /> },
-        { name: "Pet Shops", icon: <FaDog /> },
-        { name: "Oil & Gas", icon: <FaGasPump /> },
-        { name: "Automobile", icon: <FaCar /> },
-        { name: "Roof Cleaning", icon: <FaBroom /> },
-        { name: "Education", icon: <FaGraduationCap /> },
-        { name: "Real Estate", icon: <FaBuilding /> },
-        { name: "Arborist & Tree Removal", icon: <FaTree /> },
-        { name: "Lawn Care", icon: <FaSeedling /> },
-        { name: "E-commerce", icon: <RiShoppingCartFill /> },
-    ];
+const industries = [
+    { name: "Dental", icon: <FaTooth /> },
+    { name: "Healthcare", icon: <FaHospital /> },
+    { name: "Pet Shops", icon: <FaDog /> },
+    { name: "Oil & Gas", icon: <FaGasPump /> },
+    { name: "Automobile", icon: <FaCar /> },
+    { name: "Roof Cleaning", icon: <FaBroom /> },
+    { name: "Education", icon: <FaGraduationCap /> },
+    { name: "Real Estate", icon: <FaBuilding /> },
+    { name: "Arborist & Tree Removal", icon: <FaTree /> },
+    { name: "Lawn Care", icon: <FaSeedling /> },
+    { name: "E-commerce", icon: <RiShoppingCartFill /> },
+];
 
 const faqs = [
     {
@@ -144,29 +144,6 @@ export default function Home() {
     return (
         <>
             <GaHero />
-            <section className='pb-20'>
-                <div className="bg-gradient-to-t from-[#140d21] to-[#7028e4] mt-10 p-10 max-w-[90%] md:max-w-[80%] mx-auto rounded-xl text-white text-center">
-                    {/* Headline */}
-                    <h2 className="text-3xl font-sofiasanscondensed md:text-3xl xl:text-5xl font-bold">
-                        You&apos;re Spending on Google Ads. But Are You Really Getting Results?
-                    </h2>
-
-                    {/* Copy */}
-                    <p className="mt-6 text-sm md:text-lg xl:text-lg leading-7 max-w-4xl mx-auto">
-                        Most businesses in Hyderabad waste <span className="font-bold">30–50%</span> of their Google Ads budget. Why? Poor targeting. Generic copy. No funnel. Or agencies who ‘set and forget’.
-                        At <span className="text-purple-200 font-bold">Bixeltek</span>, we fix all that — and make every click count.
-                    </p>
-                    {/* <p className="mt-4 text-sm md:text-lg xl:text-lg leading-7 max-w-4xl mx-auto">
-                        We don&apos;t just manage ads. We unlock growth. And we do it with precision.
-                    </p> */}
-
-                    {/* CTA Button */}
-                    <button className="mt-8 bg-transparent text-white font-medium  rounded-lg text-sm md:text-lg xl:text-xl ">
-                        Find the Leaks in Your Campaign →
-                    </button>
-                </div>
-            </section>
-
             <GaSection />
             <section className=" pt-8 flex justify-center items-center max-w-[100%] md:max-w-[85%] mx-auto text-gray-800 sm:py-24">
                 <div className="mx-auto flex max-w-md flex-col md:flex-row justify-center items-center rounded-lg lg:max-w-screen-xl lg:flex-row">
@@ -212,16 +189,45 @@ export default function Home() {
                 </div>
             </section>
 
+
             <section className='bg-white py-20'>
                 <Googlecard />
             </section>
+            <section className="pb-20 px-4">
+                <div className="max-w-[90%] md:max-w-[85%] mx-auto mt-10 flex flex-col md:flex-row gap-6">
+
+                    {/* Left: 70% - Main Message */}
+                    <div className="bg-gradient-to-t from-[#140d21] to-[#7028e4] text-white p-10 rounded-2xl w-full md:w-[70%] text-center md:text-left">
+                        <h2 className="text-3xl font-sofiasanscondensed md:text-3xl xl:text-5xl font-bold">
+                            You&apos;re Spending on Google Ads. But Are You Really Getting Results?
+                        </h2>
+
+                        <p className="mt-6 text-sm md:text-lg xl:text-lg leading-7 max-w-3xl mx-auto md:mx-0">
+                            Most businesses in Hyderabad waste <span className="font-bold">30–50%</span> of their Google Ads budget. Why? Poor targeting. Generic copy. No funnel. Or agencies who ‘set and forget’.
+                            At <span className="text-purple-200 font-bold">Bixeltek</span>, we fix all that — and make every click count.
+                        </p>
+                    </div>
+
+                    {/* Right: 30% - CTA */}
+                    <div className="bg-[#FFC300] text-white p-8 rounded-2xl w-full md:w-[30%] flex flex-col items-center justify-center text-center">
+                        <h3 className="text-2xl text-gray-800 font-sofiasanscondensed md:text-4xl font-bold mb-4">
+                            Get a Free Google Ads Audit
+                        </h3>
+
+                        <button className="bg-transparent transition px-6 py-3 rounded-lg text-gray-800 hover:text-black font-semibold text-sm md:text-lg">
+                            Find the Leaks in Your Campaign →
+                        </button>
+                    </div>
+                </div>
+            </section>
+
             <section className=" max-w-[90%] md:max-w-6xl mx-auto pb-20 mt-20">
                 {/* Heading */}
                 <h2 className="text-3xl font-sofiasanscondensed font-bold text-black text-center mb-1 md:text-5xl">
                     What You Get When You Work With Us
                 </h2>
                 <h2 className="text-3xl font-sofiasanscondensed font-bold text-black text-center mb-14 md:text-4xl">
-                    We are A certified <Link href={'https://www.google.com/partners/agency?id=2188074075'} className='text-purple-700 '>Google Partner Agency</Link> 
+                    We are A certified <Link href={'https://www.google.com/partners/agency?id=2188074075'} className='text-purple-700 '>Google Partner Agency</Link>
                 </h2>
 
                 {/* Feature Grid */}
@@ -351,6 +357,7 @@ export default function Home() {
             <section className='bg-white py-20'>
                 <Googleadecarosel />
             </section>
+
             <section className="pb-16 bg-white">
                 <div className="container mx-auto px-6 max-w-7xl text-center">
                     <h2 className="text-4xl font-semibold font-sofiasanscondensed text-gray-900">Key Benefits of Our <span className='text-purple-500'>Google Ads Service</span> </h2>

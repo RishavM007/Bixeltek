@@ -10,8 +10,8 @@ export default function page() {
                 <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
                     Thank you for reaching out!
                 </h1>
-                <p className="mt-6 font-medium text-lg text-neutral-300 text-center max-w-xl mx-auto">
-                    We&apos;ve received your message and will get back to you soon. While you wait, feel free to explore more on our site.
+                <p className="mt-6 font-medium text-lg text-neutral-300 text-center max-w-3xl mx-auto">
+                We&apos;ve received your message and our team will get back to you soon. While you wait, feel free to explore more on our site or call us directly on +91 <a href="tel:+919100032301" className='underline underline-offset-4'>9100032301</a> 
                 </p>
                 <div className="mt-10 flex justify-center">
                     <a

@@ -1,18 +1,20 @@
 export const metadata = {
-  title: "Social Media Marketing Company in Hyderabad | Instagram & Facebook Ads | Bixeltek",
-  description:
-    "Elevate your brand with Bixeltek, Hyderabad’s leading social media management agency. Specialized in Instagram ads, Facebook ads, and tailored social media marketing services to drive business growth and conversions.",
-  keywords:
-    "Bixeltek social media, Social media management Hyderabad, Best social media agency Hyderabad, Instagram marketing, Facebook ads, LinkedIn marketing, Twitter management, Social media strategy, Content creation, Brand growth, Online presence",
-  openGraph: {
-    title: "Bixeltek | Expert Social Media Marketing Services in Hyderabad",
+    title: "Social Media Marketing Company in Hyderabad | Instagram & Facebook Ads | Bixeltek",
     description:
-      "Boost your brand’s online presence with Bixeltek’s professional social media management services. Drive engagement, increase reach, and build a strong brand identity.",
-    type: "website",
-  },
+        "Elevate your brand with Bixeltek, Hyderabad’s leading social media management agency. Specialized in Instagram ads, Facebook ads, and tailored social media marketing services to drive business growth and conversions.",
+    keywords:
+        "Bixeltek social media, Social media management Hyderabad, Best social media agency Hyderabad, Instagram marketing, Facebook ads, LinkedIn marketing, Twitter management, Social media strategy, Content creation, Brand growth, Online presence",
+    openGraph: {
+        title: "Bixeltek | Expert Social Media Marketing Services in Hyderabad",
+        description:
+            "Boost your brand’s online presence with Bixeltek’s professional social media management services. Drive engagement, increase reach, and build a strong brand identity.",
+        type: "website",
+    },
 };
 export const dynamic = "force-dynamic";
 import CarouselSection from "@/components/industriescarosel";
+import { VscDebugBreakpointDataUnverified } from "react-icons/vsc";
+import Link from "next/link";
 import ContactFrom from "@/components/ContactFrom";
 import HowItWorks from "@/components/howitworksSm";
 import LightFaqSection from "@/components/LightFaq";
@@ -25,44 +27,44 @@ export default function SocialMedia() {
 
     const faqs = [
         {
-          question: "Which social media platforms does Bixeltek manage?",
-          answer: "Bixeltek expertly manages Instagram, Facebook, LinkedIn, Twitter, and other major social media platforms tailored to your needs.",
+            question: "Which social media platforms does Bixeltek manage?",
+            answer: "Bixeltek expertly manages Instagram, Facebook, LinkedIn, Twitter, and other major social media platforms tailored to your needs.",
         },
         {
-          question: "Can Bixeltek tailor social media campaigns specifically for my business?",
-          answer: "Yes! Our agency specializes in developing highly customized social media strategies aligned with your specific goals and target audience in Hyderabad.",
+            question: "Can Bixeltek tailor social media campaigns specifically for my business?",
+            answer: "Yes! Our agency specializes in developing highly customized social media strategies aligned with your specific goals and target audience in Hyderabad.",
         },
         {
-          question: "How quickly will I see results?",
-          answer: "Typically, clients begin to see noticeable results within the first few weeks of launching a campaign, with significant improvements becoming evident over 2-3 months.",
+            question: "How quickly will I see results?",
+            answer: "Typically, clients begin to see noticeable results within the first few weeks of launching a campaign, with significant improvements becoming evident over 2-3 months.",
         },
         {
-          question: "What is included in your monthly reporting?",
-          answer: "Our comprehensive monthly reports include detailed analytics, performance metrics, audience insights, campaign effectiveness, and actionable recommendations.",
+            question: "What is included in your monthly reporting?",
+            answer: "Our comprehensive monthly reports include detailed analytics, performance metrics, audience insights, campaign effectiveness, and actionable recommendations.",
         },
         {
-          question: "Do you provide photo and video content services?",
-          answer: "Yes, we offer professional photo and video production services tailored specifically for social media platforms to enhance your visual content strategy.",
+            question: "Do you provide photo and video content services?",
+            answer: "Yes, we offer professional photo and video production services tailored specifically for social media platforms to enhance your visual content strategy.",
         },
         {
-          question: "How do you determine the right social media strategy for my business?",
-          answer: "We conduct an initial discovery session, analyzing your business objectives, market competition, audience behavior, and previous social media performance to develop a tailored strategy.",
+            question: "How do you determine the right social media strategy for my business?",
+            answer: "We conduct an initial discovery session, analyzing your business objectives, market competition, audience behavior, and previous social media performance to develop a tailored strategy.",
         },
         {
-          question: "Can Bixeltek help manage social media ads budget?",
-          answer: "Absolutely! We optimize and manage your advertising budgets carefully, ensuring you achieve maximum ROI from your Instagram, Facebook, LinkedIn, and Twitter ad campaigns.",
+            question: "Can Bixeltek help manage social media ads budget?",
+            answer: "Absolutely! We optimize and manage your advertising budgets carefully, ensuring you achieve maximum ROI from your Instagram, Facebook, LinkedIn, and Twitter ad campaigns.",
         },
         {
-          question: "Do I have to commit to a long-term contract?",
-          answer: "We offer flexible contract options, including month-to-month plans, allowing you to scale or adjust services as needed.",
+            question: "Do I have to commit to a long-term contract?",
+            answer: "We offer flexible contract options, including month-to-month plans, allowing you to scale or adjust services as needed.",
         },
-      ];      
+    ];
 
 
     return (
         <>
-            <section className="bg-black h-[90vh] text-white bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] py-[72px] relative overflow-hidden">
-                <div className="absolute bottom-0 left-0 w-full z-30 h-40 bg-gradient-to-t from-black to-transparent"></div>
+            <section className="bg-black h-auto text-white bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] pt-[72px] relative overflow-hidden">
+            <div className="absolute bottom-0 left-0 w-full z-30 h-40 bg-gradient-to-t from-black to-transparent"></div>
                 <div className="container relative mx-auto px-4">
                     <div className="flex items-center justify-center">
                         <a href="#" className="border py-1 px-2 inline-flex gap-3 rounded-lg border-white/30">
@@ -92,9 +94,50 @@ export default function SocialMedia() {
                     </div>
                 </div>
 
-                {/* Background Gradient Fix */}
-                <div className="absolute h-[300px] w-[600px] md:w-[1200px] lg:w-[2400px] lg:h-[1200px] rounded-[100%] bg-black left-1/2 -translate-x-1/2 border border-[#B48CDE] bg-[radial-gradient(closest-side,#000_82%,#9560EB)] top-[calc(100% - 96px)] md:top-[calc(100% - 120px)]">
+                <div className="bg-[#7b00e0] max-w-[80%] mt-20  pt-2 md:pt-5 mx-auto shadow-purple-custom2 rounded-t-2xl">
+                    <div className="max-w-[97%] pt-4 md:pt-10 pb-5  px-5 mx-auto bg-black rounded-t-2xl flex flex-col lg:flex-row justify-center items-center">
+                        {/* Left side */}
+                        <div className=" w-full md:w-1/2 flex flex-col">
+                            <h2 className="text-xl md:text-2xl lg:text-4xl text-white mt-4 md:mt-10 mx-2 md:mx-5 lg:mx-7">
+                                <span className="text-[#7b00e0]">Rank Higher, Get More Traffic</span> & Skyrocket Your Business Growth
+                            </h2>
+                            <div className="flex mt-10 md:mt-20 mb-6 mx-2 px-0 gap-8">
+                                <div className=" w-1/2 flex flex-col text-white">
+                                    <h1 className="text-[#6728cc] text-3xl md:text-5xl font-semibold">278%</h1>
+                                    <p className="text-gray-100 text-sm mt-2">Increase in organic traffic <br /> within six months for our clients</p>
+                                </div>
+                                <div className="w-1/2 flex flex-col text-white">
+                                    <h1 className="text-[#6728cc] text-3xl md:text-5xl font-semibold">4.2X</h1>
+                                    <p className="text-gray-100 text-sm mt-2">
+                                        Higher lead conversions from targeted SEO campaigns.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Right side */}
+                        <div className="w-full md:w-1/2 pb-10 md:pb-0">
+                            <ul className="flex flex-col text-gray-100 gap-10 px-2 md:px-6">
+                                <li className="flex items-start gap-4 text-sm md:text-[16px]">
+                                    <VscDebugBreakpointDataUnverified className="text-[#670ef7] mt-[-17px] text-6xl" />
+                                    <span>
+                                        <span className='font-semibold'>Is your website struggling to generate leads and sales?</span> You&apos;re not alone. Over 91% of online content gets zero traffic from Google, meaning businesses without a strong SEO strategy are missing out on valuable customers.
+                                    </span>
+                                </li>
+                                <li className="flex items-start gap-4 text-2xl ml-8 ">
+                                    <span>
+                                        <Link href={'#'}>Want to dominate search engine rankings? <span className='text-[#670ef7]'>Get a Free SEO Audit today!</span> </Link>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
+
+                {/* Background Gradient Fix */}
+                {/* <div className="absolute h-[300px] w-[600px] md:w-[1200px] lg:w-[2400px] lg:h-[1200px] rounded-[100%] bg-black left-1/2 -translate-x-1/2 border border-[#B48CDE] bg-[radial-gradient(closest-side,#000_82%,#9560EB)] top-[calc(100% - 96px)] md:top-[calc(100% - 120px)]">
+                </div> */}
             </section>
             <section className=" pt-8 flex justify-center items-center max-w-[100%] md:max-w-[85%] mx-auto text-white sm:py-24">
                 <div className="mx-auto flex max-w-md flex-col md:flex-row justify-center items-center rounded-lg lg:max-w-screen-xl lg:flex-row">
@@ -337,7 +380,7 @@ export default function SocialMedia() {
                                 Ready to Elevate Your Social Media?
                             </h2>
                             <p className="text-xl max-w-2xl text-indigo-100">
-                            Partner with Hyderabad&apos;s premier social media management agency to unlock new opportunities.
+                                Partner with Hyderabad&apos;s premier social media management agency to unlock new opportunities.
                             </p>
                         </div>
                         <a

@@ -312,8 +312,8 @@ export const ContactForm: React.FC<ContactFormProps> = ({ isVisible, onClose }: 
                         <input
                             type="text"
                             id="budget"
-                            name="budget"
-                            value={formData.website}
+                            name="marketingBudget"
+                            value={formData.marketingBudget}
                             onChange={handleInputChange}
                             className="w-full input-field mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                             placeholder="What is your marketing budget?"

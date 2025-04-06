@@ -81,7 +81,7 @@ export default function GaSection() {
             <div className="= max-w-[97%] items-center relative flex flex-col md:flex-row pt-5 gap-5 md:gap-14 px-10 pb-20 md:pt-16 xl:pt-16">
 
                 <div className="flex flex-col items-center text-center">
-                    <h2 className="text-4xl xl:text-[44px] xl:leading-[44px] my-2 font-montaga font-bold text-zinc-700">5+</h2>
+                    <h2 className="text-4xl xl:text-5xl my-2 font-sofiasanscondensed font-bold text-zinc-700">5+</h2>
                     <p className="font-sofiasanscondensed text-gray-900 leading-6 tracking-wide text-sm lg:text-xl uppercase">Years creating campaigns</p>
                     <p className=" text-gray-700  tracking-wide my-1 text-sm xl:text-lg">
                         In Google Ads, the experience is a degree
@@ -89,7 +89,7 @@ export default function GaSection() {
                 </div>
 
                 <div className="flex flex-col items-center text-center">
-                    <h2 className="text-4xl xl:text-[44px] xl:leading-[44px] my-2 font-bold font-montaga text-zinc-700">0</h2>
+                    <h2 className="text-4xl xl:text-5xl  my-2 font-bold font-sofiasanscondensed text-zinc-700">0</h2>
                     <p className="font-raleway text-gray-900 leading-6 tracking-wide uppercase font-sofiasanscondensed text-sm lg:text-xl">Months of permanence</p>
                     <p className=" text-gray-700 tracking-wide my-1 text-sm xl:text-lg">
                         Our service does not have permanence
@@ -97,7 +97,7 @@ export default function GaSection() {
                 </div>
 
                 <div className="flex flex-col items-center text-center">
-                    <h2 className="text-4xl xl:text-[44px] xl:leading-[44px] my-2 font-bold font-montaga text-zinc-700">4</h2>
+                    <h2 className="text-4xl xl:text-5xl my-2 font-bold font-sofiasanscondensed text-zinc-700">4</h2>
                     <p className="font-raleway text-gray-900 leading-6 tracking-wide uppercase  font-sofiasanscondensed lg:text-xl text-sm">Experts</p>
                     <p className=" text-gray-700 tracking-wide my-1 text-sm xl:text-lg">
                         A large team of certified professionals
@@ -105,7 +105,7 @@ export default function GaSection() {
                 </div>
 
                 <div className="flex flex-col items-center text-center">
-                    <h2 className="text-4xl xl:text-[44px] xl:leading-[44px] my-2 font-bold font-montaga text-zinc-700">12</h2>
+                    <h2 className="text-4xl xl:text-5xl my-2 font-bold font-sofiasanscondensed text-zinc-700">12</h2>
                     <p className="font-raleway text-gray-900 leading-6 tracking-wide font-sofiasanscondensed uppercase text-sm lg:text-xl">Years with us</p>
                     <p className=" text-gray-700 my-1 tracking-wide text-sm xl:text-lg">
                         Each customer is with us for an average of 12 years

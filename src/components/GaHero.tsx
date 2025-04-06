@@ -3,9 +3,20 @@ import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import rocket from '@/assets/rb_3704.png';
+import { ContactForm } from "@/sections/ContactForm";
+import { useState } from 'react';
 import { IoCheckmarkOutline } from "react-icons/io5";
 export default function GaHero() {
+
+        const [isVisible, setIsVisible] = useState(false);
+    
+        const toggleContactForm = () => {
+            setIsVisible(prev => !prev);
+            console.log(!isVisible ? "Contact form visible" : "Contact form not visible");
+        };
+
     return (
+        <>  
         <section>
             <div className="relative mt-[-90px]  isolate lg:mt-[-150px] mb-[0px] overflow-hidden bg-black h-[100vh] md:h-[100vh] lg:h-[105vh] xl:h-[105vh]  sm:h-[120vh]  flex items-center justify-center">
                 <svg
@@ -65,14 +76,26 @@ export default function GaHero() {
                         </div>
                     </div>
 
-                    <button className="backdrop-blur-3xl border border-white group text-white font-normal text-sm xl:text-lg py-2 px-4 md:px-6 md:py-3 xl:py-2 xl:px-5 md:text-md rounded-lg mt-14 md:mt-16 shadow-custom">
+
+                    <a href="tel:+919100032301">
+                    <button onClick={toggleContactForm} className=" bg-white capitalize tracking-wide group text-black font-medium text-sm xl:text-base py-2 px-4 md:px-6 md:py-3 xl:py-2 xl:px-5 md:text-md rounded-lg mt-14 md:mt-16 mx-5">
+                        <span>
+                            Talk to a google-ads Specialist
+                        </span>
+                    </button>
+                    </a>
+
+                    <button onClick={toggleContactForm} className="backdrop-blur-3xl border  border-white group text-white font-normal text-sm xl:text-base py-2 px-4 md:px-6 md:py-3 xl:py-2 xl:px-5 md:text-md rounded-lg mt-14 md:mt-16 shadow-custom">
                         <span>
                             Get a Free Audit Today!{' '}
                             <i className="fa fa-arrow-right ml-2 rotate-[-45deg] group-hover:rotate-[0deg] transition-all" aria-hidden="true"></i>
                         </span>
                     </button>
+
                 </div>
             </div>
         </section>
+         <ContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
+        </>
     )
 }

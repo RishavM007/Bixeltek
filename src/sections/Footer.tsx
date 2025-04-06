@@ -96,9 +96,7 @@ export const Footer = () => {
         <div className="px-4 sm:w-1/2 md:w-1/4 mt-4 md:mt-0">
           <h6 className="font-bold mb-2">Address</h6>
           <address className="not-italic mb-4 text-sm">
-            Besides Ruby<br />
-            Enterprises, Suncity, <br />
-            P&T Colony, Hyderabad-500091
+          Bixeltek,<br /> 3rd Floor, Behind Cult Fit,<br /> K K Convention Road, Suncity Rd, opposite Ratnadeep, Bandlaguda Jagir, Hyderabad, Telangana 500091
           </address>
         </div>
         <div className="px-4 sm:w-1/2 md:w-1/4 mt-4 md:mt-0">
