@@ -1,6 +1,9 @@
 import Phone from '@/assets/MyProfile-left.png'
 import Image from 'next/image'
 import code from '@/assets/codess.png'
+import { MdKeyboardArrowRight } from "react-icons/md";
+
+import Link from 'next/link'
 export const Bento = () => {
     return (
         <div className="bg-black  py-10 sm:py-20">
@@ -20,9 +23,13 @@ export const Bento = () => {
                                 <p className="mt-2 text-xl font-medium tracking-tight text-white max-lg:text-center">
                                 Social Media Marketing – Thumb-stopping content and Meta Ads that build your audience and drive action.
                                 </p>
+                                
                                 <p className="mt-2 max-w-lg text-sm/6 text-gray-200 max-lg:text-center">
                                     Our team of experts understands the importance of Social Media Marketing. We can help you build your brand using various social media platforms.
                                 </p>
+                                <Link href={'/social-media-marketing-agency-hyderabad'}>
+                                <p className='text-white mt-4 '>Learn More <MdKeyboardArrowRight className=' inline mb-[2px] text-lg' /></p>
+                                </Link>
                             </div>
                             <div className="relative min-h-[30rem] w-full grow overflow-y-hidden [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
                                 <Image
@@ -43,6 +50,9 @@ export const Bento = () => {
                                 <p className="mt-2 max-w-lg text-sm/6 text-gray-200 max-lg:text-center">
                                     Boost your visibility with keyword optimization and on-page strategies for better search rankings.
                                 </p>
+                                <Link href={'/seo-agency-hyderabad'}>
+                                <p className='text-white mt-4 '>Learn More <MdKeyboardArrowRight className=' inline mb-[2px] text-lg' /></p>
+                                </Link>
                             </div>
                             <div className="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
                                 <img
@@ -62,6 +72,9 @@ export const Bento = () => {
                                 <p className="mt-2 max-w-lg text-sm/6 text-gray-200 max-lg:text-center">
                                     With researched digital marketing, we will ensure that new customers and clients are able to find your business.
                                 </p>
+                                <Link href={'/google-ads-agency-hyderabad'}>
+                                <p className='text-white mt-4 '>Learn More <MdKeyboardArrowRight className=' inline mb-[2px] text-lg' /></p>
+                                </Link>
                             </div>
                             <div className="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
                                 <img
@@ -82,6 +95,9 @@ export const Bento = () => {
                                 <p className="mt-2 max-w-lg text-sm/6 text-gray-200 max-lg:text-center">
                                     Our web design team has ample years of experience in the core areas of design to build a website that you need.
                                 </p>
+                                <Link href={'/web-design-services-hyderabad'}>
+                                <p className='text-white mt-4 '>Learn More <MdKeyboardArrowRight className=' inline mb-[2px] text-lg' /></p>
+                                </Link>
                             </div>
                             <div className="relative min-h-[30rem] w-full grow">
                                 <div className="absolute bottom-0 left-10 top-10 right-0 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl">
