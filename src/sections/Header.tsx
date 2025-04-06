@@ -80,7 +80,7 @@ export const Header = () => {
   ];
 
   return (
-    <header className="px-3 py-5 max-w-7xl mx-auto sticky top-0 z-[60]">
+    <header className="px-3 py-5  max-w-7xl mx-auto sticky top-0 z-[60]">
       <div className="container bg-black flex justify-between items-center border-white/15 border-solid border-2 rounded-xl shadow-purple-custom backdrop:blur-3xl">
         <div className="text-white py-3">
           <Link href={"/"}>
@@ -119,9 +119,9 @@ export const Header = () => {
                 )}
               </li>
               <li><Link href="/industries" className="block py-2 px-4 hover:bg-purple-600 rounded">Industries</Link></li>
-              {/* <li><Link href="/" className="block py-2 px-4 hover:bg-purple-600 rounded">Case Studies</Link></li>
-              <li><Link href="/" className="block py-2 px-4 hover:bg-purple-600 rounded">Blog</Link></li> */}
-              <li><Link href="/about" className="block py-2 px-4 hover:bg-purple-600 rounded">About Us</Link></li>
+               <li><Link href="/casestudies-bixeltek/Tumblewash-Casestudy" className="block py-2 px-4 hover:bg-purple-600 rounded">Case Studies</Link></li>
+              {/*<li><Link href="/" className="block py-2 px-4 hover:bg-purple-600 rounded">Blog</Link></li> */}
+              <li><Link href="/about-us" className="block py-2 px-4 hover:bg-purple-600 rounded">About Us</Link></li>
             </ul>
             <div className=" justify-center  items-center gap-5 py-4">
             <a href="tel:+919100032301">
@@ -233,7 +233,7 @@ export const Header = () => {
                 </Link>
               </li>
               <li className="flex items-center py-7">
-                <Link href="" className="text-white/70 hover:text-white transition flex items-center">
+                <Link href="/casestudies-bixeltek/Tumblewash-Casestudy" className="text-white/70 hover:text-white transition flex items-center">
                   Case Studies <HiChevronDown className="ml-1 text-xs" />
                 </Link>
               </li>
@@ -243,7 +243,7 @@ export const Header = () => {
                 </Link>
               </li>
               <li className="flex items-center py-7 lg:inline">
-                <Link href='/about' className="text-white/70 hover:text-white transition">
+                <Link href='/about-us' className="text-white/70 hover:text-white transition">
                   About Us
                 </Link>
               </li>
