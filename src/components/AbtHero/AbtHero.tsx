@@ -39,7 +39,6 @@ export const Bento = () => {
                                 />
                             </div>
                         </div>
-
                         <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-l-[2rem]"></div>
                     </div>
                     <div className="relative max-lg:row-start-1">

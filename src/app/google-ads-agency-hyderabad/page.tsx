@@ -117,7 +117,7 @@ export default function Home() {
         {
             icon: <LuTarget className="text-blue-500 text-3xl" />,
             title: "Precise Audience Targeting",
-            description: "Refined audience targeting to reach high-converting customers.",
+            description: "Refined audience targeting to reach high-converting customers.Now stop worrying about reaching the wrong audience at the wrong time in the wrong place.",
         },
         {
             icon: <LuFlaskConical className="text-red-500 text-3xl" />,
@@ -204,13 +204,13 @@ export default function Home() {
 
                         <p className="mt-6 text-sm md:text-lg xl:text-lg leading-7 max-w-3xl mx-auto md:mx-0">
                             Most businesses in Hyderabad waste <span className="font-bold">30–50%</span> of their Google Ads budget. Why? Poor targeting. Generic copy. No funnel. Or agencies who ‘set and forget’.
-                            At <span className="text-purple-200 font-bold">Bixeltek</span>, we fix all that — and make every click count.
+                            At <span className="text-purple-200 font-bold">Bixeltek</span>, we fix all that and make every click count.
                         </p>
                     </div>
 
                     {/* Right: 30% - CTA */}
                     <div className="bg-[#FFC300] text-white p-8 rounded-2xl w-full md:w-[30%] flex flex-col items-center justify-center text-center">
-                        <h3 className="text-2xl text-gray-800 font-sofiasanscondensed md:text-4xl font-bold mb-4">
+                        <h3 className="text-2xl xl:text-3xl text-gray-800 font-sofiasanscondensed md:text-4xl font-bold mb-4">
                             Get a Free Google Ads Audit
                         </h3>
 
@@ -226,7 +226,7 @@ export default function Home() {
                 <h2 className="text-3xl font-sofiasanscondensed font-bold text-black text-center mb-1 md:text-5xl">
                     What You Get When You Work With Us
                 </h2>
-                <h2 className="text-3xl font-sofiasanscondensed font-bold text-black text-center mb-14 md:text-4xl">
+                <h2 className="text-3xl font-sofiasanscondensed capitalize font-bold text-black text-center mb-14 md:text-4xl">
                     We are A certified <Link href={'https://www.google.com/partners/agency?id=2188074075'} className='text-purple-700 '>Google Partner Agency</Link>
                 </h2>
 
@@ -360,7 +360,7 @@ export default function Home() {
 
             <section className="pb-16 bg-white">
                 <div className="container mx-auto px-6 max-w-7xl text-center">
-                    <h2 className="text-4xl font-semibold font-sofiasanscondensed text-gray-900">Key Benefits of Our <span className='text-purple-500'>Google Ads Service</span> </h2>
+                    <h2 className="text-4xl font-semibold font-sofiasanscondensed text-gray-900">Key Benefits of Our <span className='text-purple-700'>Google Ads Service</span> </h2>
                     <p className="text-gray-600 text-lg mt-2 mb-10">Unlock better performance with expert ad strategies.</p>
                     {/* Grid with Tic-Tac-Toe style borders */}
                     <div className="grid grid-cols-1  md:grid-cols-3">
@@ -387,12 +387,12 @@ export default function Home() {
                     >
                         <div className="block text-center mb-5 lg:text-left lg:mb-0">
                             <h2
-                                className="font-manrope text-4xl text-white font-semibold mb-5 lg:mb-2"
+                                className="font-manrope capitalize text-4xl text-white font-semibold mb-5 lg:mb-2"
                             >
-                                Connect & grow with your targeted customers
+                                More Leads. More Sales. More Conversions.
                             </h2>
                             <p className="text-xl text-indigo-100">
-                                Contact us with any query or any idea.
+                                Connect and grow with us
                             </p>
                         </div>
                         <a
@@ -424,7 +424,7 @@ export default function Home() {
                     <div className="text-center">
                         <p className="text-sm font-bold uppercase tracking-widest text-gray-700">How It Works</p>
                         <h2 className="mt-6 text-3xl font-semibold font-sofiasanscondensed tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
-                            Optimize Your Google Ads in <span className='text-purple-500'>4 Simple Steps</span>
+                            Optimize Your Google Ads in <span className='text-purple-700'>4 Simple Steps</span>
                         </h2>
                         <p className="mx-auto mt-4 max-w-2xl text-lg font-normal text-gray-700 lg:text-xl lg:leading-8">
                             Maximize your ad performance with our streamlined  4-step process.

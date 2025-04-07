@@ -2,8 +2,8 @@ export const Googlecard = () => {
     return (
         <>
         <div className="container relative flex flex-col justify-between h-full max-w-7xl px-10 mx-auto xl:px-0 mt-5">
-                <h2 className="mb-1 text-3xl md:text-4xl font-extrabold leading-tight text-gray-900">Our specialties as a Google Ads agency</h2>
-                <p className="mb-12 text-[16px] md:text-[17px] mt-4 max-w-lg text-gray-500">As Google Ads experts at Bixeltek, we specialize in crafting and optimizing a variety of campaign formats to maximize your success on the platform:</p>
+                <h2 className="mb-1 text-3xl md:text-4xl font-extrabold leading-tight text-gray-900">Our specialties as a Google Ads Agency</h2>
+                <p className="mb-12 text-[16px] md:text-[17px] mt-4 max-w-lg text-gray-500">As Google Ads experts at Bixeltek, we specialize in crafting and optimizing a variety of campaign formats to maximize your success on Google Adwords:</p>
                 <div className="w-full">
                     <div className="flex flex-col w-full mb-10 lg:flex-row">
                         <div className="w-full mb-10 lg:mb-0 lg:w-1/2">

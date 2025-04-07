@@ -98,7 +98,7 @@ const AdsFailureSection = () => {
                 <div className="mt-12 p-6 bg-white">
                     {/* Heading */}
                     <h2 className="text-4xl font-sofiasanscondensed capitalize font-semibold mb-4 text-center">
-                        What we do different from Other Google Adwords company
+                        This is how we do it differently from other Google Adwords Agency
                     </h2>
                     <p className="mb-6 text-center max-w-5xl mx-auto text-lg">
                         We don&apos;t just run your ads — we engineer them to produce measurable leads and ROI,
