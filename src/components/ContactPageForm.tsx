@@ -161,7 +161,9 @@ export const ContactSection: React.FC = () => {
                         </div>
                         <div className="flex items-center gap-4">
                             <FaEnvelope className="text-[#670ef7]" />
+                            <a href="mailto:hello@bixelte.com">
                             <span>hello@bixeltek.com</span>
+                            </a>
                         </div>
                         <div className="flex items-center gap-4">
                             <FaMapMarkerAlt className="text-[#670ef7]" />

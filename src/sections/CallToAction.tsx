@@ -1,6 +1,7 @@
 'use client';
 import starBg from '@/assets/stars.png'
 import Grid from '@/assets/grid-lines.png'
+import Link from 'next/link';
 import { motion, useMotionTemplate, useMotionValue, useScroll, useTransform } from 'framer-motion';
 import { RefObject, useEffect, useRef } from 'react';
 export const CallToAction = () => {
@@ -60,9 +61,11 @@ export const CallToAction = () => {
             <h2 className="text-5xl mx-w-sm mx-auto tracking-tighter text-center font-medium">AI driven SEO for everyone</h2>
             <p className="text-center text-lg max-w-sm md:max-w-xl mx-auto text-white/70 px-4 mt-4 tracking-tight">Achive clear and impactful results without complexity.</p>
             <div className="flex justify-center mt-8">
+              <Link href={"/contact-us"} className="flex items-center justify-center">
               <button className="bg-gradient-to-t from-[#4a208a] to-[#13012e] border border-[#8a45f2] text-white font-normal text-sm py-2 px-4 rounded-lg shadow-custom">
                 <span>Contact Us</span>
               </button>
+              </Link>
             </div>
           </div>
         </motion.div>
