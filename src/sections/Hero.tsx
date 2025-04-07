@@ -1,7 +1,7 @@
 'use client';
 import stars from '@/assets/stars.png'
 import { motion } from 'framer-motion';
-import { url } from 'inspector';
+import Link from 'next/link';
 export const Hero = () => {
   
   const getaQuote = ()=>{
@@ -78,14 +78,18 @@ export const Hero = () => {
         <p className='text-base max-w-2xl mx-auto mt-2'>From web design to Google Ads, SEO, and social media marketing — we help you grow fast and smart.</p>
       </div>
       <div className="flex justify-center items-center mt-10 gap-5">
+        <a href="tel:+919100032301">
         <button className="bg-gradient-to-t from-[#4a208a] to-[#13012e] border border-[white] text-white font-normal text-sm py-2 px-4 md:px-6 md:py-3 md:text-md rounded-lg md:mt-5 shadow-custom">
-          <span>Book Now</span>
+          <span>Talk to an Expect</span>
         </button>
+        </a>
+        <Link href='/contact-us'>
         <button className="backdrop-blur-3xl border border-white text-white font-normal text-sm py-2 px-4 md:px-6 md:py-3 md:text-md rounded-lg md:mt-5 shadow-custom " onClick={getaQuote}>
           <span>
             Get a Quote<i className="fa-solid fa-arrow-right ml-2" id='get_a_quote'></i>
           </span>
         </button>
+        </Link>
 
       </div>
     </div>

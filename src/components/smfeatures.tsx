@@ -4,11 +4,11 @@ import Smfeature from './smfeature'
 
 const features = [
     {
-        title: "Custom WordPress Development",
+        title: "Custom Website Development",
         description: "We craft 100% custom, high-performance WordPress websites with zero templates and lightning-fast load speeds. Our builds are SEO-optimized, mobile-friendly, and designed for long-term scalability."
     },
     {
-        title: "WooCommerce Ecommerce Websites",
+        title: "Ecommerce Websites",
         description: "Sell smarter with high-converting, fully responsive eCommerce stores. We optimize product pages, checkout flows, and secure payment integrations to boost sales, user engagement, and search engine rankings."
     },
     {

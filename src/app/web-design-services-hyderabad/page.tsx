@@ -41,6 +41,7 @@ import healthcare from "@/assets/digital marketing for health care practices.jpg
 import lawncare from "@/assets/digital marketing for lawn care services.jpg";
 import blackcar from "@/assets/digital marketing for car detailers.jpg";
 import oil from "@/assets/digital marketing for oil refinaries.jpg";
+import Link from 'next/link';
 
 
 
@@ -558,29 +559,36 @@ export default function Webdev() {
             <section className='w-full flex flex-wrap max-w-[90%] mx-auto lg:flex-nowrap overflow-y-hidden items-center'>
                 {/* Left Content Section */}
                 <div className='w-full lg:w-1/2 px-1 md:px-6 py-10 lg:py-14'>
-                    <h2 className="text-4xl md:text-5xl font-semibold text-gray-800 font-sofiasanscondensed dark:text-white">
-                        Proven Results Across <span className='text-purple-500'>Diverse Industries</span>
+                    <h2 className="text-4xl md:text-5xl font-semibold font-sofiasanscondensed text-white">
+                        Building High Converting Websites Across <span className='text-purple-500'>Diverse Industries</span>
                     </h2>
-                    <p className="mt-4 text-sm md:text-lg text-gray-600 dark:text-gray-300">
-                        Our expertise spans multiple industries, helping businesses achieve growth through data-driven strategies and
-                        innovative solutions. From technology and finance to healthcare and retail, we empower brands with actionable insights
+                    <p className="mt-4 text-sm md:text-lg text-gray-300">
+                        Our web design expertise spans multiple industries, helping businesses achieve higher conversion rates through stragically designed websites conpatible for SEO, Google Ads and Meta Marketing. From technology and finance to healthcare and retail, we empower brands with actionable insights
                         and cutting-edge digital solutions.
                     </p>
-                    <p className="mt-2 text-sm md:text-lg text-gray-600 dark:text-gray-300">
-                        Explore how our tailored approach delivers measurable success, increasing engagement, conversions, and brand visibility
+                    <p className="mt-2 text-sm md:text-lg text-gray-300">
+                        Explore how our beautifully crafted websites deliver success by increasing engagement rate, by delivering more conversions, leads, sales and brand visibility
                         in a competitive landscape.
                     </p>
                     <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-5">
                         {industries.map((industry, index) => (
                             <div key={index} className="flex items-center text-lg text-white">
                                 <span className="text-white text-xl inline-block  mr-3">{industry.icon}</span>
-                                <h2 className='font-poppins text-sm'>{industry.name}&nbsp;SEO</h2>
+                                <h2 className='font-poppins text-sm'>Web-design services for {industry.name}</h2>
                             </div>
                         ))}
                     </div>
+                    <div className='flex flex-col md:flex-row gap-4'>
+
                     <button className="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
                         Learn More
                     </button>
+                   <a href="tel:+919100032301">
+                    <button className="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
+                        Talk to our Specialist
+                    </button>
+                   </a>
+                    </div>
                 </div>
                 <div className="flex w-full lg:w-1/2 justify-center gap-4 p-1">
                     <div className='w-1/3 flex flex-col  items-center justify-center gap-3'>

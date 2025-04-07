@@ -265,12 +265,12 @@ export default function Industries() {
 
         <div className="w-full md:w-1/2 mb-6 md:mb-0 text-center md:text-left">
           <h2 className="text-4xl font-semibold mb-4">
-            &quot;Hey <span className="text-blue-500">G</span>
+            &quot;Hey, We&apos;re <span className="text-blue-500">G</span>
             <span className="text-red-500">o</span>
             <span className="text-yellow-500">o</span>
             <span className="text-blue-500">g</span>
             <span className="text-green-500">l</span>
-            <span className="text-red-500">e</span>, We&apos;re Certified!&quot;
+            <span className="text-red-500">e</span>Certified!&quot;
           </h2>
           <p className="text-xl md:text-2xl font-light leading-relaxed">
             Proud to be a part of the Google Partners family. Leveraging the power of Google tools to help businesses grow smarter and faster.
