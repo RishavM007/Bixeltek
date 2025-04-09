@@ -112,7 +112,7 @@ export const Footer = () => {
         <div className="mt-6 text-center">
           <Link href={"/contact-us"}>
             <button className="bg-gradient-to-t from-[#4a208a] to-[#13012e] border border-[#8a45f2] text-white font-normal text-sm py-2 px-4 rounded-lg shadow-custom mt-4">
-              <span className="tracking-wider">Let's Talk <i className="fa fa-arrow-right text-sm ml-1" aria-hidden="true"></i></span>
+              <span className="tracking-wider">Let&apos;s Talk <i className="fa fa-arrow-right text-sm ml-1" aria-hidden="true"></i></span>
             </button>
           </Link>
         </div>
