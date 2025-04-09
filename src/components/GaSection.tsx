@@ -2,6 +2,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Teamimg from '@/assets/pexels-fauxels-3182834.jpg'
+import Link from 'next/link';
 import Image from 'next/image';
 
 export default function GaSection() {
@@ -62,6 +63,14 @@ export default function GaSection() {
                             alt="Google Partner Badge"
                             className="w-auto h-auto" />
                     </a>
+                    <div className='flex flex-col md:flex-row gap-5 mt-10'>
+                        <Link href={'/contact-us'}>
+                    <button className='bg-neutral-800 rounded-lg text-white px-5 py-3'>Get An Audit</button>
+                        </Link>
+                        <a href="tel:+919100032301">
+                    <button className='bg-transparent text-black hover:bg-neutral-800 hover:text-white py-3 px-5 transition-all duration-200 rounded-lg '>Speak to our Google Ads Specialist</button>
+                        </a>
+                    </div>
                 </div>
 
                 <div className="w-full md:w-1/3  relative">

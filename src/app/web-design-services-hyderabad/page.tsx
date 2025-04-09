@@ -354,10 +354,11 @@ export default function Webdev() {
                             <p className="flex items-center"><span className="text-purple-500 text-lg mr-2">✔</span> Web Development</p>
                             <p className="flex items-center"><span className="text-purple-500 text-lg mr-2">✔</span> Mobile Apps Design</p>
                         </div>
-
+                            <Link href={'/casestudies-bixeltek/Tumblewash-Casestudy'} target='_blank'>
                         <button className="mt-10 px-6 py-3 border border-white rounded-md hover:bg-white hover:text-black transition">
                             Explore Our Projects
                         </button>
+                            </Link>
                     </div>
 
                 </div>
@@ -382,8 +383,8 @@ export default function Webdev() {
                                 Contact us with any query or any idea.
                             </p>
                         </div>
-                        <a
-                            href="#"
+                        <Link
+                            href="/contact-us"
                             className="flex items-center gap-2 bg-white rounded-full shadow-sm text-lg text-indigo-600 font-semibold py-4 px-8 transition-all duration-500"
                         >Get In Touch
                             <svg
@@ -401,7 +402,7 @@ export default function Webdev() {
                                     stroke-linejoin="round"
                                 />
                             </svg>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -579,14 +580,16 @@ export default function Webdev() {
                         ))}
                     </div>
                     <div className='flex flex-col md:flex-row gap-4'>
-
+                        <Link href={'/industries'}>
                     <button className="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
                         Learn More
                     </button>
+                        </Link>
                    <a href="tel:+919100032301">
                     <button className="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
                         Talk to our Specialist
                     </button>
+                    
                    </a>
                     </div>
                 </div>

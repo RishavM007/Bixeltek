@@ -21,6 +21,7 @@ import healthcare from "@/assets/digital marketing for health care practices.jpg
 import oil from "@/assets/digital marketing for oil refinaries.jpg";
 import { FaSearch, FaTachometerAlt, FaFileAlt, FaStar, FaMapMarkerAlt, FaCode } from "react-icons/fa";
 import { PiGreaterThan } from "react-icons/pi";
+import SeoHero from '@/components/SeoHero';
 import pet from "@/assets/digital marketing for pet stores.jpg";
 import roofing from "@/assets/digital marketing for roofing industries.jpg";
 import dental from "@/assets/digital marketing for health care practices.jpg";
@@ -33,7 +34,6 @@ import { TbReportAnalytics } from "react-icons/tb";
 import { GrFlag } from "react-icons/gr";
 import { LuFileClock } from "react-icons/lu";
 import Image from 'next/image';
-
 
 export default function Seo() {
 
@@ -156,112 +156,7 @@ export default function Seo() {
 
     return (
         <>
-            <section className="relative pt-12 overflow-hidden bg-black sm:pt-16">
-                <div className="absolute bottom-0 left-0 w-full z-30 h-40 bg-gradient-to-t from-black to-transparent"></div>
-                <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-                    <div className="max-w-4xl mx-auto text-center">
-                        <p className="text-xs md:text-sm font-normal tracking-widest uppercase">
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r  from-cyan-500 to-purple-500">
-                                Your Business Needs Visibility, And We Can Help you rank on <span className='font-bold italic'>Google</span>
-                            </span>
-                        </p>
-                        <h1 className="mt-8 text-2xl font-normal text-white lg:text-6xl xl:text-6xl">
-                            Bixeltek – A Premier SEO Agency in Hyderabad,India
-                        </h1>
-                        <p className='text-base text-white/80 mt-4'>
-                            Ready to outshine the competition and drive consistent leads? Bixeltek is your trusted SEO company in Hyderabad, offering cutting-edge SEO services that propel your business to the top of Google’s search results. Let’s turn organic traffic into tangible growth.
-                        </p>
-
-                        <div className="flex flex-col items-center justify-center px-8 mt-12 space-y-5 sm:space-y-0 sm:px-0 sm:space-x-5 sm:flex-row">
-                            <div className="relative inline-flex items-center justify-center w-full sm:w-auto group">
-                                <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-cyan-500/50"></div>
-                                <a href="#" className="relative inline-flex items-center justify-center w-full px-8 py-3 text-base font-normal text-white bg-black border border-transparent rounded-full sm:w-auto">
-                                    Get A Quote
-                                </a>
-                            </div>
-
-                            <a href="#" className="inline-flex items-center justify-center w-full px-8 py-3 text-base font-normal text-white transition-all duration-200 bg-black border border-gray-600 rounded-full sm:w-auto hover:border-white">
-                                Contact Us
-                            </a>
-                        </div>
-                    </div>
-
-                    <div className="relative mt-12 sm:mt-16 lg:mt-24">
-
-                        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -z-10">
-                            <svg
-                                className="blur-[64px] filter"
-                                width="645"
-                                height="413"
-                                viewBox="0 0 645 413"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M181.316 218.778C86.2529 123.715 -63.7045 134.94 31.3589 39.8762C126.422 -55.1873 528.427 41.1918 623.49 136.255C718.554 231.319 470.678 289.068 375.614 384.131C280.551 479.195 276.38 313.842 181.316 218.778Z"
-                                    fill="url(#d)"
-                                />
-                                <defs>
-                                    <linearGradient
-                                        id="d"
-                                        x1="665.741"
-                                        y1="178.506"
-                                        x2="296.286"
-                                        y2="474.62"
-                                        gradientUnits="userSpaceOnUse"
-                                    >
-                                        <stop offset="0%" className="text-cyan-500" stopColor="currentColor" />
-                                        <stop offset="100%" className="text-purple-500" stopColor="currentColor" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-
-
-                        <div className="bg-[#7b00e0] max-w-full pt-2 md:pt-5 mx-auto shadow-purple-custom2 rounded-t-2xl">
-                            <div className="max-w-[97%] pt-4 md:pt-10 pb-5  px-5 mx-auto bg-black rounded-t-2xl flex flex-col lg:flex-row justify-center items-center">
-                                {/* Left side */}
-                                <div className=" w-full md:w-1/2 flex flex-col">
-                                    <h2 className="text-xl md:text-2xl lg:text-4xl text-white mt-4 md:mt-10 mx-2 md:mx-5 lg:mx-7">
-                                        <span className="text-[#7b00e0]">Rank Higher, Get More Traffic</span> & Skyrocket Your Business Growth
-                                    </h2>
-                                    <div className="flex mt-10 md:mt-20 mb-6 mx-2 px-0 gap-8">
-                                        <div className=" w-1/2 flex flex-col text-white">
-                                            <h1 className="text-[#6728cc] text-3xl md:text-5xl font-semibold">278%</h1>
-                                            <p className="text-gray-100 text-sm mt-2">Increase in organic traffic <br /> within six months for our clients</p>
-                                        </div>
-                                        <div className="w-1/2 flex flex-col text-white">
-                                            <h1 className="text-[#6728cc] text-3xl md:text-5xl font-semibold">4.2X</h1>
-                                            <p className="text-gray-100 text-sm mt-2">
-                                                Higher lead conversions from targeted SEO campaigns.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Right side */}
-                                <div className="w-full md:w-1/2 pb-10 md:pb-0">
-                                    <ul className="flex flex-col text-gray-100 gap-10 px-2 md:px-6">
-                                        <li className="flex items-start gap-4 text-sm md:text-[16px]">
-                                            <VscDebugBreakpointDataUnverified className="text-[#670ef7] mt-[-17px] text-6xl" />
-                                            <span>
-                                                <span className='font-semibold'>Is your website struggling to generate leads and sales?</span> You&apos;re not alone. Over 91% of online content gets zero traffic from Google, meaning businesses without a strong SEO strategy are missing out on valuable customers.
-                                            </span>
-                                        </li>
-                                        <li className="flex items-start gap-4 text-2xl ml-8 ">
-                                            <span>
-                                                <Link href={'#'}>Want to dominate search engine rankings? <span className='text-[#670ef7]'>Get a Free SEO Audit today!</span> </Link>
-                                            </span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
+            <SeoHero/>
             <section className="max-w-4xl mx-auto text-center py-12">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-sofiasanscondensed font-medium text-white mb-1">Why Your Website Isn&apos;t Ranking</h2>
                 <h2 className='text-5xl font-sofiasanscondensed text-purple-500 mb-6'>The SEO Challenge</h2>
@@ -277,7 +172,7 @@ export default function Seo() {
                 </div>
 
                 <div className="mt-8">
-                    <a href="#" className="text-white text-xl font-sans group font-semibold ">
+                    <a href="tel:+919100032301" className="text-white text-xl font-sans group font-semibold ">
                         Book A Call With An <span className='text-purple-500 text-xl'>SEO Expert<PiGreaterThan className='inline-block text-lg group-hover:translate-x-2 transition-all duration-300 ml-1 mb-1' /></span>
                     </a>
                 </div>
@@ -319,7 +214,7 @@ export default function Seo() {
                                 </div>
                                 <div className='mt-2 ml-2'>
                                 <a href="tel:+919100032301" >
-                                    <button className='px-4 py-3 hover:bg-[#670ef7] hover:text-white transition-all duration-300 bg-white font-medium text-black rounded-md'>Book An Appointment</button>
+                                    <button className='px-4 py-3 bg-[#670ef7] text-white transition-all duration-300 hover:bg-white font-medium hover:text-black rounded-md'>Book An Appointment</button>
                                 </a>
                                 </div>      
                             </div>
@@ -347,8 +242,8 @@ export default function Seo() {
                             </p>
                         </div>
                         <div className='w-full md:w-1/4 flex justify-center md:justify-end'>
-                            <a
-                                href="#"
+                            <Link
+                                href="/contact-us"
                                 className="flex w-fit items-center text-center gap-2 bg-white rounded-full shadow-sm text-lg text-indigo-600 font-semibold py-4 px-10 transition-all duration-500"
                             >Get In Touch
                                 <svg
@@ -366,7 +261,7 @@ export default function Seo() {
                                         stroke-linejoin="round"
                                     />
                                 </svg>
-                            </a>
+                            </Link>
                         </div>
 
                     </div>
@@ -553,9 +448,11 @@ export default function Seo() {
                             </div>
                         ))}
                     </div>
+                    <Link href={'/industries'}>
                     <button className=" mt-6 md:mt-8 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
                         Learn More
                     </button>
+                    </Link>
                 </div>
 
                 <div className="flex w-full lg:w-1/2 justify-center gap-4 p-1 md:p-10">
@@ -610,7 +507,7 @@ export default function Seo() {
 
 
                     <div className="mt-8 text-center">
-                        <a className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" href="#">
+                        <a className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" href="/casestudies-bixeltek/Tumblewash-Casestudy" target="_blank" rel="noopener noreferrer">
                             Read case studies
                             <svg className="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6" /></svg>
                         </a>

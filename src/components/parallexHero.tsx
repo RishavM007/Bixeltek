@@ -10,6 +10,8 @@ import {
 import { RiArrowRightSLine } from "react-icons/ri";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import { ContactForm } from '@/sections/ContactForm';
 
 export const HeroParallax = ({
     products,
@@ -55,6 +57,7 @@ export const HeroParallax = ({
         useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
         springConfig
     );
+    
     return (
         <div
             ref={ref}
@@ -102,8 +105,16 @@ export const HeroParallax = ({
     );
 };
 
+
 export const Header = () => {
+    const [isVisible, setIsVisible] = useState(false);
+
+    const toggleContactForm = () => {
+        setIsVisible(prev => !prev);
+        console.log(!isVisible ? "Contact form visible" : "Contact form not visible");
+    };
     return (
+        <>
         <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full z-50  left-0 top-0">
             <h1 className="text-2xl md:text-5xl mr-16 lg:mr-36 font-bold text-white">
             We Build Websites That Do More Than Look Good — They Perform.
@@ -120,14 +131,16 @@ export const Header = () => {
                 >
                      Book a 1:1 Strategy Call
                 </a>
-                <a
-                    href="#"
+                <button
+                    onClick={toggleContactForm}
                     className="px-1 lg:px-8 py-3 text-sm md:text-base font-semibold text-white group  rounded-full "
                 >
                      Get a Free Website Audit <RiArrowRightSLine className="inline-block text-xl  group-hover:translate-x-2  transition duration-300 ml-1 mb-[3px]" />
-                </a>
+                </button>
             </div>
         </div>
+        <ContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
+        </>
     );
 };
 

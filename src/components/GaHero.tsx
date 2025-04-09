@@ -78,7 +78,7 @@ export default function GaHero() {
 
 
                     <a href="tel:+919100032301">
-                    <button onClick={toggleContactForm} className=" bg-white capitalize tracking-wide group text-black font-medium text-sm xl:text-base py-2 px-4 md:px-6 md:py-3 xl:py-2 xl:px-5 md:text-md rounded-lg mt-14 md:mt-16 mx-5">
+                    <button className=" bg-white capitalize tracking-wide group text-black font-medium text-sm xl:text-base py-2 px-4 md:px-6 md:py-3 xl:py-2 xl:px-5 md:text-md rounded-lg mt-14 md:mt-16 mx-5">
                         <span>
                             Talk to a google-ads Specialist
                         </span>

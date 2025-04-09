@@ -193,33 +193,7 @@ export default function Home() {
             <section className='bg-white py-20'>
                 <Googlecard />
             </section>
-            <section className="pb-20 px-4">
-                <div className="max-w-[90%] md:max-w-[85%] mx-auto mt-10 flex flex-col md:flex-row gap-6">
-
-                    {/* Left: 70% - Main Message */}
-                    <div className="bg-gradient-to-t from-[#140d21] to-[#7028e4] text-white p-10 rounded-2xl w-full md:w-[70%] text-center md:text-left">
-                        <h2 className="text-3xl font-sofiasanscondensed md:text-3xl xl:text-5xl font-bold">
-                            You&apos;re Spending on Google Ads. But Are You Really Getting Results?
-                        </h2>
-
-                        <p className="mt-6 text-sm md:text-lg xl:text-lg leading-7 max-w-3xl mx-auto md:mx-0">
-                            Most businesses in Hyderabad waste <span className="font-bold">30–50%</span> of their Google Ads budget. Why? Poor targeting. Generic copy. No funnel. Or agencies who ‘set and forget’.
-                            At <span className="text-purple-200 font-bold">Bixeltek</span>, we fix all that and make every click count.
-                        </p>
-                    </div>
-
-                    {/* Right: 30% - CTA */}
-                    <div className="bg-[#FFC300] text-white p-8 rounded-2xl w-full md:w-[30%] flex flex-col items-center justify-center text-center">
-                        <h3 className="text-2xl xl:text-3xl text-gray-800 font-sofiasanscondensed md:text-4xl font-bold mb-4">
-                            Get a Free Google Ads Audit
-                        </h3>
-
-                        <button className="bg-transparent transition px-6 py-3 rounded-lg text-gray-800 hover:text-black font-semibold text-sm md:text-lg">
-                            Find the Leaks in Your Campaign →
-                        </button>
-                    </div>
-                </div>
-            </section>
+            
 
             <section className=" max-w-[90%] md:max-w-6xl mx-auto pb-20 mt-20">
                 {/* Heading */}
@@ -352,6 +326,34 @@ export default function Home() {
 
                 </div>
             </section>
+            <section className="pb-20 px-4">
+                <div className="max-w-[90%] md:max-w-[85%] mx-auto mt-10 flex flex-col md:flex-row gap-6">
+
+                    {/* Left: 70% - Main Message */}
+                    <div className="bg-gradient-to-t from-[#140d21] to-[#7028e4] text-white p-10 rounded-2xl w-full md:w-[70%] text-center md:text-left">
+                        <h2 className="text-3xl font-sofiasanscondensed md:text-3xl xl:text-5xl font-bold">
+                            You&apos;re Spending on Google Ads. But Are You Really Getting Results?
+                        </h2>
+
+                        <p className="mt-6 text-sm md:text-lg xl:text-lg leading-7 max-w-3xl mx-auto md:mx-0">
+                            Most businesses in Hyderabad waste <span className="font-bold">30–50%</span> of their Google Ads budget. Why? Poor targeting. Generic copy. No funnel. Or agencies who ‘set and forget’.
+                            At <span className="text-purple-200 font-bold">Bixeltek</span>, we fix all that and make every click count.
+                        </p>
+                    </div>
+
+                    {/* Right: 30% - CTA */}
+                    <div className="bg-[#FFC300] text-white p-8 rounded-2xl w-full md:w-[30%] flex flex-col items-center justify-center text-center">
+                        <h3 className="text-2xl xl:text-3xl text-gray-800 font-sofiasanscondensed md:text-4xl font-bold mb-4">
+                            Get a Free Google Ads Audit
+                        </h3>
+                        <Link href={'/contact-us'}>
+                        <button className="bg-transparent transition px-6 py-3 rounded-lg text-gray-800 hover:text-black font-semibold text-sm md:text-lg">
+                            Find the Leaks in Your Campaign →
+                        </button>
+                        </Link>
+                    </div>
+                </div>
+            </section>
 
 
             <section className='bg-white py-20'>
@@ -395,8 +397,8 @@ export default function Home() {
                                 Connect and grow with us
                             </p>
                         </div>
-                        <a
-                            href="#"
+                        <Link
+                            href="/contact-us"
                             className="flex items-center gap-2 bg-white rounded-full shadow-sm text-lg text-indigo-600 font-semibold py-4 px-8 transition-all duration-500"
                         >Get In Touch
                             <svg
@@ -414,7 +416,7 @@ export default function Home() {
                                     stroke-linejoin="round"
                                 />
                             </svg>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -480,11 +482,12 @@ export default function Home() {
 
                         <div className="mb-8">
                             <h2 className=" text-3xl text-gray-800 font-bold lg:text-4xl  ">
-                                It&apos;s all about
+                            It&apos;s all about 
+
                             </h2>
-                            <span className='text-yellow-500 text-xl mb-2 font-medium font-poppins'>More Call. More Leads. More Conversions.</span>
+                            <span className='text-yellow-500 text-xl mb-2 font-medium font-poppins'>Results That Scale.</span>
                             <p className="text-gray-600 ">
-                                We provide you with a test account that can be set up in seconds. Our main focus is getting responses to you as soon as we can.
+                            From smart targeting to ROI-focused ad spend, we build campaigns that don&apos;t just get clicks—they convert. At Bixeltek, we track every impression, every conversion, every penny.
                             </p>
                         </div>
 
@@ -495,7 +498,7 @@ export default function Home() {
 
                             <div className="relative z-10">
                                 <p className="text-xl italic text-gray-800 ">
-                                    Amazing people to work with. Very fast and professional partner.
+                                The leads didn&apos;t just increase—they were exactly the right kind.
                                 </p>
                             </div>
 
@@ -505,8 +508,8 @@ export default function Home() {
                                         <img className="size-8 rounded-full" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar" />
                                     </div>
                                     <div className="grow">
-                                        <div className="font-semibold text-gray-800 ">Josh Grazioso</div>
-                                        <div className="text-xs text-gray-700 ">Director Payments & Risk | Airbnb</div>
+                                        <div className="font-semibold text-gray-800 ">Shaikh Muzammil</div>
+                                        <div className="text-xs text-gray-700 ">Founder, Fine Links Intl - KSA</div>
                                     </div>
                                 </div>
                             </footer>
@@ -521,39 +524,39 @@ export default function Home() {
                             <ul className="grid grid-cols-2  divide-y-2 divide-x-2 divide-gray-200 overflow-hidden dark:divide-neutral-700">
                                 <li className="flex flex-col -m-0.5 p-4 md:p-8">
                                     <div className="flex items-end gap-x-0 md:gap-x-2 text-4xl md:text-5xl font-bold text-blue-600">
-                                        45k+
+                                    60k+
                                     </div>
                                     <p className="text-sm sm:text-base text-gray-600">
-                                        users - from new startups to public companies
+                                    leads generated across service-based and product-based businesses
                                     </p>
                                 </li>
 
                                 <li className="flex flex-col -m-0.5 p-4 lg:p-8">
                                     <div className="flex items-end gap-x-0 md:gap-x-2 text-4xl md:text-5xl font-bold text-red-600">
                                         <svg className="shrink-0 size-5 text-red-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7" /><path d="M12 19V5" /></svg>
-                                        23%
+                                        80%
                                     </div>
                                     <p className="text-sm sm:text-base text-gray-600">
-                                        increase in traffic on webpages with Looms
+                                    average decrease in Cost Per Lead within 30 days
                                     </p>
                                 </li>
 
                                 <li className="flex flex-col -m-0.5 p-4 lg:p-8">
                                     <div className="flex items-end gap-x-0 md:gap-x-2 text-4xl md:text-5xl font-bold text-yellow-500 mb-2">
                                         <svg className="shrink-0 size-4 text-yellow-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7" /><path d="M12 19V5" /></svg>
-                                        9.3%
+                                        35%
                                     </div>
                                     <p className="text-sm sm:text-base text-gray-600 ">
-                                        boost in reply rates across sales outreach
+                                    increase in lead quality after our Google Ads optimization
                                     </p>
                                 </li>
 
                                 <li className="flex flex-col -m-0.5 p-4 lg:p-8">
                                     <div className="flex items-end gap-x-0 md:gap-x-2 text-4xl md:text-5xl font-bold text-indigo-600 mb-2">
-                                        2x
+                                        4x
                                     </div>
                                     <p className="text-sm sm:text-base text-gray-600">
-                                        faster than previous Preline versions
+                                    average decrease in Cost Per Lead within 30 days
                                     </p>
                                 </li>
                             </ul>
@@ -674,9 +677,11 @@ export default function Home() {
                             </div>
                         ))}
                     </div>
+                    <Link href={'/industries'}>
                     <button className="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
                         Learn More
                     </button>
+                    </Link>
                 </div>
                 <div className="flex w-full lg:w-2/5 justify-center gap-4 p-1">
                     <div className='w-1/3 flex flex-col  items-center justify-center gap-3'>

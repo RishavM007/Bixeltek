@@ -5,7 +5,7 @@ export default function ContactPage() {
     return (
         <>
             <section>
-                <div className="relative h-[100vh] py-12 bg-gray-900 sm:py-16 lg:py-20 xl:pt-32 xl:pb-44">
+                <div className="relative h-[100vh] py-12 bg-neutral-900 sm:py-20 lg:py-20 xl:pt-32 xl:pb-44">
                     <div className="absolute inset-0 hidden lg:block">
                         <img className="object-cover object-right-bottom w-full h-full" src="https://cdn.rareblocks.xyz/collection/clarity-ecommerce/images/hero/1/background.png" alt="" />
                     </div>
@@ -44,12 +44,13 @@ export default function ContactPage() {
         "
                                     role="button"
                                 >
-                                    Send a Message
+                                    Give us a call
                                 </a>
 
                                 <a
-                                    href="#location"
+                                    href="https://www.google.com/maps/place/Bixeltek+-+A+Google+Partner+Agency+%7C+Digital+Marketing+Agency/@17.3626139,78.392247,17z/data=!3m1!4b1!4m6!3m5!1s0x801d7036c2b29689:0x147a268620903039!8m2!3d17.3626139!4d78.3948219!16s%2Fg%2F11y8fkqnh3?entry=ttu&g_ep=EgoyMDI1MDQwNi4wIKXMDSoASAFQAw%3D%3D"
                                     title="View our location"
+                                    target='_blank'
                                     className="
           inline-flex
           items-center
