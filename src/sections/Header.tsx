@@ -28,7 +28,7 @@ export const Header = () => {
   ];
 
   return (
-    <header className="px-3 py-5  max-w-7xl mx-auto sticky top-0 z-[60]">
+    <header className="px-3 py-5  max-w-[90%] mx-auto sticky top-0 z-[60]">
       <div className="container bg-black flex justify-between items-center border-white/15 border-solid border-2 rounded-xl shadow-purple-custom backdrop:blur-3xl">
         <div className="text-white py-3">
           <Link href={"/"}>
@@ -101,7 +101,7 @@ export const Header = () => {
                 </a>
 
                 {/* Dropdown Wrapper */}
-                <div className={`absolute top-full left-1/2 -translate-x-[35%] w-[1240px] bg-white rounded-b-2xl shadow-lg py-4 transition-all duration-300 ${isDropdownOpen ? "opacity-100 visible pointer-events-auto" : "opacity-0 invisible pointer-events-none"}`}>
+                <div className={`absolute top-full left-1/2 -translate-x-[32%] w-[1340px] bg-white rounded-b-2xl shadow-lg py-4 transition-all duration-300 ${isDropdownOpen ? "opacity-100 visible pointer-events-auto" : "opacity-0 invisible pointer-events-none"}`}>
                   <motion.div
                     initial={{ opacity: 0, y: -10 }}
                     animate={isDropdownOpen ? { opacity: 1, y: 0 } : { opacity: 0, y: -10 }}
@@ -217,6 +217,11 @@ export const Header = () => {
               <li className="flex items-center py-7 lg:inline">
                 <Link href='/about-us' className="text-white/70 hover:text-white transition">
                   About Us
+                </Link>
+              </li>
+              <li className="flex items-center py-7 lg:inline">
+                <Link href='/contact-us' className="text-white/70 hover:text-white transition">
+                  Contact Us
                 </Link>
               </li>
             </ul>

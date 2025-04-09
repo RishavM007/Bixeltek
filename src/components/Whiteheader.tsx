@@ -27,7 +27,7 @@ export const Whiteheader = () => {
 
     return (
         <>
-            <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-7xl rounded-full bg-white/70 backdrop-blur-3xl shadow-lg px-6 py-0">
+            <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-[90%] rounded-full bg-white/70 backdrop-blur-3xl shadow-lg px-6 py-0">
                 <div className=" flex justify-between px-6 items-center">
                     <div className="text-white py-3">
                         <Link href={"/"}>
@@ -58,7 +58,7 @@ export const Whiteheader = () => {
                                     </a>
 
                                     {/* Dropdown Wrapper */}
-                                    <div className={`absolute top-full left-1/2 -translate-x-[35%] w-[1240px] bg-white rounded-b-2xl shadow-lg py-4 transition-all duration-300 ${isDropdownOpen ? "opacity-100 visible pointer-events-auto" : "opacity-0 invisible pointer-events-none"}`}>
+                                    <div className={`absolute top-full left-1/2 -translate-x-[32%] w-[1340px] bg-white rounded-b-2xl shadow-lg py-4 transition-all duration-300 ${isDropdownOpen ? "opacity-100 visible pointer-events-auto" : "opacity-0 invisible pointer-events-none"}`}>
                                         <motion.div
                                             initial={{ opacity: 0, y: -10 }}
                                             animate={isDropdownOpen ? { opacity: 1, y: 0 } : { opacity: 0, y: -10 }}
@@ -173,6 +173,11 @@ export const Whiteheader = () => {
                                 <li className="flex items-center py-7 lg:inline">
                                     <Link href='/about-us' className="text-black hover:text-purple-800 font-semibold transition">
                                         About Us
+                                    </Link>
+                                </li>
+                                <li className="flex items-center py-7 lg:inline">
+                                    <Link href='/contact-us' className="text-black hover:text-purple-800 font-semibold transition">
+                                        Contact Us
                                     </Link>
                                 </li>
                             </ul>
