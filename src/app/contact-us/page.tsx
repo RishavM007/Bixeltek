@@ -21,7 +21,7 @@ export default function ContactPage() {
 
                             <div className="flex items-center justify-center mt-8 space-x-5 xl:mt-16 lg:justify-start">
                                 <a
-                                    href="#contact-form"
+                                    href="tel:+919100032301"
                                     title="Send us a message"
                                     className="
           inline-flex
