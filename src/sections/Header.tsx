@@ -70,6 +70,7 @@ export const Header = () => {
               <li><Link href="/casestudies-bixeltek/Tumblewash-Casestudy" className="block py-2 px-4 hover:bg-purple-600 rounded">Case Studies</Link></li>
               {/*<li><Link href="/" className="block py-2 px-4 hover:bg-purple-600 rounded">Blog</Link></li> */}
               <li><Link href="/about-us" className="block py-2 px-4 hover:bg-purple-600 rounded">About Us</Link></li>
+              <li><Link href="/contact-us" className="block py-2 px-4 hover:bg-purple-600 rounded">Contact Us</Link></li>
             </ul>
             <div className=" justify-center  items-center gap-5 py-4">
               <a href="tel:+919100032301">
