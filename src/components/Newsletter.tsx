@@ -43,7 +43,7 @@ export default function Newsletter() {
     };
 
     return (
-        <div className="border-b border-gray-200 pb-14 flex justify-between items-center flex-col gap-8 lg:gap-0 lg:flex-row">
+        <div className="border-b border-gray-200 pb-14 pt-10 flex justify-between items-center flex-col gap-8 lg:gap-0 lg:flex-row">
             <div className="block">
                 <h3 className="font-manrope text-3xl text-gray-100 font-bold mb-2 text-center lg:text-left">
                     Sign up to our newsletter
