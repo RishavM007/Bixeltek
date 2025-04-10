@@ -12,15 +12,25 @@ export const Footer = () => {
         <div className="grid grid-cols-2 min-[690px]:grid-cols-4 lg:grid-cols-6 gap-4 xl:gap-8 pt-14 pb-10 max-w-xs mx-auto min-[690px]:max-w-2xl lg:max-w-full">
           <div className="col-span-full mb-10 lg:col-span-2 lg:mb-0">
             <Image src={Bixeltek} alt="logo" className="w-auto h-16"></Image>
-            <a href="https://www.google.com/partners/agency?id=2188074075" target="_blank" className="mt-2 flex justify-start">
-              <img src="https://www.gstatic.com/partners/badge/images/2024/PartnerBadgeClickable.svg"
-                alt="Google Partner Badge"
-                className="w-auto h-20" />
-            </a>
-            <p className="py-5 text-gray-100 lg:max-w-xs text-center lg:text-left">Trusted by brands.Certified by Google.Focused on ROI </p>
-            <Link href="/contact-us" className="py-2.5 px-5 h-9 block w-fit bg-indigo-600 rounded-full shadow-sm text-xs text-white mx-auto transition-all  duration-500 hover:bg-indigo-700 lg:mx-0">
-              Contact us
-            </Link>
+            
+            <p className="py-5 text-gray-100 lg:max-w-xs text-center lg:text-left">Trusted by brands.Certified by Google.Focused on ROI.</p>
+            <div className="text-sm text-white mb-4">
+              <p className="mb-2 font-semibold">Address</p>
+              <address className="text-base not-italic">
+                Bixeltek,
+                3rd Floor, Behind Cult Fit,<br />
+                K K Convention Road, Suncity Rd,<br />
+                opposite Ratnadeep, Bandlaguda Jagir,<br />
+                Hyderabad, Telangana 500091
+              </address>
+            </div>
+            <div className="text-sm text-white mb-4">
+              <p className="mb-1 font-semibold">Phone</p>
+              <a href="tel:+919100032301">
+                <p className="text-white hover:text-purple-500">+91 9100032301</p>
+              </a>
+            </div>
+            
           </div>
           <div className="lg:mx-auto text-left ">
             <h4 className="text-lg text-gray-100 font-medium mb-7">Bixltek</h4>
@@ -58,7 +68,13 @@ export const Footer = () => {
           <div className="lg:mx-auto text-left ">
             <h4 className="text-lg text-gray-100 font-medium mb-7">Support</h4>
             <ul className="text-sm  transition-all duration-500">
-              <li className="mb-6"><a href="tel:+919100032301" className="text-gray-300 whitespace-nowrap hover:text-purple-700">Customer Support</a></li>
+              <li className="mb-6"><a href="tel:+919100032301" className="text-gray-300 whitespace-nowrap hover:text-purple-700 capitalize">Talk to a specialist</a></li>
+              <li className="mb-6"><a href="https://www.google.com/partners/agency?id=2188074075" target="_blank" className="mt-2 flex justify-start">
+              <img src="https://www.gstatic.com/partners/badge/images/2024/PartnerBadgeClickable.svg"
+                alt="Google Partner Badge"
+                className="w-auto h-20" />
+            </a></li>
+              
             </ul>
           </div>
 
