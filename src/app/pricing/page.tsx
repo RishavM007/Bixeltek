@@ -1,13 +1,23 @@
-'use client';
+export const metadata = {
+  title: "Pricing | Bixeltek",
+  description: "",
+  keywords:
+      "Web design Hyderabad, Web development Hyderabad, E-commerce website development, SEO services Hyderabad, Custom website design, Best website designers Hyderabad, CMS development, Next.js development, React.js web development, Hyderabad digital agency",
+  openGraph: {
+      title: "Pricing | Bixeltek",
+      description:
+          "",
+      type: "website",
+  },
+};
 import React, { ReactNode } from "react";
-import { useState } from "react";
+
 
 import PricingTable from "@/components/pricecomp";
 const Pricing = () => {
-  const [isChecked, setIsChecked] = useState(false);
+  
   return (
     <>
-
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
           <h2 className="text-2xl font-bold md:text-4xl md:leading-tight text-white">Pricing</h2>

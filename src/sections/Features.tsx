@@ -4,6 +4,7 @@ import bgimage2 from "@/assets/Google Analytics.png"
 import seoimage from '@/assets/seo-analytics-dashboard.png'
 import dmimage from "@/assets/pexels-goumbik-577210.jpg"
 import socialmediaimg from '@/assets/pexels-pixabay-267389.jpg'
+import reporting from '@/assets/reporting and analysis.jpeg'
 import Image from "next/image";
 import Link from "next/link";
 export default function Services() {
@@ -47,17 +48,18 @@ export default function Services() {
       img: socialmediaimg,
       description:
         "Boost your brand's presence with highly targeted social media campaigns across multiple platforms.",
+        condition:false,
     },
     {
-      title: "Conversion Rate Optimization (CRO)",
-      link: "/",
+      title: "Reporting and Analysis",
+      link: "/contact-us",
       tag: "CRO",
-      img: "/images/cro.jpg",
+      img: reporting,
       description:
-        "Turn more visitors into customers with A/B testing, user behavior analysis, and conversion-boosting strategies.",
+        "Optimize conversions and cut ad costs with data-driven reporting, A/B testing, and user behavior analysis.",
+      condition:true,  
     },
 ];
-
 
   return (
     <div className="p-8 bg-black min-h-screen flex flex-col md:max-w-[90%] mx-auto justify-center overflow-hidden items-center">
@@ -89,7 +91,7 @@ export default function Services() {
                   <span className="bg-white/20 text-white text-sm px-4 py-[6px] rounded-3xl">{service.tag}</span>
                   <Link href={service.link} className="group">
                   <button className="text-white text-sm flex items-center gap-1 hover:underline">
-                    Learn More →
+                    {service.condition?'Apply now':'Learn More →'}
                   </button>
                   </Link>
                 </div>

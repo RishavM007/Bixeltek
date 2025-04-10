@@ -188,13 +188,9 @@ export default function Home() {
                     <ContactFrom />
                 </div>
             </section>
-
-
             <section className='bg-white py-20'>
                 <Googlecard />
             </section>
-            
-
             <section className=" max-w-[90%] md:max-w-6xl mx-auto pb-20 mt-20">
                 {/* Heading */}
                 <h2 className="text-3xl font-sofiasanscondensed font-bold text-black text-center mb-1 md:text-5xl">

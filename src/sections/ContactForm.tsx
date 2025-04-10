@@ -347,13 +347,16 @@ export const ContactForm: React.FC<ContactFormProps> = ({ isVisible, onClose }: 
 
                     {/* Dropdown menu */}
                     {isOpen && (
-                        <div className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5">
+                        <div className="absolute left-0 z-10 mt-2 w-full origin-top  rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5">
                             {[
-                                "Social Media Management",
-                                "SEO Optimization",
-                                "E-commerce Solutions",
-                                "Content Marketing",
                                 "PPC Campaigns",
+                                "SEO Optimization",
+                                "Social Media Management",
+                                "Web Design and Development",
+                                "E-commerce Solutions",
+                                "Content Creation and Marketing",
+                                "Advertiser Verifications, GMB Verifications",
+                                "other"
                             ].map((option) => (
                                 <div
                                     key={option}
