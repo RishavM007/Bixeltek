@@ -24,6 +24,13 @@ export const Header = () => {
       link: "/casestudies-bixeltek/Tumblewash-Casestudy",
       glowcolor: "bg-purple-500",
     },
+    {
+      id: 2,
+      title: "Eazy Bike Repair Case Study",
+      description: "Learn essential steps to begin your journey in the digital marketing world effectively.",
+      link: "/google-ads-case-study-bike-repair-hyderabad",
+      glowcolor: "bg-purple-500",
+    },
 
   ];
 
@@ -199,14 +206,14 @@ export const Header = () => {
                       Tumblewash Case Study
                     </Link>
                   </li>
-                  {/* <li>
+                  <li>
                     <Link
-                      href="/casestudies-bixeltek/Another-Casestudy"
+                      href="/casestudies-bixeltek/google-ads-case-study-bike-repair-hyderabad"
                       className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
                     >
-                      Another Case Study
+                      Eazy Bike Repair Case Study
                     </Link>
-                  </li> */}
+                  </li>
                 </ul>
               </li>
 
