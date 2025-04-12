@@ -173,7 +173,7 @@ export const Whiteheader = () => {
                                     </ul>
                                 </li>
                                 <li className="flex items-center py-7">
-                                    <Link href="/thank-you" className="text-black hover:text-purple-800 font-semibold transition">
+                                    <Link href="/" className="text-black hover:text-purple-800 font-semibold transition">
                                         Blog
                                     </Link>
                                 </li>
