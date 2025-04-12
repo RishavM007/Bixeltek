@@ -21,7 +21,7 @@ const strategySteps = [
         title: "1. Recovery in Record Time",
         des: "We got their Google Ads account unsuspended in just 6 hours — fully reviewed, compliant, and ready to go live.",
         points: [
-            
+
         ],
     },
     {
@@ -38,7 +38,7 @@ const strategySteps = [
         title: "3. Weekly Optimizations That Deliver",
         des: "From ad copy tests to bid strategy tweaks, we optimized daily to keep conversions high and cost per lead low.",
         points: [
-            
+
         ],
         suffix: "",
     },
@@ -80,11 +80,11 @@ export default function BikerepairCaseStudySection() {
                 <div id="about" className="scroll-mt-32">
                     <h2 className="text-3xl font-sofiasanscondensed tracking-wide font-bold text-[#670ef7] mb-4">About Eazy Bike Repairs</h2>
                     <p className='text-lg font-poppins'>
-                    For over 25 years, Eazy Bike Repairs has been Hyderabad&apos;s go-to mechanic for all things two-wheelers — from scooters to superbikes. Their unique edge? Doorstep bike servicing trusted by 1000s of riders.
+                        For over 25 years, Eazy Bike Repairs has been Hyderabad&apos;s go-to mechanic for all things two-wheelers — from scooters to superbikes. Their unique edge? Doorstep bike servicing trusted by 1000s of riders.
 
                     </p>
                     <p className='text-lg mt-3 font-poppins'>But when digital started driving customer decisions, they struggled to keep up. Their offline reputation wasn&apos;t translating into online leads — and the business began feeling the heat.</p>
-                    
+
                 </div>
 
                 <div id="struggle" className="scroll-mt-32">
@@ -95,7 +95,7 @@ export default function BikerepairCaseStudySection() {
                         <li>Poor quality leads</li>
                         <li>No strategy tailored to their service</li>
                         <li>And eventually… <span className='font-semibold'>a suspended Google Ads account</span></li>
-                        
+
                     </ul>
                 </div>
 
@@ -104,13 +104,13 @@ export default function BikerepairCaseStudySection() {
                     className="scroll-mt-32 py-8 px-0 md:px-0 bg-white relative"
                 >
                     <h2 className="text-4xl font-bold text-left text-[#670ef7] mb-2 font-sofiasanscondensed">
-                    The Bixeltek Turnaround
+                        The Bixeltek Turnaround
                     </h2>
                     <p className='text-base text-black max-w-xl mb-12'>We knew this wasn&apos;t just about fixing ads — it was about reviving a legacy brand. As a Google Partner Certified agency, we stepped in with speed and strategy.</p>
 
                     <div className="relative border-l-4 border-[#670ef7] ml-1 md:ml-4 space-y-16">
                         {strategySteps.map((step, index) => {
-                            
+
 
                             return (
                                 <div
@@ -136,25 +136,54 @@ export default function BikerepairCaseStudySection() {
                 </section>
 
                 <div id="results" className="scroll-mt-32">
-                    <h2 className="text-3xl font-sofiasanscondensed font-bold text-[#670ef7] mb-4">Results at a Glance (90 Days)</h2>
-                    <table className="w-full text-xs md:text-sm border border-gray-200">
+                    <h2 className="text-3xl font-sofiasanscondensed font-bold text-[#670ef7] mb-4">The Results (In Just 30 Days)</h2>
+                    <table className="w-full text-sm md:text-base border border-gray-200">
                         <thead className="bg-black text-white">
                             <tr>
-                                <th className="text-left p-2">Metric</th>
-                                <th className="text-left p-2">Aug 2024</th>
-                                <th className="text-left p-2">Nov 2024</th>
-                                <th className="text-left p-2">Growth</th>
+                                <th className="text-left p-3">Metric</th>
+                                <th className="text-left p-3">Result</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr><td className="p-2">Monthly Phone Calls</td><td className="p-2">170</td><td className="p-2">477+</td><td className="p-2"><MdKeyboardArrowUp className='text-green-600 inline-block text-xl' /> 180%</td></tr>
-                            <tr><td className="p-2">CPA</td><td className="p-2">₹754</td><td className="p-2">₹77</td><td className="p-2"><MdKeyboardArrowDown className='text-red-600 inline text-xl' /> 90%</td></tr>
-                            <tr><td className="p-2">Form Fills</td><td className="p-2">0</td><td className="p-2">400+</td><td className="p-2"><MdKeyboardArrowUp className='text-green-600 inline-block text-xl' /> 100%</td></tr>
-                            <tr><td className="p-2">ROAS</td><td className="p-2">0.41%</td><td className="p-2">436.7%</td><td className="p-2"><MdKeyboardArrowUp className='text-green-600 inline-block text-xl' /> 1000%+</td></tr>
-                            <tr><td className="p-2">Avg. CPC</td><td className="p-2">₹18</td><td className="p-2">₹10</td><td className="p-2"><MdKeyboardArrowDown className='text-red-600 inline text-xl' /> 44%</td></tr>
-                            <tr><td className="p-2">Avg. CTR</td><td className="p-2">3.1%</td><td className="p-2">4.8%</td><td className="p-2"><MdKeyboardArrowUp className='text-green-600 inline-block text-xl' /> 21%</td></tr>
+                        <tbody className="bg-white">
+                            <tr>
+                                <td className="p-3">Phone Calls</td>
+                                <td className="p-3">
+                                <MdKeyboardArrowUp className="text-green-600 inline-block text-xl" /> 340+ quality leads 
+                                </td>
+                            </tr>
+                            <tr className="bg-gray-50">
+                                <td className="p-3">Ad Impressions</td>
+                                <td className="p-3">
+                                <MdKeyboardArrowUp className="text-green-600 inline-block text-xl" /> 19,500+ 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className="p-3">Website Visits</td>
+                                <td className="p-3">
+                                <MdKeyboardArrowUp className="text-green-600 inline-block text-xl" /> 2,370+ 
+                                </td>
+                            </tr>
+                            <tr className="bg-gray-50">
+                                <td className="p-3">Click-Through Rate (CTR)</td>
+                                <td className="p-3">
+                                <MdKeyboardArrowUp className="text-green-600 inline-block text-xl" /> 14.9% 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className="p-3">Top of Page Rate</td>
+                                <td className="p-3">
+                                <MdKeyboardArrowUp className="text-green-600 inline-block text-xl" /> 47% 
+                                </td>
+                            </tr>
+                            <tr className="bg-gray-50">
+                                <td className="p-3">Impression Share</td>
+                                <td className="p-3">
+                                <MdKeyboardArrowUp className="text-green-600 inline-block text-xl" /> 38% 
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
+                    <p className='mt-4'>The result? A fully booked calendar — especially from premium bike owners who found them directly through <span className='font-semibold'>Google Ads.</span></p>
                 </div>
 
                 <div id="client-impact" className="scroll-mt-32">
@@ -168,21 +197,21 @@ export default function BikerepairCaseStudySection() {
                 <div id="conclusion" className="scroll-mt-32 pb-10">
                     <h2 className="text-3xl font-bold font-sofiasanscondensed text-[#670ef7] mb-4">The Takeaway</h2>
                     <p className='text-lg font-poppins'>
-                    You don&apos;t need “more clicks.” You need <span className='font-semibold'>a performance marketing partner who understands your business and delivers results.</span> That&apos;s what Bixeltek brings to the table.
+                        You don&apos;t need “more clicks.” You need <span className='font-semibold'>a performance marketing partner who understands your business and delivers results.</span> That&apos;s what Bixeltek brings to the table.
                     </p>
                     <p className='text-lg font-poppins mt-3'>
-                    With 25+ years of experience under their belt, Eazy Bike Repairs just needed the right digital engine to drive growth — and now, they&apos;re running full throttle.
+                        With 25+ years of experience under their belt, Eazy Bike Repairs just needed the right digital engine to drive growth — and now, they&apos;re running full throttle.
                     </p>
                 </div>
                 <div id="cta" className="scroll-mt-20 pb-20">
                     <h2 className="text-3xl font-bold font-sofiasanscondensed text-[#670ef7] mb-4"> Want Results Like These? Let&apos;s Build Your Success Story.</h2>
                     <p className='text-lg font-poppins'>
-                    At Bixeltek, we&apos;re not just another agency. We&apos;re a Certified Google Partner — trained, backed, and recognized by Google for our expertise in  
+                        At Bixeltek, we&apos;re not just another agency. We&apos;re a Certified Google Partner — trained, backed, and recognized by Google for our expertise in
                     </p>
                     <p className='text-lg font-poppins mt-3'>
-                    We help businesses across India turn ad budgets into real-world growth. Whether you’re a local service provider or a scaling startup, our mission is simple: <span className='font-semibold'>Get you more leads, more customers, and more ROI.</span>
+                        We help businesses across India turn ad budgets into real-world growth. Whether you’re a local service provider or a scaling startup, our mission is simple: <span className='font-semibold'>Get you more leads, more customers, and more ROI.</span>
                     </p>
-                    
+
                 </div>
 
                 {/* <div id="cta" className="scroll-mt-32">
