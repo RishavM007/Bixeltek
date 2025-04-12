@@ -5,10 +5,11 @@ import { motion } from "framer-motion";
 import IndustrySections from "@/components/IndustrySection";
 import cleaningcomp from "@/assets/digital marketing servies for cleaning companies.jpg";
 import oil from "@/assets/digital marketing for oil refinaries.jpg";
-import pet from "@/assets/digital marketing for pet stores.jpg";
+import pet from "@/assets/sincerely-media-VNsdEl1gORk-unsplash.jpg";
 import roofing from "@/assets/digital marketing for roofing industries.jpg";
 import dental from "@/assets/digital marketing for health care practices.jpg";
 import lawncare from "@/assets/digital marketing for lawn care services.jpg";
+import school from '@/assets/school.jpg'
 import blackcar from "@/assets/digital marketing for car detailers.jpg";
 import { FaTooth, FaHospital, FaDog, FaGasPump, FaCar, FaBroom, FaGraduationCap, FaBuilding, FaTree } from "react-icons/fa";
 import { FaChartLine, FaCogs, FaUserTie, FaBullseye, FaMoneyBillWave, FaChartBar, FaSeedling, FaDatabase } from 'react-icons/fa';
@@ -120,22 +121,21 @@ export default function Industries() {
               </span>
             </button>
           </div>
-
         </div>
       </section>
 
       <section className='w-full flex flex-wrap max-w-[90%] mx-auto my-20 lg:flex-nowrap overflow-y-hidden items-center'>
         {/* Left Content Section */}
         <div className='w-full lg:w-1/2 px-1 md:px-6 py-10 lg:py-14'>
-          <h2 className="text-4xl md:text-5xl font-semibold text-gray-800 font-sofiasanscondensed dark:text-white">
+          <h2 className="text-4xl md:text-5xl font-semibold  font-sofiasanscondensed text-white">
             Proven Results Across <span className='text-purple-500'>Diverse Industries</span>
           </h2>
-          <p className="mt-4 text-sm md:text-lg text-gray-600 dark:text-gray-300">
+          <p className="mt-4 text-sm md:text-lg  text-gray-300">
             Our expertise spans multiple industries, helping businesses achieve growth through data-driven strategies and
             innovative solutions. From technology and finance to healthcare and retail, we empower brands with actionable insights
             and cutting-edge digital solutions.
           </p>
-          <p className="mt-2 text-sm md:text-lg text-gray-600 dark:text-gray-300">
+          <p className="mt-2 text-sm md:text-lg text-gray-300">
             Explore how our tailored approach delivers measurable success, increasing engagement, conversions, and brand visibility
             in a competitive landscape.
           </p>
@@ -157,9 +157,9 @@ export default function Industries() {
             <Image src={oil} alt='oil' className='rounded-xl'></Image>
           </div>
           <div className='w-1/3 flex flex-col gap-3'>
-            <Image src={pet} alt='pet' className='rounded-xl'></Image>
             <Image src={roofing} alt='roofind' className='rounded-xl'></Image>
-            <Image src={dental} alt='dental' className='rounded-xl'></Image>
+            <Image src={pet} alt='pet' className='rounded-xl'></Image>
+            <Image src={school} alt='dental' className='rounded-xl'></Image>
           </div>
           <div className='w-1/3 flex flex-col justify-center gap-3'>
             <Image src={lawncare} alt='lawncare' className='rounded-xl'></Image>
@@ -293,7 +293,6 @@ export default function Industries() {
         </div>
       </section>
       <CarouselSection />
-
     </>
   );
 }

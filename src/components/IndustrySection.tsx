@@ -62,7 +62,7 @@ export default function IndustrySections() {
           <div className="md:w-1/2 ">
             <Image src={industry.image} alt={industry.title} className="rounded-lg shadow-lg" />
           </div>
-          <div className="md:w-1/2 border rounded-xl">
+          <div className="md:w-1/2 rounded-xl">
             <h2 className="text-5xl font-sofiasanscondensed font-bold mb-7">{industry.title}</h2>
             <h3 className=" text-2xl text-gray-50 mb-4">{industry.subtitle}</h3>
             <p className="text-gray-50  mb-4">{industry.description}</p>
