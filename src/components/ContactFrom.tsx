@@ -1,8 +1,9 @@
 'use client';
 import { count } from 'console';
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function ContactFrom() {
     
@@ -83,7 +84,9 @@ export default function ContactFrom() {
             !formData.message ||
             !formData.website
         ) {
-            alert("Please fill in all required fields.");
+            // alert("Please fill in all required fields.");
+            toast.error("Please fill in all required fields.")
+            
             return;
         }
         try {
@@ -97,7 +100,11 @@ export default function ContactFrom() {
 
             if (!response.ok) throw new Error(result.error || 'Failed to send message.');
 
-            router.push('/thank-you'); // Redirect to thank you page
+            toast.success('Thank you for filling the form!')
+           
+            window.setTimeout(()=>{ 
+                router.push('/thank-you'); // Redirect to thank you page
+            },3000)
 
             console.log("API Response:", result); // Debugging
             setFormData({

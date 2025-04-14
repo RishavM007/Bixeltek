@@ -22,6 +22,7 @@ import Image from "next/image";
 import cursorimg from '@/assets/images/cursor.png';
 import StackingCarousel from "@/components/horcaroselSm";
 import messageimage from '@/assets/images/message.png'
+import { Toaster } from "react-hot-toast";
 export default function SocialMedia() {
 
 
@@ -63,6 +64,10 @@ export default function SocialMedia() {
 
     return (
         <>
+        <Toaster
+                position="bottom-center"
+                reverseOrder={false}
+            />
             <section className="bg-black h-auto text-white bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] pt-[72px] relative overflow-hidden">
             <div className="absolute bottom-0 left-0 w-full z-30 h-40 bg-gradient-to-t from-black to-transparent"></div>
                 <div className="container relative mx-auto px-4">
@@ -90,7 +95,9 @@ export default function SocialMedia() {
                     </p>
 
                     <div className="flex justify-center mt-6 mb-3">
+                        <Link href={'/contact-us'}>
                         <button className="bg-white text-black py-3 px-5 rounded-lg font-medium">Get a quote</button>
+                        </Link>
                     </div>
                 </div>
 

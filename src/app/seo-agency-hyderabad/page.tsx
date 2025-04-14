@@ -34,6 +34,7 @@ import { TbReportAnalytics } from "react-icons/tb";
 import { GrFlag } from "react-icons/gr";
 import { LuFileClock } from "react-icons/lu";
 import Image from 'next/image';
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function Seo() {
 
@@ -156,7 +157,11 @@ export default function Seo() {
 
     return (
         <>
-            <SeoHero/>
+            <Toaster
+                position="bottom-center"
+                reverseOrder={false}
+            />
+            <SeoHero />
             <section className="max-w-4xl mx-auto text-center py-12">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-sofiasanscondensed font-medium text-white mb-1">Why Your Website Isn&apos;t Ranking</h2>
                 <h2 className='text-5xl font-sofiasanscondensed text-purple-500 mb-6'>The SEO Challenge</h2>
@@ -190,9 +195,9 @@ export default function Seo() {
                                 </h2>
 
                                 <p className="text-gray-300 relative font-sans text-lg py-5 leading-relaxed">
-                                Ready to outshine the competition and drive consistent leads? Bixeltek is your trusted SEO company in Hyderabad, offering cutting-edge SEO services that propel your business to the top of Google&apos;s search results. Let&apos;s turn organic traffic into tangible growth.
+                                    Ready to outshine the competition and drive consistent leads? Bixeltek is your trusted SEO company in Hyderabad, offering cutting-edge SEO services that propel your business to the top of Google&apos;s search results. Let&apos;s turn organic traffic into tangible growth.
                                 </p>
-                                
+
 
                                 <div className='grid grid-cols-1 gap-y-7 pb-10 pt-5  text-white'>
                                     <h3 className='font-light text-[16px] tracking-wide flex'>
@@ -213,10 +218,10 @@ export default function Seo() {
                                     </h3>
                                 </div>
                                 <div className='mt-2 ml-2'>
-                                <a href="tel:+919100032301" >
-                                    <button className='px-4 py-3 bg-[#670ef7] text-white transition-all duration-300 hover:bg-white font-medium hover:text-black rounded-md'>Book An Appointment</button>
-                                </a>
-                                </div>      
+                                    <a href="tel:+919100032301" >
+                                        <button className='px-4 py-3 bg-[#670ef7] text-white transition-all duration-300 hover:bg-white font-medium hover:text-black rounded-md'>Book An Appointment</button>
+                                    </a>
+                                </div>
                             </div>
 
 
@@ -449,9 +454,9 @@ export default function Seo() {
                         ))}
                     </div>
                     <Link href={'/industries'}>
-                    <button className=" mt-6 md:mt-8 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
-                        Learn More
-                    </button>
+                        <button className=" mt-6 md:mt-8 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
+                            Learn More
+                        </button>
                     </Link>
                 </div>
 

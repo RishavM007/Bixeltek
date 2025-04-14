@@ -42,6 +42,7 @@ import lawncare from "@/assets/digital marketing for lawn care services.jpg";
 import blackcar from "@/assets/digital marketing for car detailers.jpg";
 import oil from "@/assets/digital marketing for oil refinaries.jpg";
 import Link from 'next/link';
+import { Toaster } from 'react-hot-toast';
 
 
 
@@ -185,6 +186,10 @@ export default function Webdev() {
     return (
 
         <>
+            <Toaster
+                position="bottom-center"
+                reverseOrder={false}
+            />
             <section>
                 <HeroParallax products={products} />
             </section>
@@ -354,11 +359,11 @@ export default function Webdev() {
                             <p className="flex items-center"><span className="text-purple-500 text-lg mr-2">✔</span> Web Development</p>
                             <p className="flex items-center"><span className="text-purple-500 text-lg mr-2">✔</span> Mobile Apps Design</p>
                         </div>
-                            <Link href={'/casestudies-bixeltek/Tumblewash-Casestudy'} target='_blank'>
-                        <button className="mt-10 px-6 py-3 border border-white rounded-md hover:bg-white hover:text-black transition">
-                            Explore Our Projects
-                        </button>
-                            </Link>
+                        <Link href={'/casestudies-bixeltek/Tumblewash-Casestudy'} target='_blank'>
+                            <button className="mt-10 px-6 py-3 border border-white rounded-md hover:bg-white hover:text-black transition">
+                                Explore Our Projects
+                            </button>
+                        </Link>
                     </div>
 
                 </div>
@@ -581,16 +586,16 @@ export default function Webdev() {
                     </div>
                     <div className='flex flex-col md:flex-row gap-4'>
                         <Link href={'/industries'}>
-                    <button className="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
-                        Learn More
-                    </button>
+                            <button className="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
+                                Learn More
+                            </button>
                         </Link>
-                   <a href="tel:+919100032301">
-                    <button className="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
-                        Talk to our Specialist
-                    </button>
-                    
-                   </a>
+                        <a href="tel:+919100032301">
+                            <button className="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
+                                Talk to our Specialist
+                            </button>
+
+                        </a>
                     </div>
                 </div>
                 <div className="flex w-full lg:w-1/2 justify-center gap-4 p-1">

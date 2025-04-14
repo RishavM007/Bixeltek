@@ -12,6 +12,7 @@ export const metadata = {
 import React from 'react';
 import GaHero from '@/components/GaHero';
 import GaSection from '@/components/GaSection';
+import toast, { Toaster } from 'react-hot-toast';
 import {
     FiUsers,
     FiMapPin,
@@ -143,6 +144,10 @@ export default function Home() {
 
     return (
         <>
+            <Toaster
+                position="bottom-center"
+                reverseOrder={false}
+            />
             <GaHero />
             <GaSection />
             <section className=" pt-8 flex justify-center items-center max-w-[100%] md:max-w-[85%] mx-auto text-gray-800 sm:py-24">
@@ -343,9 +348,9 @@ export default function Home() {
                             Get a Free Google Ads Audit
                         </h3>
                         <Link href={'/contact-us'}>
-                        <button className="bg-transparent transition px-6 py-3 rounded-lg text-gray-800 hover:text-black font-semibold text-sm md:text-lg">
-                            Find the Leaks in Your Campaign →
-                        </button>
+                            <button className="bg-transparent transition px-6 py-3 rounded-lg text-gray-800 hover:text-black font-semibold text-sm md:text-lg">
+                                Find the Leaks in Your Campaign →
+                            </button>
                         </Link>
                     </div>
                 </div>
@@ -478,12 +483,12 @@ export default function Home() {
 
                         <div className="mb-8">
                             <h2 className=" text-3xl text-gray-800 font-bold lg:text-4xl  ">
-                            It&apos;s all about 
+                                It&apos;s all about
 
                             </h2>
                             <span className='text-yellow-500 text-xl mb-2 font-medium font-poppins'>Results That Scale.</span>
                             <p className="text-gray-600 ">
-                            From smart targeting to ROI-focused ad spend, we build campaigns that don&apos;t just get clicks—they convert. At Bixeltek, we track every impression, every conversion, every penny.
+                                From smart targeting to ROI-focused ad spend, we build campaigns that don&apos;t just get clicks—they convert. At Bixeltek, we track every impression, every conversion, every penny.
                             </p>
                         </div>
 
@@ -494,7 +499,7 @@ export default function Home() {
 
                             <div className="relative z-10">
                                 <p className="text-xl italic text-gray-800 ">
-                                The leads didn&apos;t just increase—they were exactly the right kind.
+                                    The leads didn&apos;t just increase—they were exactly the right kind.
                                 </p>
                             </div>
 
@@ -520,10 +525,10 @@ export default function Home() {
                             <ul className="grid grid-cols-2  divide-y-2 divide-x-2 divide-gray-200 overflow-hidden dark:divide-neutral-700">
                                 <li className="flex flex-col -m-0.5 p-4 md:p-8">
                                     <div className="flex items-end gap-x-0 md:gap-x-2 text-4xl md:text-5xl font-bold text-blue-600">
-                                    60k+
+                                        60k+
                                     </div>
                                     <p className="text-sm sm:text-base text-gray-600">
-                                    leads generated across service-based and product-based businesses
+                                        leads generated across service-based and product-based businesses
                                     </p>
                                 </li>
 
@@ -533,7 +538,7 @@ export default function Home() {
                                         80%
                                     </div>
                                     <p className="text-sm sm:text-base text-gray-600">
-                                    average decrease in Cost Per Lead within 30 days
+                                        average decrease in Cost Per Lead within 30 days
                                     </p>
                                 </li>
 
@@ -543,7 +548,7 @@ export default function Home() {
                                         35%
                                     </div>
                                     <p className="text-sm sm:text-base text-gray-600 ">
-                                    increase in lead quality after our Google Ads optimization
+                                        increase in lead quality after our Google Ads optimization
                                     </p>
                                 </li>
 
@@ -552,7 +557,7 @@ export default function Home() {
                                         4x
                                     </div>
                                     <p className="text-sm sm:text-base text-gray-600">
-                                    average decrease in Cost Per Lead within 30 days
+                                        average decrease in Cost Per Lead within 30 days
                                     </p>
                                 </li>
                             </ul>
@@ -674,9 +679,9 @@ export default function Home() {
                         ))}
                     </div>
                     <Link href={'/industries'}>
-                    <button className="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
-                        Learn More
-                    </button>
+                        <button className="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
+                            Learn More
+                        </button>
                     </Link>
                 </div>
                 <div className="flex w-full lg:w-2/5 justify-center gap-4 p-1">
