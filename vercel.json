@@ -4,6 +4,16 @@
         "source": "/google-ads-agency-in-hyderabad",
         "destination": "/google-ads-agency-hyderabad",
         "permanent": true
+      },
+      {
+        "source": "/best-web-design-agency",
+        "destination": "/web-design-services-hyderabad",
+        "permanent": true
+      },
+      {
+        "source": "/best-seo-services-in-hyderabad",
+        "destination": "/seo-agency-hyderabad",
+        "permanent": true
       }
     ]
   }
