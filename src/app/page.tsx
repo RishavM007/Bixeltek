@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Bixeltek | Best Digital Marketing Company in Hyderabad",
+  title: " ",
   description:
-    "Bixeltek is the leading digital marketing company in Hyderabad. We specialize in Google Ads, SEO, social media marketing, and performance-driven campaigns to boost your business growth.",
+    "Google-certified digital marketing agency in Hyderabad offering SEO, Google Ads, Meta Ads & Web Design. Trusted by clients in India, USA, Canada, UAE & Saudi.",
   keywords: [
     "digital marketing company Hyderabad",
     "best digital marketing agency Hyderabad",
@@ -11,9 +11,9 @@ export const metadata = {
     "PPC agency Hyderabad",
   ],
   openGraph: {
-    title: "Bixeltek | Best Digital Marketing Company in Hyderabad",
+    title: "Best Digital Marketing Agency in Hyderabad | Bixeltek",
     description:
-      "Looking to grow your business? Bixeltek offers expert digital marketing services in Hyderabad, including SEO, Google Ads, and social media marketing. Get in touch today!",
+      "Google-certified digital marketing agency in Hyderabad offering SEO, Google Ads, Meta Ads & Web Design. Trusted by clients in India, USA, Canada, UAE & Saudi.",
     siteName: "Bixeltek",
     type: "website",
   },

@@ -14,7 +14,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Schema */}
-
         <Script id="bixeltek-schema" type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
