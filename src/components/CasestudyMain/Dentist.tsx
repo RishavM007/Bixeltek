@@ -206,7 +206,7 @@ export default function DentistCaseStudy() {
                     <h2 className="text-3xl font-sofiasanscondensed font-bold  text-[#670ef7] mb-4">What the Client Said</h2>
                     <blockquote className="italic max-w-[90%] mx-auto text-gray-700 text-2xl md:text-3xl md:text-center border-l-4 border-[#670ef7] pl-4">
                         “The difference was clear — our phones were ringing with the right kind of patients. We started seeing more implant and root canal cases than ever before.”
-                        <br /><span className='font-semibold text-lg md:text-2xl'>Team Eazy Bike Repairs (Doubt)</span>
+                        <br /><span className='font-semibold text-lg md:text-2xl'>Dr.Baseer</span>
                     </blockquote>
                 </div>
 
@@ -219,7 +219,7 @@ export default function DentistCaseStudy() {
                         This translated into real, predictable growth and better use of the clinic&apos;s marketing budget.
                     </p>
                 </div>
-                <div id="cta" className="scroll-mt-20 pb-20">
+                <div id="cta" className="scroll-mt-20 pb-0">
                     <h2 className="text-3xl font-bold font-sofiasanscondensed text-[#670ef7] mb-4 flex items-center gap-2">
                         Is Your Dental Clinic Facing the Same Issues?
                     </h2>
@@ -257,6 +257,34 @@ export default function DentistCaseStudy() {
                         <li>🌐 <a href="https://www.bixeltek.com" target="_blank" className="text-[#670ef7] underline">www.bixeltek.com</a></li>
                     </ul>
                 </div> */}
+                <section className="relative z-10 overflow-hidden bg-[#670ef7] rounded-2xl py-10 px-8 mt-20">
+                    <div className="container">
+                        <div className="-mx-4 flex flex-wrap items-center">
+                            <div className="w-full px-4 lg:w-1/2">
+                                <div className="text-center lg:text-left ">
+                                    <div className="mb-10 lg:mb-0 ">
+                                        <h1
+                                            className="mt-0 mb-3 font-sofiasanscondensed tracking-wide font-bold leading-tight text-2xl sm:leading-tight md:text-[35px] md:leading-tight text-white ">
+                                             Let&apos;s show you how we can help your clinic grow.</h1>
+                                        <p
+                                            className="w-full text-base font-medium leading-relaxed sm:text-lg sm:leading-relaxed text-white">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="w-full px-4 lg:w-1/2">
+                                <div className="text-center lg:text-right"><a
+                                    className="font-semibold rounded-lg mx-auto text-lg inline-flex items-center justify-center bg-white py-4 px-9 hover:bg-opacity-90"
+                                    href="#">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span className="absolute top-0 right-0 -z-10">
+                        <svg width="388" height="250" viewBox="0 0 388 220" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.05" d="M203 -28.5L4.87819e-05 250.5L881.5 250.5L881.5 -28.5002L203 -28.5Z" fill="url(#paint0_linear_971_6910)"></path><defs><linearGradient id="paint0_linear_971_6910" x1="60.5" y1="111" x2="287" y2="111" gradientUnits="userSpaceOnUse"><stop offset="0.520507" stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></linearGradient></defs></svg></span><span className="absolute top-0 right-0 -z-10"><svg width="324" height="250" viewBox="0 0 324 220" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.05" d="M203 -28.5L4.87819e-05 250.5L881.5 250.5L881.5 -28.5002L203 -28.5Z" fill="url(#paint0_linear_971_6911)"></path><defs><linearGradient id="paint0_linear_971_6911" x1="60.5" y1="111" x2="287" y2="111" gradientUnits="userSpaceOnUse"><stop offset="0.520507" stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></linearGradient></defs></svg></span><span className="absolute top-4 left-4 -z-10"><svg width="43" height="56" viewBox="0 0 43 56" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.5"><circle cx="40.9984" cy="1.49626" r="1.49626" transform="rotate(90 40.9984 1.49626)" fill="white"></circle><circle cx="27.8304" cy="1.49626" r="1.49626" transform="rotate(90 27.8304 1.49626)" fill="white"></circle><circle cx="14.6644" cy="1.49626" r="1.49626" transform="rotate(90 14.6644 1.49626)" fill="white"></circle><circle cx="1.49642" cy="1.49626" r="1.49626" transform="rotate(90 1.49642 1.49626)" fill="white"></circle><circle cx="40.9984" cy="14.6642" r="1.49626" transform="rotate(90 40.9984 14.6642)" fill="white"></circle><circle cx="27.8304" cy="14.6642" r="1.49626" transform="rotate(90 27.8304 14.6642)" fill="white"></circle><circle cx="14.6644" cy="14.6642" r="1.49626" transform="rotate(90 14.6644 14.6642)" fill="white"></circle><circle cx="1.49642" cy="14.6642" r="1.49626" transform="rotate(90 1.49642 14.6642)" fill="white"></circle><circle cx="40.9984" cy="27.8302" r="1.49626" transform="rotate(90 40.9984 27.8302)" fill="white"></circle><circle cx="27.8304" cy="27.8302" r="1.49626" transform="rotate(90 27.8304 27.8302)" fill="white"></circle><circle cx="14.6644" cy="27.8302" r="1.49626" transform="rotate(90 14.6644 27.8302)" fill="white"></circle><circle cx="1.49642" cy="27.8302" r="1.49626" transform="rotate(90 1.49642 27.8302)" fill="white"></circle><circle cx="40.9984" cy="40.9982" r="1.49626" transform="rotate(90 40.9984 40.9982)" fill="white"></circle><circle cx="27.8304" cy="40.9963" r="1.49626" transform="rotate(90 27.8304 40.9963)" fill="white"></circle><circle cx="14.6644" cy="40.9982" r="1.49626" transform="rotate(90 14.6644 40.9982)" fill="white"></circle><circle cx="1.49642" cy="40.9963" r="1.49626" transform="rotate(90 1.49642 40.9963)" fill="white"></circle><circle cx="40.9984" cy="54.1642" r="1.49626" transform="rotate(90 40.9984 54.1642)" fill="white"></circle><circle cx="27.8304" cy="54.1642" r="1.49626" transform="rotate(90 27.8304 54.1642)" fill="white"></circle><circle cx="14.6644" cy="54.1642" r="1.49626" transform="rotate(90 14.6644 54.1642)" fill="white"></circle><circle cx="1.49642" cy="54.1642" r="1.49626" transform="rotate(90 1.49642 54.1642)" fill="white"></circle></g>
+                        </svg>
+                    </span>
+                </section>
             </div>
             <aside className="w-1/3 sticky top-32 hidden md:flex justify-center items-center h-max">
                 <nav className="space-y-3 border-r-4 flex flex-col items-end border-[#ccc] pr-4">

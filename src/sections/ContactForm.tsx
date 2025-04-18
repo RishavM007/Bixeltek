@@ -168,7 +168,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ isVisible, onClose }: 
             }`}>
             {/* <h3 className="text-3xl md:text-3xl  font-normal text-white mb-4">Get in Touch </h3> */}
             {/* <div className='absolute w-40 h-1 bg-[#670ef7] translate-y-[-10px] translate-x-[5px]'></div> */}
-            <form className="space-y-4 bg-black  px-5 py-7 " onSubmit={handleSubmit} ref={formRef}>
+            <form className="space-y-4 bg-black border-2 rounded-2xl border-[#670ef7]  px-5 py-7 " onSubmit={handleSubmit} ref={formRef}>
                 <button
                     type="button"
                     onClick={onClose}
@@ -347,7 +347,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ isVisible, onClose }: 
 
                     {/* Dropdown menu */}
                     {isOpen && (
-                        <div className="absolute left-0 z-10 mt-2 w-full origin-top  rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5">
+                        <div className="absolute left-0 z-10 mt-2 w-full origin-top overflow-y-scroll  rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5">
                             {[
                                 "PPC Campaigns",
                                 "SEO Optimization",

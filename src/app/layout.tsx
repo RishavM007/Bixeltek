@@ -13,6 +13,119 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Schema */}
+
+        <Script id="bixeltek-schema" type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://www.bixeltek.com#organization",
+                "name": "Bixeltek",
+                "url": "https://www.bixeltek.com",
+                "logo": "https://www.bixeltek.com/path-to-logo.png",
+                "description": "Bixeltek is a Google Partner certified digital marketing agency offering Google Ads, SEO, Web Design, and Meta Ads marketing across India, Canada, USA, UAE, and Saudi Arabia.",
+                "sameAs": [
+                  "https://www.facebook.com/bixeltek",
+                  "https://www.instagram.com/bixeltek",
+                  "https://www.linkedin.com/company/bixeltek",
+                  "https://g.page/r/CX3wqGzMd0boEB0/review"
+                ],
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "+91-9100032301",
+                  "contactType": "customer support",
+                  "availableLanguage": ["English", "Hindi", "Telugu"],
+                  "areaServed": ["IN", "US", "CA", "AE", "SA"]
+                },
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "5.0",
+                  "reviewCount": "5"
+                }
+              },
+              {
+                "@type": "LocalBusiness",
+                "@id": "https://www.bixeltek.com#localbusiness",
+                "name": "Bixeltek",
+                "image": "https://www.bixeltek.com/path-to-logo.png",
+                "priceRange": "$$",
+                "url": "https://www.bixeltek.com",
+                "telephone": "+91-9100032301",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "3rd Floor, Behind Cult Fit, K K Convention Road, Suncity Rd, opposite Ratnadeep, Bandlaguda Jagir",
+                  "addressLocality": "Hyderabad",
+                  "addressRegion": "Telangana",
+                  "postalCode": "500091",
+                  "addressCountry": "IN"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 17.362625919966433,
+                  "longitude": 78.394819141387
+                },
+                "openingHoursSpecification": {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ],
+                  "opens": "10:00",
+                  "closes": "19:00"
+                },
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "5.0",
+                  "reviewCount": "5"
+                },
+                "founder": {
+                  "@type": "Person",
+                  "name": "Syed Zeeshan Ali"
+                },
+                "makesOffer": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Google Ads Management",
+                      "description": "Certified Google Partner agency offering high-converting Google Ads campaigns including Search, Display, Remarketing, and Performance Max strategies tailored to drive leads and ROI."
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "SEO Services",
+                      "description": "Advanced SEO strategies including on-page, technical, and off-page optimization designed to improve organic visibility, local rankings, and long-term traffic growth."
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Web Design & Development",
+                      "description": "Custom-designed websites focused on performance, user experience, SEO-readiness, and mobile responsiveness to convert traffic into leads and sales."
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Meta Ads / Social Media Marketing",
+                      "description": "ROI-driven Meta Ads campaigns (Facebook & Instagram) with targeted audience segmentation, creative design, and performance tracking to increase brand awareness and conversions."
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+          )}
+        </Script>
         {/* Google Analytics */}
         <Script
           async
