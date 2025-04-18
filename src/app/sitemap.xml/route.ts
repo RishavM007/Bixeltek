@@ -10,10 +10,14 @@ export async function GET() {
     { url: `${baseUrl}/social-media-marketing-agency-hyderabad`, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/pricing`, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/industries`, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/contact-us`, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/google-ads-agency-hyderabad`, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/digitalmarketing`, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/web-design-services-hyderabad`, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/seo-agency-hyderabad`, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/casestudies-bixeltek/Tumblewash-Casestudy`, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/casestudies-bixeltek/google-ads-case-study-bike-repair-hyderabad`, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/casestudies-bixeltek/digital-marketing-for-dentists-case-study`, lastModified: new Date().toISOString(), changeFrequency: "weekly", priority: 0.8 },
   ];
 
   // Fetch WordPress blog posts
