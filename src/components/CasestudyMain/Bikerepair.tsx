@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { MdKeyboardArrowUp } from "react-icons/md";
+import Link from 'next/link';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 type StrategyStep = {
     title: string;
@@ -106,7 +107,7 @@ export default function BikerepairCaseStudySection() {
                     <h2 className="text-4xl font-bold text-left text-[#670ef7] mb-2 font-sofiasanscondensed">
                         The Bixeltek Turnaround
                     </h2>
-                    <p className='text-base text-black max-w-xl mb-12'>We knew this wasn&apos;t just about fixing ads — it was about reviving a legacy brand. As a Google Partner Certified agency, we stepped in with speed and strategy.</p>
+                    <p className='text-base text-black max-w-xl mb-12'>We knew this wasn&apos;t just about fixing ads — it was about reviving a legacy brand. As a <Link href={'/'} className='underline underline-offset-2'>Certified Google Partner Agency</Link>, we stepped in with speed and strategy.</p>
 
                     <div className="relative border-l-4 border-[#670ef7] ml-1 md:ml-4 space-y-16">
                         {strategySteps.map((step, index) => {
@@ -206,7 +207,7 @@ export default function BikerepairCaseStudySection() {
                 <div id="cta" className="scroll-mt-20 pb-20">
                     <h2 className="text-3xl font-bold font-sofiasanscondensed text-[#670ef7] mb-4"> Want Results Like These? Let&apos;s Build Your Success Story.</h2>
                     <p className='text-lg font-poppins'>
-                        At Bixeltek, we&apos;re not just another agency. We&apos;re a Certified Google Partner — trained, backed, and recognized by Google for our expertise in
+                        At Bixeltek, we&apos;re not just another agency. We&apos;re a Certified Google Partner — trained, backed, and recognized by Google for our expertise in <Link href={'/google-ads-agency-hyderabad'} className='underline underline-offset-2'>Google Ads Management services in India.</Link> 
                     </p>
                     <p className='text-lg font-poppins mt-3'>
                         We help businesses across India turn ad budgets into real-world growth. Whether you’re a local service provider or a scaling startup, our mission is simple: <span className='font-semibold'>Get you more leads, more customers, and more ROI.</span>
