@@ -28,7 +28,14 @@ export const Header = () => {
       id: 2,
       title: "Eazy Bike Repair Case Study",
       description: "Learn essential steps to begin your journey in the digital marketing world effectively.",
-      link: "/google-ads-case-study-bike-repair-hyderabad",
+      link: "/casestudies-bixeltek/google-ads-case-study-bike-repair-hyderabad",
+      glowcolor: "bg-purple-500",
+    },
+    {
+      id: 3,
+      title: "Digital Marketing for Dentists",
+      description: "Learn essential steps to begin your journey in the digital marketing world effectively.",
+      link: "/casestudies-bixeltek/digital-marketing-for-dentists-case-study",
       glowcolor: "bg-purple-500",
     },
 
@@ -212,6 +219,14 @@ export const Header = () => {
                       className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
                     >
                       Eazy Bike Repair Case Study
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/casestudies-bixeltek/digital-marketing-for-dentists-case-study"
+                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
+                    >
+                      Dental Clinic Case Study
                     </Link>
                   </li>
                 </ul>
