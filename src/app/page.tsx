@@ -1,5 +1,5 @@
 export const metadata = {
-  title: " ",
+  title: "Best Digital Marketing Agency in Hyderabad | Bixeltek",
   description:
     "Google-certified digital marketing agency in Hyderabad offering SEO, Google Ads, Meta Ads & Web Design. Trusted by clients in India, USA, Canada, UAE & Saudi.",
   keywords: [
