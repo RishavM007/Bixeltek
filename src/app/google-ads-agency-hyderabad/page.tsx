@@ -26,7 +26,8 @@ import {
 } from "react-icons/fi";
 import AdsFailureSection from '@/components/GaSection2';
 import Image from 'next/image';
-import pet from "@/assets/digital marketing for pet stores.jpg";
+import pet from "@/assets/sincerely-media-VNsdEl1gORk-unsplash.jpg";
+import school from '@/assets/school.jpg'
 import roofing from "@/assets/digital marketing for roofing industries.jpg";
 import { FaTooth, FaHospital, FaDog, FaGasPump, FaCar, FaBroom, FaGraduationCap, FaBuilding, FaTree, FaSeedling } from "react-icons/fa";
 import dental from "@/assets/digital marketing for health care practices.jpg";
@@ -198,7 +199,7 @@ export default function Home() {
             </section>
             <section className=" max-w-[90%] md:max-w-6xl mx-auto pb-20 mt-20">
                 {/* Heading */}
-                <h2 className="text-3xl font-sofiasanscondensed font-bold text-black text-center mb-1 md:text-5xl">
+                <h2 className="text-2xl font-sofiasanscondensed font-bold text-black text-center mb-1 md:text-5xl">
                     What You Get When You Work With Us
                 </h2>
                 <h2 className="text-3xl font-sofiasanscondensed capitalize font-bold text-black text-center mb-14 md:text-4xl">
@@ -390,7 +391,7 @@ export default function Home() {
                     >
                         <div className="block text-center mb-5 lg:text-left lg:mb-0">
                             <h2
-                                className="font-manrope capitalize text-4xl text-white font-semibold mb-5 lg:mb-2"
+                                className="font-manrope capitalize text-2xl md:text-4xl text-white font-semibold mb-5 lg:mb-2"
                             >
                                 More Leads. More Sales. More Conversions.
                             </h2>
@@ -684,15 +685,15 @@ export default function Home() {
                         </button>
                     </Link>
                 </div>
-                <div className="flex w-full lg:w-2/5 justify-center gap-4 p-1">
+                <div className="flex w-full lg:w-1/2 justify-center gap-4 p-1">
                     <div className='w-1/3 flex flex-col  items-center justify-center gap-3'>
                         <Image src={healthcare} alt='healthcare' className='rounded-xl'></Image>
                         <Image src={oil} alt='oil' className='rounded-xl'></Image>
                     </div>
                     <div className='w-1/3 flex flex-col gap-3'>
-                        <Image src={pet} alt='pet' className='rounded-xl'></Image>
                         <Image src={roofing} alt='roofind' className='rounded-xl'></Image>
-                        <Image src={dental} alt='dental' className='rounded-xl'></Image>
+                        <Image src={pet} alt='pet' className='rounded-xl'></Image>
+                        <Image src={school} alt='dental' className='rounded-xl'></Image>
                     </div>
                     <div className='w-1/3 flex flex-col justify-center gap-3'>
                         <Image src={lawncare} alt='lawncare' className='rounded-xl'></Image>

@@ -22,7 +22,8 @@ import oil from "@/assets/digital marketing for oil refinaries.jpg";
 import { FaSearch, FaTachometerAlt, FaFileAlt, FaStar, FaMapMarkerAlt, FaCode } from "react-icons/fa";
 import { PiGreaterThan } from "react-icons/pi";
 import SeoHero from '@/components/SeoHero';
-import pet from "@/assets/digital marketing for pet stores.jpg";
+import pet from "@/assets/sincerely-media-VNsdEl1gORk-unsplash.jpg";
+import school from '@/assets/school.jpg'
 import roofing from "@/assets/digital marketing for roofing industries.jpg";
 import dental from "@/assets/digital marketing for health care practices.jpg";
 import lawncare from "@/assets/digital marketing for lawn care services.jpg";
@@ -217,7 +218,7 @@ export default function Seo() {
                                         Cutting-Edge Tools – Advanced keyword research, auditing software, and optimization ensure peak SEO performance.
                                     </h3>
                                 </div>
-                                <div className='mt-2 ml-2'>
+                                <div className='mt-2 mb-10 ml-2'>
                                     <a href="tel:+919100032301" >
                                         <button className='px-4 py-3 bg-[#670ef7] text-white transition-all duration-300 hover:bg-white font-medium hover:text-black rounded-md'>Book An Appointment</button>
                                     </a>
@@ -433,15 +434,15 @@ export default function Seo() {
             <section className='w-full flex flex-wrap max-w-[90%] mx-auto lg:flex-nowrap overflow-y-hidden items-center'>
                 {/* Left Content Section */}
                 <div className='w-full lg:w-1/2 px-6 py-10 lg:py-14'>
-                    <h2 className="text-4xl md:text-5xl font-semibold text-gray-800 font-sofiasanscondensed dark:text-white">
+                    <h2 className="text-4xl md:text-5xl font-semibold  font-sofiasanscondensed text-white">
                         Proven Results Across <span className='text-purple-500'>Diverse Industries</span>
                     </h2>
-                    <p className="mt-4 text-[16px] md:text-lg text-gray-600 dark:text-gray-300">
+                    <p className="mt-4 text-[16px] md:text-lg text-gray-300">
                         Our expertise spans multiple industries, helping businesses achieve growth through data-driven strategies and
                         innovative solutions. From technology and finance to healthcare and retail, we empower brands with actionable insights
                         and cutting-edge digital solutions.
                     </p>
-                    <p className="mt-2 text-[16px] md:text-lg text-gray-600 dark:text-gray-300">
+                    <p className="mt-2 text-[16px] md:text-lg text-gray-300">
                         Explore how our tailored approach delivers measurable success, increasing engagement, conversions, and brand visibility
                         in a competitive landscape.
                     </p>
@@ -460,21 +461,21 @@ export default function Seo() {
                     </Link>
                 </div>
 
-                <div className="flex w-full lg:w-1/2 justify-center gap-4 p-1 md:p-10">
-                    <div className='w-1/3 flex flex-col  items-center justify-center gap-3'>
-                        <Image src={healthcare} alt='healthcare' className='rounded-xl'></Image>
-                        <Image src={oil} alt='oil' className='rounded-xl'></Image>
-                    </div>
-                    <div className='w-1/3 flex flex-col gap-3'>
-                        <Image src={pet} alt='pet' className='rounded-xl'></Image>
-                        <Image src={roofing} alt='roofind' className='rounded-xl'></Image>
-                        <Image src={dental} alt='dental' className='rounded-xl'></Image>
-                    </div>
-                    <div className='w-1/3 flex flex-col justify-center gap-3'>
-                        <Image src={lawncare} alt='lawncare' className='rounded-xl'></Image>
-                        <Image src={blackcar} alt='automobiles' className='rounded-xl'></Image>
-                    </div>
-                </div>
+                 <div className="flex w-full lg:w-1/2 justify-center gap-4 p-1">
+                                    <div className='w-1/3 flex flex-col  items-center justify-center gap-3'>
+                                        <Image src={healthcare} alt='healthcare' className='rounded-xl'></Image>
+                                        <Image src={oil} alt='oil' className='rounded-xl'></Image>
+                                    </div>
+                                    <div className='w-1/3 flex flex-col gap-3'>
+                                        <Image src={roofing} alt='roofind' className='rounded-xl'></Image>
+                                        <Image src={pet} alt='pet' className='rounded-xl'></Image>
+                                        <Image src={school} alt='dental' className='rounded-xl'></Image>
+                                    </div>
+                                    <div className='w-1/3 flex flex-col justify-center gap-3'>
+                                        <Image src={lawncare} alt='lawncare' className='rounded-xl'></Image>
+                                        <Image src={blackcar} alt='automobiles' className='rounded-xl'></Image>
+                                    </div>
+                                </div>
             </section>
             <section className='py-10'>
 

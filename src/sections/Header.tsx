@@ -44,19 +44,19 @@ export const Header = () => {
   return (
     <header className="px-3 py-5  max-w-[90%] mx-auto sticky top-0 z-[60]">
       <div className="container bg-black flex justify-between items-center border-white/15 border-solid border-2 rounded-xl shadow-purple-custom backdrop:blur-3xl">
-        <div className="text-white py-3">
+        <div className="text-white py-4 md:py-6 xl:py-3">
           <Link href={"/"}>
             <Image src={Bixeltek} alt="Bixeltek Logo" className='h-7 w-auto' />
           </Link>
         </div>
-        <button className="md:hidden text-white text-3xl" onClick={toggleMenu}>
+        <button className="xl:hidden text-white text-3xl" onClick={toggleMenu}>
           {isMenuOpen ? <HiX /> : <HiMenu />}
         </button>
         <motion.div
           initial={{ x: "100%" }}
           animate={{ x: isMenuOpen ? 0 : "100%" }}
           transition={{ type: "spring", stiffness: 80, damping: 15 }}
-          className="fixed top-0 right-0 h-full w-full bg-black shadow-lg p-6 z-50 md:hidden"
+          className="fixed top-0 right-0 h-full w-full bg-black shadow-lg p-6 z-50 xl:hidden"
         >
 
           <button className="absolute top-4 right-4 text-white text-3xl" onClick={toggleMenu}>
@@ -64,14 +64,14 @@ export const Header = () => {
           </button>
           <nav className="mt-10">
 
-            <ul className="text-white text-xl font-sofiasanscondensed space-y-4">
+            <ul className="text-white text-xl md:text-2xl font-sofiasanscondensed space-y-4">
               <li><Link href="/" className="block py-2 px-4 hover:bg-purple-600  rounded">Home</Link></li>
               <li>
                 <button onClick={() => setIsDropdownOpen(!isDropdownOpen)} className="flex justify-between w-full py-2 px-4 hover:bg-purple-600 rounded">
-                  Our Services <HiChevronDown className="text-xl" />
+                  Our Services <HiChevronDown className="text-xl md:text-2xl" />
                 </button>
                 {isDropdownOpen && (
-                  <motion.ul initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="ml-4 text-lg space-y-2">
+                  <motion.ul initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="ml-4 text-lg md:text-xl space-y-2">
                     <li><Link href="/google-ads-agency-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Google Ads Management</Link></li>
                     <li><Link href="/seo-agency-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">SEO</Link></li>
                     <li><Link href="/social-media-marketing-agency-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Social Media Management</Link></li>
@@ -96,7 +96,7 @@ export const Header = () => {
 
           </nav>
         </motion.div>
-        <div className="hidden md:flex text-[17px] tracking-widest">
+        <div className="hidden xl:flex text-[17px] tracking-widest">
           <nav className="flex items-stretch">
             <ul className="flex gap-8 h-auto font-sofiasanscondensed font-normal tracking-widest">
               <li className="flex items-center py-7">
@@ -250,7 +250,7 @@ export const Header = () => {
             </ul>
           </nav>
         </div>
-        <div className="hidden md:flex justify-center items-center gap-5 py-4">
+        <div className="hidden xl:flex justify-center items-center gap-5 py-4">
           <a href="tel:+919100032301">
             <button className="bg-gradient-to-t from-[#4a208a] to-[#13012e] border border-[#8a45f2] text-white font-normal text-sm py-2 px-4 rounded-lg shadow-custom">
               <span>Talk to a Specialist</span>

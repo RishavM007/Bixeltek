@@ -34,7 +34,8 @@ import TestimonialWebdev from '@/components/TestimonialWebdev';
 import BeforeHiring from '@/components/WebdevComparison';
 import Smfeatures from '@/components/smfeatures';
 import Image from 'next/image';
-import pet from "@/assets/digital marketing for pet stores.jpg";
+import pet from "@/assets/sincerely-media-VNsdEl1gORk-unsplash.jpg";
+import school from '@/assets/school.jpg'
 import roofing from "@/assets/digital marketing for roofing industries.jpg";
 import dental from "@/assets/digital marketing for health care practices.jpg";
 import healthcare from "@/assets/digital marketing for health care practices.jpg";
@@ -319,7 +320,7 @@ export default function Webdev() {
                         <div>
                             <h3 className="font-bold text-xl">Real Support, Hyderabad-Based Team</h3>
                             <p className="text-gray-400 mt-3 leading-relaxed tracking-wide">
-                                AOur expert team provides quick responses, hands-on assistance, and personalized support to ensure your website runs smoothly and efficiently.
+                                Our expert team provides quick responses, hands-on assistance, and personalized support to ensure your website runs smoothly and efficiently.
                             </p>
                         </div>
                     </div>
@@ -345,7 +346,7 @@ export default function Webdev() {
 
                     <div className="md:w-[55%] mt-16  md:mt-0 text-center md:text-left">
 
-                        <h2 className="text-3xl text-white  md:text-[40px] leading-[35px] md:leading-[50px] font-bold mt-4 ">
+                        <h2 className="text-2xl text-white  md:text-[40px] leading-[35px] md:leading-[50px] font-bold mt-4 ">
                             Technology Transforming Ideas Into Reality Empowering Brands With
                             <span className="bg-purple-500 px-2 ml-4">BIXELTEK</span>
                         </h2>
@@ -591,7 +592,7 @@ export default function Webdev() {
                             </button>
                         </Link>
                         <a href="tel:+919100032301">
-                            <button className="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
+                            <button className="mt-2 md:pt-4 xl:pt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
                                 Talk to our Specialist
                             </button>
 
@@ -604,9 +605,9 @@ export default function Webdev() {
                         <Image src={oil} alt='oil' className='rounded-xl'></Image>
                     </div>
                     <div className='w-1/3 flex flex-col gap-3'>
-                        <Image src={pet} alt='pet' className='rounded-xl'></Image>
                         <Image src={roofing} alt='roofind' className='rounded-xl'></Image>
-                        <Image src={dental} alt='dental' className='rounded-xl'></Image>
+                        <Image src={pet} alt='pet' className='rounded-xl'></Image>
+                        <Image src={school} alt='dental' className='rounded-xl'></Image>
                     </div>
                     <div className='w-1/3 flex flex-col justify-center gap-3'>
                         <Image src={lawncare} alt='lawncare' className='rounded-xl'></Image>

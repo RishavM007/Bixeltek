@@ -21,7 +21,7 @@ export default function GaSection() {
             <div className='flex flex-col md:flex-row  justify-between bg-white'>
                 <div className="w-full md:w-2/3 flex flex-col items-start px-10 xl:px-16 py-10 xl:py-16 bg-gray-100">
                     {/* Headline */}
-                    <h2 className="text-5xl font-sofiasanscondensed lg:text-5xl xl:text-5xl xl:leading-[50px] font-bold text-left my-10 xl:my-14 text-zinc-700">
+                    <h2 className="text-3xl font-sofiasanscondensed lg:text-5xl xl:text-5xl xl:leading-[50px] font-bold text-left my-5 md:my-10 xl:my-14 text-zinc-700">
                         Meet <span className="text-purple-600">Bixeltek</span> — Your Performance Marketing Partner in Hyderabad
                     </h2>
 
@@ -68,7 +68,7 @@ export default function GaSection() {
                     <button className='bg-neutral-800 rounded-lg text-white px-5 py-3'>Get An Audit</button>
                         </Link>
                         <a href="tel:+919100032301">
-                    <button className='bg-transparent text-black hover:bg-neutral-800 hover:text-white py-3 px-5 transition-all duration-200 rounded-lg '>Speak to our Google Ads Specialist</button>
+                    <button className='bg-transparent text-black hover:bg-neutral-800 hover:text-white  py-3 px-2 lg:px-5 transition-all duration-200 rounded-lg '>Speak to our Google Ads Specialist</button>
                         </a>
                     </div>
                 </div>

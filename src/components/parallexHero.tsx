@@ -133,7 +133,7 @@ export const Header = () => {
                 </a>
                 <button
                     onClick={toggleContactForm}
-                    className="px-1 lg:px-8 py-3 text-sm md:text-base font-semibold text-white group  rounded-full "
+                    className="w-[60%] md:w-auto px-1 lg:px-8 py-3 text-sm md:text-base font-semibold text-white group  rounded-full "
                 >
                      Get a Free Website Audit <RiArrowRightSLine className="inline-block text-xl  group-hover:translate-x-2  transition duration-300 ml-1 mb-[3px]" />
                 </button>

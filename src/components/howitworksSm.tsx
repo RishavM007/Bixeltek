@@ -42,7 +42,7 @@ const HowItWorks = () => {
             <div className="w-full lg:w-1/2 px-5 mb-20 lg:mb-0">
               <div className="max-w-md">
                 <span className="text-lg font-bold text-purple-600 dark:text-purple-400">How it works</span>
-                <h2 className="mt-4 mb-2 text-4xl font-extrabold font-sofiasanscondensed leading-tight text-gray-800 dark:text-gray-200">
+                <h2 className="mt-4 mb-2 text-4xl font-extrabold font-sofiasanscondensed leading-tight text-gray-200">
                   Our Proven Social Media Process for Facebook Ads and Instagram Ads
                 </h2>
                 <p className="mb-10 text-lg text-gray-400">
@@ -67,13 +67,13 @@ const HowItWorks = () => {
                     className="flex pb-2 mb-8"
                   >
                     <div className="mr-8">
-                      <span className="flex justify-center items-center w-14 h-14 bg-blue-200/50 dark:bg-purple-600/30 text-lg font-bold rounded-full text-blue-600 dark:text-purple-300">
+                      <span className="flex justify-center items-center w-14 h-14 bg-purple-600/30 text-lg font-bold rounded-full text-purple-300">
                         {step.icon}
                       </span>
                     </div>
                     <div className="max-w-lg">
-                      <h3 className="mb-2 text-lg font-bold text-gray-700 dark:text-gray-100">{step.title}</h3>
-                      <p className="text-[15px] text-gray-500 dark:text-gray-100">{step.description}</p>
+                      <h3 className="mb-2 text-lg font-bold text-gray-100">{step.title}</h3>
+                      <p className="text-[15px] text-gray-100">{step.description}</p>
                     </div>
                   </motion.li>
                 ))}
