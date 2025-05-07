@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { useRef } from 'react';
+import { useRouter } from 'next/navigation';
 type ContactFormProps = {
     isVisible: boolean;
     onClose: () => void;
 };
 
 export const ContactForm: React.FC<ContactFormProps> = ({ isVisible, onClose }: ContactFormProps) => {
+    const router = useRouter();
     const formRef = useRef<HTMLFormElement | null>(null);
     const [formData, setFormData] = useState({
         firstName: '',
@@ -99,7 +101,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ isVisible, onClose }: 
             if (!response.ok) throw new Error(result.error || 'Failed to send message.');
 
             console.log("API Response:", result); // Debugging
-            alert('Message sent successfully!');
+            router.push('/thank-you')
             setFormData({
                 firstName: '',
                 lastName: '',
