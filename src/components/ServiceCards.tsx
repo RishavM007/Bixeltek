@@ -18,7 +18,7 @@ export default function ServiceCards() {
                         </div>
                         <h2 className="text-lg font-bold mb-2 text-left">Detectica</h2>
                         <p className="text-sm text-left mb-4">
-                            "AI Artificial Intelligence is a branch of computer science that focuses on the"
+                            "AI Artificial Intelligence is a branch of computer science that focuses on creating AI"
                         </p>
                         <div className="text-sm font-semibold text-left text-white cursor-pointer">
                             Read More <span className="text-[#7028e4]">→</span>
