@@ -27,7 +27,7 @@ const AdsFailureSection = () => {
     const solutions = [
         "Precise keyword mapping",
         "High-converting ad copy",
-        "Responsive landing pages",
+        "Responsive landing page",
         "Audience-driven bidding",
         "Conversion-focused strategy that scales with your growth",
     ];
@@ -63,7 +63,7 @@ const AdsFailureSection = () => {
             >
                 {/* Heading */}
                 <h2 className="text-4xl xl:text-5xl font-medium mb-10 text-center font-sofiasanscondensed border-black pb-4">
-                    Why Most Google Ads Campaigns Fail — <br /> And What We Do Differently
+                    Why Most Google Ads Campaigns Fail — <br /> And What We Do Differently from them
                 </h2>
 
                 {/* Table Layout */}
