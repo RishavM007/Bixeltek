@@ -11,8 +11,8 @@ export async function POST(req: Request) {
             port: 587,
             secure: false,
             auth: {
-                user: "noreply@bixeltek.com",
-                pass: "Bb9177805420@", 
+                user: process.env.MAILER_USER,
+                pass: process.env.MALER_PASS, 
             },
         });
 

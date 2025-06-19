@@ -33,6 +33,7 @@ import { Casestudy } from "@/sections/Casestudies";
 import { About } from "@/sections/About";
 import { Footer } from "@/sections/Footer";
 import { ContactButton } from "@/sections/contactButton";
+import ServiceCards from "@/components/ServiceCards";
 
 
 export default function Home() {
@@ -47,6 +48,7 @@ export default function Home() {
       <Testimonials />
       <CallToAction />
       <Casestudy />
+      <ServiceCards />
       <ContactButton />
       <Footer />
     </>

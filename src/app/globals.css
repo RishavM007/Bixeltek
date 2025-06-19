@@ -46,3 +46,16 @@
     cursor: url("/public/play-button.png") 16 16, pointer !important;
 } */
 
+
+.card-glow::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    border-radius: 0.875rem; /* 0.75rem + 2px (rounded-xl + offset) */
+    background: linear-gradient(145deg, #7028e4, #000000);
+    opacity: 1;
+  }
