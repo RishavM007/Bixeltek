@@ -34,7 +34,7 @@ import { About } from "@/sections/About";
 import { Footer } from "@/sections/Footer";
 import { ContactButton } from "@/sections/contactButton";
 import ServiceCards from "@/components/ServiceCards";
-
+import CardList from "@/components/ServiceCards";
 
 export default function Home() {
   return (
@@ -48,7 +48,7 @@ export default function Home() {
       <Testimonials />
       <CallToAction />
       <Casestudy />
-      <ServiceCards />
+      <CardList />
       <ContactButton />
       <Footer />
     </>
