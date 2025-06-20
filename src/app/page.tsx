@@ -26,7 +26,6 @@ import { Header } from "@/sections/Header";
 import { Hero } from "@/sections/Hero";
 import MetricsSection from "@/components/Counter3";
 import { LogoTicker } from "@/sections/LogoTicker";
-import BentoGrid from "@/sections/Features";
 import { Testimonials } from "@/sections/Testimonials";
 import { CallToAction } from "@/sections/CallToAction";
 import { Casestudy } from "@/sections/Casestudies";
@@ -43,12 +42,11 @@ export default function Home() {
       <Hero />
       <LogoTicker />
       <About />
-      <BentoGrid />
+      <CardList />
       <MetricsSection/>
       <Testimonials />
       <CallToAction />
       <Casestudy />
-      <CardList />
       <ContactButton />
       <Footer />
     </>

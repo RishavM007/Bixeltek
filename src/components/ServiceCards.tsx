@@ -3,24 +3,31 @@ import React from 'react';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { IoMdArrowRoundForward } from "react-icons/io";
-import { motion } from "framer-motion";
+import metalogo from '@/assets/9805185_meta_logo_facebook_social media_icon.png'
 import reacticon from '@/assets/7423888_react_react native_icon.png';
 import googlelogo from '@/assets/2993685_brand_brands_google_logo_logos_icon.png';
 import instagramlogo from '@/assets/6929237_instagram_icon.png';
+import photoshoplogo from '@/assets/photoshop.webp'
+import illustrator from '@/assets/illustrator.webp'
+import googleanalyticslogo from '@/assets/icons8-google-analytics-24.png'
 import searchengineoptimizationlogo from '@/assets/1000174561.png';
-import googleanalyticslogo from '@/assets/4202007_analytics_google_logo_social_social media_icon.png'
+import ytlogo from '@/assets/4375133_logo_youtube_icon.png'
+import semrushlogo from '@/assets/4202007_analytics_google_logo_social_social media_icon.png'
+import googleadslogo from '@/assets/6929233_google ads_logo_icon.png'
 
 interface CardData {
   title: string;
   link: string;
-  img: StaticImageData;
+  img1: StaticImageData;
+  img2: StaticImageData;
   description: string;
 }
 
 interface CardProps {
   title: string;
   link: string;
-  img: StaticImageData;
+  img1: StaticImageData;
+  img2: StaticImageData;
   description: string;
   isEven: boolean;
 }
@@ -29,65 +36,72 @@ const services: CardData[] = [
   {
     title: "Website Development",
     link: "/web-design-services-hyderabad",
-    img: reacticon,
+    img1: reacticon,
+    img2: photoshoplogo,
     description:
       "We build fast, scalable, and visually stunning websites that enhance user experience and drive engagement.",
   },
   {
     title: "Google Ads Management",
     link: "/google-ads-agency-hyderabad",
-    img: googlelogo,
+    img1: googleadslogo,
+    img2: ytlogo,
     description:
       "Get the most out of your ad spend with our expert Google Ads management and PPC campaign optimization.",
   },
   {
     title: "Search Engine Optimization",
     link: "/seo-agency-hyderabad",
-    img: searchengineoptimizationlogo,
+    img1: googlelogo,
+    img2: searchengineoptimizationlogo,
     description:
       "Increase your website’s organic traffic with cutting-edge SEO techniques and best practices.",
   },
   {
     title: "Social Media Marketing",
     link: "/social-media-marketing-agency-hyderabad",
-    img: instagramlogo,
+    img1: metalogo,
+    img2: instagramlogo,
     description:
       "Boost your brand's presence with highly targeted social media campaigns across multiple platforms.",
   },
   {
     title: "Reporting and Analysis",
     link: "/contact-us",
-    img: googleanalyticslogo, 
+    img1: semrushlogo, 
+    img2: photoshoplogo,
     description:
       "Optimize conversions and cut ad costs with data-driven reporting, A/B testing, and user behavior analysis.",
   },
   {
-    title: "Reporting and Analysis",
+    title: "Graphic Design Services",
     link: "",
-    img: reacticon,
+    img1: illustrator,
+    img2: photoshoplogo,
     description:
-      "Optimize conversions and cut ad costs with data-driven reporting, A/B testing, and user behavior analysis.",
+      "Turn vision into visuals with logos, brochures, hoardings & social posts that attract and convert.",
   },
 ];
 
-const Card: React.FC<CardProps> = ({ title, img, description, link, isEven }) => {
+const Card: React.FC<CardProps> = ({ title, img1,img2, description, link, isEven }) => {
   const gradient = isEven
     ? "from-[#7028e4] to-[#1e1e1e]"
     : "from-[#1e1e1e] to-[#7028e4]";
 
   return (
     <div
-      className={`w-full relative p-[3px] rounded-xl bg-gradient-to-b ${gradient} h-full`}
+      className={`w-full relative p-[2px] rounded-xl bg-gradient-to-b ${gradient} h-full`}
     >
       <div className="bg-[#1e1e1e] py-10 px-6 rounded-[10px] flex flex-col justify-between h-full">
         <div>
-          <div className="mb-3">
-            <Image src={img} width={50} height={50} alt={title} />
+          <div className=" flex flex-row gap-4 w-fit mb-3">
+            <Image src={img1} width={50} height={50} alt={title} />
+            <Image src={img2} width={50} height={50} alt={title}/>
           </div>
           <h2 className="text-white text-3xl mt-4 tracking-wide font-sofiasanscondensed font-semibold">
             {title}
           </h2>
-          <p className="text-white/80 mt-2 text-sm line-clamp-3">{description}</p>
+          <p className="text-white/80 mt-2 text-sm">{description}</p>
         </div>
         <Link href={link}>
           <div className="text-sm mt-2 font-semibold text-left text-white cursor-pointer hover:text-[#7028e4] transition">
@@ -106,7 +120,11 @@ const Card: React.FC<CardProps> = ({ title, img, description, link, isEven }) =>
 
 const CardList: React.FC = () => {
   return (
-    <div className="max-w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4 items-stretch">
+    <>
+   <div className='mt-20 mb-24'>
+    <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold font-sofiasanscondensed mb-14 text-center text-white">Digital Marketing Services in Hyderabad, India</h2>
+    <div className="max-w-[55%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4 items-stretch">
+      
       {services.map((card, index) => {
         const isEven = (index + 1) % 2 === 0;
         return (
@@ -114,13 +132,16 @@ const CardList: React.FC = () => {
             key={index}
             title={card.title}
             link={card.link}
-            img={card.img}
+            img1={card.img1}
+            img2={card.img2}
             description={card.description}
             isEven={isEven}
           />
         );
       })}
     </div>
+      </div>
+     </>
   );
 };
 
