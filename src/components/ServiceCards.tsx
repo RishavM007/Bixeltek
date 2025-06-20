@@ -5,6 +5,10 @@ import Link from 'next/link';
 import { IoMdArrowRoundForward } from "react-icons/io";
 import { motion } from "framer-motion";
 import reacticon from '@/assets/7423888_react_react native_icon.png';
+import googlelogo from '@/assets/2993685_brand_brands_google_logo_logos_icon.png';
+import instagramlogo from '@/assets/6929237_instagram_icon.png';
+import searchengineoptimizationlogo from '@/assets/1000174561.png';
+import googleanalyticslogo from '@/assets/4202007_analytics_google_logo_social_social media_icon.png'
 
 interface CardData {
   title: string;
@@ -30,32 +34,32 @@ const services: CardData[] = [
       "We build fast, scalable, and visually stunning websites that enhance user experience and drive engagement.",
   },
   {
-    title: "Digital Marketing",
-    link: "/digitalmarketing",
-    img: reacticon,
-    description:
-      "Our performance-driven marketing strategies ensure maximum reach and higher conversion rates for your business.",
-  },
-  {
     title: "Google Ads Management",
-    link: "/google-ads-agency-hyderabad",
-    img: reacticon,
+    link: "/digitalmarketing",
+    img: googlelogo,
     description:
       "Get the most out of your ad spend with our expert Google Ads management and PPC campaign optimization.",
   },
   {
-    title: "SEO Optimization",
-    link: "/seo-agency-hyderabad",
-    img: reacticon,
+    title: "Search Engine Optimization",
+    link: "/google-ads-agency-hyderabad",
+    img: searchengineoptimizationlogo,
     description:
       "Increase your website’s organic traffic with cutting-edge SEO techniques and best practices.",
   },
   {
     title: "Social Media Marketing",
-    link: "/social-media-marketing-agency-hyderabad",
-    img: reacticon,
+    link: "/seo-agency-hyderabad",
+    img: instagramlogo,
     description:
       "Boost your brand's presence with highly targeted social media campaigns across multiple platforms.",
+  },
+  {
+    title: "Reporting and Analysis",
+    link: "/social-media-marketing-agency-hyderabad",
+    img: googleanalyticslogo, 
+    description:
+      "Optimize conversions and cut ad costs with data-driven reporting, A/B testing, and user behavior analysis.",
   },
   {
     title: "Reporting and Analysis",
