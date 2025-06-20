@@ -35,35 +35,35 @@ const services: CardData[] = [
   },
   {
     title: "Google Ads Management",
-    link: "/digitalmarketing",
+    link: "/google-ads-agency-hyderabad",
     img: googlelogo,
     description:
       "Get the most out of your ad spend with our expert Google Ads management and PPC campaign optimization.",
   },
   {
     title: "Search Engine Optimization",
-    link: "/google-ads-agency-hyderabad",
+    link: "/seo-agency-hyderabad",
     img: searchengineoptimizationlogo,
     description:
       "Increase your website’s organic traffic with cutting-edge SEO techniques and best practices.",
   },
   {
     title: "Social Media Marketing",
-    link: "/seo-agency-hyderabad",
+    link: "/social-media-marketing-agency-hyderabad",
     img: instagramlogo,
     description:
       "Boost your brand's presence with highly targeted social media campaigns across multiple platforms.",
   },
   {
     title: "Reporting and Analysis",
-    link: "/social-media-marketing-agency-hyderabad",
+    link: "/contact-us",
     img: googleanalyticslogo, 
     description:
       "Optimize conversions and cut ad costs with data-driven reporting, A/B testing, and user behavior analysis.",
   },
   {
     title: "Reporting and Analysis",
-    link: "/contact-us",
+    link: "",
     img: reacticon,
     description:
       "Optimize conversions and cut ad costs with data-driven reporting, A/B testing, and user behavior analysis.",
