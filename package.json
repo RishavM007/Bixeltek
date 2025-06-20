@@ -34,7 +34,8 @@
     "swiper": "^11.2.4",
     "tailwind-merge": "^2.6.0",
     "three": "^0.171.0",
-    "three-globe": "^2.39.1"
+    "three-globe": "^2.39.1",
+    "turbo": "^2.5.4"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
