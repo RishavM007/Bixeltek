@@ -14,6 +14,7 @@ import searchengineoptimizationlogo from '@/assets/1000174561.png';
 import ytlogo from '@/assets/4375133_logo_youtube_icon.png'
 import semrushlogo from '@/assets/4202007_analytics_google_logo_social_social media_icon.png'
 import googleadslogo from '@/assets/6929233_google ads_logo_icon.png'
+import wordpresslogo from '@/assets/317716_cms_wordpress_blog_blogging_icon.png'
 
 interface CardData {
   title: string;
@@ -37,7 +38,7 @@ const services: CardData[] = [
     title: "Website Development",
     link: "/web-design-services-hyderabad",
     img1: reacticon,
-    img2: photoshoplogo,
+    img2: wordpresslogo,
     description:
       "We build fast, scalable, and visually stunning websites that enhance user experience and drive engagement.",
   },
