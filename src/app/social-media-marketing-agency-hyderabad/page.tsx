@@ -64,12 +64,12 @@ export default function SocialMedia() {
 
     return (
         <>
-        <Toaster
+            <Toaster
                 position="bottom-center"
                 reverseOrder={false}
             />
             <section className="bg-black h-auto text-white bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] pt-[72px] relative overflow-hidden">
-            <div className="absolute bottom-0 left-0 w-full z-30 h-40 bg-gradient-to-t from-black to-transparent"></div>
+                <div className="absolute bottom-0 left-0 w-full z-30 h-40 bg-gradient-to-t from-black to-transparent"></div>
                 <div className="container relative mx-auto px-4">
                     <div className="flex items-center justify-center">
                         <a href="#" className="border py-1 px-2 inline-flex gap-3 rounded-lg border-white/30">
@@ -96,7 +96,7 @@ export default function SocialMedia() {
 
                     <div className="flex justify-center mt-6 mb-3">
                         <Link href={'/contact-us'}>
-                        <button className="bg-white text-black py-3 px-5 rounded-lg font-medium">Get a quote</button>
+                            <button className="bg-white text-black py-3 px-5 rounded-lg font-medium">Get a quote</button>
                         </Link>
                     </div>
                 </div>
