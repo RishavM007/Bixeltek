@@ -19,6 +19,7 @@ import React from 'react'
 import ContactFrom from '@/components/ContactFrom';
 import DarkFaqSection from '@/components/DarkFaq';
 import TechWeUse from '@/components/TechWeUse';
+import WebDevHero from '@/components/WebDevHero';
 import landingpage from '@/assets/abstract-sales-landing-page-with-photo.png'
 import landingpage2 from '@/assets/landingpage2.jpg'
 import landingpage3 from '@/assets/landingpage3 (1).jpg'
