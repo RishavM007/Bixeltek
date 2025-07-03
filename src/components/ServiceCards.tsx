@@ -86,30 +86,30 @@ const services: CardData[] = [
 
 const Card: React.FC<CardProps> = ({ title, img1,img2, description, link, isEven }) => {
   const gradient = isEven
-    ? "from-[#7028e4] to-[#1e1e1e]"
-    : "from-[#1e1e1e] to-[#7028e4]";
+    ? "from-[#7028e4] to-white/10"
+    : "from-white-10 to-[#7028e4]";
 
   return (
     <div
-      className={`w-full relative p-[2px] rounded-xl bg-gradient-to-b ${gradient} h-full`}
+      className={`w-full relative p-[2px] rounded-xl bg-gradient-to-b h-full shadow-card-shadow`}
     >
-      <div className="bg-[#1e1e1e] py-10 px-6 rounded-[10px] flex flex-col justify-between h-full">
+      <div className="bg-black/30 backdrop-blur-xl border border-white/10 py-10 px-6 rounded-[10px] flex flex-col justify-between h-full shadow-xl transition-all duration-300">
         <div>
           <div className=" flex flex-row gap-4 w-fit mb-3">
             <Image src={img1} width={50} height={50} alt={title} />
             <Image src={img2} width={50} height={50} alt={title}/>
           </div>
-          <h2 className="text-white text-3xl mt-4 tracking-wide font-sofiasanscondensed font-semibold">
+          <h2 className="text-white/80 text-3xl mt-4 tracking-wide font-sofiasanscondensed font-semibold">
             {title}
           </h2>
-          <p className="text-white/80 mt-2 text-sm">{description}</p>
+          <p className="text-white/60 mt-2 text-sm">{description}</p>
         </div>
         <Link href={link}>
-          <div className="text-sm mt-2 font-semibold text-left text-white cursor-pointer hover:text-[#7028e4] transition">
+          <div className="text-sm mt-2 font-semibold text-left text-white/70 cursor-pointer hover:text-[#7028e4] transition">
             Read More{" "}
-            <span className="text-[#7028e4]">
+            {/* <span className="text-[#7028e4]">
               <IoMdArrowRoundForward className="inline ml-1" />
-            </span>
+            </span> */}
           </div>
         </Link>
       </div>
@@ -122,8 +122,12 @@ const Card: React.FC<CardProps> = ({ title, img1,img2, description, link, isEven
 const CardList: React.FC = () => {
   return (
     <>
-   <div className='mt-20 mb-24'>
-    <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold font-sofiasanscondensed mb-14 text-center text-white">Digital Marketing Services in Hyderabad, India</h2>
+   <div className='relative flex flex-col justify-center items-center h-[130vh] mt-20 mb-24'>
+     <div className="absolute inset-0 z-[-2] bg-[url('/aesthetic-background-with-gradient-neon-led-light-effect.jpg')] bg-cover bg-center bg-no-repeat" />
+
+  <div className="absolute top-0 h-60 w-full z-[-1] bg-gradient-to-b from-black via-transparent to-transparent" />
+  <div className="absolute bottom-0 h-40 w-full z-[-1] bg-gradient-to-t from-black via-transparent to-transparent" />
+    <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold font-sofiasanscondensed  mb-14 text-center text-white/80">Digital Marketing Services in Hyderabad, India</h2>
     <div className="sm:max-w-[90%]  lg:max-w-[75%] mx-auto grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 items-stretch">
       
       {services.map((card, index) => {

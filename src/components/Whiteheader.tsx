@@ -1,6 +1,6 @@
 "use client";
 import Image from 'next/image';
-import Bixeltek from '@/assets/BIXELTEKLOGO.png';
+
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
@@ -41,11 +41,11 @@ export const Whiteheader = () => {
 
     return (
         <>
-            <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-[90%] rounded-full bg-white/70 backdrop-blur-3xl shadow-lg px-6 py-0">
+            <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-[90%] rounded-full bg-white/40 backdrop-blur-3xl shadow-lg px-6 py-0">
                 <div className=" flex justify-between px-6 items-center">
                     <div className="text-white py-3">
                         <Link href={"/"}>
-                            <Image src={Bixeltek} alt="Bixeltek Logo" className='h-7 w-auto' />
+                            <Image src='/BIXELTEKLOGO.png'   width={100} height={40} alt="Bixeltek Logo" className='h-7 w-auto' />
                         </Link>
                     </div>
                     <button className="md:hidden text-black text-3xl" onClick={toggleMenu}>
