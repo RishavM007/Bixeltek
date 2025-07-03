@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import Bixeltek from '@/assets/BIXELTEKLOGO.png';
 import Newsletter from "@/components/Newsletter";
 
 export const Footer = () => {
@@ -11,7 +10,8 @@ export const Footer = () => {
         <Newsletter />
         <div className="grid grid-cols-2 min-[690px]:grid-cols-4 lg:grid-cols-6 gap-4 xl:gap-8 pt-14 pb-10 max-w-xs mx-auto min-[690px]:max-w-2xl lg:max-w-full">
           <div className="col-span-full mb-10 lg:col-span-2 lg:mb-0">
-            <Image src={Bixeltek} alt="logo" className="w-auto h-16"></Image>
+            <Image src='/BIXELTEKLOGO.png' alt="logo"  width={100} 
+  height={40} className="w-auto h-16"></Image>
 
             <p className="py-5 text-gray-100 lg:max-w-xs text-center lg:text-left">Trusted by brands.Certified by Google.Focused on ROI.</p>
             <div className="text-sm text-white mb-4">

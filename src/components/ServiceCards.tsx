@@ -124,7 +124,7 @@ const CardList: React.FC = () => {
     <>
    <div className='mt-20 mb-24'>
     <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold font-sofiasanscondensed mb-14 text-center text-white">Digital Marketing Services in Hyderabad, India</h2>
-    <div className="max-w-[55%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4 items-stretch">
+    <div className="sm:max-w-[90%]  lg:max-w-[75%] mx-auto grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 items-stretch">
       
       {services.map((card, index) => {
         const isEven = (index + 1) % 2 === 0;

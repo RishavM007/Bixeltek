@@ -24,7 +24,7 @@ export default function RootLayout({
                 "@id": "https://www.bixeltek.com#organization",
                 "name": "Bixeltek",
                 "url": "https://www.bixeltek.com",
-                "logo": "https://www.bixeltek.com/path-to-logo.png",
+                "logo": "https://www.bixeltek.com/BIXELTEKLOGO.png",
                 "description": "Bixeltek is a Google Partner certified digital marketing agency offering Google Ads, SEO, Web Design, and Meta Ads marketing across India, Canada, USA, UAE, and Saudi Arabia.",
                 "sameAs": [
                   "https://www.facebook.com/bixeltek",

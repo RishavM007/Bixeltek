@@ -1,6 +1,5 @@
 "use client";
 import Image from 'next/image';
-import Bixeltek from '@/assets/BIXELTEKLOGO.png';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
@@ -46,7 +45,7 @@ export const Header = () => {
       <div className="container bg-black flex justify-between items-center border-white/15 border-solid border-2 rounded-xl shadow-purple-custom backdrop:blur-3xl">
         <div className="text-white py-4 md:py-6 xl:py-3">
           <Link href={"/"}>
-            <Image src={Bixeltek} alt="Bixeltek Logo" className='h-7 w-auto' />
+            <Image src='/BIXELTEKLOGO.png'   width={100} height={40} alt="Bixeltek Logo" className='h-7 w-auto' />
           </Link>
         </div>
         <button className="xl:hidden text-white text-3xl" onClick={toggleMenu}>
