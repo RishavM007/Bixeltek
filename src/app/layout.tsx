@@ -139,7 +139,7 @@ export default function RootLayout({
             gtag('config', 'G-EVJXPZFB2T');
           `}
         </Script>
-        <Script id="google-tag-manager-head" strategy="afterInteractive">
+        <Script id="google-tag-manager-head">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
