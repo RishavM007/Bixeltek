@@ -105,7 +105,7 @@ const Card: React.FC<CardProps> = ({ title, img1,img2, description, link, isEven
           <p className="text-white/60 mt-2 text-sm">{description}</p>
         </div>
         <Link href={link}>
-          <div className="text-sm mt-2 font-semibold text-left text-white/70 cursor-pointer hover:text-[#7028e4] transition">
+          <div className="text-sm mt-2 font-semibold text-left text-white/70 hover:text-white cursor-pointer transition">
             Read More{" "}
             {/* <span className="text-[#7028e4]">
               <IoMdArrowRoundForward className="inline ml-1" />

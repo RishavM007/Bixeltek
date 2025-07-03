@@ -232,7 +232,7 @@ export const Header = () => {
               </li>
 
               <li className="flex items-center py-7">
-                <Link href="/" className="text-white/70 hover:text-white transition">
+                <Link href="/blog" className="text-white/70 hover:text-white transition">
                   Blog
                 </Link>
               </li>

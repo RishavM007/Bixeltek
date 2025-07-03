@@ -19,6 +19,7 @@
     "clsx": "^2.1.1",
     "dotenv": "^16.5.0",
     "framer-motion": "^11.15.0",
+    "graphql-request": "^7.2.0",
     "ldrs": "^1.0.2",
     "motion": "^12.6.3",
     "next": "14.2.5",
@@ -38,6 +39,7 @@
     "turbo": "^2.5.4"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.7",
     "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/nodemailer": "^6.4.17",
