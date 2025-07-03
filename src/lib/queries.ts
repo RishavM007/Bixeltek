@@ -20,6 +20,7 @@ export const GET_ALL_POSTS = `
 export const GET_SINGLE_POST = `
   query GetPostBySlug($slug: ID!) {
     post(id: $slug, idType: SLUG) {
+      id
       title
       content
       date
@@ -27,6 +28,20 @@ export const GET_SINGLE_POST = `
         node {
           sourceUrl
         }
+      }
+    }
+  }
+`;
+
+
+
+export const GET_SUGGESTED_POSTS = `
+  query GetSuggestedPosts($excludeId: ID!) {
+    posts(where: { orderby: { field: DATE, order: DESC }, notIn: [$excludeId] }, first: 5) {
+      nodes {
+        slug
+        title
+        excerpt
       }
     }
   }
