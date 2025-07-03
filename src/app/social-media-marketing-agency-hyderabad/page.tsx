@@ -11,6 +11,7 @@ export const metadata = {
         type: "website",
     },
 };
+
 export const dynamic = "force-dynamic";
 import CarouselSection from "@/components/industriescarosel";
 import { VscDebugBreakpointDataUnverified } from "react-icons/vsc";
