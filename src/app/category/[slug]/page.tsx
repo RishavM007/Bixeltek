@@ -127,7 +127,7 @@ export default async function CategoryPage({ params }: { params: { slug: string 
 }
 
 
-// 👇 Static params for SSG
+
 export async function generateStaticParams() {
     const res: CategorySlugResponse = await client.request(gql`
     {

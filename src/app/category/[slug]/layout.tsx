@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import {Header} from '@/sections/Header';
+import { Whiteheader } from '@/components/Whiteheader';
 import {Footer} from '@/sections/Footer';
 
 interface LayoutProps {
@@ -9,7 +10,7 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
-      <Header />
+      <Whiteheader />
       <main className="min-h-screen bg-white text-black" >{children}</main>
       <Footer />
 

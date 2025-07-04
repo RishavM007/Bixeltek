@@ -193,7 +193,8 @@ export default function Webdev() {
                 reverseOrder={false}
             />
             <section>
-                <HeroParallax products={products} />
+                
+                <WebDevHero/>
             </section>
 
             <section className=" pt-8 flex justify-center items-center max-w-[100%] md:max-w-[85%] mx-auto text-gray-100 sm:py-24">

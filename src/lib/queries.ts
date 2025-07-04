@@ -7,11 +7,8 @@ export const GET_ALL_POSTS = `
         title
         excerpt
         date
-        featuredImage {
-          node {
-            sourceUrl
-          }
-        }
+        featuredImage { node { sourceUrl } }
+        categories { nodes { name slug } }
       }
     }
   }
@@ -44,11 +41,37 @@ export const GET_SINGLE_POST = `
 
 export const GET_SUGGESTED_POSTS = `
   query GetSuggestedPosts($excludeId: ID!) {
-    posts(where: { orderby: { field: DATE, order: DESC }, notIn: [$excludeId] }, first: 5) {
+    posts(
+      where: {
+        orderby: { field: DATE, order: DESC },
+        notIn: [$excludeId]
+      },
+      first: 5
+    ) {
       nodes {
         slug
         title
         excerpt
+        featuredImage {
+          node {
+            sourceUrl
+          }
+        }
+      }
+    }
+  }
+`;
+
+
+
+
+export const GET_ALL_CATEGORIES_WITH_COUNT = `
+  query GetAllCategoriesWithCount {
+    categories {
+      nodes {
+        name
+        slug
+        count
       }
     }
   }

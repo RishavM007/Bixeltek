@@ -35,6 +35,7 @@ type SuggestedPost = {
   slug: string;
   title: string;
   excerpt: string;
+  featuredImage?: { node: { sourceUrl: string } };
 };
 
 type SuggestedPostsResponse = {
@@ -69,7 +70,7 @@ export default async function SinglePostPage({ params }: Props) {
   const readTime = calculateReadTime(post.content);
 
   return (
-    <div className="bg-black text-white min-h-screen py-10">
+    <div className="bg-transparent text-black min-h-screen py-64">
       <div className="w-[70%] mx-auto grid grid-cols-1 lg:grid-cols-[5fr_2fr] gap-10">
         {/* Main content */}
         <div>
@@ -80,8 +81,8 @@ export default async function SinglePostPage({ params }: Props) {
               alt="Author avatar"
             />
             <div>
-              <h4 className="font-semibold text-white">Rishav Mondal</h4>
-              <ul className="text-xs text-neutral-400 flex gap-4 mt-1">
+              <h4 className="font-semibold text-black">Rishav Mondal</h4>
+              <ul className="text-xs text-neutral-700 flex gap-4 mt-1">
                 <li>{formattedDate}</li>
                 <li>{readTime}</li>
               </ul>
@@ -102,7 +103,7 @@ export default async function SinglePostPage({ params }: Props) {
           )}
 
           <div
-            className="space-y-6 leading-relaxed text-neutral-200 text-base"
+            className="space-y-6 font-poppins  leading-relaxed text-neutral-900 text-base"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 
@@ -122,43 +123,32 @@ export default async function SinglePostPage({ params }: Props) {
         {/* Sidebar */}
         <aside className="space-y-8">
           {/* Search */}
-          <div className="bg-neutral-900 p-4 rounded-xl">
-            <h2 className="text-lg font-semibold mb-2">Search</h2>
-            <form
-              action="/blog"
-              method="GET"
-              className="relative"
-            >
-              <input
-                type="text"
-                name="q"
-                placeholder="Search posts..."
-                className="w-full p-2 bg-neutral-800 text-white placeholder-neutral-400 rounded-md border border-neutral-700 focus:outline-none focus:ring-2 focus:ring-purple-600"
-              />
-              <button
-                type="submit"
-                className="absolute right-2 top-1/2 transform -translate-y-1/2 text-neutral-400 hover:text-white"
-              >
-                🔍
-              </button>
-            </form>
-          </div>
-
+        
           {/* Suggested Posts */}
-          <div className="bg-neutral-900 p-4 rounded-xl">
-            <h2 className="text-lg font-semibold mb-4">Suggested Posts</h2>
+          <div className="backdrop-blur-md bg-black/5 border border-white/10 py-8 px-4 rounded-xl shadow-lg">
+            <h2 className="text-2xl font-semibold font-sofiasanscondensed tracking-wide text-neutral-900 mb-4">Suggested Posts</h2>
             <ul className="space-y-4">
               {suggested.posts.nodes.map((post) => (
-                <li key={post.slug} className="border-b border-neutral-800 pb-2">
-                  <Link href={`/blog/${post.slug}`} className="block text-white font-medium hover:underline">
-                    {post.title}
-                  </Link>
-                  <p className="text-sm text-neutral-500" dangerouslySetInnerHTML={{ __html: post.excerpt }} />
+                <li key={post.slug} className="flex gap-3 items-center">
+                  <img
+                    src={post.featuredImage?.node.sourceUrl || 'https://via.placeholder.com/64'}
+                    alt={post.title}
+                    className="w-16 h-16 rounded-full object-cover"
+                  />
+                  <div className="flex flex-col gap-1">
+                    <Link href={`/blog/${post.slug}`} className="font-medium font-poppins text-neutral-900 hover:underline hover:underline-offset-1">
+                      {post.title}
+                    </Link>
+                    <p className="text-xs text-black/80 leading-snug line-clamp-2">
+                      {post.excerpt.replace(/<[^>]+>/g, '')}
+                    </p>
+                  </div>
                 </li>
               ))}
             </ul>
           </div>
         </aside>
+
       </div>
     </div>
   );
