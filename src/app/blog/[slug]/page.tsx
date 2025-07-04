@@ -18,7 +18,14 @@ type SinglePost = {
       sourceUrl: string;
     };
   };
+  categories?: {
+    nodes: {
+      name: string;
+      slug: string;
+    }[];
+  };
 };
+
 
 type GetSinglePostResponse = {
   post: SinglePost;
@@ -43,13 +50,13 @@ const calculateReadTime = (html: string): string => {
 };
 
 export default async function SinglePostPage({ params }: Props) {
-const { slug } = params;
+  const { slug } = params;
 
-const { post } = await client.request<GetSinglePostResponse>(GET_SINGLE_POST, { slug });
+  const { post } = await client.request<GetSinglePostResponse>(GET_SINGLE_POST, { slug });
 
-const suggested = await client.request<SuggestedPostsResponse>(GET_SUGGESTED_POSTS, {
-  excludeId: post.id,
-});
+  const suggested = await client.request<SuggestedPostsResponse>(GET_SUGGESTED_POSTS, {
+    excludeId: post.id,
+  });
 
 
 
@@ -100,14 +107,14 @@ const suggested = await client.request<SuggestedPostsResponse>(GET_SUGGESTED_POS
           />
 
           <div className="mt-10">
-            {['Web Development', 'Tech', 'Blog'].map((tag) => (
-              <a
-                key={tag}
+            {post.categories?.nodes.map((category) => (
+              <Link
+                key={category.slug}
+                href={`/category/${category.slug}`}
                 className="m-1 inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-sm bg-neutral-800 text-white hover:bg-neutral-700"
-                href="#"
               >
-                #{tag}
-              </a>
+                {category.name}
+              </Link>
             ))}
           </div>
         </div>

@@ -18,19 +18,26 @@ export const GET_ALL_POSTS = `
 `;
 
 export const GET_SINGLE_POST = `
-  query GetPostBySlug($slug: ID!) {
-    post(id: $slug, idType: SLUG) {
-      id
-      title
-      content
-      date
-      featuredImage {
-        node {
-          sourceUrl
-        }
+ query GetSinglePost($slug: ID!) {
+  post(id: $slug, idType: SLUG) {
+    id
+    title
+    content
+    date
+    featuredImage {
+      node {
+        sourceUrl
+      }
+    }
+    categories {
+      nodes {
+        name
+        slug
       }
     }
   }
+}
+
 `;
 
 
