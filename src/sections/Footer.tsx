@@ -57,18 +57,14 @@ export const Footer = () => {
           <div className="lg:mx-auto text-left ">
             <h4 className="text-lg text-gray-100 font-medium mb-7">Resources</h4>
             <ul className="text-sm  transition-all duration-500">
-              <li className="mb-6"><a href="javascript:;" className="text-gray-300 whitespace-nowrap hover:text-purple-700">FAQs</a></li>
-              <li className="mb-6"><a href="javascript:;" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">Quick Start</a></li>
-              <li className="mb-6"><a href="javascript:;" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">Documentation</a></li>
-              <li className="mb-6"><a href="javascript:;" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">User Guide</a></li>
-              <li className="mb-6"><a href="javascript:;" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">Plugin Guide</a></li>
+              <li className="mb-6"><Link href="/casestudies-bixeltek/google-ads-case-study-bike-repair-hyderabad" className="text-gray-300 whitespace-nowrap hover:text-purple-700">Case Studies</Link></li>
+              <li className="mb-6"><Link href="/blog" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">Blogs</Link></li>
             </ul>
           </div>
 
           <div className="lg:mx-auto text-left ">
-            <h4 className="text-lg text-gray-100 font-medium mb-7">Support</h4>
+            <h4 className="text-lg text-gray-100 font-medium mb-7">Our Certifications</h4>
             <ul className="text-sm  transition-all duration-500">
-              <li className="mb-6"><a href="tel:+919100032301" className="text-gray-300 whitespace-nowrap hover:text-purple-700 capitalize">Talk to a specialist</a></li>
               <li className="mb-6"><a href="https://www.google.com/partners/agency?id=2188074075" target="_blank" className="mt-2 flex justify-start">
                 <img src="https://www.gstatic.com/partners/badge/images/2024/PartnerBadgeClickable.svg"
                   alt="Google Partner Badge"
