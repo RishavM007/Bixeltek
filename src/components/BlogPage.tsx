@@ -45,7 +45,7 @@ export function BlogPageUI({ allPosts, categories }: { allPosts: Post[]; categor
   }, [allPosts]);
 
   return (
-    <section className="flex bg-transparent text-neutral-800 min-h-screen py-64 px-6 lg:px-16">
+    <section className="flex bg-transparent text-neutral-800 min-h-screen sm:py-40 md:py-48 lg:py-64 px-6 lg:px-16">
       {/* Sidebar */}
       <aside className="hidden lg:flex lg:w-1/4 flex-col gap-8 pr-8 sticky top-0 h-fit">
         {/* Search */}
@@ -111,7 +111,7 @@ export function BlogPageUI({ allPosts, categories }: { allPosts: Post[]; categor
       {/* Blog Grid */}
       <div className="flex-1">
         <h2 className="font-sofiasanscondensed text-5xl tracking-wide font-bold text-center mb-16">Our Latest Blog</h2>
-        <div className="grid gap-8 lg:grid-cols-3 transition-all duration-500">
+        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 transition-all duration-500">
           {filteredPosts.map(post => (
             <div
               key={post.id}

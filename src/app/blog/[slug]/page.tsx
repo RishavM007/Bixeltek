@@ -70,8 +70,8 @@ export default async function SinglePostPage({ params }: Props) {
   const readTime = calculateReadTime(post.content);
 
   return (
-    <div className="bg-transparent text-black min-h-screen py-64">
-      <div className="w-[70%] mx-auto grid grid-cols-1 lg:grid-cols-[5fr_2fr] gap-10">
+    <div className="bg-transparent text-black min-h-screen sm:py-40 md:py-48 lg:py-64">
+      <div className="sm:w-[90%] md:w-[80%] lg:w-[70%] mx-auto grid grid-cols-1 lg:grid-cols-[5fr_2fr] gap-10">
         {/* Main content */}
         <div>
           <div className="flex gap-4 items-center mb-6">
