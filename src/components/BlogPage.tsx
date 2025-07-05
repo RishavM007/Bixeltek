@@ -20,15 +20,24 @@ export function BlogPageUI({ allPosts, categories }: { allPosts: Post[]; categor
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
   const filteredPosts = useMemo(() => {
-    return allPosts.filter(post => {
-      const matchSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
-      const matchCategory = !selectedCategory || post.categories?.nodes.some(cat => cat.slug === selectedCategory);
-      return matchSearch && matchCategory;
-    });
-  }, [searchQuery, selectedCategory, allPosts]);
+  return allPosts.filter(post => {
+    const matchSearch =
+      post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
+
+    // If no category is selected, include all posts (even if they have no categories)
+    if (!selectedCategory) {
+      return matchSearch;
+    }
+
+    // If a category is selected, include only posts that have categories AND match selected
+    const matchCategory = post.categories?.nodes.some(cat => cat.slug === selectedCategory);
+    return matchSearch && matchCategory;
+  });
+}, [searchQuery, selectedCategory, allPosts]);
 
   const recentPosts = useMemo(() => {
+    
     return allPosts
       .slice()
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
