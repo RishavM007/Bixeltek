@@ -122,7 +122,7 @@ const Card: React.FC<CardProps> = ({ title, img1,img2, description, link, isEven
 const CardList: React.FC = () => {
   return (
     <>
-   <div className='relative flex flex-col justify-center items-center h-[130vh] mt-20 mb-24'>
+   <div className='relative flex flex-col justify-center items-center h-[130vh] sm:mt-[500px] sm:mb-[600px] lg:mt-20 lg:mb-24'>
      <div className="absolute inset-0 z-[-2] bg-[url('/aesthetic-background-with-gradient-neon-led-light-effect.jpg')] bg-cover bg-center bg-no-repeat" />
 
   <div className="absolute top-0 h-60 w-full z-[-1] bg-gradient-to-b from-black via-transparent to-transparent" />
