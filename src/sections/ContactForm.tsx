@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-import webdevads from '@/assets/webdev ad.jpg'
+import webdevads from '@/assets/website post 2.jpg'
 type ContactFormProps = {
     isVisible: boolean;
     onClose: () => void;
@@ -332,7 +332,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ isVisible, onClose }: 
                                 className="w-full p-3 border border-gray-300 rounded-lg text-left text-gray-700 focus:ring-2 focus:ring-[#670ef7]"
                                 onClick={toggleDropdown}
                             >
-                                {formData.services || 'Choose a service'}
+                                {formData.services || 'Choose a website type'}
                             </button>
                             {isOpen && (
                                 <div className="absolute w-full mt-1 max-h-40 overflow-y-auto border border-gray-300 bg-white rounded-lg z-10">
@@ -369,7 +369,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ isVisible, onClose }: 
                             value={formData.message}
                             onChange={handleInputChange}
                             rows={4}
-                            placeholder="Briefly explain your marketing needs..."
+                            placeholder="Tell Us More About The Kind Of Website..."
                             className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#670ef7]"
                         />
                     </div>

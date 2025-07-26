@@ -12,7 +12,7 @@ export async function POST(req: Request) {
             secure: false,
             auth: {
                 user: process.env.MAILER_USER,
-                pass: process.env.MALER_PASS, 
+                pass: process.env.MAILER_PASS, 
             },
         });
 
