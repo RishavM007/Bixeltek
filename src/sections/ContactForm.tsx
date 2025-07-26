@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { useRef } from 'react';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
+import webdevads from '@/assets/webdev ad.jpg'
 type ContactFormProps = {
     isVisible: boolean;
     onClose: () => void;
@@ -166,230 +168,222 @@ export const ContactForm: React.FC<ContactFormProps> = ({ isVisible, onClose }: 
 
 
     return (
-        <section className={`fixed inset-0  flex shadow-purple-custom justify-center items-center z-[65] bg-black bg-opacity-50 ${isVisible ? 'visible opacity-100' : 'invisible opacity-0'
-            }`}>
-            {/* <h3 className="text-3xl md:text-3xl  font-normal text-white mb-4">Get in Touch </h3> */}
-            {/* <div className='absolute w-40 h-1 bg-[#670ef7] translate-y-[-10px] translate-x-[5px]'></div> */}
-            <form className="space-y-4 bg-black border-2 rounded-2xl border-[#670ef7]  px-5 py-7 " onSubmit={handleSubmit} ref={formRef}>
-                <button
-                    type="button"
-                    onClick={onClose}
-                    className="absolute top-2 right-3 text-white text-xl hover:text-[#670ef7] focus:outline-none"
+        <section
+            className={`fixed inset-0 flex justify-center items-center z-[65] bg-black bg-opacity-40 ${isVisible ? 'visible opacity-100' : 'invisible opacity-0'
+                }`}
+        >
+            <div className="w-[90%] max-w-6xl bg-white shadow-2xl rounded-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2 relative">
+                {/* 🖼 Left Side Image */}
+                <div className="hidden md:block">
+                    <Image
+                        src={webdevads} // Replace with your image path
+                        alt="Contact Illustration"
+                        className="h-full w-full object-cover"
+                    />
+                </div>
+
+                {/* ✍️ Right Side Form */}
+                <form
+                    className="relative space-y-4 p-8"
+                    onSubmit={handleSubmit}
+                    ref={formRef}
                 >
-                    &times;
-                </button>
-                <div className="flex flex-col md:flex-row gap-5">
-                    <div className="w-full md:w-1/2">
-                        <label htmlFor="firstName" className="text-sm font-medium text-gray-50">First Name*</label>
-                        <input
-                            type="text"
-                            id="firstName"
-                            name="firstName"
-                            value={formData.firstName}
-                            onChange={handleInputChange}
-                            className="w-full input-field mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                            placeholder="What's your first name?"
-                        />
-                    </div>
+                    <button
+                        type="button"
+                        onClick={onClose}
+                        className="absolute top-3 right-4 text-gray-500 text-2xl hover:text-red-500 focus:outline-none"
+                    >
+                        &times;
+                    </button>
 
-                    <div className="w-full md:w-1/2">
-                        <label htmlFor="lastName" className="text-sm font-medium text-gray-50">Last Name*</label>
-                        <input
-                            type="text"
-                            id="lastName"
-                            name="lastName"
-                            value={formData.lastName}
-                            onChange={handleInputChange}
-                            className="w-full input-field mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                            placeholder="What's your last name?"
-                        />
-                    </div>
-                </div>
+                    <h3 className="text-2xl font-semibold mb-4 text-gray-800">
+                        Get in Touch
+                    </h3>
 
-                <div className="flex flex-col md:flex-row gap-5">
-                    <div className="w-full md:w-1/2">
-                        <label htmlFor="email" className="text-sm font-medium text-gray-50">Email*</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleInputChange}
-                            className="w-full input-field mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                            placeholder="Enter your email"
-                        />
-                    </div>
-
-                    <div className="w-full md:w-1/2">
-                        <label htmlFor="phone" className="text-sm font-medium text-gray-50">Phone Number*</label>
-                        <input
-                            type="tel"
-                            id="phone"
-                            name="phone"
-                            value={formData.phone}
-                            onChange={handleInputChange}
-                            className="w-full input-field mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                            placeholder="Enter your phone number"
-                        />
-                    </div>
-                </div>
-
-                <div className='flex flex-col md:flex-row gap-5'>
-                    <div className="w-full md:w-1/2">
-                        <label htmlFor="company" className="text-sm font-medium text-gray-50">Company*</label>
-                        <input
-                            type="text"
-                            id="company"
-                            name="company"
-                            value={formData.company}
-                            onChange={handleInputChange}
-                            className="w-full input-field mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                            placeholder="Company Name"
-                        />
-                    </div>
-
-                    <div className="w-full md:w-1/2">
-                        <label htmlFor="website" className="text-sm font-medium text-gray-50">Website*</label>
-                        <input
-                            type="text"
-                            id="website"
-                            name="website"
-                            value={formData.website}
-                            onChange={handleInputChange}
-                            className="w-full input-field mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                            placeholder="www.example.com"
-                        />
-                    </div>
-                </div>
-
-                <div className='relative max-w-full flex flex-col md:flex-row gap-4'>
-                    <div className="flex flex-col w-full md:w-1/2 gap-2">
-                        {/* Label for the dropdown */}
-                        <label htmlFor="country-dropdown" className="text-sm font-medium text-gray-300">
-                            Select Your Country
-                        </label>
-
-                        <div className="relative w-full max-w-md">
-                            {/* Search Input */}
+                    <div className="flex flex-col md:flex-row gap-4">
+                        <div className="w-full">
+                            <label className="text-sm text-gray-600">First Name*</label>
                             <input
                                 type="text"
-                                placeholder="Type to search..."
+                                name="firstName"
+                                value={formData.firstName}
+                                onChange={handleInputChange}
+                                placeholder="John"
+                                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#670ef7]"
+                            />
+                        </div>
+
+                        <div className="w-full">
+                            <label className="text-sm text-gray-600">Last Name*</label>
+                            <input
+                                type="text"
+                                name="lastName"
+                                value={formData.lastName}
+                                onChange={handleInputChange}
+                                placeholder="Doe"
+                                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#670ef7]"
+                            />
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col md:flex-row gap-4">
+                        <div className="w-full">
+                            <label className="text-sm text-gray-600">Email*</label>
+                            <input
+                                type="email"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleInputChange}
+                                placeholder="you@example.com"
+                                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#670ef7]"
+                            />
+                        </div>
+
+                        <div className="w-full">
+                            <label className="text-sm text-gray-600">Phone*</label>
+                            <input
+                                type="tel"
+                                name="phone"
+                                value={formData.phone}
+                                onChange={handleInputChange}
+                                placeholder="+91 1234567890"
+                                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#670ef7]"
+                            />
+                        </div>
+                    </div>
+
+                    {/* Company & Website */}
+                    <div className="flex flex-col md:flex-row gap-4">
+                        <div className="w-full">
+                            <label className="text-sm text-gray-600">Company*</label>
+                            <input
+                                type="text"
+                                name="company"
+                                value={formData.company}
+                                onChange={handleInputChange}
+                                placeholder="ABC Pvt. Ltd."
+                                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#670ef7]"
+                            />
+                        </div>
+
+                        <div className="w-full">
+                            <label className="text-sm text-gray-600">Website*</label>
+                            <input
+                                type="text"
+                                name="website"
+                                value={formData.website}
+                                onChange={handleInputChange}
+                                placeholder="www.example.com"
+                                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#670ef7]"
+                            />
+                        </div>
+                    </div>
+
+                    {/* Marketing Budget & Country */}
+                    <div className="flex flex-col md:flex-row gap-4">
+                        <div className="w-full">
+                            <label className="text-sm text-gray-600">Country</label>
+                            <input
+                                type="text"
                                 value={search}
                                 onChange={handleSearch}
-                                onFocus={() => setIsOpen4(true)} // Show dropdown when typing
-                                className="w-full rounded-md border border-gray-600 bg-black px-4 py-3 text-sm text-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                                placeholder="Type your country..."
+                                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#670ef7]"
+                                onFocus={() => setIsOpen4(true)}
                             />
-
-                            {/* Dropdown */}
                             {isOpen4 && (
-                                <div
-                                    className="absolute z-10 mt-2 max-h-60 w-full overflow-y-auto rounded-md bg-black border border-gray-700 shadow-lg"
-                                    role="menu"
-                                >
-                                    {filteredCountries.length > 0 ? (
-                                        filteredCountries.map((country) => (
-                                            <div
-                                                key={country}
-                                                onClick={() => {
-                                                    handleDropdownSelect("country", country);
-                                                    setIsOpen4(false);
-                                                    setSearch(country); // Set the selected value
-                                                }}
-                                                className="cursor-pointer px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                            >
-                                                {country}
-                                            </div>
-                                        ))
-                                    ) : (
-                                        <div className="px-4 py-2 text-sm text-gray-500">No results found</div>
-                                    )}
+                                <div className="mt-1 max-h-40 overflow-y-auto border border-gray-300 bg-white rounded-lg">
+                                    {filteredCountries.map((country) => (
+                                        <div
+                                            key={country}
+                                            className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700"
+                                            onClick={() => {
+                                                handleDropdownSelect('country', country);
+                                                setSearch(country);
+                                                setIsOpen4(false);
+                                            }}
+                                        >
+                                            {country}
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+
+                        <div className="w-full">
+                            <label className="text-sm text-gray-600">Marketing Budget</label>
+                            <input
+                                type="text"
+                                name="marketingBudget"
+                                value={formData.marketingBudget}
+                                onChange={handleInputChange}
+                                placeholder="₹50,000/month"
+                                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#670ef7]"
+                            />
+                        </div>
+                    </div>
+
+                    {/* Services Dropdown */}
+                    <div className="w-full">
+                        <label className="text-sm text-gray-600">Select Service</label>
+                        <div className="relative">
+                            <button
+                                type="button"
+                                className="w-full p-3 border border-gray-300 rounded-lg text-left text-gray-700 focus:ring-2 focus:ring-[#670ef7]"
+                                onClick={toggleDropdown}
+                            >
+                                {formData.services || 'Choose a service'}
+                            </button>
+                            {isOpen && (
+                                <div className="absolute w-full mt-1 max-h-40 overflow-y-auto border border-gray-300 bg-white rounded-lg z-10">
+                                    {[
+                                        "PPC Campaigns",
+                                        "SEO Optimization",
+                                        "Social Media Management",
+                                        "Web Design and Development",
+                                        "E-commerce Solutions",
+                                        "Content Creation and Marketing",
+                                        "Advertiser Verifications, GMB Verifications",
+                                        "Other",
+                                    ].map((option) => (
+                                        <div
+                                            key={option}
+                                            onClick={() => {
+                                                handleDropdownSelect("services", option);
+                                                setIsOpen(false);
+                                            }}
+                                            className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700"
+                                        >
+                                            {option}
+                                        </div>
+                                    ))}
                                 </div>
                             )}
                         </div>
                     </div>
 
-
-                    <div className="w-full md:w-1/2">
-                        <label htmlFor="budget" className="text-sm font-medium text-gray-300">Marketing Budget</label>
-                        <input
-                            type="text"
-                            id="budget"
-                            name="marketingBudget"
-                            value={formData.marketingBudget}
+                    <div>
+                        <label className="text-sm text-gray-600">Message</label>
+                        <textarea
+                            name="message"
+                            value={formData.message}
                             onChange={handleInputChange}
-                            className="w-full input-field mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                            placeholder="What is your marketing budget?"
+                            rows={4}
+                            placeholder="Briefly explain your marketing needs..."
+                            className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#670ef7]"
                         />
                     </div>
-                </div>
-                <div className="relative max-w-full inline-block text-left w-full">
-                    <button
-                        type="button"
-                        className="inline-flex w-full justify-between rounded-md border border-gray-600 bg-black px-4 py-3 text-sm font-medium text-gray-300 shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                        id="menu-button"
-                        aria-expanded={isOpen}
-                        aria-haspopup="true"
-                        onClick={toggleDropdown}
-                    >
-                        {formData.services || 'Our Services'}
-                        <svg
-                            className={`-mr-1 ml-2 h-5 w-5 text-gray-300 transition-transform ${isOpen ? 'rotate-180' : ''}`}
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            aria-hidden="true"
-                        >
-                            <path
-                                fillRule="evenodd"
-                                d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                clipRule="evenodd"
-                            />
-                        </svg>
-                    </button>
 
-                    {/* Dropdown menu */}
-                    {isOpen && (
-                        <div className="absolute left-0 z-10 mt-2 w-full origin-top overflow-y-scroll  rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5">
-                            {[
-                                "PPC Campaigns",
-                                "SEO Optimization",
-                                "Social Media Management",
-                                "Web Design and Development",
-                                "E-commerce Solutions",
-                                "Content Creation and Marketing",
-                                "Advertiser Verifications, GMB Verifications",
-                                "other"
-                            ].map((option) => (
-                                <div
-                                    key={option}
-                                    onClick={() => {
-                                        handleDropdownSelect("services", option);
-                                        setIsOpen(false);
-                                    }}
-                                    className="cursor-pointer px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                >
-                                    {option}
-                                </div>
-                            ))}
-                        </div>
-                    )}
-                </div>
-                <textarea
-                    name="message"
-                    rows={5}
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    placeholder="What are your current maketing challenges?"
-                    className="w-full p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                ></textarea>
-                <button
-                    type="submit"
-                    className="w-full bg-[#670ef7] text-white py-3 rounded-lg hover:bg-[#5b0cd1] transition"
-                >
-                    Submit
-                </button>
-            </form>
+                    <button
+                        type="submit"
+                        className="w-full bg-[#670ef7] text-white py-3 rounded-lg hover:bg-[#5b0cd1] transition"
+                    >
+                        Submit
+                    </button>
+                </form>
+            </div>
         </section>
+
     )
 };
 

@@ -33,7 +33,7 @@ const features = [
 export default function Smfeatures() {
     return (
         <section className='bg-black py-[72px] max-w-[85%] mx-auto text-white'>
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-8">
                 <div className="text-center">
                     <span className="py-1 px-4 bg-indigo-100 rounded-full text-xs font-medium text-indigo-500">Our Services</span>
                     <h2 className='font-bold  text-4xl md:text-5xl font-sofiasanscondensed tracking-normal mt-4'>Our Website Development Services in Hyderabad <br /> Are Built for Visibility, Speed & ROI</h2>

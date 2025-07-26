@@ -11,7 +11,7 @@ const ComparisonTable = () => {
   ];
 
   return (
-    <section className="bg-black text-white max-w-[95%] mx-auto py-6 md:py-16 px-6">
+    <section className="bg-black text-white max-w-[85%] mx-auto py-6 md:py-16 px-6">
       <div className="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         
         <div>

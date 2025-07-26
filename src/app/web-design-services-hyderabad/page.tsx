@@ -196,7 +196,7 @@ export default function Webdev() {
                 <WebDevHero/>
             </section>
 
-            <section className=" pt-8 flex justify-center items-center max-w-[100%] md:max-w-[85%] mx-auto text-gray-100 sm:py-24">
+            <section className=" pt-8 flex justify-center items-center max-w-[100%] md:max-w-[83%] mx-auto text-gray-100 sm:py-24">
                 <div className="mx-auto flex max-w-md flex-col md:flex-row justify-center items-center rounded-lg lg:max-w-screen-xl lg:flex-row">
                     <div className="w-full md:w-1/2 px-4 pb-10 md:pb-0 lg:pr-24">
                         <h3 className="mb-2 text-purple-600">Why Choose Us?</h3>
@@ -258,8 +258,9 @@ export default function Webdev() {
                     <ContactFrom />
                 </div>
             </section>
-            <section className="bg-black text-white py-16 px-6">
-                <div className="max-w-4xl xl:max-w-5xl  mx-auto text-center">
+
+            <section className="bg-black  text-white py-16 px-6">
+                <div className="max-w-4xl md:max-w-[81%]  mx-auto text-center">
                     <p className="text-purple-500 font-medium">Deploy faster</p>
                     <h2 className="text-2xl md:text-3xl lg:text-4xl max-w-4xl mx-auto font-bold mt-2">
                         Why Businesses Trust Bixeltek as the Best Website Design And Development Company in Hyderabad
@@ -273,7 +274,7 @@ export default function Webdev() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-20 max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-20 max-w-[81%] mx-auto">
                     {/* Feature 1 */}
                     <div className="flex items-start gap-7">
                         <div className="bg-purple-500 p-3 rounded-xl">
@@ -376,7 +377,7 @@ export default function Webdev() {
                 <Smfeatures />
             </section>
             <section className="pt-2">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="mx-auto max-w-[85%] px-4 sm:px-6 lg:px-8">
                     <div
                         className="lg:py-14 lg:px-20 p-10 rounded-2xl bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-between flex-col lg:flex-row"
                     >
@@ -478,7 +479,7 @@ export default function Webdev() {
             <TestimonialWebdev />
             <BeforeHiring />
             <section className="py-24">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="mx-auto max-w-[85%] px-4 sm:px-6 lg:px-8">
                     <div className="mb-14 text-center">
                         <span
                             className="py-1 px-4 bg-indigo-100 rounded-full text-xs font-medium text-indigo-600 text-center">Excellence</span>
@@ -560,11 +561,26 @@ export default function Webdev() {
                                 Websites strategically built to achieve measurable business goals.
                             </p>
                         </div>
+                        <div className="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4">
+                            <div className="bg-orange-50 rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto cursor-pointer transition-all duration-500 group-hover:bg-orange-600">
+                                <svg className="stroke-orange-600 transition-all duration-500 group-hover:stroke-white" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.4167 12.0833V21.25M5.41667 21.25V20.8333C5.41667 19.262 5.41667 18.4763 5.90482 17.9882C6.39298 17.5 7.17865 17.5 8.75 17.5H22.0833C23.6547 17.5 24.4404 17.5 24.9285 17.9882C25.4167 18.4763 25.4167 19.262 25.4167 20.8333V21.25M15.4167 9.16667C13.8453 9.16667 13.0596 9.16667 12.5715 8.67851C12.0833 8.19036 12.0833 7.40468 12.0833 5.83333C12.0833 4.26198 12.0833 3.47631 12.5715 2.98816C13.0596 2.5 13.8453 2.5 15.4167 2.5C16.988 2.5 17.7737 2.5 18.2618 2.98816C18.75 3.47631 18.75 4.26198 18.75 5.83333C18.75 7.40468 18.75 8.19036 18.2618 8.67851C17.7737 9.16667 16.988 9.16667 15.4167 9.16667ZM7.08333 25.8333C7.08333 26.7538 6.33714 27.5 5.41667 27.5C4.49619 27.5 3.75 26.7538 3.75 25.8333C3.75 24.9129 4.49619 24.1667 5.41667 24.1667C6.33714 24.1667 7.08333 24.9129 7.08333 25.8333ZM17.0833 25.8333C17.0833 26.7538 16.3371 27.5 15.4167 27.5C14.4962 27.5 13.75 26.7538 13.75 25.8333C13.75 24.9129 14.4962 24.1667 15.4167 24.1667C16.3371 24.1667 17.0833 24.9129 17.0833 25.8333ZM27.0833 25.8333C27.0833 26.7538 26.3371 27.5 25.4167 27.5C24.4962 27.5 23.75 26.7538 23.75 25.8333C23.75 24.9129 24.4962 24.1667 25.4167 24.1667C26.3371 24.1667 27.0833 24.9129 27.0833 25.8333Z"
+                                        stroke="" stroke-width="2" stroke-linecap="round"></path>
+                                </svg>
+                            </div>
+                            <h4 className="text-lg font-medium text-gray-50 mb-3 capitalize">
+                                Results-Driven Approach
+                            </h4>
+                            <p className="text-sm font-normal text-gray-300">
+                                Websites strategically built to achieve measurable business goals.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
             <TechWeUse />
-            <section className='w-full flex flex-wrap max-w-[90%] mx-auto lg:flex-nowrap overflow-y-hidden items-center'>
+            <section className='w-full flex flex-wrap sm:max-w-[90%] md:max-w-[85%] mx-auto lg:flex-nowrap overflow-y-hidden items-center'>
                 {/* Left Content Section */}
                 <div className='w-full lg:w-1/2 px-1 md:px-6 py-10 lg:py-14'>
                     <h2 className="text-4xl md:text-5xl font-semibold font-sofiasanscondensed text-white">
@@ -586,7 +602,7 @@ export default function Webdev() {
                             </div>
                         ))}
                     </div>
-                    <div className='flex flex-col md:flex-row gap-4'>
+                    <div className='justify-center items-center flex flex-col md:flex-row gap-4'>
                         <Link href={'/industries'}>
                             <button className="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
                                 Learn More

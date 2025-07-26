@@ -40,7 +40,7 @@ export default function TestimonialWebdev() {
 
   return (
 <section className='py-20'>
-                <div className="max-w-7xl flex flex-col md:flex-row mx-auto p-8 text-center">
+                <div className="max-w-[85%] flex flex-col md:flex-row mx-auto p-8 text-center">
                     <div className='flex text-white justify-start items-start text-left flex-col w-full md:w-1/2'>
                         <div className='mb-5'>
                             <p className='py-2 px-4 font-poppins border rounded-md mx-auto'>Our Testimonials</p>
