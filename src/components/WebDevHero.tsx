@@ -105,7 +105,7 @@ useEffect(() => {
                 href="tel:+919100032301"
                 className="px-4 lg:px-8 py-3 z-50 w-fit text-sm md:text-base font-semibold border bg-white text-purple-900 border-white rounded-full hover:bg-white hover:text-black transition"
               >
-                Book a 1:1 Strategy Call
+                Call Us Now
               </a>
               <Link href={'/contact-us'}>
                 <button className="w-full z-50 md:w-auto px-4 lg:px-8 py-3 text-sm md:text-base font-semibold text-white group rounded-full border border-white hover:bg-white hover:text-black transition">
