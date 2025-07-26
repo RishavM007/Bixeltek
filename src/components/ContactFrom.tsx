@@ -155,8 +155,6 @@ export default function ContactFrom() {
 
     return (
         <div className="w-[95%] md:w-1/2 p-6 relative bg-[#1a1a1a] rounded-lg">
-            <h3 className="text-3xl md:text-3xl  font-normal text-white mb-4">Get in Touch </h3>
-            <div className='absolute w-40 h-1 bg-[#670ef7] translate-y-[-10px] translate-x-[5px]'></div>
             <form className="space-y-4" onSubmit={handleSubmit}>
                 <div className="flex flex-col md:flex-row gap-5">
                     <div className="w-full md:w-1/2">

@@ -336,14 +336,13 @@ export const ContactForm: React.FC<ContactFormProps> = ({ isVisible, onClose }: 
                             {isOpen && (
                                 <div className="absolute w-full mt-1 max-h-40 overflow-y-auto border border-gray-300 bg-white rounded-lg z-10">
                                     {[
-                                        "PPC Campaigns",
-                                        "SEO Optimization",
-                                        "Social Media Management",
-                                        "Web Design and Development",
-                                        "E-commerce Solutions",
-                                        "Content Creation and Marketing",
-                                        "Advertiser Verifications, GMB Verifications",
-                                        "Other",
+                                        "E-commerce Website",
+                                        "Service Based Website",
+                                        "Business Websites",
+                                        "Lead Generation Website",
+                                        "Blogging Website",
+                                        "PortFolio Website",
+                                        "Corporate Website",
                                     ].map((option) => (
                                         <div
                                             key={option}
