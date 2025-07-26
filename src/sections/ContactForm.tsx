@@ -311,7 +311,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ isVisible, onClose }: 
                         </div>
 
                         <div className="w-full">
-                            <label className="text-sm text-gray-600">Marketing Budget</label>
+                            <label className="text-sm text-gray-600">Website Budget</label>
                             <input
                                 type="text"
                                 name="marketingBudget"
@@ -325,7 +325,6 @@ export const ContactForm: React.FC<ContactFormProps> = ({ isVisible, onClose }: 
 
                     {/* Services Dropdown */}
                     <div className="w-full">
-                        <label className="text-sm text-gray-600">Select Service</label>
                         <div className="relative">
                             <button
                                 type="button"
