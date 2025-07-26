@@ -193,7 +193,6 @@ export default function Webdev() {
                 reverseOrder={false}
             />
             <section>
-                
                 <WebDevHero/>
             </section>
 
