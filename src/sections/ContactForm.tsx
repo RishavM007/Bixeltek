@@ -22,6 +22,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ isVisible, onClose }: 
         country: '',
         marketingBudget: '',
         services: '',
+        otherservices:'',
         message: ''
     });
 
@@ -114,6 +115,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ isVisible, onClose }: 
                 country: '',
                 marketingBudget: '',
                 services: '',
+                otherservices:'',
                 message: ''
             });
         } catch (error: any) {
@@ -125,6 +127,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ isVisible, onClose }: 
     const [isOpen1, setIsOpen1] = useState(false);
     const [isOpen2, setIsOpen2] = useState(false);
     const [isOpen4, setIsOpen4] = useState(false);
+    const [isOpen5, setIsOpen5] = useState(false);
     const [search, setSearch] = useState(""); // State for filtering
     const [filteredCountries, setFilteredCountries] = useState(countries); // Dynamic list
 
@@ -135,11 +138,17 @@ export const ContactForm: React.FC<ContactFormProps> = ({ isVisible, onClose }: 
         setIsOpen4(!isOpen4);
     }
 
+    const toggleDropdown5 = () => {
+        setIsOpen5(!isOpen5);
+        setIsOpen(false)
+    }
+
     const toggleDropdown2 = () => {
         setIsOpen2(!isOpen2);
     }
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
+        setIsOpen5(false)
     }
     const handleSearch = (event: any) => {
         const query = event.target.value.toLowerCase();
@@ -172,19 +181,19 @@ export const ContactForm: React.FC<ContactFormProps> = ({ isVisible, onClose }: 
             className={`fixed inset-0 flex justify-center items-center z-[65] bg-black bg-opacity-40 ${isVisible ? 'visible opacity-100' : 'invisible opacity-0'
                 }`}
         >
-            <div className="w-[90%] max-w-6xl bg-white shadow-2xl rounded-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2 relative">
+            <div className="w-[95%] max-w-6xl bg-white shadow-2xl rounded-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2 relative max-h-[90vh] overflow-y-auto">
                 {/* 🖼 Left Side Image */}
                 <div className="hidden md:block">
                     <Image
                         src={webdevads} // Replace with your image path
                         alt="Contact Illustration"
-                        className="h-full w-full object-cover"
+                        className="h-full w-full object-cover hidden md:block"
                     />
                 </div>
 
                 {/* ✍️ Right Side Form */}
                 <form
-                    className="relative space-y-4 p-8"
+                    className="relative space-y-4 p-4 sm:p-6 md:p-8 w-full"
                     onSubmit={handleSubmit}
                     ref={formRef}
                 >
@@ -280,7 +289,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ isVisible, onClose }: 
                     </div>
 
                     {/* Marketing Budget & Country */}
-                    <div className="flex flex-col md:flex-row gap-4">
+                    {/* <div className="flex flex-col md:flex-row gap-4">
                         <div className="w-full">
                             <label className="text-sm text-gray-600">Country</label>
                             <input
@@ -321,7 +330,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ isVisible, onClose }: 
                                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#670ef7]"
                             />
                         </div>
-                    </div>
+                    </div> */}
 
                     {/* Services Dropdown */}
                     <div className="w-full">
@@ -349,6 +358,40 @@ export const ContactForm: React.FC<ContactFormProps> = ({ isVisible, onClose }: 
                                             onClick={() => {
                                                 handleDropdownSelect("services", option);
                                                 setIsOpen(false);
+                                            }}
+                                            className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700"
+                                        >
+                                            {option}
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                    <div className="w-full">
+                        <div className="relative">
+                            <button
+                                type="button"
+                                className="w-full p-3 border border-gray-300 rounded-lg text-left text-gray-700 focus:ring-2 focus:ring-[#670ef7]"
+                                onClick={toggleDropdown5}
+                            >
+                                {formData.otherservices || 'Choose an Additional Service'}
+                            </button>
+                            {isOpen5 && (
+                                <div className="absolute w-full mt-1 max-h-40 overflow-y-auto border border-gray-300 bg-white rounded-lg z-10">
+                                    {[
+                                        "Payment Gateway Integrations",
+                                        "Website Migration",
+                                        "Periodic Website Maintenance",
+                                        "On Page SEO Implementation",
+                                        "Speed Optimizations Audits",
+                                        "Ecommerce Content Management (Product Uploads Etc)",
+                                    ].map((option) => (
+                                        <div
+                                            key={option}
+                                            onClick={() => {
+                                                handleDropdownSelect("otherservices", option);
+                                                setIsOpen5(false);
                                             }}
                                             className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700"
                                         >

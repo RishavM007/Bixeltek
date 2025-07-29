@@ -37,12 +37,13 @@ export async function POST(req: Request) {
                 country: ${data.country}
                 Marketing Budget: ${data.marketingBudget}
                 Interested Service: ${data.services}
+                Other Services: ${data.otherservices}
                 Message: ${data.message}
                 Website: ${data.website}`,
         };
 
         let info = await transporter.sendMail(mailOptions);
-        console.log("Email Sent:", info.response); // ✅ Debugging
+        console.log("Email Sent:", info.response); 
 
         return NextResponse.json({ message: "Email sent successfully!" }, { status: 200 });
 
