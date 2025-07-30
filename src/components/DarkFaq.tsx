@@ -18,26 +18,26 @@ export default function DarkFaqSection({ faqs }: FaqSectionProps) {
   };
 
   return (
-    <section className="py-24 bg-black">
+    <section className="py-24 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
           <div className="w-full lg:w-full">
             <div className="lg:max-w-full">
               <h6 className="text-lg text-center font-medium text-indigo-500 mb-2">FAQs</h6>
-              <h2 className="text-5xl text-center font-sofiasanscondensed font-bold text-white mb-5">
+              <h2 className="text-5xl text-center font-sofiasanscondensed font-bold text-black mb-5">
                 Looking for answers?
               </h2>
               <div className="space-y-4">
                 {faqs.map((faq, index) => (
-                  <div key={index} className="border-b border-gray-200 pb-4">
+                  <div key={index} className="border-b border-gray-900 pb-4">
                     <button
                       onClick={() => toggleFAQ(index)}
-                      className="flex justify-between items-center w-full text-base md:text-xl pt-4 pb-4 text-white font-normal transition duration-500 hover:text-indigo-700"
+                      className="flex justify-between items-center w-full text-base md:text-xl pt-4 pb-4 text-black font-normal transition duration-500 hover:text-indigo-700"
                     >
                       {faq.question}
                       <svg
                         className={`transition-transform duration-500 ${
-                          openIndex === index ? "rotate-180 text-indigo-500" : "text-gray-100"
+                          openIndex === index ? "rotate-180 text-indigo-500" : "text-gray-900"
                         }`}
                         width="22"
                         height="22"
@@ -55,7 +55,7 @@ export default function DarkFaqSection({ faqs }: FaqSectionProps) {
                       </svg>
                     </button>
                     {openIndex === index && (
-                      <p className="text-sm md:text-base text-gray-50 mt-2 pt-5 pb-5 transition-all duration-300">
+                      <p className="text-sm md:text-base text-gray-900 mt-2 pt-5 pb-5 transition-all duration-300">
                         {faq.answer}
                       </p>
                     )}

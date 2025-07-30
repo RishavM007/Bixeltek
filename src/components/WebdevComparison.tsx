@@ -16,9 +16,9 @@ import { Users, LayoutDashboard, Workflow } from "lucide-react";
 export default function AboutUsSection() {
   const [hovered, setHovered] = useState(false);
   return (
-    <section className="w-[85%] mx-auto bg-black text-white py-32 px-6 md:px-20 flex flex-row justify-between gap-10 min-h-[800px]">
+    <section className="w-[85%] mx-auto flex flex-col md:flex-row bg-white text-black py-32 px-6 md:px-20 justify-between gap-10 min-h-[800px]">
       {/* Left Container - 45% */}
-      <div className="w-[45%] flex flex-row gap-6">
+      <div className="w-full md:w-[45%] flex flex-row gap-6">
         {/* Left side of Left Container - 40% */}
         <div className="w-[40%] flex flex-col translate-y-[70px] justify-end gap-6 pb-4">
           <div className="flex items-center gap-3">
@@ -70,18 +70,18 @@ export default function AboutUsSection() {
       </div>
 
       {/* Right Container - 55% */}
-      <div className="w-[55%] flex flex-col gap-6">
-        <div className="text-sm uppercase text-[#c77dff] tracking-widest">About Us</div>
+      <div className="w-full md:w-[55%] flex flex-col gap-6">
+        <div className="text-sm uppercase font-bold text-[#c77dff] tracking-widest">About Us</div>
         <h2 className="text-5xl font-bold">
           Designing experiences, <span className="text-[#bf47ff]">empowering</span> your brand
         </h2>
-        <p className="text-[19px] text-white">
+        <p className="text-[19px] text-black">
           We specialize in creating innovative designs that captivate audiences. Our mission is to blend creativity with strategy,
           delivering experiences that inspire and empower your business to thrive.
         </p>
 
         <div className=" text-[#c77dff] p-4 rounded-xl  border-l-4 border-purple-500" style={{
-          background: 'linear-gradient(to right, #000000, #1a1a1a)',
+          background: 'linear-gradient(to right, #fff, #fff)',
         }}>
           <span className="text-[22px] font-semibold">
             “Empowering Your Brand Through Creative Design, Crafting Memorable Experiences.”
@@ -92,15 +92,15 @@ export default function AboutUsSection() {
           <div className="flex gap-3 items-start">
             <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none"><path d="M16.3842 2.5376H1V17.9221H16.3842V2.5376Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M40.2272 40.9995H24.843" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M24.843 25.6155H40.2272" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M24.843 33.3074H40.2272" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M41 17.9229H24.0774L32.5387 1L41 17.9229Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.69208 41C12.9403 41 16.3842 37.556 16.3842 33.3077C16.3842 29.0594 12.9403 25.6155 8.69208 25.6155C4.44386 25.6155 1 29.0594 1 33.3077C1 37.556 4.44386 41 8.69208 41Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
             <div className=" flex flex-col gap-3 ml-2">
-              <h4 className="text-[22px] font-semibold">Design Solutions</h4>
-              <p className="text-base text-gray-400">Crafting unique and creative visual experiences.</p>
+              <h4 className="text-[22px] font-bold">Design Solutions</h4>
+              <p className="text-base text-gray-800">Crafting unique and creative visual experiences.</p>
             </div>
           </div>
           <div className="flex gap-3 items-start">
             <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none"><path d="M38.3528 1.42773H4.50661C2.80727 1.42773 1.42969 2.80532 1.42969 4.50466V38.3508C1.42969 40.0501 2.80727 41.4277 4.50661 41.4277H38.3528C40.0521 41.4277 41.4297 40.0501 41.4297 38.3508V4.50466C41.4297 2.80532 40.0521 1.42773 38.3528 1.42773Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21.4284 35.2731C27.3761 35.2731 32.1976 30.4515 32.1976 24.5038C32.1976 18.5562 27.3761 13.7346 21.4284 13.7346C15.4807 13.7346 10.6592 18.5562 10.6592 24.5038C10.6592 30.4515 15.4807 35.2731 21.4284 35.2731Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1.42969 10.6594H10.6605" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M32.1978 10.6594H41.4285" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21.4285 24.4133V35.1826" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12.199 18.9656L21.4297 24.4117" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M30.6592 18.9656L21.4285 24.4117" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
             <div className=" flex flex-col gap-3 ml-2">
-              <h4 className="text-[22px] font-semibold">Collaborative Process</h4>
-              <p className="text-base text-gray-400">Crafting unique and creative visual experiences.</p>
+              <h4 className="text-[22px] font-bold">Collaborative Process</h4>
+              <p className="text-base text-gray-800">Crafting unique and creative visual experiences.</p>
             </div>
           </div>
         </div>

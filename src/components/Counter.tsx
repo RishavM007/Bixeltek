@@ -60,7 +60,7 @@ export default function Counter() {
     
     
   return (
-   <section className="py-10 h-auto md:h-[40vh] max-w-[85%] md:max-w-[85%] mx-auto">
+   <section className="py-10 h-auto md:h-[40vh] max-w-[90%] md:max-w-[85%] mx-auto">
                    <div className="flex justify-center items-center">
                        <div className="relative flex w-full max-w-[85%]">
                            {/* Background Image */}
@@ -72,7 +72,7 @@ export default function Counter() {
                            />
    
                            {/* Stats Container */}
-                           <div className="relative z-10 py-14 flex w-full flex-col md:flex-row justify-around items-center text-black p-8 rounded-3xl shadow-lg">
+                           <div className="relative z-10 py-14 flex w-full flex-col md:flex-row justify-around items-center text-black p-2 rounded-3xl shadow-lg">
                                {/* Stat 1 */}
                                <div className="text-left">
                                    <Counter end={250} />

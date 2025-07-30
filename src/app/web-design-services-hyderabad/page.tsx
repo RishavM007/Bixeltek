@@ -150,45 +150,25 @@ export default function Webdev() {
 
     const faqs = [
         {
-            question: "How much does a website cost in Hyderabad?",
-            answer: "The cost of a website in Hyderabad depends on its features, design, and complexity. Contact us for a custom quote based on your business needs.",
+            question: " Do you offer SEO services along with web design?",
+            answer: "Yes. Every website we build is SEO-optimized at the structure level, and we also offer full-scale SEO campaigns if needed.",
         },
         {
-            question: "Do you provide web development services outside Hyderabad?",
-            answer: "Yes! We serve clients across India, the USA, the UK, the UAE, Canada, and other countries with professional web development services.",
+            question: "What’s your timeline to deliver a website?",
+            answer: " Typical delivery time is between 10–30 days, depending on complexity and content readiness.",
         },
         {
-            question: "Can you improve my website’s Google ranking with SEO in Hyderabad?",
-            answer: "Yes, we offer SEO-optimized web design to help your website rank higher on Google and increase online visibility.",
+            question: "Can you redesign my old WordPress site?",
+            answer: "Absolutely. We specialize in redesigns that preserve your SEO value while improving performance and conversions.",
         },
         {
-            question: "Which payment gateways can you integrate into my website?",
-            answer: "We integrate popular payment gateways like Razorpay, PayU, Stripe, PayPal, and other secure options for smooth online transactions.",
+            question: "Will I own the website after delivery?",
+            answer: " Yes — 100%. All source code, content, and access credentials are handed over.",
         },
         {
-            question: "Do you offer website maintenance and support services?",
-            answer: "Yes, we provide ongoing website maintenance, security updates, and technical support to ensure your site runs smoothly.",
-        },
-        {
-            question: "How long does it take to develop a website?",
-            answer: "Website development timelines vary based on project complexity. Most business websites are completed within 2-6 weeks.",
-        },
-        {
-            question: "Do you build custom e-commerce websites in Hyderabad?",
-            answer: "Yes, we specialize in e-commerce website development with secure payment integration, product management, and a seamless user experience.",
-        },
-        {
-            question: "Will my website be mobile-friendly and responsive?",
-            answer: "Absolutely! We design fully responsive websites that work seamlessly on mobile phones, tablets, and desktops.",
-        },
-        {
-            question: "Can I edit and manage my website content myself?",
-            answer: "Yes, we provide CMS-based websites (like WordPress or Strapi) that allow you to update content easily without coding knowledge.",
-        },
-        {
-            question: "Do you provide domain registration and website hosting services?",
-            answer: "Yes, we offer domain registration and reliable web hosting solutions to ensure your website remains online 24/7.",
-        },
+            question: "Can you manage my website post-launch?",
+            answer: "Yes. We offer affordable monthly maintenance and update plans.",
+        }
     ];
 
     const points = [
@@ -236,10 +216,10 @@ export default function Webdev() {
                 <WebDevHero />
             </section>
 
-            <section className=" pt-8 flex justify-center items-center max-w-[100%] md:max-w-[83%] mx-auto text-gray-100 sm:py-24">
+            <section className=" md:pt-24 flex justify-center items-center max-w-[100%] md:max-w-[83%] mx-auto text-black sm:pt-14 sm:pb-10">
                 <div className="mx-auto flex max-w-md flex-col md:flex-row justify-center items-center rounded-lg lg:max-w-screen-xl lg:flex-row">
                     <div className="w-1/2 md:w-1/2 px-4 pb-10 md:pb-0 lg:pr-14">
-                        <h3 className="mb-2 text-purple-600">Why Choose Us?</h3>
+                        {/* <h3 className="mb-2 text-purple-600">Why Choose Us?</h3> */}
 
                         <h2 className="mb-5 text-4xl font-semibold capitalize">
                             Websites Built for Performance,<br /> Not Just Looks
@@ -249,19 +229,19 @@ export default function Webdev() {
                             Web Design & Development Services in Hyderabad
                         </h3>
 
-                        <p className="text-gray-200 mt-6 text-sm md:text-base leading-relaxed tracking-wide">
+                        <p className="text-gray-900 mt-6 text-sm md:text-base leading-relaxed tracking-wide ">
                             Your website isn’t just a digital brochure — it’s your 24/7 salesperson, your brand ambassador, and your customer’s first impression.
                             In a fast-moving city like Hyderabad, where competition is fierce and attention spans are short, a pretty website isn’t enough.
                             You need one that performs. That loads instantly. That ranks on Google. That compels your visitor to act.
                         </p>
-                        <p className="text-gray-200 mt-6 text-sm md:text-base leading-relaxed tracking-wide">
+                        <p className="text-gray-900 mt-6 text-sm md:text-base leading-relaxed tracking-wide">
                             We go beyond cookie-cutter templates. Every site we build is fully custom, mobile-first, and strategically aligned with your goals.
                             From appointment-booking for healthcare providers to lead-generation for IT consultants — we ensure your website becomes your strongest growth tool.
                         </p>
 
-                        <p className="text-gray-200 mt-6 text-sm md:text-base leading-relaxed tracking-wide">
-                            So whether you're a startup, a scaling enterprise, or an established business in Hyderabad looking for a digital revamp — Bixeltek is your go-to partner.
-                            Let’s build a website that works as hard as you do.
+                        <p className="text-gray-900 mt-6 text-sm md:text-base leading-relaxed tracking-wide">
+                            So whether you&apos;re a startup, a scaling enterprise, or an established business in Hyderabad looking for a digital revamp — Bixeltek is your go-to partner.
+                            Let&apos;s build a website that works as hard as you do.
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -269,7 +249,7 @@ export default function Webdev() {
 
                         <div className='flex flex-row gap-2'>
                             <Link href={'tel:+919100032301'} target='_blank'>
-                                <button className="mt-10 px-6 py-3 border border-white rounded-md hover:bg-white hover:text-black transition">
+                                <button className="mt-10 px-6 py-3 border border-white bg-black text-white rounded-md hover:bg-white hover:text-black hover:border-black hover:ring-1 transition">
                                     Get A Custom Website
                                 </button>
                             </Link>
@@ -297,17 +277,17 @@ export default function Webdev() {
             </section>
             <AboutUsSection />
 
-            <section className="bg-black text-white py-16 px-6">
-                <div className="max-w-[85%] mx-auto flex flex-col md:flex-row items-center gap-24">
+            <section className="bg-white text-black py-16 px-6">
+                <div className="max-w-[85%] mx-auto flex flex-col md:flex-row items-center gap-14">
 
                     {/* Left Side: Image */}
                     <div className="w-full md:w-1/2">
-                        <div className="relative w-full aspect-[4/3] overflow-hidden rounded-lg bg-black">
+                        <div className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl bg-black">
                             <Image
                                 src={section3img}
                                 alt="Custom Website Preview"
                                 fill
-                                className="object-cover z-0 brightness-[0.95]"
+                                className="object-cover rounded-2xl z-0 brightness-[0.95]"
                                 priority
                             />
 
@@ -322,23 +302,23 @@ export default function Webdev() {
                         <h3 className="text-2xl md:text-xl lg:text-2xl mt-5 font-medium">
                             Why Your Hyderabad Business Needs a Custom Website
                         </h3>
-                        <p className="text-gray-200 mt-6 text-[16px] md:text-[19px]">
+                        <p className="text-gray-900 mt-6 text-[16px] md:text-[19px]">
                             Most websites today fail to generate results because they’re either built on cookie-cutter templates or weren’t designed with performance in mind.
                             If your site isn’t generating leads or showing up on Google, you’re already behind.
                         </p>
-                        <p className="text-gray-200 mt-4 text-[16px] md:text-[19px] ">
-                            At <span className="text-white font-medium">Bixeltek</span>, we focus on user behavior, search engine signals, and conversion pathways — so your website attracts the right audience and guides them to action.
+                        <p className="text-gray-900 mt-4 text-[16px] md:text-[19px] ">
+                            At <span className="text-purple-600 font-medium">Bixeltek</span>, we focus on user behavior, search engine signals, and conversion pathways — so your website attracts the right audience and guides them to action.
                             From slow load times to outdated branding, we fix what’s holding you back and build what moves you forward.
                         </p>
                         <div className="flex flex-wrap gap-4 mt-10">
                             <Link href="/casestudies-bixeltek/Tumblewash-Casestudy" target="_blank">
-                                <button className="px-6 py-3 border border-white rounded-md hover:bg-white hover:text-black transition">
+                                <button className="px-6 py-3 border border-white bg-black text-white rounded-md hover:bg-white hover:text-black hover:border-black hover:ring-1 transition">
                                     Explore Our Projects
                                 </button>
                             </Link>
 
                             <Link href="/contact" target="_blank">
-                                <button className="px-6 py-3 bg-white text-black rounded-md hover:bg-transparent hover:text-white hover:border hover:border-white transition">
+                                <button className="px-6 py-3 border-white bg-black text-white  hover:bg-white hover:text-black hover:border-black hover:ring-1 transition rounded-md hover:bg-transparent  hover:border ">
                                     Book a Free Consultation
                                 </button>
                             </Link>
@@ -347,23 +327,23 @@ export default function Webdev() {
 
                 </div>
             </section>
-            <div className="overflow-hidden bg-black py-24 sm:py-32">
+            <div className="overflow-hidden bg-white py-24 sm:py-32">
                 <div className="mx-auto max-w-[85%] px-6 lg:px-8">
-                    <div className="mx-auto grid grid-cols-1 gap-x-14 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                    <div className="mx-auto  grid grid-cols-1 gap-x-14 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                         {/* Left Content */}
-                        <div className="lg:pr-0 lg:pt-4 ">
+                        <div className="lg:pr-0 lg:pt-4  ">
                             <div className="">
 
-                                <h2 className="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+                                <h2 className="mt-2 text-4xl font-semibold tracking-tight text-black sm:text-5xl">
                                     Is Your Website Holding You Back?
                                 </h2>
-                                <p className="mt-6 text-lg text-gray-300">
-                                    A website doesn't need to be broken to be costing you business. Many signs are subtle — but if you’re experiencing even a few of these, it’s time for an upgrade.
+                                <p className="mt-6 text-lg text-gray-900">
+                                    A website doesn&apos;t need to be broken to be costing you business. Many signs are subtle — but if you’re experiencing even a few of these, it’s time for an upgrade.
                                 </p>
 
-                                <dl className="mt-10 max-w-xl space-y-8 text-base text-gray-400 lg:max-w-none">
+                                <dl className="mt-10 max-w-xl space-y-8 text-base text-gray-900 lg:max-w-none">
                                     <div className="relative pl-9">
-                                        <dt className="inline font-semibold text-white">
+                                        <dt className="inline font-bold text-black">
                                             <AlertTriangle className="absolute left-1 top-1 h-6 w-6 text-indigo-400" />
                                             Your bounce rate is climbing.
                                         </dt>
@@ -373,7 +353,7 @@ export default function Webdev() {
                                     </div>
 
                                     <div className="relative pl-9">
-                                        <dt className="inline font-semibold text-white">
+                                        <dt className="inline font-bold text-black">
                                             <Smartphone className="absolute left-1 top-1 h-6 w-6 text-indigo-400" />
                                             Mobile users struggle to navigate.
                                         </dt>
@@ -383,7 +363,7 @@ export default function Webdev() {
                                     </div>
 
                                     <div className="relative pl-9">
-                                        <dt className="inline font-semibold text-white">
+                                        <dt className="inline font-bold text-black">
                                             <TrendingDown className="absolute left-1 top-1 h-6 w-6 text-indigo-400" />
                                             You’re investing in ads, but conversions are flat.
                                         </dt>
@@ -393,7 +373,7 @@ export default function Webdev() {
                                     </div>
 
                                     <div className="relative pl-9">
-                                        <dt className="inline font-semibold text-white">
+                                        <dt className="inline font-bold text-black">
                                             <Search className="absolute left-1 top-1 h-6 w-6 text-indigo-400" />
                                             Your competitors rank higher than you on Google.
                                         </dt>
@@ -403,7 +383,7 @@ export default function Webdev() {
                                     </div>
 
                                     <div className="relative pl-9">
-                                        <dt className="inline font-semibold text-white">
+                                        <dt className="inline font-bold text-black">
                                             <AlertTriangle className="absolute left-1 top-1 h-6 w-6 text-indigo-400" />
                                             Google isn’t indexing your pages correctly.
                                         </dt>
@@ -413,37 +393,39 @@ export default function Webdev() {
                                     </div>
                                 </dl>
 
-                                <p className="mt-8 text-lg text-gray-300">
+                                <p className="mt-8 text-lg text-gray-900">
                                     A professionally rebuilt website doesn’t just look better — it boosts your marketing ROI, improves user trust, and unlocks long-term SEO visibility.
                                 </p>
-                                <p className="mt-4 text-white font-medium">
+                                <p className="mt-4 text-black font-medium">
                                     Let’s make sure your website is working for you — not against you.
                                 </p>
                             </div>
                         </div>
 
                         {/* Right Side Image */}
-                        <Image
-                            src={reportdb}
-                            alt="Product screenshot"
-                            className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
-                        />
+                        <div className="flex translate-x-32 justify-center"> {/* 🔥 This centers the image vertically */}
+    <Image
+      src={reportdb}
+      alt="Product screenshot"
+      className="w-[48rem] border max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+    />
+  </div>
                     </div>
                 </div>
             </div>
             <ServicesSection />
-            <section className="w-[92%] mx-auto flex flex-col-reverse md:flex-row-reverse items-center justify-between gap-10 py-20 px-6 md:px-20 bg-black text-white">
+            <section className="w-[92%] mx-auto flex flex-col-reverse md:flex-row-reverse items-center justify-between gap-10 py-20 px-6 md:px-20 bg-white text-black">
                 {/* Image Section */}
                 <div className="w-full md:w-1/2">
-                    <div className="mt-8 pl-20 flex flex-col gap-6">
+                    <div className="mt-8 pl-0 md:pl-20 flex flex-col gap-6">
                         {/* 1. Dentists */}
                         <div className="flex gap-4 items-start mb-2">
                             <div className="bg-[#EA4335] rounded-full p-5">
                                 <MdOutlineMedicalServices className="text-white text-2xl" />
                             </div>
                             <div className='flex flex-col gap-2'>
-                                <h4 className="text-xl font-semibold text-white">Dentists & Clinics</h4>
-                                <p className="text-sm text-gray-400">SEO-optimized websites that boost appointment bookings and trust.</p>
+                                <h4 className="text-xl font-semibold text-black">Dentists & Clinics</h4>
+                                <p className="text-sm text-gray-800">SEO-optimized websites that boost appointment bookings and trust.</p>
                             </div>
                         </div>
 
@@ -453,8 +435,8 @@ export default function Webdev() {
                                 <FaRocket className="text-white text-2xl" />
                             </div>
                             <div className='flex flex-col gap-2'>
-                                <h4 className="text-xl font-semibold text-white">Startups & Entrepreneurs</h4>
-                                <p className="text-base text-gray-400">Agile, scalable platforms with clean UX and investor-ready polish.</p>
+                                <h4 className="text-xl font-semibold text-black">Startups & Entrepreneurs</h4>
+                                <p className="text-base text-gray-800">Agile, scalable platforms with clean UX and investor-ready polish.</p>
                             </div>
                         </div>
 
@@ -464,8 +446,8 @@ export default function Webdev() {
                                 <FaHandHoldingHeart className="text-white text-2xl" />
                             </div>
                             <div className='flex flex-col gap-2'>
-                                <h4 className="text-xl font-semibold text-white">NGOs & Non-profits</h4>
-                                <p className="text-base text-gray-400">Trust-building platforms that simplify donations and communicate your impact.</p>
+                                <h4 className="text-xl font-semibold text-black">NGOs & Non-profits</h4>
+                                <p className="text-base text-gray-800">Trust-building platforms that simplify donations and communicate your impact.</p>
                             </div>
                         </div>
 
@@ -475,8 +457,8 @@ export default function Webdev() {
                                 <FaBuilding className="text-white text-2xl" />
                             </div>
                             <div className='flex flex-col gap-2'>
-                                <h4 className="text-xl font-semibold text-white">Corporates & Enterprises</h4>
-                                <p className="text-base text-gray-400">Secure, structured, CMS-driven platforms with advanced workflows and integrations.</p>
+                                <h4 className="text-xl font-semibold text-black">Corporates & Enterprises</h4>
+                                <p className="text-base text-gray-800">Secure, structured, CMS-driven platforms with advanced workflows and integrations.</p>
                             </div>
                         </div>
 
@@ -486,8 +468,8 @@ export default function Webdev() {
                                 <MdLocationPin className="text-white text-2xl" />
                             </div>
                             <div className='flex flex-col gap-2'>
-                                <h4 className="text-xl font-semibold text-white">Local Businesses & Service Providers</h4>
-                                <p className="text-base text-gray-400">Location-based SEO landing pages to capture “near me” searches and phone leads.</p>
+                                <h4 className="text-xl font-semibold text-black">Local Businesses & Service Providers</h4>
+                                <p className="text-base text-gray-800">Location-based SEO landing pages to capture “near me” searches and phone leads.</p>
                             </div>
                         </div>
                     </div>
@@ -500,32 +482,37 @@ export default function Webdev() {
                         <span className="text-[#bf47ff]">Tailored Web Solutions for </span>Hyderabad’s Growth-Driven Businesses
                     </h2>
 
-                    <h3 className="text-xl md:text-2xl mt-6 font-medium text-white">
+                    <h3 className="text-xl md:text-2xl mt-6 font-medium text-black">
                         Web Development for Dentists, Startups, NGOs & Corporates
                     </h3>
 
-                    <p className="text-gray-50 mt-6 text-[16px] md:text-[16px] leading-relaxed">
+                    <p className="text-gray-900 mt-6 font-semibold text-[16px] md:text-[16px] leading-relaxed">
                         Every business has a different story, audience, and user journey. Our approach isn’t one-size-fits-all — it’s hyper-specific, built around who you are and what your customers need.
                     </p>
 
-                    <p className="text-gray-200 mt-8 text-sm md:text-sm">
+                    <p className="text-gray-900 font-semibold mt-8 text-sm md:text-sm">
                         If you’re based in Hyderabad and serious about growth — <span className="font-semibold text-white">we’re the team that builds with that in mind.</span>
                     </p>
 
                     <div className="flex flex-wrap gap-4 mt-10">
-                        <button className="px-6 py-3 border border-white rounded-md hover:bg-white hover:text-black transition">
-                            Explore Our Projects
-                        </button>
-                        <button className="px-6 py-3 bg-white text-black rounded-md hover:bg-transparent hover:text-white hover:border hover:border-white transition">
-                            Book a Free Consultation
-                        </button>
+                        <Link href="/casestudies-bixeltek/Tumblewash-Casestudy" target="_blank">
+                                <button className="px-6 py-3 border border-white bg-black text-white rounded-md hover:bg-white hover:text-black hover:border-black hover:ring-1 transition">
+                                    Explore Our Projects
+                                </button>
+                            </Link>
+
+                            <Link href="/contact" target="_blank">
+                                <button className="px-6 py-3 border-white bg-black text-white  hover:bg-white hover:text-black hover:border-black hover:ring-1 transition rounded-md hover:bg-transparent  hover:border ">
+                                    Book a Free Consultation
+                                </button>
+                            </Link>
                     </div>
                 </div>
             </section>
 
             <section className='py-20'>
 
-                <div className="flex flex-col  text-white gap-12  md:flex-row items-center max-w-[93%] mx-auto justify-center px-6 md:px-20 py-5 overflow-hidden">
+                <div className="flex flex-col  text-black gap-12  md:flex-row items-center max-w-[93%] mx-auto justify-center px-6 md:px-20 py-5 overflow-hidden">
                     <div className="relative w-full md:w-1/2 h-[70vh] flex justify-center items-center overflow-hidden">
                         <Image
                             src={webimg}
@@ -536,24 +523,24 @@ export default function Webdev() {
                     </div>
 
 
-                    <div className="md:w-1/2 text-center md:text-left">
-                        <h2 className="text-2xl md:text-[40px] leading-[35px] md:leading-[50px] font-bold mt-4">
+                    <div className="md:w-1/2 text-black text-center md:text-left">
+                        <h2 className="text-2xl md:text-[40px] leading-[35px] md:leading-[50px] text-black font-bold mt-4">
                             Built In-House. <span className="text-[#73e2e4]">Optimized for Results.</span>
                             Trusted Globally.
                         </h2>
 
-                        <h3 className="text-lg md:text-2xl font-semibold mt-6">
+                        <h3 className="text-lg md:text-2xl font-semibold mt-6 text-black">
                             Why Choose Bixeltek as Your Web Design Partner in Hyderabad
                         </h3>
 
-                        <p className="text-gray-100 mt-6 text-sm md:text-base leading-7">
+                        <p className=" mt-6 text-sm md:text-base leading-7 text-black">
                             Bixeltek is not a freelance patchwork or outsourcing agency. Our in-house web development team writes every line of code, designs every page layout, and tests every performance metric — all under one roof.
                         </p>
-                        <p className="text-gray-100 mt-4 text-sm md:text-base leading-7">
+                        <p className="text-black mt-4 text-sm md:text-base leading-7">
                             We’ve delivered results for clients in Canada, USA, UK, Germany, Saudi Arabia, UAE, and India, adapting our solutions to different industries and cultures. This international experience gives us insight — and a competitive edge for our Hyderabad clients.
                         </p>
 
-                        <ul className="mt-8 space-y-3 text-left text-gray-200 text-sm md:text-base">
+                        <ul className="mt-8 space-y-3 text-left text-black text-sm md:text-base">
                             <li className="flex items-start">
                                 <span className="text-[#73e2e4] text-lg mr-2 mt-1">✔</span> SEO-optimized from the ground up
                             </li>
@@ -568,7 +555,7 @@ export default function Webdev() {
                             </li>
                         </ul>
 
-                        <p className="mt-8 text-gray-300 text-sm md:text-base font-medium italic">
+                        <p className="mt-8 text-gray-900 text-sm md:text-base font-medium italic">
                             This isn’t just web design. It’s digital infrastructure for business growth.
                         </p>
                     </div>
@@ -577,59 +564,8 @@ export default function Webdev() {
 
             </section>
             <Counter />
-            <section>
-                <Smfeatures />
-            </section>
-            <section className="mx-auto my-10 w-screen max-w-screen-xl px-4">
-                <div className="flex rounded-xl bg-gradient-to-r from-blue-600 to-fuchsia-500 text-white shadow-lg overflow-hidden">
-
-                    {/* Left Text Content */}
-                    <div className="py-16 px-8 lg:px-12 w-full lg:w-1/2">
-                        <h1 className="text-3xl font-sofiasanscondensed md:text-5xl font-bold leading-tight">
-                            Let’s Build a Website That Reflects Your Business
-                        </h1>
-
-                        <p className="mt-4 text-lg md:text-xl font-medium">
-                            Book a Free Discovery Call with Hyderabad’s Top Web Design Agency
-                        </p>
-
-                        <p className="mt-4 text-base md:text-lg text-white/90">
-                            Your website should be your top salesperson — not just a digital placeholder.
-                            With <span className="font-semibold text-white">Bixeltek</span>, you get an experienced in-house team, proven frameworks, and global perspective — all tailored for Hyderabad’s business environment.
-                        </p>
-
-                        <p className="mt-4 text-sm md:text-base text-white/80">
-                            Based in Hyderabad | Serving Clients Across India, Canada, USA, UK, Saudi Arabia & UAE
-                        </p>
-
-                        <div className="flex flex-wrap items-center gap-4 mt-6">
-                            <button
-                                type="button"
-                                className="group flex items-center gap-3 bg-white text-black text-lg font-semibold px-6 py-3 rounded-md hover:bg-transparent hover:text-white hover:border-white hover:border transition-all"
-                            >
-                                Request Your Free Quote
-                            </button>
-
-                            <button
-                                type="button"
-                                className="group flex items-center gap-3 border border-white text-white text-lg font-semibold px-6 py-3 rounded-md hover:bg-white hover:text-black transition-all"
-                            >
-                                Book a 15-Minute Discovery Call
-                            </button>
-                        </div>
-                    </div>
-
-                    {/* Right Image Full Height */}
-                    <div className="hidden lg:flex w-1/2">
-                        <Image
-                            src={ctaimg}
-                            alt="CTA Visual"
-                            className="w-full h-full object-center"
-                        />
-                    </div>
-                </div>
-            </section>
-
+            
+            
             <section>
                 <IndustrySolutions />
             </section>
@@ -693,16 +629,66 @@ export default function Webdev() {
                 </div>
             </section>
             <TestimonialWebdev />
+            <section className="mx-auto my-10 w-screen max-w-screen-xl px-4">
+                <div className="flex rounded-xl bg-gradient-to-r from-blue-600 to-fuchsia-500 text-white shadow-lg overflow-hidden">
+
+                    {/* Left Text Content */}
+                    <div className="py-16 px-8 lg:px-12 w-full lg:w-1/2">
+                        <h1 className="text-3xl font-sofiasanscondensed md:text-5xl font-bold leading-tight">
+                            Let’s Build a Website That Reflects Your Business
+                        </h1>
+
+                        <p className="mt-4 text-lg md:text-xl font-medium">
+                            Book a Free Discovery Call with Hyderabad’s Top Web Design Agency
+                        </p>
+
+                        <p className="mt-4 text-base md:text-lg text-white/90">
+                            Your website should be your top salesperson — not just a digital placeholder.
+                            With <span className="font-semibold text-white">Bixeltek</span>, you get an experienced in-house team, proven frameworks, and global perspective — all tailored for Hyderabad’s business environment.
+                        </p>
+
+                        <p className="mt-4 text-sm md:text-base text-white/80">
+                            Based in Hyderabad | Serving Clients Across India, Canada, USA, UK, Saudi Arabia & UAE
+                        </p>
+
+                        <div className="flex flex-wrap items-center gap-4 mt-6">
+                            <button
+                                type="button"
+                                className="group flex items-center gap-3 bg-white text-black text-lg font-semibold px-6 py-3 rounded-md hover:bg-transparent hover:text-white hover:border-white hover:border transition-all"
+                            >
+                                Request Your Free Quote
+                            </button>
+
+                            <button
+                                type="button"
+                                className="group flex items-center gap-3 border border-white text-white text-lg font-semibold px-6 py-3 rounded-md hover:bg-white hover:text-black transition-all"
+                            >
+                                Book a 15-Minute Discovery Call
+                            </button>
+                        </div>
+                    </div>
+
+                    {/* Right Image Full Height */}
+                    <div className="hidden lg:flex w-1/2">
+                        <Image
+                            src={ctaimg}
+                            alt="CTA Visual"
+                            className="w-full h-full object-center"
+                        />
+                    </div>
+                </div>
+            </section>
+
             <Tech2 />
             <section className="py-24">
                 <div className="mx-auto max-w-[85%] px-4 sm:px-6 lg:px-8">
                     <div className="mb-14 text-center">
                         <span
                             className="py-1 px-4 bg-indigo-100 rounded-full text-xs font-medium text-indigo-600 text-center">Excellence</span>
-                        <h2 className="text-4xl text-center font-bold text-gray-50 py-5">
+                        <h2 className="text-4xl text-center font-bold text-gray-900 py-5">
                             Why Partner with Bixeltek?
                         </h2>
-                        <p className="text-lg font-normal text-white max-w-md md:max-w-2xl mx-auto">
+                        <p className="text-lg font-normal text-black max-w-md md:max-w-2xl mx-auto">
                             Bixeltek delivers innovative, results-driven web solutions with cutting-edge technology and market expertise.
                         </p>
                     </div>
@@ -716,10 +702,10 @@ export default function Webdev() {
                                         stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                 </svg>
                             </div>
-                            <h4 className="text-lg font-medium text-gray-50 mb-3 capitalize">
+                            <h4 className="text-lg font-medium text-gray-900 mb-3 capitalize">
                                 Cutting-edge Technologies
                             </h4>
-                            <p className="text-sm font-normal text-gray-300">
+                            <p className="text-sm font-normal text-gray-900">
                                 Constant innovation with advanced web technologies.
                             </p>
                         </div>
@@ -740,10 +726,10 @@ export default function Webdev() {
                                         stroke="" stroke-width="2"></path>
                                 </svg>
                             </div>
-                            <h4 className="text-lg font-medium text-gray-50 mb-3 capitalize">
+                            <h4 className="text-lg font-medium text-gray-900 mb-3 capitalize">
                                 Local Insights, Global Impact
                             </h4>
-                            <p className="text-sm font-normal text-gray-300">
+                            <p className="text-sm font-normal text-gray-900">
                                 Combining deep Hyderabad market insights with international standards in web design.
                             </p>
                         </div>
@@ -755,10 +741,10 @@ export default function Webdev() {
                                         stroke="" stroke-width="2" stroke-linecap="round"></path>
                                 </svg>
                             </div>
-                            <h4 className="text-lg font-medium text-gray-50 mb-3 capitalize">
+                            <h4 className="text-lg font-medium text-gray-900 mb-3 capitalize">
                                 Proven Success
                             </h4>
-                            <p className="text-sm font-normal text-gray-300">
+                            <p className="text-sm font-normal text-gray-900">
                                 Trusted by numerous businesses and recognized for exceptional service delivery.
                             </p>
                         </div>
@@ -770,10 +756,10 @@ export default function Webdev() {
                                         stroke="" stroke-width="2" stroke-linecap="round"></path>
                                 </svg>
                             </div>
-                            <h4 className="text-lg font-medium text-gray-50 mb-3 capitalize">
+                            <h4 className="text-lg font-medium text-gray-900 mb-3 capitalize">
                                 Results-Driven Approach
                             </h4>
-                            <p className="text-sm font-normal text-gray-300">
+                            <p className="text-sm font-normal text-gray-900">
                                 Websites strategically built to achieve measurable business goals.
                             </p>
                         </div>
@@ -785,10 +771,10 @@ export default function Webdev() {
                                         stroke="" stroke-width="2" stroke-linecap="round"></path>
                                 </svg>
                             </div>
-                            <h4 className="text-lg font-medium text-gray-50 mb-3 capitalize">
+                            <h4 className="text-lg font-medium text-gray-900 mb-3 capitalize">
                                 Custom Websites
                             </h4>
-                            <p className="text-sm font-normal text-gray-300">
+                            <p className="text-sm font-normal text-gray-900">
                                 Websites strategically built to achieve measurable business goals.
                             </p>
                         </div>
@@ -798,38 +784,39 @@ export default function Webdev() {
             <section className='w-full flex flex-wrap sm:max-w-[90%] md:max-w-[85%] mx-auto lg:flex-nowrap overflow-y-hidden items-center'>
                 {/* Left Content Section */}
                 <div className='w-full lg:w-1/2 px-1 md:px-6 py-10 lg:py-14'>
-                    <h2 className="text-4xl md:text-5xl font-semibold font-sofiasanscondensed text-white">
+                    <h2 className="text-4xl md:text-5xl font-semibold font-sofiasanscondensed text-black">
                         Building High Converting Websites Across <span className='text-purple-500'>Diverse Industries</span>
                     </h2>
-                    <p className="mt-4 text-sm md:text-lg text-gray-300">
+                    <p className="mt-4 text-sm md:text-lg text-gray-900">
                         Our web design expertise spans multiple industries, helping businesses achieve higher conversion rates through stragically designed websites conpatible for SEO, Google Ads and Meta Marketing. From technology and finance to healthcare and retail, we empower brands with actionable insights
                         and cutting-edge digital solutions.
                     </p>
-                    <p className="mt-2 text-sm md:text-lg text-gray-300">
+                    <p className="mt-2 text-sm md:text-lg text-gray-900">
                         Explore how our beautifully crafted websites deliver success by increasing engagement rate, by delivering more conversions, leads, sales and brand visibility
                         in a competitive landscape.
                     </p>
                     <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-5">
                         {industries.map((industry, index) => (
-                            <div key={index} className="flex items-center text-lg text-white">
-                                <span className="text-white text-xl inline-block  mr-3">{industry.icon}</span>
+                            <div key={index} className="flex items-center text-lg text-black">
+                                <span className="text-black text-xl inline-block  mr-3">{industry.icon}</span>
                                 <h2 className='font-poppins text-sm'>Web-design services for {industry.name}</h2>
                             </div>
                         ))}
                     </div>
-                    <div className='justify-center items-center flex flex-col md:flex-row gap-4'>
-                        <Link href={'/industries'}>
-                            <button className="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
-                                Learn More
-                            </button>
-                        </Link>
-                        <a href="tel:+919100032301">
-                            <button className="mt-2 md:pt-4 xl:pt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
-                                Talk to our Specialist
-                            </button>
+                     <div className="flex flex-wrap gap-4 mt-10">
+                        <Link href="/casestudies-bixeltek/Tumblewash-Casestudy" target="_blank">
+                                <button className="px-6 py-3 border border-white bg-black text-white rounded-md hover:bg-white hover:text-black hover:border-black hover:ring-1 transition">
+                                    Explore Our Projects
+                                </button>
+                            </Link>
 
-                        </a>
+                            <Link href="/contact" target="_blank">
+                                <button className="px-6 py-3 border-white bg-black text-white  hover:bg-white hover:text-black hover:border-black hover:ring-1 transition rounded-md hover:bg-transparent  hover:border ">
+                                    Book a Free Consultation
+                                </button>
+                            </Link>
                     </div>
+                   
                 </div>
                 <div className="flex w-full lg:w-1/2 justify-center gap-4 p-1">
                     <div className='w-1/3 flex flex-col  items-center justify-center gap-3'>

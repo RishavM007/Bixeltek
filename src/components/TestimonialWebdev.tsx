@@ -41,12 +41,12 @@ export default function TestimonialWebdev() {
   return (
 <section className='py-20'>
                 <div className="max-w-[85%] flex flex-col md:flex-row mx-auto p-8 text-center">
-                    <div className='flex text-white justify-start items-start text-left flex-col w-full md:w-1/2'>
+                    <div className='flex text-black justify-start items-start text-left flex-col w-full md:w-1/2'>
                         <div className='mb-5'>
-                            <p className='py-2 px-4 font-poppins border rounded-md mx-auto'>Our Testimonials</p>
+                            <p className='py-2 px-4 font-poppins border border-purple-600 rounded-md mx-auto'>Our Testimonials</p>
                         </div>
-                        <h2 className="text-5xl tracking-wide mr-20 text-white font-bold mb-4 font-sofiasanscondensed"><span className='text-blue-500'>1</span><span className='text-red-500'>5</span><span className='text-yellow-500'>8</span><span className='text-yellow-400'>0</span><span className='text-orange-500'>+</span> Customers Say About Our Services</h2>
-                        <p className="text-gray-400 mb-6 mr-20">A web design agency dedicated to creating visually stunning and highly functional websites.</p>
+                        <h2 className="text-5xl tracking-wide text-black font-bold mb-4 font-sofiasanscondensed"><span className='text-blue-500'>1</span><span className='text-red-500'>5</span><span className='text-yellow-500'>8</span><span className='text-yellow-400'>0</span><span className='text-orange-500'>+</span> Customers Say About Our Services</h2>
+                        <p className="text-gray-900 mb-6 mr-10">A web design agency dedicated to creating visually stunning and highly functional websites.</p>
                         <div className="flex justify-center space-x-2 mt-4">
                             {testimonials.map((_, i) => (
                                 <button
@@ -64,7 +64,7 @@ export default function TestimonialWebdev() {
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: -50 }}
                             transition={{ duration: 0.5 }}
-                            className="bg-black text-white border  relative py-16 pr-16 pl-10 rounded-lg "
+                            className="bg-white text-black border-2 border-black  relative py-16 pr-16 pl-10 rounded-lg "
                         >
                             <div>
                                 <BiSolidQuoteSingleRight className='size-24 absolute top-[-40px] left-0 text-yellow-400 ' />

@@ -31,7 +31,7 @@ export default function Tech2() {
     <div className="max-w-[85%] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   {/* Heading */}
   <div className="sm:w-full xl:w-1/2 mx-auto text-center mb-6 md:mb-12">
-    <h2 className="text-xl font-semibold font-sofiasanscondensed md:text-5xl md:leading-tight text-gray-800 dark:text-neutral-200">
+    <h2 className="text-xl font-semibold font-sofiasanscondensed md:text-5xl md:leading-tight text-neutral-900">
       Built with the same tech trusted by open source projects and enterprise giants.
     </h2>
   </div>

@@ -52,12 +52,12 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="bg-black text-white py-20 px-4">
+    <section className="bg-white text-black py-20 px-4">
       <div className="max-w-[85%] mx-auto">
         <div className="text-center mb-14">
-                    <span className="py-1 px-4 bg-indigo-100 rounded-full text-xs font-medium text-indigo-500">Our Services</span>
+                    <span className="text-sm uppercase font-bold text-[#c77dff] tracking-widest">Our Services</span>
                     <h2 className='font-bold  text-4xl md:text-5xl font-sofiasanscondensed tracking-normal mt-4'>Our Website Development Services in Hyderabad <br /> Are Built for Visibility, Speed & ROI</h2>
-                    <p className='mt-5 md:text-xl md:max-w-[90%] mx-auto text-white/70'>We&apos;re not just building websites. We&apos;re solving business problems with strategy, design, and code.<br />
+                    <p className='mt-5 md:text-xl md:max-w-[90%] mx-auto text-black'>We&apos;re not just building websites. We&apos;re solving business problems with strategy, design, and code.<br />
                     As a leading website designing company in Hyderabad, we offer full-spectrum development solutions tailored to your goals — whether you&apos;re launching, scaling, or overhauling your online presence.</p>
                 </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
