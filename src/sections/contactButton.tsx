@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ContactForm } from "./ContactForm";
+import { ButtonContactForm } from "./ButtonContactForm";
 
 export const ContactButton = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -26,7 +27,7 @@ export const ContactButton = () => {
                 </div>
             </section>
 
-            <ContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
+            <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
         </>
     );
 };
