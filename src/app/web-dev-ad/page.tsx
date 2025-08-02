@@ -3,7 +3,7 @@ import Image from 'next/image'
 import lpimg from '@/assets/imac_img.png'
 import rocketimg from '@/assets/img_1-800x747.png'
 import mobile from '@/assets/mobile_app (1).png'
-import teamimg from '@/assets/creative-people-working-office.jpg'
+
 import { ArrowUpRight } from 'lucide-react';
 import { FiPhoneCall } from "react-icons/fi";
 import WebDevHero from '@/components/WebDevHero'
@@ -111,13 +111,13 @@ export default function WebDevAd() {
         <>
             <WebDevHero />
             {/* <WebdevCar/> */}
-            <section className="bg-transparent px-8 py-32 text-black">
+            <section className="bg-transparent px-8 pt-32 pb-14 text-black">
                 <div className="max-w-7xl mx-auto">
                     <div className="grid md:grid-cols-2 gap-10 items-start mb-16">
                         {/* Text Content */}
                         <div>
                             <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
-                                Hyderabad’s Website Design <span className="text-purple-600">Experts</span> — Built for Business, Not Just Beauty
+                                Hyderabad’s <span className="text-purple-600">Website Design Experts</span> — Built for Business, Not Just Beauty
                             </h2>
                             <p className="text-gray-800 text-base mb-4">
                                 Your website isn’t just a brochure — it’s your digital storefront, your #1 salesperson, and often the first impression of your business.
