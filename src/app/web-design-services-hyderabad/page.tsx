@@ -17,7 +17,7 @@ import WebDevHero from '@/components/WebDevHero'
 import chartimg from '@/assets/visitors-1-1.png'
 import CaseStudies from '@/components/Webdevcasestudies'
 import ContactFromNew from '@/components/ContactFormNew'
-
+import LogoGrid from '@/components/Companies'
 import Counter from '@/components/Counter'
 import laptop from '@/assets/laptop mockup.jpg'
 import DarkFaqSection from '@/components/DarkFaq';
@@ -30,7 +30,6 @@ import ServicesSection from '@/components/glowcards'
 import { MdTrendingUp, MdDevices, MdOutlineSupportAgent } from 'react-icons/md';
 import { ShieldCheck, MonitorSmartphone, LineChart, Server, Zap, Settings2, CreditCard, PlugZap, Timer } from "lucide-react";
 import { PhoneCall, MessageCircle, CalendarDays } from "lucide-react"
-
 import { FaTooth, FaHospital, FaDog, FaGasPump, FaCar, FaBroom, FaGraduationCap, FaBuilding, FaTree, FaSeedling } from "react-icons/fa";
 import StepCards from '@/components/WebdevSteps'
 
@@ -122,27 +121,27 @@ export default function WebDevAd() {
     const problems = [
         {
             icon: <LucideSmartphone className="text-indigo-600 w-6 h-6" />,
-            title: 'Your website looks broken or loads slowly on mobile',
+            title: 'Mobile-Friendly Web Design Services Hyderabad',
             desc: `Over 70% of internet users in Hyderabad browse on mobile. If your site isn’t `
         },
         {
             icon: <LucideZap className="text-indigo-600 w-6 h-6" />,
-            title: `You're spending on ads but not seeing results`,
+            title: ` Conversion-Focused Landing Pages for Google & Meta Ads`,
             desc: `Running Google Ads or Instagram promotions without a conversion-optimized website`
         },
         {
             icon: <LucideSearch className="text-indigo-600 w-6 h-6" />,
-            title: `You’re invisible on Google`,
+            title: `SEO-Friendly Website Design Company in Hyderabad`,
             desc: `If your website structure isn’t SEO-friendly, Google won’t rank you — no matter how go.`
         },
         {
             icon: <LucideLoader className="text-indigo-600 w-6 h-6" />,
-            title: `You’re stuck with a basic builder (Wix, GoDaddy, Canva-style editors)`,
+            title: `Custom Web Development vs. Wix, GoDaddy, Canva Builders`,
             desc: `These platforms offer convenience, but limit growth. They’re not built for Hyderabad’s `
         },
         {
             icon: <LucidePhone className="text-indigo-600 w-6 h-6" />,
-            title: `Customers can’t contact you easily`,
+            title: `Improved Customer Contact with UX-driven Web Design`,
             desc: `Many sites lack basic conversion flow. No clickable phone number. No WhatsApp integration`
         },
     ];
@@ -181,20 +180,18 @@ export default function WebDevAd() {
                     <div className="grid md:grid-cols-2 gap-10 items-start mb-16">
                         {/* Text Content */}
                         <div>
-                            <h2 className="text-4xl md:text-5xl font-bold font-inter leading-tight mb-4">
-                                Hyderabad’s <span className="text-purple-600">Website Design Experts</span> — Built for Business, Not Just Beauty
+                            <h2 className="text-4xl font-inter md:text-5xl font-bold  leading-tight mb-4">
+                                What’s Wrong With Most <span className="text-purple-600">Business Websites</span> in Hyderabad
                             </h2>
                             <p className="text-gray-800 text-base mb-4">
-                                Your website isn’t just a brochure — it’s your digital storefront, your #1 salesperson, and often the first impression of your business.
-                                At Bixeltek, we don’t just design pretty websites. We build conversion-focused, SEO-optimized, mobile-first websites that are engineered
-                                to grow your business in Hyderabad’s competitive market.
+                               Most websites fail for one simple reason: they aren’t designed to solve business problems. They look decent on a desktop but break on mobile. They have flashy visuals but no clear call to action. And worse, they don’t show up on Google — even when people are searching for the exact service you offer.
                             </p>
                             <p className="text-gray-800 text-base mb-4">
-                                Whether you&apos;re a local service provider, a healthcare clinic, or a D2C brand, we craft digital experiences tailored to your customer journey.
-                                Every line of code, every layout decision, and every CTA is backed by strategy, not guesswork.
+                               If this sounds like your website, you’re not alone. We’ve worked with dozens of business owners across Hyderabad who were frustrated that their website wasn’t doing its job. They were spending money on ads and not getting leads. Losing customers to competitors with better search rankings. And watching visitors land on their site, only to leave without taking any action.
+
                             </p>
                             <p className="text-gray-800 text-base">
-                                We’re based in Hitech City and serve all of Hyderabad — including Jubilee Hills, Gachibowli, Madhapur, and beyond.
+                               These are not design problems — they are growth problems. And that’s exactly what Bixeltek solves.
                             </p>
                         </div>
 
@@ -253,6 +250,60 @@ export default function WebDevAd() {
 
                 </div>
             </section>
+            <section className="bg-white pt-20 px-4 lg:px-20">
+                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+                    {/* Left stacked cards */}
+                    {/* <div className="relative flex flex-col items-start justify-center -space-y-10">
+                        {[0, 1, 2].map((i) => (
+                            <div
+                                key={i}
+                                style={{
+                                    transform: `translate(${i * 150}px, ${i * 10}px)`
+                                }}
+                                className="relative z-10 p-10 rounded-xl  bg-white border border-gray-400 w-72"
+                            >
+                                <div className="text-sm text-yellow-600 font-medium mb-1">0{i + 1} Step</div>
+                                <div className="text-2xl font-sofiasanscondensed font-semibold text-gray-900">
+                                    {['Initial Consultation', 'Data Analysis', 'Strategy Development'][i]}
+                                </div>
+                                <p className="mt-2 text-sm text-gray-600">
+                                    {[
+                                        'Introduction between consultant and the client. Understand the client’s financial situation.',
+                                        'Analyze cash flow, expenses, debts, assets, liabilities, and financial ratios. Identify potential risks.',
+                                        'Work with the client to set short-term and long-term financial goals, retirement planning, debt.'
+                                    ][i]}
+                                </p>
+                            </div>
+                        ))}
+
+                    </div> */}
+                    <StepCards />
+
+                    {/* Right Problem Cards */}
+                    <div className="max-w-5xl mx-auto px-4">
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold font-inter leading-tight mb-4">
+                            Common Problems with Website Design in Hyderabad
+                        </h2>
+                        <h3 className='text-xl md:text-xl font-semibold font-inter mt-4 mb-5'>
+                            Why Most Websites in Hyderabad Don’t Generate Leads
+                        </h3>
+                        <div className="divide-y divide-gray-200 border-b border-gray-200 rounded-lg overflow-hidden">
+                            {problems.map((problem, index) => (
+                                <div
+                                    key={index}
+                                    className="flex items-start space-x-4 py-6 pr-5 bg-white hover:bg-gray-50 transition"
+                                >
+                                    <div className="mt-1">{problem.icon}</div>
+                                    <div>
+                                        <h4 className="text-lg font-semibold text-gray-800">{problem.title}</h4>
+                                        <p className="text-gray-600 text-sm mt-1">{problem.desc}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <section className="bg-gradient-to-r from-white to-purple-50 py-6 md:py-16 px-6 md:px-0">
                 <div className=" w-full mx-auto flex flex-col md:flex-row justify-between gap-5 md:gap-20 items-center">
@@ -263,9 +314,9 @@ export default function WebDevAd() {
                     {/* Right Content */}
                     <div className='w-full md:w-2/3 py-20 px-2 md:px-40'>
                         <p className="text-purple-600 text-sm font-semibold uppercase mb-3">Why Choose Us</p>
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
-                            Built for Hyderabad’s <br />
-                            <span className="underline decoration-purple-600 underline-offset-4">Business Ecosystem</span>
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold font-inter leading-tight mb-4">
+                            Custom Websites Tailored for <br />
+                            <span className="underline decoration-purple-600 underline-offset-4">Hyderabad’s Top Industries</span>
                         </h2>
 
                         <p className="text-gray-700 text-base mb-6 mt-7">
@@ -359,8 +410,8 @@ export default function WebDevAd() {
 
             <section className="pt-14 pb-24 px-6 md:px-16 bg-white text-center">
                 <p className="text-sm text-purple-500 font-semibold uppercase mb-2">WHAT YOU GET</p>
-                <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
-                    What’s Included in Every Website
+                <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-4 max-w-6xl mx-auto">
+                    Everything You Get with Our Web Design Services in Hyderabad
                 </h2>
                 <p className="text-gray-700 text-base mb-6 mt-7 mx-auto max-w-3xl">
                     When you partner with Bixeltek, you’re not just getting a design — you’re getting a full-stack growth-ready website. Every project includes:
@@ -388,6 +439,7 @@ export default function WebDevAd() {
                 </p>
             </section>
             <ServicesSection />
+            
             <section className="pt-48 pb-16 bg-white">
                 <div className="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
                     {/* Left: Image with overlay chart */}
@@ -412,8 +464,9 @@ export default function WebDevAd() {
                         <p className="text-sm text-purple-600 font-semibold uppercase tracking-wider mb-2">
                             Why Choose Us
                         </p>
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                            Why Choose <span className="text-purple-600">Bixeltek?</span>
+                        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+                            Why Bixeltek is the  
+ <span className="text-purple-600"> Best Web Design Agency </span>in Hyderabad
                         </h2>
                         <p className="text-gray-600 mb-6 leading-relaxed">
                             Bixeltek isn’t a freelancer network. We’re a full-service digital marketing agency with in-house designers, developers, SEO specialists, and strategists — all under one roof. We’re Google Partner Certified, and we’ve helped 100+ businesses across India, Canada, the US, and the Middle East scale online.
@@ -462,9 +515,9 @@ export default function WebDevAd() {
                                     <p className="text-sm font-poppins text-gray-900 mb-4">
                                         Donec massa lacus tortor dis vulputate neque odio venenatis ex ad interdum
                                     </p>
-                                    <button className="bg-white text-xs text-black font-semibold px-7 py-2 rounded-full w-fit">
+                                    {/* <button className="bg-white text-xs text-black font-semibold px-7 py-2 rounded-full w-fit">
                                         LEARN MORE
-                                    </button>
+                                    </button> */}
                                 </div>
 
                                 <div className="mt-0">
@@ -517,9 +570,9 @@ export default function WebDevAd() {
                                     <p className="text-sm text-gray-200 mb-4 max-w-xs">
                                         Donec massa lacus tortor dis vulputate neque odio venenatis ex ad interdum
                                     </p>
-                                    <button className="text-xs text-black font-semibold px-7 py-2 bg-white rounded-full w-fit">
+                                    {/* <button className="text-xs text-black font-semibold px-7 py-2 bg-white rounded-full w-fit">
                                         LEARN MORE
-                                    </button>
+                                    </button> */}
                                 </div>
 
                                 {/* Image pinned to bottom right, large */}
@@ -540,21 +593,24 @@ export default function WebDevAd() {
                             </div>
 
                             {/* Title */}
-                            <p className="text-sm uppercase font-medium text-white">24/7 Support</p>
+                          
 
                             {/* Phone Number */}
-                            <h3 className="text-2xl font-bold mt-2 mb-1 text-white">(888) 4000-2234</h3>
+                            <h3 className="text-2xl font-bold mt-2 mb-1 text-white">(+91) 91000-32301</h3>
 
                             {/* Subtext */}
                             <p className="text-xs text-white/80 mt-2 max-w-xs mx-auto">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
+                                Book a 30-minute discovery call with our team.
                             </p>
                         </div>
 
                         {/* Button */}
+                        <Link href={'tel:+919100032301'}>
+                       
                         <button className="bg-black text-white font-semibold mt-6 py-2 px-6 rounded-full hover:bg-white hover:text-black transition">
                             CALL NOW!
                         </button>
+                         </Link>
                     </div>
                 </div>
             </section>
@@ -577,7 +633,7 @@ export default function WebDevAd() {
 
                     {/* Right: Areas We Serve */}
                     <div className="w-full md:w-1/2 space-y-4">
-                        <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-4">Areas We Serve</h2>
+                        <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-4">Supporting Local Brands Across Hyderabad’s Key Areas</h2>
                         <p className="text-gray-900 font-poppins text-lg leading-relaxed">
                             We proudly serve clients across:
                         </p>
@@ -650,12 +706,14 @@ export default function WebDevAd() {
                 </div>
             </section>
             <CaseStudies />
+            <LogoGrid />
             <DarkFaqSection faqs={faqs} />
             <section className='bg-black p-20 mx-auto flex flex-col justify-center items-center md:flex-row '>
                 <div className="w-full mt-14 md:mt-0 flex justify-center items-center px-6">
                     <div className="space-y-5 text-white max-w-xl ">
                         <h2 className="text-4xl md:text-5xl font-sofiasanscondensed font-bold">
-                            Let’s Build You a Website That <span className='text-purple-500'>Grows Your Business</span>
+                            Ready to Work with  
+<span className='text-purple-500'> Hyderabad&apos;s Leading Web Design</span> Company?
                         </h2>
                         <p className="text-white font-poppins text-base leading-relaxed">
                             Your current website might be costing you leads, visibility, and money every single day. Let’s change that.

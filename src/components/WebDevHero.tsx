@@ -65,32 +65,27 @@ export default function WebDevHero() {
           <div className="flex flex-col mt-36 sm:justify-start md:justify-end h-full w-full md:pl-10 md:py-28 lg:pl-32 space-y-6">
 
             {/* Animated Heading */}
+
             <motion.h1
               initial={{ opacity: 0, x: -500 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
-              className="text-white font-sofiasanscondensed sm:text-center md:text-left font-semibold sm:text-[37px] md:text-[42px] lg:text-[60px] leading-tight max-w-[700px]"
+              className="text-white font-sofiasanscondensed sm:text-center md:text-left font-semibold sm:text-[37px] md:text-[42px] lg:text-[60px] mb-[-15px] leading-tight max-w-[800px]"
             >
-              We Build Websites That Do More Than Look Good — They Perform.
+              Top Web Design Services in Hyderabad Built for Leads, Sales & Growth
             </motion.h1>
-
-            <motion.h2
+            <motion.h2 className='text-white font-inter sm:text-center md:text-left font-semibold text-xl leading-tight max-w-[700px] '>
+              We build websites that do more than look good - They perform.
+            </motion.h2>
+            <motion.p
               initial={{ opacity: 0, x: -500 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.7, ease: 'easeInOut' }}
-              className="text-left text-[18px] sm:text-center md:text-left sm:text-[25px] md:text-[26px] tracking-wide font-sofiasanscondensed text-[#f3f3f5] max-w-[1000px]"
+              className="text-left text-[16px] sm:text-center md:text-left sm:text-[25px] md:text-[20px] tracking-wide font-sofiasanscondensed text-[#f3f3f5] max-w-[800px]"
             >
-              3X Faster Loading Time | Mobile Optimized | Higher Lead Conversion Rates
-            </motion.h2>
+              Your website is your digital storefront. Bixeltek builds SEO-optimized, mobile-first websites designed to attract leads and convert visitors into clients. As Hyderabad’s trusted web design company, we help healthcare clinics, ecommerce stores, and local businesses amplify online growth.            </motion.p>
 
-            <motion.h2
-              initial={{ opacity: 0, x: -500 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: 0.6, ease: 'easeInOut' }}
-              className="text-left text-[14px] sm:text-center md:text-left sm:text-[16px] md:text-[18px] tracking-wide font-poppins text-[#e7e6eb] max-w-[800px]"
-            >
-              Work With the Best Web Design and Development Company in Hyderabad That Builds to Convert.
-            </motion.h2>
+            
 
             {/* Animated Buttons */}
             <motion.div
@@ -100,11 +95,11 @@ export default function WebDevHero() {
               className="mt-8 flex flex-col md:flex-row gap-3"
             >
               <Link href="tel:+919100032301">
-              <button
-                className="w-full px-4 lg:px-8 py-3 z-50  text-sm md:text-base font-semibold border bg-white text-purple-900 border-white rounded-full hover:bg-white hover:text-black transition"
-              >
-                Call Us Now
-              </button>
+                <button
+                  className="w-full px-4 lg:px-8 py-3 z-50  text-sm md:text-base font-semibold border bg-white text-purple-900 border-white rounded-full hover:bg-white hover:text-black transition"
+                >
+                  Call Us Now
+                </button>
               </Link>
               <Link href={'/contact-us'}>
                 <button className="w-full z-50 md:w-auto px-4 lg:px-8 py-3 text-sm md:text-base font-semibold text-white group rounded-full border border-white hover:bg-white hover:text-black transition">
