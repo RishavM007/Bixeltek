@@ -161,7 +161,7 @@ export const ContactSection: React.FC = () => {
                     {/* Left Side: Info */}
                     <div className="lg:w-1/2 space-y-6 ">
                         <h2 className="text-5xl font-sofiasanscondensed font-bold text-[#ffffff]">Rank Higher. Convert Better. Grow Faster.</h2>
-                        <p className="text-gray-100 text-lg font-inter">Whether it's web design, SEO, or Google Ads — Bixeltek helps brands get seen, get leads, and get ahead.</p>
+                        <p className="text-gray-100 text-lg font-inter">Whether it&apos;s web design, SEO, or Google Ads — Bixeltek helps brands get seen, get leads, and get ahead.</p>
 
                         <div className="space-y-4">
                             <div className="flex items-center gap-4">
