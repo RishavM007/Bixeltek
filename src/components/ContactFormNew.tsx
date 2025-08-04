@@ -6,7 +6,7 @@ import { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import Image from 'next/image';
 import Aboutusimage from '@/assets/Mk power_.jpeg';
-import { PhoneCall, MessageCircle, CalendarDays } from "lucide-react"
+
 
 
 export default function ContactFromNew() {
@@ -22,7 +22,11 @@ export default function ContactFromNew() {
         country: '',
         marketingBudget: '',
         services: '',
-        message: ''
+        message: '',
+        otherservices: '',
+        websiteType: '',
+        seoGoals: '',        // 👈 for SEO
+        ppcPlatform: ''      // 👈 for PPC
     });
 
     const countries = [
@@ -121,6 +125,10 @@ export default function ContactFromNew() {
                 country: '',
                 marketingBudget: '',
                 services: '',
+                otherservices: '',
+                websiteType: '',
+                seoGoals: '',
+                ppcPlatform: '',
                 message: ''
             });
         } catch (error: any) {
@@ -132,6 +140,7 @@ export default function ContactFromNew() {
     const [isOpen1, setIsOpen1] = useState(false);
     const [isOpen2, setIsOpen2] = useState(false);
     const [isOpen4, setIsOpen4] = useState(false);
+    const [isOpen5, setIsOpen5] = useState(false);
     const [search, setSearch] = useState(""); // State for filtering
     const [filteredCountries, setFilteredCountries] = useState(countries); // Dynamic list
 
@@ -148,6 +157,10 @@ export default function ContactFromNew() {
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
     }
+    const toggleDropdown5 = () => {
+        setIsOpen5(!isOpen5);
+        setIsOpen(false)
+    }
     const handleSearch = (event: any) => {
         const query = event.target.value.toLowerCase();
         setSearch(query);
@@ -158,150 +171,105 @@ export default function ContactFromNew() {
 
 
     return (
-        <div className="max-w-[95%] p-2 bg-black mx-auto flex flex-col justify-center items-center md:flex-row   ">
-            {/* LEFT: Image */}
-            <div className="w-full md:w-1/2 mt-14 md:mt-0 flex justify-center items-center px-6">
-                <div className="space-y-5 text-white max-w-xl ">
-                    <h2 className="text-5xl md:text-6xl font-sofiasanscondensed font-bold">
-                        Let’s Build You a Website That<br/><span className='text-purple-500'>Grows Your Business</span>
-                    </h2>
-                    <p className="text-white font-poppins text-base leading-relaxed">
-                        Your current website might be costing you leads, visibility, and money every single day. Let’s change that.
-                    </p>
-                    <p className="text-white font-poppins text-base leading-relaxed">
-                        Book a free 30-minute strategy call with our Hyderabad-based team. We’ll audit your current website, identify what’s holding you back, and show you how we can fix it — fast.
-                    </p>
-                    <p className="text-white font-poppins text-base leading-relaxed">
-                        Whether you&apos;re looking to rebuild your online presence or launch a new business with a strong digital foundation, <span className="font-semibold">Bixeltek</span> is your trusted web design partner in Hyderabad.
-                    </p>
+        <div className="w-[80%] p-6 relative bg-white rounded-lg shadow-md">
 
-                    <div className="space-y-3 pt-3">
-                        <div className="flex items-center gap-2">
-                            <PhoneCall size={20} />
-                            <span className="text-white text-sm">Call: +91-XXXX-XXXXXX</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <MessageCircle size={20} />
-                            <span className="text-white text-sm">WhatsApp: Start a Chat</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <CalendarDays size={20} />
-                            <span className="text-white text-sm">
-                                Schedule a Free Consultation: <a href="#" className="underline underline-offset-2 text-blue-300 hover:text-blue-400">Book Now</a>
-                            </span>
-                        </div>
+            <form className="space-y-4" onSubmit={handleSubmit}>
+                <div className="flex flex-col md:flex-row gap-5">
+                    <div className="w-full md:w-1/2">
+                        <label htmlFor="firstName" className="text-sm font-medium text-gray-700">First Name<span className='text-red-600'>*</span></label>
+                        <input
+                            type="text"
+                            id="firstName"
+                            name="firstName"
+                            value={formData.firstName}
+                            onChange={handleInputChange}
+                            className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                            placeholder="What's your first name?"
+                        />
                     </div>
-
-                    <p className="text-sm text-gray-200 pt-3">
-                        Starting at ₹30,000 | Delivered in 7–15 Days | Built for SEO, Ads, and Conversions
-                    </p>
+                    <div className="w-full md:w-1/2">
+                        <label htmlFor="lastName" className="text-sm font-medium text-gray-700">Last Name<span className='text-red-600'>*</span></label>
+                        <input
+                            type="text"
+                            id="lastName"
+                            name="lastName"
+                            value={formData.lastName}
+                            onChange={handleInputChange}
+                            className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                            placeholder="What's your last name?"
+                        />
+                    </div>
                 </div>
-            </div>
 
-            {/* RIGHT: Form */}
-            <div></div>
-            <div className="w-full mt-10 md:mt-0 md:w-1/2 p-0 px-4 md:px-0 md:p-32 relative rounded-2xl bg-transparent">
-                <form className="space-y-4 p-10 relative rounded-2xl bg-white" onSubmit={handleSubmit}>
-                    <div className="flex flex-col md:flex-row gap-5">
-                        <div className="w-full md:w-1/2">
-                            <label htmlFor="firstName" className="text-sm font-medium text-gray-800">First Name*</label>
-                            <input
-                                type="text"
-                                id="firstName"
-                                name="firstName"
-                                value={formData.firstName}
-                                onChange={handleInputChange}
-                                className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                placeholder="What's your first name?"
-                            />
-                        </div>
-
-                        <div className="w-full md:w-1/2">
-                            <label htmlFor="lastName" className="text-sm font-medium text-gray-800">Last Name*</label>
-                            <input
-                                type="text"
-                                id="lastName"
-                                name="lastName"
-                                value={formData.lastName}
-                                onChange={handleInputChange}
-                                className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                placeholder="What's your last name?"
-                            />
-                        </div>
+                <div className="flex flex-col md:flex-row gap-5">
+                    <div className="w-full md:w-1/2">
+                        <label htmlFor="email" className="text-sm font-medium text-gray-700">Email<span className='text-red-600'>*</span></label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleInputChange}
+                            className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                            placeholder="Enter your email"
+                        />
                     </div>
-
-                    <div className="flex flex-col md:flex-row gap-5">
-                        <div className="w-full md:w-1/2">
-                            <label htmlFor="email" className="text-sm font-medium text-gray-800">Email*</label>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                value={formData.email}
-                                onChange={handleInputChange}
-                                className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                placeholder="Enter your email"
-                            />
-                        </div>
-
-                        <div className="w-full md:w-1/2">
-                            <label htmlFor="phone" className="text-sm font-medium text-gray-800">Phone Number*</label>
-                            <input
-                                type="tel"
-                                id="phone"
-                                name="phone"
-                                value={formData.phone}
-                                onChange={handleInputChange}
-                                className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                placeholder="Enter your phone number"
-                            />
-                        </div>
+                    <div className="w-full md:w-1/2">
+                        <label htmlFor="phone" className="text-sm font-medium text-gray-700">Phone Number<span className='text-red-600'>*</span></label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            value={formData.phone}
+                            onChange={handleInputChange}
+                            className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                            placeholder="Enter your phone number"
+                        />
                     </div>
+                </div>
 
-                    <div className="flex flex-col md:flex-row gap-5">
-                        <div className="w-full md:w-1/2">
-                            <label htmlFor="company" className="text-sm font-medium text-gray-800">Company*</label>
-                            <input
-                                type="text"
-                                id="company"
-                                name="company"
-                                value={formData.company}
-                                onChange={handleInputChange}
-                                className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                placeholder="Company Name"
-                            />
-                        </div>
-
-                        <div className="w-full md:w-1/2">
-                            <label htmlFor="website" className="text-sm font-medium text-gray-800">Website*</label>
-                            <input
-                                type="text"
-                                id="website"
-                                name="website"
-                                value={formData.website}
-                                onChange={handleInputChange}
-                                className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                placeholder="www.example.com"
-                            />
-                        </div>
+                <div className='flex flex-col md:flex-row gap-5'>
+                    <div className="w-full md:w-1/2">
+                        <label htmlFor="company" className="text-sm font-medium text-gray-700">Company<span className='text-red-600'>*</span></label>
+                        <input
+                            type="text"
+                            id="company"
+                            name="company"
+                            value={formData.company}
+                            onChange={handleInputChange}
+                            className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                            placeholder="Company Name"
+                        />
                     </div>
+                    <div className="w-full md:w-1/2">
+                        <label htmlFor="website" className="text-sm font-medium text-gray-700">Website <span className='text-red-600'>*</span></label>
+                        <input
+                            type="text"
+                            id="website"
+                            name="website"
+                            value={formData.website}
+                            onChange={handleInputChange}
+                            className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                            placeholder="www.example.com"
+                        />
+                    </div>
+                </div>
 
-                    <div className="flex flex-col md:flex-row gap-5">
-                        <div className="w-full md:w-1/2">
-                            <label htmlFor="country" className="text-sm font-medium text-gray-800">Country</label>
-                            <input
-                                type="text"
-                                id="country"
-                                name="country"
-                                value={formData.country}
-                                onChange={handleSearch}
-                                className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                placeholder="Type to search..."
-                                onFocus={() => setIsOpen4(true)}
-                            />
-                            {isOpen4 && (
-                                <div className="absolute z-10 mt-1 max-h-60 w-full overflow-y-auto rounded-md bg-white border border-gray-300 shadow-lg">
-                                    {filteredCountries.map((country) => (
+                <div className='flex flex-col md:flex-row gap-5'>
+                    <div className="w-full">
+                        <label htmlFor="country-dropdown" className="text-sm font-medium text-gray-700">Select Your Country</label>
+                        <input
+                            type="text"
+                            placeholder="Type to search..."
+                            value={search}
+                            onChange={handleSearch}
+                            onFocus={() => setIsOpen4(true)}
+                            className="w-full rounded-md border border-gray-300 bg-white px-4 py-3 text-sm text-gray-800 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                        />
+                        {isOpen4 && (
+                            <div className="absolute z-10 mt-2 max-h-60 w-full overflow-y-auto rounded-md bg-white border border-gray-300 shadow-lg">
+                                {filteredCountries.length > 0 ? (
+                                    filteredCountries.map((country) => (
                                         <div
                                             key={country}
                                             onClick={() => {
@@ -313,79 +281,179 @@ export default function ContactFromNew() {
                                         >
                                             {country}
                                         </div>
-                                    ))}
-                                </div>
-                            )}
-                        </div>
-
-                        <div className="w-full md:w-1/2">
-                            <label htmlFor="budget" className="text-sm font-medium text-gray-800">Marketing Budget</label>
-                            <input
-                                type="text"
-                                id="budget"
-                                name="marketingBudget"
-                                value={formData.marketingBudget}
-                                onChange={handleInputChange}
-                                className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                                placeholder="Your marketing budget?"
-                            />
-                        </div>
-                    </div>
-
-                    <div className="relative">
-                        <label className="text-sm font-medium text-gray-800">Our Services</label>
-                        <button
-                            type="button"
-                            className="mt-2 w-full flex justify-between items-center px-4 py-3 border border-gray-300 bg-white text-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                            onClick={toggleDropdown}
-                        >
-                            {formData.services || "Select a service"}
-                            <span className={`transform transition-transform ${isOpen ? 'rotate-180' : ''}`}>⌄</span>
-                        </button>
-                        {isOpen && (
-                            <div className="absolute z-10 mt-1 w-full bg-white border border-gray-300 rounded-md shadow-lg">
-                                {[
-                                    "PPC Campaigns",
-                                    "SEO Optimization",
-                                    "Social Media Management",
-                                    "Web Design and Development",
-                                    "E-commerce Solutions",
-                                    "Content Creation and Marketing",
-                                    "Advertiser Verifications",
-                                    "Other"
-                                ].map((option) => (
-                                    <div
-                                        key={option}
-                                        onClick={() => {
-                                            handleDropdownSelect("services", option);
-                                            setIsOpen(false);
-                                        }}
-                                        className="cursor-pointer px-4 py-2 text-sm text-gray-800 hover:bg-gray-100"
-                                    >
-                                        {option}
-                                    </div>
-                                ))}
+                                    ))
+                                ) : (
+                                    <div className="px-4 py-2 text-sm text-gray-500">No results found</div>
+                                )}
                             </div>
                         )}
                     </div>
+                    
+                </div>
 
-                    <textarea
-                        name="message"
-                        rows={5}
-                        value={formData.message}
-                        onChange={handleInputChange}
-                        placeholder="What are your current marketing challenges?"
-                        className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                    ></textarea>
-
+                {/* Services Dropdown */}
+                <div className="relative max-w-full inline-block text-left w-full">
                     <button
-                        type="submit"
-                        className="w-full bg-[#670ef7] text-white py-3 rounded-lg hover:bg-[#5b0cd1] transition"
+                        type="button"
+                        className="inline-flex w-full justify-between rounded-md border border-gray-300 bg-white px-4 py-3 text-sm font-medium text-gray-800 shadow-sm hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                        onClick={toggleDropdown}
                     >
-                        Submit
+                        {formData.services || 'Our Services'}
+                        <svg
+                            className={`-mr-1 ml-2 h-5 w-5 text-gray-600 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            aria-hidden="true"
+                        >
+                            <path
+                                fillRule="evenodd"
+                                d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clipRule="evenodd"
+                            />
+                        </svg>
                     </button>
-                </form>
-            </div>
+
+                    {isOpen && (
+                        <div className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-white border border-gray-300 shadow-lg ring-1 ring-black ring-opacity-5">
+                            {[
+                                "PPC Campaigns",
+                                "SEO Optimization",
+                                "Social Media Management",
+                                "Web Design and Development",
+                                "E-commerce Solutions",
+                                "Content Creation and Marketing",
+                                "Advertiser Verifications, GMB Verifications",
+                                "Other"
+                            ].map((option) => (
+                                <div
+                                    key={option}
+                                    onClick={() => {
+                                        handleDropdownSelect("services", option);
+                                        setIsOpen(false);
+                                    }}
+                                    className="cursor-pointer px-4 py-2 text-sm text-gray-800 hover:bg-gray-100"
+                                >
+                                    {option}
+                                </div>
+                            ))}
+                        </div>
+                    )}
+                </div>
+                {/* Conditional Inputs Based on Selected Service */}
+                {formData.services === 'Web Design and Development' && (
+                    <>
+            
+                    <div className="w-full">
+                            <div className="relative">
+                                <button
+                                    type="button"
+                                    className="w-full p-3 border border-gray-300 rounded-lg text-left text-gray-700 focus:ring-2 focus:ring-[#670ef7]"
+                                    onClick={toggleDropdown2}
+                                >
+                                    {formData.seoGoals || 'What kind of website do you need?'}
+                                </button>
+                                {isOpen2 && (
+                                    <div className="absolute w-full mt-1 max-h-40 overflow-y-auto border border-gray-300 bg-white rounded-lg z-10">
+                                        {[
+                                            "E-commerce Website",
+                                            "Service Based Website",
+                                            "Business Websites",
+                                            "Lead Generation Website",
+                                            "Blogging Website",
+                                            "Portfolio Website",
+                                            "Corporate Website",
+                                            
+                                        ].map((option) => (
+                                            <div
+                                                key={option}
+                                                onClick={() => {
+                                                    handleDropdownSelect("otherservices", option);
+                                                    setIsOpen5(false);
+                                                }}
+                                                className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700"
+                                            >
+                                                {option}
+                                            </div>
+                                        ))}
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+
+                        <div className="w-full">
+                            <div className="relative">
+                                <button
+                                    type="button"
+                                    className="w-full p-3 border border-gray-300 rounded-lg text-left text-gray-700 focus:ring-2 focus:ring-[#670ef7]"
+                                    onClick={toggleDropdown5}
+                                >
+                                    {formData.otherservices || 'What kind of additional services do you need?'}
+                                </button>
+                                {isOpen5 && (
+                                    <div className="absolute w-full mt-1 max-h-40 overflow-y-auto border border-gray-300 bg-white rounded-lg z-10">
+                                        {[
+                                            "Payment Gateway Integrations",
+                                            "Website Migration",
+                                            "Periodic Website Maintenance",
+                                            "On Page SEO Implementation",
+                                            "Speed Optimizations Audits",
+                                            "Ecommerce Content Management (Product Uploads Etc)",
+                                        ].map((option) => (
+                                            <div
+                                                key={option}
+                                                onClick={() => {
+                                                    handleDropdownSelect("otherservices", option);
+                                                    setIsOpen5(false);
+                                                }}
+                                                className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700"
+                                            >
+                                                {option}
+                                            </div>
+                                        ))}
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+                    </>
+                )}
+
+               
+
+                {formData.services === 'PPC Campaigns' && (
+                    <div className="w-full">
+                        <label htmlFor="budget" className="text-sm font-medium text-gray-700">Whats Your Current Ads Spend?</label>
+                        <input
+                            type="text"
+                            id="budget"
+                            name="marketingBudget"
+                            value={formData.marketingBudget}
+                            onChange={handleInputChange}
+                            className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                            placeholder="What is your marketing budget?"
+                        />
+                    </div>
+                )}
+
+
+                {/* Message box */}
+                <textarea
+                    name="message"
+                    rows={5}
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    placeholder="What are your current marketing challenges?"
+                    className="w-full p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                ></textarea>
+
+                {/* Submit Button */}
+                <button
+                    type="submit"
+                    className="w-full bg-[#670ef7] text-white py-3 rounded-lg hover:bg-[#5b0cd1] transition"
+                >
+                    Submit
+                </button>
+            </form>
         </div>
 
     )

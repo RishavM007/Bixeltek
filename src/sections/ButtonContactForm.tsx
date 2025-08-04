@@ -352,7 +352,7 @@ export const ButtonContactForm: React.FC<ContactFormProps> = ({ isVisible, onClo
                                  "E-commerce Solutions",
                                  "Content Creation and Marketing",
                                  "Advertiser Verifications, GMB Verifications",
-                                 "other"
+                                 "Other"
                                     ].map((option) => (
                                         <div
                                             key={option}

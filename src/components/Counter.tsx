@@ -77,36 +77,35 @@ export default function Counter() {
                                <div className="text-left">
                                    <Counter end={250} />
                                    <p className="bg-black text-white px-4 py-2 rounded-md inline-block font-semibold text-sm mt-2">
-                                       Project Complete
+                                       Projects Completed
                                    </p>
-                                   <p className="text-sm mt-2">Completing a mobile <br /> application development</p>
                                </div>
    
                                {/* Stat 2 */}
                                <div className="text-left">
-                                   <Counter end={1000} />
+                                   <Counter end={250} />
                                    <p className="bg-black text-white px-4 py-2 rounded-md inline-block font-semibold text-sm mt-2">
                                        Happy Customers
                                    </p>
-                                   <p className="text-sm mt-2">Completing a mobile <br /> application development</p>
+                                   
                                </div>
    
                                {/* Stat 3 */}
                                <div className="text-left">
-                                   <Counter end={10} />
+                                   <Counter end={15} />
                                    <p className="bg-black text-white px-4 py-2 rounded-md inline-block font-semibold text-sm mt-2">
                                        Years Of Experience
                                    </p>
-                                   <p className="text-sm mt-2">Completing a mobile <br /> application development</p>
+                                   
                                </div>
    
                                {/* Stat 4 */}
                                <div className="text-left">
-                                   <Counter end={99} />
+                                   <Counter end={100} />
                                    <p className="bg-black text-white px-4 py-2 rounded-md inline-block font-semibold text-sm mt-2">
                                        Client Satisfaction
                                    </p>
-                                   <p className="text-sm mt-2">Maintaining top-tier <br /> service quality</p>
+                                   
                                </div>
                            </div>
                        </div>

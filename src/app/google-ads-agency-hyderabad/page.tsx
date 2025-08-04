@@ -25,10 +25,12 @@ import {
     FiMonitor
 } from "react-icons/fi";
 import AdsFailureSection from '@/components/GaSection2';
+import { PhoneCall, MessageCircle, CalendarDays } from "lucide-react"
 import Image from 'next/image';
 import pet from "@/assets/sincerely-media-VNsdEl1gORk-unsplash.jpg";
 import school from '@/assets/school.jpg'
 import roofing from "@/assets/digital marketing for roofing industries.jpg";
+import ContactFromNew from '@/components/ContactFormNew'
 import { FaTooth, FaHospital, FaDog, FaGasPump, FaCar, FaBroom, FaGraduationCap, FaBuilding, FaTree, FaSeedling } from "react-icons/fa";
 import dental from "@/assets/digital marketing for health care practices.jpg";
 import { RiShoppingCartFill } from "react-icons/ri";
@@ -762,6 +764,49 @@ export default function Home() {
                 </div>
             </section>
             <LightFaqSection faqs={faqs} />
+            <section className='bg-black p-20 mx-auto flex flex-col justify-center items-center md:flex-row '>
+                <div className="w-full mt-14 md:mt-0 flex justify-center items-center px-6">
+                    <div className="space-y-5 text-white max-w-xl ">
+                        <h2 className="text-5xl md:text-6xl font-sofiasanscondensed font-bold">
+                            Let’s Build You a Website That<br /><span className='text-purple-500'>Grows Your Business</span>
+                        </h2>
+                        <p className="text-white font-poppins text-base leading-relaxed">
+                            Your current website might be costing you leads, visibility, and money every single day. Let’s change that.
+                        </p>
+                        <p className="text-white font-poppins text-base leading-relaxed">
+                            Book a free 30-minute strategy call with our Hyderabad-based team. We’ll audit your current website, identify what’s holding you back, and show you how we can fix it — fast.
+                        </p>
+                        <p className="text-white font-poppins text-base leading-relaxed">
+                            Whether you&apos;re looking to rebuild your online presence or launch a new business with a strong digital foundation, <span className="font-semibold">Bixeltek</span> is your trusted web design partner in Hyderabad.
+                        </p>
+
+                        <div className="space-y-3 pt-3">
+                            <div className="flex items-center gap-2">
+                                <PhoneCall size={20} />
+                                <span className="text-white text-sm">Call: +91-XXXX-XXXXXX</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <MessageCircle size={20} />
+                                <span className="text-white text-sm">WhatsApp: Start a Chat</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <CalendarDays size={20} />
+                                <span className="text-white text-sm">
+                                    Schedule a Free Consultation: <a href="#" className="underline underline-offset-2 text-blue-300 hover:text-blue-400">Book Now</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <p className="text-sm text-gray-200 pt-3">
+                            Starting at ₹30,000 | Delivered in 7–15 Days | Built for SEO, Ads, and Conversions
+                        </p>
+                    </div>
+                </div>
+                <div className='w-full flex justify-center items-center'>
+                    <ContactFromNew />
+                </div>
+            </section>
+
         </>
     );
 }

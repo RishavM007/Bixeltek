@@ -18,14 +18,14 @@ export default function DarkFaqSection({ faqs }: FaqSectionProps) {
   };
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-14 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
           <div className="w-full lg:w-full">
             <div className="lg:max-w-full">
               <h6 className="text-lg text-center font-medium text-indigo-500 mb-2">FAQs</h6>
               <h2 className="text-5xl text-center font-sofiasanscondensed font-bold text-black mb-5">
-                Looking for answers?
+                Still Got Questions?
               </h2>
               <div className="space-y-4">
                 {faqs.map((faq, index) => (

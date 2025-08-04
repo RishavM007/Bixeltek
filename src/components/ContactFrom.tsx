@@ -6,7 +6,7 @@ import { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 
 export default function ContactFrom() {
-    
+
     const router = useRouter();
     const [formData, setFormData] = useState({
         firstName: '',
@@ -18,7 +18,11 @@ export default function ContactFrom() {
         country: '',
         marketingBudget: '',
         services: '',
-        message: ''
+        message: '',
+        otherservices: '',
+        websiteType: '',
+        seoGoals: '',        // 👈 for SEO
+        ppcPlatform: ''      // 👈 for PPC
     });
 
     const countries = [
@@ -86,7 +90,7 @@ export default function ContactFrom() {
         ) {
             // alert("Please fill in all required fields.");
             toast.error("Please fill in all required fields.")
-            
+
             return;
         }
         try {
@@ -101,10 +105,10 @@ export default function ContactFrom() {
             if (!response.ok) throw new Error(result.error || 'Failed to send message.');
 
             toast.success('Thank you for filling the form!')
-           
-            window.setTimeout(()=>{ 
+
+            window.setTimeout(() => {
                 router.push('/thank-you'); // Redirect to thank you page
-            },3000)
+            }, 3000)
 
             console.log("API Response:", result); // Debugging
             setFormData({
@@ -117,7 +121,11 @@ export default function ContactFrom() {
                 country: '',
                 marketingBudget: '',
                 services: '',
-                message: ''
+                message: '',
+                otherservices: '',
+                websiteType: '',
+                seoGoals: '',        // 👈 for SEO
+                ppcPlatform: ''      // 👈 for PPC
             });
         } catch (error: any) {
             console.error("Error submitting form:", error);
@@ -128,6 +136,7 @@ export default function ContactFrom() {
     const [isOpen1, setIsOpen1] = useState(false);
     const [isOpen2, setIsOpen2] = useState(false);
     const [isOpen4, setIsOpen4] = useState(false);
+    const [isOpen5, setIsOpen5] = useState(false);
     const [search, setSearch] = useState(""); // State for filtering
     const [filteredCountries, setFilteredCountries] = useState(countries); // Dynamic list
 
@@ -140,6 +149,10 @@ export default function ContactFrom() {
 
     const toggleDropdown2 = () => {
         setIsOpen2(!isOpen2);
+    }
+    const toggleDropdown5 = () => {
+        setIsOpen5(!isOpen5);
+        setIsOpen(false)
     }
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
@@ -154,31 +167,31 @@ export default function ContactFrom() {
 
 
     return (
-        <div className="w-[95%] md:w-1/2 p-6 relative bg-[#1a1a1a] rounded-lg">
+        <div className="w-[95%] md:w-1/2 p-6 relative bg-white rounded-lg shadow-md">
+            
             <form className="space-y-4" onSubmit={handleSubmit}>
                 <div className="flex flex-col md:flex-row gap-5">
                     <div className="w-full md:w-1/2">
-                        <label htmlFor="firstName" className="text-sm font-medium text-gray-50">First Name*</label>
+                        <label htmlFor="firstName" className="text-sm font-medium text-gray-700">First Name*</label>
                         <input
                             type="text"
                             id="firstName"
                             name="firstName"
                             value={formData.firstName}
                             onChange={handleInputChange}
-                            className="w-full input-field mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                            className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                             placeholder="What's your first name?"
                         />
                     </div>
-
                     <div className="w-full md:w-1/2">
-                        <label htmlFor="lastName" className="text-sm font-medium text-gray-50">Last Name*</label>
+                        <label htmlFor="lastName" className="text-sm font-medium text-gray-700">Last Name*</label>
                         <input
                             type="text"
                             id="lastName"
                             name="lastName"
                             value={formData.lastName}
                             onChange={handleInputChange}
-                            className="w-full input-field mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                            className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                             placeholder="What's your last name?"
                         />
                     </div>
@@ -186,27 +199,26 @@ export default function ContactFrom() {
 
                 <div className="flex flex-col md:flex-row gap-5">
                     <div className="w-full md:w-1/2">
-                        <label htmlFor="email" className="text-sm font-medium text-gray-50">Email*</label>
+                        <label htmlFor="email" className="text-sm font-medium text-gray-700">Email*</label>
                         <input
                             type="email"
                             id="email"
                             name="email"
                             value={formData.email}
                             onChange={handleInputChange}
-                            className="w-full input-field mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                            className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                             placeholder="Enter your email"
                         />
                     </div>
-
                     <div className="w-full md:w-1/2">
-                        <label htmlFor="phone" className="text-sm font-medium text-gray-50">Phone Number*</label>
+                        <label htmlFor="phone" className="text-sm font-medium text-gray-700">Phone Number*</label>
                         <input
                             type="tel"
                             id="phone"
                             name="phone"
                             value={formData.phone}
                             onChange={handleInputChange}
-                            className="w-full input-field mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                            className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                             placeholder="Enter your phone number"
                         />
                     </div>
@@ -214,104 +226,88 @@ export default function ContactFrom() {
 
                 <div className='flex flex-col md:flex-row gap-5'>
                     <div className="w-full md:w-1/2">
-                        <label htmlFor="company" className="text-sm font-medium text-gray-50">Company*</label>
+                        <label htmlFor="company" className="text-sm font-medium text-gray-700">Company*</label>
                         <input
                             type="text"
                             id="company"
                             name="company"
                             value={formData.company}
                             onChange={handleInputChange}
-                            className="w-full input-field mt-2 p-3 border-b border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                            className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                             placeholder="Company Name"
                         />
                     </div>
-
                     <div className="w-full md:w-1/2">
-                        <label htmlFor="website" className="text-sm font-medium text-gray-50">Website*</label>
+                        <label htmlFor="website" className="text-sm font-medium text-gray-700">Website*</label>
                         <input
                             type="text"
                             id="website"
                             name="website"
                             value={formData.website}
                             onChange={handleInputChange}
-                            className="w-full input-field mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                            className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                             placeholder="www.example.com"
                         />
                     </div>
                 </div>
 
-                <div className='relative max-w-full flex flex-col md:flex-row gap-4'>
-                    <div className="flex flex-col w-full md:w-1/2 gap-2">
-                        {/* Label for the dropdown */}
-                        <label htmlFor="country-dropdown" className="text-sm font-medium text-gray-300">
-                            Select Your Country
-                        </label>
-
-                        <div className="relative w-full max-w-md">
-                            {/* Search Input */}
-                            <input
-                                type="text"
-                                placeholder="Type to search..."
-                                value={search}
-                                onChange={handleSearch}
-                                onFocus={() => setIsOpen4(true)} // Show dropdown when typing
-                                className="w-full rounded-md border border-gray-600 bg-black px-4 py-3 text-sm text-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                            />
-
-                            {/* Dropdown */}
-                            {isOpen4 && (
-                                <div
-                                    className="absolute z-10 mt-2 max-h-60 w-full overflow-y-auto rounded-md bg-black border border-gray-700 shadow-lg"
-                                    role="menu"
-                                >
-                                    {filteredCountries.length > 0 ? (
-                                        filteredCountries.map((country) => (
-                                            <div
-                                                key={country}
-                                                onClick={() => {
-                                                    handleDropdownSelect("country", country);
-                                                    setIsOpen4(false);
-                                                    setSearch(country); // Set the selected value
-                                                }}
-                                                className="cursor-pointer px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
-                                            >
-                                                {country}
-                                            </div>
-                                        ))
-                                    ) : (
-                                        <div className="px-4 py-2 text-sm text-gray-500">No results found</div>
-                                    )}
-                                </div>
-                            )}
-                        </div>
-                    </div>
-
-
+                <div className='flex flex-col md:flex-row gap-5'>
                     <div className="w-full md:w-1/2">
-                        <label htmlFor="budget" className="text-sm font-medium text-gray-300">Marketing Budget</label>
+                        <label htmlFor="country-dropdown" className="text-sm font-medium text-gray-700">Select Your Country</label>
+                        <input
+                            type="text"
+                            placeholder="Type to search..."
+                            value={search}
+                            onChange={handleSearch}
+                            onFocus={() => setIsOpen4(true)}
+                            className="w-full rounded-md border border-gray-300 bg-white px-4 py-3 text-sm text-gray-800 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                        />
+                        {isOpen4 && (
+                            <div className="absolute z-10 mt-2 max-h-60 w-full overflow-y-auto rounded-md bg-white border border-gray-300 shadow-lg">
+                                {filteredCountries.length > 0 ? (
+                                    filteredCountries.map((country) => (
+                                        <div
+                                            key={country}
+                                            onClick={() => {
+                                                handleDropdownSelect("country", country);
+                                                setIsOpen4(false);
+                                                setSearch(country);
+                                            }}
+                                            className="cursor-pointer px-4 py-2 text-sm text-gray-800 hover:bg-gray-100"
+                                        >
+                                            {country}
+                                        </div>
+                                    ))
+                                ) : (
+                                    <div className="px-4 py-2 text-sm text-gray-500">No results found</div>
+                                )}
+                            </div>
+                        )}
+                    </div>
+                    <div className="w-full md:w-1/2">
+                        <label htmlFor="budget" className="text-sm font-medium text-gray-700">Marketing Budget</label>
                         <input
                             type="text"
                             id="budget"
                             name="marketingBudget"
                             value={formData.marketingBudget}
                             onChange={handleInputChange}
-                            className="w-full input-field mt-2 p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                            className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                             placeholder="What is your marketing budget?"
                         />
                     </div>
                 </div>
+
+                {/* Services Dropdown */}
                 <div className="relative max-w-full inline-block text-left w-full">
                     <button
                         type="button"
-                        className="inline-flex w-full justify-between rounded-md border border-gray-600 bg-black px-4 py-3 text-sm font-medium text-gray-300 shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
-                        id="menu-button"
-                        aria-expanded={isOpen}
-                        aria-haspopup="true"
+                        className="inline-flex w-full justify-between rounded-md border border-gray-300 bg-white px-4 py-3 text-sm font-medium text-gray-800 shadow-sm hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                         onClick={toggleDropdown}
                     >
                         {formData.services || 'Our Services'}
                         <svg
-                            className={`-mr-1 ml-2 h-5 w-5 text-gray-300 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+                            className={`-mr-1 ml-2 h-5 w-5 text-gray-600 transition-transform ${isOpen ? 'rotate-180' : ''}`}
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 20 20"
                             fill="currentColor"
@@ -325,18 +321,17 @@ export default function ContactFrom() {
                         </svg>
                     </button>
 
-                    {/* Dropdown menu */}
                     {isOpen && (
-                        <div className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-black border border-gray-600 shadow-lg ring-1 ring-black ring-opacity-5">
+                        <div className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-white border border-gray-300 shadow-lg ring-1 ring-black ring-opacity-5">
                             {[
-                                 "PPC Campaigns",
-                                 "SEO Optimization",
-                                 "Social Media Management",
-                                 "Web Design and Development",
-                                 "E-commerce Solutions",
-                                 "Content Creation and Marketing",
-                                 "Advertiser Verifications, GMB Verifications",
-                                 "other"
+                                "PPC Campaigns",
+                                "SEO Optimization",
+                                "Social Media Management",
+                                "Web Design and Development",
+                                "E-commerce Solutions",
+                                "Content Creation and Marketing",
+                                "Advertiser Verifications, GMB Verifications",
+                                "other"
                             ].map((option) => (
                                 <div
                                     key={option}
@@ -344,7 +339,7 @@ export default function ContactFrom() {
                                         handleDropdownSelect("services", option);
                                         setIsOpen(false);
                                     }}
-                                    className="cursor-pointer px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white"
+                                    className="cursor-pointer px-4 py-2 text-sm text-gray-800 hover:bg-gray-100"
                                 >
                                     {option}
                                 </div>
@@ -352,14 +347,94 @@ export default function ContactFrom() {
                         </div>
                     )}
                 </div>
+                {/* Conditional Inputs Based on Selected Service */}
+                {formData.services === 'Web Design and Development' && (
+                    <>
+                        
+                        <div className="w-full">
+                            <div className="relative">
+                                <button
+                                    type="button"
+                                    className="w-full p-3 border border-gray-300 rounded-lg text-left text-gray-700 focus:ring-2 focus:ring-[#670ef7]"
+                                    onClick={toggleDropdown5}
+                                >
+                                    {formData.otherservices || 'What kind of website do you need?'}
+                                </button>
+                                {isOpen5 && (
+                                    <div className="absolute w-full mt-1 max-h-40 overflow-y-auto border border-gray-300 bg-white rounded-lg z-10">
+                                        {[
+                                            "E-commerce Website",
+                                            "Service Based Website",
+                                            "Business Websites",
+                                            "Lead Generation Website",
+                                            "Blogging Website",
+                                            "PortFolio Website",
+                                            "Corporate Website",
+                                            "Payment Gateway Integrations",
+                                            "Website Migration",
+                                            "Periodic Website Maintenance",
+                                            "On Page SEO Implementation",
+                                            "Speed Optimizations Audits",
+                                            "Ecommerce Content Management (Product Uploads Etc)",
+                                        ].map((option) => (
+                                            <div
+                                                key={option}
+                                                onClick={() => {
+                                                    handleDropdownSelect("otherservices", option);
+                                                    setIsOpen5(false);
+                                                }}
+                                                className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700"
+                                            >
+                                                {option}
+                                            </div>
+                                        ))}
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+                    </>
+                )}
+
+                {formData.services === 'SEO Optimization' && (
+                    <div className="mt-4">
+                        <label className="text-sm font-medium text-gray-700">What are your primary keywords or goals?</label>
+                        <input
+                            type="text"
+                            name="seoGoals"
+                            value={formData.seoGoals || ''}
+                            onChange={handleInputChange}
+                            placeholder="e.g. Rank for ‘Best bakery in Mumbai’"
+                            className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                        />
+                    </div>
+                )}
+
+                {formData.services === 'PPC Campaigns' && (
+                    <div className="mt-4">
+                        <label className="text-sm font-medium text-gray-700">Which platform do you want to target?</label>
+                        <input
+                            type="text"
+                            name="ppcPlatform"
+                            value={formData.ppcPlatform || ''}
+                            onChange={handleInputChange}
+                            placeholder="e.g. Google Ads, Facebook Ads"
+                            className="w-full mt-2 p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                        />
+                    </div>
+                )}
+
+
+                {/* Message box */}
                 <textarea
                     name="message"
                     rows={5}
                     value={formData.message}
                     onChange={handleInputChange}
-                    placeholder="What are your current maketing challenges?"
-                    className="w-full p-3 border border-gray-600 bg-black text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
+                    placeholder="What are your current marketing challenges?"
+                    className="w-full p-3 border border-gray-300 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                 ></textarea>
+
+                {/* Submit Button */}
                 <button
                     type="submit"
                     className="w-full bg-[#670ef7] text-white py-3 rounded-lg hover:bg-[#5b0cd1] transition"
@@ -368,5 +443,6 @@ export default function ContactFrom() {
                 </button>
             </form>
         </div>
+
     )
 }
