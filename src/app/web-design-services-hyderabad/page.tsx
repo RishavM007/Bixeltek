@@ -180,18 +180,18 @@ export default function WebDevAd() {
                     <div className="grid md:grid-cols-2 gap-10 items-start mb-16">
                         {/* Text Content */}
                         <div>
-                            <h2 className="text-4xl font-inter md:text-5xl font-bold  leading-tight mb-4">
+                            <h2 className="text-3xl font-inter md:text-5xl font-bold  leading-tight mb-4">
                                 What’s Wrong With Most <span className="text-purple-600">Business Websites</span> in Hyderabad
                             </h2>
                             <p className="text-gray-800 text-base mb-4">
-                               Most websites fail for one simple reason: they aren’t designed to solve business problems. They look decent on a desktop but break on mobile. They have flashy visuals but no clear call to action. And worse, they don’t show up on Google — even when people are searching for the exact service you offer.
+                                Most websites fail for one simple reason: they aren’t designed to solve business problems. They look decent on a desktop but break on mobile. They have flashy visuals but no clear call to action. And worse, they don’t show up on Google — even when people are searching for the exact service you offer.
                             </p>
                             <p className="text-gray-800 text-base mb-4">
-                               If this sounds like your website, you’re not alone. We’ve worked with dozens of business owners across Hyderabad who were frustrated that their website wasn’t doing its job. They were spending money on ads and not getting leads. Losing customers to competitors with better search rankings. And watching visitors land on their site, only to leave without taking any action.
+                                If this sounds like your website, you’re not alone. We’ve worked with dozens of business owners across Hyderabad who were frustrated that their website wasn’t doing its job. They were spending money on ads and not getting leads. Losing customers to competitors with better search rankings. And watching visitors land on their site, only to leave without taking any action.
 
                             </p>
                             <p className="text-gray-800 text-base">
-                               These are not design problems — they are growth problems. And that’s exactly what Bixeltek solves.
+                                These are not design problems — they are growth problems. And that’s exactly what Bixeltek solves.
                             </p>
                         </div>
 
@@ -281,7 +281,7 @@ export default function WebDevAd() {
 
                     {/* Right Problem Cards */}
                     <div className="max-w-5xl mx-auto px-4">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold font-inter leading-tight mb-4">
+                        <h2 className="text-4xl md:text-4xl lg:text-5xl font-semibold font-inter leading-tight mb-4">
                             Common Problems with Website Design in Hyderabad
                         </h2>
                         <h3 className='text-xl md:text-xl font-semibold font-inter mt-4 mb-5'>
@@ -308,13 +308,13 @@ export default function WebDevAd() {
             <section className="bg-gradient-to-r from-white to-purple-50 py-6 md:py-16 px-6 md:px-0">
                 <div className=" w-full mx-auto flex flex-col md:flex-row justify-between gap-5 md:gap-20 items-center">
                     {/* Left Image with Blue Background */}
-                    <div className="relative w-full md:w-1/3 h-80vh bg-purple-100 rounded-r-3xl overflow-visible flex items-center justify-center p-6 md:p-12">
+                    <div className="relative w-full md:w-1/3 h-80vh bg-transparent md:bg-purple-100 rounded-r-3xl overflow-visible flex items-center justify-center p-6 md:p-12">
                         <Image src={hyderabad} alt='' className='h-[400px] object-cover translate-x-0 md:translate-x-52 rounded-2xl'></Image>
                     </div>
                     {/* Right Content */}
                     <div className='w-full md:w-2/3 py-20 px-2 md:px-40'>
-                        <p className="text-purple-600 text-sm font-semibold uppercase mb-3">Why Choose Us</p>
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold font-inter leading-tight mb-4">
+                        {/* <p className="text-purple-600 text-sm font-semibold uppercase mb-3">Why Choose Us</p> */}
+                        <h2 className="text-4xl md:text-4xl lg:text-5xl font-semibold font-inter leading-tight mb-4">
                             Custom Websites Tailored for <br />
                             <span className="underline decoration-purple-600 underline-offset-4">Hyderabad’s Top Industries</span>
                         </h2>
@@ -340,10 +340,22 @@ export default function WebDevAd() {
                         <p className="text-gray-700 text-base mb-6">
                             We serve businesses across healthcare, education, ecommerce, real estate, consulting, home services, restaurants, non-profits, and more.
                         </p>
-
-                        <button className="inline-flex items-center gap-2 bg-purple-600 text-white px-5 py-3 rounded-full font-semibold hover:bg-purple-700 transition text-sm">
+                            <div className='flex flex-row gap-6'>
+                                <Link href={'#form'}>
+                                <button className="inline-flex items-center gap-2 bg-purple-600 text-white px-5 py-3 rounded-full font-semibold hover:bg-purple-700 transition text-sm">
                             Get in Touch <ArrowUpRight className="w-4 h-4" />
                         </button>
+                                </Link>
+                                
+                                <Link href={'tel:+919100032301'}>
+<button className="inline-flex items-center gap-2 bg-white text-purple-500 px-5 py-3 rounded-full border border-purple-500 font-semibold hover:bg-purple-700 hover:text-white transition text-sm">
+                            Call Us <ArrowUpRight className="w-4 h-4" />
+                        </button>
+                                </Link>
+                                
+
+                            </div>
+                        
                     </div>
                 </div>
             </section>
@@ -408,7 +420,7 @@ export default function WebDevAd() {
             </section> */}
 
 
-            <section className="pt-14 pb-24 px-6 md:px-16 bg-white text-center">
+            <section className="pt-14 pb-0 md:pb-24 px-6 md:px-16 bg-white text-center">
                 <p className="text-sm text-purple-500 font-semibold uppercase mb-2">WHAT YOU GET</p>
                 <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-4 max-w-6xl mx-auto">
                     Everything You Get with Our Web Design Services in Hyderabad
@@ -439,7 +451,7 @@ export default function WebDevAd() {
                 </p>
             </section>
             <ServicesSection />
-            
+
             <section className="pt-48 pb-16 bg-white">
                 <div className="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
                     {/* Left: Image with overlay chart */}
@@ -465,8 +477,8 @@ export default function WebDevAd() {
                             Why Choose Us
                         </p>
                         <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-                            Why Bixeltek is the  
- <span className="text-purple-600"> Best Web Design Agency </span>in Hyderabad
+                            Why Bixeltek is the
+                            <span className="text-purple-600"> Best Web Design Agency </span>in Hyderabad
                         </h2>
                         <p className="text-gray-600 mb-6 leading-relaxed">
                             Bixeltek isn’t a freelancer network. We’re a full-service digital marketing agency with in-house designers, developers, SEO specialists, and strategists — all under one roof. We’re Google Partner Certified, and we’ve helped 100+ businesses across India, Canada, the US, and the Middle East scale online.
@@ -593,7 +605,7 @@ export default function WebDevAd() {
                             </div>
 
                             {/* Title */}
-                          
+
 
                             {/* Phone Number */}
                             <h3 className="text-2xl font-bold mt-2 mb-1 text-white">(+91) 91000-32301</h3>
@@ -606,11 +618,11 @@ export default function WebDevAd() {
 
                         {/* Button */}
                         <Link href={'tel:+919100032301'}>
-                       
-                        <button className="bg-black text-white font-semibold mt-6 py-2 px-6 rounded-full hover:bg-white hover:text-black transition">
-                            CALL NOW!
-                        </button>
-                         </Link>
+
+                            <button className="bg-black text-white font-semibold mt-6 py-2 px-6 rounded-full hover:bg-white hover:text-black transition">
+                                CALL NOW!
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -652,7 +664,7 @@ export default function WebDevAd() {
 
                 </div>
             </div>
-            <section className='w-full flex flex-wrap sm:max-w-[90%] md:max-w-[85%] mx-auto lg:flex-nowrap overflow-y-hidden items-center justify-center py-20 gap-10'>
+            <section className='w-full flex  flex-wrap sm:max-w-[90%] md:max-w-[85%] mx-auto lg:flex-nowrap overflow-y-hidden items-center justify-center py-20 gap-10'>
                 {/* Left Content Section */}
                 <div className='w-full lg:w-1/2 px-1 md:px-6 py-10 lg:py-14'>
                     <h2 className="text-4xl md:text-5xl font-semibold font-sofiasanscondensed text-black">
@@ -675,9 +687,9 @@ export default function WebDevAd() {
                         ))}
                     </div>
                     <div className="flex flex-wrap gap-4 mt-10">
-                        <Link href="/casestudies-bixeltek/Tumblewash-Casestudy" target="_blank">
+                        <Link href="tel:+919100032301" target="_blank">
                             <button className="px-6 py-3 border border-white bg-black text-white rounded-md hover:bg-white hover:text-black hover:border-black hover:ring-1 transition">
-                                Get A Quote
+                                Get A Custom Website
                             </button>
                         </Link>
 
@@ -689,7 +701,7 @@ export default function WebDevAd() {
                     </div>
 
                 </div>
-                <div className="flex w-full lg:w-2/5 items-center justify-center gap-4 p-20 md:p-1">
+                <div className="flex w-full lg:w-2/5 items-center justify-center gap-4 p-2 md:p-1">
                     <div className='w-1/3 flex flex-col  items-center justify-center gap-3'>
                         <Image src={healthcare} alt='healthcare' className='rounded-xl'></Image>
                         <Image src={oil} alt='oil' className='rounded-xl'></Image>
@@ -708,12 +720,12 @@ export default function WebDevAd() {
             <CaseStudies />
             <LogoGrid />
             <DarkFaqSection faqs={faqs} />
-            <section className='bg-black p-20 mx-auto flex flex-col justify-center items-center md:flex-row '>
+            <section className='bg-black p-2 md:p-20 mx-auto flex flex-col justify-center gap-10 items-center md:flex-row ' id='form'>
                 <div className="w-full mt-14 md:mt-0 flex justify-center items-center px-6">
                     <div className="space-y-5 text-white max-w-xl ">
                         <h2 className="text-4xl md:text-5xl font-sofiasanscondensed font-bold">
-                            Ready to Work with  
-<span className='text-purple-500'> Hyderabad&apos;s Leading Web Design</span> Company?
+                            Ready to Work with
+                            <span className='text-purple-500'> Hyderabad&apos;s Leading Web Design</span> Company?
                         </h2>
                         <p className="text-white font-poppins text-base leading-relaxed">
                             Your current website might be costing you leads, visibility, and money every single day. Let’s change that.
@@ -756,7 +768,7 @@ export default function WebDevAd() {
                         </p>
                     </div>
                 </div>
-                <div className='w-full flex justify-center items-center' id='form'>
+                <div className='w-full flex justify-center items-center' >
                     <ContactFromNew />
                 </div>
             </section>

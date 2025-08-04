@@ -56,7 +56,7 @@ export default function WebDevHero() {
   return (
     <>
       <div
-        className="relative sm:h-[100vh] md:h-[120vh] -mt-32 bg-cover bg-center flex flex-col items-center bg-[url('/abstract-flowing-neon-wave-background.jpg')]"
+        className="relative sm:h-[80vh] md:h-[120vh] -mt-32 bg-cover bg-center flex flex-col items-center bg-[url('/abstract-flowing-neon-wave-background.jpg')]"
       >
         <ContactForm isVisible={showContactForm} onClose={() => setShowContactForm(false)} />
         <div className="absolute bottom-0 left-0 w-full z-30 sm:h-[100px] md:h-[300px] bg-gradient-to-t from-black to-transparent"></div>
@@ -81,7 +81,7 @@ export default function WebDevHero() {
               initial={{ opacity: 0, x: -500 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.7, ease: 'easeInOut' }}
-              className="text-left text-[16px] sm:text-center md:text-left sm:text-[25px] md:text-[20px] tracking-wide font-sofiasanscondensed text-[#f3f3f5] max-w-[800px]"
+              className="text-left text-[16px] hidden md:block sm:text-center md:text-left sm:text-[25px] md:text-[20px] tracking-wide font-sofiasanscondensed text-[#f3f3f5] max-w-[800px]"
             >
               Your website is your digital storefront. Bixeltek builds SEO-optimized, mobile-first websites designed to attract leads and convert visitors into clients. As Hyderabad’s trusted web design company, we help healthcare clinics, ecommerce stores, and local businesses amplify online growth.            </motion.p>
 

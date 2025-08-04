@@ -82,15 +82,15 @@ export default function ServicesSection() {
 
     >
       <div className="max-w-7xl mx-auto text-center text-white">
-        <h3 className="text-sm uppercase tracking-widest text-pink-400 font-semibold mb-2">
+        {/* <h3 className="text-sm uppercase tracking-widest text-purple-500 font-semibold mb-2">
           Why Choose Us
-        </h3>
+        </h3> */}
         <h2 className="text-4xl md:text-5xl font-inter text-black font-bold mb-10">
           How We Help Your Business <br className="hidden md:block" />
           Grow and Succeed
         </h2>
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
             <div
               key={index}

@@ -23,8 +23,8 @@ const StepCards = () => {
           style={
             isDesktop
               ? {
-                  transform: `translate(${i * 150}px, ${i * -20}px)`
-                }
+                transform: `translate(${i * 150}px, ${i * -20}px)`
+              }
               : {}
           }
           className="relative z-10 p-10 rounded-xl bg-white border border-gray-400 w-72 transition-transform duration-500"
@@ -33,15 +33,16 @@ const StepCards = () => {
             0{i + 1} Step
           </div>
           <div className="text-2xl font-sofiasanscondensed font-semibold text-gray-900">
-            {['Initial Consultation', 'Data Analysis', 'Strategy Development'][i]}
+            {['Project Kickoff', 'Design & Prototyping', 'Development & Deployment'][i]}
           </div>
           <p className="mt-2 text-sm text-gray-600">
             {[
-              'Introduction between consultant and the client. Understand the client’s financial situation.',
-              'Analyze cash flow, expenses, debts, assets, liabilities, and financial ratios. Identify potential risks.',
-              'Work with the client to set short-term and long-term financial goals, retirement planning, debt.',
+              'Initial meeting with the client to understand project requirements, target audience, and core objectives.',
+              'Create wireframes and design mockups using tools like Figma. Collaborate with the client for feedback and approval.',
+              'Build the website using the chosen tech stack. Perform testing, optimize performance, and deploy to production.',
             ][i]}
           </p>
+
         </div>
       ))}
     </div>

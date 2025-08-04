@@ -48,7 +48,7 @@ export default function CaseStudies() {
   return (
     <section className=" max-w-7xl mx-auto pt-16 pb-32">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center mb-10">
+        <div className="flex flex-col md:flex-row justify-between items-start gap-4 mb-10">
           <div>
             <p className="text-sm font-medium text-purple-600 uppercase tracking-wide">
               Our Case Studies
