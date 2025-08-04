@@ -9,7 +9,7 @@
 
 /* Target the scrollbar track (background) */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 7px;
   background-color: black; /* Background of the scroll track */
 }
 
