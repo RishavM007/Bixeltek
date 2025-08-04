@@ -164,7 +164,7 @@ export const ContactSection: React.FC = () => {
                         <p className="text-gray-100 text-lg font-inter">Whether it&apos;s web design, SEO, or Google Ads — Bixeltek helps brands get seen, get leads, and get ahead.</p>
 
                         <div className="space-y-4">
-                            <div className="flex items-center gap-4">
+                            <div className="flex items-center gap-3">
                                 <FaPhoneAlt className="text-[#670ef7]" />
                                 <a href="tel:+919100032301">
                                     <span>+91 91000 32301</span>
