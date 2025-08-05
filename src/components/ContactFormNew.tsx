@@ -351,7 +351,7 @@ export default function ContactFromNew() {
                                     className="w-full p-3 border border-gray-300 rounded-lg text-left text-gray-700 focus:ring-2 focus:ring-[#670ef7]"
                                     onClick={toggleDropdown2}
                                 >
-                                    {formData.seoGoals || 'What kind of website do you need?'}
+                                    {formData.websiteType || 'What kind of website do you need?'}
                                 </button>
                                 {isOpen2 && (
                                     <div className="absolute w-full mt-1 max-h-40 overflow-y-auto border border-gray-300 bg-white rounded-lg z-10">
@@ -368,8 +368,8 @@ export default function ContactFromNew() {
                                             <div
                                                 key={option}
                                                 onClick={() => {
-                                                    handleDropdownSelect("otherservices", option);
-                                                    setIsOpen5(false);
+                                                    handleDropdownSelect("websiteType", option);
+                                                    setIsOpen2(false);
                                                 }}
                                                 className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-700"
                                             >
