@@ -32,6 +32,8 @@ import { ShieldCheck, MonitorSmartphone, LineChart, Server, Zap, Settings2, Cred
 import { PhoneCall, MessageCircle, CalendarDays } from "lucide-react"
 import { FaTooth, FaHospital, FaDog, FaGasPump, FaCar, FaBroom, FaGraduationCap, FaBuilding, FaTree, FaSeedling } from "react-icons/fa";
 import StepCards from '@/components/WebdevSteps'
+import techimg from '@/assets/techmockup.png'
+import Tech2 from '@/components/Tech2'
 
 export default function WebDevAd() {
     const features = [
@@ -340,22 +342,22 @@ export default function WebDevAd() {
                         <p className="text-gray-700 text-base mb-6">
                             We serve businesses across healthcare, education, ecommerce, real estate, consulting, home services, restaurants, non-profits, and more.
                         </p>
-                            <div className='flex flex-row gap-6'>
-                                <Link href={'#form'}>
+                        <div className='flex flex-row gap-6'>
+                            <Link href={'#form'}>
                                 <button className="inline-flex items-center gap-2 bg-purple-600 text-white px-5 py-3 rounded-full font-semibold hover:bg-purple-700 transition text-sm">
-                            Get in Touch <ArrowUpRight className="w-4 h-4" />
-                        </button>
-                                </Link>
-                                
-                                <Link href={'tel:+919100032301'}>
-<button className="inline-flex items-center gap-2 bg-white text-purple-500 px-5 py-3 rounded-full border border-purple-500 font-semibold hover:bg-purple-700 hover:text-white transition text-sm">
-                            Call Us <ArrowUpRight className="w-4 h-4" />
-                        </button>
-                                </Link>
-                                
+                                    Get in Touch <ArrowUpRight className="w-4 h-4" />
+                                </button>
+                            </Link>
 
-                            </div>
-                        
+                            <Link href={'tel:+919100032301'}>
+                                <button className="inline-flex items-center gap-2 bg-white text-purple-500 px-5 py-3 rounded-full border border-purple-500 font-semibold hover:bg-purple-700 hover:text-white transition text-sm">
+                                    Call Us <ArrowUpRight className="w-4 h-4" />
+                                </button>
+                            </Link>
+
+
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -506,19 +508,18 @@ export default function WebDevAd() {
                 </div>
             </section>
 
+            {/* 
             <section className="bg-[white] text-black py-20 px-4">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
-                    {/* Left Side (75%) */}
+                    
                     <div className=" col-span-1 md:col-span-3 grid  grid-cols-1 md:grid-rows-2 gap-6">
-                        {/* Top Left (65%/25%) */}
-                        {/* Top Left (65%/25%) */}
+                       
+                       
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 h-full">
-                            {/* Left Card */}
+                            
                             <div
                                 className="col-span-1 md:col-span-2 overflow-hidden rounded-2xl pl-6 sm:pt-5 md:pt-0 items-center bg-yellow-500 pb-6 pr-0 flex flex-row justify-between h-full"
-                            // style={{
-                            //     background: 'radial-gradient(at top left, #CFA1F7 0%, #7FBEA4 100%)',
-                            // }}
+                           
                             >
                                 <div>
                                     <h3 className="text-3xl font-sofiasanscondensed text-black font-semibold mb-2">
@@ -527,9 +528,9 @@ export default function WebDevAd() {
                                     <p className="text-sm font-poppins text-gray-900 mb-4">
                                         Donec massa lacus tortor dis vulputate neque odio venenatis ex ad interdum
                                     </p>
-                                    {/* <button className="bg-white text-xs text-black font-semibold px-7 py-2 rounded-full w-fit">
+                                    <button className="bg-white text-xs text-black font-semibold px-7 py-2 rounded-full w-fit">
                                         LEARN MORE
-                                    </button> */}
+                                    </button>
                                 </div>
 
                                 <div className="mt-0">
@@ -537,7 +538,7 @@ export default function WebDevAd() {
                                 </div>
                             </div>
 
-                            {/* Right Card */}
+                           
                             <div className="bg-[black] text-white rounded-2xl p-6 relative flex flex-col justify-start h-full">
                                 <div className="z-10 mr-24">
                                     <h3 className="text-3xl font-sofiasanscondensed font-semibold mb-2">Boost Traffic & Sales</h3>
@@ -546,7 +547,7 @@ export default function WebDevAd() {
                                     </p>
                                 </div>
 
-                                {/* Rocket image absolutely positioned */}
+                              
                                 <div className="absolute bottom-0 right-0">
                                     <Image src={rocketimg} alt="rocket" className=' h-[200px] md:h-[400px]  rounded-2xl object-cover' />
                                 </div>
@@ -554,9 +555,8 @@ export default function WebDevAd() {
                         </div>
 
 
-                        {/* Bottom Left (25%/65%) */}
+                        
                         <div className="grid  grid-cols-1 md:grid-cols-3 gap-6">
-                            {/* Left Card (Client Ratings with background image) */}
                             <div className="bg-[#1B1B2B] rounded-2xl p-6 flex justify-center items-center relative overflow-hidden col-span-1">
                                 <div className="absolute inset-0 opacity-10">
                                     <Image src="/rating-bg.png" alt="ratings" fill className="object-cover" />
@@ -575,19 +575,19 @@ export default function WebDevAd() {
                                 </div>
                             </div>
 
-                            {/* Right Card (Responsive Solutions) */}
+                            
                             <div className=" cols-span-1 md:col-span-2 bg-[#7B2CBF] rounded-2xl pr-6 pl-6 pt-0 pb-0 flex justify-between items-end relative overflow-hidden min-h-[500px] md:min-h-[300px]">
                                 <div className="z-10 pt-6 pb-8 h-full flex flex-col justify-start md:justify-center">
                                     <h3 className="text-3xl font-sofiasanscondensed text-white mb-2">Responsive and Scalable Solutions</h3>
                                     <p className="text-sm text-gray-200 mb-4 max-w-xs">
                                         Donec massa lacus tortor dis vulputate neque odio venenatis ex ad interdum
                                     </p>
-                                    {/* <button className="text-xs text-black font-semibold px-7 py-2 bg-white rounded-full w-fit">
+                                    <button className="text-xs text-black font-semibold px-7 py-2 bg-white rounded-full w-fit">
                                         LEARN MORE
-                                    </button> */}
+                                    </button>
                                 </div>
 
-                                {/* Image pinned to bottom right, large */}
+                                
                                 <div className="absolute bottom-0 -right-5">
                                     <Image src={mobile} alt="wallet UI" width={300} height={400} />
                                 </div>
@@ -596,27 +596,25 @@ export default function WebDevAd() {
                         </div>
                     </div>
 
-                    {/* Right Side (25%) — Support Card */}
                     <div className="bg-gradient-to-b from-[#B28BFC] to-[#FF89CA] rounded-2xl p-6 flex flex-col justify-center gap-5 text-center items-center">
                         <div>
-                            {/* Icon */}
                             <div className="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-white/20 text-white text-3xl">
                                 <FiPhoneCall />
                             </div>
 
-                            {/* Title */}
 
 
-                            {/* Phone Number */}
+
+                            
                             <h3 className="text-2xl font-bold mt-2 mb-1 text-white">(+91) 91000-32301</h3>
 
-                            {/* Subtext */}
+        
                             <p className="text-xs text-white/80 mt-2 max-w-xs mx-auto">
                                 Book a 30-minute discovery call with our team.
                             </p>
                         </div>
 
-                        {/* Button */}
+                        
                         <Link href={'tel:+919100032301'}>
 
                             <button className="bg-black text-white font-semibold mt-6 py-2 px-6 rounded-full hover:bg-white hover:text-black transition">
@@ -625,6 +623,38 @@ export default function WebDevAd() {
                         </Link>
                     </div>
                 </div>
+            </section> */}
+            <section className=' hidden md:flex md:flex-col md:justify-center md:items-center max-w-7xl mt-36 mb-36 mx-auto'>
+                <h2 className='text-4xl md:text-6xl font-bold text-gray-900 text-center mb-10'>Responsive webdesign layout <br /> for every device</h2>
+
+                <button className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block">
+                    <span className="absolute inset-0 overflow-hidden rounded-full">
+                        <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                    </span>
+                    <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 ">
+                        <span className="text-base">
+                            Get A Responsive Website
+                        </span>
+                        <svg
+                            fill="none"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M10.75 8.75L14.25 12L10.75 15.25"
+                                stroke="currentColor"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="1.5"
+                            />
+                        </svg>
+                    </div>
+                    <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40" />
+                </button>
+
+                <Image src={techimg} alt='techimg'></Image>
             </section>
 
             <div className="w-full px-4 py-10 md:px-16 bg-white">
@@ -664,6 +694,7 @@ export default function WebDevAd() {
 
                 </div>
             </div>
+            <Tech2 />
             <section className='w-full flex  flex-wrap sm:max-w-[90%] md:max-w-[85%] mx-auto lg:flex-nowrap overflow-y-hidden items-center justify-center py-20 gap-10'>
                 {/* Left Content Section */}
                 <div className='w-full lg:w-1/2 px-1 md:px-6 py-10 lg:py-14'>
