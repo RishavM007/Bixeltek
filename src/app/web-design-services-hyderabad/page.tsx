@@ -34,6 +34,7 @@ import { FaTooth, FaHospital, FaDog, FaGasPump, FaCar, FaBroom, FaGraduationCap,
 import StepCards from '@/components/WebdevSteps'
 import techimg from '@/assets/techmockup.png'
 import Tech2 from '@/components/Tech2'
+import GooglePartner from '@/sections/GooglePartner'
 
 export default function WebDevAd() {
     const features = [
@@ -420,8 +421,6 @@ export default function WebDevAd() {
                     </div>
                 </div>
             </section> */}
-
-
             <section className="pt-14 pb-0 md:pb-24 px-6 md:px-16 bg-white text-center">
                 <p className="text-sm text-purple-500 font-semibold uppercase mb-2">WHAT YOU GET</p>
                 <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-4 max-w-6xl mx-auto">

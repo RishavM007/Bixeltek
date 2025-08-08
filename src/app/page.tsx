@@ -37,6 +37,8 @@ import FAQSection from "@/sections/HomeFaq";
 import Blog from "@/sections/Blog";
 import Tech2 from "@/components/Tech2";
 import TimelineSection from '@/sections/Process'
+import GooglePartner from "@/sections/GooglePartner";
+
 
 export default function Home() {
   return (
@@ -45,6 +47,7 @@ export default function Home() {
       <Hero />
       <LogoTicker />
       <About />
+      
       <CardList />
       <section className="bg-white">
       <WhyChoose/>
@@ -55,6 +58,7 @@ export default function Home() {
       <TimelineSection />
       {/* <Testimonials />
       <CallToAction /> */}
+      <GooglePartner />
       <Tech2 />
       {/* <Casestudy /> */}
       <FAQSection/>

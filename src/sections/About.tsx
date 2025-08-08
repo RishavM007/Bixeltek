@@ -612,7 +612,7 @@ export const About = () => {
                                 <span className="block mb-4 text-sm font-semibold text-primary">
                                     WHO WE ARE
                                 </span>
-                                <h2 className="mb-5 text-3xl font-bold font-inter text-black sm:text-[40px]/[48px]">
+                                <h2 className="mb-5 sm:text-3xl font-bold font-inter text-black md:text-[40px]/[48px]">
                                     Not Just Another Agency. A <span className="text-purple-500">Growth Partner</span> Built for Your Success.
                                 </h2>
                                 <p className="mb-5 text-base text-body-color dark:text-dark-6">

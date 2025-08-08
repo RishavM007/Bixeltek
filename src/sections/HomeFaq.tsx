@@ -38,7 +38,7 @@ export default function FAQSection() {
 
   return (
     <section className="py-14 bg-white">
-      <div className="mx-auto max-w-[85%] px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[95%] md:max-w-[85%] px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-start lg:items-center gap-12">
           {/* Left: FAQ Content */}
           <div className="w-full lg:w-1/2">

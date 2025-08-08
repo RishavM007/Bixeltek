@@ -1,4 +1,6 @@
+'use client';
 import React from "react";
+import { motion } from "framer-motion";
 
 const steps = [
   {
@@ -43,52 +45,76 @@ export default function TimelineSection() {
 
         <div className="relative">
           {/* Center timeline line */}
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[2px] bg-gray-700 h-full"></div>
+          <div className="hidden md:flex absolute top-0 left-1/2 transform -translate-x-1/2 w-[2px] bg-gray-700 h-full"></div>
 
           {steps.map((step, index) => (
-            <div
+            <motion.div
               key={index}
               className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-16"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, delay: index * 0.3, ease: "easeOut" }}
             >
-              {/* Left column */}
+
               {index % 2 === 0 ? (
                 <>
-                  {/* Title */}
-                  <div className="text-right pr-8 relative">
+                  {/* Desktop Title */}
+                  <div className="relative text-right pr-8 hidden md:block">
                     <div className="absolute top-1/2 right-[-32px] transform -translate-y-1/2 w-8 h-8 bg-purple-500 rounded-full text-white flex items-center justify-center font-bold shadow-lg">
                       {index + 1}
                     </div>
                     <h3 className="text-4xl font-inter font-bold pr-4">{step.title}</h3>
                   </div>
 
-                  {/* Subtitle + Description */}
-                  <div className="text-left ml-10 rounded-2xl px-8 py-4 border">
+                  {/* Desktop Subtitle + Description */}
+                  <div className="text-left ml-10 rounded-2xl px-8 py-4 border hidden md:block">
                     <h4 className="text-lg font-semibold">{step.subtitle}</h4>
                     <p className="text-gray-700 mt-2 font-poppins text-sm">{step.description}</p>
+                  </div>
+
+                  {/* Mobile version (centered and stacked) */}
+                  <div className="flex flex-col items-center text-center px-4 rounded-2xl py-6 border md:hidden space-y-4">
+                    <div className="w-8 h-8 bg-purple-500 rounded-full text-white flex items-center justify-center font-bold shadow-lg">
+                      {index + 1}
+                    </div>
+                    <h3 className="text-3xl font-inter font-bold">{step.title}</h3>
+                    <h4 className="text-lg font-semibold">{step.subtitle}</h4>
+                    <p className="text-gray-700 font-poppins text-sm">{step.description}</p>
                   </div>
                 </>
               ) : (
                 <>
-                  {/* Subtitle + Description */}
-                  <div className="text-right mr-10 rounded-2xl px-8 py-4 border border-black/10">
+                  {/* Desktop Subtitle + Description */}
+                  <div className="text-right mr-10 rounded-2xl px-8 py-4 border border-black/10 hidden md:flex md:flex-col">
                     <h4 className="text-lg font-semibold">{step.subtitle}</h4>
                     <p className="text-gray-700 mt-2 font-poppins text-sm">{step.description}</p>
                   </div>
 
-                  {/* Title */}
-                  <div className="relative">
+                  {/* Desktop Title */}
+                  <div className="relative hidden md:block">
                     <div className="absolute top-1/2 left-[-32px] transform -translate-y-1/2 w-8 h-8 bg-yellow-500 rounded-full text-white flex items-center justify-center font-bold shadow-lg">
                       {index + 1}
                     </div>
-                    <h3 className="text-4xl font-inter font-bold pl-10 ">{step.title}</h3>
+                    <h3 className="text-4xl font-inter font-bold pl-10">{step.title}</h3>
+                  </div>
+
+                  {/* Mobile version (centered and stacked) */}
+                  <div className="flex flex-col items-center text-center px-4 rounded-2xl py-6 border border-black/10 md:hidden space-y-4">
+                    <div className="w-8 h-8 bg-yellow-500 rounded-full text-white flex items-center justify-center font-bold shadow-lg">
+                      {index + 1}
+                    </div>
+                    <h3 className="text-3xl font-inter font-bold">{step.title}</h3>
+                    <h4 className="text-lg font-semibold">{step.subtitle}</h4>
+                    <p className="text-gray-700 font-poppins text-sm">{step.description}</p>
                   </div>
                 </>
               )}
-            </div>
-          ))}
 
+            </motion.div>
+          ))}
         </div>
-        <a href="#_" className="box-border mt-10 relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-purple-600 rounded-full cursor-pointer group ring-offset-2 ring-1 ring-purple-300 ring-offset-purple-200 hover:ring-offset-purple-500 ease focus:outline-none">
+        <a href="/contact-us" className="box-border md:mt-10 relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-purple-600 rounded-full cursor-pointer group ring-offset-2 ring-1 ring-purple-300 ring-offset-purple-200 hover:ring-offset-purple-500 ease focus:outline-none">
           <span className="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-10 group-hover:translate-x-0"></span>
           <span className="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-10 group-hover:translate-x-0"></span>
           <span className="relative z-20 flex items-center text-sm">
