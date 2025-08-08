@@ -119,7 +119,7 @@ export default function WhyChoose() {
                     {/* Left Content */}
                     <div className="text-white md:max-w-xl">
                         <h2 className="text-3xl md:text-5xl font-sofiasanscondensed  font-semibold mb-6 leading-tight">
-                            "We’ve grown our revenue 3X since working with Bixeltek. They own the outcome like it’s theirs."
+                            &quot;We’ve grown our revenue 3X since working with Bixeltek. They own the outcome like it’s theirs.&quot;
                         </h2>
                         <button className="bg-white text-blue-700 font-semibold px-6 py-2 rounded-md hover:bg-blue-100 transition">
                             Get More Information
