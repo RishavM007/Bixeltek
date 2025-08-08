@@ -6,8 +6,10 @@ import { Bento } from "@/components/AbtHero/AbtHero";
 import CreativeSection from "@/components/AbtSection1";
 import TeamStatsSection from "@/components/Counter2New";
 import storyimg1 from "@/assets/roberto-cortese-ejhjSZKTeeg-unsplash.jpg"
-import storyimg2 from "@/assets/annie-spratt-MChSQHxGZrQ-unsplash.jpg"
-
+import storyimg2 from "@/assets/annie-spratt-MChSQHxGZrQ-unsplash.jpg";
+import { PhoneCall, MessageCircle, CalendarDays } from "lucide-react"
+import Link from "next/link";
+import ContactFromNew from "@/components/ContactFormNew";
 
 export default function AboutPage() {
   const timelineEvents = [
@@ -67,9 +69,12 @@ export default function AboutPage() {
               <p className="mt-10 text-sm lg:text-lg md:leading-8 text-gray-300">
                 Bixeltek is a performance-first digital marketing agency empowering startups, clinics, and growing businesses to scale with high-impact digital solutions — <br /><span className="italic font-semibold mt-2">from SEO and Google Ads to Web Design and Social Media.</span>
               </p>
-              <button className="backdrop-blur-3xl border border-white text-white font-normal text-sm py-2 px-4 md:px-6 md:py-3 md:text-md rounded-lg mt-14 md:mt-16 shadow-custom">
-                Get a Quote <i className="fa-solid fa-arrow-right ml-2" id="get_a_quote"></i>
-              </button>
+              <Link href={'/contact-us'}>
+                <button className="backdrop-blur-3xl border border-white text-white font-normal text-sm py-2 px-4 md:px-6 md:py-3 md:text-md rounded-lg mt-14 md:mt-16 shadow-custom">
+                  Get a Quote <i className="fa-solid fa-arrow-right ml-2" id="get_a_quote"></i>
+                </button>
+              </Link>
+
             </div>
           </div>
         </section>
@@ -82,11 +87,14 @@ export default function AboutPage() {
                 <p className="mt-3 text-lg text-neutral-400">We&apos;re not your typical agency. No cookie-cutter strategies. No vanity metrics. Just full-funnel marketing that delivers real results.</p>
 
                 <div className="mt-7 grid gap-3 w-full sm:inline-flex">
-                  <a className="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
-                    Talk to a Specialist
-                    <svg className="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6" /></svg>
-                  </a>
-                  
+                  <Link href={'tel:+919100032301'}>
+                    <div className="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
+                      Talk to a Specialist
+                      <svg className="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6" /></svg>
+                    </div>
+                  </Link>
+
+
                 </div>
 
                 <div className="mt-6 lg:mt-10 grid grid-cols-2 gap-x-5">
@@ -199,169 +207,142 @@ export default function AboutPage() {
 
         </section>
         <section className="py-24 relative">
-        <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+          <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
             <div className="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
-                <div
-                    className="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
-                    <div className="pt-28 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
-                        <Image className=" rounded-xl object-cover" src={storyimg1} alt="about Us image" />
-                    </div>
-                    <Image className="sm:ml-0 ml-auto rounded-xl object-cover" src={storyimg2}
-                        alt="about Us image" />
+              <div
+                className="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
+                <div className="pt-28 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
+                  <Image className=" rounded-xl object-cover" src={storyimg1} alt="about Us image" />
                 </div>
-                <div className="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
-                    <div className="w-full flex-col justify-center items-start gap-8 flex">
-                        <div className="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
-                          <p className="px-4 py-1 text-sm w-fit border rounded-lg">Our Story</p>
-                            <h2
-                                className="text-gray-50 text-4xl font-bold font-manrope font-sofiasanscondensed tracking-wide lg:text-start text-center">
-                                We started Bixeltek with one goal: to bridge the gap between creative thinking and measurable performance.</h2>
-                            <p className="text-gray-100 text-base font-normal leading-relaxed lg:text-start text-center">
-                            With years of experience in running successful Google Ads and SEO campaigns for dental clinics across North America, we expanded our reach to serve clients in India, the GCC, and beyond. What began as a small performance marketing team evolved into a full-service growth partner for dozens of brands globally.</p>
-                        </div>
-                        <div className="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">
-                            <div className="flex-col justify-start items-start inline-flex">
-                                <h3 className="text-white text-4xl font-bold font-manrope leading-normal">13+</h3>
-                                <h6 className="text-gray-100 text-base font-normal leading-relaxed">Years of Experience</h6>
-                            </div>
-                            <div className="flex-col justify-start items-start inline-flex">
-                                <h4 className="text-white text-4xl font-bold font-manrope leading-normal">125+</h4>
-                                <h6 className="text-gray-100 text-base font-normal leading-relaxed">Successful Projects</h6>
-                            </div>
-                            <div className="flex-col justify-start items-start inline-flex">
-                                <h4 className="text-white text-4xl font-bold font-manrope leading-normal">52+</h4>
-                                <h6 className="text-gray-100 text-base font-normal leading-relaxed">Happy Clients</h6>
-                            </div>
-                        </div>
+                <Image className="sm:ml-0 ml-auto rounded-xl object-cover" src={storyimg2}
+                  alt="about Us image" />
+              </div>
+              <div className="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
+                <div className="w-full flex-col justify-center items-start gap-8 flex">
+                  <div className="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
+                    <p className="px-4 py-1 text-sm w-fit border rounded-lg">Our Story</p>
+                    <h2
+                      className="text-gray-50 text-4xl font-bold font-manrope font-sofiasanscondensed tracking-wide lg:text-start text-center">
+                      We started Bixeltek with one goal: to bridge the gap between creative thinking and measurable performance.</h2>
+                    <p className="text-gray-100 text-base font-normal leading-relaxed lg:text-start text-center">
+                      With years of experience in running successful Google Ads and SEO campaigns for dental clinics across North America, we expanded our reach to serve clients in India, the GCC, and beyond. What began as a small performance marketing team evolved into a full-service growth partner for dozens of brands globally.</p>
+                  </div>
+                  <div className="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">
+                    <div className="flex-col justify-start items-start inline-flex">
+                      <h3 className="text-white text-4xl font-bold font-manrope leading-normal">15+</h3>
+                      <h6 className="text-gray-100 text-base font-normal leading-relaxed">Years of Experience</h6>
                     </div>
-                    <button
-                        className="sm:w-fit w-full px-3.5 py-2 bg-purple-600 hover:bg-purple-800 transition-all duration-700 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
-                        <span className="px-1.5 text-white text-sm font-medium leading-6">Read More</span>
-                    </button>
+                    <div className="flex-col justify-start items-start inline-flex">
+                      <h4 className="text-white text-4xl font-bold font-manrope leading-normal">250+</h4>
+                      <h6 className="text-gray-100 text-base font-normal leading-relaxed">Successful Projects</h6>
+                    </div>
+                    <div className="flex-col justify-start items-start inline-flex">
+                      <h4 className="text-white text-4xl font-bold font-manrope leading-normal">250+</h4>
+                      <h6 className="text-gray-100 text-base font-normal leading-relaxed">Happy Clients</h6>
+                    </div>
+                  </div>
                 </div>
+
+              </div>
             </div>
-        </div>
-    </section>                                      
+          </div>
+        </section>
         {/* Other sections (Bento, Timeline, etc.) */}
         <Bento />
         <section className="pt-10 pb-20">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div
-                        className="lg:py-14 lg:px-20 p-10 rounded-2xl bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-between flex-col lg:flex-row"
-                    >
-                        <div className="w-full md:w-4/5 block text-center mb-5 lg:text-left lg:mb-0">
-                            <h2
-                                className="font-manrope text-4xl text-white font-semibold mb-5 lg:mb-2"
-                            >
-                                Let&apos;s Grow Together
-                            </h2>
-                            <p className="text-base md:text-xl text-indigo-100">
-                            If you&apos;re tired of marketing that doesn&apos;t move the needle, you&apos;re in the right place.Let Bixeltek help you turn clicks into conversions, and campaigns into growth.
-                            </p>
-                        </div>
-                        <div className="w-full lg:w-1/5 flex justify-center items-center">
-                        <a
-                            href="#"
-                            className="flex items-center gap-2 bg-white rounded-full shadow-sm text-lg text-indigo-600 font-semibold py-4 px-8 transition-all duration-500"
-                        >Get In Touch
-                            <svg
-                                width="19"
-                                height="14"
-                                viewBox="0 0 19 14"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M1.75 7L16.4167 7M11.8333 12.5L16.6852 7.64818C16.9907 7.34263 17.1435 7.18985 17.1435 7C17.1435 6.81015 16.9907 6.65737 16.6852 6.35182L11.8333 1.5"
-                                    stroke="#4F46E5"
-                                    stroke-width="2.4"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                            </svg>
-                        </a>
-
-                        </div>
-                        
-                    </div>
-                </div>
-            </section>
-
-        <section className="overflow-hidden relative px-8 md:px-20 py-20 bg-black">
-          <Image
-            src={BgImg}
-            height={1500}
-            width={1500}
-            alt=""
-            className="absolute right-0 hidden lg:flex top-[-100px] opacity-100"
-          />
-          <div className="flex flex-col md:flex-row items-center justify-between gap-16">
-            <motion.div
-              className="max-w-lg text-left mb-12 md:mb-0"
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div
+              className="lg:py-14 lg:px-20 p-10 rounded-2xl bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-between flex-col lg:flex-row"
             >
-              <p className="text-sm text-purple-500 text-start">Our Approach</p>
-              <h2 className="text-3xl md:text-4xl font-bold mt-3 mb-4">
-                Best pathway to our <span className="text-purple-700">clients</span>.
-              </h2>
-              <p className="text-lg md:text-[16px] leading-wide">
-              We blend creativity + analytics + strategy to deliver results that matter.
-              </p>
-              <div className="mt-8 flex flex-col gap-5 capitalize">
-                <p>
-                  <i className="fa fa-arrow-circle-o-right mr-2" aria-hidden="true"></i>
-                  Clear communication
-                </p>
-                <p>
-                  <i className="fa fa-arrow-circle-o-right mr-2" aria-hidden="true"></i>
-                  monthly reports
-                </p>
-                <p>
-                  <i className="fa fa-arrow-circle-o-right mr-2" aria-hidden="true"></i>
-                  honest advice
+              <div className="w-full md:w-4/5 block text-center mb-5 lg:text-left lg:mb-0">
+                <h2
+                  className="font-manrope text-4xl text-white font-semibold mb-5 lg:mb-2"
+                >
+                  Let&apos;s Grow Together
+                </h2>
+                <p className="text-base md:text-xl text-indigo-100">
+                  If you&apos;re tired of marketing that doesn&apos;t move the needle, you&apos;re in the right place.Let Bixeltek help you turn clicks into conversions, and campaigns into growth.
                 </p>
               </div>
-            </motion.div>
-            <motion.div
-              className="w-full md:w-1/2 relative"
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-[2px] h-[90%] bg-gray-500"></div>
-              {timelineEvents.map((event, index) => (
-                <motion.div
-                  key={index}
-                  className={`relative flex items-center mb-10 ${index % 2 === 0 ? "justify-start" : "justify-end"
-                    }`}
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.2 }}
-                >
-                  <div
-                    className={`max-w-sm relative p-8 rounded-lg bg-black flex flex-col text-center justify-start shadow-lg z-[1] ${index % 2 === 0 ? "lg:text-left" : "lg:text-right"
-                      }`}
+              <div className="w-full lg:w-1/5 flex justify-center items-center">
+                <a
+                  href="contact-us"
+                  className="flex items-center gap-2 bg-white rounded-full shadow-sm text-lg text-indigo-600 font-semibold py-4 px-8 transition-all duration-500"
+                >Get In Touch
+                  <svg
+                    width="19"
+                    height="14"
+                    viewBox="0 0 19 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <div className="absolute top-0 left-0 right-0 bottom-0 rounded-lg bg-gradient-to-r from-[#b8cbb8] via-[#cf6cc9] to-[#ee609c] z-0"></div>
-                    <div className="absolute top-[2px] left-[2px] right-[2px] bottom-[2px] rounded-lg bg-black z-10"></div>
-                    <h5 className="relative z-20 text-lg font-bold font-sans">
-                      {event.title}
-                    </h5>
-                    <p className="relative z-20 text-gray-200 mt-2 text-sm font-mono">
-                      {event.description}
-                    </p>
-                  </div>
-                  <div className="absolute left-1/2 hidden lg:block transform-translate-x-1/2 w-2 h-2 rounded-full bg-[#ee609c] z-20 "></div>
-                </motion.div>
-              ))}
-            </motion.div>
+                    <path
+                      d="M1.75 7L16.4167 7M11.8333 12.5L16.6852 7.64818C16.9907 7.34263 17.1435 7.18985 17.1435 7C17.1435 6.81015 16.9907 6.65737 16.6852 6.35182L11.8333 1.5"
+                      stroke="#4F46E5"
+                      stroke-width="2.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+
+              </div>
+
+            </div>
           </div>
         </section>
-        <section>
-          <CreativeSection />
-          <TeamStatsSection />
+        <section className='bg-black p-2 md:p-20 mx-auto flex flex-col justify-center gap-10 items-center md:flex-row ' id='form'>
+          <div className="w-full mt-14 md:mt-0 flex justify-center items-center px-6">
+            <div className="space-y-5 text-white max-w-xl ">
+              <h2 className="text-4xl md:text-5xl font-sofiasanscondensed font-bold">
+                Who We Are —
+                <span className="text-purple-500"> Hyderabad’s Leading Web Design</span> Company
+              </h2>
+
+              <p className="text-white font-poppins text-base leading-relaxed">
+                Your current website might be costing you leads, visibility, and money every single day. Let’s change that.
+              </p>
+              <p className="text-white font-poppins text-base leading-relaxed">
+                Book a free 30-minute strategy call with our Hyderabad-based team. We’ll audit your current website, identify what’s holding you back, and show you how we can fix it — fast.
+              </p>
+              <p className="text-white font-poppins text-base leading-relaxed">
+                Whether you&apos;re looking to rebuild your online presence or launch a new business with a strong digital foundation, <span className="font-semibold">Bixeltek</span> is your trusted web design partner in Hyderabad.
+              </p>
+
+              <div className="space-y-3 pt-3">
+                <Link href={'tel:+919100032301'}>
+                  <div className="flex items-center gap-2">
+                    <PhoneCall size={20} />
+                    <span className="text-white text-sm">Call: +91-9100032301</span>
+                  </div>
+                </Link>
+
+                <div className="flex items-center gap-2">
+                  <MessageCircle size={20} />
+                  <span className="text-white text-sm">WhatsApp: Start a Chat</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CalendarDays size={20} />
+                  <span className="text-white text-sm">
+                    Schedule a Free Consultation:{' '}
+                    <button
+
+                      className="underline underline-offset-2 text-blue-300 hover:text-blue-400"
+                    >
+                      Book Now
+                    </button>
+                  </span>
+                </div>
+              </div>
+
+              <p className="text-sm text-gray-200 pt-3">
+                Starting at ₹30,000 | Delivered in 7–15 Days | Built for SEO, Ads, and Conversions
+              </p>
+            </div>
+          </div>
+          <div className='w-full flex justify-center items-center' >
+            <ContactFromNew />
+          </div>
         </section>
       </div>
     </>

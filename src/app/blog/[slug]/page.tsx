@@ -1,6 +1,7 @@
 import { client } from '@/lib/graphql-client';
 import { GET_SINGLE_POST, GET_SUGGESTED_POSTS } from '@/lib/queries';
 import Link from 'next/link';
+import { Metadata } from 'next';
 
 type Props = {
   params: {
@@ -26,7 +27,6 @@ type SinglePost = {
   };
 };
 
-
 type GetSinglePostResponse = {
   post: SinglePost;
 };
@@ -50,16 +50,43 @@ const calculateReadTime = (html: string): string => {
   return `${Math.ceil(wordCount / 200)} min read`;
 };
 
+// ✅ DYNAMIC META HANDLER
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = params;
+
+  try {
+    const { post } = await client.request<GetSinglePostResponse>(GET_SINGLE_POST, { slug });
+
+    const cleanContent = post.content.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+    const metaTitle = post.title.slice(0, 60);
+    const metaDescription = cleanContent.slice(0, 150);
+
+    return {
+      title: metaTitle,
+      description: metaDescription,
+      openGraph: {
+        title: metaTitle,
+        description: metaDescription,
+        images: post.featuredImage?.node.sourceUrl ? [post.featuredImage.node.sourceUrl] : [],
+      },
+    };
+  } catch (err) {
+    console.error('Failed to fetch metadata:', err);
+    return {
+      title: 'Post not found | Bixeltek Blog',
+      description: 'The blog post you’re looking for could not be found.',
+    };
+  }
+}
+
+// 📰 MAIN BLOG PAGE
 export default async function SinglePostPage({ params }: Props) {
   const { slug } = params;
 
   const { post } = await client.request<GetSinglePostResponse>(GET_SINGLE_POST, { slug });
-
   const suggested = await client.request<SuggestedPostsResponse>(GET_SUGGESTED_POSTS, {
     excludeId: post.id,
   });
-
-
 
   const formattedDate = new Date(post.date).toLocaleDateString('en-US', {
     month: 'short',
@@ -122,11 +149,10 @@ export default async function SinglePostPage({ params }: Props) {
 
         {/* Sidebar */}
         <aside className="space-y-8">
-          {/* Search */}
-        
-          {/* Suggested Posts */}
           <div className="backdrop-blur-md bg-black/5 border border-white/10 py-8 px-4 rounded-xl shadow-lg">
-            <h2 className="text-2xl font-semibold font-sofiasanscondensed tracking-wide text-neutral-900 mb-4">Suggested Posts</h2>
+            <h2 className="text-2xl font-semibold font-sofiasanscondensed tracking-wide text-neutral-900 mb-4">
+              Suggested Posts
+            </h2>
             <ul className="space-y-4">
               {suggested.posts.nodes.map((post) => (
                 <li key={post.slug} className="flex gap-3 items-center">
@@ -136,7 +162,10 @@ export default async function SinglePostPage({ params }: Props) {
                     className="w-16 h-16 rounded-full object-cover"
                   />
                   <div className="flex flex-col gap-1">
-                    <Link href={`/blog/${post.slug}`} className="font-medium font-poppins text-neutral-900 hover:underline hover:underline-offset-1">
+                    <Link
+                      href={`/blog/${post.slug}`}
+                      className="font-medium font-poppins text-neutral-900 hover:underline hover:underline-offset-1"
+                    >
                       {post.title}
                     </Link>
                     <p className="text-xs text-black/80 leading-snug line-clamp-2">
@@ -148,7 +177,6 @@ export default async function SinglePostPage({ params }: Props) {
             </ul>
           </div>
         </aside>
-
       </div>
     </div>
   );

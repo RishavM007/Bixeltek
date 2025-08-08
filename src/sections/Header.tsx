@@ -8,11 +8,13 @@ import { link } from 'fs';
 
 export const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isDropdownOpen2, setIsDropdownOpen2] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
 
   const posts = [
 
@@ -37,6 +39,13 @@ export const Header = () => {
       link: "/casestudies-bixeltek/digital-marketing-for-dentists-case-study",
       glowcolor: "bg-purple-500",
     },
+    // {
+    //   id: 4,
+    //   title: "View All",
+    //   description: "Learn essential steps to begin your journey in the digital marketing world effectively.",
+    //   link: "/casestudies-bixeltek",
+    //   glowcolor: "bg-purple-500",
+    // },
 
   ];
 
@@ -81,7 +90,16 @@ export const Header = () => {
                 )}
               </li>
               <li><Link href="/industries" className="block py-2 px-4 hover:bg-purple-600 rounded">Industries</Link></li>
-              <li><Link href="/casestudies-bixeltek/Tumblewash-Casestudy" className="block py-2 px-4 hover:bg-purple-600 rounded">Case Studies</Link></li>
+              <li>
+                <button onClick={()=>{setIsDropdownOpen2(!isDropdownOpen2)}} className="flex justify-between w-full py-2 px-4 hover:bg-purple-600 rounded">Case Studies <HiChevronDown className="text-xl md:text-2xl" /></button>
+                {isDropdownOpen2 && (
+                  <motion.ul initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="ml-4 text-lg md:text-xl space-y-2">
+                    <li><Link href="/casestudies-bixeltek/Tumblewash-Casestudy" className="block py-2 px-4 hover:bg-gray-700 rounded">Tumblewash-Casestudy</Link></li>
+                    <li><Link href="/casestudies-bixeltek/google-ads-case-study-bike-repair-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Eazy Bike Repair Case Study</Link></li>
+                    <li><Link href="/casestudies-bixeltek/digital-marketing-for-dentists-case-study" className="block py-2 px-4 hover:bg-gray-700 rounded">Digital Marketing for Dentists</Link></li>
+                  </motion.ul>
+                )}
+              </li>
               <li><Link href="/blog" className="block py-2 px-4 hover:bg-purple-600 rounded">Blog</Link></li>
               <li><Link href="/about-us" className="block py-2 px-4 hover:bg-purple-600 rounded">About Us</Link></li>
               <li><Link href="/contact-us" className="block py-2 px-4 hover:bg-purple-600 rounded">Contact Us</Link></li>
@@ -175,6 +193,7 @@ export const Header = () => {
                       </div>
                     </div>
                     <div className="w-1/2 border-l border-gray-300 pl-6">
+                  
                       <h3 className="text-lg font-semibold text-[#670ef7]">Case Studies</h3>
                       <div className="grid grid-cols-2 gap-4">
                         <ul>
@@ -233,6 +252,14 @@ export const Header = () => {
                       className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
                     >
                       Dental Clinic Case Study
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/casestudies"
+                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
+                    >
+                      View All
                     </Link>
                   </li>
                 </ul>

@@ -69,7 +69,7 @@ const services: CardData[] = [
   {
     title: "Reporting and Analysis",
     link: "/contact-us",
-    img1: semrushlogo, 
+    img1: semrushlogo,
     img2: photoshoplogo,
     description:
       "Optimize conversions and cut ad costs with data-driven reporting, A/B testing, and user behavior analysis.",
@@ -84,34 +84,38 @@ const services: CardData[] = [
   },
 ];
 
-const Card: React.FC<CardProps> = ({ title, img1,img2, description, link, isEven }) => {
+const Card: React.FC<CardProps> = ({ title, img1, img2, description, link, isEven }) => {
   const gradient = isEven
     ? "from-[#7028e4] to-white/10"
     : "from-white-10 to-[#7028e4]";
 
   return (
     <div
-      className={`w-full relative p-[2px] rounded-xl bg-gradient-to-b h-full shadow-card-shadow`}
+      className={`w-full relative p-[2px] rounded-xl bg-gradient-to-b h-full border-2`}
     >
-      <div className="bg-black/30 backdrop-blur-xl border border-white/10 py-10 px-6 rounded-[10px] flex flex-col justify-between h-full shadow-xl transition-all duration-300">
-        <div>
+      <div className="bg-white border border-white rounded-[10px] flex flex-col justify-between h-full transition-all duration-300">
+        <div className='flex flex-col justify-between  py-10 px-6 items-start'>
           <div className=" flex flex-row gap-4 w-fit mb-3">
             <Image src={img1} width={50} height={50} alt={title} />
-            <Image src={img2} width={50} height={50} alt={title}/>
+            <Image src={img2} width={50} height={50} alt={title} />
           </div>
-          <h2 className="text-white/80 text-3xl mt-4 tracking-wide font-sofiasanscondensed font-semibold">
-            {title}
-          </h2>
-          <p className="text-white/60 mt-2 text-sm">{description}</p>
-        </div>
-        <Link href={link}>
-          <div className="text-sm mt-2 font-semibold text-left text-white/70 hover:text-white cursor-pointer transition">
-            Read More{" "}
-            {/* <span className="text-[#7028e4]">
+          <div className=''>
+            <h2 className="text-neutral-800 text-3xl mt-4 tracking-wide font-sofiasanscondensed font-semibold">
+              {title}
+            </h2>
+            <p className="text-neutral-600 mt-2 text-sm">{description}</p>
+            <Link href={link}>
+              <div className="text-sm mt-4 font-semibold text-left text-black hover:text-purple-700 cursor-pointer transition">
+                Read More{" "}
+                {/* <span className="text-[#7028e4]">
               <IoMdArrowRoundForward className="inline ml-1" />
             </span> */}
+              </div>
+            </Link>
           </div>
-        </Link>
+
+        </div>
+
       </div>
     </div>
   );
@@ -122,31 +126,28 @@ const Card: React.FC<CardProps> = ({ title, img1,img2, description, link, isEven
 const CardList: React.FC = () => {
   return (
     <>
-   <div className='relative flex flex-col justify-center items-center h-[130vh] sm:mt-[500px] sm:mb-[600px] lg:mt-20 lg:mb-24'>
-     <div className="absolute inset-0 z-[-2] bg-[url('/aesthetic-background-with-gradient-neon-led-light-effect.jpg')] bg-cover bg-center bg-no-repeat" />
+      <div className='relative flex flex-col justify-center bg-white items-center pt-32 pb-28 '>
 
-  <div className="absolute top-0 h-60 w-full z-[-1] bg-gradient-to-b from-black via-transparent to-transparent" />
-  <div className="absolute bottom-0 h-40 w-full z-[-1] bg-gradient-to-t from-black via-transparent to-transparent" />
-    <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold font-sofiasanscondensed  mb-14 text-center text-white/80">Digital Marketing Services in Hyderabad, India</h2>
-    <div className="sm:max-w-[90%]  lg:max-w-[75%] mx-auto grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 items-stretch">
-      
-      {services.map((card, index) => {
-        const isEven = (index + 1) % 2 === 0;
-        return (
-          <Card
-            key={index}
-            title={card.title}
-            link={card.link}
-            img1={card.img1}
-            img2={card.img2}
-            description={card.description}
-            isEven={isEven}
-          />
-        );
-      })}
-    </div>
+        <h2 className="text-4xl md:text-5xl max-w-4xl mx-auto lg:text-5xl font-semibold text-black  mb-14 text-center font-inter">Digital Marketing Services in <span className='text-purple-600'>Hyderabad</span>, India</h2>
+        <div className="sm:max-w-[90%]  lg:max-w-[75%] mx-auto grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 items-stretch">
+
+          {services.map((card, index) => {
+            const isEven = (index + 1) % 2 === 0;
+            return (
+              <Card
+                key={index}
+                title={card.title}
+                link={card.link}
+                img1={card.img1}
+                img2={card.img2}
+                description={card.description}
+                isEven={isEven}
+              />
+            );
+          })}
+        </div>
       </div>
-     </>
+    </>
   );
 };
 

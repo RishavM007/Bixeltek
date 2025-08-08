@@ -764,11 +764,12 @@ export default function Home() {
                 </div>
             </section>
             <LightFaqSection faqs={faqs} />
-            <section className='bg-black p-20 mx-auto flex flex-col justify-center items-center md:flex-row '>
+            <section className='bg-black p-2 md:p-20 mx-auto flex flex-col justify-center gap-10 items-center md:flex-row ' id='form'>
                 <div className="w-full mt-14 md:mt-0 flex justify-center items-center px-6">
                     <div className="space-y-5 text-white max-w-xl ">
-                        <h2 className="text-5xl md:text-6xl font-sofiasanscondensed font-bold">
-                            Let’s Build You a Website That<br /><span className='text-purple-500'>Grows Your Business</span>
+                        <h2 className="text-4xl md:text-5xl capitalize font-sofiasanscondensed font-bold">
+                            Lets grow your business with 
+                            <span className='text-purple-500'> google ads</span>
                         </h2>
                         <p className="text-white font-poppins text-base leading-relaxed">
                             Your current website might be costing you leads, visibility, and money every single day. Let’s change that.
@@ -781,10 +782,13 @@ export default function Home() {
                         </p>
 
                         <div className="space-y-3 pt-3">
-                            <div className="flex items-center gap-2">
-                                <PhoneCall size={20} />
-                                <span className="text-white text-sm">Call: +91-XXXX-XXXXXX</span>
-                            </div>
+                            <Link href={'tel:+919100032301'}>
+                                <div className="flex items-center gap-2">
+                                    <PhoneCall size={20} />
+                                    <span className="text-white text-sm">Call: +91-9100032301</span>
+                                </div>
+                            </Link>
+
                             <div className="flex items-center gap-2">
                                 <MessageCircle size={20} />
                                 <span className="text-white text-sm">WhatsApp: Start a Chat</span>
@@ -792,7 +796,13 @@ export default function Home() {
                             <div className="flex items-center gap-2">
                                 <CalendarDays size={20} />
                                 <span className="text-white text-sm">
-                                    Schedule a Free Consultation: <a href="#" className="underline underline-offset-2 text-blue-300 hover:text-blue-400">Book Now</a>
+                                    Schedule a Free Consultation:{' '}
+                                    <button
+
+                                        className="underline underline-offset-2 text-blue-300 hover:text-blue-400"
+                                    >
+                                        Book Now
+                                    </button>
                                 </span>
                             </div>
                         </div>
@@ -802,11 +812,10 @@ export default function Home() {
                         </p>
                     </div>
                 </div>
-                <div className='w-full flex justify-center items-center'>
+                <div className='w-full flex justify-center items-center' >
                     <ContactFromNew />
                 </div>
             </section>
-
         </>
     );
 }

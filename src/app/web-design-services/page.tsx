@@ -564,8 +564,6 @@ export default function Webdev() {
 
             </section>
             <Counter />
-            
-            
             <section>
                 <IndustrySolutions />
             </section>

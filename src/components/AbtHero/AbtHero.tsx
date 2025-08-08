@@ -20,8 +20,11 @@ export const Bento = () => {
                         <div className="absolute inset-px rounded-lg bg-black border border-neutral-200 lg:rounded-l-[2rem]"></div>
                         <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
                             <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
+                                <h2 className='text-2xl md:text-3xl font-inter font-medium text-[#FBBC05]'>
+                                     Social Media Marketing
+                                </h2>
                                 <p className="mt-2 text-xl font-medium tracking-tight text-white max-lg:text-center">
-                                Social Media Marketing – Thumb-stopping content and Meta Ads that build your audience and drive action.
+                                Thumb-stopping content and Meta Ads that build your audience and drive action.
                                 </p>
                                 
                                 <p className="mt-2 max-w-lg text-sm/6 text-gray-200 max-lg:text-center">
@@ -45,7 +48,10 @@ export const Bento = () => {
                         <div className="absolute inset-px rounded-lg bg-black border border-neutral-200 max-lg:rounded-t-[2rem]"></div>
                         <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
                             <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-                                <p className="mt-2 text-xl font-medium tracking-tight text-white max-lg:text-center">Search Engine Optimization (SEO) – Long-term visibility through smart, semantic, and local SEO strategies.</p>
+                                <h2 className=' text-2xl md:text-3xl font-inter font-medium text-[#4285F4]'>
+                                    Search Engine Optimization (SEO)
+                                </h2>
+                                <p className="mt-2 text-xl font-medium tracking-tight text-white max-lg:text-center">Long-term visibility through smart, semantic, and local SEO strategies.</p>
                                 <p className="mt-2 max-w-lg text-sm/6 text-gray-200 max-lg:text-center">
                                     Boost your visibility with keyword optimization and on-page strategies for better search rankings.
                                 </p>
@@ -67,7 +73,8 @@ export const Bento = () => {
                         <div className="absolute inset-px rounded-lg bg-black border border-neutral-200 "></div>
                         <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
                             <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-                                <p className="mt-2 text-xl font-medium tracking-tight text-white max-lg:text-center">Google Ads – Search, Display, and Performance Max campaigns designed to deliver qualified leads.</p>
+                                <h2 className='text-2xl md:text-3xl font-inter font-medium text-[#EA4335]'>Google Ads</h2>
+                                <p className="mt-2 text-xl font-medium tracking-tight text-white max-lg:text-center"> Search, Display, and Performance Max campaigns designed to deliver qualified leads.</p>
                                 <p className="mt-2 max-w-lg text-sm/6 text-gray-200 max-lg:text-center">
                                     With researched digital marketing, we will ensure that new customers and clients are able to find your business.
                                 </p>
@@ -89,8 +96,9 @@ export const Bento = () => {
                         <div className="absolute inset-px rounded-lg bg-black border border-neutral-200  max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
                         <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
                             <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
+                                <h2 className='text-2xl md:text-3xl font-inter font-medium text-[#FBBC05]'>Web Design & Development</h2>
                                 <p className="mt-2 text-xl font-medium tracking-tight text-white max-lg:text-center">
-                                Web Design & Development – Mobile-first, lightning-fast websites that turn visitors into customers.</p>
+                                  Mobile-first, lightning-fast websites that turn visitors into customers.</p>
                                 <p className="mt-2 max-w-lg text-sm/6 text-gray-200 max-lg:text-center">
                                     Our web design team has ample years of experience in the core areas of design to build a website that you need.
                                 </p>

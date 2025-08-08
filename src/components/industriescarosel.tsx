@@ -9,6 +9,8 @@ import dental from "@/assets/digital marketing for health care practices.jpg"
 import lawncare from "@/assets/digital marketing for lawn care services.jpg"
 import blackcar from "@/assets/digital marketing for car detailers.jpg"
 import healthcare from "@/assets/digital marketing for health care practices.jpg"
+import { motion } from 'framer-motion'
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 export default function CarouselSection(): JSX.Element {
     const [carouselOffset, setCarouselOffset] = useState<number>(0);
@@ -31,7 +33,7 @@ export default function CarouselSection(): JSX.Element {
     };
 
     return (
-        <section className="pt-10 pb-20  bg-white z-10 overflow-hidden">
+        <section className="pt-32 pb-20  bg-white z-10 overflow-hidden">
             <div className="w-full relative text-center text-white pb-10">
                 <h1 className="text-5xl xl:text-7xl font-bold mb-2">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-600 to-gray-800">
@@ -47,28 +49,80 @@ export default function CarouselSection(): JSX.Element {
                     Discover the diverse industries we proudly cater to, offering innovative solutions to help you excel in your field.
                 </p>
             </div>
-            <div className="carousel-container md:pl-[700px] relative w-full overflow-hidden">
+            <div className="carousel-container md:pl-[500px] relative w-full overflow-hidden">
                 <div
                     className="carousel flex gap-6 px-8 w-max transform transition-transform duration-500"
                     style={{ transform: `translateX(${carouselOffset}px)` }}
                 >
                     {[
-                        { id: "health", img: healthcare, label: "Digital Marketing for Healthcare", text: "Health Care Practices" },
-                        { id: "auto", img: blackcar, label: "Digital Marketing for Automobiles", text: "Automobile industries" },
-                        { id: "cleaning", img: cleaningcomp, label: "Digital Marketing for Cleaning Companies", text: "Cleaning Industries" },
-                        { id: "roofing", img: roofing, label: "Digital Marketing for Roofing Companies", text: "Roofing Industries" },
-                        { id: "lawncare", img: lawncare, label: "Digital Marketing for Lawn Care and Landscaping", text: "Lawn Care Industries" },
-                        { id: "dental", img: dental, label: "Digital Marketing for Dental Clinic", text: "Dental Clinics" },
-                        { id: "pet", img: pet, label: "Digital Marketing for Pet Stores", text: "Pet Stores" },
-                        { id: "oil", img: oil, label: "Digital Marketing for Oil Refineries", text: "Oil Refineries" }
-                    ].map(({ id, img, label, text }) => (
-                        <a
+                        {
+                            id: "health",
+                            img: healthcare,
+                            label: "Digital Marketing for Healthcare",
+                            text: "Health Care Practices",
+                            description: "Local SEO + targeted ads to book 30+ new patients per month.",
+                        },
+                        {
+                            id: "auto",
+                            img: blackcar,
+                            label: "Digital Marketing for Automobiles",
+                            text: "Automobile industries",
+                            description: "Maps optimization + hyperlocal PPC to drive more calls and foot traffic.",
+                        },
+                        {
+                            id: "cleaning",
+                            img: cleaningcomp,
+                            label: "Digital Marketing for Cleaning Companies",
+                            text: "Cleaning Industries",
+                            description: "Maps optimization + hyperlocal PPC to drive more calls and foot traffic.",
+                        },
+                        {
+                            id: "roofing",
+                            img: roofing,
+                            label: "Digital Marketing for Roofing Companies",
+                            text: "Roofing Industries",
+                            description: "High-ticket lead funnels built for real estate and project-based services.",
+                        },
+                        {
+                            id: "lawncare",
+                            img: lawncare,
+                            label: "Digital Marketing for Lawn Care and Landscaping",
+                            text: "Lawn Care Industries",
+                            description: "Maps optimization + hyperlocal PPC to drive more calls and foot traffic.",
+                        },
+                        {
+                            id: "dental",
+                            img: dental,
+                            label: "Digital Marketing for Dental Clinic",
+                            text: "Dental Clinics",
+                            description: "Local SEO + targeted ads to book 30+ new patients per month.",
+                        },
+                        {
+                            id: "pet",
+                            img: pet,
+                            label: "Digital Marketing for Pet Stores",
+                            text: "Pet Stores",
+                            description: "Product SEO, performance ads & retargeting funnels to scale sales.",
+                        },
+                        {
+                            id: "oil",
+                            img: oil,
+                            label: "Digital Marketing for Oil Refineries",
+                            text: "Oil Refineries",
+                            description: "Paid growth loops, demo-booking strategies, and B2B marketing that closes deals.",
+                        }
+                    ].map(({ id, img, label, text, description }) => (
+                        <motion.a
                             key={id}
                             href={`#${id}`}
                             className="card relative bg-transparent p-6 rounded-lg group text-center 
-                   min-w-[300px] min-h-[400px] lg:min-w-[350px] lg:min-h-[500px] 
-                   xl:min-w-[350px] xl:min-h-[450px] overflow-hidden"
+      min-w-[300px] min-h-[400px] lg:min-w-[350px] lg:min-h-[500px] 
+      xl:min-w-[350px] xl:min-h-[450px] overflow-hidden"
+                            whileHover="hover"
+                            initial="rest"
+                            animate="rest"
                         >
+                            {/* Background Image */}
                             <Image
                                 src={img}
                                 alt={label}
@@ -76,30 +130,57 @@ export default function CarouselSection(): JSX.Element {
                                 height={300}
                                 className="absolute top-0 left-0 w-full h-full object-cover z-0 rounded-lg"
                             />
-                            <div className="absolute top-0 left-0 w-full h-full group-hover:opacity-10 bg-black bg-opacity-10 z-10 rounded-lg"></div>
-                            <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-end pb-5 items-center z-20">
-                                <span className="relative font-semibold text-sm lg:text-base xl:text-lg text-white uppercase tracking-widest z-20">
-                                    {text}
-                                </span>
-                            </div>
-                        </a>
+
+                            {/* Dark Overlay on Hover */}
+                            <motion.div
+                                variants={{
+                                    rest: { opacity: 0.1 },
+                                    hover: { opacity: 0.25 }
+                                }}
+                                transition={{ duration: 0.3 }}
+                                className="absolute top-0 left-0 w-full h-full bg-black z-10 rounded-lg"
+                            />
+
+                            {/* Text Content */}
+                            <motion.div
+                                variants={{
+                                    rest: { y: 0 },
+                                    hover: { y: -50 }
+                                }}
+                                transition={{ duration: 0.4 }}
+                                className="absolute bottom-5 px-4 left-0 w-full z-20 text-white"
+                            >
+                                <h3 className="text-3xl font-sofiasanscondensed text-left  font-bold">{text}</h3>
+
+                                <motion.p
+                                    variants={{
+                                        rest: { opacity: 0, height: 0 },
+                                        hover: { opacity: 1, height: "auto" }
+                                    }}
+                                    transition={{ duration: 0.4 }}
+                                    className="text-sm text-left font-inter mt-2 overflow-hidden"
+                                >
+                                    {description}
+                                </motion.p>
+                            </motion.div>
+                        </motion.a>
                     ))}
                 </div>
             </div>
 
 
-            <div className="controls flex justify-center mt-6">
+            <div className="controls flex justify-center mt-10">
                 <button
-                    className="bg-transparent text-black p-3 rounded-full mr-4 "
+                    className="bg-purple-600 text-white p-3 rounded-full mr-4"
                     onClick={() => handleScroll("left")}
                 >
-                    &larr;
+                    <ArrowLeft size={20} />
                 </button>
                 <button
-                    className="bg-transparent text-black  p-3 rounded-full"
+                    className="bg-purple-600 text-white p-3 rounded-full"
                     onClick={() => handleScroll("right")}
                 >
-                    &rarr;
+                    <ArrowRight size={20} />
                 </button>
             </div>
         </section>

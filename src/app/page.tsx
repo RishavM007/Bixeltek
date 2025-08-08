@@ -26,14 +26,17 @@ import { Header } from "@/sections/Header";
 import { Hero } from "@/sections/Hero";
 import MetricsSection from "@/components/Counter3";
 import { LogoTicker } from "@/sections/LogoTicker";
-import { Testimonials } from "@/sections/Testimonials";
-import { CallToAction } from "@/sections/CallToAction";
-import { Casestudy } from "@/sections/Casestudies";
 import { About } from "@/sections/About";
 import { Footer } from "@/sections/Footer";
 import { ContactButton } from "@/sections/contactButton";
 import ServiceCards from "@/components/ServiceCards";
+import WhyChoose from "@/sections/WhyChoose";
 import CardList from "@/components/ServiceCards";
+import CarouselSection from "@/components/industriescarosel";
+import FAQSection from "@/sections/HomeFaq";
+import Blog from "@/sections/Blog";
+import Tech2 from "@/components/Tech2";
+import TimelineSection from '@/sections/Process'
 
 export default function Home() {
   return (
@@ -43,10 +46,19 @@ export default function Home() {
       <LogoTicker />
       <About />
       <CardList />
-      <MetricsSection/>
-      <Testimonials />
-      <CallToAction />
-      <Casestudy />
+      <section className="bg-white">
+      <WhyChoose/>
+      </section>
+      {/* <MetricsSection/> */}
+    
+      <CarouselSection />
+      <TimelineSection />
+      {/* <Testimonials />
+      <CallToAction /> */}
+      <Tech2 />
+      {/* <Casestudy /> */}
+      <FAQSection/>
+      <Blog/>
       <ContactButton />
       <Footer />
     </>

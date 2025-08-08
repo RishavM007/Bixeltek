@@ -1,37 +1,34 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-
 import react from '@/assets/reactlogo.png'
-import ga from '@/assets/icons8-google-analytics-24.png'
-import nexticon from '@/assets/icons8-react-24.png'
-import ahref from '@/assets/primary-light-AK6KQQMG.webp'
-import semrush from '@/assets/SEMrush-Logo.png'
-import seranking from '@/assets/se-ranking-logo.jpg'
-import looker from '@/assets/Looker_6f803d7fdc.webp'
 import wordpress from '@/assets/WordPress-Logo-2008-present.jpg'
 import elementor from '@/assets/elementor.png'
 import nextjsicon from '@/assets/nextjsicon.jpg'
-import reactksicon from '@/assets/1174949_js_react js_logo_react_react native_icon.png'
 import tailwindcsslogo from '@/assets/tailwindcss_logo_icon_170649.webp'
 import jslogo from '@/assets/Node.js_logo.svg.png'
+import html from '@/assets/html5-emblem-orange-shield-and-white-text-vector.jpg'
+import mongo from '@/assets/Mongodb.png'
+import mongoose from '@/assets/mongoose2.png'
+import redis from '@/assets/redis-icon.webp'
 
 const icons = [
   { src: jslogo, alt: 'SEMrush', className: 'h-16' },
-  { src: seranking, alt: 'SE Ranking', className: 'h-20' },
+  { src: mongo, alt: 'SE Ranking', className: 'h-16' },
   { src: wordpress, alt: 'WordPress', className: 'h-20' },
   { src: elementor, alt: 'Elementor', className: 'h-14' },
-  { src: ga, alt: 'Next.js', className: 'h-14' },
+  { src: redis, alt: 'Next.js', className: 'h-24' },
   { src: react, alt: 'React Native', className: 'h-16' },
   { src: tailwindcsslogo, alt: 'Tailwind CSS', className: 'h-20' },
-  { src: ahref, alt: 'Ahrefs', className: 'h-14' },
+  { src: html, alt: 'Ahrefs', className: 'h-16' },
   { src: nextjsicon, alt: 'Ahrefs', className: 'h-16' },
+  { src: mongoose, alt: 'Ahrefs', className: 'h-24' },
 ]
 
 
 export default function Tech2() {
   return (
-    <section className="py-32 h">
+    <section className="py-32 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-0">
         <div className="mb-20 text-center">
           <span className="text-purple-600 text-sm text-center font-medium mb-4 block">OUR PARTNERS</span>

@@ -275,7 +275,7 @@ export default function DentistCaseStudy() {
                             <div className="w-full px-4 lg:w-1/2">
                                 <div className="text-center lg:text-right"><a
                                     className="font-semibold rounded-lg mx-auto text-lg inline-flex items-center justify-center bg-white py-4 px-9 hover:bg-opacity-90"
-                                    href="#">Contact Us</a>
+                                    href="/contact-us">Contact Us</a>
                                 </div>
                             </div>
                         </div>
