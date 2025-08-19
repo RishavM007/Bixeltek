@@ -1,0 +1,25 @@
+import React, { ReactNode } from 'react';
+import { Header } from '@/sections/Header';
+import { Footer } from '@/sections/Footer';
+import { Toaster } from 'react-hot-toast';
+
+interface LayoutProps {
+    children: ReactNode;
+}
+
+
+const Layout: React.FC<LayoutProps> = ({ children }) => {
+    return (
+        <>
+            <Header />
+            <main className="min-h-screen bg-[#131313]">{children}</main>
+            <Toaster
+                position="bottom-center"
+                reverseOrder={false}
+            />
+            <Footer />
+        </>
+    );
+};
+
+export default Layout;

@@ -53,7 +53,6 @@ export default function Home() {
       <WhyChoose/>
       </section>
       {/* <MetricsSection/> */}
-    
       <CarouselSection />
       <TimelineSection />
       {/* <Testimonials />

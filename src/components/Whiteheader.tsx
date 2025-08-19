@@ -68,7 +68,7 @@ export const Whiteheader = () => {
                                     onMouseLeave={() => setIsDropdownOpen(false)}
                                 >
                                     <a href="#" className="text-black hover:text-purple-800 transition flex font-semibold items-center">
-                                        Our Services <HiChevronDown className="ml-1 text-xs" />
+                                        Our Solutions <HiChevronDown className="ml-1 text-xs" />
                                     </a>
 
                                     {/* Dropdown Wrapper */}
@@ -84,7 +84,7 @@ export const Whiteheader = () => {
                                                 <div className="grid grid-cols-2 gap-4 px-4">
                                                     <ul>
                                                         <li>
-                                                            <Link href="/google-ads-agency-hyderabad" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
+                                                            <Link href="/services/google-ads" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
                                                                 <h3 className="text-lg font-semibold text-black">Google Ads Management</h3>
                                                                 <p className="text-sm text-gray-500">Optimize and manage Google Ads campaigns effectively.</p>
                                                             </Link>
@@ -238,11 +238,11 @@ export const Whiteheader = () => {
                         <li><Link href="/" className="block py-2 px-4 hover:bg-purple-600  rounded">Home</Link></li>
                         <li>
                             <button onClick={() => setIsDropdownOpen(!isDropdownOpen)} className="flex justify-between w-full py-2 px-4 hover:bg-purple-600 rounded">
-                                Our Services <HiChevronDown className="text-xl" />
+                                Our Solutions <HiChevronDown className="text-xl" />
                             </button>
                             {isDropdownOpen && (
                                 <motion.ul initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="ml-4 text-lg space-y-2">
-                                    <li><Link href="/google-ads-agency-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Google Ads Management</Link></li>
+                                    <li><Link href="/services/google-ads" className="block py-2 px-4 hover:bg-gray-700 rounded">Google Ads Management</Link></li>
                                     <li><Link href="/seo-agency-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">SEO</Link></li>
                                     <li><Link href="/social-media-marketing-agency-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Social Media Management</Link></li>
                                     <li><Link href="/web-design-services-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Web Development</Link></li>

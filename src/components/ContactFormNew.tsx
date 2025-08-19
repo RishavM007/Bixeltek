@@ -92,11 +92,16 @@ export default function ContactFromNew() {
             !formData.message ||
             !formData.website
         ) {
-            // alert("Please fill in all required fields.");
+
             toast.error("Please fill in all required fields.")
+
 
             return;
         }
+
+         const loadingToast = toast.loading("Submitting your form...");
+
+
         try {
             const response = await fetch('/api/contact', {
                 method: 'POST',
@@ -108,7 +113,7 @@ export default function ContactFromNew() {
 
             if (!response.ok) throw new Error(result.error || 'Failed to send message.');
 
-            toast.success('Thank you for filling the form!')
+  toast.success("Thank you for filling the form!", { id: loadingToast });
 
             window.setTimeout(() => {
                 router.push('/thank-you'); // Redirect to thank you page
@@ -134,6 +139,7 @@ export default function ContactFromNew() {
         } catch (error: any) {
             console.error("Error submitting form:", error);
             alert(`Something went wrong: ${error.message}`); // Show exact error
+             toast.error(`Something went wrong: ${error.message}`, { id: loadingToast });
         }
     };
     const [isOpen, setIsOpen] = useState(false);
@@ -173,7 +179,7 @@ export default function ContactFromNew() {
     return (
         <div className="w-[80%] p-6 relative bg-white rounded-lg shadow-md">
 
-            <form className="space-y-4" onSubmit={handleSubmit}>
+            <form className="space-y-4" onSubmit={handleSubmit} id='form'>
                 <div className="flex flex-col md:flex-row gap-5">
                     <div className="w-full md:w-1/2">
                         <label htmlFor="firstName" className="text-sm font-medium text-gray-700">First Name<span className='text-red-600'>*</span></label>

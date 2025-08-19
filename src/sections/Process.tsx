@@ -60,7 +60,7 @@ export default function TimelineSection() {
               {index % 2 === 0 ? (
                 <>
                   {/* Desktop Title */}
-                  <div className="relative text-right pr-8 hidden md:block">
+                  <div className="relative  text-right pr-8 hidden md:block">
                     <div className="absolute top-1/2 right-[-32px] transform -translate-y-1/2 w-8 h-8 bg-purple-500 rounded-full text-white flex items-center justify-center font-bold shadow-lg">
                       {index + 1}
                     </div>
@@ -68,10 +68,17 @@ export default function TimelineSection() {
                   </div>
 
                   {/* Desktop Subtitle + Description */}
-                  <div className="text-left ml-10 rounded-2xl px-8 py-4 border hidden md:block">
+                  <div className="relative text-left shadow-lg border border-black/20 ml-10 rounded-2xl px-8 py-4 hidden md:block
+  before:content-[''] before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-[15px]
+  before:border-y-transparent before:border-y-[14px] before:border-r-[15px] before:border-r-black/20
+  after:content-[''] after:absolute after:top-1/2 after:-translate-y-1/2 after:-left-[13px]
+  after:border-y-transparent after:border-y-[12px] after:border-r-[13px] after:border-r-white">
+
                     <h4 className="text-lg font-semibold">{step.subtitle}</h4>
                     <p className="text-gray-700 mt-2 font-poppins text-sm">{step.description}</p>
                   </div>
+
+
 
                   {/* Mobile version (centered and stacked) */}
                   <div className="flex flex-col items-center text-center px-4 rounded-2xl py-6 border md:hidden space-y-4">
@@ -86,10 +93,16 @@ export default function TimelineSection() {
               ) : (
                 <>
                   {/* Desktop Subtitle + Description */}
-                  <div className="text-right mr-10 rounded-2xl px-8 py-4 border border-black/10 hidden md:flex md:flex-col">
+                  <div className="relative shadow-lg text-right mr-10 rounded-2xl px-8 py-4 border border-black/10 hidden md:flex md:flex-col
+  before:content-[''] before:absolute before:top-1/2 before:-translate-y-1/2 before:-right-[15px]
+  before:border-y-transparent before:border-y-[14px] before:border-l-[15px] before:border-l-black/10
+  after:content-[''] after:absolute after:top-1/2 after:-translate-y-1/2 after:-right-[13px]
+  after:border-y-transparent after:border-y-[12px] after:border-l-[13px] after:border-l-white">
+
                     <h4 className="text-lg font-semibold">{step.subtitle}</h4>
                     <p className="text-gray-700 mt-2 font-poppins text-sm">{step.description}</p>
                   </div>
+
 
                   {/* Desktop Title */}
                   <div className="relative hidden md:block">

@@ -99,11 +99,11 @@ export const ContactForm: React.FC<ContactFormProps> = ({ isVisible, onClose }: 
                 body: JSON.stringify(formData),
             });
 
-            const result = await response.json(); // Try parsing response
+            const result = await response.json(); 
 
             if (!response.ok) throw new Error(result.error || 'Failed to send message.');
 
-            console.log("API Response:", result); // Debugging
+            console.log("API Response:", result); 
             router.push('/thank-you')
             setFormData({
                 firstName: '',
