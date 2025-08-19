@@ -10,7 +10,7 @@ const protections = [
         title: "Policy Compliance",
         description:
             "We craft ads that meet Google’s strict policies, lowering the chances of disapprovals and wasted time. Our compliance-first approach keeps your campaigns safe and scalable.",
-        image: "/Prohibited content (1).png", // replace with real image
+        image: "/account suspension.gif",
     },
     {
         title: "Suspension Recovery",
