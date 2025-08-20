@@ -45,7 +45,7 @@ export default function BixeltekAdvantage() {
                     </p>
 
                     {/* CTA Banner */}
-                    <div className="w-full items-center flex justify-center md:justify-start">
+                    <div className="w-full items-center flex justify-start md:justify-start">
                         <a
                             href="https://www.google.com/partners/agency?id=2188074075"
                             target="_blank"
@@ -62,7 +62,7 @@ export default function BixeltekAdvantage() {
                 </div>
 
                 {/* Right Section - Grid of Cards */}
-                <div className="grid gap-6 sm:grid-cols-2">
+                <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
                     {advantages.map((item, index) => (
                         <div
                             key={index}

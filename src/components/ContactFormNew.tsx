@@ -113,7 +113,7 @@ export default function ContactFromNew() {
 
             if (!response.ok) throw new Error(result.error || 'Failed to send message.');
 
-  toast.success("Thank you for filling the form!", { id: loadingToast });
+        toast.success("Thank you for filling the form!", { id: loadingToast });
 
             window.setTimeout(() => {
                 router.push('/thank-you'); // Redirect to thank you page

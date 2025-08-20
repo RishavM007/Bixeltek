@@ -1,3 +1,20 @@
+export const metadata = {
+    title: " Google Ads Management Services | Google Partner PPC Agency | Bixeltek",
+    description:
+        " Bixeltek is a global-first Google Partner agency delivering smarter Google Ads management. From AI bidding & Performance Max to fraud protection, suspension recovery & advertiser verification — we scale businesses in the USA, Canada, India & Saudi Arabia",
+    keywords:
+        "Bixeltek social media, Social media management Hyderabad, Best social media agency Hyderabad, Instagram marketing, Facebook ads, LinkedIn marketing, Twitter management, Social media strategy, Content creation, Brand growth, Online presence",
+    openGraph: {
+        title: " Google Ads Management Services | Google Partner PPC Agency | Bixeltek",
+        description:
+            " Bixeltek is a global-first Google Partner agency delivering smarter Google Ads management. From AI bidding & Performance Max to fraud protection, suspension recovery & advertiser verification — we scale businesses in the USA, Canada, India & Saudi Arabia.",
+        type: "website",
+    },
+};
+
+
+
+
 import React from 'react'
 import { LogoTicker2 } from '@/components/GoogleAdsCarousel'
 import Section1 from '@/components/GoogleAds/Section1';
@@ -10,9 +27,11 @@ import IndustryCarouselSection from '@/components/GoogleAds/Section7';
 import BixeltekAdvantage from '@/components/GoogleAds/Section8';
 import FAQSection8 from '@/components/GoogleAds/SectionFaq';
 import ContactFromNew from '@/components/ContactFormNew';
-import { PhoneCall, MessageCircle, CalendarDays } from "lucide-react"
+import { PhoneCall } from "lucide-react"
+import GradientBorderContainersMob from '@/components/GoogleAds/TimelineMobile';
+import TechStackSection from '@/components/GoogleAds/Section9';
+import Testimonials from '@/components/GoogleAds/Reviews';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function page() {
 
@@ -58,11 +77,13 @@ export default function page() {
             <Section1 />
             <WhyGoogleAds />
             <ProtectAds />
-            <GradientContainers />
+            <GradientBorderContainersMob/>
             <BiddingStrategies />
            <GoogleAdsCostSection/>
            <IndustryCarouselSection />
            <BixeltekAdvantage />
+           <TechStackSection />
+           <Testimonials />
            <FAQSection8/>
            <section className='bg-black p-2 md:p-20 mx-auto flex flex-col justify-center gap-10 items-center md:flex-row ' id='form'>
                 <div className="w-full mt-14 md:mt-0 flex justify-center items-center px-6">

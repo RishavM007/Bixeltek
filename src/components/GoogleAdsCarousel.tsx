@@ -15,10 +15,9 @@ export const LogoTicker2 = () => {
   return (
     <section className='pt-32 bg-black mt-10  flex flex-col gap-20'>
 
-      <div className="w-[90%] md:w-[90%] lg:w-[90%] mx-auto">
+      <div className="w-[100%] md:w-[90%] lg:w-[90%] mx-auto">
         <div className='flex items-center'>
-          <div className='flex-1 md:flex-none mr-2 md:mr-5 lg:mr-8'>
-          </div>
+        
           <div className=' flex flex-1 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_20%,black_96%,transparent)]'>
           <motion.div 
           initial = {{translateX : '-50%'}}
@@ -50,7 +49,7 @@ export const LogoTicker2 = () => {
               anata   
             ].map((logo, index) => (
               <div key={index}>
-                <Image src={logo} alt={`Company Logo ${index + 1}`} className=' h-14 w-auto object-contain' />
+                <Image src={logo} alt={`Company Logo ${index + 1}`} className=' h-10 md:h-14 w-auto object-contain' />
               </div>
             ))}
           </motion.div>

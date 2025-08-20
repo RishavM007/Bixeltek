@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function GoogleAdsCostSection() {
   return (
-    <div className="bg-[#131313] text-white py-16  font-poppins">
+    <div className="bg-[#131313] text-white md:py-16  font-poppins">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Side Content */}
         <div className="pr-6 lg:pr-16 px-6 md:px-12 lg:px-20">

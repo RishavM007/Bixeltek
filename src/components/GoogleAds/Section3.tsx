@@ -48,7 +48,7 @@ export default function ProtectAds() {
                 </p>
 
                 {/* Tabs */}
-                <div className="flex flex-wrap justify-center gap-4 mb-12">
+                <div className="grid grid-cols-2 md:grid-cols-4 flex-wrap justify-center gap-4 mb-12">
                     {protections.map((item, index) => (
                         <button
                             key={index}
@@ -72,7 +72,7 @@ export default function ProtectAds() {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -30 }}
                             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                            className="grid md:grid-cols-2 gap-10 items-center text-left"
+                            className="grid md:grid-cols-2 md:gap-10 items-center text-left"
                         >
                             {/* LEFT IMAGE */}
                             <div className="relative w-full h-72 md:h-96 bg-transparent rounded-2xl overflow-hidden">
@@ -86,10 +86,10 @@ export default function ProtectAds() {
 
                             {/* RIGHT TEXT */}
                             <div>
-                                <h3 className="text-2xl font-semibold mb-4">
+                                <h3 className="text-2xl text-center md:text-left font-semibold mb-4">
                                     {protections[activeTab].title}
                                 </h3>
-                                <p className="text-gray-300 leading-relaxed">
+                                <p className="text-gray-300 text-center md:text-left leading-relaxed">
                                     {protections[activeTab].description}
                                 </p>
                             </div>
