@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
-import {Header} from '@/sections/Header';
+import { Whiteheader } from '@/components/Whiteheader';
 import {Footer} from '@/sections/Footer';
-import Head from 'next/head';
+
 
 interface LayoutProps {
   children: ReactNode;
@@ -11,11 +11,12 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
-      <Header />
+      <Whiteheader />
       <main className="min-h-screen bg-white">{children}</main>
       <Footer />
     </>
   );
 };
+
 
 export default Layout;
