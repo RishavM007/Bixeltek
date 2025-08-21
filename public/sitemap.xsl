@@ -18,18 +18,39 @@
       </head>
       <body>
         <h1>BIXELTEK Sitemap</h1>
-        <table>
-          <tr>
-            <th>URL</th>
-            <th>Last Modified</th>
-          </tr>
-          <xsl:for-each select="s:urlset/s:url">
+
+        <!-- Case 1: sitemapindex -->
+        <xsl:if test="s:sitemapindex">
+          <table>
             <tr>
-              <td><a href="{s:loc}"><xsl:value-of select="s:loc"/></a></td>
-              <td><xsl:value-of select="s:lastmod"/></td>
+              <th>Sitemap</th>
+              <th>Last Modified</th>
             </tr>
-          </xsl:for-each>
-        </table>
+            <xsl:for-each select="s:sitemapindex/s:sitemap">
+              <tr>
+                <td><a href="{s:loc}"><xsl:value-of select="s:loc"/></a></td>
+                <td><xsl:value-of select="s:lastmod"/></td>
+              </tr>
+            </xsl:for-each>
+          </table>
+        </xsl:if>
+
+        <!-- Case 2: urlset -->
+        <xsl:if test="s:urlset">
+          <table>
+            <tr>
+              <th>URL</th>
+              <th>Last Modified</th>
+            </tr>
+            <xsl:for-each select="s:urlset/s:url">
+              <tr>
+                <td><a href="{s:loc}"><xsl:value-of select="s:loc"/></a></td>
+                <td><xsl:value-of select="s:lastmod"/></td>
+              </tr>
+            </xsl:for-each>
+          </table>
+        </xsl:if>
+
       </body>
     </html>
   </xsl:template>
