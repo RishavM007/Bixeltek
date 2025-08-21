@@ -22,21 +22,21 @@ export const Header = () => {
       id: 1,
       title: "Tumblewash Case Study",
       description: "Learn essential steps to begin your journey in the digital marketing world effectively.",
-      link: "/casestudies-bixeltek/Tumblewash-Casestudy",
+      link: "/case-studies/Tumblewash-Casestudy",
       glowcolor: "bg-purple-500",
     },
     {
       id: 2,
       title: "Eazy Bike Repair Case Study",
       description: "Learn essential steps to begin your journey in the digital marketing world effectively.",
-      link: "/casestudies-bixeltek/google-ads-case-study-bike-repair-hyderabad",
+      link: "/case-studies/google-ads-case-study-bike-repair-hyderabad",
       glowcolor: "bg-purple-500",
     },
     {
       id: 3,
       title: "Digital Marketing for Dentists",
       description: "Learn essential steps to begin your journey in the digital marketing world effectively.",
-      link: "/casestudies-bixeltek/digital-marketing-for-dentists-case-study",
+      link: "/case-studies/digital-marketing-for-dentists-case-study",
       glowcolor: "bg-purple-500",
     },
     // {
@@ -94,9 +94,9 @@ export const Header = () => {
                 <button onClick={()=>{setIsDropdownOpen2(!isDropdownOpen2)}} className="flex justify-between w-full py-2 px-4 hover:bg-purple-600 rounded">Case Studies <HiChevronDown className="text-xl md:text-2xl" /></button>
                 {isDropdownOpen2 && (
                   <motion.ul initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="ml-4 text-lg md:text-xl space-y-2">
-                    <li><Link href="/casestudies-bixeltek/Tumblewash-Casestudy" className="block py-2 px-4 hover:bg-gray-700 rounded">Tumblewash-Casestudy</Link></li>
-                    <li><Link href="/casestudies-bixeltek/google-ads-case-study-bike-repair-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Eazy Bike Repair Case Study</Link></li>
-                    <li><Link href="/casestudies-bixeltek/digital-marketing-for-dentists-case-study" className="block py-2 px-4 hover:bg-gray-700 rounded">Digital Marketing for Dentists</Link></li>
+                    <li><Link href="/case-studies/Tumblewash-Casestudy" className="block py-2 px-4 hover:bg-gray-700 rounded">Tumblewash-Casestudy</Link></li>
+                    <li><Link href="/case-studies/google-ads-case-study-bike-repair-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Eazy Bike Repair Case Study</Link></li>
+                    <li><Link href="/case-studies/digital-marketing-for-dentists-case-study" className="block py-2 px-4 hover:bg-gray-700 rounded">Digital Marketing for Dentists</Link></li>
                   </motion.ul>
                 )}
               </li>

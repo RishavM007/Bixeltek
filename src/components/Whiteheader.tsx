@@ -20,21 +20,21 @@ export const Whiteheader = () => {
             id: 1,
             title: "Tumblewash Case Study",
             description: "Learn essential steps to begin your journey in the digital marketing world effectively.",
-            link: "/casestudies-bixeltek/Tumblewash-Casestudy",
+            link: "/case-studies/Tumblewash-Casestudy",
             glowcolor: "bg-purple-500",
         },
         {
             id: 2,
             title: "Eazy Bike Repair Case Study",
             description: "Learn essential steps to begin your journey in the digital marketing world effectively.",
-            link: "/casestudies-bixeltek//google-ads-case-study-bike-repair-hyderabad",
+            link: "/case-studies/google-ads-case-study-bike-repair-hyderabad",
             glowcolor: "bg-purple-500",
         },
         {
             id: 3,
             title: "Digital Marketing for Dentists",
             description: "Learn essential steps to begin your journey in the digital marketing world effectively.",
-            link: "/casestudies-bixeltek//digital-marketing-for-dentists-case-study",
+            link: "/case-studies/digital-marketing-for-dentists-case-study",
             glowcolor: "bg-purple-500",
         },
     ];
@@ -163,7 +163,7 @@ export const Whiteheader = () => {
                                     <ul className="absolute top-full -left-7 mt-0 bg-white rounded-b-md shadow-lg hidden group-hover:block z-50 min-w-[200px]">
                                         <li>
                                             <Link
-                                                href="/casestudies-bixeltek/Tumblewash-Casestudy"
+                                                href="/case-studies/Tumblewash-Casestudy"
                                                 className="block px-4 py-2 text-black rounded-b-md hover:bg-[#670ef7] hover:text-white transition"
                                             >
                                                 Tumblewash Case Study
@@ -171,7 +171,7 @@ export const Whiteheader = () => {
                                         </li>
                                         <li>
                                             <Link
-                                                href="/casestudies-bixeltek/google-ads-case-study-bike-repair-hyderabad"
+                                                href="/case-studies/google-ads-case-study-bike-repair-hyderabad"
                                                 className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
                                             >
                                                 Eazy Bike Repair Case Study
@@ -179,7 +179,7 @@ export const Whiteheader = () => {
                                         </li>
                                         <li>
                                             <Link
-                                                href="/casestudies-bixeltek/digital-marketing-for-dentists-case-study"
+                                                href="/case-studies/digital-marketing-for-dentists-case-study"
                                                 className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
                                             >
                                                 Dental Clinic Case Study
@@ -187,7 +187,7 @@ export const Whiteheader = () => {
                                         </li>
                                         <li>
                                             <Link
-                                                href="/casestudies"
+                                                href="/case-studies"
                                                 className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
                                             >
                                                 View All
