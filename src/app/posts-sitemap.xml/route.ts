@@ -12,7 +12,7 @@ export async function GET() {
     const data: any = await client.request(GET_ALL_POSTS);
     blogPosts =
       data?.posts?.nodes?.map((post: any) => ({
-        url: `${baseUrl}/blogs/${post.slug}`,
+        url: `${baseUrl}/blog/${post.slug}`,
         lastModified: post.date || new Date().toISOString(),
       })) || [];
   } catch (error) {
