@@ -46,7 +46,7 @@ function getAppRoutes(dirPath: string, prefix = ""): { url: string; lastModified
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // 1. Get static pages automatically from /app
-  const appDir = path.join(process.cwd(), "app");
+  const appDir = path.join(process.cwd(), "src", "app");
   const staticRoutes = getAppRoutes(appDir);
 
   // 2. Get dynamic blog posts from GraphQL
