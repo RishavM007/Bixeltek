@@ -83,7 +83,6 @@ export default function page() {
            <IndustryCarouselSection />
            <BixeltekAdvantage />
            <TechStackSection />
-           <Testimonials />
            <FAQSection8/>
            <section className='bg-black p-2 md:p-20 mx-auto flex flex-col justify-center gap-10 items-center md:flex-row ' id='form'>
                 <div className="w-full mt-14 md:mt-0 flex justify-center items-center px-6">
