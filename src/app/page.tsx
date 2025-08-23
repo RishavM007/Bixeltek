@@ -10,16 +10,24 @@ export const metadata = {
     "social media marketing Hyderabad",
     "PPC agency Hyderabad",
   ],
+  alternates: {
+    canonical: "https://bixeltek.com/",   // 👈 Force Google to treat this as the master
+  },
   openGraph: {
     title: "Best Digital Marketing Agency in Hyderabad | Bixeltek",
     description:
       "Google-certified digital marketing agency in Hyderabad offering SEO, Google Ads, Meta Ads & Web Design. Trusted by clients in India, USA, Canada, UAE & Saudi.",
     siteName: "Bixeltek",
     type: "website",
+    url: "https://bixeltek.com/",         // 👈 Match canonical
   },
-  
+  twitter: {
+    card: "summary_large_image",
+    title: "Best Digital Marketing Agency in Hyderabad | Bixeltek",
+    description:
+      "Google-certified digital marketing agency in Hyderabad offering SEO, Google Ads, Meta Ads & Web Design.",
+  },
 };
-
 export const dynamic = "force-dynamic";
 
 import { Header } from "@/sections/Header";
