@@ -1,5 +1,21 @@
 /** @type {import('next').NextConfig} */
+
+
 const nextConfig = {
+
+   async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.bixeltek.com" }],
+        destination: "https://bixeltek.com/:path*",
+        permanent: true,
+      },
+    ];
+  },
+  trailingSlash: false,
+
+
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) =>
