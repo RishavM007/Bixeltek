@@ -1,15 +1,32 @@
 export const metadata = {
-    title: " Google Ads Management Services | Google Partner PPC Agency | Bixeltek",
+  title: "Google Ads Management Services | Google Partner PPC Agency | Bixeltek",
+  description:
+    "Bixeltek is a global-first Google Partner agency delivering smarter Google Ads management. From AI bidding & Performance Max to fraud protection, suspension recovery & advertiser verification — we scale businesses in the USA, Canada, India & Saudi Arabia",
+  keywords: [
+    "Bixeltek social media",
+    "Social media management Hyderabad",
+    "Best social media agency Hyderabad",
+    "Instagram marketing",
+    "Facebook ads",
+    "LinkedIn marketing",
+    "Twitter management",
+    "Social media strategy",
+    "Content creation",
+    "Brand growth",
+    "Online presence",
+  ],
+  alternates: {
+    canonical: "https://bixeltek.com/services/google-ads", // ✅ Canonical URL
+  },
+  openGraph: {
+    title:
+      "Google Ads Management Services | Google Partner PPC Agency | Bixeltek",
     description:
-        " Bixeltek is a global-first Google Partner agency delivering smarter Google Ads management. From AI bidding & Performance Max to fraud protection, suspension recovery & advertiser verification — we scale businesses in the USA, Canada, India & Saudi Arabia",
-    keywords:
-        "Bixeltek social media, Social media management Hyderabad, Best social media agency Hyderabad, Instagram marketing, Facebook ads, LinkedIn marketing, Twitter management, Social media strategy, Content creation, Brand growth, Online presence",
-    openGraph: {
-        title: " Google Ads Management Services | Google Partner PPC Agency | Bixeltek",
-        description:
-            " Bixeltek is a global-first Google Partner agency delivering smarter Google Ads management. From AI bidding & Performance Max to fraud protection, suspension recovery & advertiser verification — we scale businesses in the USA, Canada, India & Saudi Arabia.",
-        type: "website",
-    },
+      "Bixeltek is a global-first Google Partner agency delivering smarter Google Ads management. From AI bidding & Performance Max to fraud protection, suspension recovery & advertiser verification — we scale businesses in the USA, Canada, India & Saudi Arabia.",
+    type: "website",
+    url: "https://bixeltek.com/services/google-ads", // ✅ Matches canonical
+    siteName: "Bixeltek",
+  },
 };
 
 
