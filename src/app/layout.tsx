@@ -15,6 +15,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Schema */}
+        <meta name="msvalidate.01" content="827242EBFB3A5992CD1F4EB3CE579626" />
         <Script id="bixeltek-schema" type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
