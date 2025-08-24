@@ -8,11 +8,11 @@ export async function GET() {
   <?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
   <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <sitemap>
-      <loc>${baseUrl}/pages-sitemap.xml</loc>
+      <loc>${baseUrl}/sitemap-pages.xml</loc>
       <lastmod>${new Date().toISOString()}</lastmod>
     </sitemap>
     <sitemap>
-      <loc>${baseUrl}/posts-sitemap.xml</loc>
+      <loc>${baseUrl}/sitemap-posts.xml</loc>
       <lastmod>${new Date().toISOString()}</lastmod>
     </sitemap>
   </sitemapindex>`;
