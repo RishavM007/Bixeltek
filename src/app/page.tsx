@@ -11,7 +11,7 @@ export const metadata = {
     "PPC agency Hyderabad",
   ],
   alternates: {
-    canonical: "https://bixeltek.com/",   // 👈 Force Google to treat this as the master
+    canonical: "https://bixeltek.com/",   
   },
   openGraph: {
     title: "Best Digital Marketing Agency in Hyderabad | Bixeltek",

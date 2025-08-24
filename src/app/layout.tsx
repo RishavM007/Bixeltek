@@ -21,10 +21,10 @@ export default function RootLayout({
             "@graph": [
               {
                 "@type": "Organization",
-                "@id": "https://www.bixeltek.com#organization",
+                "@id": "https://bixeltek.com#organization",
                 "name": "Bixeltek",
-                "url": "https://www.bixeltek.com",
-                "logo": "https://www.bixeltek.com/BIXELTEKLOGO.png",
+                "url": "https://bixeltek.com",
+                "logo": "https://bixeltek.com/BIXELTEKLOGO.png",
                 "description": "Bixeltek is a Google Partner certified digital marketing agency offering Google Ads, SEO, Web Design, and Meta Ads marketing across India, Canada, USA, UAE, and Saudi Arabia.",
                 "sameAs": [
                   "https://www.facebook.com/bixeltek",
@@ -47,11 +47,11 @@ export default function RootLayout({
               },
               {
                 "@type": "LocalBusiness",
-                "@id": "https://www.bixeltek.com#localbusiness",
+                "@id": "https://bixeltek.com#localbusiness",
                 "name": "Bixeltek",
-                "image": "https://www.bixeltek.com/path-to-logo.png",
+                "image": "https://bixeltek.com/path-to-logo.png",
                 "priceRange": "$$",
-                "url": "https://www.bixeltek.com",
+                "url": "https://bixeltek.com",
                 "telephone": "+91-9100032301",
                 "address": {
                   "@type": "PostalAddress",
