@@ -6,6 +6,7 @@ import { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import Image from 'next/image';
 import Aboutusimage from '@/assets/Mk power_.jpeg';
+import Link from 'next/link';
 
 
 
@@ -176,7 +177,7 @@ export default function ContactFromNew() {
     };
 
 
-    return (
+    return (       
         <div className="w-[80%] p-6 relative bg-white rounded-lg shadow-md">
 
             <form className="space-y-4" onSubmit={handleSubmit} id='form'>
@@ -459,8 +460,10 @@ export default function ContactFromNew() {
                 >
                     Submit
                 </button>
+                <p className='text-black text-xs text-center'>In a hurry? Give us a call now at <Link href={'tel:+91910032301'}><span className='text-purple-500 font-bold'>+91-910032301</span></Link></p>
             </form>
+            <p className='text-black text-center mt-5 text-xs' >By checking the box above, you consent to receive informational SMS and SMS-based appointment reminders from Thrive Ideas at the phone number provided. Msg & data rates may apply. Msg frequency varies. Unsubscribe at any time by replying STOP. Reply HELP for help. <span className='underline underline-offset-2'>Privacy Policy & Terms.</span> </p>
         </div>
-
+ 
     )
 }

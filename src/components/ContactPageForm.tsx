@@ -156,44 +156,83 @@ export const ContactSection: React.FC = () => {
                 backgroundRepeat: 'no-repeat',
             }}>
 
-                <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
-                <div className="flex flex-col relative lg:flex-row gap-10">
+                <div className="absolute inset-0 bg-black opacity-80 z-0"></div>
+                <div className="flex flex-col relative lg:flex-row gap-20">
                     {/* Left Side: Info */}
-                    <div className="lg:w-1/2 space-y-6 ">
-                        <h2 className="text-5xl font-sofiasanscondensed font-bold text-[#ffffff]">Rank Higher. Convert Better. Grow Faster.</h2>
-                        <p className="text-gray-100 text-lg font-inter">Whether it&apos;s web design, SEO, or Google Ads — Bixeltek helps brands get seen, get leads, and get ahead.</p>
+                   
 
-                        <div className="space-y-4">
-                            <div className="flex items-center gap-3">
-                                <FaPhoneAlt className="text-[#670ef7]" />
-                                <a href="tel:+919100032301">
-                                    <span>+91 91000 32301</span>
-                                </a>
+                    <div className='w-[60%] flex items-end justify-end'>
+
+                        <ContactFromNew />
+                    </div>
+                     {/* Left Side: Vertical Steps Info */}
+                    <div className="lg:w-1/2 space-y-8 text-white">
+
+                        <h2 className="text-4xl lg:text-5xl font-bold">
+                            Ready to Dominate Your Market?
+                        </h2>
+                        <p className="text-lg text-gray-200">
+                            Jumpstart your digital marketing success in 3 easy steps:
+                        </p>
+
+                        {/* Steps */}
+                        <div className="relative border-l-2 border-white/30 pl-10 ml-6 space-y-10">
+                            {/* Step 1 */}
+                            <div className="flex items-start gap-4 relative">
+                                <div className="absolute -left-[62px] flex items-center justify-center w-10 h-10 rounded-full bg-white text-green-700 font-bold">
+                                    1
+                                </div>
+                                <div className='flex flex-col gap-5'>
+                                    <h3 className="text-3xl font-semibold">Contact Us</h3>
+                                    <p className="text-gray-300 text-sm max-w-md">
+                                        Fill out our brief contact form, and we’ll be in touch with you soon to learn more about your business.
+                                    </p>
+                                </div>
                             </div>
-                            <div className="flex items-center gap-4">
-                                <FaEnvelope className="text-[#670ef7]" />
-                                <a href="mailto:hello@bixelte.com">
-                                    <span>hello@bixeltek.com</span>
-                                </a>
+
+                            {/* Step 2 */}
+                            <div className="flex items-start gap-4 relative">
+                                <div className="absolute -left-[62px] flex items-center justify-center w-10 h-10 rounded-full bg-white text-green-700 font-bold">
+                                    2
+                                </div>
+                                <div className='flex flex-col gap-5'>
+                                    <h3 className="text-3xl font-semibold">Launch Targeted Campaigns</h3>
+                                    <p className="text-gray-300 text-sm max-w-md">
+                                        Our digital marketing experts will work closely with you to implement data-driven strategies that drive business growth.
+                                    </p>
+                                </div>
                             </div>
-                            <div className="flex items-center gap-4">
-                                <FaMapMarkerAlt className="text-[#670ef7]" />
-                                <address className="not-italic mb-4 text-sm">
-                                    Bixeltek,3rd Floor, K K Convention Road, Suncity Rd, opposite Ratnadeep, Bandlaguda Jagir, Hyderabad, Telangana 500091
-                                </address>
-                            </div>
-                            <div className="flex items-center gap-4">
-                                <FaGlobe className="text-[#670ef7]" />
-                                <a href="https://www.bixeltek.com" target="_blank" rel="noopener noreferrer">
-                                    <span>www.bixeltek.com</span>
-                                </a>
+
+                            {/* Step 3 */}
+                            <div className="flex items-start gap-4 relative">
+                                <div className="absolute -left-[62px] flex items-center justify-center w-10 h-10 rounded-full bg-white text-green-700 font-bold">
+                                    3
+                                </div>
+                                <div className='flex flex-col gap-5'>
+                                    <h3 className="text-3xl font-semibold">Achieve Lasting Growth</h3>
+                                    <p className="text-gray-300 text-sm max-w-md">
+                                        Solidify your digital presence, expand your brand reach and see outstanding results month-over-month.
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
-                    </div>
-                    <div className='w-[70%] mb-[-450px] flex items-end justify-end'>
-
-                        <ContactFromNew />
+                        {/* Bottom Contact Info */}
+                        <div className="pt-6 border-t border-white/20 text-sm">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <p className="font-semibold">Headquarters:</p>
+                                    <p>Suncity<br />Hyderabad</p>
+                                    <p className="font-bold mt-1">+91 9100032301</p>
+                                </div>
+                                <div>
+                                    <p className="font-semibold">Office Hours:</p>
+                                    <p>Mon-Fri, 8:30am – 5:30pm CT</p>
+                                    <p className="font-semibold mt-2">Main Phone:</p>
+                                        <p className="font-bold mt-1">+91 9100032301</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

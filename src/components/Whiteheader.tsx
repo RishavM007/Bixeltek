@@ -156,9 +156,12 @@ export const Whiteheader = () => {
                                     </Link>
                                 </li>
                                 <li className="relative group py-7">
-                                    <div className="flex items-center text-black hover:text-purple-800 transition cursor-pointer">
+                                    <Link href={'/case-studies/'}>
+                                      <div className="flex items-center text-black hover:text-purple-800 transition cursor-pointer">
                                         Case Studies <HiChevronDown className="ml-1 text-xs" />
                                     </div>
+                                    </Link>
+                                  
 
                                     <ul className="absolute top-full -left-7 mt-0 bg-white rounded-b-md shadow-lg hidden group-hover:block z-50 min-w-[200px]">
                                         <li>

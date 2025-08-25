@@ -225,14 +225,17 @@ export const Header = () => {
                 </Link>
               </li>
               <li className="relative group py-7">
-                <div className="flex items-center text-white/70 hover:text-white transition cursor-pointer">
+              <Link href={'/case-studies'}>
+              <div className="flex items-center text-white/70 hover:text-white transition cursor-pointer">
                   Case Studies <HiChevronDown className="ml-1 text-xs" />
                 </div>
+              </Link>
+                
 
                 <ul className="absolute top-full -left-7 mt-0 bg-white rounded-b-md shadow-lg hidden group-hover:block z-50 min-w-[200px]">
                   <li>
                     <Link
-                      href="/casestudies-bixeltek/Tumblewash-Casestudy"
+                      href="/case-studies/Tumblewash-Casestudy"
                       className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
                     >
                       Tumblewash Case Study
@@ -240,7 +243,7 @@ export const Header = () => {
                   </li>
                   <li>
                     <Link
-                      href="/casestudies-bixeltek/google-ads-case-study-bike-repair-hyderabad"
+                      href="/case-studies/google-ads-case-study-bike-repair-hyderabad"
                       className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
                     >
                       Eazy Bike Repair Case Study
@@ -248,7 +251,7 @@ export const Header = () => {
                   </li>
                   <li>
                     <Link
-                      href="/casestudies-bixeltek/digital-marketing-for-dentists-case-study"
+                      href="/case-studies/digital-marketing-for-dentists-case-study"
                       className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
                     >
                       Dental Clinic Case Study
@@ -256,7 +259,7 @@ export const Header = () => {
                   </li>
                   <li>
                     <Link
-                      href="/casestudies"
+                      href="/case-studies"
                       className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
                     >
                       View All

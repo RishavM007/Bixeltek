@@ -16,7 +16,7 @@ export async function GET() {
         let date = post.date ? new Date(post.date) : new Date();
 
         return {
-          url: `${baseUrl}/blogs/${post.slug}`,
+          url: `${baseUrl}/blog/${post.slug}`,
           // ✅ Ensure valid ISO 8601 format
           lastModified: date.toISOString(),
         };

@@ -19,7 +19,6 @@ import { ContactSection } from '@/components/ContactPageForm'
 export default function ContactPage() {
     return (
         <>
-        
             <section>
                 <ContactSection />
             </section>
