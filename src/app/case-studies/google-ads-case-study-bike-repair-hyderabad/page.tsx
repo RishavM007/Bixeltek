@@ -9,6 +9,9 @@ export const metadata = {
             "How Bixeltek helped a trusted bike repair service in Hyderabad generate 340+ monthly leads with Google Ads. Powered by a certified Google Partner agency in Hyderabad. ",
         type: "website",
     },
+        alternates: {
+    canonical: "https://bixeltek.com/case-studies/google-ads-case-study-bike-repair-hyderabad", // 👈 canonical URL here
+  },
 };
 
 import React from 'react'

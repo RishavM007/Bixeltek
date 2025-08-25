@@ -7,6 +7,9 @@ export const metadata = {
         description: "Looking for a trusted Google Ads agency in Hyderabad? Bixeltek is a Google Partner providing expert PPC services with proven ROI. Book your free Google Ads audit today!",
         type: "website",
     },
+      alternates: {
+    canonical: "https://bixeltek.com/google-ads-agency-hyderabad", // 👈 canonical URL here
+  },
 };
 
 import React from 'react';

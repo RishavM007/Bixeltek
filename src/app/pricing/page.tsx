@@ -9,6 +9,9 @@ export const metadata = {
           "",
       type: "website",
   },
+        alternates: {
+    canonical: "https://bixeltek.com/pricing", // 👈 canonical URL here
+  },
 };
 import React, { ReactNode } from "react";
 

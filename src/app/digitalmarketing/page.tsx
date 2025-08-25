@@ -12,8 +12,10 @@ export const metadata = {
         "Maximize your online presence with Bixeltek’s top-tier digital marketing services. From SEO and PPC to social media management, we help businesses grow effectively.",
         siteName: "Bixeltek",
       type: "website",
-      
     },
+      alternates: {
+    canonical: "https://bixeltek.com/digitalmarketing", // 👈 canonical URL here
+  },
   };
 
 export const dynamic = "force-dynamic";

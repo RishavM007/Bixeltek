@@ -17,8 +17,9 @@ function getAppRoutes(dirPath: string, prefix = ""): { url: string; lastModified
         entry.name.startsWith("(") ||
         entry.name.startsWith("_") ||
         entry.name === "api" ||
-        entry.name === "blogs" ||
-        entry.name.startsWith("sitemap")
+        entry.name === "blog" ||
+        entry.name.startsWith("sitemap") ||
+        entry.name.startsWith("thank-you")
       ) {
         continue;
       }

@@ -21,6 +21,9 @@ export const metadata = {
       "Bixeltek is Hyderabad’s leading web design agency creating responsive, SEO-friendly websites. Get a modern, high-performance website built to convert.",
     type: "website",
   },
+                  alternates: {
+    canonical: "https://bixeltek.com/web-design-services-hyderabad", // 👈 canonical URL here
+  },
 };
 
 

@@ -20,6 +20,9 @@ export const metadata = {
     description:
       "How a small laundry brand achieved big results — 436% ROAS and 477+ monthly calls with half the spend. View the breakdown.",
   },
+          alternates: {
+    canonical: "https://bixeltek.com/case-studies/Tumblewash-Casestudy", // 👈 canonical URL here
+  },
 };
 
 

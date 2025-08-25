@@ -28,16 +28,13 @@ export const metadata = {
       "Google-certified digital marketing agency in Hyderabad offering SEO, Google Ads, Meta Ads & Web Design.",
   },
 };
-export const dynamic = "force-dynamic";
 
 import { Header } from "@/sections/Header";
 import { Hero } from "@/sections/Hero";
-import MetricsSection from "@/components/Counter3";
 import { LogoTicker } from "@/sections/LogoTicker";
 import { About } from "@/sections/About";
 import { Footer } from "@/sections/Footer";
 import { ContactButton } from "@/sections/contactButton";
-import ServiceCards from "@/components/ServiceCards";
 import WhyChoose from "@/sections/WhyChoose";
 import CardList from "@/components/ServiceCards";
 import CarouselSection from "@/components/industriescarosel";
@@ -46,8 +43,6 @@ import Blog from "@/sections/Blog";
 import Tech2 from "@/components/Tech2";
 import TimelineSection from '@/sections/Process'
 import GooglePartner from "@/sections/GooglePartner";
-
-
 export default function Home() {
   return (
     <>
@@ -55,7 +50,6 @@ export default function Home() {
       <Hero />
       <LogoTicker />
       <About />
-      
       <CardList />
       <section className="bg-white">
       <WhyChoose/>

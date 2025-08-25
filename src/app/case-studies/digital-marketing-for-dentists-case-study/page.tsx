@@ -9,6 +9,9 @@ export const metadata = {
       "See how Bixeltek helped a dental clinic generate 200+ patient leads in 30 days using Google Ads. Serving dentists iIndia, Canada & the USA.",
     type: "website",
   },
+    alternates: {
+    canonical: "https://bixeltek.com/case-studies/digital-marketing-for-dentists-case-study", // 👈 canonical URL here
+  },
 };
 import React from 'react'
 import DentistCaseStudy from '@/components/CasestudyMain/Dentist';

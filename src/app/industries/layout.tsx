@@ -14,6 +14,9 @@ export const metadata = {
     description: "Bixeltek is a Google Partner digital marketing agency helping dental clinics, startups, e-commerce, local businesses, and real estate brands grow with SEO, Ads, Web Design, and more.", 
     type: "website",
   },
+        alternates: {
+    canonical: "https://bixeltek.com/industries", // 👈 canonical URL here
+  },
 };
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {

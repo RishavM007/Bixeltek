@@ -10,6 +10,9 @@ export const metadata = {
             "Boost your brand’s online presence with Bixeltek’s professional social media management services. Drive engagement, increase reach, and build a strong brand identity.",
         type: "website",
     },
+            alternates: {
+    canonical: "https://bixeltek.com/social-media-marketing-agency-hyderabad", // 👈 canonical URL here
+  },
 };
 
 export const dynamic = "force-dynamic";

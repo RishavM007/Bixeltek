@@ -10,6 +10,9 @@ export const metadata = {
             "Boost your online presence with Bixeltek, a top SEO agency in Hyderabad. Our proven strategies help businesses dominate search results and drive organic growth.",
         type: "website",
     },
+          alternates: {
+    canonical: "https://bixeltek.com/seo-agency-hyderabad", // 👈 canonical URL here
+  },
 };
 
 export const dynamic = "force-dynamic";

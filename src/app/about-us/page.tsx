@@ -1,10 +1,22 @@
-"use client";
+export const metadata = {
+  title: "Bixeltek | Digital Marketing Agency That Drives Real Results",
+  description:
+    "Bixeltek is a Google Partner digital marketing agency helping businesses grow with ROI-driven SEO, Google Ads, Web Design & Social Media Marketing. Trusted globally.",
+  keywords: "Google Ads, Marketing, SEO, PPC, Bixeltek",
+  openGraph: {
+    title: "GoogleAds - Bixeltek",
+    description: "At Bixeltek, we specialize in providing tailored IT solutions.",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://bixeltek.com/about-us", // 👈 canonical URL here
+  },
+};
+
+
+
 import Image from "next/image";
-import BgImg from "@/assets/Layer F.png";
-import { motion } from "framer-motion";
 import { Bento } from "@/components/AbtHero/AbtHero";
-import CreativeSection from "@/components/AbtSection1";
-import TeamStatsSection from "@/components/Counter2New";
 import storyimg1 from "@/assets/roberto-cortese-ejhjSZKTeeg-unsplash.jpg"
 import storyimg2 from "@/assets/annie-spratt-MChSQHxGZrQ-unsplash.jpg";
 import { PhoneCall, MessageCircle, CalendarDays } from "lucide-react"

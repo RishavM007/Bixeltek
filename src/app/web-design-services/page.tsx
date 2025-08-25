@@ -10,6 +10,9 @@ export const metadata = {
             "Bixeltek builds high-performance, SEO-optimized websites in Hyderabad. Specializing in custom web development, e-commerce, CMS solutions, and digital marketing.",
         type: "website",
     },
+                alternates: {
+    canonical: "https://bixeltek.com/web-design-services", // 👈 canonical URL here
+  },
 };
 
 

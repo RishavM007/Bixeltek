@@ -9,6 +9,9 @@ export const metadata = {
             "Talk to a certified digital marketing experts in Bixeltek. We're here to help your business grow through data driven strategies.",
         type: "website",
     },
+      alternates: {
+    canonical: "https://bixeltek.com/contact-us", // 👈 canonical URL here
+  },
 };
 import React from 'react'
 import { ContactSection } from '@/components/ContactPageForm'
