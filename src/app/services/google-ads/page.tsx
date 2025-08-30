@@ -29,25 +29,20 @@ export const metadata = {
   },
 };
 
-
-
-
 import React from 'react'
 import { LogoTicker2 } from '@/components/GoogleAdsCarousel'
 import Section1 from '@/components/GoogleAds/Section1';
 import ProtectAds from '@/components/GoogleAds/Section3';
 import WhyGoogleAds from '@/components/GoogleAds/Section2';
-import GradientContainers from '@/components/GoogleAds/Timeline';
 import BiddingStrategies from '@/components/GoogleAds/Section5';
 import GoogleAdsCostSection from '@/components/GoogleAds/Section6';
 import IndustryCarouselSection from '@/components/GoogleAds/Section7';
 import BixeltekAdvantage from '@/components/GoogleAds/Section8';
 import FAQSection8 from '@/components/GoogleAds/SectionFaq';
 import ContactFromNew from '@/components/ContactFormNew';
-import { PhoneCall } from "lucide-react"
+import { PhoneCall } from "lucide-react";
 import GradientBorderContainersMob from '@/components/GoogleAds/TimelineMobile';
 import TechStackSection from '@/components/GoogleAds/Section9';
-import Testimonials from '@/components/GoogleAds/Reviews';
 import Link from 'next/link';
 
 export default function page() {

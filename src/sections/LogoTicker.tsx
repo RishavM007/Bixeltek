@@ -4,7 +4,6 @@ import daddysharklogo from "@/assets/daddyshark logo-01.png";
 import revita from "@/assets/Revita-Logo-without-background-02-Colored-Font-01.png";
 import markham from "@/assets/Logo.png.webp";
 import durrat from "@/assets/durrat_logo.png";
-import daprbins from "@/assets/DAPrBINS.logo_.jpg";
 import oma from "@/assets/OMA-Computer-System-Trading-2-2048x426.webp";
 import rooted from '@/assets/Rooted_Logo_new-4-wbg.png'
 import {motion} from 'framer-motion'
@@ -36,7 +35,6 @@ export const LogoTicker = () => {
               revita,
               markham,
               durrat,
-              daprbins,
               oma,
               rooted,    
               anata,
@@ -45,7 +43,6 @@ export const LogoTicker = () => {
               revita,
               markham,
               durrat,
-              daprbins,
               oma,
               rooted, 
               anata   

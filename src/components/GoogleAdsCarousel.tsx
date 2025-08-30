@@ -34,7 +34,6 @@ export const LogoTicker2 = () => {
               revita,
               markham,
               durrat,
-              daprbins,
               oma,
               rooted,    
               anata,
@@ -43,7 +42,6 @@ export const LogoTicker2 = () => {
               revita,
               markham,
               durrat,
-              daprbins,
               oma,
               rooted, 
               anata   
