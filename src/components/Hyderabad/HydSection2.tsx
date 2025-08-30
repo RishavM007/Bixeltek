@@ -1,68 +1,178 @@
-// app/components/About.tsx
 "use client";
-import { useEffect, useRef } from "react";
+
+import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Lenis from "lenis";
 
-gsap.registerPlugin(ScrollTrigger);
+import img1 from "@/assets/Reflect ✦ MaxiBestOf.jpg";
+import img2 from "@/assets/Unlock Your Online Potential_ Pro Web Design_.jpg";
+import img3 from "@/assets/image 3.jpeg";
+import img4 from "@/assets/image2.jpeg";
+import img5 from "@/assets/Web3 Footer Landing Page.jpg";
+import img6 from "@/assets/Unlock Your Online Potential_ Pro Web Design_.jpg";
 
-export default function HydAbout() {
-   const aboutRef = useRef(null);
+export default function DribbbleGrid() {
+  const sectionRef = useRef<HTMLDivElement | null>(null);
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const imagesRef = useRef<(HTMLImageElement | null)[]>([]);
+  const textRef = useRef<HTMLDivElement | null>(null);
+
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothWheel: true,
+    });
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add((time) => {
+      lenis.raf(time * 1000);
+    });
+    gsap.ticker.lagSmoothing(0);
+
+    const ctx = gsap.context(() => {
+      gsap.set(containerRef.current, { perspective: 1200 });
+
+      gsap.set(imagesRef.current, {
+        opacity: 1,
+        x: 0,
+        y: 0,
+        zIndex: 10,
+      });
+
+      gsap.set(textRef.current, {
+        opacity: 0,
+        scale: 0.8,
+      });
+
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+          markers: false, 
+        },
+      });
+
+
+      tl.to(imagesRef.current[0], {
+        x: "-50%",
+        y: "60%", 
+        rotationX: -25,
+        rotationY: 15,
+        rotationZ: -30,
+        z: 300,
+        duration: 1,
+        ease: "power2.out"
+      }, 0)
+        .to(imagesRef.current[1], {
+          x: "50%",
+          y: "60%", 
+          rotationX: -25,
+          rotationY: -15,
+          rotationZ: 30,
+          z: 300,
+          duration: 1,
+          ease: "power2.out"
+        }, 0)
+        .to(imagesRef.current[2], {
+          x: "-70%",
+          y: "40%", 
+          rotationX: -15,
+          rotationY: 10,
+          rotationZ: -15,
+          z: 200,
+          duration: 1,
+          ease: "power2.out"
+        }, 0)
+        .to(imagesRef.current[3], {
+          x: "70%",
+          y: "40%", 
+          rotationX: -15,
+          rotationY: -10,
+          rotationZ: 15,
+          z: 200,
+          duration: 1,
+          ease: "power2.out"
+        }, 0)
+        .to(imagesRef.current[4], {
+          x: "-50%",
+          y: "20%", // slightly lower
+          rotationX: -5,
+          rotationY: 5,
+          rotationZ: -10,
+          z: 100,
+          duration: 1,
+          ease: "power2.out"
+        }, 0)
+        .to(imagesRef.current[5], {
+          x: "50%",
+          y: "20%", // slightly lower
+          rotationX: -5,
+          rotationY: -5,
+          rotationZ: 10,
+          z: 100,
+          duration: 1,
+          ease: "power2.out"
+        }, 0)
+        .to(textRef.current, {
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+          ease: "power2.out"
+        }, 0.3);
+
+
+    }, containerRef);
+
+    return () => {
+      ctx.revert();
+      lenis.destroy();
+    };
+  }, []);
+
+  const images = [img1, img2, img3, img4, img5, img6];
 
   return (
     <section
-      ref={aboutRef}
-      className="relative min-h-screen bg-neutral-900 text-white flex items-center justify-center px-6"
+      ref={sectionRef}
+      className="relative w-full my-40 min-h-screen flex items-center justify-center bg-black overflow-x-hidden overflow-y-visible"
     >
-      <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
-        {/* Left Side - Text */}
-        <div>
-          <h2 className="text-3xl md:text-5xl font-extrabold mb-6">
-            Why Digital Marketing Matters
-          </h2>
-          <p className="text-gray-300 mb-4">
-            Hyderabad is one of India’s most competitive markets. From healthcare and 
-            education to real estate, restaurants, and SaaS — every business is fighting 
-            for visibility.
+      <div ref={containerRef} className="w-full h-full">
+        <div
+          ref={textRef}
+          className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center text-white px-4"
+        >
+          <h2 className="text-4xl md:text-[100px] font-inter uppercase font-bold font- mb-6">Bixeltek</h2>
+          <p className="text-base font-inter md:text-xl mt-5 max-w-2xl">
+            Showcasing the power of digital marketing, web design, and Google Ads expertise—Bixeltek turns ideas into results.
           </p>
-
-          <ul className="space-y-4 text-gray-300">
-            <li>✅ Competitors appear on Google while you don’t.</li>
-            <li>✅ Ads cost money but bring little return.</li>
-            <li>✅ Your website looks fine but doesn’t convert.</li>
-            <li>✅ Customers don’t remember or trust your brand.</li>
-          </ul>
-
-          <p className="mt-6 text-gray-200 font-medium">
-            The good news? These problems are fixable. Digital marketing makes sure 
-            your business is present at the right time, in the right place, with the 
-            right message.
-          </p>
+          <button className="mt-8 px-6 py-3 bg-white text-black rounded-full font-semibold hover:bg-gray-200 transition-colors">
+            Explore Our Work
+          </button>
         </div>
-
-        {/* Right Side - Visual Card */}
-        <div className="bg-neutral-800 rounded-2xl shadow-lg p-8">
-          <div className="h-72 bg-gradient-to-br from-purple-600 to-blue-500 rounded-xl mb-6 flex items-center justify-center">
-            <span className="text-2xl font-bold">📊 Marketing Impact</span>
-          </div>
-
-          <div className="space-y-4">
-            <div className="flex justify-between">
-              <span>SEO</span>
-              <span>98%</span>
+        <div className="grid grid-cols-2 grid-rows-3 gap-4 md:gap-6 h-full w-full max-w-full mx-auto p-0 md:p-0">
+          {images.map((src, i) => (
+            <div key={i} className="relative rounded-xl md:rounded-2xl shadow-2xl">
+              <img
+                ref={(el: any) => (imagesRef.current[i] = el)}
+                src={src.src}
+                alt={`Card ${i + 1}`}
+                className="w-full rounded-3xl h-full object-cover"
+              />
             </div>
-            <div className="w-full bg-neutral-700 rounded-full h-2">
-              <div className="bg-purple-500 h-2 rounded-full w-[98%]" />
-            </div>
-
-            <div className="flex justify-between">
-              <span>Digital Ads</span>
-              <span>92%</span>
-            </div>
-            <div className="w-full bg-neutral-700 rounded-full h-2">
-              <div className="bg-blue-500 h-2 rounded-full w-[92%]" />
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

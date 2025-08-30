@@ -1,102 +1,121 @@
-// app/components/Hero.tsx
 "use client";
-import Image from "next/image";
-import { useRef, useEffect } from "react";
+
+import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import author1 from '@/assets/t1-author-2.webp'
-import author2 from '@/assets/t1-author-3.webp'
-import author3 from '@/assets/t1-author-4.webp'
+import Lenis from "lenis";
+import Image from "next/image";
 
-gsap.registerPlugin(ScrollTrigger);
+export default function VideoZoomSection() {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const imgRef = useRef<HTMLImageElement | null>(null);
+  const titleRef = useRef<HTMLHeadingElement | null>(null);
+  const paraRef = useRef<HTMLParagraphElement | null>(null);
 
-export default function HydHero() {
-    const heroRef = useRef(null);
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
 
-  useEffect(() => {
-    const el = heroRef.current;
-
-    gsap.to(el, {
-      scrollTrigger: {
-        trigger: el,
-        start: "top top",
-        end: "bottom top",
-        scrub: true,
-      },
-      y: -200,
-      scale: 0.85,
-      rotationX: 20,
-      transformOrigin: "top center",
-      ease: "power2.out",
+      tl.fromTo(
+        titleRef.current,
+        { y: 60, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, delay: 4 }
+      ).fromTo(
+        paraRef.current,
+        { y: 40, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1 ,delay:6 },
+        "-=0.4"
+      );
     });
+
+    return () => ctx.revert(); 
   }, []);
-    
+
+
+  useLayoutEffect(() => {
+    const video = imgRef.current!;
+    const container = containerRef.current!;
+    if (!video || !container) return;
+
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => t,
+      lerp: 0.1,
+      orientation: "vertical",
+    });
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    const onScroll = () => {
+      const rect = container.getBoundingClientRect();
+      const scrollProgress = Math.min(Math.max(-rect.top / window.innerHeight, 0), 1);
+
+      gsap.to(video, {
+        scale: 1 + 0.2 * scrollProgress,
+        ease: "none",
+        overwrite: true,
+      });
+    };
+
+    window.addEventListener("scroll", onScroll);
+
+    return () => {
+      lenis.destroy();
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
+
   return (
-    <section ref={heroRef} className="relative h-[95vh] mt-[-170px] w-full flex items-center justify-center overflow-hidden">
-      {/* Background overlay */}
-      <div className="absolute inset-0 bg-black/60 z-0" />
+    <>
+      <section
+        ref={containerRef}
+        className="relative w-full h-screen bg-black overflow-hidden"
+      >
+        {/* Background image */}
+        <img
+          ref={imgRef}
+          src="/digital-world-banner-background-remixed-from-public-domain-by-nasa.jpg"
+          alt="image-bg"
+          className="absolute inset-0 w-full h-full object-cover scale-100 origin-center"
+        />
 
-      {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-7xl">
-        {/* Logos */}
-        {/* <div className="flex items-center justify-center gap-6 text-gray-300 text-sm mb-6">
-          <span className="italic">Top Rated Digital Agency</span>
-          <span className="font-semibold">Chargemap</span>
-          <span className="font-semibold">greenly</span>
-          <span className="font-semibold">GROWL</span>
-        </div> */}
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/40"></div>
+         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black to-transparent pointer-events-none"></div>
 
-        {/* Heading */}
-        <h1 className="text-4xl md:text-7xl mt-20 font-extrabold text-white leading-tight">
-         Digital Marketing Agency in <br />
-          <span className="text-purple-500">Hyderabad</span>
-        </h1>
 
-        {/* Subtext */}
-        <p className="mt-6 text-gray-300 max-w-2xl mx-auto">
-         Your customers are searching online right now. If they can’t find you, they’re finding your competitors. With the right digital marketing strategy, your business gets seen, trusted, and chosen..
-        </p>
-
-        {/* CTA & Social Proof */}
-        <div className="mt-8 flex items-center justify-center gap-6 flex-wrap">
-          <button className="px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-lg shadow-lg hover:opacity-90 transition">
-            All Reviews
-          </button>
-
-          {/* Avatars */}
-          <div className="flex -space-x-3">
-            <Image
-              src={author1}
-              alt="user1"
-              width={40}
-              height={40}
-              className="rounded-full border-2 border-white"
-            />
-            <Image
-              src={author2}
-              alt="user2"
-              width={40}
-              height={40}
-              className="rounded-full border-2 border-white"
-            />
-            <Image
-              src={author3}
-              alt="user3"
-              width={40}
-              height={40}
-              className="rounded-full border-2 border-white"
-            />
-          </div>
-
-          {/* Text */}
-          <p className="text-gray-400 text-sm tracking-wide">
-            Join <span className="font-semibold text-white font-poppins">12,135+</span> other<br></br> loving customers
+        {/* Content */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
+          <h1
+            ref={titleRef}
+            className="text-5xl md:text-[120px] font-inter font-light  text-center mb-4 cursor-pointer select-none"
+          >
+            Digital Marketing Agency in Hyderabad
+          </h1>
+          <p ref={paraRef} className="text-sm font-inter max-w-2xl opacity-90">
+            Your customers are searching online right now. If they can’t find you,
+            they’re finding your competitors. With the right digital marketing
+            strategy, your business gets seen, trusted, and chosen.
           </p>
         </div>
-      </div>
 
-      {/* Decorative Gradient (bottom right) */}
-      <div className="absolute bottom-0 right-0 w-72 h-72 bg-purple-500/40 rounded-full blur-3xl" />
-    </section>
+        {/* Buttons at bottom corners */}
+        <div className="absolute bottom-16 left-16">
+          <button className="px-6 py-3 rounded-full bg-transparent border border-white text-white font-semibold shadow-lg transition">
+            Free Growth Plan
+          </button>
+        </div>
+
+        <div className="absolute bottom-16 right-16">
+          <button className="px-6 py-3  bg-transparent border-white rounded-full text-white font-semibold shadow-lg transition">
+            Talk To Us
+          </button>
+        </div>
+      </section>
+
+    </>
   );
 }
