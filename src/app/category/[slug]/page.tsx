@@ -4,6 +4,8 @@ import { client } from '@/lib/graphql-client';
 import { gql } from 'graphql-request';
 import Link from 'next/link';
 
+export const dynamic = "force-dynamic";
+
 const GET_POSTS_BY_CATEGORY = gql`
   query GetPostsByCategory($slug: [String]) {
     categories(where: { slug: $slug }) {
