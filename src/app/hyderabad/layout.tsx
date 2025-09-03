@@ -14,8 +14,6 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
     return (
         <>
-            <PageTransition />
-            <TransitionProvider>
                 <Whiteheader />
                 <SmoothScrollProvider>
                 <main className="min-h-screen bg-black">{children}</main>
@@ -25,7 +23,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                     reverseOrder={false}
                 />
                 <Footer />
-            </TransitionProvider>
         </>
     );
 };

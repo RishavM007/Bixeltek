@@ -118,9 +118,8 @@ export default function ServiceCards() {
         <div className="grid md:grid-cols-3 gap-8">
 
           {services.map((service, idx) => (
-            <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 inline-block p-[1px] rounded-2xl h-full">
+            <div key={idx} className="bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 inline-block p-[1px] rounded-2xl h-full">
               <div
-                key={idx}
                 ref={(el: any) => (cardRefs.current[idx] = el!)}
                 className="group relative bg-[#181818] px-6 pt-6 pb-14 rounded-2xl overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full"
                 onMouseEnter={() => handleMouseEnter(idx)}
