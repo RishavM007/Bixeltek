@@ -10,7 +10,7 @@ export const metadata = {
     type: "website",
   },
     alternates: {
-    canonical: "https://bixeltek.com/case-studies/digital-marketing-for-dentists-case-study", // 👈 canonical URL here
+    canonical: "https://bixeltek.com/case-studies/digital-marketing-for-dentists-case-study", 
   },
 };
 import React from 'react'

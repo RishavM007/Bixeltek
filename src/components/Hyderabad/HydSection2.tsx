@@ -3,8 +3,6 @@
 import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Lenis from "lenis";
-
 import img1 from "@/assets/Reflect ✦ MaxiBestOf.jpg";
 import img2 from "@/assets/Unlock Your Online Potential_ Pro Web Design_.jpg";
 import img3 from "@/assets/image 3.jpeg";
@@ -21,24 +19,6 @@ export default function DribbbleGrid() {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-
-    const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      smoothWheel: true,
-    });
-
-    function raf(time: number) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
-
-    lenis.on('scroll', ScrollTrigger.update);
-    gsap.ticker.add((time) => {
-      lenis.raf(time * 1000);
-    });
-    gsap.ticker.lagSmoothing(0);
 
     const ctx = gsap.context(() => {
       gsap.set(containerRef.current, { perspective: 1200 });
@@ -61,14 +41,14 @@ export default function DribbbleGrid() {
           start: "top center",
           end: "bottom center",
           scrub: true,
-          markers: false, 
+          markers: false,
         },
       });
 
 
       tl.to(imagesRef.current[0], {
         x: "-50%",
-        y: "60%", 
+        y: "60%",
         rotationX: -25,
         rotationY: 15,
         rotationZ: -30,
@@ -78,7 +58,7 @@ export default function DribbbleGrid() {
       }, 0)
         .to(imagesRef.current[1], {
           x: "50%",
-          y: "60%", 
+          y: "60%",
           rotationX: -25,
           rotationY: -15,
           rotationZ: 30,
@@ -88,7 +68,7 @@ export default function DribbbleGrid() {
         }, 0)
         .to(imagesRef.current[2], {
           x: "-70%",
-          y: "40%", 
+          y: "40%",
           rotationX: -15,
           rotationY: 10,
           rotationZ: -15,
@@ -98,7 +78,7 @@ export default function DribbbleGrid() {
         }, 0)
         .to(imagesRef.current[3], {
           x: "70%",
-          y: "40%", 
+          y: "40%",
           rotationX: -15,
           rotationY: -10,
           rotationZ: 15,
@@ -138,7 +118,6 @@ export default function DribbbleGrid() {
 
     return () => {
       ctx.revert();
-      lenis.destroy();
     };
   }, []);
 

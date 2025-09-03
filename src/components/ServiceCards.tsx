@@ -9,7 +9,6 @@ import googlelogo from '@/assets/2993685_brand_brands_google_logo_logos_icon.png
 import instagramlogo from '@/assets/6929237_instagram_icon.png';
 import photoshoplogo from '@/assets/photoshop.webp'
 import illustrator from '@/assets/illustrator.webp'
-import googleanalyticslogo from '@/assets/icons8-google-analytics-24.png'
 import searchengineoptimizationlogo from '@/assets/1000174561.png';
 import ytlogo from '@/assets/4375133_logo_youtube_icon.png'
 import semrushlogo from '@/assets/4202007_analytics_google_logo_social_social media_icon.png'

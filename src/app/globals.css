@@ -7,7 +7,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Target the scrollbar track (background) */
+
 ::-webkit-scrollbar {
   width: 7px;
   background-color: black; /* Background of the scroll track */
@@ -31,6 +31,9 @@
     --font-poppins: 'Poppins', sans-serif;
   }
 
+
+
+  
 @layer utilities{
   .card-wrapper{
     @apply relative bg-gradient-to-b from-slate-700 to-slate-800 rounded-2xl overflow-hidden;
@@ -74,3 +77,14 @@
 .perspective-1000 {
   perspective: 1000px;
 }
+
+
+.counter-text {
+  font-weight: 700;
+  color: transparent; /* transparent fill */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #3b82f6; /* Tailwind blue-500 */
+}
+
+
+

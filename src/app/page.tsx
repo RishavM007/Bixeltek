@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Best Digital Marketing Agency in Hyderabad | Bixeltek",
+  title: "Best Digital Marketing Agency | SEO, Google Ads & Web Design",
   description:
-    "Google-certified digital marketing agency in Hyderabad offering SEO, Google Ads, Meta Ads & Web Design. Trusted by clients in India, USA, Canada, UAE & Saudi.",
+    "Bixeltek is a Google-certified digital marketing agency offering SEO, Google Ads, web design & social media marketing. Trusted in India, USA, Canada & Saudi. & Saudi.",
   keywords: [
     "digital marketing company Hyderabad",
     "best digital marketing agency Hyderabad",
@@ -14,12 +14,12 @@ export const metadata = {
     canonical: "https://bixeltek.com/",   
   },
   openGraph: {
-    title: "Best Digital Marketing Agency in Hyderabad | Bixeltek",
+    title: "Best Digital Marketing Agency | SEO, Google Ads & Web Design",
     description:
-      "Google-certified digital marketing agency in Hyderabad offering SEO, Google Ads, Meta Ads & Web Design. Trusted by clients in India, USA, Canada, UAE & Saudi.",
+      "Bixeltek is a Google-certified digital marketing agency offering SEO, Google Ads, web design & social media marketing. Trusted in India, USA, Canada & Saudi.",
     siteName: "Bixeltek",
     type: "website",
-    url: "https://bixeltek.com/",         // 👈 Match canonical
+    url: "https://bixeltek.com/",     
   },
   twitter: {
     card: "summary_large_image",
@@ -43,6 +43,8 @@ import Blog from "@/sections/Blog";
 import Tech2 from "@/components/Tech2";
 import TimelineSection from '@/sections/Process'
 import GooglePartner from "@/sections/GooglePartner";
+
+
 export default function Home() {
   return (
     <>

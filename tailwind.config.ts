@@ -55,6 +55,7 @@ const config: Config = {
       },
       animation:{
         'border-spin': 'border-spin 7s linear infinite',
+        // 'spin-slow': 'spin 4s linear infinite',
       }
     },
   },

@@ -4,6 +4,8 @@ import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Lenis from "lenis";
 import Image from "next/image";
+import { ChevronRight } from "lucide-react";
+
 
 export default function VideoZoomSection() {
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -22,12 +24,12 @@ export default function VideoZoomSection() {
       ).fromTo(
         paraRef.current,
         { y: 40, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1 ,delay:6 },
+        { y: 0, opacity: 1, duration: 1, delay: 6 },
         "-=0.4"
       );
     });
 
-    return () => ctx.revert(); 
+    return () => ctx.revert();
   }, []);
 
 
@@ -77,14 +79,14 @@ export default function VideoZoomSection() {
         {/* Background image */}
         <img
           ref={imgRef}
-          src="/digital-world-banner-background-remixed-from-public-domain-by-nasa.jpg"
+          src="/futuristic-moon-background.jpg"
           alt="image-bg"
           className="absolute inset-0 w-full h-full object-cover scale-100 origin-center"
         />
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/40"></div>
-         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black to-transparent pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black to-transparent pointer-events-none"></div>
 
 
         {/* Content */}
@@ -93,27 +95,29 @@ export default function VideoZoomSection() {
             ref={titleRef}
             className="text-5xl md:text-[120px] font-inter font-light  text-center mb-4 cursor-pointer select-none"
           >
-            Digital Marketing Agency in Hyderabad
+            Digital Marketing<br></br> Agency in Hyderabad
           </h1>
-          <p ref={paraRef} className="text-sm font-inter max-w-2xl opacity-90">
+          <p ref={paraRef} className="text-2xl font-inter max-w-4xl opacity-90">
             Your customers are searching online right now. If they can’t find you,
             they’re finding your competitors. With the right digital marketing
             strategy, your business gets seen, trusted, and chosen.
           </p>
+          <div className="flex flex-col md:flex-row gap-4 z-50 mt-14">
+            <button className="px-6 py-3 rounded-full bg-transparent border border-white text-white font-semibold shadow-lg transition">
+              Free Growth Plan
+            </button>
+            <div className="p-[1px] rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 inline-block">
+              <button className="px-8 flex gap-2 py-3 bg-black rounded-full text-white font-semibold shadow-lg transition w-full h-full">
+                Talk To Us <ChevronRight />
+              </button>
+            </div>
+
+          </div>
         </div>
+
 
         {/* Buttons at bottom corners */}
-        <div className="absolute bottom-16 left-16">
-          <button className="px-6 py-3 rounded-full bg-transparent border border-white text-white font-semibold shadow-lg transition">
-            Free Growth Plan
-          </button>
-        </div>
 
-        <div className="absolute bottom-16 right-16">
-          <button className="px-6 py-3  bg-transparent border-white rounded-full text-white font-semibold shadow-lg transition">
-            Talk To Us
-          </button>
-        </div>
       </section>
 
     </>

@@ -1,12 +1,12 @@
 
 export const metadata = {
-  title: "Case Studies | Real Business Growth with Bixeltek",
+  title: "Case Studies | Digital Marketing Agency Strategies",
   description:
     "Explore real-world case studies where Bixeltek delivered 200+ dental leads, 340+ bike repair inquiries, and 436% ROAS growth for TumbleWash.",
   keywords:
     "Digital marketing case studies, Google Ads results, SEO case study, Bixeltek success stories, Business growth Hyderabad, Dentist marketing case study, Bike repair marketing, TumbleWash ROAS case study",
   openGraph: {
-    title: "Case Studies | Real Business Growth with Bixeltek",
+    title: "Case Studies | Digital Marketing Agency Strategiesk",
     description:
       "Explore real-world case studies where Bixeltek delivered 200+ dental leads, 340+ bike repair inquiries, and 436% ROAS growth for TumbleWash.",
     type: "website",
@@ -22,14 +22,11 @@ import React from 'react'
 import heroimgdm from '@/assets/atikah-akhtar-XJptUS8nbhs-unsplash.jpg'
 import heroimgbike from '@/assets/angry-_-kat-4ORysIjH-mY-unsplash.jpg'
 import laungry from '@/assets/Denver-Commercial-Laundry-with-Free-Delivery-97beb6c9.jpeg'
-import heroimgtumble from '@/assets/tumblewash.jpg'
 import Image from 'next/image'
-import Link from 'next/link'
 
 export default function CasestudyPage() {
     return (
         <>
-
             <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-64 mt-[-70px] mx-auto">
                 <div className="max-w-4xl mx-auto text-center mb-10 lg:mb-14">
                     <h2 className="text-2xl font-bold md:text-5xl font-inter md:leading-tight">

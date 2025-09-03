@@ -6,7 +6,7 @@ const containers = [
         number:'01',
         title: 'Research & Analysis',
         text: 'In-depth keyword research, competitor benchmarking, and market insights ensuring stronger, data-driven advertising performance.',
-        gradient: 'from-blue-500 via-blue-400 to-[#131313]',
+        gradient: 'from-blue-500 via-blue-400 to-[black]',
         color:'text-blue-500'
     },
     {
@@ -46,9 +46,9 @@ const containers = [
     },
 ];
 
-const GradientBorderContainers = () => {
+const HydTimeline = () => {
     return (
-        <div className="min-h-screen bg-[#131313] py-12 px-4 sm:px-6 lg:px-8">
+        <div className="min-h-screen bg-[black] py-12 px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-6xl text-white text-center max-w-3xl mx-auto font-bold font-inter mb-6">
                 A <span className='text-blue-500'>Proven Framework</span> to Scale Profitably
             </h2>
@@ -68,9 +68,9 @@ const GradientBorderContainers = () => {
                                     } ${item.gradient} z-0`}
                             ></div>
 
-                            <div className="relative flex z-10 bg-[#131313] rounded-[20px] p-8 h-[220px]">
+                            <div className="relative flex z-10 bg-[black] rounded-[20px] p-8 h-[220px]">
                                 
-                                <div className={`absolute flex items-center gap-5 flex-row bg-black  max-w-3xl rounded-2xl p-10 z-10 ${positionClasses}`}>
+                                <div className={`absolute flex items-center gap-5 flex-row bg-black border border-white/50  max-w-3xl rounded-2xl p-10 z-10 ${positionClasses}`}>
                                     <div>
                                     <p className={` ${item.color} text-7xl font-bold`}>{item.number}</p>
                                 </div>
@@ -90,7 +90,7 @@ const GradientBorderContainers = () => {
             <div className="flex justify-center mt-2">
                 <Link href={'tel:+919100032301'}>
                 <button className="px-7 py-3 rounded-2xl bg-blue-600 text-white font-semibold text-sm shadow-lg hover:bg-blue-700 transition">
-                    Talk To Our Certified PPC Specialist
+                    Talk To Our Digital Marketing Specialist
                 </button>
                 </Link>
             </div>
@@ -99,4 +99,4 @@ const GradientBorderContainers = () => {
     );
 };
 
-export default GradientBorderContainers;
+export default HydTimeline;
