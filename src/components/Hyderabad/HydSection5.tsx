@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Image from "next/image";
+import Link from "next/link";
 import { FaGoogle, FaInstagram, FaGlobe, FaPalette, FaChartLine } from "react-icons/fa";
 import { Dot } from "lucide-react";
 import googleads from '@/assets/google-ads-logo.png'
@@ -34,6 +35,8 @@ const services = [
     icon: <FaChartLine className="text-white w-5 h-5" />,
     carouselIcons: [ahref, semrush, seranking, googlelogo, semrushlogo],
     marqueeText: ["Keyword Research", "On-Page Optimization", "Technical SEO", "Content Strategy", "Link Building"],
+    linktext: "Explore SEO Services",
+    url:"seo-agency-hyderabad"
   },
   {
     title: "Google Ads",
@@ -41,6 +44,8 @@ const services = [
     icon: <FaGoogle className="text-white w-5 h-5" />,
     carouselIcons: [googleads, ytlogo, googleadslogo, googlelogo, looker],
     marqueeText: ["Content Creation", "Community Management", "Paid Social Ads", "Analytics Reporting", "Influencer Marketing"],
+    linktext: "Explore Google Ads Services",
+    url:"services/google-ads"
   },
   {
     title: "Social Media Marketing",
@@ -48,6 +53,8 @@ const services = [
     icon: <FaInstagram className="text-white w-5 h-5" />,
     carouselIcons: [instagramlogo, facebooklogo, metalogo, ytlogo, googlelogo],
     marqueeText: ["Content Creation", "Community Management", "Paid Social Ads", "Analytics Reporting", "Influencer Marketing"],
+    linktext: "Explore Social Media Services",
+    url:"social-media-marketing-agency-hyderabad"
   },
   {
     title: "Web Design and Web Development",
@@ -55,6 +62,8 @@ const services = [
     icon: <FaGlobe className="text-white w-5 h-5" />,
     carouselIcons: [wordpress, elementor, nextjsicon, reacticon, tailwindcsslogo],
     marqueeText: ["Content Creation", "Community Management", "Paid Social Ads", "Analytics Reporting", "Influencer Marketing"],
+    linktext: "Explore Web Design Services",
+    url:"web-design-services-hyderabad"
   },
   {
     title: "Comprehensive Branding and Identity",
@@ -62,6 +71,8 @@ const services = [
     icon: <FaPalette className="text-white w-5 h-5" />,
     carouselIcons: [photoshoplogo, illustrator, metalogo, googlelogo, instagramlogo],
     marqueeText: ["Logo Design", "Brand Guidelines", "Visual Identity", "Packaging Design", "Brand Strategy"],
+    linktext: "Explore Branding Services",
+    url:"#"
   },
   {
     title: "Analytics & Conversion Tracking",
@@ -69,6 +80,8 @@ const services = [
     icon: <FaChartLine className="text-white w-5 h-5" />,
     carouselIcons: [looker, googleads, semrush, ahref, seranking],
     marqueeText: ["Google Analytics", "Conversion Tracking", "Data Visualization", "Performance Reporting", "ROI Analysis"],
+    linktext: "Explore Reporting Services",
+    url:"#"
   },
 ];
 export default function ServiceCards() {
@@ -135,6 +148,9 @@ export default function ServiceCards() {
                   {service.title}
                 </h3>
                 <p className="text-gray-300 text-sm">{service.desc}</p>
+                <Link href={`/${service.url}`}>
+                <p className="text-sm mt-4 font-semibold group-hover:text-blue-500 text-white">{service.linktext}</p>
+                </Link>
 
                 {/* Marquee text for other services */}
                 <div className="absolute bottom-0 left-0 right-0 h-8 overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white">

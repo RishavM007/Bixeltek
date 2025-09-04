@@ -305,7 +305,7 @@ export default function ContactFromNew() {
                         className="inline-flex w-full justify-between rounded-md border border-gray-300 bg-white px-4 py-3 text-sm font-medium text-gray-800 shadow-sm hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#670ef7]"
                         onClick={toggleDropdown}
                     >
-                        {formData.services || 'Our Services'}
+                        {formData.services || 'Choose a service'}
                         <svg
                             className={`-mr-1 ml-2 h-5 w-5 text-gray-600 transition-transform ${isOpen ? 'rotate-180' : ''}`}
                             xmlns="http://www.w3.org/2000/svg"
@@ -324,13 +324,15 @@ export default function ContactFromNew() {
                     {isOpen && (
                         <div className="absolute left-0 z-10 mt-2 w-full origin-top rounded-md bg-white border border-gray-300 shadow-lg ring-1 ring-black ring-opacity-5">
                             {[
-                                "PPC Campaigns",
-                                "SEO Optimization",
+                                "Google Ads and PPC",
+                                "Search Engine Optimization",
                                 "Social Media Management",
                                 "Web Design and Development",
                                 "E-commerce Solutions",
-                                "Content Creation and Marketing",
-                                "Advertiser Verifications, GMB Verifications",
+                                "Content Marketing",
+                                "Graphic Designing and Branding",
+                                "Conversions, Analytics and Reporting",
+                                "Google Advertiser Verifications, GMB Verifications",
                                 "Other"
                             ].map((option) => (
                                 <div

@@ -2,6 +2,9 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import Newsletter from "@/components/Newsletter";
+import { Phone, PhoneCall } from 'lucide-react';
+import { Mail } from 'lucide-react';
+
 
 export const Footer = () => {
   return (
@@ -10,12 +13,12 @@ export const Footer = () => {
         <Newsletter />
         <div className="grid grid-cols-2 min-[690px]:grid-cols-4 lg:grid-cols-6 gap-4 xl:gap-8 pt-14 pb-10 max-w-xs mx-auto min-[690px]:max-w-2xl lg:max-w-full">
           <div className="col-span-full mb-10 lg:col-span-2 lg:mb-0">
-            <Image src='/BIXELTEKLOGO.png' alt="logo"  width={100} 
-  height={40} className="w-auto h-16"></Image>
+            <Image src='/BIXELTEKLOGO.png' alt="logo" width={100}
+              height={40} className="w-auto h-16"></Image>
 
             <p className="py-5 text-gray-100 lg:max-w-xs text-center lg:text-left">Trusted by brands.Certified by Google.Focused on ROI.</p>
             <div className="text-sm text-white mb-4">
-              <p className="mb-2 font-semibold">Address</p>
+              <p className="mb-2 text-xl font-semibold">Address</p>
               <address className="text-base not-italic">
                 Bixeltek,
                 3rd Floor, Behind Cult Fit,<br />
@@ -24,22 +27,25 @@ export const Footer = () => {
                 Hyderabad, Telangana 500091
               </address>
             </div>
-            <div className="text-sm text-white mb-4">
-              <p className="mb-1 font-semibold">Phone</p>
+            <div className="text-white mb-4 flex flex-col gap-3 mt-8">
               <a href="tel:+919100032301">
-                <p className="text-white hover:text-purple-500">+91 9100032301</p>
+                <p className="text-white text-lg hover:text-purple-500 flex gap-3"><PhoneCall className="text-blue-500"/> +91 9100032301</p>
+              </a>
+              <a href="mailto:hello@bixeltek.com">
+                <p className="text-white text-lg hover:text-purple-500 flex gap-3"><Mail className="text-blue-500"/>hello@bixeltek.com</p>
               </a>
             </div>
 
           </div>
           <div className="lg:mx-auto text-left ">
-            <h4 className="text-lg text-gray-100 font-medium mb-7">Main</h4>
+            <h4 className="text-lg text-gray-100 font-medium mb-7">Important Links</h4>
             <ul className="text-sm  transition-all duration-500">
               <li className="mb-6"><Link href="/" className="text-gray-300 whitespace-nowrap hover:text-purple-700">Home</Link></li>
-              <li className="mb-6"><Link href="/about-us" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">About</Link></li>
-              <li className="mb-6"><Link href="/pricing" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">Pricing</Link></li>
-              <li className="mb-6"><Link href="/industries" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">Industries</Link></li>
-              <li className="mb-6"><Link href="/case-studies" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">Case Studies</Link></li>
+              <li className="mb-6"><Link href="/about-us" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">About Us</Link></li>
+              <li className="mb-6"><Link href="/pricing" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">Our Pricing</Link></li>
+              <li className="mb-6"><Link href="/industries" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">Industries We Serve</Link></li>
+              <li className="mb-6"><Link href="/case-studies" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">Read Our Case Studies</Link></li>
+              <li className="mb-6"><Link href="/privacy-policy" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">Privacy Policy</Link></li>
               <li className="mb-6"><Link href="/contact-us" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">Contact Us</Link></li>
             </ul>
           </div>
@@ -55,15 +61,17 @@ export const Footer = () => {
               <li className="mb-6"><Link href="/digitalmarketing" className=" text-gray-300 hover:text-purple-700">Digital Marketing</Link></li>
             </ul>
           </div>
-
           <div className="lg:mx-auto text-left ">
-            <h4 className="text-lg text-gray-100 font-medium mb-7">Resources</h4>
+            <h4 className="text-lg text-gray-100 font-medium mb-7">Locations</h4>
             <ul className="text-sm  transition-all duration-500">
-              <li className="mb-6"><Link href="/casestudies-bixeltek/google-ads-case-study-bike-repair-hyderabad" className="text-gray-300 whitespace-nowrap hover:text-purple-700">Case Studies</Link></li>
-              <li className="mb-6"><Link href="/blog" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">Blogs</Link></li>
+              <li className="mb-6"><Link href="/hyderabad" className="text-gray-300 hover:text-purple-700">Hyderabad</Link></li>
+              <li className="mb-6"><Link href="#" className=" text-gray-300 hover:text-purple-700">Canada</Link></li>
+              <li className="mb-6"><Link href="#" className=" text-gray-300 hover:text-purple-700">United States</Link></li>
+              <li className="mb-6"><Link href="#" className=" text-gray-300 hover:text-purple-700">Saudi Arabia</Link></li>
+              <li className="mb-6"><Link href="#" className=" text-gray-300 hover:text-purple-700">United Arab Emirates</Link></li>
+              <li className="mb-6"><Link href="#" className=" text-gray-300 hover:text-purple-700">United Kingdom</Link></li>
             </ul>
           </div>
-
           <div className="lg:mx-auto text-left ">
             <h4 className="text-lg text-gray-100 font-medium mb-7">Our Certifications</h4>
             <ul className="text-sm  transition-all duration-500">
@@ -80,7 +88,7 @@ export const Footer = () => {
 
         <div className="py-7 border-t border-gray-200">
           <div className="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
-            <span className="text-sm text-white ">©<a href="/">Bixeltek</a>2025, &nbsp;&nbsp; All rights reserved.</span>
+            <span className="text-sm text-white "><a href="/">Copyright © Bixeltek&nbsp;</a>2025 - All rights reserved.</span>
             <div className="flex mt-4 space-x-4 sm:justify-center lg:mt-0 ">
 
 
