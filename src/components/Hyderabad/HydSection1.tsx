@@ -4,6 +4,7 @@ import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Lenis from "lenis";
 import Image from "next/image";
+import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
 
@@ -103,14 +104,19 @@ export default function VideoZoomSection() {
             strategy, your business gets seen, trusted, and chosen.
           </p>
           <div className="flex flex-col md:flex-row gap-4 z-50 mt-14">
+            <Link href={'/contact-us'}>
             <button className="px-6 py-3 rounded-full bg-transparent border border-white text-white font-semibold shadow-lg transition">
               Free Growth Plan
             </button>
+            </Link>
+            <a href='tel:+919100032301'>
             <div className="p-[1px] rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 inline-block">
               <button className="px-8 flex gap-2 py-3 bg-black rounded-full text-white font-semibold shadow-lg transition w-full h-full">
                 Talk To Us <ChevronRight />
               </button>
             </div>
+            </a>
+            
 
           </div>
         </div>

@@ -76,7 +76,7 @@ export default function HowItWorks() {
       {/* CTA */}
       <div className="text-center mt-16">
         <a
-          href="#contact"
+          href="/contact-us"
           className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-full text-white font-medium transition"
         >
           Get Started Now →

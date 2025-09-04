@@ -92,7 +92,7 @@ const points = [
           {/* CTA */}
           <div className="text-center mt-10">
             <motion.div>
-              <Link href={"#form"}>
+              <Link href={"/contact-us"}>
                 <button className="px-7 py-3 rounded-2xl bg-blue-600 text-white font-semibold text-sm shadow-lg hover:bg-blue-700 transition">
                   Book a Free Strategy Call
                 </button>

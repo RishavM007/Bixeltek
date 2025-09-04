@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import hydImage from "@/assets/counter.webp";
+import hydImage from "@/assets/rishabh-modi-jy1QU9iypUA-unsplash.jpg";
 import { Search, ShieldCheck, Users, BarChart3 } from "lucide-react";
 import { FaRegEye } from "react-icons/fa";
 import { gsap } from "gsap";
@@ -82,7 +82,7 @@ export default function BenefitsSection() {
       {/* Left Content */}
       <div className="w-full md:w-1/2 px-0 py-2 md:py-16 flex flex-col justify-center">
         <h2 className="benefits-heading text-4xl md:text-6xl font-bold mb-6 text-white">
-          Benefits for Businesses in{" "}
+          Benefits of Digital Marketing for Businesses in{" "}
           <span className="text-blue-500">Hyderabad</span>
         </h2>
         <p className="text-lg text-gray-300 mb-8 leading-relaxed">

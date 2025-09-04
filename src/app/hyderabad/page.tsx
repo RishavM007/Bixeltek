@@ -1,3 +1,38 @@
+
+export const metadata = {
+  title: "Digital Marketing Agency in Hyderabad | Bixeltek",
+  description:
+    "Drive more leads & sales with Hyderabad’s trusted digital marketing agency. SEO, Google Ads & Web Design powered by Google Partner expertise.",
+  keywords: [
+    "digital marketing company Hyderabad",
+    "best digital marketing agency Hyderabad",
+    "Google Ads agency Hyderabad",
+    "SEO services Hyderabad",
+    "social media marketing Hyderabad",
+    "PPC agency Hyderabad",
+  ],
+  alternates: {
+    canonical: "https://bixeltek.com/hyderabad",   
+  },
+  openGraph: {
+    title: "Digital Marketing Agency in Hyderabad | Bixeltek",
+    description:
+      "Drive more leads & sales with Hyderabad’s trusted digital marketing agency. SEO, Google Ads & Web Design powered by Google Partner expertise.",
+    siteName: "Bixeltek",
+    type: "website",
+    url: "https://bixeltek.com/hyderabad",     
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Best Digital Marketing Agency in Hyderabad | Bixeltek",
+    description:
+      "Google-certified digital marketing agency in Hyderabad offering SEO, Google Ads, Meta Ads & Web Design.",
+  },
+};
+
+
+
+
 import React from 'react'
 import HydHero from '@/components/Hyderabad/HydSection1'
 import HydAbout from '@/components/Hyderabad/HydSection2'

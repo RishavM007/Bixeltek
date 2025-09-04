@@ -58,7 +58,6 @@ export const Footer = () => {
               <li className="mb-6"><Link href="/social-media-marketing-agency-hyderabad" className=" text-gray-300 hover:text-purple-700">Social Media Management</Link></li>
               <li className="mb-6"><Link href="/web-design-services-hyderabad" className=" text-gray-300 hover:text-purple-700">Web Design & Development</Link></li>
               <li className="mb-6"><Link href="#" className=" text-gray-300 hover:text-purple-700">Youtube Ads Management</Link></li>
-              <li className="mb-6"><Link href="/digitalmarketing" className=" text-gray-300 hover:text-purple-700">Digital Marketing</Link></li>
             </ul>
           </div>
           <div className="lg:mx-auto text-left ">
