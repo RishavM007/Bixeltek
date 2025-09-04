@@ -25,9 +25,11 @@ export default function ExpertiseSection() {
                         <p className="text-gray-300 mb-4">
                             Let&apos;s create a custom strategy that fits your business goals.
                         </p>
+                        <a href="/contact-us">
                         <button className="cta-btn px-12 py-2  bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-full transition-colors duration-300">
                             Get Started
                         </button>
+                        </a>
                     </div>
 
                     {/* Full height Team Image */}
