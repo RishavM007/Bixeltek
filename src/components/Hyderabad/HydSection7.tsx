@@ -13,12 +13,12 @@ export default function ExpertiseSection() {
     ];
 
     return (
-        <section className="max-w-[90%] mx-auto bg-black text-white py-20 px-6 md:px-16 lg:px-24">
+        <section className="max-w-[90%] mx-auto bg-black text-white md:py-20 px-6 md:px-16 lg:px-24">
             <div className="flex flex-col md:flex-row gap-12">
                 {/* Left side */}
                 <div className="relative w-full md:w-2/5 flex flex-col">
                     {/* Consultation Card */}
-                    <div className="bg-gradient-to-br absolute top-0 left-0 z-20 from-black to-black rounded-br-3xl p-6 w-[70%] shadow-lg border-neutral-800">
+                    <div className="bg-gradient-to-br absolute top-0 left-0 z-20 from-black to-black rounded-br-3xl p-6 w-[80%] md:w-[70%] shadow-lg border-neutral-800">
                         <h3 className="text-2xl font-bold mb-2">
                             Ready to Elevate Your Digital Presence?
                         </h3>
@@ -56,9 +56,9 @@ export default function ExpertiseSection() {
                             Hyderabad is one of India’s most competitive markets. From healthcare and education to real estate, restaurants, and SaaS — every business is fighting for visibility.
                         </p>
                     </div>
-                    <div className="flex flex-col md:flex-row gap-4">
+                    <div className="flex flex-col md:flex-row gap-10 md:gap-4">
                         {/* Services list */}
-                        <div className="w-1/2">
+                        <div className=" w-full md:w-1/2">
                             <h3 className="text-xl font-semibold mb-4">Your challenges might feel familiar:</h3>
                             <ul className="grid grid-cols-1 sm:grid-cols-1 gap-3">
                                 {services.map((service, i) => (
@@ -71,7 +71,7 @@ export default function ExpertiseSection() {
                         </div>
 
                         {/* Experience Card */}
-                        <div className="bg-gradient-to-br w-2/3 from-neutral-900 to-black rounded-2xl p-6 shadow-lg border border-neutral-800">
+                        <div className="bg-gradient-to-br w-full md:w-2/3 from-neutral-900 to-black rounded-2xl p-6 shadow-lg border border-neutral-800">
                             <div className="flex flex-col items-start justify-between gap-4">
                                 <div className="flex flex-col justify-center items-center md:flex-row gap-4">
                                     <h4 className="counter-text  text-7xl">14+</h4>

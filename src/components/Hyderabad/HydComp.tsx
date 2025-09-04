@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 import tumblewashlogo from "@/assets/TumbleWash-Logo.webp";
-import daddysharklogo from "@/assets/ds-logo-01-2048x512.webp";
 import revita from "@/assets/Revita-Logo-without-background-02-Colored-Font-01.png";
 import markham from "@/assets/Logo.png.webp";
 import durrat from "@/assets/durrat_logo.png";
@@ -13,6 +12,8 @@ import edify from '@/assets/edify-new-logo-1.webp'
 import cylus from '@/assets/CYCAS-INVESTMENT-ADVISORS-2048x1677.png'
 import blooming from '@/assets/Logo2-2048x548.png'
 import cloud from '@/assets/logo-2.png'
+import ananta from '@/assets/Ananta Ananda-01.png'
+import daddysharklogo from "@/assets/daddyshark logo-01.png";
 
 const logos = [
     { src: tumblewashlogo, alt: "TumbleWash" },
@@ -26,6 +27,7 @@ const logos = [
     {src:edify, alt:"edify"},
     {src:cylus, alt:"cylus"},
     {src:blooming, alt:"cylus"},
+    {src: ananta , alt:"cylus"},
     {src:cloud, alt:"cylus"},
     
 ];
@@ -41,7 +43,7 @@ export default function HydLogoGrid() {
                             src={logo.src}
                             alt={logo.alt}
                             className="object-contain"
-                            width={130}
+                            width={150}
                             height={80}
                         />
                     </div>

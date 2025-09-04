@@ -149,7 +149,7 @@ export const ContactSection: React.FC = () => {
 
     return (
         <>
-            <section className="bg-neutral-900 relative text-white min-h-[80vh] py-64 px-6 md:px-20 lg:px-32" style={{
+            <section className="bg-neutral-900 relative text-white min-h-[80vh] py-40 md:py-64 px-6 md:px-20 lg:px-32" style={{
                 backgroundImage: `url("/pexels-kindelmedia-7688336.jpg")`, // ✅ relative to public folder
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
@@ -161,12 +161,12 @@ export const ContactSection: React.FC = () => {
                     {/* Left Side: Info */}
                    
 
-                    <div className='w-[60%] flex items-end justify-end'>
+                    <div className='md:w-[60%] flex items-end justify-end'>
 
                         <ContactFromNew />
                     </div>
                      {/* Left Side: Vertical Steps Info */}
-                    <div className="lg:w-1/2 space-y-8 text-white">
+                    <div className="w-full lg:w-1/2 space-y-8 text-white">
 
                         <h2 className="text-4xl lg:text-5xl font-bold">
                             Ready to Dominate Your Market?

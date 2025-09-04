@@ -33,13 +33,14 @@ export const Footer = () => {
 
           </div>
           <div className="lg:mx-auto text-left ">
-            <h4 className="text-lg text-gray-100 font-medium mb-7">Bixltek</h4>
+            <h4 className="text-lg text-gray-100 font-medium mb-7">Main</h4>
             <ul className="text-sm  transition-all duration-500">
               <li className="mb-6"><Link href="/" className="text-gray-300 whitespace-nowrap hover:text-purple-700">Home</Link></li>
               <li className="mb-6"><Link href="/about-us" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">About</Link></li>
               <li className="mb-6"><Link href="/pricing" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">Pricing</Link></li>
               <li className="mb-6"><Link href="/industries" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">Industries</Link></li>
-              <li className="mb-6"><Link href="javascript:;" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">Case Studies</Link></li>
+              <li className="mb-6"><Link href="/case-studies" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">Case Studies</Link></li>
+              <li className="mb-6"><Link href="/contact-us" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">Contact Us</Link></li>
             </ul>
           </div>
 

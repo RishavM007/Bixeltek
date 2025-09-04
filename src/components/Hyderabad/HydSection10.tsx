@@ -22,7 +22,7 @@ const points = [
     title: "Google Partnered",
     desc: "As a Google Partner, we follow strict best practices ensuring optimized, compliant campaigns with measurable results.",
     borderClasses: "border-b",
-    bgGradient: "border-b border-white/50",
+    bgGradient: "md:border-b md:border-white/50",
   },
   {
     icon: <TrendingUp className="w-8 h-8 text-white" />,
@@ -58,7 +58,7 @@ const points = [
     <>
       {/* OUTER WRAPPER WITH BG */}
       <div className="w-full py-32 relative bg-[#0a0d12]">
-        <section className="w-[80%] mx-auto mt-0 bg-[#0a0d12] text-gray-100  overflow-hidden">
+        <section className="max-w-7xl mx-auto mt-0 bg-[#0a0d12] text-gray-100  overflow-hidden">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-6xl font-bold font-inter leading-snug">
               Why <span className="text-blue-500">Choose Us</span>
@@ -73,7 +73,7 @@ const points = [
             {points.map((point, idx) => (
               <div
                 key={idx}
-                className={`${point.bgGradient} p-[1px]`}
+                className={`${point.bgGradient} sm-p-[0px] md:p-[1px]`}
               >
                 {/* Inner Box */}
                 <div className="p-10 bg-[#0a0d12] h-full">
@@ -105,7 +105,7 @@ const points = [
               src={bottomImg}
               alt="Why Choose Us Bottom Banner"
               fill
-              className="object-cover"
+              className="md:object-cover"
             />
           </div>
 

@@ -181,7 +181,7 @@ export default function RootLayout({
         
         {/* <Loader />
         {children} */}
-      <Loader onComplete={() => setLoaderDone(true)} />
+      <Loader/>
          {children}
         {/* Floating WhatsApp Button */}
         <ScrollToTopButton/>

@@ -178,7 +178,7 @@ export default function ContactFromNew() {
 
 
     return (       
-        <div className="w-[80%] p-6 relative bg-white rounded-lg shadow-md">
+        <div className="w-full md:w-[80%] p-6 relative bg-white rounded-lg shadow-md">
 
             <form className="space-y-4" onSubmit={handleSubmit} id='form'>
                 <div className="flex flex-col md:flex-row gap-5">

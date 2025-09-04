@@ -2,53 +2,46 @@ import React from 'react';
 import Link from 'next/link';
 
 const containers = [
-    {
-        number:'01',
-        title: 'Research & Analysis',
-        text: 'In-depth keyword research, competitor benchmarking, and market insights ensuring stronger, data-driven advertising performance.',
-        gradient: 'from-blue-500 via-blue-400 to-[black]',
-        color:'text-blue-500'
-    },
-    {
-        number:'02',
-        title: 'Campaign Architecture',
-        text: 'Scalable account structures built for efficiency, higher quality scores, and long-term advertising success growth.',
-        gradient: 'from-green-500 via-teal-400 to-[#13131333]',
-        color:'text-yellow-500'
-    },
-    {
-        number:'03',
-        title: 'Ad Copy & Creatives',
-        text: 'Compelling ad copy and compliant creatives designed to maximize visibility, engagement, and consistent click-through rates.',
-        gradient: 'from-yellow-400 via-yellow-300 to-[#13131333]',
-        color:'text-red-500'
-    },
-    {
-        number:'04',
-        title: 'Landing Page Optimization',
-        text: 'Fast, responsive, and conversion-focused landing pages designed to improve mobile experiences and drive results.',
-        gradient: 'from-pink-500 via-purple-400 to-[#13131333]',
-        color:'text-orange-500'
-    },
-    {
-        number:'05',
-        title: 'Conversion Tracking',
-        text: 'Robust GA4, GTM, and CRM integrations delivering full-funnel tracking and actionable performance insights.',
-        gradient: 'from-indigo-500 via-indigo-400 to-[#13131333]',
-        color:'text-teal-500'
-    },
-    {
-        number:'06',
-        title: 'Continuous Scaling',
-        text: 'Ongoing A/B testing, budget optimization, and audience expansion strategies for consistent campaign performance improvements.',
-        gradient: 'from-red-500 via-orange-400 to-[#13131333]',
-        color:'text-pink-500'
-    },
+  {
+    number: '01',
+    title: 'Audit & Analysis',
+    text: 'Spot missed opportunities, uncover competitor gaps, and identify where your brand can win.',
+    gradient: 'from-blue-500 via-blue-400 to-[black]',
+    color: 'text-blue-500',
+  },
+  {
+    number: '02',
+    title: 'Strategic Planning',
+    text: 'Build a tailored roadmap across the right channels to align with your business goals.',
+    gradient: 'from-green-500 via-teal-400 to-[#13131333]',
+    color: 'text-yellow-500',
+  },
+  {
+    number: '03',
+    title: 'Campaign Launch',
+    text: 'Activate campaigns on the platforms your customers already live and engage.',
+    gradient: 'from-yellow-400 via-yellow-300 to-[#13131333]',
+    color: 'text-red-500',
+  },
+  {
+    number: '04',
+    title: 'Optimization & Testing',
+    text: 'Test, measure, and refine campaigns every week for consistent performance growth.',
+    gradient: 'from-pink-500 via-purple-400 to-[#13131333]',
+    color: 'text-orange-500',
+  },
+  {
+    number: '05',
+    title: 'Scaling & Growth',
+    text: 'Double down on what’s working and expand to accelerate ROI and long-term growth.',
+    gradient: 'from-indigo-500 via-indigo-400 to-[#13131333]',
+    color: 'text-teal-500',
+  },
 ];
 
 const HydTimeline = () => {
     return (
-        <div className="min-h-screen bg-[black] py-12 px-4 sm:px-6 lg:px-8">
+        <div className="min-h-screen hidden md:block bg-[black] py-12 px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-6xl text-white text-center max-w-3xl mx-auto font-bold font-inter mb-6">
                 A <span className='text-blue-500'>Proven Framework</span> to Scale Profitably
             </h2>

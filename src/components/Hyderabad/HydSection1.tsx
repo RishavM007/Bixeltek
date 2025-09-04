@@ -20,11 +20,11 @@ export default function VideoZoomSection() {
       tl.fromTo(
         titleRef.current,
         { y: 60, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1, delay: 4 }
+        { y: 0, opacity: 1, duration: 1, delay: 1 }
       ).fromTo(
         paraRef.current,
         { y: 40, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1, delay: 6 },
+        { y: 0, opacity: 1, duration: 1, delay: 1 },
         "-=0.4"
       );
     });
@@ -74,7 +74,7 @@ export default function VideoZoomSection() {
     <>
       <section
         ref={containerRef}
-        className="relative w-full h-screen bg-black overflow-hidden"
+        className="relative w-full  h-[90vh] md:h-screen bg-black overflow-hidden"
       >
         {/* Background image */}
         <img
@@ -93,11 +93,11 @@ export default function VideoZoomSection() {
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
           <h1
             ref={titleRef}
-            className="text-5xl md:text-[120px] font-inter font-light  text-center mb-4 cursor-pointer select-none"
+            className="text-4xl md:text-5xl md:text-[120px] font-inter font-light  text-center mb-4 cursor-pointer select-none"
           >
             Digital Marketing<br></br> Agency in Hyderabad
           </h1>
-          <p ref={paraRef} className="text-2xl font-inter max-w-4xl opacity-90">
+          <p ref={paraRef} className=" text-base md:text-2xl font-inter max-w-4xl opacity-90">
             Your customers are searching online right now. If they can’t find you,
             they’re finding your competitors. With the right digital marketing
             strategy, your business gets seen, trusted, and chosen.

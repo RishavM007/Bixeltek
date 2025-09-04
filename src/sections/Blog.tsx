@@ -3,12 +3,18 @@ import React, { useEffect, useState } from 'react';
 import { GET_ALL_POSTS } from '@/lib/queries';
 import Image from 'next/image';
 import { client } from '@/lib/graphql-client';
+import Link from 'next/link';
 
 type Blog = {
   id: string;
   title: string;
   slug: string;
   date: string;
+  author: {
+    node: {
+      name: string;
+    };
+  };
   featuredImage: {
     node: {
       sourceUrl: string;
@@ -45,11 +51,8 @@ export default function Blog() {
 
         <div className="flex justify-center mb-14 gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8">
           {posts.map((post) => (
-            <div
-              key={post.id}
-              className="group cursor-pointer w-full max-lg:max-w-xl lg:w-1/3 border border-gray-300 rounded-2xl p-5 transition-all duration-300 hover:border-purple-600"
-            >
-              <div className="flex  items-center mb-6">
+            <Link key={post.id} href={`/blog/${post.slug}`} className="group w-full max-lg:max-w-xl lg:w-1/3 border border-gray-300 rounded-2xl p-5 transition-all duration-300 hover:border-purple-600">
+              <div className="flex items-center mb-6">
                 <Image
                   src={post.featuredImage?.node.sourceUrl || '/placeholder.jpg'}
                   alt={post.title}
@@ -64,7 +67,7 @@ export default function Blog() {
                   dangerouslySetInnerHTML={{ __html: post.title }}
                 ></h4>
                 <div className="flex items-center justify-between font-medium">
-                  <h6 className="text-sm text-gray-500">By Admin</h6>
+                  <h6 className="text-sm text-gray-500">By {post.author.node.name}</h6>
                   <span className="text-sm text-indigo-600">
                     {new Date(post.date).toLocaleDateString('en-US', {
                       year: 'numeric',
@@ -74,7 +77,7 @@ export default function Blog() {
                   </span>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 

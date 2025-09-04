@@ -62,7 +62,7 @@ export default function VideoScrollPage() {
   }, []);
 
   return (
-    <div className="min-h-[40vh] bg-black flex flex-col items-center justify-start">
+    <div className="min-h-[40vh] hidden bg-black md:flex flex-col items-center justify-start">
       <section
         ref={containerRef}
         className="relative w-full h-[110vh] flex items-start justify-center overflow-hidden bg-black"

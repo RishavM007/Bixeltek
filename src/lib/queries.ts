@@ -1,17 +1,25 @@
 export const GET_ALL_POSTS = `
-  query GetAllPosts {
-    posts {
-      nodes {
-        id
-        slug
-        title
-        excerpt
-        date
-        featuredImage { node { sourceUrl } }
-        categories { nodes { name slug } }
+    query GET_ALL_POSTS {
+  posts(first: 10) {
+    nodes {
+      id
+      title
+      excerpt
+      slug
+      date
+      author {
+        node {
+          name
+        }
+      }
+      featuredImage {
+        node {
+          sourceUrl
+        }
       }
     }
   }
+}
 `;
 
 export const GET_SINGLE_POST = `
@@ -21,6 +29,11 @@ export const GET_SINGLE_POST = `
     title
     content
     date
+    author {
+      node {
+        name
+        }
+      }
     featuredImage {
       node {
         sourceUrl

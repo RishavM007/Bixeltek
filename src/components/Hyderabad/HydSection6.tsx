@@ -2,8 +2,9 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import hydimage from "@/assets/trung-do-M8vzqHP7ERA-unsplash.jpg";
+import hydImage from "@/assets/counter.webp";
 import { Search, ShieldCheck, Users, BarChart3 } from "lucide-react";
+import { FaRegEye } from "react-icons/fa";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -14,22 +15,22 @@ export default function BenefitsSection() {
 
   const benefits = [
     {
-      icon: <Search className="w-6 h-6 text-blue-400" />,
+      icon: <FaRegEye className="w-6 h-6 text-blue-400 group-hover:text-white" />,
       title: "More Visibility",
-      desc: "Customers find you when they search.",
+      desc: "Be discovered when customers search for your services.",
     },
     {
-      icon: <ShieldCheck className="w-6 h-6 text-blue-400" />,
+      icon: <ShieldCheck className="w-6 h-6 text-blue-400   group-hover:text-white" />,
       title: "More Trust",
-      desc: "A consistent online presence makes you credible.",
+      desc: "A strong online presence makes your business credible.",
     },
     {
-      icon: <Users className="w-6 h-6 text-blue-400" />,
+      icon: <Users className="w-6 h-6 text-blue-400   group-hover:text-white" />,
       title: "More Leads",
-      desc: "SEO and Ads bring steady, qualified inquiries.",
+      desc: "SEO and ads generate steady, qualified inquiries.",
     },
     {
-      icon: <BarChart3 className="w-6 h-6 text-blue-400" />,
+      icon: <BarChart3 className="w-6 h-6 text-blue-400   group-hover:text-white" />,
       title: "More ROI",
       desc: "Every rupee is tracked, measured, and optimized.",
     },
@@ -38,15 +39,15 @@ export default function BenefitsSection() {
   useEffect(() => {
     if (sectionRef.current) {
       const items = sectionRef.current.querySelectorAll(".benefit-item");
+
       gsap.fromTo(
         items,
-        { y: 80, opacity: 0, rotateX: 45 },
+        { y: 60, opacity: 0 },
         {
           y: 0,
           opacity: 1,
-          rotateX: 0,
           duration: 1.2,
-          ease: "bounce.out",
+          ease: "power3.out",
           stagger: 0.2,
           scrollTrigger: {
             trigger: sectionRef.current,
@@ -58,7 +59,7 @@ export default function BenefitsSection() {
       const heading = sectionRef.current.querySelector(".benefits-heading");
       gsap.fromTo(
         heading,
-        { y: 60, opacity: 0 },
+        { y: 40, opacity: 0 },
         {
           y: 0,
           opacity: 1,
@@ -70,80 +71,85 @@ export default function BenefitsSection() {
           },
         }
       );
-
-      const buttons = sectionRef.current.querySelectorAll(".cta-btn");
-      gsap.fromTo(
-        buttons,
-        { y: 40, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.8,
-          stagger: 0.2,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 70%",
-          },
-        }
-      );
     }
   }, []);
 
   return (
     <section
       ref={sectionRef}
-      className="w-full bg-black flex flex-col md:flex-row gap-10 items-stretch"
+      className="max-w-[85%] mx-auto bg-black flex flex-col md:flex-row items-stretch gap-20"
     >
-      {/* Left side image */}
-      <div className="w-full md:w-1/2 relative">
-        <Image
-          src={hydimage}
-          alt="Business Growth"
-          fill
-          className="object-cover rounded-r-full"
-        />
-      </div>
-
-      {/* Right side content */}
-      <div className="w-full md:w-1/2 px-8 py-12 md:py-16 flex flex-col justify-center">
-        <h2 className="benefits-heading text-6xl font-bold mb-6 text-white">
-          Benefits for Businesses in <span className="text-blue-500">Hyderabad</span>
+      {/* Left Content */}
+      <div className="w-full md:w-1/2 px-0 py-2 md:py-16 flex flex-col justify-center">
+        <h2 className="benefits-heading text-4xl md:text-6xl font-bold mb-6 text-white">
+          Benefits for Businesses in{" "}
+          <span className="text-blue-500">Hyderabad</span>
         </h2>
-        <p className="text-lg text-gray-300 mb-8">
+        <p className="text-lg text-gray-300 mb-8 leading-relaxed">
           When digital marketing works, here’s what changes:
         </p>
-
-        {/* 2x2 Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-          {benefits.map((item, i) => (
-            <div key={i} className="benefit-item flex items-start gap-4 py-4 bg-black  rounded-lg">
-              <div className="flex-shrink-0">{item.icon}</div>
-              <div className="flex flex-col gap-2">
-                <h3 className="font-semibold  text-xl font-inter text-white">{item.title}</h3>
-                <p className="font-poppins text-sm text-gray-100">{item.desc}</p>
-              </div>
-            </div>
-          ))}
+        <div className="relative w-full h-72 md:h-96 rounded-lg overflow-hidden shadow-lg">
+          <Image
+            src={hydImage}
+            alt="Hyderabad Business Growth"
+            fill
+            className="object-cover rounded-lg"
+          />
         </div>
-        <div className="mt-2 w-full bg-blue-500 flex flex-col justify-center items-center text-white text-center py-6 rounded-lg">
-          Ready to grow your business? Contact us today!
-          <div className="mt-4 flex gap-6">
-            <button className="cta-btn px-8 py-3 bg-blue-900 hover:bg-blue-800 text-white font-medium rounded-full transition-colors duration-300">
-              Get Started
-            </button>
-            <button className="cta-btn px-8 py-3 border bg-white border-blue-600 text-blue-900 hover:bg-blue-900 hover:text-white font-medium rounded-full transition-colors duration-300">
-              Learn More
-            </button>
+      </div>
+
+      {/* Right Side with Flex Columns */}
+      <div className="w-full md:w-1/2 md:px-6 py-2 md:py-16 flex flex-col justify-center items-center">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-12">
+
+          {/* Left Column */}
+          <div className="flex  w-full md:w-1/2 md:mt-[-50px] flex-col gap-4 md:gap-10">
+            {benefits.slice(0, 2).map((item, i) => (
+              <div key={i} className="relative">
+                {/* Glowing Ball Behind (keep it inside the card wrapper) */}
+                <div className="absolute -inset-10 flex items-center justify-center z-0">
+                  <div className="w-40 h-40 rounded-full bg-blue-500 opacity-60 blur-3xl"></div>
+                </div>
+
+                {/* Glassmorphic Card */}
+                <div
+                  className={`relative flex group flex-col items-start gap-4 p-6 
+            rounded-3xl border border-white/10
+            bg-black/40 backdrop-blur-lg z-10`}
+                >
+                  <div className="p-3 bg-transparent rounded-full">{item.icon}</div>
+                  <h3 className="text-2xl font-inter font-semibold text-blue-500">{item.title}</h3>
+                  <p className="text-sm text-gray-100">{item.desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
 
+          {/* Right Column */}
+          <div className="flex w-full md:w-1/2 md:mt-[50px] flex-col gap-4 md:gap-10">
+            {benefits.slice(2, 4).map((item, i) => (
+              <div key={i} className="relative">
+                {/* Glowing Ball Behind */}
+                <div className="absolute -inset-10 flex items-center justify-center z-0">
+                  <div className="w-40 h-40 rounded-full bg-blue-500 opacity-60 blur-3xl"></div>
+                </div>
+
+                {/* Glassmorphic Card */}
+                <div
+                  className={`relative flex flex-col group items-start gap-4 p-6 
+            rounded-3xl border border-white/10
+            bg-black/40 backdrop-blur-lg z-10`}
+                >
+                  <div className="p-3 bg-transparent rounded-full">{item.icon}</div>
+                  <h3 className="text-2xl font-inter font-semibold text-blue-500">{item.title}</h3>
+                  <p className="text-sm text-gray-100">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-
-        {/* CTA Buttons */}
-
-        {/* Banner at the bottom */}
-
       </div>
+
     </section>
   );
 }
