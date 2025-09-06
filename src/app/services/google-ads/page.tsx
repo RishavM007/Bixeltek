@@ -37,6 +37,7 @@ import WhyGoogleAds from '@/components/GoogleAds/Section2';
 import BiddingStrategies from '@/components/GoogleAds/Section5';
 import GoogleAdsCostSection from '@/components/GoogleAds/Section6';
 import IndustryCarouselSection from '@/components/GoogleAds/Section7';
+import GoogleAdsSection10 from '@/components/GoogleAds/Section10';
 import BixeltekAdvantage from '@/components/GoogleAds/Section8';
 import FAQSection8 from '@/components/GoogleAds/SectionFaq';
 import ContactFromNew from '@/components/ContactFormNew';
@@ -95,6 +96,7 @@ export default function page() {
            <IndustryCarouselSection />
            <BixeltekAdvantage />
            <TechStackSection />
+           <GoogleAdsSection10/>
            <FAQSection8/>
            <section className='bg-black p-2 md:p-20 mx-auto flex flex-col justify-center gap-10 items-center md:flex-row ' id='form'>
                 <div className="w-full mt-14 md:mt-0 flex justify-center items-center px-6">

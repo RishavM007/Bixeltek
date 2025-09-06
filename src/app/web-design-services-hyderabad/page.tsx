@@ -1,8 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import lpimg from '@/assets/imac_img.png'
-import rocketimg from '@/assets/img_1-800x747.png'
-import mobile from '@/assets/mobile_app (1).png'
 import pet from "@/assets/sincerely-media-VNsdEl1gORk-unsplash.jpg";
 import school from '@/assets/school.jpg'
 import roofing from "@/assets/digital marketing for roofing industries.jpg";
@@ -34,7 +31,10 @@ import { FaTooth, FaHospital, FaDog, FaGasPump, FaCar, FaBroom, FaGraduationCap,
 import StepCards from '@/components/WebdevSteps'
 import techimg from '@/assets/techmockup.png'
 import Tech2 from '@/components/Tech2'
+import section2img3 from '@/assets/Landscap.jpg'
 import GooglePartner from '@/sections/GooglePartner'
+import img2 from "@/assets/Reflect ✦ MaxiBestOf.jpg";
+import ShowcaseSection from '@/components/Showcase';
 
 export default function WebDevAd() {
     const features = [
@@ -200,7 +200,7 @@ export default function WebDevAd() {
 
                         {/* Image Placeholder */}
                         <div className="w-full h-full flex items-center justify-center">
-                            <Image src={laptop} alt='laptop' className='w-full h-[450px] object-cover rounded-xl' />
+                            <Image src={section2img2} alt='laptop' className='w-full h-auto object-cover rounded-xl' />
                             {/* Replace with your actual image */}
 
                         </div>
@@ -253,6 +253,7 @@ export default function WebDevAd() {
 
                 </div>
             </section>
+            
             <section className="bg-white pt-20 px-4 lg:px-20">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
                     {/* Left stacked cards */}
@@ -452,21 +453,18 @@ export default function WebDevAd() {
                 </p>
             </section>
             <ServicesSection />
-
+            
             <section className="pt-48 pb-16 bg-white">
                 <div className="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
                     {/* Left: Image with overlay chart */}
                     <div className="relative">
                         <div className="rounded-2xl overflow-hidden">
                             <Image
-                                src={section2img2}
+                                src={img2}
                                 alt="Team working"
-                                className="object-cover w-full h-full"
+                                className="w-full object-cover "
                             />
-                            <Image src={chartimg} alt="Team working"
-                                className=" absolute bottom-0 left-0 object-cover w-[26%]">
 
-                            </Image>
                         </div>
                         {/* Chart or overlay image */}
 
@@ -747,7 +745,7 @@ export default function WebDevAd() {
                     </div>
                 </div>
             </section>
-            <CaseStudies />
+            {/* <CaseStudies /> */}
             <LogoGrid />
             <DarkFaqSection faqs={faqs} />
             <section className='bg-black p-2 md:p-20 mx-auto flex flex-col justify-center gap-10 items-center md:flex-row ' id='form'>
@@ -771,28 +769,10 @@ export default function WebDevAd() {
                             <Link href={'tel:+919100032301'}>
                                 <div className="flex items-center gap-2">
                                     <PhoneCall size={20} />
-                                    <span className="text-white text-sm">Call: +91-9100032301</span>
+                                    <span className="text-white text-lg">Call: +91-9100032301</span>
                                 </div>
-                            </Link>
-
-                            <div className="flex items-center gap-2">
-                                <MessageCircle size={20} />
-                                <span className="text-white text-sm">WhatsApp: Start a Chat</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CalendarDays size={20} />
-                                <span className="text-white text-sm">
-                                    Schedule a Free Consultation:{' '}
-                                    <button
-
-                                        className="underline underline-offset-2 text-blue-300 hover:text-blue-400"
-                                    >
-                                        Book Now
-                                    </button>
-                                </span>
-                            </div>
+                            </Link>           
                         </div>
-
                         <p className="text-sm text-gray-200 pt-3">
                             Starting at ₹30,000 | Delivered in 7–15 Days | Built for SEO, Ads, and Conversions
                         </p>

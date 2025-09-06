@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 
 import Counter from './Counter';
+import ShowcaseSection from './Showcase';
 
 const services = [
   {
@@ -107,6 +108,10 @@ export default function ServicesSection() {
             </div>
           ))}
         </div>
+      </div>
+      <div className='mt-20'>
+
+      <ShowcaseSection/>
       </div>
       <div className='mb-[-270px] mt-20'>
         <Counter />

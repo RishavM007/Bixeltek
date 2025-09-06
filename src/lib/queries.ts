@@ -1,26 +1,33 @@
 export const GET_ALL_POSTS = `
-    query GET_ALL_POSTS {
-  posts(first: 10) {
-    nodes {
-      id
-      title
-      excerpt
-      slug
-      date
-      author {
-        node {
-          name
+  query GET_ALL_POSTS {
+    posts(first: 10) {
+      nodes {
+        id
+        title
+        excerpt
+        slug
+        date
+        author {
+          node {
+            name
+          }
         }
-      }
-      featuredImage {
-        node {
-          sourceUrl
+        featuredImage {
+          node {
+            sourceUrl
+          }
+        }
+        categories {
+          nodes {
+            name
+            slug
+          }
         }
       }
     }
   }
-}
 `;
+
 
 export const GET_SINGLE_POST = `
  query GetSinglePost($slug: ID!) {

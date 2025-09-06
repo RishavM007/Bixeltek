@@ -8,7 +8,8 @@ import { link } from 'fs';
 
 export const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isDropdownOpen2, setIsDropdownOpen2] = useState(false)
+  const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
+  const [isDropdownOpen3, setIsDropdownOpen3] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -54,7 +55,7 @@ export const Header = () => {
       <div className="container bg-black flex justify-between items-center border-white/15 border-solid border-2 rounded-xl shadow-purple-custom backdrop:blur-3xl">
         <div className="text-white py-4 md:py-6 xl:py-3">
           <Link href={"/"}>
-            <Image src='/BIXELTEKLOGO.png'   width={100} height={40} alt="Bixeltek Logo" className='h-7 w-auto' />
+            <Image src='/BIXELTEKLOGO.png' width={100} height={40} alt="Bixeltek Logo" className='h-7 w-auto' />
           </Link>
         </div>
         <button className="xl:hidden text-white text-3xl" onClick={toggleMenu}>
@@ -81,7 +82,7 @@ export const Header = () => {
                 {isDropdownOpen && (
                   <motion.ul initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="ml-4 text-lg md:text-xl space-y-2">
                     <li><Link href="/services/google-ads" className="block py-2 px-4 hover:bg-gray-700 rounded">Google Ads Management</Link></li>
-                    <li><Link href="/seo-agency-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">SEO</Link></li>
+                    <li><Link href="/services/seo-services" className="block py-2 px-4 hover:bg-gray-700 rounded">SEO</Link></li>
                     <li><Link href="/social-media-marketing-agency-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Social Media Management</Link></li>
                     <li><Link href="/web-design-services-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Web Design and Development</Link></li>
                     {/* <li><Link href="/web-dev-ad" className="block py-2 px-4 hover:bg-gray-700 rounded">Web Design</Link></li> */}
@@ -91,7 +92,7 @@ export const Header = () => {
               </li>
               <li><Link href="/industries" className="block py-2 px-4 hover:bg-purple-600 rounded">Industries</Link></li>
               <li>
-                <button onClick={()=>{setIsDropdownOpen2(!isDropdownOpen2)}} className="flex justify-between w-full py-2 px-4 hover:bg-purple-600 rounded">Case Studies <HiChevronDown className="text-xl md:text-2xl" /></button>
+                <button onClick={() => { setIsDropdownOpen2(!isDropdownOpen2) }} className="flex justify-between w-full py-2 px-4 hover:bg-purple-600 rounded">Case Studies <HiChevronDown className="text-xl md:text-2xl" /></button>
                 {isDropdownOpen2 && (
                   <motion.ul initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="ml-4 text-lg md:text-xl space-y-2">
                     <li><Link href="/case-studies/Tumblewash-Casestudy" className="block py-2 px-4 hover:bg-gray-700 rounded">Tumblewash-Casestudy</Link></li>
@@ -152,7 +153,7 @@ export const Header = () => {
                             </Link>
                           </li>
                           <li>
-                            <Link href="/seo-agency-hyderabad" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
+                            <Link href="/services/seo-services" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
                               <h3 className="text-lg font-semibold text-black">SEO</h3>
                               <p className="text-sm text-gray-500">Improve your website ranking and visibility.</p>
                             </Link>
@@ -193,7 +194,7 @@ export const Header = () => {
                       </div>
                     </div>
                     <div className="w-1/2 border-l border-gray-300 pl-6">
-                  
+
                       <h3 className="text-lg font-semibold text-[#670ef7]">Case Studies</h3>
                       <div className="grid grid-cols-2 gap-4">
                         <ul>
@@ -224,14 +225,67 @@ export const Header = () => {
                   Industries
                 </Link>
               </li>
+              <li className="flex group relative items-center py-7">
+                <Link href="/industries" className="text-white/70 hover:text-white transition">
+                  Locations
+                </Link>
+                <ul className="absolute top-full -left-7 mt-0 bg-white rounded-b-md shadow-lg hidden group-hover:block z-50 min-w-[200px]">
+                  <li>
+                    <Link
+                      href="/hyderabad"
+                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
+                    >
+                      Hyderabad
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
+                    >
+                      Canada
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
+                    >
+                      United States
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
+                    >
+                     United Arab Emirates
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
+                    >
+                     Saudi Arabia
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
+                    >
+                      United Kingdom
+                    </Link>
+                  </li>
+                </ul>
+              </li>
               <li className="relative group py-7">
-              <Link href={'/case-studies'}>
-              <div className="flex items-center text-white/70 hover:text-white transition cursor-pointer">
-                  Case Studies <HiChevronDown className="ml-1 text-xs" />
-                </div>
-              </Link>
-                
-
+                <Link href={'/case-studies'}>
+                  <div className="flex items-center text-white/70 hover:text-white transition cursor-pointer">
+                    Case Studies <HiChevronDown className="ml-1 text-xs" />
+                  </div>
+                </Link>
                 <ul className="absolute top-full -left-7 mt-0 bg-white rounded-b-md shadow-lg hidden group-hover:block z-50 min-w-[200px]">
                   <li>
                     <Link

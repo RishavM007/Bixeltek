@@ -83,7 +83,6 @@ export default function ExpertiseSection() {
                                 </div>
                                 <p className="text-gray-300 mt-2 text-base font-inter">
                                     The good news? These problems are fixable. Digital marketing makes sure your business is present at the right time, in the right place, with the right message.
-
                                 </p>
                             </div>
                         </div>

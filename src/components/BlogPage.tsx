@@ -25,16 +25,16 @@ export function BlogPageUI({ allPosts, categories }: { allPosts: Post[]; categor
       post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
 
-    // If no category is selected, include all posts (even if they have no categories)
-    if (!selectedCategory) {
-      return matchSearch;
-    }
+    if (!selectedCategory) return matchSearch;
 
-    // If a category is selected, include only posts that have categories AND match selected
-    const matchCategory = post.categories?.nodes.some(cat => cat.slug === selectedCategory);
+    const matchCategory = post.categories?.nodes?.some(
+      cat => cat.slug.toLowerCase() === selectedCategory.toLowerCase()
+    );
+
     return matchSearch && matchCategory;
   });
 }, [searchQuery, selectedCategory, allPosts]);
+
 
   const recentPosts = useMemo(() => {
     

@@ -16,7 +16,7 @@ export const Footer = () => {
             <Image src='/BIXELTEKLOGO.png' alt="logo" width={100}
               height={40} className="w-auto h-16"></Image>
 
-            <p className="py-5 text-gray-100 lg:max-w-xs text-center lg:text-left">Trusted by brands.Certified by Google.Focused on ROI.</p>
+            <p className="py-5 text-gray-100 lg:max-w-xs text-center lg:text-left">Trusted by brands. Certified by Google. Focused on ROI.</p>
             <div className="text-sm text-white mb-4">
               <p className="mb-2 text-xl font-semibold">Address</p>
               <address className="text-base not-italic">
