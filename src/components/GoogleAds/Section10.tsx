@@ -53,7 +53,7 @@ export default function GoogleAdsSection10() {
                                             </div>
 
                                             <blockquote className="flex-1 mt-8">
-                                                <p className="text-base leading-relaxed text-gray-900 font-pj">"As a dentist in Canada, we wasted money on Google Ads that brought no patients. Bixeltek restructured our campaigns, targeted the right keywords, and tracked results properly. Now our ads actually bring in new patients every week, and the return on ad spend is clear.”</p>
+                                                <p className="text-base leading-relaxed text-gray-900 font-pj">&quote;As a dentist in Canada, we wasted money on Google Ads that brought no patients. Bixeltek restructured our campaigns, targeted the right keywords, and tracked results properly. Now our ads actually bring in new patients every week, and the return on ad spend is clear.&quote;</p>
                                             </blockquote>
                                         </div>
 
