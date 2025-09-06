@@ -145,7 +145,7 @@ export default function SeoSection6() {
                                             </div>
 
                                             <blockquote className="flex-1 mt-8">
-                                                <p className="text-base leading-relaxed text-gray-900 font-pj">“Our window cleaning business in Texas had a website that barely brought in any work. With competition growing, we needed real visibility. Bixeltek optimized our site, improved rankings, and applied AI tools to track performance. The result: steady traffic, more service calls, and a noticeable boost in revenue.”</p>
+                                                <p className="text-base leading-relaxed text-gray-900 font-pj">&quote;Our window cleaning business in Texas had a website that barely brought in any work. With competition growing, we needed real visibility. Bixeltek optimized our site, improved rankings, and applied AI tools to track performance. The result: steady traffic, more service calls, and a noticeable boost in revenue.&quote</p>
                                             </blockquote>
                                         </div>
 
