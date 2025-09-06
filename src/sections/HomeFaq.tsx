@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import faqImage from '@/assets/Illustration.jpg'; // Replace with your actual image path
+import faqImage from '@/assets/laptop dentist 2.png'; // Replace with your actual image path
 
 const faqs = [
   {

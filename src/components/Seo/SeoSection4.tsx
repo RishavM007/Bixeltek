@@ -49,16 +49,20 @@ const WhyChooseBixeltek = () => {
           whileInView={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           viewport={{ once: true }}
-          className="flex-1 relative w-full lg:w-1/2 h-[300px] md:h-[400px] lg:h-[500px]"
+          className="flex relative w-full lg:w-1/2 justify-center items-center "
         >
           {/* If using GIF */}
-          <Image
-            src={whychoosegif}
-            alt="Why Choose Bixeltek"
-            fill
-            className="object-cover object-center rounded-2xl shadow-2xl"
-            priority
-          />
+          <a
+              href="https://www.google.com/partners/agency?id=2188074075"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://www.gstatic.com/partners/badge/images/2024/PartnerBadgeClickable.svg"
+                alt="Google Partners Badge"
+                className="w-72"
+              />
+            </a>
 
           {/* OR if using video */}
           {/* 
