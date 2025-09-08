@@ -16,15 +16,6 @@ import healthcare from "@/assets/digital marketing for health care practices.jpg
 import CarouselSection from "@/components/industriescarosel";
 export default function Industries() {
 
-  const industries = [
-    { id: "healthcare", img: dental, text: "Healthcare" },
-    { id: "auto", img: blackcar, text: "Automobile" },
-    { id: "cleaning", img: cleaningcomp, text: "Cleaning Companies" },
-    { id: "roofing", img: roofing, text: "Roofing Companies" },
-    { id: "lawncare", img: lawncare, text: "Lawn Care" },
-    { id: "pet", img: pet, text: "Pet Stores" },
-    { id: "oil", img: oil, text: "Oil Refineries" },
-  ];
   const industry = [
     { name: "Dental", icon: <FaTooth /> },
     { name: "Healthcare", icon: <FaHospital /> },

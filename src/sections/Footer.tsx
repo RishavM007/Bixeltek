@@ -53,11 +53,11 @@ export const Footer = () => {
           <div className="lg:mx-auto text-left ">
             <h4 className="text-lg text-gray-100 font-medium mb-7">Services</h4>
             <ul className="text-sm  transition-all duration-500">
-              <li className="mb-6"><Link href="/google-ads-agency-hyderabad" className="text-gray-300 hover:text-purple-700">Google Ads Management</Link></li>
-              <li className="mb-6"><Link href="/seo-agency-hyderabad" className=" text-gray-300 hover:text-purple-700">Search Engine Optimization</Link></li>
-              <li className="mb-6"><Link href="/social-media-marketing-agency-hyderabad" className=" text-gray-300 hover:text-purple-700">Social Media Management</Link></li>
-              <li className="mb-6"><Link href="/web-design-services-hyderabad" className=" text-gray-300 hover:text-purple-700">Web Design & Development</Link></li>
-              <li className="mb-6"><Link href="#" className=" text-gray-300 hover:text-purple-700">Youtube Ads Management</Link></li>
+              <li className="mb-6"><Link href="/google-ads-agency-hyderabad" className="text-gray-300 hover:text-purple-700">Google Ads Management in Hyderabad</Link></li>
+              <li className="mb-6"><Link href="/seo-agency-hyderabad" className=" text-gray-300 hover:text-purple-700">SEO Services in Hyderabad</Link></li>
+              <li className="mb-6"><Link href="/social-media-marketing-agency-hyderabad" className=" text-gray-300 hover:text-purple-700">Social Media Management in Hyderabad</Link></li>
+              <li className="mb-6"><Link href="/web-design-services-hyderabad" className=" text-gray-300 hover:text-purple-700">Web Design Services in Hyderabad</Link></li>
+              {/* <li className="mb-6"><Link href="#" className=" text-gray-300 hover:text-purple-700">Youtube Ads Management in Hyderabad</Link></li> */}
             </ul>
           </div>
           <div className="lg:mx-auto text-left ">

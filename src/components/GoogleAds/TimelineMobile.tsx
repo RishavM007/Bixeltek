@@ -41,7 +41,7 @@ const containers = [
     number: '06',
     title: 'Continuous Scaling',
     text: 'Ongoing A/B testing, budget optimization, and audience expansion strategies for consistent campaign performance improvements.',
-    gradient: 'from-red-500 via-orange-400 to-[#13131333]',
+    gradient: 'from-red-500 via-[#131313] to-[#13131333]',
     color: 'text-pink-500',
   },
 ];
@@ -68,6 +68,7 @@ const GradientBorderContainersMob = () => {
       </div>
 
       {/* ✅ DESKTOP VERSION (gradient bordered cards) */}
+      {/* ✅ DESKTOP VERSION (gradient bordered cards) */}
       <div className="hidden md:block max-w-7xl mx-auto mt-40 space-y-[4px]">
         {containers.map((item, idx) => {
           const isEven = idx % 2 === 0;
@@ -78,16 +79,17 @@ const GradientBorderContainersMob = () => {
           else if (idx % 4 === 3) positionClasses = '-top-20 left-1/3 -translate-x-1/4'; // bottom-center
 
           return (
-            <div key={idx} className="relative z-10">
+            <div key={idx} className="relative z-0">
+              {/* Gradient border */}
               <div
-                className={`absolute -inset-1 rounded-[20px] ${
-                  isEven ? 'bg-gradient-to-r' : 'bg-gradient-to-l'
-                } ${item.gradient} z-0`}
+                className={`absolute -inset-1 rounded-[20px] ${isEven ? 'bg-gradient-to-r' : 'bg-gradient-to-l'
+                  } ${item.gradient} z-0`}
               ></div>
 
-              <div className="relative flex z-10 bg-[#131313] rounded-[20px] p-8 h-[220px]">
+              <div className="relative flex flex-col justify-between items-center z-10 bg-[#131313] rounded-[20px] p-8 h-[260px]">
+                {/* Floating black content box */}
                 <div
-                  className={`absolute flex items-center gap-5 flex-row bg-black  max-w-3xl rounded-2xl p-10 z-10 ${positionClasses}`}
+                  className={`absolute flex items-center gap-5 flex-row bg-black max-w-3xl rounded-2xl p-10 z-10 ${positionClasses}`}
                 >
                   <div>
                     <p className={`${item.color} text-7xl font-bold`}>{item.number}</p>
@@ -97,23 +99,27 @@ const GradientBorderContainersMob = () => {
                     <p className="text-gray-300">{item.text}</p>
                   </div>
                 </div>
+
+                {idx === containers.length - 1 && (
+                  <div className="mt-auto absolute -bottom-[20px]  flex justify-center w-full">
+                    <Link href={'tel:+919100032301'}>
+                      <button className="px-7 py-3 rounded-2xl bg-blue-600 text-white font-semibold text-sm shadow-lg hover:bg-blue-700 transition">
+                        Talk To Our Certified PPC Specialist
+                      </button>
+                    </Link>
+                  </div>
+                )}
               </div>
             </div>
           );
         })}
       </div>
 
-      <p className="text-gray-300 mt-20 max-w-2xl mx-auto mb-12 font-poppins leading-relaxed text-center">
+
+
+      <p className="text-gray-300 mt-10 max-w-[30%] mx-auto mb-12 font-poppins leading-relaxed text-center">
         This isn’t theory. It’s a repeatable framework we’ve used to drive results in the USA, Canada, India, and Saudi Arabia.
       </p>
-
-      <div className="flex justify-center mt-2">
-        <Link href={'tel:+919100032301'}>
-          <button className="px-7 py-3 rounded-2xl bg-blue-600 text-white font-semibold text-sm shadow-lg hover:bg-blue-700 transition">
-            Talk To Our Certified PPC Specialist
-          </button>
-        </Link>
-      </div>
     </div>
   );
 };
