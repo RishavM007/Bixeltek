@@ -1,13 +1,13 @@
 export const metadata = {
-    title: "Best SEO Services in Hyderabad | Trusted SEO Company | Bixeltek",
+    title: "SEO Services in Hyderabad | Rank #1 with AI SEO",
     description:
-        "Boost your online presence with Bixeltek, a top SEO agency in Hyderabad. Our proven strategies help businesses dominate search results and drive organic growth.",
+        "SEO Services in Hyderabad powered by AI to get you ranked #1. Outperform competitors, capture more leads, and turn searches into sales.",
     keywords:
         "SEO services Hyderabad, Best SEO agency Hyderabad, Digital marketing Hyderabad, Local SEO Hyderabad, Google ranking services, Technical SEO, On-page SEO, Off-page SEO, E-commerce SEO, SEO expert Hyderabad, Increase website traffic, SEO consultant Hyderabad",
     openGraph: {
-        title: " Best SEO Services in Hyderabad | Trusted SEO Company | Bixeltek",
+        title: "SEO Services in Hyderabad | Rank #1 with AI SEO",
         description:
-            "Boost your online presence with Bixeltek, a top SEO agency in Hyderabad. Our proven strategies help businesses dominate search results and drive organic growth.",
+            "SEO Services in Hyderabad powered by AI to get you ranked #1. Outperform competitors, capture more leads, and turn searches into sales.",
         type: "website",
     },
     alternates: {

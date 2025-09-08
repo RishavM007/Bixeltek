@@ -35,7 +35,6 @@ import school from '@/assets/school.jpg'
 import roofing from "@/assets/digital marketing for roofing industries.jpg";
 import ContactFromNew from '@/components/ContactFormNew'
 import { FaTooth, FaHospital, FaDog, FaGasPump, FaCar, FaBroom, FaGraduationCap, FaBuilding, FaTree, FaSeedling } from "react-icons/fa";
-import dental from "@/assets/digital marketing for health care practices.jpg";
 import { RiShoppingCartFill } from "react-icons/ri";
 import healthcare from "@/assets/digital marketing for health care practices.jpg";
 import lawncare from "@/assets/digital marketing for lawn care services.jpg";
