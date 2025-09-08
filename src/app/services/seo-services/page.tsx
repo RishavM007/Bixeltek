@@ -1,13 +1,13 @@
 export const metadata = {
-    title: "SEO Services for Businesses | Get Found on Google",
+    title: "SEO Services for Businesses | AI SEO Agency for Rankings & Growth",
     description:
-        " Bixeltek helps businesses get more leads with SEO. Trusted SEO company serving India, USA, Canada, UAE, Saudi Arabia & UK. Get sustainable growth beyond Google Ads.",
+        " SEO services for businesses designed to rank #1. Our AI-powered SEO agency helps you get found on Google, attract leads, and grow globally.",
     keywords:
         "SEO services Hyderabad, Best SEO agency Hyderabad, Digital marketing Hyderabad, Local SEO Hyderabad, Google ranking services, Technical SEO, On-page SEO, Off-page SEO, E-commerce SEO, SEO expert Hyderabad, Increase website traffic, SEO consultant Hyderabad",
     openGraph: {
-        title: " SEO Services for Businesses | Get Found on Google",
+        title: "SEO Services for Businesses | AI SEO Agency for Rankings & Growth",
         description:
-            " Bixeltek helps businesses get more leads with SEO. Trusted SEO company serving India, USA, Canada, UAE, Saudi Arabia & UK. Get sustainable growth beyond Google Ads.",
+            "SEO services for businesses designed to rank #1. Our AI-powered SEO agency helps you get found on Google, attract leads, and grow globally.",
         type: "website",
     },
     alternates: {
@@ -17,16 +17,9 @@ export const metadata = {
 
 export const dynamic = "force-dynamic";
 import React from 'react';
-import DarkFaqSection from '@/components/DarkFaq';
-import { FaSearch, FaTachometerAlt, FaFileAlt, FaStar, FaMapMarkerAlt, FaCode } from "react-icons/fa";
 import SeoHero from '@/components/SeoHero';
-import { FaTooth, FaHospital, FaDog, FaGasPump, FaCar, FaBroom, FaGraduationCap, FaBuilding, FaTree, FaSeedling } from "react-icons/fa";
-import { BsGraphUpArrow } from "react-icons/bs";
-import { TbReportAnalytics } from "react-icons/tb";
-import { GrFlag } from "react-icons/gr";
-import { LuFileClock } from "react-icons/lu";
 import Link from 'next/link';
-import toast, { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 import WhySeo from '@/components/Seo/SeoSection1';
 import SEOSection2 from '@/components/Seo/SeoSection2';
 import SEOGridSection from '@/components/Seo/SeoSection3';
@@ -35,57 +28,7 @@ import IndustryCarouselSection from '@/components/Hyderabad/HydSection8';
 import FAQSectionSEO from '@/components/Seo/SeoFaq';
 import SeoSection6 from '@/components/Seo/SeoSection6';
 export default function Seo() {
-    const faqs = [
-        {
-            question: "How much does SEO services cost in Hyderabad ?",
-            answer: "The cost of SEO services in Hyderabad varies based on keyword competition, website size, and optimization level. We offer affordable SEO packages tailored to your business goals. Typically our packeges start from 25,000 INR per month.",
-        },
-        {
-            question: "Do you provide SEO services outside Hyderabad?",
-            answer: "Yes! We offer professional SEO services to businesses across India, the USA, the UK, the UAE, Canada, and more, helping brands improve their Google rankings worldwide.",
-        },
-        {
-            question: "How can SEO improve my website’s Google ranking and organic traffic?",
-            answer: "SEO helps boost your website’s visibility on Google by optimizing content, keywords, backlinks, and technical aspects. Our expert SEO strategies drive organic traffic and improve search rankings.",
-        },
-        {
-            question: "What are the key benefits of investing in SEO for my business?",
-            answer: "SEO increases organic traffic, improves brand credibility, generates high-quality leads, enhances user experience, and delivers long-term results for your online business growth.",
-        },
-        {
-            question: "How long does it take to see results from SEO optimization?",
-            answer: "SEO is a long-term strategy, and results typically take 3-6 months, depending on competition, keyword ranking, and website optimization efforts.",
-        },
-        {
-            question: "Do you offer local SEO services for businesses in Hyderabad?",
-            answer: "Yes! Our **local SEO services** help businesses rank higher in Google My Business and local search results, attracting more customers from Hyderabad and surrounding areas.",
-        },
-        {
-            question: "Do you provide e-commerce SEO for online stores?",
-            answer: "Yes! We offer E-Commerce SEO services, including product page optimization, technical SEO, schema markup, and conversion rate optimization to boost sales and traffic.",
-        },
-        {
-            question: "Will SEO make my website mobile-friendly and faster?",
-            answer: "Yes! Our SEO services include mobile optimization, page speed improvements, and core web vitals optimization to enhance user experience and search rankings.",
-        },
-        {
-            question: "Can I track my SEO performance and keyword rankings?",
-            answer: "Absolutely! We provide regular SEO reports, keyword ranking updates, Google Analytics tracking, and insights to monitor your website’s growth and ROI.",
-        },
-        {
-            question: "Why should I choose Bixeltek for SEO services in Hyderabad?",
-            answer: "Bixeltek is a trusted SEO agency in Hyderabad, specializing in on-page SEO, off-page SEO, link building, technical SEO, and content marketing to boost your website’s search engine rankings.",
-        },
-    ];
-
-
-
-    const items = [
-        { text: "Measurable Goals", icon: <GrFlag />, description: "Set clear, achievable objectives that align with your business growth. Our SEO strategies focus on measurable success indicators, ensuring transparency and progress tracking." },
-        { text: "Data-Driven Strategies", icon: <BsGraphUpArrow />, description: "Utilizing analytics and performance insights, we craft SEO plans backed by data. This ensures your website ranks higher and reaches the right audience effectively." },
-        { text: "Transparent Reporting", icon: <TbReportAnalytics />, description: "Stay informed with detailed reports that break down your website's performance. We provide easy-to-understand analytics, keeping you in control of your SEO journey." },
-        { text: "Continuous Optimisation", icon: <LuFileClock />, description: "SEO is an ongoing process. We continuously refine strategies, optimize content, and adapt to algorithm changes to keep your website competitive." },
-    ];
+    
     const seoServices = [
         {
             title: 'Keyword Research',
