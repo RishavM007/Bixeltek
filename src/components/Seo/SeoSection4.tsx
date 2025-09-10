@@ -2,8 +2,6 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image"; // or Video if you prefer
-import whychoosegif from "@/assets/output-onlinegiftools.gif"; // replace with your gif/video
 
 const WhyChooseBixeltek = () => {
   return (
