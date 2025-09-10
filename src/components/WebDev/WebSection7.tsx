@@ -45,7 +45,7 @@ export default function WebSection7() {
                             Generate leads quickly with targeted, ROI-driven campaigns. Our experts
                             manage every detail so you get maximum results for your budget.
                         </p>
-                        <Link href="services/google-ads">
+                        <Link href="/services/google-ads">
                             <p className="text-blue-500 text-sm mt-3 font-semibold cursor-pointer hover:underline">
                                 Explore Google Ads →
                             </p>

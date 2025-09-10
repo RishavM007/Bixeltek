@@ -53,7 +53,7 @@ export default function WebdevTestimonials() {
                                             </div>
 
                                             <blockquote className="flex-1 mt-8">
-                                                <p className="text-base leading-relaxed text-gray-900 font-pj">&quote;As a dentist in Canada, we wasted money on Google Ads that brought no patients. Bixeltek restructured our campaigns, targeted the right keywords, and tracked results properly. Now our ads actually bring in new patients every week, and the return on ad spend is clear.&quote;</p>
+                                                <p className="text-base leading-relaxed text-gray-900 font-pj">&quot;As a dentist in Canada, we wasted money on Google Ads that brought no patients. Bixeltek restructured our campaigns, targeted the right keywords, and tracked results properly. Now our ads actually bring in new patients every week, and the return on ad spend is clear.&quot;</p>
                                             </blockquote>
                                         </div>
 
@@ -100,7 +100,7 @@ export default function WebdevTestimonials() {
                                             </div>
 
                                             <blockquote className="flex-1 mt-8">
-                                                <p className="text-base leading-relaxed text-gray-900 font-pj">&quote;Our arborist company in Canada had been running ads for years, but they were broken and draining money. Bixeltek applied their AI-first approach, optimized budgets, and focused on local leads. Today we’re getting steady job requests while spending less than before.&quote;</p>
+                                                <p className="text-base leading-relaxed text-gray-900 font-pj">&quot;Our arborist company in Canada had been running ads for years, but they were broken and draining money. Bixeltek applied their AI-first approach, optimized budgets, and focused on local leads. Today we’re getting steady job requests while spending less than before.&quot;</p>
                                             </blockquote>
                                         </div>
 
@@ -146,7 +146,7 @@ export default function WebdevTestimonials() {
                                             </div>
 
                                             <blockquote className="flex-1 mt-8">
-                                                <p className="text-base leading-relaxed text-gray-900 font-pj">&quote;Running a window cleaning business in Texas, we struggled with poor ad performance — lots of clicks, but no calls. Bixeltek rebuilt our Google Ads strategy, added conversion tracking, and improved targeting. The result: more service calls, higher bookings, and real growth in monthly revenue.&quote;</p>
+                                                <p className="text-base leading-relaxed text-gray-900 font-pj">&quot;Running a window cleaning business in Texas, we struggled with poor ad performance — lots of clicks, but no calls. Bixeltek rebuilt our Google Ads strategy, added conversion tracking, and improved targeting. The result: more service calls, higher bookings, and real growth in monthly revenue.&quot;</p>
                                             </blockquote>
                                         </div>
 
