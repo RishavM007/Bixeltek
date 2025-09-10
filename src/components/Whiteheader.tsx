@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Bixeltekblacklogo from '@/assets/Bixeltek Black Logo.png'
 import { HiChevronDown, HiMenu, HiX } from 'react-icons/hi';
 export const Whiteheader = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -45,7 +46,7 @@ export const Whiteheader = () => {
                 <div className=" flex justify-between px-6 items-center">
                     <div className="text-white py-3">
                         <Link href={"/"}>
-                            <Image src='/BIXELTEKLOGO.png' width={100} height={40} alt="Bixeltek Logo" className='h-7 w-auto' />
+                            <Image src={Bixeltekblacklogo} width={150} height={40} alt="Bixeltek Logo" className='h-12 w-auto' />
                         </Link>
                     </div>
                     <button className="md:hidden text-black text-3xl" onClick={toggleMenu}>

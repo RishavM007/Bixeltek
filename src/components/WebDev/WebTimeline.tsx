@@ -41,7 +41,7 @@ const containers = [
     number: '06',
     title: 'Testing & Launch',
     text: 'Comprehensive QA for speed, security, SEO, and responsiveness before going live to ensure maximum impact.',
-    gradient: 'from-red-500 via-[#131313] to-[#13131333]',
+    gradient: 'from-red-500 via-[#13131333] to-[#13131333]',
     color: 'text-red-500',
   },
 ];

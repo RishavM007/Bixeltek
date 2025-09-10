@@ -30,10 +30,7 @@ export default function WebSection4() {
             title: 'Website Redesigns',
             description: 'An outdated website can cost you customers. Our website redesign services transform old, underperforming sites into modern, mobile-first platforms that drive leads and outperform competitors.',
         },
-        {
-            title: 'UI/UX Design',
-            description: 'Great design is about experience, not just visuals. Our UI/UX design services create intuitive interfaces that reduce friction, keep users engaged, and move them naturally toward action.',
-        },
+
     ];
     return (
         <section className='relative py-24'>
@@ -41,7 +38,7 @@ export default function WebSection4() {
             <div className="absolute bottom-52 right-0 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
             <div>
                 <div className=' max-w-[80%] mx-auto mb-5 text-center'>
-                    <h2 className='text-white text-4xl lg:text-6xl max-w-7xl mx-auto font-inter mb-3 font-semibold '>Our<span className='text-blue-500'>Web Design</span> Services</h2>
+                    <h2 className='text-white text-4xl lg:text-6xl max-w-7xl mx-auto font-inter mb-3 font-semibold '>Our<span className='text-blue-500'> Web Design</span> Services</h2>
                     <p className='text-gray-100 text-base md:text-[17px] tracking-wider mt-4 max-w-3xl mx-auto'>As a leading web design agency, Bixeltek delivers websites tailored to your goals. From fully custom-coded platforms to flexible WordPress builds, our solutions combine aesthetics, performance, and growth.</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 max-w-[75%] mx-auto mt-10">

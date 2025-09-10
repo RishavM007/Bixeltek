@@ -1,6 +1,7 @@
 "use client";
 
 import { MapPin } from "lucide-react";
+import Link from "next/link";
 
 export default function AreasWeServe() {
   return (
@@ -14,7 +15,7 @@ export default function AreasWeServe() {
             <li className="flex items-start gap-3">
               <MapPin className="text-blue-500 w-6 h-6 mt-1" />
               <span>
-                <strong>India</strong> → Hyderabad, Bangalore, Delhi, Mumbai
+                <strong>India</strong> → <Link href={'/hyderabad'}>Hyderabad</Link> , Bangalore, Delhi, Mumbai
               </span>
             </li>
             <li className="flex items-start gap-3">

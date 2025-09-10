@@ -1,7 +1,18 @@
+'use client';
 import React from 'react'
 import { LogoTicker2 } from '../GoogleAdsCarousel'
+import { useState } from 'react'
+import { ButtonContactForm } from '@/sections/ButtonContactForm';
 
 export default function WebSection1() {
+
+    const [isVisible, setIsVisible] = useState(false);
+
+    const toggleContactForm = () => {
+        setIsVisible(prev => !prev);
+        console.log(!isVisible ? "Contact form visible" : "Contact form not visible");
+    };
+
     return (
         <>
             <section className="relative flex flex-col items-center justify-center h-[130vh] md:h-[100vh] bg-black -mt-32 text-center px-6 overflow-hidden">
@@ -24,16 +35,18 @@ export default function WebSection1() {
 
                         {/* CTA Buttons */}
                         <div className="mt-8 flex flex-wrap justify-center gap-4">
-                            <a
-                                href="tel:+919100032301"
-                                className="px-6 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition"
-                            >
-                                Request Your Free Web Design Consultation
-                            </a>
-                            
+                         
+                                <button onClick={toggleContactForm}
+
+                                    className="px-6 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition"
+                                >
+                                    Request Your Free Web Design Consultation
+                                </button>
+
                         </div>
                     </div>
                 </div>
+                <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
                 <LogoTicker2 />
             </section>
 

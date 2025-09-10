@@ -13,6 +13,7 @@ import shape1 from '@/assets/shape-1-seo.png'
 import Image from "next/image";
 import shape2 from '@/assets/chaka-rounded-two.png'
 
+
 const WebDesignSection = () => {
     const designPoints = [
         {
@@ -115,11 +116,11 @@ const WebDesignSection = () => {
                 </p>
 
                 {/* CTA */}
-                <Link href={"/contact"}>
+                <a href={"tel:+919100032301"}>
                     <button className="px-8 py-3 rounded-2xl bg-blue-600 text-white font-semibold text-base shadow-lg hover:bg-blue-700 transition">
-                        Talk to Our Web Experts
+                        Talk to Our Web Design Experts
                     </button>
-                </Link>
+                </a>
             </div>
         </section>
     );

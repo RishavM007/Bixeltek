@@ -30,6 +30,7 @@ import AreasWeServe from '@/components/WebDev/WebSection8';
 import IndustryCarouselSectionWeb from '@/components/WebDev/WebDevInd';
 import WebDevFaq from '@/components/WebDev/WebDevFaq';
 import WebShowcaseSection from '@/components/WebDev/WebDevShowcase';
+import WebTech from '@/components/WebDev/WebTech';
 export default function page() {
     return (
         <>
@@ -42,6 +43,7 @@ export default function page() {
             <WebSection7 />
             <BenefitsSection />
             <WebShowcaseSection/>
+            <WebTech/>
             <AreasWeServe/>
             <IndustryCarouselSectionWeb/>
             <WebdevTestimonials />

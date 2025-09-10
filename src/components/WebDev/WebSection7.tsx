@@ -1,5 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
+import googlelogo from '@/assets/google-logo.png'
+import googleadsalogo from '@/assets/googleads-logo.png'
+import Image from 'next/image'
+import googleanalytics from '@/assets/4202007_analytics_google_logo_social_social media_icon.png'
 
 export default function WebSection7() {
     return (
@@ -22,7 +26,9 @@ export default function WebSection7() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 gap-6 max-w-7xl text-white mx-auto text-center">
                     {/* Card 1 */}
                     <div className="flex flex-col gap-3 text-xl items-center border-none md:border-r md:border-dashed border-blue-500 justify-center p-6">
-                        <span className="text-4xl">📈</span>
+                        <span className="text-4xl">
+                            <Image src={googlelogo} alt='googlelogo' className='w-14 h-auto'></Image>
+                        </span>
                         <h3 className="mt-2 font-semibold font-poppins">SEO Services</h3>
                         <p className="text-sm mt-2">
                             Build consistent, long-term lead flow that compounds over time. We
@@ -37,7 +43,7 @@ export default function WebSection7() {
 
                     {/* Card 2 */}
                     <div className="flex flex-col gap-3 text-xl items-center border-none md:border-r md:border-dashed border-blue-500 justify-center p-6">
-                        <span className="text-4xl">🎯</span>
+                        <span className="text-4xl"><Image src={googleadsalogo} alt='googlelogo' className='w-14 h-auto'></Image></span>
                         <h3 className="mt-2 font-semibold font-poppins">
                             Google Ads Management
                         </h3>
@@ -54,12 +60,17 @@ export default function WebSection7() {
 
                     {/* Card 3 */}
                     <div className="flex flex-col gap-3 text-xl items-center justify-center p-6">
-                        <span className="text-4xl">📊</span>
+                        <span className="text-4xl"> <Image src={googleanalytics} alt='googlelogo' className='w-14 h-auto'></Image></span>
                         <h3 className="mt-2 font-semibold font-poppins">Analytics & Tracking</h3>
                         <p className="text-sm mt-2">
                             Understand exactly where your leads come from. With data-driven
                             insights, we help you scale what works and cut what doesn’t.
                         </p>
+                         <Link href="#">
+                            <p className="text-blue-500 text-sm mt-3 font-semibold cursor-pointer hover:underline">
+                                Explore Google Analytics →
+                            </p>
+                        </Link>
                     </div>
                 </div>
 
