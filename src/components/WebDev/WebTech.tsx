@@ -33,20 +33,20 @@ const logos = [
 export default function WebTech() {
   return (
     <section className="w-full py-16 mt-20 bg-black">
-      <div className="max-w-[90%] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="max-w-[90%] mx-auto flex flex-col md:flex-row gap-8">
         {/* Left text */}
-        <div className="flex items-center justify-center md:justify-start">
+        <div className="w-[40%] flex items-center justify-center md:justify-start">
           <h2 className=" text-3xl md:text-5xl text-center md:text-left font-semibold text-gray-50">
             Powered by<br /> Industry-Leading Tools
           </h2>
         </div>
-
+        
         {/* Right side logos */}
-        <div className="md:col-span-3">
+        <div className="w-[60%] md:col-span-3">
           {Array.from({ length: 3 }).map((_, rowIndex) => (
             <div
               key={rowIndex}
-              className={`grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-14 p-5 items-center justify-items-center py-6  ${
+              className={`grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-14 md:gap-7 p-5 items-center justify-items-center py-2  ${
                 rowIndex !== 2 ? "" : ""
               }`}
             >
@@ -57,7 +57,7 @@ export default function WebTech() {
                     key={idx}
                     src={logo.src}
                     alt={logo.alt}
-                    className={` md:h-10 w-auto object-contain ${logo.alt === "Hostinger" ? "md:h-14" : "h-10"} ${logo.alt === "Next.js" ? "md:h-6" : "h-10"} ${logo.alt === "Redis" ? "md:h-32" : "h-10"} ${logo.alt === "Mongoose" ? "md:h-10" : "h-10"} ${logo.alt === "Node.js" ? "md:h-16" : "h-10"} ${logo.alt === "Shopify" ? "h-12" : "h-10"} ${logo.alt === "TailwindCSS" ? "h-16" : "h-10"}` }
+                    className={` h-10 w-auto object-contain ${logo.alt === "Hostinger" ? "md:h-14" : "h-10"} ${logo.alt === "Next.js" ? "md:h-6" : "h-10"} ${logo.alt === "Redis" ? "md:h-32" : "h-10"} ${logo.alt === "Mongoose" ? "md:h-10" : "h-10"} ${logo.alt === "Node.js" ? "md:h-16" : "h-10"} ${logo.alt === "Shopify" ? "h-12" : "h-10"} ${logo.alt === "TailwindCSS" ? "h-24" : "h-10"}` }
                   />
                 ))}
             </div>
