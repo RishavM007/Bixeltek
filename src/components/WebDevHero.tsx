@@ -56,8 +56,9 @@ export default function WebDevHero() {
   return (
     <>
       <div
-        className="relative sm:h-[80vh] md:h-[120vh] -mt-32 bg-cover bg-center flex flex-col items-center bg-[url('/abstract-flowing-neon-wave-background.jpg')]"
+        className="relative sm:h-[80vh] md:h-[120vh] -mt-32 bg-cover bg-center flex flex-col items-center bg-[url('/54543de4-2078-4bb1-8cf6-088ec431bef7.jpg')]"
       >
+          <div className="absolute inset-0 bg-black/30"></div>
         <ContactForm isVisible={showContactForm} onClose={() => setShowContactForm(false)} />
         <div className="absolute bottom-0 left-0 w-full z-30 sm:h-[100px] md:h-[300px] bg-gradient-to-t from-black to-transparent"></div>
 
@@ -70,18 +71,18 @@ export default function WebDevHero() {
               initial={{ opacity: 0, x: -500 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
-              className="text-white font-sofiasanscondensed sm:text-center md:text-left font-semibold sm:text-[37px] md:text-[42px] lg:text-[60px] mb-[-15px] leading-tight max-w-[800px]"
+              className="text-white font-sofiasanscondensed z-20 sm:text-center md:text-left font-semibold sm:text-[37px] md:text-[42px] lg:text-[60px] mb-[-15px] leading-tight max-w-[800px]"
             >
               Top Web Design Services in Hyderabad Built for Leads, Sales & Growth
             </motion.h1>
-            <motion.h2 className='text-white font-inter sm:text-center md:text-left font-semibold text-xl leading-tight max-w-[700px] '>
+            <motion.h2 className='text-white z-20 font-inter sm:text-center md:text-left font-semibold text-xl leading-tight max-w-[700px] '>
               We build websites that do more than look good - They perform.
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, x: -500 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.7, ease: 'easeInOut' }}
-              className="text-left text-[16px] hidden md:block sm:text-center md:text-left sm:text-[25px] md:text-[20px] tracking-wide font-sofiasanscondensed text-[#f3f3f5] max-w-[800px]"
+              className="text-left text-[16px] z-20 hidden md:block sm:text-center md:text-left sm:text-[25px] md:text-[20px] tracking-wide font-sofiasanscondensed text-[#f3f3f5] max-w-[800px]"
             >
               Your website is your digital storefront. Bixeltek builds SEO-optimized, mobile-first websites designed to attract leads and convert visitors into clients. As Hyderabad’s trusted web design company, we help healthcare clinics, ecommerce stores, and local businesses amplify online growth.            </motion.p>
 
@@ -92,7 +93,7 @@ export default function WebDevHero() {
               initial={{ opacity: 0, x: -200 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1.1, delay: 0.8, ease: 'easeOut' }}
-              className="mt-8 flex flex-col md:flex-row gap-3"
+              className="mt-8 flex flex-col z-20 md:flex-row gap-3"
             >
               <Link href="tel:+919100032301">
                 <button
