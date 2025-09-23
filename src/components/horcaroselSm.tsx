@@ -16,7 +16,7 @@ export default function StackedCarousel() {
   const [stackedIndex, setStackedIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
-  // ✅ detect screen size after mount
+
   useEffect(() => {
     const checkScreen = () => setIsMobile(window.innerWidth < 768);
     checkScreen();

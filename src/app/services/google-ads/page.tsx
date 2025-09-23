@@ -18,16 +18,18 @@ export const metadata = {
   alternates: {
     canonical: "https://bixeltek.com/services/google-ads", 
   },
-  openGraph: {
-    title:
-      "Google Ads Management Services | Google Partner PPC Agency | Bixeltek",
-    description:
-      "Bixeltek is a global-first Google Partner agency delivering smarter Google Ads management. From AI bidding & Performance Max to fraud protection, suspension recovery & advertiser verification — we scale businesses in the USA, Canada, India & Saudi Arabia.",
-    type: "website",
-    url: "https://bixeltek.com/services/google-ads", 
-    siteName: "Bixeltek",
-  },
+//   openGraph: {
+//     title:
+//       "Google Ads Management Services | Google Partner PPC Agency | Bixeltek",
+//     description:
+//       "Bixeltek is a global-first Google Partner agency delivering smarter Google Ads management. From AI bidding & Performance Max to fraud protection, suspension recovery & advertiser verification — we scale businesses in the USA, Canada, India & Saudi Arabia.",
+//     type: "website",
+//     url: "https://bixeltek.com/services/google-ads", 
+//     siteName: "Bixeltek",
+//   },
 };
+
+export const dynamic = "force-dynamic";
 
 import React from 'react'
 import { LogoTicker2 } from '@/components/GoogleAdsCarousel'
@@ -92,12 +94,12 @@ export default function page() {
             <ProtectAds />
             <GradientBorderContainersMob/>
             <BiddingStrategies />
-           <GoogleAdsCostSection/>
-           <IndustryCarouselSection />
-           <BixeltekAdvantage />
-           <TechStackSection />
-           <GoogleAdsSection10/>
-           <FAQSection8/>
+            <GoogleAdsCostSection/>
+            <IndustryCarouselSection />
+            <BixeltekAdvantage />
+            <TechStackSection />
+            <GoogleAdsSection10/>
+            <FAQSection8/>
            <section className='bg-black p-2 md:p-20 mx-auto flex flex-col justify-center gap-10 items-center md:flex-row ' id='form'>
                 <div className="w-full mt-14 md:mt-0 flex justify-center items-center px-6">
                     <div className="space-y-5 text-white max-w-xl ">
