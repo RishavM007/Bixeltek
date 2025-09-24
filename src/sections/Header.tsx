@@ -220,7 +220,7 @@ export const Header = () => {
                   </motion.div>
                 </div>
               </li>
-              <li className="flex items-center py-7">
+              <li className="flex group items-center py-7">
                 <Link href="/industries" className="text-white/70 hover:text-white transition">
                   Industries
                 </Link>
