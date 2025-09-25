@@ -220,10 +220,20 @@ export const Header = () => {
                   </motion.div>
                 </div>
               </li>
-              <li className="flex group items-center py-7">
+              <li className="flex group relative items-center py-7">
                 <Link href="/industries" className="text-white/70 hover:text-white transition">
                   Industries
                 </Link>
+                 <ul className="absolute top-full -left-7 mt-0 bg-white rounded-b-md shadow-lg hidden group-hover:block z-50 min-w-[200px]">
+                  <li>
+                    <Link
+                      href="/hyderabad"
+                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:rounded-b-md hover:text-white transition"
+                    >
+                      Dental Marketing
+                    </Link>
+                  </li>
+                </ul>
               </li>
               <li className="flex group relative items-center py-7">
                 <Link href="/industries" className="text-white/70 hover:text-white transition">
