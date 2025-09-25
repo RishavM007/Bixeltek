@@ -6,8 +6,6 @@ import Image from "next/image";
 // Import PNGs directly
 import leadsIcon from "@/assets/google-opinion-rewards-svgrepo-com.png";
 import businessIcon from "@/assets/handshake-deal-svgrepo-com.png";
-import scaleIcon from "@/assets/icons/scale.png";
-import supportIcon from "@/assets/icons/support.png";
 
 export default function WhoIsThisServiceFor() {
     const points = [

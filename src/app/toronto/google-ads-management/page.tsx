@@ -10,16 +10,12 @@ import GradientBorderContainersMobToronto from '@/components/Toronto/GoogleAds/T
 import TGDevFaq from '@/components/Toronto/GoogleAds/SectionFaqTG'
 import { LogoTicker2 } from '@/components/GoogleAdsCarousel'
 
-export default function Page() {
+export default function page() {
   return (
     <>
 <section className="relative w-full h-[105vh] flex flex-col items-center justify-center overflow-hidden">
-
       <div className="absolute inset-0">
-
       </div>
-
-      {/* Content Overlay */}
       <div className="relative z-10 max-w-7xl text-center px-4">
         <h1 className="text-4xl md:text-7xl font-inter font-bold text-white/90 text-white mb-4 leading-tight">
           Toronto’s <span className='text-blue-500'>Trusted Google Ads Partner</span> for Scalable Lead Growth
