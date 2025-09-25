@@ -3,7 +3,7 @@ export const metadata = {
     description:
         " For 4+ years, Bixeltek has helped dental clinics in USA & Canada turn clicks into calls, and calls into booked appointments. Clinics working with us consistently generate 120+ new patient calls every month.",
     keywords:
-        "Web development Hyderabad, Best web development company Hyderabad, Custom website design, Next.js development, React.js development, Full-stack web development, Frontend development, Backend development, E-commerce website development, WordPress development, Responsive web design, UI/UX design Hyderabad, Web application development, Modern web technologies",
+       "dental SEO, dental marketing, patient acquisition, dental clinic SEO, dental practice marketing",
     openGraph: {
         title: "Stop Losing Patients to Competitors—Let Us Help You Fill More Chairs Every Month",
         description:
@@ -11,7 +11,7 @@ export const metadata = {
         type: "website",
     },
     alternates: {
-        canonical: "https://bixeltek.com/services/seo-services",
+        canonical: "https://bixeltek.com/industries/dental-marketing",
     },
 };
 
