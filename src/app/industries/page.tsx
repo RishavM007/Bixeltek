@@ -17,20 +17,21 @@ import { FaTooth, FaHospital, FaDog, FaGasPump, FaCar, FaBroom, FaGraduationCap,
 import { FaChartLine, FaCogs, FaUserTie, FaBullseye, FaMoneyBillWave, FaChartBar, FaSeedling, FaDatabase } from 'react-icons/fa';
 import healthcare from "@/assets/digital marketing for health care practices.jpg";
 import CarouselSection from "@/components/industriescarosel";
+import Link from "next/link";
 
 export default function Industries() {
 
   const industry = [
-    { name: "Dental", icon: <FaTooth /> },
+    { name: "Dental Clnics", icon: <FaTooth /> },
     { name: "Healthcare", icon: <FaHospital /> },
     { name: "Pet Shops", icon: <FaDog /> },
-    { name: "Oil & Gas", icon: <FaGasPump /> },
-    { name: "Automobile", icon: <FaCar /> },
-    { name: "Roof Cleaning", icon: <FaBroom /> },
-    { name: "Education", icon: <FaGraduationCap /> },
+    { name: "Oil & Gas Industries", icon: <FaGasPump /> },
+    { name: "Automobile Indutries", icon: <FaCar /> },
+    { name: "Roof Cleaning Services", icon: <FaBroom /> },
+    { name: "Education Industry", icon: <FaGraduationCap /> },
     { name: "Real Estate", icon: <FaBuilding /> },
     { name: "Arborist & Tree Removal", icon: <FaTree /> },
-    { name: "Lawn Care", icon: <FaSeedling /> },
+    { name: "Lawn Care Services", icon: <FaSeedling /> },
   ];
   const cards = [
     {
@@ -109,27 +110,29 @@ export default function Industries() {
             Bixeltek delivers laser-focused digital marketing strategies tailored to your niche — from dental clinics and e-commerce brands to real estate, education, and startups.<br /><span className="font-bold italic text-purple-500">We don&apos;t guess. We grow.</span> 
             </p>
 
+              <Link href={'/contact-us'}>
             <button className="backdrop-blur-3xl border border-white text-white font-normal text-sm py-2 px-4 md:px-6 md:py-3 md:text-md rounded-lg mt-14 md:mt-16 shadow-custom ">
               <span>
-                Get a Quote <i className="fa-solid fa-arrow-right ml-2" id='get_a_quote'></i>
+                Get a Free Quote <i className="fa-solid fa-arrow-right ml-2" id='get_a_quote'></i>
               </span>
             </button>
+            </Link>
           </div>
         </div>
       </section>
 
-      <section className='w-full flex flex-wrap max-w-[90%] mx-auto my-20 lg:flex-nowrap overflow-y-hidden items-center'>
+      <section className='w-full flex justify-center flex-wrap max-w-[90%] mx-auto my-20 lg:flex-nowrap overflow-y-hidden items-center'>
         {/* Left Content Section */}
-        <div className='w-full lg:w-1/2 px-1 md:px-6 py-10 lg:py-14'>
+        <div className='w-full lg:w-[60%]  px-1 md:pr-16 py-10 lg:py-14'>
           <h2 className="text-4xl md:text-5xl font-semibold  font-sofiasanscondensed text-white">
             Proven Results Across <span className='text-purple-500'>Diverse Industries</span>
           </h2>
-          <p className="mt-4 text-sm md:text-lg  text-gray-300">
+          <p className="mt-4 text-sm md:text-lg max-w-2xl text-gray-300">
             Our expertise spans multiple industries, helping businesses achieve growth through data-driven strategies and
             innovative solutions. From technology and finance to healthcare and retail, we empower brands with actionable insights
             and cutting-edge digital solutions.
           </p>
-          <p className="mt-2 text-sm md:text-lg text-gray-300">
+          <p className="mt-2 text-sm md:text-lg max-w-2xl text-gray-300">
             Explore how our tailored approach delivers measurable success, increasing engagement, conversions, and brand visibility
             in a competitive landscape.
           </p>
@@ -137,15 +140,12 @@ export default function Industries() {
             {industry.map((industry, index) => (
               <div key={index} className="flex items-center text-lg text-white">
                 <span className="text-white text-xl inline-block  mr-3">{industry.icon}</span>
-                <h2 className='font-poppins text-sm'>{industry.name}&nbsp;SEO</h2>
+                <h2 className='font-poppins text-sm'>{industry.name}</h2>
               </div>
             ))}
           </div>
-          <button className="mt-6 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
-            Learn More
-          </button>
         </div>
-        <div className="flex w-full lg:w-1/2 justify-center gap-4 p-1">
+        <div className="flex w-full lg:w-[40%] ml-[-150px] justify-center gap-4 p-1">
           <div className='w-1/3 flex flex-col  items-center justify-center gap-3'>
             <Image src={healthcare} alt='healthcare' className='rounded-xl'></Image>
             <Image src={oil} alt='oil' className='rounded-xl'></Image>
@@ -161,6 +161,7 @@ export default function Industries() {
           </div>
         </div>
       </section>
+      <IndustrySections />
       <section className="max-w-[90%] xl:max-w-[80%] py-10 mx-auto">
         <div className="py-10  md:px-0 text-center">
           <h2 className="text-4xl font-sofiasanscondensed md:text-5xl font-semibold text-white mb-5">Why Choose Us?</h2>
@@ -196,7 +197,6 @@ export default function Industries() {
         </div>
       </section>
       <section>
-<IndustrySections />
       </section>
       <section className="flex relative flex-col md:flex-row items-center mx-auto justify-between bg-black text-white px-2 md:px-40 py-20">
         <motion.div
@@ -286,7 +286,6 @@ export default function Industries() {
           </a>
         </div>
       </section>
-      <CarouselSection />
     </>
   );
 }

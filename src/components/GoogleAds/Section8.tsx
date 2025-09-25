@@ -1,4 +1,4 @@
-"use client";
+
 import { Globe, Award, Target, Users, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import cleaningcomp from "@/assets/digital marketing servies for cleaning companies.jpg";
+import dentalimg from '@/assets/dental-clinics-manitoba-768x431.jpg'
 import demoimg from "@/assets/zyro-w48LglCMKFI-unsplash.jpg"
 
 
@@ -14,7 +15,7 @@ const industries = [
       'Branded clinic websites & landing pages',
       'Meta ads and engagement-focused social media',
     ],
-    image: demoimg,
+    image: dentalimg,
   },
   {
     title: 'Real Estate & Construction',
@@ -71,7 +72,7 @@ export default function IndustrySections() {
                 <li key={i} className="text-white">{offer}</li>
               ))}
             </ul>
-            <a href="#" className="text-purple-500 font-semibold hover:underline">Learn More →</a>
+            <a href="/industries/dental-marketing" className="text-purple-500 font-semibold hover:underline">Learn More →</a>
           </div>
         </div>
       ))}

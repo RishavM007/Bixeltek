@@ -11,11 +11,127 @@ export const Header = () => {
   const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
   const [isDropdownOpen3, setIsDropdownOpen3] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState<keyof typeof locations>("canada");
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
+  const locations = {
+    canada: {
+      title: "Canada",
+      link: "/canada",
+      cities: [
+        {
+          name: "Toronto",
+          link: "/canada/toronto",
+          services: [
+            { name: "SEO Services in Toronto", link: "/canada/toronto/seo" },
+            { name: "PPC in Toronto", link: "/toronto/google-ads-management" },
+          ],
+        },
+        {
+          name: "Vancouver",
+          link: "/canada/vancouver",
+          services: [
+            { name: "SEO Services in Vancouver", link: "/canada/vancouver/seo" },
+          ],
+        },
+      ],
+    },
+    india: {
+      title: "India",
+      link: "#",
+      cities: [
+        {
+          name: "Hyderabad",
+          link: "#",
+          services: [
+            { name: "SEO Services in Hyderabad", link: "/seo-agency-hyderabad" },
+            { name: "PPC in Hyderabad", link: "/google-ads-agency-hydeabad" },
+            { name: "Social Media Management in Hyderabad", link: "/social-media-marketing-agency-hyderabad" },
+            { name: "Web Design Services in Hyderabad", link: "/web-design-services-hyderabad" },
+          ],
+        },
+        {
+          name: "Delhi",
+          link: "/canada/vancouver",
+          services: [
+            { name: "SEO Services in Vancouver", link: "/canada/vancouver/seo" },
+          ],
+        },
+        {
+          name: "Bangalore",
+          link: "/canada/vancouver",
+          services: [
+            { name: "SEO Services in Vancouver", link: "/canada/vancouver/seo" },
+          ],
+        },
+      ],
+    },
+    usa: {
+      title: "United States",
+      link: "/united-states",
+      cities: [
+        {
+          name: "New York",
+          link: "/united-states/new-york",
+          services: [
+            { name: "SEO Services in New York", link: "/united-states/new-york/seo" },
+            { name: "Social Media Marketing", link: "/united-states/new-york/smm" },
+          ],
+        },
+        {
+          name: "Chicago",
+          link: "/united-states/chicago",
+          services: [
+            { name: "SEO Services in Chicago", link: "/united-states/chicago/seo" },
+          ],
+        },
+      ],
+    },
+    uk: {
+      title: "United Kingdom",
+      link: "/united-kingdom",
+      cities: [
+        {
+          name: "London",
+          link: "/united-kingdom/london",
+          services: [
+            { name: "SEO Services in London", link: "/united-kingdom/london/seo" },
+            { name: "PPC in London", link: "/united-kingdom/london/ppc" },
+          ],
+        },
+      ],
+    },
+    saudi: {
+      title: "Saudi Arabia",
+      link: "/united-kingdom",
+      cities: [
+        {
+          name: "Riyadh",
+          link: "/united-kingdom/london",
+          services: [
+            { name: "SEO Services in Riyadh", link: "/united-kingdom/london/seo" },
+            { name: "PPC in Riyadh", link: "/united-kingdom/london/ppc" },
+          ],
+        },
+      ],
+    },
+    uae: {
+      title: "United Arab Emirites",
+      link: "/united-kingdom",
+      cities: [
+        {
+          name: "Dubai",
+          link: "/united-kingdom/london",
+          services: [
+            { name: "SEO Services in Dubai", link: "/united-kingdom/london/seo" },
+            { name: "PPC in Dubai", link: "/united-kingdom/london/ppc" },
+          ],
+        },
+      ],
+    },
+  };
 
   const posts = [
 
@@ -224,7 +340,7 @@ export const Header = () => {
                 <Link href="/industries" className="text-white/70 hover:text-white transition">
                   Industries
                 </Link>
-                 <ul className="absolute top-full -left-7 mt-0 bg-white rounded-b-md shadow-lg hidden group-hover:block z-50 min-w-[200px]">
+                <ul className="absolute top-full -left-7 mt-0 bg-white rounded-b-md shadow-lg hidden group-hover:block z-50 min-w-[200px]">
                   <li>
                     <Link
                       href="/industries/dental-marketing"
@@ -236,101 +352,58 @@ export const Header = () => {
                 </ul>
               </li>
               <li className="flex group relative items-center py-7">
-                <Link href="/industries" className="text-white/70 hover:text-white transition">
+                <Link href="#" className="text-white/70 hover:text-white transition">
                   Locations
                 </Link>
-                <ul className="absolute top-full -left-7 mt-0 bg-white rounded-b-md shadow-lg hidden group-hover:block z-50 min-w-[200px]">
-                  <li>
-                    <Link
-                      href="/hyderabad"
-                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
-                    >
-                      Hyderabad
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
-                    >
-                      Canada
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
-                    >
-                      United States
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
-                    >
-                     United Arab Emirates
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
-                    >
-                     Saudi Arabia
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
-                    >
-                      United Kingdom
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-              <li className="relative group py-7">
-                <Link href={'/case-studies'}>
-                  <div className="flex items-center text-white/70 hover:text-white transition cursor-pointer">
-                    Case Studies <HiChevronDown className="ml-1 text-xs" />
+
+                {/* Mega Menu */}
+                <div className="absolute top-full -left-72 rounded-br-2xl  rounded-bl-2xl mt-0 bg-white shadow-lg  hidden group-hover:flex z-50 w-[900px] min-h-[350px]">
+
+                  {/* Tabs (Countries) */}
+                  <ul className="w-1/3 border-r border-gray-200 rounded-bl-2xl bg-gray-50">
+                    {Object.keys(locations).map((country) => (
+                      <li
+                        key={country}
+                        onMouseEnter={() => setActiveTab(country as keyof typeof locations)}
+                        className={`cursor-pointer px-4 py-3 font-semibold transition 
+              ${activeTab === country ? "bg-purple-600 text-white" : "hover:bg-purple-100 text-black"}`}
+                      >
+                        <Link href={locations[country as keyof typeof locations].link}>
+                          {locations[country as keyof typeof locations].title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* Content (Cities & Services) */}
+                  <div className="w-2/3 p-6">
+                    <h3 className="text-xl font-bold text-purple-700 mb-4">
+                      <Link href={locations[activeTab].link}>
+                        {locations[activeTab].title}
+                      </Link>
+                    </h3>
+                    <div className="grid grid-cols-2 gap-6">
+                      {locations[activeTab].cities.map((city) => (
+                        <div key={city.name}>
+                          <Link href={city.link} className="block font-semibold text-gray-800 hover:text-purple-600">
+                            {city.name}
+                          </Link>
+                          <ul className="mt-2 space-y-1">
+                            {city.services.map((service) => (
+                              <li key={service.name}>
+                                <Link href={service.link} className="text-sm text-gray-900 hover:text-purple-600">
+                                  {service.name}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                </Link>
-                <ul className="absolute top-full -left-7 mt-0 bg-white rounded-b-md shadow-lg hidden group-hover:block z-50 min-w-[200px]">
-                  <li>
-                    <Link
-                      href="/case-studies/Tumblewash-Casestudy"
-                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
-                    >
-                      Tumblewash Case Study
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/case-studies/google-ads-case-study-bike-repair-hyderabad"
-                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
-                    >
-                      Eazy Bike Repair Case Study
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/case-studies/digital-marketing-for-dentists-case-study"
-                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
-                    >
-                      Dental Clinic Case Study
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/case-studies"
-                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
-                    >
-                      View All
-                    </Link>
-                  </li>
-                </ul>
+                </div>
               </li>
+
 
               <li className="flex items-center py-7">
                 <Link href="/blog" className="text-white/70 hover:text-white transition">
