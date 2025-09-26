@@ -25,7 +25,7 @@ export const Header = () => {
           name: "Toronto",
           link: "/canada/toronto",
           services: [
-            { name: "SEO Services in Toronto", link: "/canada/toronto/seo" },
+            { name: "SEO Services in Toronto", link: "/toronto/seo-services" },
             { name: "PPC in Toronto", link: "/toronto/google-ads-management" },
           ],
         },
@@ -33,7 +33,7 @@ export const Header = () => {
           name: "Vancouver",
           link: "/canada/vancouver",
           services: [
-            { name: "SEO Services in Vancouver", link: "/canada/vancouver/seo" },
+            { name: "SEO Services in Vancouver", link: "#" },
           ],
         },
       ],
@@ -44,7 +44,7 @@ export const Header = () => {
       cities: [
         {
           name: "Hyderabad",
-          link: "#",
+          link: "/hyderabad",
           services: [
             { name: "SEO Services in Hyderabad", link: "/seo-agency-hyderabad" },
             { name: "PPC in Hyderabad", link: "/google-ads-agency-hydeabad" },
@@ -56,28 +56,28 @@ export const Header = () => {
           name: "Delhi",
           link: "/canada/vancouver",
           services: [
-            { name: "SEO Services in Vancouver", link: "/canada/vancouver/seo" },
+            { name: "SEO Services in Delhi", link: "#" },
           ],
         },
         {
           name: "Bangalore",
           link: "/canada/vancouver",
           services: [
-            { name: "SEO Services in Vancouver", link: "/canada/vancouver/seo" },
+            { name: "SEO Services in Bangalore", link: "#" },
           ],
         },
       ],
     },
     usa: {
       title: "United States",
-      link: "/united-states",
+      link: "#",
       cities: [
         {
           name: "New York",
-          link: "/united-states/new-york",
+          link: "#",
           services: [
-            { name: "SEO Services in New York", link: "/united-states/new-york/seo" },
-            { name: "Social Media Marketing", link: "/united-states/new-york/smm" },
+            { name: "SEO Services in New York", link: "#" },
+            { name: "Social Media Marketing", link: "#" },
           ],
         },
         {
@@ -91,42 +91,42 @@ export const Header = () => {
     },
     uk: {
       title: "United Kingdom",
-      link: "/united-kingdom",
+      link: "#",
       cities: [
         {
           name: "London",
-          link: "/united-kingdom/london",
+          link: "#",
           services: [
-            { name: "SEO Services in London", link: "/united-kingdom/london/seo" },
-            { name: "PPC in London", link: "/united-kingdom/london/ppc" },
+            { name: "SEO Services in London", link: "#" },
+            { name: "PPC in London", link: "#" },
           ],
         },
       ],
     },
     saudi: {
       title: "Saudi Arabia",
-      link: "/united-kingdom",
+      link: "#",
       cities: [
         {
           name: "Riyadh",
-          link: "/united-kingdom/london",
+          link: "#",
           services: [
-            { name: "SEO Services in Riyadh", link: "/united-kingdom/london/seo" },
-            { name: "PPC in Riyadh", link: "/united-kingdom/london/ppc" },
+            { name: "SEO Services in Riyadh", link: "#" },
+            { name: "PPC in Riyadh", link: "#" },
           ],
         },
       ],
     },
     uae: {
       title: "United Arab Emirites",
-      link: "/united-kingdom",
+      link: "#",
       cities: [
         {
           name: "Dubai",
-          link: "/united-kingdom/london",
+          link: "#",
           services: [
-            { name: "SEO Services in Dubai", link: "/united-kingdom/london/seo" },
-            { name: "PPC in Dubai", link: "/united-kingdom/london/ppc" },
+            { name: "SEO Services in Dubai", link: "#" },
+            { name: "PPC in Dubai", link: "#" },
           ],
         },
       ],
@@ -360,13 +360,13 @@ export const Header = () => {
                 <div className="absolute top-full -left-72 rounded-br-2xl  rounded-bl-2xl mt-0 bg-white shadow-lg  hidden group-hover:flex z-50 w-[900px] min-h-[350px]">
 
                   {/* Tabs (Countries) */}
-                  <ul className="w-1/3 border-r border-gray-200 rounded-bl-2xl bg-gray-50">
+                  <ul className="w-1/3 border-r border-gray-200 rounded-bl-2xl bg-neutral-950">
                     {Object.keys(locations).map((country) => (
                       <li
                         key={country}
                         onMouseEnter={() => setActiveTab(country as keyof typeof locations)}
                         className={`cursor-pointer px-4 py-3 font-semibold transition 
-              ${activeTab === country ? "bg-purple-600 text-white" : "hover:bg-purple-100 text-black"}`}
+              ${activeTab === country ? "bg-purple-600 text-white" : "hover:bg-purple-100 text-white"}`}
                       >
                         <Link href={locations[country as keyof typeof locations].link}>
                           {locations[country as keyof typeof locations].title}

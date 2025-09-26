@@ -6,7 +6,6 @@ import {
     HiOutlineCash,
     HiOutlineUserGroup,
     HiOutlineTrendingUp,
-    HiOutlineShieldCheck,
     HiOutlineLocationMarker,
 } from "react-icons/hi";
 import Image from "next/image";

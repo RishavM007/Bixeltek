@@ -17,7 +17,7 @@ export const Whiteheader = () => {
           name: "Toronto",
           link: "/canada/toronto",
           services: [
-            { name: "SEO Services in Toronto", link: "/canada/toronto/seo" },
+            { name: "SEO Services in Toronto", link: "/toronto/seo-services" },
             { name: "PPC in Toronto", link: "/toronto/google-ads-management" },
           ],
         },
@@ -36,7 +36,7 @@ export const Whiteheader = () => {
       cities: [
         {
           name: "Hyderabad",
-          link: "#",
+          link: "/hyderabad",
           services: [
             { name: "SEO Services in Hyderabad", link: "/seo-agency-hyderabad" },
             { name: "PPC in Hyderabad", link: "/google-ads-agency-hydeabad" },
