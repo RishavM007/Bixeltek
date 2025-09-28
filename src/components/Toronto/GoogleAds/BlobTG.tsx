@@ -25,7 +25,7 @@ const MovingBlob: React.FC = () => {
         x: [0, windowWidth - 500, 0],
       }}
       transition={{
-        duration: 10,
+        duration: 20,
         ease: "easeInOut",
         repeat: Infinity,
         repeatType: "loop",

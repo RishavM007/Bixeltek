@@ -1,18 +1,18 @@
 
 export const metadata = {
-    title: "SEO Services Toronto | Bixeltek – Trusted SEO Agency",
+    title: "Web Design Services Toronto | Bixeltek – Websites That Convert & Grow",
     description:
-        " Bixeltek provides SEO services for Toronto and Canadian businesses. From local SEO to AI SEO, we deliver rankings, organic traffic, and measurable ROI.",
+        " Looking for web design services in Toronto? Bixeltek builds custom, SEO-ready, and conversion-focused websites trusted by businesses across Canada.",
     keywords:
         "Web development Hyderabad, Best web development company Hyderabad, Custom website design, Next.js development, React.js development, Full-stack web development, Frontend development, Backend development, E-commerce website development, WordPress development, Responsive web design, UI/UX design Hyderabad, Web application development, Modern web technologies",
     openGraph: {
-        title: " SEO Services Toronto | Bixeltek – Trusted SEO Agency",
+        title: "Web Design Services Toronto | Bixeltek – Websites That Convert & Grow",
         description:
-            " Bixeltek provides SEO services for Toronto and Canadian businesses. From local SEO to AI SEO, we deliver rankings, organic traffic, and measurable ROI.",
+            "Looking for web design services in Toronto? Bixeltek builds custom, SEO-ready, and conversion-focused websites trusted by businesses across Canada.",
         type: "website",
     },
     alternates: {
-        canonical: "https://bixeltek.com/toronto/seo-services",
+        canonical: "https://bixeltek.com/toronto/web-design",
     },
 };
 

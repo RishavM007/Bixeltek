@@ -1,5 +1,3 @@
-"use client";
-
 import React, { ReactNode } from "react";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";

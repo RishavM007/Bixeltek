@@ -19,19 +19,20 @@ export const Header = () => {
   const locations = {
     canada: {
       title: "Canada",
-      link: "/canada",
+      link: "#",
       cities: [
         {
           name: "Toronto",
-          link: "/canada/toronto",
+          link: "/toronto/digital-marketing",
           services: [
-            { name: "SEO Services in Toronto", link: "/toronto/seo-services" },
-            { name: "PPC in Toronto", link: "/toronto/google-ads-management" },
+            { name: "Google Ads Management", link: "/toronto/google-ads-management" },
+            { name: "Search Engine Optimisation", link: "/toronto/seo-services" },
+            { name: "Web Design and Development", link: "/toronto/web-design" },
           ],
         },
         {
           name: "Vancouver",
-          link: "/canada/vancouver",
+          link: "#",
           services: [
             { name: "SEO Services in Vancouver", link: "#" },
           ],
@@ -46,22 +47,22 @@ export const Header = () => {
           name: "Hyderabad",
           link: "/hyderabad",
           services: [
-            { name: "SEO Services in Hyderabad", link: "/seo-agency-hyderabad" },
-            { name: "PPC in Hyderabad", link: "/google-ads-agency-hydeabad" },
-            { name: "Social Media Management in Hyderabad", link: "/social-media-marketing-agency-hyderabad" },
-            { name: "Web Design Services in Hyderabad", link: "/web-design-services-hyderabad" },
+            { name: "Google Ads Management", link: "/google-ads-agency-hydeabad" },
+            { name: "Search Engine Optimisation", link: "/seo-agency-hyderabad" },
+            { name: "Web Design and Development", link: "/web-design-services-hyderabad" },
+            { name: "Social Media Marketing", link: "/social-media-marketing-agency-hyderabad" },
           ],
         },
         {
           name: "Delhi",
-          link: "/canada/vancouver",
+          link: "#",
           services: [
             { name: "SEO Services in Delhi", link: "#" },
           ],
         },
         {
           name: "Bangalore",
-          link: "/canada/vancouver",
+          link: "#",
           services: [
             { name: "SEO Services in Bangalore", link: "#" },
           ],
@@ -82,9 +83,9 @@ export const Header = () => {
         },
         {
           name: "Chicago",
-          link: "/united-states/chicago",
+          link: "#",
           services: [
-            { name: "SEO Services in Chicago", link: "/united-states/chicago/seo" },
+            { name: "SEO Services in Chicago", link: "#" },
           ],
         },
       ],

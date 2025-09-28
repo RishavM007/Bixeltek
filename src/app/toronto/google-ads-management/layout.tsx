@@ -1,18 +1,18 @@
 
 export const metadata = {
-    title: " Web Design Services for Businesses | Professional Web Design Agency",
+    title: "Google Ads Management Toronto | Bixeltek – Google Partner",
     description:
-        "  Enterprise-grade web design services for businesses in India, USA, Canada, UAE, Saudi Arabia & UK. Partner with a professional web design agency to build responsive, SEO-ready websites that drive sales and growth.",
+        " Bixeltek is a Google Partner agency in Toronto offering full-cycle Google Ads management. Smarter PPC campaigns, lower CPA, better leads, transparent reporting.",
     keywords:
         "Web development Hyderabad, Best web development company Hyderabad, Custom website design, Next.js development, React.js development, Full-stack web development, Frontend development, Backend development, E-commerce website development, WordPress development, Responsive web design, UI/UX design Hyderabad, Web application development, Modern web technologies",
     openGraph: {
-        title: " Web Design Services for Businesses | Professional Web Design Agency",
+        title: "Google Ads Management Toronto | Bixeltek – Google Partner",
         description:
-            " Enterprise-grade web design services for businesses in India, USA, Canada, UAE, Saudi Arabia & UK. Partner with a professional web design agency to build responsive, SEO-ready websites that drive sales and growth.",
+            " Bixeltek is a Google Partner agency in Toronto offering full-cycle Google Ads management. Smarter PPC campaigns, lower CPA, better leads, transparent reporting.",
         type: "website",
     },
     alternates: {
-        canonical: "https://bixeltek.com/services/seo-services",
+        canonical: "https://bixeltek.com/toronto/google-ads-management",
     },
 };
 

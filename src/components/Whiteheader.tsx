@@ -8,122 +8,123 @@ import Bixeltekblacklogo from '@/assets/Bixeltek Black Logo.png'
 import { HiChevronDown, HiMenu, HiX } from 'react-icons/hi';
 export const Whiteheader = () => {
 
-     const locations = {
-    canada: {
-      title: "Canada",
-      link: "/canada",
-      cities: [
-        {
-          name: "Toronto",
-          link: "/canada/toronto",
-          services: [
-            { name: "SEO Services in Toronto", link: "/toronto/seo-services" },
-            { name: "PPC in Toronto", link: "/toronto/google-ads-management" },
-          ],
+    const locations = {
+        canada: {
+            title: "Canada",
+            link: "/canada",
+            cities: [
+                {
+                    name: "Toronto",
+                    link: "/toronto/digital-marketing",
+                    services: [
+                        { name: "Google Ads Management", link: "/toronto/google-ads-management" },
+                        { name: "Search Engine Optimisation", link: "/toronto/seo-services" },
+                        { name: "Web Design and Development", link: "/toronto/web-design" },
+                    ],
+                },
+                {
+                    name: "Vancouver",
+                    link: "#",
+                    services: [
+                        { name: "SEO Services in Vancouver", link: "#" },
+                    ],
+                },
+            ],
         },
-        {
-          name: "Vancouver",
-          link: "/canada/vancouver",
-          services: [
-            { name: "SEO Services in Vancouver", link: "/canada/vancouver/seo" },
-          ],
+        india: {
+            title: "India",
+            link: "#",
+            cities: [
+                {
+                    name: "Hyderabad",
+                    link: "/hyderabad",
+                    services: [
+                        { name: "Google Ads Management", link: "/google-ads-agency-hydeabad" },
+                        { name: "Social Media Marketing", link: "/social-media-marketing-agency-hyderabad" },
+                        { name: "Web Design and Development", link: "/web-design-services-hyderabad" },
+                        { name: "Search Engine Optimisation", link: "/seo-agency-hyderabad" },
+                    ],
+                },
+                {
+                    name: "Delhi",
+                    link: "#",
+                    services: [
+                        { name: "SEO Services in Vancouver", link: "#" },
+                    ],
+                },
+                {
+                    name: "Bangalore",
+                    link: "/canada/vancouver",
+                    services: [
+                        { name: "SEO Services in Vancouver", link: "/canada/vancouver/seo" },
+                    ],
+                },
+            ],
         },
-      ],
-    },
-    india: {
-      title: "India",
-      link: "#",
-      cities: [
-        {
-          name: "Hyderabad",
-          link: "/hyderabad",
-          services: [
-            { name: "SEO Services in Hyderabad", link: "/seo-agency-hyderabad" },
-            { name: "PPC in Hyderabad", link: "/google-ads-agency-hydeabad" },
-            { name: "Social Media Management in Hyderabad", link: "/social-media-marketing-agency-hyderabad" },
-            { name: "Web Design Services in Hyderabad", link: "/web-design-services-hyderabad" },
-          ],
+        usa: {
+            title: "United States",
+            link: "/united-states",
+            cities: [
+                {
+                    name: "New York",
+                    link: "/united-states/new-york",
+                    services: [
+                        { name: "SEO Services in New York", link: "/united-states/new-york/seo" },
+                        { name: "Social Media Marketing", link: "/united-states/new-york/smm" },
+                    ],
+                },
+                {
+                    name: "Chicago",
+                    link: "/united-states/chicago",
+                    services: [
+                        { name: "SEO Services in Chicago", link: "/united-states/chicago/seo" },
+                    ],
+                },
+            ],
         },
-        {
-          name: "Delhi",
-          link: "/canada/vancouver",
-          services: [
-            { name: "SEO Services in Vancouver", link: "/canada/vancouver/seo" },
-          ],
+        uk: {
+            title: "United Kingdom",
+            link: "/united-kingdom",
+            cities: [
+                {
+                    name: "London",
+                    link: "/united-kingdom/london",
+                    services: [
+                        { name: "SEO Services in London", link: "/united-kingdom/london/seo" },
+                        { name: "PPC in London", link: "/united-kingdom/london/ppc" },
+                    ],
+                },
+            ],
         },
-        {
-          name: "Bangalore",
-          link: "/canada/vancouver",
-          services: [
-            { name: "SEO Services in Vancouver", link: "/canada/vancouver/seo" },
-          ],
+        saudi: {
+            title: "Saudi Arabia",
+            link: "/united-kingdom",
+            cities: [
+                {
+                    name: "Riyadh",
+                    link: "/united-kingdom/london",
+                    services: [
+                        { name: "SEO Services in Riyadh", link: "/united-kingdom/london/seo" },
+                        { name: "PPC in Riyadh", link: "/united-kingdom/london/ppc" },
+                    ],
+                },
+            ],
         },
-      ],
-    },
-    usa: {
-      title: "United States",
-      link: "/united-states",
-      cities: [
-        {
-          name: "New York",
-          link: "/united-states/new-york",
-          services: [
-            { name: "SEO Services in New York", link: "/united-states/new-york/seo" },
-            { name: "Social Media Marketing", link: "/united-states/new-york/smm" },
-          ],
+        uae: {
+            title: "United Arab Emirites",
+            link: "/united-kingdom",
+            cities: [
+                {
+                    name: "Dubai",
+                    link: "/united-kingdom/london",
+                    services: [
+                        { name: "SEO Services in Dubai", link: "/united-kingdom/london/seo" },
+                        { name: "PPC in Dubai", link: "/united-kingdom/london/ppc" },
+                    ],
+                },
+            ],
         },
-        {
-          name: "Chicago",
-          link: "/united-states/chicago",
-          services: [
-            { name: "SEO Services in Chicago", link: "/united-states/chicago/seo" },
-          ],
-        },
-      ],
-    },
-    uk: {
-      title: "United Kingdom",
-      link: "/united-kingdom",
-      cities: [
-        {
-          name: "London",
-          link: "/united-kingdom/london",
-          services: [
-            { name: "SEO Services in London", link: "/united-kingdom/london/seo" },
-            { name: "PPC in London", link: "/united-kingdom/london/ppc" },
-          ],
-        },
-      ],
-    },
-    saudi: {
-      title: "Saudi Arabia",
-      link: "/united-kingdom",
-      cities: [
-        {
-          name: "Riyadh",
-          link: "/united-kingdom/london",
-          services: [
-            { name: "SEO Services in Riyadh", link: "/united-kingdom/london/seo" },
-            { name: "PPC in Riyadh", link: "/united-kingdom/london/ppc" },
-          ],
-        },
-      ],
-    },
-    uae: {
-      title: "United Arab Emirites",
-      link: "/united-kingdom",
-      cities: [
-        {
-          name: "Dubai",
-          link: "/united-kingdom/london",
-          services: [
-            { name: "SEO Services in Dubai", link: "/united-kingdom/london/seo" },
-            { name: "PPC in Dubai", link: "/united-kingdom/london/ppc" },
-          ],
-        },
-      ],
-    },
-  };
+    };
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
@@ -161,7 +162,7 @@ export const Whiteheader = () => {
 
     return (
         <>
-            <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-[90%] rounded-full bg-white/40 backdrop-blur-3xl shadow-lg px-6 py-0">
+            <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-[90%] rounded-full bg-white backdrop-blur-3xl shadow-lg px-6 py-0">
                 <div className=" flex justify-between px-6 items-center">
                     <div className="text-white py-3">
                         <Link href={"/"}>
@@ -311,11 +312,11 @@ export const Whiteheader = () => {
 
                                         {/* Content (Cities & Services) */}
                                         <div className="w-2/3 p-6">
-                                            <h3 className="text-xl font-bold text-purple-700 mb-4">
+                                            {/* <h3 className="text-xl font-bold text-purple-700 mb-4">
                                                 <Link href={locations[activeTab].link}>
                                                     {locations[activeTab].title}
                                                 </Link>
-                                            </h3>
+                                            </h3> */}
                                             <div className="grid grid-cols-2 gap-6">
                                                 {locations[activeTab].cities.map((city) => (
                                                     <div key={city.name}>

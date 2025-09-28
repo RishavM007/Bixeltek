@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const GoogleAdsMarquee: React.FC = () => {
+const DMMarquee: React.FC = () => {
   const blueTexts = [
     "Data-Driven Optimization",
     "Track Every Conversion",
@@ -15,7 +15,7 @@ const GoogleAdsMarquee: React.FC = () => {
   ];
 
   return (
-    <div className="flex mt-10 flex-col">
+    <div className="flex mt-2 flex-col">
       {/* Blue Marquee */}
       <section className="bg-blue-600 py-7 overflow-hidden">
         <motion.div
@@ -55,4 +55,4 @@ const GoogleAdsMarquee: React.FC = () => {
   );
 };
 
-export default GoogleAdsMarquee;
+export default DMMarquee;

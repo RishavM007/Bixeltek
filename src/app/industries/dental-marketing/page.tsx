@@ -1,13 +1,13 @@
 export const metadata = {
-    title: "Stop Losing Patients to Competitors—Let Us Help You Fill More Chairs Every Month",
+    title: "Digital Marketing for Dentists | Grow Your Dental Clinic in USA & Canada",
     description:
-        " For 4+ years, Bixeltek has helped dental clinics in USA & Canada turn clicks into calls, and calls into booked appointments. Clinics working with us consistently generate 120+ new patient calls every month.",
+        "Bixeltek helps dental clinics across USA & Canada book more patients every month. With ROI-driven SEO, Google Ads & websites, our clients consistently generate 120+ monthly patient calls & bookings.",
     keywords:
        "dental SEO, dental marketing, patient acquisition, dental clinic SEO, dental practice marketing",
     openGraph: {
-        title: "Stop Losing Patients to Competitors—Let Us Help You Fill More Chairs Every Month",
+        title: "Digital Marketing for Dentists | Grow Your Dental Clinic in USA & Canada",
         description:
-            " For 4+ years, Bixeltek has helped dental clinics in USA & Canada turn clicks into calls, and calls into booked appointments. Clinics working with us consistently generate 120+ new patient calls every month.",
+            "Bixeltek helps dental clinics across USA & Canada book more patients every month. With ROI-driven SEO, Google Ads & websites, our clients consistently generate 120+ monthly patient calls & bookings.",
         type: "website",
     },
     alternates: {
