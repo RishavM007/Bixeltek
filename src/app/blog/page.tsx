@@ -12,11 +12,10 @@ export const metadata = {
     },
 };
 
-
+export const dynamic = "force-dynamic";
 import { client } from '@/lib/graphql-client';
 import { GET_ALL_POSTS, GET_ALL_CATEGORIES_WITH_COUNT } from '@/lib/queries';
 import { BlogPageUI } from '@/components/BlogPage';
-import Link from 'next/link';
 
 type Post = {
   id: string;
@@ -40,8 +39,8 @@ type GetCategoriesResponse = {
 
 export default async function BlogPage() {
   const [postsData, categoriesData] = await Promise.all([
-    client.request<GetAllPostsResponse>(GET_ALL_POSTS),
-    client.request<GetCategoriesResponse>(GET_ALL_CATEGORIES_WITH_COUNT),
+    client.request<GetAllPostsResponse>(GET_ALL_POSTS , { cache: "no-store" }),
+    client.request<GetCategoriesResponse>(GET_ALL_CATEGORIES_WITH_COUNT , {} , { cache: "no-store" }),
   ]);
 
   const posts = postsData.posts.nodes;

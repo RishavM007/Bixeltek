@@ -9,7 +9,6 @@ import { link } from 'fs';
 export const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
-  const [isDropdownOpen3, setIsDropdownOpen3] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<keyof typeof locations>("canada");
 
@@ -31,8 +30,8 @@ export const Header = () => {
           ],
         },
         {
-          name: "Vancouver",
-          link: "#",
+          name: "Mississauga",
+          link: "/mississauga/digital-marketing",
           services: [
             { name: "SEO Services in Vancouver", link: "#" },
           ],

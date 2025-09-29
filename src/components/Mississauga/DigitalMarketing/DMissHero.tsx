@@ -2,12 +2,12 @@
 import React, { useState } from 'react';
 import { LogoTicker2 } from '@/components/GoogleAdsCarousel';
 import { ButtonContactForm } from '@/sections/ButtonContactForm';
-import iconimg from '@/assets/medal-ribbons-star-svgrepo-com.png' 
-import starimg from '@/assets/star-shine-svgrepo-com.png'
-import googleimg from '@/assets/google-authenticator-svgrepo-com.png'
+import iconimg from '@/assets/medal-ribbons-star-svgrepo-com.png';
+import starimg from '@/assets/star-shine-svgrepo-com.png';
+import googleimg from '@/assets/google-authenticator-svgrepo-com.png';
 import Image from 'next/image';
 
-export default function TSHero() {
+export default function HeroDMiss() {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleContactForm = () => {
@@ -16,28 +16,24 @@ export default function TSHero() {
   };
 
   const proofPoints = [
-    { id: 1, text: "200+ SEO Campaigns Delivered", icon: starimg },
-    { id: 2, text: "Trusted by Brands Across Canada", icon: iconimg },
-    { id: 3, text: "Google Partner Agency", icon: googleimg },
+    { id: 1, text: "Google Partner Certified Agency", icon: googleimg },
+    { id: 2, text: "200+ Projects Delivered Across Canada", icon: starimg },
+    { id: 3, text: "90% Client Retention", icon: iconimg },
   ];
 
   return (
     <>
-      <section className="relative flex flex-col items-center justify-center h-[130vh] md:h-[100vh] bg-black text-center px-6 overflow-hidden">
+      <section className="relative flex flex-col items-center justify-center h-[150vh] md:h-[100vh] bg-black text-center px-6 overflow-hidden">
         <div className="flex justify-center items-center">
-          {/* Blue Sphere Glow */}
           <div className="relative z-10 mt-40 max-w-7xl">
             {/* Headline */}
             <h1 className="text-4xl md:text-7xl font-bold leading-tight text-white">
-              SEO Services in Toronto Designed for{" "}
-              <span className="text-blue-500">Growth and Market Leadership</span>
+              Digital Marketing Services in Mississauga <span className="text-blue-500">That Deliver Measurable Results</span>
             </h1>
 
             {/* Subheading */}
             <p className="mt-6 text-lg md:text-base text-gray-300 max-w-5xl mx-auto">
-              Bixeltek helps businesses across Toronto and Canada achieve long-term digital
-              visibility through advanced SEO. We combine technical precision, semantic depth,
-              and AI SEO innovation to build rankings that deliver measurable leads and revenue.
+              In a growing business hub like Mississauga, competition is intense. If your business isn’t visible online, your competitors are taking the leads you’re missing. Bixeltek helps Mississauga businesses get found, generate qualified leads, and scale ROI through Google Ads, SEO, web design, and more.
             </p>
 
             {/* Proof Points */}
@@ -45,7 +41,7 @@ export default function TSHero() {
               {proofPoints.map((point) => (
                 <div
                   key={point.id}
-                  className="flex flex-col md:flex-row justify-center items-center gap-5 text-white max-w-[200px]"
+                  className="flex flex-row md:flex-row justify-center items-center gap-5 text-white max-w-[250px]"
                 >
                   <Image src={point.icon} alt={point.text} className="w-12 h-12 mb-3" width={40} height={40} />
                   <p className="text-sm text-left md:text-sm">{point.text}</p>
@@ -59,21 +55,17 @@ export default function TSHero() {
                 onClick={toggleContactForm}
                 className="px-6 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition"
               >
-                Request a Free SEO Audit
+                Book a Free Strategy Call
               </button>
-
-              <a href="tel:+91-9100032301">
-              <button
-                
-                className="px-6 py-3 rounded-full border border-white text-white font-medium hover:bg-white hover:text-black transition"
-              >
-                Speak With an SEO Specialist
-              </button>
+              <a href="#services">
+                <button className="px-6 py-3 rounded-full border border-white text-white font-medium hover:bg-white hover:text-black transition">
+                  Explore Our Services
+                </button>
               </a>
             </div>
           </div>
         </div>
-
+        {/* Popup Form + Logo Carousel */}
         <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
         <LogoTicker2 />
       </section>

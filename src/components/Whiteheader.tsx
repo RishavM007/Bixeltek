@@ -23,10 +23,10 @@ export const Whiteheader = () => {
                     ],
                 },
                 {
-                    name: "Vancouver",
-                    link: "#",
+                    name: "Mississauga",
+                    link: "/mississauga/digital-marketing",
                     services: [
-                        { name: "SEO Services in Vancouver", link: "#" },
+                        { name: "Search Engine Optimisation", link: "#" },
                     ],
                 },
             ],

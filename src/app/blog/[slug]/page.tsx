@@ -148,10 +148,20 @@ export default async function SinglePostPage({ params }: Props) {
               </figure>
             )}
 
-            <div
-              className="space-y-6 font-poppins  leading-relaxed text-neutral-900 text-base"
-              dangerouslySetInnerHTML={{ __html: post.content }}
-            />
+           <div
+  className="font-inter leading-relaxed text-neutral-900 text-base
+             [&_h1]:text-5xl [&_h1]:font-bold
+             [&_h2]:text-3xl [&_h2]:mb-4 [&_h2]:font-semibold
+             [&_h3]:text-3xl [&_h3]:mb-4 [&_h3]:mt-5 [&_h3]:font-semibold
+             [&_h4]:text-xl
+             [&_h5]:text-xl
+             [&_h6]:text-lg
+             [&_p]:mb-4
+             [&_ul]:list-disc [&_ul]:pl-6
+             [&_a]:text-blue-500 [&_a]:underline [&_a]:hover:text-blue-700"
+  dangerouslySetInnerHTML={{ __html: post.content }}
+/>
+
 
             <div className="mt-10">
               {post.categories?.nodes.map((category) => (

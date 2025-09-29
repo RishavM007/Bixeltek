@@ -236,9 +236,6 @@ export const ContactSection: React.FC = () => {
                     </div>
                 </div>
             </section>
-            <section className='py-64'>
-
-            </section>
         </>
     );
 };
