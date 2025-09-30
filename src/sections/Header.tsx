@@ -33,7 +33,9 @@ export const Header = () => {
           name: "Mississauga",
           link: "/mississauga/digital-marketing",
           services: [
-            { name: "SEO Services in Vancouver", link: "#" },
+            { name: "Google Ads Management", link: "/mississauga/google-ads" },
+            { name: "Search Engine Optimisation", link: "/mississauga/seo-services" },
+            { name: "Web Design and Development", link: "/mississauga/web-design" },
           ],
         },
       ],

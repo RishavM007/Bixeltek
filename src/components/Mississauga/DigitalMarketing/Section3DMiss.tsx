@@ -1,38 +1,44 @@
 "use client";
 
 import React from 'react';
-
+import Link from 'next/link';
 export default function DigitalMarketingServicesMississauga() {
 
     const services = [
         {
             title: 'Google Ads Management',
             description: 'Ad budgets are wasted when campaigns aren’t set up right. We create and optimize Google Ads campaigns targeting Mississauga customers to drive more leads at lower cost.',
+            link: "/mississauga/google-ads"
         },
         {
             title: 'SEO Services',
             description: 'If you don’t appear in Google results, you’re invisible. Our SEO boosts local and national rankings, generating consistent organic traffic and qualified leads.',
+            link: "/mississauga/seo-services"
         },
         {
             title: 'Web Design & Development',
             description: 'An outdated website hurts credibility. We build modern, mobile-first, SEO-ready websites that strengthen your brand and convert visitors into customers effectively.',
+            link: "/mississauga/web-design"
         },
         {
             title: 'Social Media Marketing',
             description: 'Low engagement weakens your brand. We create campaigns and content that increase visibility, grow your following, and drive meaningful engagement for your business.',
+            link: "/mississauga/social-media-marketing"
         },
         {
             title: 'Analytics & CRO',
             description: 'Without tracking, you’re guessing. We implement full analytics and conversion rate optimization, providing actionable insights to maximize ROI and improve marketing performance.',
+            link: "#"
         },
         {
             title: 'Graphic Design & Branding',
             description: 'Weak branding creates confusion. Our team crafts consistent, impactful logos, creatives, and brand assets that make your business stand out in Mississauga’s competitive market.',
+            link: "#",
         },
     ];
 
     return (
-        <section className='relative py-24'>
+        <section className='relative py-24' id='services'>
             {/* Background Blobs */}
             <div className="absolute top-32 -left-20 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
             <div className="absolute bottom-52 right-0 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
@@ -53,10 +59,13 @@ export default function DigitalMarketingServicesMississauga() {
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className={`relative w-full h-80 border border-gray-800 bg-black/10 hover:bg-blue-600 transition-all duration-300 flex flex-col justify-center items-center p-10 md:p-16`}
+                            className={`relative w-full group h-80 border border-gray-800 bg-black/10 hover:bg-blue-600 transition-all duration-300 flex flex-col justify-center items-center p-10 md:p-16`}
                         >
                             <h3 className="text-white text-2xl font-bold text-center mb-2">{service.title}</h3>
                             <p className="text-gray-300 text-sm text-center">{service.description}</p>
+                            <Link href={service.link}>
+                                <p className='text-blue-300 group-hover:text-white text-sm mt-4 group-hover:font-semibold'>Discover More</p>
+                            </Link>
 
                             {/* Decorative Plus Icons */}
                             {index % 4 === 0 && (

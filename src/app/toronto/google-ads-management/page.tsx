@@ -81,7 +81,7 @@ export default function page() {
             </a>
             <Link href="/toronto-ads-audit">
               <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold shadow-md transition">
-                Get a Free Ads Audit
+                Get a Free Ads Audit 
               </button>
             </Link>
           </div>

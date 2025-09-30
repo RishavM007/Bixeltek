@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Link from 'next/link';
 
 export default function ServicesToronto() {
 
@@ -9,36 +10,42 @@ export default function ServicesToronto() {
       title: 'Google Ads Management',
       description:
         'Many businesses waste budget on ads that don’t convert. We set up and optimize campaigns to target the right audience, helping you generate more leads at a lower cost per acquisition.',
+        link: "toronto/google-ads-management",
     },
     {
       title: 'SEO Services',
       description:
         'If your business isn’t ranking in Google, you’re invisible to customers. Our SEO strategies improve local and national visibility, bringing in sustainable organic leads and long-term growth.',
+        link: "toronto/seo-services",
     },
     {
       title: 'Web Design & Development',
       description:
         'Outdated websites reduce trust and conversions. We design modern, mobile-first, SEO-ready websites that build credibility and turn visitors into paying customers.',
+        link: "toronto/web-design",
     },
     {
       title: 'Social Media Marketing',
       description:
         'Low engagement weakens your brand presence. We manage campaigns and create content that boosts visibility, builds trust, and connects you with your target audience.',
+        link: "#",
     },
     {
       title: 'Analytics & CRO',
       description:
         'Without proper tracking, marketing is guesswork. We provide full analytics and conversion optimization, giving you clarity on performance and helping you improve ROI.',
+        link: "#",
     },
     {
       title: 'Graphic Design & Branding',
       description:
         'Inconsistent branding confuses customers. Our design team creates logos, ad creatives, and brand assets that strengthen your identity and make your business stand out in Toronto’s competitive market.',
+        link: "#",
     },
   ];
 
   return (
-    <section className='relative py-24'>
+    <section className='relative py-24' id='services'>
       {/* Background Blobs */}
       <div className="absolute top-32 -left-20 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
       <div className="absolute bottom-52 right-0 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
@@ -63,6 +70,9 @@ export default function ServicesToronto() {
             >
               <h3 className="text-white text-2xl font-bold text-center mb-2">{service.title}</h3>
               <p className="text-gray-300 text-sm text-center">{service.description}</p>
+              <Link href={service.link}>
+                <p className='text-blue-500 group-hover:text-white text-sm mt-4 group-hover:font-semibold'>Discover More</p>
+              </Link>
 
               {/* Decorative Plus Icons */}
               {index % 4 === 0 && (

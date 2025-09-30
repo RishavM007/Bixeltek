@@ -12,7 +12,7 @@ import healthcare from "@/assets/digital marketing for health care practices.jpg
 import { motion } from 'framer-motion'
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
-export default function CarouselSection(): JSX.Element {
+export default function SocialMissIndustries(): JSX.Element {
     const [carouselOffset, setCarouselOffset] = useState<number>(0);
 
     const cardWidth: number = 450;
@@ -33,21 +33,20 @@ export default function CarouselSection(): JSX.Element {
     };
 
     return (
-        <section className="pt-32 pb-20  bg-white z-10 overflow-hidden">
+        <section className="pt-20 pb-20  bg-[black] z-10 overflow-hidden">
             <div className="w-full relative text-center text-white pb-10">
                 <h1 className="text-5xl xl:text-7xl font-bold mb-2">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-600 to-gray-800">
-                        INDUSTRIES WE
-                    </span>
-                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
-                        &nbsp;SERVE
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-500">
+                       Websites That Work <br></br>Across Every Industry
                     </span>
                 </h1>
-                <h1 className="text-5xl xl:text-7xl font-bold mb-4">
-                   
-                </h1>
-                <p className="text-[16px] xl:text-lg text-gray-700 max-w-[90%] md:max-w-2xl mx-auto">
-                    Discover the diverse industries we proudly cater to, offering innovative solutions to help you excel in your field.
+                {/* <h1 className="text-5xl xl:text-7xl font-bold mb-4">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-pink-500">
+                        SERVE
+                    </span>
+                </h1> */}
+                <p className="text-[16px] xl:text-lg text-gray-50 max-w-[100%] md:max-w-2xl mx-auto">
+                  We design websites that align with each industry’s goals and customer behavior.
                 </p>
             </div>
             <div className="carousel-container md:pl-[500px] relative w-full overflow-hidden">
@@ -139,7 +138,7 @@ export default function CarouselSection(): JSX.Element {
                                     hover: { opacity: 0.25 }
                                 }}
                                 transition={{ duration: 0.3 }}
-                                className="absolute top-0 left-0 w-full h-full bg-black z-10 rounded-lg"
+                                className="absolute top-0  left-0 w-full h-full bg-black z-10 rounded-lg"
                             />
 
                             {/* Text Content */}
@@ -149,7 +148,7 @@ export default function CarouselSection(): JSX.Element {
                                     hover: { y: -50 }
                                 }}
                                 transition={{ duration: 0.4 }}
-                                className="absolute bottom-5 px-4 left-0 w-full z-20 text-white"
+                                className="absolute bottom-5 px-4 left-0 w-full z-20 rounded-lg py-5 text-white"
                             >
                                 <h3 className="text-3xl font-sofiasanscondensed text-left  font-bold">{text}</h3>
 
@@ -172,13 +171,13 @@ export default function CarouselSection(): JSX.Element {
 
             <div className="controls flex justify-center mt-10">
                 <button
-                    className="bg-purple-600 text-white p-3 rounded-full mr-4"
+                    className="bg-blue-600 text-white p-3 rounded-full mr-4"
                     onClick={() => handleScroll("left")}
                 >
                     <ArrowLeft size={20} />
                 </button>
                 <button
-                    className="bg-purple-600 text-white p-3 rounded-full"
+                    className="bg-blue-600 text-white p-3 rounded-full"
                     onClick={() => handleScroll("right")}
                 >
                     <ArrowRight size={20} />

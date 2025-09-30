@@ -35,7 +35,7 @@ interface CardProps {
 const services: CardData[] = [
   {
     title: "Website Development",
-    link: "/web-design-services-hyderabad",
+    link: "services/web-design",
     img1: reacticon,
     img2: wordpresslogo,
     description:
@@ -43,7 +43,7 @@ const services: CardData[] = [
   },
   {
     title: "Google Ads Management",
-    link: "/google-ads-agency-hyderabad",
+    link: "services/google-ads",
     img1: googleadslogo,
     img2: ytlogo,
     description:
@@ -51,7 +51,7 @@ const services: CardData[] = [
   },
   {
     title: "Search Engine Optimization",
-    link: "/seo-agency-hyderabad",
+    link: "services/seo-services",
     img1: googlelogo,
     img2: searchengineoptimizationlogo,
     description:
@@ -105,7 +105,7 @@ const Card: React.FC<CardProps> = ({ title, img1, img2, description, link, isEve
             <p className="text-neutral-600 mt-2 text-sm">{description}</p>
             <Link href={link}>
               <div className="text-sm mt-4 font-semibold text-left text-black hover:text-purple-700 cursor-pointer transition">
-                Read More{" "}
+                Discover More{" "}
                 {/* <span className="text-[#7028e4]">
               <IoMdArrowRoundForward className="inline ml-1" />
             </span> */}
@@ -127,7 +127,7 @@ const CardList: React.FC = () => {
     <>
       <div className='relative flex flex-col justify-center bg-white items-center pt-32 pb-28 '>
 
-        <h2 className="text-4xl md:text-5xl max-w-4xl mx-auto lg:text-5xl font-semibold text-black  mb-14 text-center font-inter">Digital Marketing Services in <span className='text-purple-600'>Hyderabad</span>, India</h2>
+        <h2 className="text-4xl md:text-5xl max-w-6xl mx-auto lg:text-6xl font-bold text-black  mb-14 text-center font-inter">Our Digital Marketing Solutions <br /> For Your Business</h2>
         <div className="sm:max-w-[90%]  lg:max-w-[75%] mx-auto grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 items-stretch">
 
           {services.map((card, index) => {

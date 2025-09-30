@@ -38,18 +38,6 @@ export default function page() {
                         </p>
 
                         {/* CTA Buttons */}
-                        <div className="flex flex-col sm:flex-row gap-4 mt-6">
-                            <a href="tel:+91-9100032301">
-                                <button className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-xl font-semibold shadow-md transition">
-                                    Book a Strategy Call
-                                </button>
-                            </a>
-                            <Link href="/ads-audit">
-                                <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold shadow-md transition">
-                                    Get a Free Ads Audit
-                                </button>
-                            </Link>
-                        </div>
                     </div>
                 </div>
 
