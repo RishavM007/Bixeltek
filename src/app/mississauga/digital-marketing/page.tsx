@@ -41,7 +41,7 @@ export default function page() {
     </div>
 
     {/* Right Side - Contact Form */}
-    <div className="w-[87%] mr-32 flex justify-start items-center">
+    <div className="w-[87%] lg:mr-32 flex justify-start items-center">
         <ContactFromNew />
     </div>
 </section>

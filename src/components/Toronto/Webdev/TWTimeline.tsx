@@ -10,41 +10,47 @@ const processTimeline = [
     text: 'Weeks 1–2 focus on understanding your goals, reviewing competitors, analyzing your current website, and mapping opportunities to ensure a strong foundation for success.',
     gradient: 'from-blue-500 via-blue-400 to-black',
     color: 'text-blue-500',
+    bgcolor: 'hover:bg-blue-500',
   },
   {
     number: '02',
     title: 'Strategy & Wireframing',
     text: 'Weeks 2–3 involve creating detailed strategies, planning user flows, and developing wireframes that align design layouts with your business objectives and audience needs.',
-    gradient: 'from-green-500 via-teal-400 to-[#13131333]',
+    gradient: 'from-green-500 via-teal-400 to-transparent',
     color: 'text-teal-500',
+    bgcolor: 'hover:bg-teal-500',
   },
   {
     number: '03',
     title: 'Design & Development',
     text: 'Weeks 3–5 focus on building responsive, visually appealing, and SEO-optimized websites, turning wireframes into fully functional designs ready for content integration.',
-    gradient: 'from-yellow-400 via-yellow-300 to-[#13131333]',
+    gradient: 'from-yellow-400 via-yellow-300 to-transparent',
     color: 'text-yellow-500',
+    bgcolor: 'hover:bg-yellow-500',
   },
   {
     number: '04',
     title: 'Content & SEO Integration',
     text: 'Weeks 5–6 involve adding high-quality content, visuals, and on-page SEO elements including metadata, schema, and internal linking to improve visibility and engagement.',
-    gradient: 'from-pink-500 via-purple-400 to-[#13131333]',
+    gradient: 'from-pink-500 via-purple-400 to-transparent',
     color: 'text-purple-500',
+    bgcolor: 'hover:bg-purple-500',
   },
   {
     number: '05',
     title: 'Testing & QA',
     text: 'Weeks 6–7 focus on comprehensive testing across devices, browsers, and platforms to ensure flawless performance, responsiveness, and an excellent user experience before launch.',
-    gradient: 'from-indigo-500 via-indigo-400 to-[#13131333]',
+    gradient: 'from-indigo-500 via-indigo-400 to-transparent',
     color: 'text-indigo-500',
+    bgcolor: 'hover:bg-indigo-500',
   },
   {
     number: '06',
     title: 'Launch & Support',
     text: 'Week 8 is dedicated to a smooth go-live, monitoring performance, and providing ongoing maintenance, updates, and support to ensure long-term website reliability and success.',
-    gradient: 'from-red-500 via-[#13131333] to-[#13131333]',
+    gradient: 'from-red-500 via-transparent to-transparent',
     color: 'text-red-500',
+    bgcolor: 'hover:bg-red-500',
   },
 ];
 
@@ -61,10 +67,10 @@ const ProcessTorontoWebdev = () => {
       {/* ✅ MOBILE VERSION (simple cards) */}
       <div className="space-y-10 md:hidden">
         {processTimeline.map((item, idx) => (
-          <div key={idx} className="flex flex-col items-start">
-            <p className={`${item.color} text-5xl font-bold mb-2`}>{item.number}</p>
+          <div key={idx} className={`flex group ${item.bgcolor} p-6 rounded-3xl flex-col items-start`}>
+            <p className={`${item.color} group-hover:text-white text-5xl font-bold mb-2`}>{item.number}</p>
             <h2 className="text-xl font-bold text-white mb-2">{item.title}</h2>
-            <p className="text-gray-300">{item.text}</p>
+            <p className="text-gray-300 group-hover:text-white">{item.text}</p>
           </div>
         ))}
       </div>

@@ -22,11 +22,11 @@ export default function WebShowcaseSection() {
     ];
 
     return (
-        <section className="w-full mt-20 min-h-screen relative bg-black text-white gap-5  flex flex-col items-center justify-center">
-                        <div className="absolute top-32 -left-20 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
+        <section className="w-full mt-5 md:mt-20 min-h-screen relative bg-black text-white gap-5  flex flex-col items-center justify-center">
+            <div className="absolute top-32 -left-20 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
             <h2 className="text-center text-4xl md:text-6xl max-w-5xl font-semibold mx-auto"> <span className="text-blue-500">AI-First </span>Web Design </h2>
-            <p className="text-base max-w-5xl mx-auto text-center text-white ">Web design in 2025 isn’t just about looks — it’s about being AI-ready. Customers now discover businesses through AI Overviews, Answer Engines, and Generative Search.</p>
-            <p className="text-base max-w-5xl mx-auto text-center text-white ">Our AI-First web design services ensure your website is structured and optimized so AI tools can recognize and recommend your business. Imagine asking an AI tool for the best provider in your city — and it recommends you. That’s the future we design for.</p>
+            <p className="text-base max-w-[95%] md:max-w-5xl mx-auto text-center text-white ">Web design in 2025 isn’t just about looks — it’s about being AI-ready. Customers now discover businesses through AI Overviews, Answer Engines, and Generative Search.</p>
+            <p className="text-base max-w-[95%] md:max-w-5xl mx-auto text-center text-white ">Our AI-First web design services ensure your website is structured and optimized so AI tools can recognize and recommend your business. Imagine asking an AI tool for the best provider in your city — and it recommends you. That’s the future we design for.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-7xl">
                 {images.map((item, i) => (
                     <div
@@ -49,16 +49,16 @@ export default function WebShowcaseSection() {
                         </div>
                     </div>
                 ))}
-               
+
             </div>
-             <div className="flex flex-col justify-center items-center gap-4 mt-4">
-                            <h2 className="text-2xl font-inter font-semibold text-black ">Are You Looking For A High Performing Website?</h2>
-                     <Link href={'tel:+919100032301'}>
-                            <button className="px-7 py-3 rounded-2xl bg-blue-600 border border-blur-500 text-white font-semibold text-sm shadow-lg hover:bg-blue-700 transition">
-                               Talk To Our Web Design Team
-                            </button>
-                        </Link>
-                </div>
+            <div className="flex flex-col justify-center items-center gap-4 mt-4">
+                <h2 className="text-2xl font-inter font-semibold text-black ">Are You Looking For A High Performing Website?</h2>
+                <Link href={'tel:+919100032301'}>
+                    <button className="px-7 py-3 rounded-2xl bg-blue-600 border border-blur-500 text-white font-semibold text-sm shadow-lg hover:bg-blue-700 transition">
+                        Talk To Our Web Design Team
+                    </button>
+                </Link>
+            </div>
         </section>
     );
 }

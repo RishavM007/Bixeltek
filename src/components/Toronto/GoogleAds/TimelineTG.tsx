@@ -7,6 +7,7 @@ const containers = [
     text: "Map your goals, competitors, and Toronto’s unique search patterns. Leverage Koray Tuğberk’s frameworks for in-depth entity, intent, and audience mapping.",
     gradient: 'from-blue-500 via-blue-400 to-[black]',
     color: 'text-blue-500',
+    bgcolor: 'hover:bg-blue-500',
   },
   {
     number: '02',
@@ -14,6 +15,7 @@ const containers = [
     text: "Design campaigns and structures for maximum Quality Score and market coverage. Identify highest-converting and most valuable keywords (including long-tail and local-specific terms).",
     gradient: 'from-green-500 via-teal-400 to-[#13131333]',
     color: 'text-teal-500',
+    bgcolor: 'hover:bg-teal-500',
   },
   {
     number: '03',
@@ -21,6 +23,7 @@ const containers = [
     text: "Write persuasive, benefits-first copy. Build Toronto-optimized landing pages with calls-to-action, trust badges, and social proof.",
     gradient: 'from-yellow-400 via-yellow-300 to-[#13131333]',
     color: 'text-yellow-500',
+    bgcolor: 'hover:bg-yellow-500',
   },
   {
     number: '04',
@@ -28,6 +31,7 @@ const containers = [
     text: "Rapid turnaround (5–10 days). Full analytics, call tracking, and lead attribution from the outset.",
     gradient: 'from-pink-500 via-purple-400 to-[#13131333]',
     color: 'text-purple-500',
+    bgcolor: 'hover:bg-purple-500',
   },
   {
     number: '05',
@@ -35,6 +39,7 @@ const containers = [
     text: "Daily adjustments: Negative keyword pruning, bid management, and search term refinement. Weekly/Monthly deep-dive reports and ROI-boosting recommendations.",
     gradient: 'from-indigo-500 via-indigo-400 to-[#13131333]',
     color: 'text-indigo-500',
+    bgcolor: 'hover:bg-indigo-500',
   },
 ];
 
@@ -51,10 +56,10 @@ const GradientBorderContainersMobToronto = () => {
       {/* ✅ MOBILE VERSION (simple cards) */}
       <div className="space-y-10 md:hidden">
         {containers.map((item, idx) => (
-          <div key={idx} className="flex flex-col items-start">
-            <p className={`${item.color} text-5xl font-bold mb-2`}>{item.number}</p>
+          <div key={idx} className={`flex group ${item.bgcolor} p-6 rounded-3xl flex-col items-start`}>
+            <p className={`${item.color} group-hover:text-white text-5xl font-bold mb-2`}>{item.number}</p>
             <h2 className="text-xl font-bold text-white mb-2">{item.title}</h2>
-            <p className="text-gray-300">{item.text}</p>
+            <p className="text-gray-300 group-hover:text-white">{item.text}</p>
           </div>
         ))}
       </div>

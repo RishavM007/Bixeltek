@@ -13,7 +13,7 @@ export default function CampaignTabsSocialMiss() {
             title: "Organic Growth Campaigns",
             description:
                 "Build brand presence and credibility with consistent posting to engage your audience and strengthen your online identity.",
-            image: orggrowth, // Replace with actual image paths
+            image: orggrowth, 
         },
         {
             title: "Lead Generation Campaigns",
@@ -77,7 +77,7 @@ export default function CampaignTabsSocialMiss() {
                     <Image
                         src={campaigns[activeTab].image}
                         alt={campaigns[activeTab].title}
-                        width={500}       // slightly wider
+                        width={500}     
                         height={400}      // slightly less height
                         className="w-full h-[400px] md:h-[500px] rounded-xl object-cover"
                     />
@@ -90,18 +90,14 @@ export default function CampaignTabsSocialMiss() {
 
                     {/* Buttons */}
                     <div className="flex gap-4 mt-4">
-                        <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition">
-                            Get Started
-                        </button>
-                        <Link href={''}>
+                        <Link href={'/contact-us'}>
+                            <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition">
+                                Get Started
+                            </button>
                         </Link>
-                        <button className="bg-transparent border border-white hover:bg-white hover:text-black text-white font-semibold py-3 px-6 rounded-lg transition">
-                            Learn More
-                        </button>
                     </div>
                 </div>
             </div>
-
 
             {/* Closing Line */}
             <p className="mt-12 text-center text-gray-300 text-lg md:text-xl font-medium">

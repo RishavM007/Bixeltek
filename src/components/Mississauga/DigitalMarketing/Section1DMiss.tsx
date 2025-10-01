@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function WhyGoogleAdsMississauga() {
     return (
-        <section className="w-full mt-0 bg-black text-gray-100 py-20 overflow-hidden">
+        <section className="w-full mt-0 bg-black text-gray-100 py-10 md:py-20 overflow-hidden">
             <div className="flex flex-col lg:flex-row items-center lg:items-start">
 
                 {/* LEFT IMAGE */}

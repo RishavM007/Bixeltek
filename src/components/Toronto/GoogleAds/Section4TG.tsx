@@ -8,7 +8,7 @@ import React from "react";
 
 const WhyGoogleAdsToronto2: React.FC = () => {
   return (
-    <section className="max-w-[90%] mx-auto mt-0 bg-black text-gray-100 py-20 overflow-hidden">
+    <section className="max-w-[95%] md:max-w-[90%] mx-auto mt-0 bg-black text-gray-100 py-10 md:py-20 overflow-hidden">
       <div className="flex flex-col lg:flex-row items-center lg:items-start">
 
         {/* LEFT CONTENT */}
@@ -17,7 +17,7 @@ const WhyGoogleAdsToronto2: React.FC = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           viewport={{ once: true }}
-          className="flex-1 lg:w-1/2 px-8 lg:px-16 mb-10 lg:mb-0"
+          className="flex-1 lg:w-1/2 px-8 lg:px-16 md:mb-10 lg:mb-0"
         >
           <h2 className="text-3xl md:text-6xl font-bold font-inter leading-snug mb-6">
             Why Toronto Businesses Can’t<br></br> Ignore <span className="text-blue-500">Google Ads</span>

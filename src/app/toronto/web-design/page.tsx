@@ -44,23 +44,12 @@ export default function page() {
                         </p>
 
                         {/* CTA Buttons */}
-                        <div className="flex flex-col sm:flex-row gap-4 mt-4">
-                            <Link href="/case-studies">
-                                <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold shadow-md transition">
-                                    View Our Casestudies
-                                </button>
-                            </Link>
-                            <a href="tel:+91-9100032301">
-                                <button className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-xl font-semibold shadow-md transition">
-                                    Book a Strategy Call
-                                </button>
-                            </a>
-                        </div>
+                       
                     </div>
                 </div>
 
                 {/* Right Side - Contact Form */}
-                <div className="w-[87%] mr-32 flex justify-start items-center">
+                <div className="w-[87%] lg:mr-32 flex justify-start items-center">
                     <ContactFromNew />
                 </div>
             </section>

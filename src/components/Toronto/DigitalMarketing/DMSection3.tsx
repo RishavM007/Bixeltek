@@ -52,8 +52,8 @@ export default function ServicesToronto() {
 
       <div>
         {/* Section Heading */}
-        <div className='max-w-[80%] mx-auto mb-5 text-center'>
-          <h2 className='text-white text-4xl lg:text-6xl max-w-7xl mx-auto font-inter mb-3 font-semibold'>
+        <div className='max-w-[90%] md:max-w-[80%] mx-auto mb-5 text-center'>
+          <h2 className='text-white text-3xl lg:text-6xl max-w-7xl mx-auto font-inter mb-3 font-semibold'>
             Digital Marketing Services That <span className='text-blue-500'>Solve Your Business Challenges</span>
           </h2>
           <p className='text-gray-100 text-base md:text-[17px] tracking-wider mt-4 max-w-4xl mx-auto'>
@@ -71,7 +71,7 @@ export default function ServicesToronto() {
               <h3 className="text-white text-2xl font-bold text-center mb-2">{service.title}</h3>
               <p className="text-gray-300 text-sm text-center">{service.description}</p>
               <Link href={service.link}>
-                <p className='text-blue-500 group-hover:text-white text-sm mt-4 group-hover:font-semibold'>Discover More</p>
+                <p className='text-blue-500 group-active:text-white group-hover:text-white text-sm mt-4 group-hover:font-semibold'>Discover More</p>
               </Link>
 
               {/* Decorative Plus Icons */}

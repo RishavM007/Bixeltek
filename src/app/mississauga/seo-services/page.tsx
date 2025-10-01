@@ -22,7 +22,7 @@ export default function page() {
             <WhyChooseBixeltekSMiss />
             <SMissIndustries />
             <MovingBlob />
-            <SEOFaqMiss />
+            <SEOFaqMiss /> 
             <section
                 className="bg-black p-8 md:p-20 mx-auto flex flex-col md:flex-row justify-center items-center gap-10"
                 id="form"

@@ -13,7 +13,7 @@ export default function WhyBusinessesLoseCustomers() {
   ];
 
   return (
-    <section className="flex flex-col md:flex-row items-center bg-black text-white px-8 md:px-20 py-20 gap-10">
+    <section className="flex flex-col md:flex-row items-center bg-black text-white px-8 md:px-20 py-5 md:py-20 gap-10">
       
       {/* Left Side - Text */}
       <div className="w-full md:w-1/2 flex flex-col justify-center space-y-6">

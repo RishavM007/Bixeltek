@@ -31,7 +31,7 @@ const stats = [
 export default function WebsiteMattersSection() {
   return (
     <section className="w-[85%] mx-auto py-20 bg-black text-gray-100 overflow-hidden">
-      <div className="flex flex-col lg:flex-row items-center gap-16">
+      <div className="flex flex-col-reverse lg:flex-row items-center gap-16">
         {/* LEFT TEXT CONTENT */}
         <motion.div
           initial={{ x: -80, opacity: 0 }}
@@ -83,7 +83,7 @@ export default function WebsiteMattersSection() {
           whileInView={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           viewport={{ once: true }}
-          className="relative w-full lg:w-1/2 h-[400px] md:h-[500px] lg:h-[630px]"
+          className="relative w-full lg:w-1/2 h-[300px] md:h-[500px] lg:h-[630px]"
         >
           <Image
             src={webImg}

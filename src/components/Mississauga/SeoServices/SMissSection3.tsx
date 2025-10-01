@@ -49,7 +49,6 @@ export default function SEOCampaignsMississauga() {
                     </p>
                 </div>
 
-                {/* Campaigns Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 max-w-[75%] mx-auto mt-10 gap-0">
                     {campaigns.map((campaign, index) => (
                         <div
@@ -85,7 +84,7 @@ export default function SEOCampaignsMississauga() {
                 </div>
 
                 {/* Closing Line */}
-                <div className="max-w-3xl mx-auto text-center mt-12">
+                <div className="max-w-[80%] md:mx-full mx-auto text-center mt-12">
                     <p className="text-gray-100 text-lg md:text-xl font-medium">
                         Whatever your size or industry, our SEO campaigns are designed to bring visibility, credibility, and long-term ROI.
                     </p>

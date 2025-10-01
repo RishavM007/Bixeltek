@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import {
   HiOutlineUserGroup,
   HiOutlineSearch,
@@ -83,6 +84,7 @@ const BenefitsSection = () => {
             agency ensures your website becomes a true growth engine.
           </motion.p>
 
+          <Link href={'mailto:zee@bixeltek.com'}>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -90,6 +92,7 @@ const BenefitsSection = () => {
           >
             Talk to Our Experts
           </motion.button>
+          </Link>
         </div>
 
         {/* Right Side: Grid */}

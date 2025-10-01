@@ -23,21 +23,21 @@ export default function AreasWeServeCanadaDM() {
   ];
 
   return (
-    <section className="w-full bg-black text-white py-20">
+    <section className="w-full bg-black text-white py-10 md:py-20">
       <div className=" max-w-[95%] md:max-w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-6">
         
         {/* Left Side - Content */}
         <div>
-          <h2 className="text-4xl md:text-6xl font-bold mb-6">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
           Proudly Serving <span className="text-blue-500">Toronto and the GTA</span>
           </h2>
-          <p className="text-gray-300 text-lg mb-8">
+          <p className="text-gray-300 text-base md:text-lg mb-8">
              We help businesses across Toronto and the Greater Toronto Area with digital marketing strategies tailored to their competition and audience.
           </p>
 
           <ul className="space-y-6 text-lg">
             {regions.map((region, index) => (
-              <li key={index} className="flex items-start gap-3">
+              <li key={index} className="flex text-base md:text-lg items-start gap-3">
                 <MapPin className="text-blue-500 w-6 h-6 mt-1" />
                 <span>
                   <strong>{region.title}</strong> → {region.cities}
@@ -46,7 +46,7 @@ export default function AreasWeServeCanadaDM() {
             ))}
           </ul>
 
-          <p className="text-gray-300 text-lg mt-8">
+          <p className="text-gray-300 md:text-lg mt-8">
             No matter where your business operates, our frameworks adapt to your market, your customers, and your growth goals.
           </p>
         </div>

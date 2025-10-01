@@ -9,6 +9,7 @@ const containers = [
     text: "We begin by analyzing your current rankings, competitor performance, and technical site health. This foundation reveals opportunities to strengthen visibility and close market gaps in Mississauga.",
     gradient: 'from-blue-500 via-blue-400 to-black',
     color: 'text-blue-500',
+    bgcolor: 'hover:bg-blue-500',
   },
   {
     number: '02',
@@ -16,6 +17,7 @@ const containers = [
     text: "Based on research, we define targeted keywords, core topics, and realistic goals. Every strategy is tailored to Mississauga businesses to maximize local and long-term ROI.",
     gradient: 'from-green-500 via-teal-400 to-transparent',
     color: 'text-teal-500',
+    bgcolor: 'hover:bg-teal-500',
   },
   {
     number: '03',
@@ -23,6 +25,7 @@ const containers = [
     text: "We refine your site’s structure, metadata, and content hierarchy. From headings to internal linking, every page is optimized for search engine visibility and user experience.",
     gradient: 'from-yellow-400 via-yellow-300 to-transparent',
     color: 'text-yellow-500',
+    bgcolor: 'hover:bg-yellow-500',
   },
   {
     number: '04',
@@ -30,6 +33,7 @@ const containers = [
     text: "SEO thrives on content. We create and expand query-responsive blogs, landing pages, and service content that match search intent and capture qualified Mississauga traffic.",
     gradient: 'from-pink-500 via-purple-400 to-transparent',
     color: 'text-purple-500',
+    bgcolor: 'hover:bg-purple-500',
   },
   {
     number: '05',
@@ -37,6 +41,7 @@ const containers = [
     text: "From site speed to mobile usability and indexing, we fix backend issues that block rankings. A technically sound site ensures search engines and users stay engaged.",
     gradient: 'from-indigo-500 via-indigo-400 to-transparent',
     color: 'text-indigo-500',
+    bgcolor: 'hover:bg-indigo-500',
   },
   {
     number: '06',
@@ -44,6 +49,7 @@ const containers = [
     text: "We secure high-quality, relevant backlinks that grow domain authority and trust. Strong off-page signals increase your visibility and credibility in competitive Mississauga markets.",
     gradient: 'from-red-500 via-red-400 to-transparent',
     color: 'text-red-500',
+    bgcolor: 'hover:bg-red-500',
   },
   {
     number: '07',
@@ -51,13 +57,14 @@ const containers = [
     text: "We track rankings, traffic, and conversions with transparent reports. Continuous monitoring ensures accountability, with data-driven refinements that keep your SEO on the growth path.",
     gradient: 'from-purple-500 via-transparent to-transparent',
     color: 'text-purple-400',
+    bgcolor: 'hover:bg-purple-500',
   },
 ];
 
 const SEOTimelineMiss = () => {
   return (
     <div className="min-h-screen relative bg-black py-12 px-4 sm:px-6 lg:px-8">
-      <h2 className="text-3xl md:text-6xl text-white text-center max-w-6xl mx-auto font-bold font-inter mb-6">
+      <h2 className="text-3xl md:text-6xl text-white text-center max-w-7xl mx-auto font-bold font-inter mb-6">
         How We Deliver<span className="text-blue-500"> SEO Results</span> <br /> Step by Step
       </h2>
       <p className="text-gray-300 max-w-2xl mx-auto mb-12 font-poppins leading-relaxed text-center">
@@ -67,13 +74,14 @@ const SEOTimelineMiss = () => {
       {/* MOBILE VERSION */}
       <div className="space-y-10 md:hidden">
         {containers.map((item, idx) => (
-          <div key={idx} className="flex flex-col items-start">
-            <p className={`${item.color} text-5xl font-bold mb-2`}>{item.number}</p>
+          <div key={idx} className={`flex group ${item.bgcolor} p-6 rounded-3xl flex-col items-start`}>
+            <p className={`${item.color} group-hover:text-white text-5xl font-bold mb-2`}>{item.number}</p>
             <h2 className="text-xl font-bold text-white mb-2">{item.title}</h2>
-            <p className="text-gray-300">{item.text}</p>
+            <p className="text-gray-300 group-hover:text-white">{item.text}</p>
           </div>
         ))}
       </div>
+
 
       {/* DESKTOP VERSION */}
       <div className="hidden md:block max-w-7xl mx-auto mt-40 space-y-[4px]">

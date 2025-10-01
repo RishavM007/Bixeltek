@@ -9,7 +9,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function WhyWebsiteToronto() {
     return (
-        <section className="w-[95%] mx-auto mt-0 bg-black text-gray-100 py-20 overflow-hidden">
+        <section className="w-[95%] mx-auto mt-0 bg-black text-gray-100 py-10 md:py-20 overflow-hidden">
             <div className="flex flex-col lg:flex-row items-center lg:items-start">
                 {/* LEFT IMAGE */}
                 <motion.div
@@ -17,13 +17,13 @@ export default function WhyWebsiteToronto() {
                     whileInView={{ x: 0, opacity: 1, scale: 1 }}
                     transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                     viewport={{ once: true }}
-                    className="flex justify-center items-center relative w-full lg:w-1/2 h-[400px] md:h-[500px] lg:h-[630px]"
+                    className="flex justify-center items-center  relative w-full lg:w-1/2 h-[300px] md:h-[500px] lg:h-[630px]"
                 >
                     <Image
                         src={dashboardImg}
                         alt="Website Issues Overview"
                         fill
-                        className="object-contain object-center rounded-2xl"
+                        className="object-contain object-center  rounded-2xl"
                         priority
                     />
                 </motion.div>
@@ -34,7 +34,7 @@ export default function WhyWebsiteToronto() {
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
                     viewport={{ once: true }}
-                    className="flex-1 lg:w-1/2 px-8 lg:px-16 mt-10 lg:mt-0"
+                    className="flex-1 lg:w-1/2 px-8 lg:px-16 mt-0  lg:mt-0"
                 >
                     {/* Heading */}
                     <h2 className="text-3xl md:text-6xl font-bold font-inter leading-snug mb-6">

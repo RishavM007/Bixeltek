@@ -117,7 +117,7 @@ const GradientBorderContainersMob = () => {
 
 
 
-      <p className="text-gray-300 mt-10 max-w-[30%] mx-auto mb-12 font-poppins leading-relaxed text-center">
+      <p className="text-gray-300 mt-10 max-w-[90%] md:max-w-[30%] mx-auto mb-12 font-poppins leading-relaxed text-center">
         This isn’t theory. It’s a repeatable framework we’ve used to drive results in the USA, Canada, India, and Saudi Arabia.
       </p>
     </div>

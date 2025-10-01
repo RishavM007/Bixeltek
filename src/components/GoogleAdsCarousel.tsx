@@ -13,7 +13,7 @@ import Image from 'next/image';
 
 export const LogoTicker2 = () => {
   return (
-    <section className='pt-32 bg-black mt-10  flex flex-col gap-20'>
+    <section className='pt-10 bg-black mt-10  flex flex-col gap-20'>
 
       <div className="w-[100%] md:w-[90%] lg:w-[90%] mx-auto">
         <div className='flex items-center'>
@@ -47,7 +47,7 @@ export const LogoTicker2 = () => {
               anata   
             ].map((logo, index) => (
               <div key={index}>
-                <Image src={logo} alt={`Company Logo ${index + 1}`} className=' h-10 md:h-14 w-auto object-contain' />
+                <Image src={logo} alt={`Company Logo ${index + 1}`} className=' h-14 md:h-14 w-auto object-contain' />
               </div>
             ))}
           </motion.div>

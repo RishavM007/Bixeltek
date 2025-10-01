@@ -23,7 +23,7 @@ export default function HeroSEOMiss() {
 
   return (
     <>
-      <section className="relative flex flex-col items-center justify-center h-[150vh] md:h-[100vh] bg-black text-center px-6 overflow-hidden">
+      <section className="relative flex flex-col items-center justify-center h-[140vh] md:h-[100vh] bg-black text-center px-6 overflow-hidden">
         <div className="flex justify-center items-center">
           <div className="relative z-10 mt-40 max-w-7xl">
             {/* Headline */}
@@ -38,14 +38,14 @@ export default function HeroSEOMiss() {
             </p>
 
             {/* Proof Points */}
-            <div className="mt-8 flex flex-wrap justify-center gap-12">
+            <div className="mt-8 flex flex-wrap justify-center gap-8">
               {proofPoints.map((point) => (
                 <div
                   key={point.id}
-                  className="flex flex-row md:flex-row justify-center items-center gap-5 text-white max-w-[250px]"
+                  className="flex flex-col md:flex-row justify-center items-center gap-4 text-white max-w-[250px]"
                 >
                   <Image src={point.icon} alt={point.text} className="w-12 h-12 mb-3" width={40} height={40} />
-                  <p className="text-sm text-left md:text-sm">{point.text}</p>
+                  <p className="text-sm text-center md:text-left md:text-sm">{point.text}</p>
                 </div>
               ))}
             </div>

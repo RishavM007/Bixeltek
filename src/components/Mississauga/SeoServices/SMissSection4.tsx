@@ -55,8 +55,8 @@ export default function WhyChooseBixeltekSMiss() {
   ];
 
   return (
-    <section className="max-w-[80%] mx-auto bg-black py-20 px-6 md:px-12 lg:px-20">
-      <div className="max-w-6xl mx-auto text-center mb-16">
+    <section className="max-w-[94%] md:max-w-[80%] mx-auto bg-black md:py-20 px-6 md:px-12 lg:px-20">
+      <div className="max-w-[95%] md:max-w-6xl mx-auto text-center mb-16">
         <h2 className="text-3xl md:text-6xl font-bold text-white font-inter mb-6">
           SEO Backed by <br></br><span className="text-blue-500">Experience and Proven Results</span>
         </h2>
@@ -67,7 +67,7 @@ export default function WhyChooseBixeltekSMiss() {
       </div>
 
       {/* Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {values.map((item, idx) => (
           <div
             key={idx}

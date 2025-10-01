@@ -10,6 +10,7 @@ const containers = [
     text: 'We begin with a full technical SEO audit, keyword gap analysis, and competitor insights to uncover opportunities and roadblocks for growth.',
     gradient: 'from-blue-500 via-blue-400 to-black',
     color: 'text-blue-500',
+        bgcolor: 'hover:bg-blue-500',
   },
   {
     number: '02',
@@ -17,6 +18,7 @@ const containers = [
     text: 'Every campaign follows a prioritized roadmap with clear milestones, actions tied to ROI, and strategies aligned to business objectives.',
     gradient: 'from-green-500 via-teal-400 to-[#13131333]',
     color: 'text-teal-500',
+        bgcolor: 'hover:bg-teal-500',
   },
   {
     number: '03',
@@ -24,6 +26,7 @@ const containers = [
     text: 'We refine metadata, schema, internal linking, and content structure so search engines and users can easily understand and navigate your site.',
     gradient: 'from-yellow-400 via-yellow-300 to-[#13131333]',
     color: 'text-yellow-500',
+        bgcolor: 'hover:bg-yellow-500',
   },
   {
     number: '04',
@@ -31,6 +34,7 @@ const containers = [
     text: 'From service pages to long-form blogs and topical clusters, we craft content designed to rank, engage, and convert your audience.',
     gradient: 'from-pink-500 via-purple-400 to-[#13131333]',
     color: 'text-purple-500',
+        bgcolor: 'hover:bg-purple-500',
   },
   {
     number: '05',
@@ -38,6 +42,7 @@ const containers = [
     text: 'We strengthen your Maps presence, citations, and customer reviews to help you dominate local searches across Toronto and the GTA.',
     gradient: 'from-indigo-500 via-indigo-400 to-[#13131333]',
     color: 'text-indigo-500',
+        bgcolor: 'hover:bg-indigo-500',
   },
   {
     number: '06',
@@ -45,6 +50,7 @@ const containers = [
     text: 'By clarifying entities and context, we prepare your brand to be discovered and recommended by AI-driven platforms like Google Gemini & ChatGPT.',
     gradient: 'from-red-500 via-[#13131333] to-[#13131333]',
     color: 'text-red-500',
+        bgcolor: 'hover:bg-red-500',
   },
   {
     number: '07',
@@ -52,6 +58,7 @@ const containers = [
     text: 'High-quality backlinks, digital PR, and strategic mentions build trust and boost your authority in competitive markets.',
     gradient: 'from-purple-500 via-pink-400 to-[#13131333]',
     color: 'text-purple-500',
+        bgcolor: 'hover:bg-purple-500',
   },
   {
     number: '08',
@@ -59,6 +66,7 @@ const containers = [
     text: 'Transparent monthly reports that track rankings, traffic, leads, and ROI — ensuring you see real business impact from SEO.',
     gradient: 'from-blue-500 via-black/70 to-transparent',
     color: 'text-blue-500',
+        bgcolor: 'hover:bg-blue-500',
   },
 ];
 
@@ -74,12 +82,12 @@ const GradientBorderContainersSEO = () => {
       </p>
 
       {/* ✅ MOBILE VERSION (simple cards) */}
-      <div className="space-y-10 md:hidden">
+       <div className="space-y-10 md:hidden">
         {containers.map((item, idx) => (
-          <div key={idx} className="flex flex-col items-start">
-            <p className={`${item.color} text-5xl font-bold mb-2`}>{item.number}</p>
+          <div key={idx} className={`flex group ${item.bgcolor} p-6 rounded-3xl flex-col items-start`}>
+            <p className={`${item.color} group-hover:text-white text-5xl font-bold mb-2`}>{item.number}</p>
             <h2 className="text-xl font-bold text-white mb-2">{item.title}</h2>
-            <p className="text-gray-300">{item.text}</p>
+            <p className="text-gray-300 group-hover:text-white">{item.text}</p>
           </div>
         ))}
       </div>

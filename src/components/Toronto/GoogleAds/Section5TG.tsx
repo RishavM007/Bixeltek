@@ -36,7 +36,7 @@ export default function GoogleAdsServicesSectionToronto() {
     ];
 
     return (
-        <section className='relative py-24'>
+        <section className='relative py-16 md:py-24'>
             {/* Background Blobs */}
             <div className="absolute top-32 -left-20 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
             <div className="absolute bottom-52 right-0 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
@@ -44,7 +44,7 @@ export default function GoogleAdsServicesSectionToronto() {
             <div>
                 {/* Section Heading */}
                 <div className=' max-w-[80%] mx-auto mb-5 text-center'>
-                    <h2 className='text-white text-4xl lg:text-6xl max-w-7xl mx-auto font-inter mb-3 font-semibold '>
+                    <h2 className='text-white text-3xl lg:text-6xl max-w-7xl mx-auto font-inter mb-3 font-semibold '>
                         At Bixeltek, We Specialize in<br></br> <span className='text-blue-500'>Making Your Ad Spend Work Smarter</span>
                     </h2>
                     <p className='text-gray-100 text-base md:text-[17px] tracking-wider mt-4 max-w-4xl mx-auto'>

@@ -37,14 +37,14 @@ export default function HeroDMiss() {
             </p>
 
             {/* Proof Points */}
-            <div className="mt-8 flex flex-wrap justify-center gap-12">
+            <div className="mt-8 flex flex-wrap justify-center gap-8">
               {proofPoints.map((point) => (
                 <div
                   key={point.id}
-                  className="flex flex-row md:flex-row justify-center items-center gap-5 text-white max-w-[250px]"
+                  className="flex flex-col md:flex-row justify-center items-center gap-4 text-white max-w-[250px]"
                 >
                   <Image src={point.icon} alt={point.text} className="w-12 h-12 mb-3" width={40} height={40} />
-                  <p className="text-sm text-left md:text-sm">{point.text}</p>
+                  <p className="text-sm text-center md:text-left md:text-sm">{point.text}</p>
                 </div>
               ))}
             </div>

@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function WhyGoogleAdsToronto() {
     return (
-        <section className="w-full mt-0 bg-black text-gray-100 py-20 overflow-hidden">
+        <section className="w-full mt-0 bg-black text-gray-100 py-0 md:py-10 lg:py-20 overflow-hidden">
             <div className="flex flex-col lg:flex-row items-center lg:items-start">
 
                 {/* LEFT IMAGE */}
@@ -34,7 +34,7 @@ export default function WhyGoogleAdsToronto() {
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
                     viewport={{ once: true }}
-                    className="flex-1 lg:w-1/2 px-8 lg:px-16 mt-10 lg:mt-0"
+                    className="flex-1 lg:w-1/2 px-8 lg:px-16 mt-00 lg:mt-0"
                 >
                     <h2 className="text-3xl md:text-6xl font-bold font-inter leading-snug mb-6">
                         What Is Google Ads <span className="text-blue-500">and Why Does It Matter?</span>

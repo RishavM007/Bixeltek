@@ -8,7 +8,7 @@ import { Check } from "lucide-react"; // ✅ React check icon
 
 export default function WhySEOToronto() {
     return (
-        <section className="w-[95%] mx-auto mt-0 bg-black text-gray-100 py-20 overflow-hidden">
+        <section className="w-[95%] mx-auto mt-0 bg-black text-gray-100 py-10 md:py-20 overflow-hidden">
             <div className="flex flex-col lg:flex-row items-center lg:items-start">
                 {/* LEFT IMAGE */}
                 <motion.div
@@ -34,7 +34,7 @@ export default function WhySEOToronto() {
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
                     viewport={{ once: true }}
-                    className="flex-1 lg:w-1/2 px-8 lg:px-16 mt-10 lg:mt-0"
+                    className="flex-1 lg:w-1/2 px-8 lg:px-16 mt-0 lg:mt-0"
                 >
                     {/* Heading */}
                     <h2 className="text-3xl md:text-6xl font-bold font-inter leading-snug mb-6">

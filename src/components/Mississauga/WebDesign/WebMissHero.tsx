@@ -23,7 +23,7 @@ export default function HeroWebDesignMiss() {
 
   return (
     <>
-      <section className="relative flex flex-col items-center justify-center h-[150vh] md:h-[110vh] bg-black text-center px-6 overflow-hidden">
+      <section className="relative flex flex-col items-center justify-center h-[135vh] md:h-[110vh] bg-black text-center px-6 overflow-hidden">
         <div className="flex justify-center items-center">
           <div className="relative z-10 mt-40 max-w-7xl">
             {/* Headline */}
@@ -42,11 +42,11 @@ export default function HeroWebDesignMiss() {
             </p>
 
             {/* Proof Points */}
-            <div className="mt-8 flex flex-wrap justify-center gap-12">
+            <div className="mt-8 flex flex-wrap justify-center gap-8">
               {proofPoints.map((point) => (
                 <div
                   key={point.id}
-                  className="flex flex-row md:flex-row justify-center items-center gap-5 text-white max-w-[250px]"
+                  className="flex flex-col md:flex-row justify-center items-center gap-4 text-white max-w-[250px]"
                 >
                   <Image
                     src={point.icon}

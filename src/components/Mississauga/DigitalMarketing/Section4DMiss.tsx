@@ -17,7 +17,7 @@ const MississaugaSection4: React.FC = () => {
   ];
 
   return (
-    <section className="max-w-[90%] mx-auto mt-0 bg-black text-gray-100 py-20 overflow-hidden">
+    <section className="max-w-[95%] md:max-w-[90%] mx-auto mt-0 bg-black text-gray-100 py-10 md:py-20 overflow-hidden">
       <div className="flex flex-col lg:flex-row items-center lg:items-start">
 
         {/* LEFT CONTENT */}

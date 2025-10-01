@@ -28,7 +28,7 @@ const BiddingStrategies = () => {
     ];
 
     return (
-        <section className="py-16 px-4 bg-[#131313]">
+        <section className="py-5 md:py-16 px-4 bg-[#131313]">
             <div className="max-w-6xl mx-auto">
                 <h2 className="text-3xl md:text-6xl text-white text-center max-w-4xl mx-auto font-bold font-inter mb-6">
                     <span className='text-blue-500'>AI Meets Human </span>Expertise in Bidding Strategies

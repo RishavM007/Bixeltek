@@ -23,8 +23,8 @@ const bottomRow = [
 
 const TechStackSection = () => {
   return (
-    <section className="bg-[#131313] py-20 px-6 md:px-12 lg:px-20">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+    <section className="bg-[#131313] py-5 md:py-20 px-6 md:px-12 lg:px-20">
+      <div className="max-w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
         
         {/* LEFT SIDE */}
         <div className="space-y-6">
@@ -44,7 +44,7 @@ const TechStackSection = () => {
         {/* RIGHT SIDE GRID */}
         <div className="flex flex-col items-center overflow-hidden gap-6">
           {/* Top Row */}
-          <div className="grid grid-cols-2 md:grid-cols-4 justify-center gap-6">
+          <div className="grid grid-cols-3 md:grid-cols-4 justify-center gap-6">
             {topRow.map((tool, index) => (
               <div
                 key={index}
@@ -60,7 +60,7 @@ const TechStackSection = () => {
           </div>
 
           {/* Bottom Row */}
-          <div className="grid grid-cols-2 md:grid-cols-4 justify-center gap-6">
+          <div className="grid grid-cols-3 md:grid-cols-4 justify-center gap-6">
             {bottomRow.map((tool, index) => (
               <div
                 key={index}

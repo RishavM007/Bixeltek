@@ -7,7 +7,7 @@ import peopleImg from '@/assets/h1-choose.jpg'; // replace with your image
 
 export default function BusinessProblems() {
     return (
-        <section className="relative py-20 bg-black">
+        <section className="relative py-10 md:py-20 bg-black">
             <div className="flex flex-col md:flex-row items-center">
 
                 {/* Left Blue Container */}

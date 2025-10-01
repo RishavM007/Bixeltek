@@ -30,10 +30,10 @@ export default function SocialMediaServicesMiss() {
     ];
 
     return (
-        <section className='relative py-24'>
+        <section className='relative py-12 md:py-24'>
             {/* Background Decorative Blobs */}
-            <div className="absolute top-32 -left-20 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
-            <div className="absolute bottom-52 right-0 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
+            {/* <div className="absolute top-12 -left-20 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
+            <div className="absolute bottom-52 right-0 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div> */}
 
             <div>
                 {/* Section Heading */}

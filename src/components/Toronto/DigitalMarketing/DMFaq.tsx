@@ -42,8 +42,8 @@ export default function DMFaq() {
             <h6 className="text-lg text-center font-medium text-blue-400 mb-2">
               Frequently Asked Questions
             </h6>
-            <h2 className="text-4xl text-center md:text-6xl font-inter font-bold text-white mb-6">
-              <span className='text-blue-500'>Questions We Hear</span> From <br></br>Toronto Businesses
+            <h2 className="text-3xl text-center md:text-6xl font-inter font-bold text-white mb-6">
+              <span className='text-blue-500'>Questions We Hear</span><br></br> From Toronto Businesses
             </h2>
             <p className="text-center text-gray-400 max-w-2xl mx-auto mb-10">
               Here are answers to the most common questions Toronto businesses ask us about web design, development, and online growth.

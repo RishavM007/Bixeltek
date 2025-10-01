@@ -15,7 +15,7 @@ export default function WhySEOMattersToronto() {
     ];
 
     return (
-        <section className="w-[90%] mx-auto mt-0 bg-black text-gray-100 py-20 overflow-hidden">
+        <section className="w-[96%] md:w-[90%] mx-auto mt-0 bg-black text-gray-100 pb-0  pt-20 md:pb-20  overflow-hidden">
             <div className="flex flex-col lg:flex-row items-center gap-12">
                 {/* LEFT CONTENT */}
                 <motion.div

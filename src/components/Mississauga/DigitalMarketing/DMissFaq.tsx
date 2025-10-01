@@ -52,7 +52,7 @@ export default function DMFaqMiss() {
               Frequently Asked Questions
             </h6>
             <h2 className="text-4xl text-center md:text-6xl font-inter font-bold text-white mb-6">
-              <span className='text-blue-500'>Questions Mississauga Businesses Ask Us</span>
+              Questions<span className='text-blue-500'> Mississauga Businesses</span> Ask Us
             </h2>
             <p className="text-center text-gray-400 max-w-2xl mx-auto mb-10">
               Here are answers to the most common questions Mississauga businesses ask about digital marketing, Ads, SEO, and online growth.

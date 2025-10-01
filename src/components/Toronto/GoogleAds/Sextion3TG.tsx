@@ -61,7 +61,7 @@ const CampaignsSection = () => {
   return (
     <section className="py-16 max-w-7xl mx-auto bg-black text-white">
       <div className="container flex flex-col justify-center items-center mx-auto px-6">
-        <h2 className="text-6xl max-w-7xl font-bold text-center mb-12">
+        <h2 className="text-3xl md:text-5xl lg:text-6xl max-w-[100%] md:max-w-7xl font-bold text-center mb-12">
           Bixeltek Manages <span className="text-blue-500">Every Google Ads Campaign</span> Type for Toronto Businesses
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

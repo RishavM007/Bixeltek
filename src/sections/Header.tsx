@@ -11,6 +11,9 @@ export const Header = () => {
   const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<keyof typeof locations>("canada");
+  const [activeTab2, setActiveTab2] = useState<keyof typeof locations | null>(null);
+
+  const [isLocationsOpen, setIsLocationsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -36,6 +39,16 @@ export const Header = () => {
             { name: "Google Ads Management", link: "/mississauga/google-ads" },
             { name: "Search Engine Optimisation", link: "/mississauga/seo-services" },
             { name: "Web Design and Development", link: "/mississauga/web-design" },
+          ],
+        },
+        {
+          name: "Vancouver",
+          link: "/vancouver",
+          services: [
+            { name: "Google Ads Management", link: "/vancouver/google-ads" },
+            // { name: "Search Engine Optimisation", link: "/mississauga/seo-services" },
+            // { name: "Web Design and Development", link: "/mississauga/web-design" },
+            // { name: "Social Media Marketing", link: "/mississauga/social-media-marketing" },
           ],
         },
       ],
@@ -220,6 +233,75 @@ export const Header = () => {
                 )}
               </li>
               <li><Link href="/blog" className="block py-2 px-4 hover:bg-purple-600 rounded">Blog</Link></li>
+              <li>
+                <button
+                  onClick={() => setIsLocationsOpen(!isLocationsOpen)}
+                  className="flex justify-between w-full py-2 px-4 hover:bg-purple-600 rounded"
+                >
+                  Locations <HiChevronDown className="text-xl" />
+                </button>
+
+                {isLocationsOpen && (
+                  <motion.ul
+                    initial={{ opacity: 0, y: -5 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="ml-4 text-lg space-y-2"
+                  >
+                    {Object.keys(locations).map((country) => {
+                      const typedCountry = country as keyof typeof locations;
+
+                      return (
+                        <li key={country}>
+                          <button
+                            onClick={() =>
+                              setActiveTab2(activeTab2 === typedCountry ? null : typedCountry)
+                            }
+                            className={`flex justify-between w-full py-2 px-4 rounded ${activeTab2 === typedCountry
+                              ? "bg-purple-600 text-white"
+                              : "hover:bg-gray-700"
+                              }`}
+                          >
+                            {locations[typedCountry].title} <HiChevronDown />
+                          </button>
+
+                          {activeTab2 === typedCountry && (
+                            <motion.div
+                              initial={{ opacity: 0, y: -5 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              transition={{ duration: 0.3 }}
+                              className="ml-6 mt-2 space-y-4"
+                            >
+                              {locations[typedCountry].cities.map((city) => (
+                                <div key={city.name}>
+                                  <Link
+                                    href={city.link}
+                                    className="block font-semibold text-gray-200 hover:text-purple-400"
+                                  >
+                                    {city.name}
+                                  </Link>
+                                  <ul className="mt-1 ml-3 space-y-1">
+                                    {city.services.map((service) => (
+                                      <li key={service.name}>
+                                        <Link
+                                          href={service.link}
+                                          className="text-sm text-gray-400 hover:text-purple-300"
+                                        >
+                                          {service.name}
+                                        </Link>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              ))}
+                            </motion.div>
+                          )}
+                        </li>
+                      );
+                    })}
+                  </motion.ul>
+                )}
+              </li>
               <li><Link href="/about-us" className="block py-2 px-4 hover:bg-purple-600 rounded">About Us</Link></li>
               <li><Link href="/contact-us" className="block py-2 px-4 hover:bg-purple-600 rounded">Contact Us</Link></li>
             </ul>

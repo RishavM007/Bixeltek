@@ -41,21 +41,20 @@ export default function WhoIsThisServiceFor() {
 
     return (
         <section className="bg-black py-16 px-4">
-            <div className="max-w-[80%] mx-auto">
+            <div className="max-w-[100%] md:max-w-[80%] mx-auto">
                 <h3 className="text-center text-blue-500 text-sm tracking-wider font-semibold mb-2 uppercase">
                     Who Is This Service For?
                 </h3>
-                <h2 className="text-center text-6xl font-bold mb-10 text-white">
-                    Our Google Ads Management Is <br />
-                    <span className="text-blue-500">Perfect If You…</span>
+                <h2 className="text-center text-3xl md:text-5xl lg:text-6xl font-bold mb-10 text-white">
+                    Our Google Ads Management Is <br /><span className="text-blue-500">Perfect If You…</span>
                 </h2>
 
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid  md:grid-cols-2 gap-6">
                     {points.map((point, idx) => (
                         <div
                             key={idx}
                             className="
-                relative p-10 rounded-xl flex items-start gap-6 transition-all duration-500 cursor-pointer
+                relative p-2 md:p-6 lg:p-10 rounded-xl  flex items-start gap-6 transition-all duration-500 cursor-pointer
                 bg-transparent hover:bg-gradient-to-br hover:from-blue-500/20 hover:to-transparent
                 hover:backdrop-blur-lg
               "

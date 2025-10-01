@@ -9,6 +9,7 @@ const steps = [
         text: "We start by understanding your business goals, target audience, and competitors. This research lays the foundation for a website that resonates with your customers and outperforms competitors.",
         gradient: 'from-blue-500 via-blue-400 to-black',
         color: 'text-blue-500',
+            bgcolor: 'hover:bg-blue-500',
     },
     {
         number: '02',
@@ -16,6 +17,7 @@ const steps = [
         text: "We create intuitive layouts and design mockups that prioritize user experience, accessibility, and conversion. Each design element is tailored to your brand and optimized for engagement.",
         gradient: 'from-green-500 via-teal-400 to-transparent',
         color: 'text-teal-500',
+            bgcolor: 'hover:bg-teal-500',
     },
     {
         number: '03',
@@ -23,6 +25,7 @@ const steps = [
         text: "Our developers build websites with clean, semantic code, mobile-first responsiveness, fast load speeds, and SEO-friendly structure to ensure your site performs technically and visually.",
         gradient: 'from-yellow-400 via-yellow-300 to-transparent',
         color: 'text-yellow-500',
+            bgcolor: 'hover:bg-yellow-500',
     },
     {
         number: '04',
@@ -30,6 +33,7 @@ const steps = [
         text: "We incorporate optimized content, compelling visuals, and strategic calls-to-action. Every section of your website is designed to guide visitors through your customer journey seamlessly.",
         gradient: 'from-pink-500 via-purple-400 to-transparent',
         color: 'text-purple-500',
+            bgcolor: 'hover:bg-purple-500',
     },
     {
         number: '05',
@@ -37,6 +41,7 @@ const steps = [
         text: "Before launch, we rigorously test your site across devices, browsers, and performance metrics. This ensures a flawless user experience, fast load times, and functional forms and features.",
         gradient: 'from-indigo-500 via-indigo-400 to-transparent',
         color: 'text-indigo-500',
+            bgcolor: 'hover:bg-indigo-500',
     },
     {
         number: '06',
@@ -44,6 +49,7 @@ const steps = [
         text: "We deploy your website live with SEO foundations in place, ensuring it’s discoverable and ready to attract leads, conversions, and traffic from day one.",
         gradient: 'from-red-500  to-transparent',
         color: 'text-red-500',
+            bgcolor: 'hover:bg-red-500',
     },
     {
         number: '07',
@@ -51,6 +57,7 @@ const steps = [
         text: "Post-launch, we provide maintenance, updates, and performance monitoring. Your website evolves with your business while maintaining speed, security, and conversion effectiveness.",
         gradient: 'from-purple-500 via-transparent to-transparent',
         color: 'text-pink-500',
+        bgcolor: 'hover:bg-pink-500',
     },
 ];
 
@@ -67,10 +74,10 @@ const WebProcessTimeline = () => {
             {/* MOBILE VERSION */}
             <div className="space-y-10 md:hidden">
                 {steps.map((item, idx) => (
-                    <div key={idx} className="flex flex-col items-start">
-                        <p className={`${item.color} text-5xl font-bold mb-2`}>{item.number}</p>
+                    <div key={idx} className={`flex group ${item.bgcolor} p-6 rounded-3xl flex-col items-start`}>
+                        <p className={`${item.color} group-hover:text-white text-5xl font-bold mb-2`}>{item.number}</p>
                         <h2 className="text-xl font-bold text-white mb-2">{item.title}</h2>
-                        <p className="text-gray-300">{item.text}</p>
+                        <p className="text-gray-300 group-hover:text-white">{item.text}</p>
                     </div>
                 ))}
             </div>

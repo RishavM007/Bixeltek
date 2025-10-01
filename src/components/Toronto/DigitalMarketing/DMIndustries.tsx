@@ -33,11 +33,11 @@ export default function DMIndustries(): JSX.Element {
     };
 
     return (
-        <section className="pt-20 pb-20  bg-[black] z-10 overflow-hidden">
+        <section className="pt-20 mt-10 pb-20  bg-[black] z-10 overflow-hidden">
             <div className="w-full relative text-center text-white pb-10">
-                <h1 className="text-5xl xl:text-7xl font-bold mb-2">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-500">
-                        Digital Marketing Solutions Tailored for  <br></br> Every Industry in Toronto
+                <h1 className="text-3xl md:text-5xl mx-auto max-w-[90%] md:max-w-full xl:text-7xl font-bold mb-2">
+                    <span className=" text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-500">
+                        Digital Marketing Solutions Tailored for <br></br> Every Industry in Toronto
                     </span>
                 </h1>
                 {/* <h1 className="text-5xl xl:text-7xl font-bold mb-4">

@@ -54,7 +54,7 @@ const SEOGridSection2 = () => {
   ];
 
   return (
-    <section className="w-full py-24 bg-[#f5f7fd] text-black relative overflow-hidden">
+    <section className="w-full py-14 md:py-24 bg-[#f5f7fd] text-black relative overflow-hidden">
       <Image src={shape1} alt="shape1" className="absolute bottom-0 left-0" />
 
       <div className="max-w-full mx-auto flex flex-col lg:flex-row items-center gap-12">

@@ -3,9 +3,9 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import image2 from '@/assets/dashboard-examples-hero.avif'
+import image2 from '@/assets/Hosting-Hero.png'
 
-export default function DM_BenefitsMississauga() {
+export default function SEO_BenefitsInteractive() {
     const benefits = [
         {
             title: "Be Seen First",
@@ -41,27 +41,27 @@ export default function DM_BenefitsMississauga() {
         },
     ];
 
-    const googleColors = [
-        "#4285F4", "#EA4335", "#FBBC05", "#34A853", "#FF6D01", "#AB47BC",
-    ];
-
+    const googleColors = ["#4285F4", "#EA4335", "#FBBC05", "#34A853", "#FF6D01", "#AB47BC"];
     const [activeIndex, setActiveIndex] = useState<number>(0);
 
     return (
-        <section className="w-full relative mx-auto pt-24 bg-transparent text-gray-100">
-          
+        <section className="w-full relative mx-auto pt-12 md:pt-24 bg-transparent text-gray-100">
+            <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-t from-transparent to-transparent pointer-events-none" />
+
             {/* Section Heading */}
-            <div className="text-center max-w-4xl mx-auto mb-12">
-                <h2 className="text-4xl md:text-6xl font-bold mb-4">
-                    The Longer You Wait, <span className="text-blue-500">the More Business You Lose</span>
+            <div className="text-center max-w-4xl mx-auto mb-12 px-4 md:px-0">
+                <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4">
+                    What Our Clients Gain From{" "}
+                    <span className="text-blue-500">SEO With Bixeltek</span>
                 </h2>
-                <p className="text-gray-300 text-lg md:text-xl">
-                    Mississauga customers search online before they buy. If they don’t find you, they’ll find someone else. Digital marketing captures high-intent customers at the right moment.
+                <p className="text-gray-300 text-base sm:text-lg md:text-xl">
+                    We go beyond rankings. Our SEO strategies deliver business outcomes that
+                    impact revenue, efficiency, and long-term market positioning.
                 </p>
             </div>
 
-            {/* Expanding Cards */}
-            <div className="flex justify-center gap-4 h-96 overflow-x-auto md:overflow-visible mb-16">
+            {/* DESKTOP: Expanding horizontal cards */}
+            <div className="hidden md:flex justify-start gap-4 overflow-visible mb-16 px-4 sm:px-8">
                 {benefits.map((benefit, idx) => {
                     const isActive = activeIndex === idx;
                     return (
@@ -70,20 +70,19 @@ export default function DM_BenefitsMississauga() {
                             layout
                             onMouseEnter={() => setActiveIndex(idx)}
                             className={`relative flex-shrink-0 cursor-pointer overflow-hidden border border-gray-200 bg-white p-4 ${isActive ? "rounded-3xl" : "rounded-full"}`}
-                            initial={{ width: "40px" }}
-                            animate={{ width: isActive ? "400px" : "80px" }}
+                            initial={{ width: "60px" }}
+                            animate={{ width: isActive ? "300px" : "60px" }}
                             transition={{ type: "spring", stiffness: 300, damping: 30 }}
                         >
-                            {/* Title */}
                             <motion.div
-                                className="font-semibold absolute left-8 bottom-0 font-inter transition-all duration-300 ease-in-out whitespace-nowrap"
+                                className="font-semibold absolute left-4 bottom-0 font-inter transition-all duration-300 ease-in-out whitespace-nowrap"
                                 style={{ color: googleColors[idx % googleColors.length] }}
                                 animate={{
                                     rotate: isActive ? 0 : -90,
                                     top: isActive ? 16 : "95%",
                                     x: isActive ? 0 : -10,
                                     y: isActive ? 0 : -10,
-                                    fontSize: isActive ? "2rem" : "1.4rem",
+                                    fontSize: isActive ? "1.5rem" : "1.2rem",
                                     transformOrigin: "top left",
                                     textWrap: isActive ? "wrap" : "nowrap",
                                 }}
@@ -91,21 +90,19 @@ export default function DM_BenefitsMississauga() {
                                 {benefit.title}
                             </motion.div>
 
-                            {/* Description */}
                             <motion.div
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: isActive ? 1 : 0 }}
                                 transition={{ duration: 0.3 }}
-                                className="absolute bottom-28 left-4 right-4 text-gray-700 text-lg font-poppins"
+                                className="absolute bottom-20 left-4 right-4 text-gray-700 text-sm sm:text-base font-poppins"
                                 style={{ display: isActive ? "block" : "none" }}
                             >
                                 {benefit.description}
                             </motion.div>
 
-                            {/* Button */}
                             {isActive && (
                                 <div className="absolute bottom-4 left-4">
-                                    <button className="px-8 py-4 rounded-2xl bg-blue-600 text-white font-semibold text-sm shadow-lg hover:bg-blue-700 transition">
+                                    <button className="px-4 sm:px-6 py-2 sm:py-3 rounded-2xl bg-blue-600 text-white font-semibold text-xs sm:text-sm shadow-lg hover:bg-blue-700 transition">
                                         Book a Free Strategy Call
                                     </button>
                                 </div>
@@ -114,30 +111,34 @@ export default function DM_BenefitsMississauga() {
                     );
                 })}
             </div>
-            <div className="text-center mt-6 max-w-3xl mx-auto">
-                <p className="text-gray-300 text-base md:text-lg font-poppins">
-                    Delaying digital marketing isn’t saving money — it’s costing you revenue every single day.
-                </p>
+
+            {/* MOBILE/TABLET: Vertical stacked cards */}
+            <div className="flex flex-col md:hidden gap-6 mb-16 px-4">
+                {benefits.map((benefit, idx) => (
+                    <motion.div
+                        key={idx}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay: idx * 0.1 }}
+                        className="border border-gray-200 rounded-3xl bg-white p-6 shadow-md"
+                    >
+                        <h3
+                            className="font-semibold text-lg"
+                            style={{ color: googleColors[idx % googleColors.length] }}
+                        >
+                            {benefit.title}
+                        </h3>
+                        <p className="text-gray-700 text-sm mt-2">{benefit.description}</p>
+                        
+                    </motion.div>
+                ))}
+                <button className="mt-4 px-4 py-3 rounded-2xl bg-blue-600 text-white font-semibold text-sm shadow-lg hover:bg-blue-700 transition">
+                            Book a Free Strategy Call
+                        </button>
             </div>
 
-            {/* Bottom Image */}
-            {/* <div className="flex justify-center">
-                <div className="relative w-[70%] h-[300px] md:h-[400px] overflow-hidden rounded-3xl">
-                    <Image
-                        src={image2}
-                        alt="Digital Marketing Growth"
-                        className="object-cover object-center w-full h-full"
-                        priority
-                    />
-                </div>
-            </div> */}
-
-            {/* Closing Line */}
-            {/* <div className="text-center mt-6 max-w-3xl mx-auto">
-                <p className="text-gray-300 text-base md:text-lg font-poppins">
-                    Delaying digital marketing isn’t saving money — it’s costing you revenue every single day.
-                </p>
-            </div> */}
+            {/* Image */}
         </section>
     );
 }

@@ -11,7 +11,7 @@ export default function WhyChooseBixeltek() {
             <div className="flex flex-col-reverse md:flex-row items-center">
                 
                 {/* LEFT CONTENT */}
-                <div className="px-6 w-full mt-[-200px] md:mt-0 md:w-3/5 md:pl-20 md:pr-12 py-16">
+                <div className="px-6 w-full mt-[-200px] md:mt-0 md:w-3/5 md:pl-20 md:pr-12 py-0">
                     {/* Main heading */}
                     <h2 className="text-3xl md:text-6xl font-inter max-w-3xl text-white font-bold mb-4 leading-snug">
                         A Google Partner Agency With{" "}
@@ -62,7 +62,7 @@ export default function WhyChooseBixeltek() {
 
                 {/* RIGHT Blue Container */}
                 <div className="relative w-full md:w-2/5 h-[500px] rounded-l-[40px] bg-transparent md:bg-blue-600 flex justify-start items-center">
-                    <div className="w-full h-full py-16 pl-6 md:pl-12 pr-0 flex justify-start relative">
+                    <div className="w-full h-full py-6 pl-6 md:pl-12 pr-0 flex justify-start relative">
                         {/* Image overlapping outside */}
                         <div className="absolute md:-left-32 w-[90%] md:w-[90%]">
                             <Image
