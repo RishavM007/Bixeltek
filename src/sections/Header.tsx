@@ -25,7 +25,7 @@ export const Header = () => {
       cities: [
         {
           name: "Toronto",
-          link: "/toronto/digital-marketing",
+          link: "/toronto",
           services: [
             { name: "Google Ads Management", link: "/toronto/google-ads-management" },
             { name: "Search Engine Optimisation", link: "/toronto/seo-services" },
@@ -34,7 +34,7 @@ export const Header = () => {
         },
         {
           name: "Mississauga",
-          link: "/mississauga/digital-marketing",
+          link: "/mississauga",
           services: [
             { name: "Google Ads Management", link: "/mississauga/google-ads" },
             { name: "Search Engine Optimisation", link: "/mississauga/seo-services" },
@@ -46,9 +46,9 @@ export const Header = () => {
           link: "/vancouver",
           services: [
             { name: "Google Ads Management", link: "/vancouver/google-ads" },
-            // { name: "Search Engine Optimisation", link: "/mississauga/seo-services" },
-            // { name: "Web Design and Development", link: "/mississauga/web-design" },
-            // { name: "Social Media Marketing", link: "/mississauga/social-media-marketing" },
+            { name: "Search Engine Optimisation", link: "/vancouver/seo-services" },
+            { name: "Web Design and Development", link: "/vancouver/web-design-services" },
+            { name: "Social Media Marketing", link: "/vancouver/social-media-marketing" },
           ],
         },
       ],
@@ -229,6 +229,7 @@ export const Header = () => {
                     <li><Link href="/case-studies/Tumblewash-Casestudy" className="block py-2 px-4 hover:bg-gray-700 rounded">Tumblewash-Casestudy</Link></li>
                     <li><Link href="/case-studies/google-ads-case-study-bike-repair-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Eazy Bike Repair Case Study</Link></li>
                     <li><Link href="/case-studies/digital-marketing-for-dentists-case-study" className="block py-2 px-4 hover:bg-gray-700 rounded">Digital Marketing for Dentists</Link></li>
+                    <li><Link href="/case-studies" className="block py-2 px-4 hover:bg-gray-700 rounded">View More</Link></li>
                   </motion.ul>
                 )}
               </li>
@@ -331,7 +332,7 @@ export const Header = () => {
                 onMouseLeave={() => setIsDropdownOpen(false)}
               >
                 <a href="#" className="text-white/70 hover:text-white transition flex items-center">
-                  Our Solutions <HiChevronDown className="ml-1 text-xs" />
+                  Our Solutions <HiChevronDown className="ml-1 text-sm" />
                 </a>
 
                 {/* Dropdown Wrapper */}
@@ -394,7 +395,6 @@ export const Header = () => {
                       </div>
                     </div>
                     <div className="w-1/2 border-l border-gray-300 pl-6">
-
                       <h3 className="text-lg font-semibold text-[#670ef7]">Case Studies</h3>
                       <div className="grid grid-cols-2 gap-4">
                         <ul>
@@ -421,8 +421,8 @@ export const Header = () => {
                 </div>
               </li>
               <li className="flex group relative items-center py-7">
-                <Link href="/industries" className="text-white/70 hover:text-white transition">
-                  Industries
+                <Link href="/industries" className="text-white/70 flex items-center hover:text-white transition">
+                  Industries <HiChevronDown className="ml-1 text-sm" />
                 </Link>
                 <ul className="absolute top-full -left-7 mt-0 bg-white rounded-b-md shadow-lg hidden group-hover:block z-50 min-w-[200px]">
                   <li>
@@ -486,6 +486,49 @@ export const Header = () => {
                     </div>
                   </div>
                 </div>
+              </li>
+              <li className="relative group py-7">
+                <Link href={'/case-studies/'}>
+                  <div className="text-white/70 hover:text-white transition flex items-center">
+                    Case Studies <HiChevronDown className="ml-1 text-xs" />
+                  </div>
+                </Link>
+
+
+                <ul className="absolute top-full -left-7 mt-0 bg-white rounded-b-md shadow-lg hidden group-hover:block z-50 min-w-[200px]">
+                  <li>
+                    <Link
+                      href="/case-studies/Tumblewash-Casestudy"
+                      className="block px-4 py-2 text-black rounded-b-md hover:bg-[#670ef7] hover:text-white transition"
+                    >
+                      Tumblewash Case Study
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/case-studies/google-ads-case-study-bike-repair-hyderabad"
+                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
+                    >
+                      Eazy Bike Repair Case Study
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/case-studies/digital-marketing-for-dentists-case-study"
+                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
+                    >
+                      Dental Clinic Case Study
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/case-studies"
+                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
+                    >
+                      View All
+                    </Link>
+                  </li>
+                </ul>
               </li>
 
 

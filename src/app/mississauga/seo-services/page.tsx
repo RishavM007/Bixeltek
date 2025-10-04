@@ -1,3 +1,22 @@
+
+export const metadata = {
+    title: "SEO Services Mississauga | SEO Company & Agency – Bixeltek",
+    description:
+        " Looking for SEO services in Mississauga? Bixeltek helps businesses rank higher on Google, drive organic traffic, and generate consistent leads with proven SEO strategies.",
+    keywords:
+        "SEO services Mississauga, Best SEO company Mississauga, Local SEO Mississauga, On-page SEO optimization, Off-page SEO strategies, Technical SEO services, Keyword research Mississauga, Link building services, Content marketing Mississauga, E-commerce SEO Mississauga, WordPress SEO optimization, Mobile SEO services, SEO audit Mississauga, Search engine marketing, Google My Business optimization",
+    openGraph: {
+        title: "SEO Services Mississauga | SEO Company & Agency – Bixeltek",
+        description:
+            " Looking for SEO services in Mississauga? Bixeltek helps businesses rank higher on Google, drive organic traffic, and generate consistent leads with proven SEO strategies.",
+        type: "website",
+    },
+    alternates: {
+        canonical: "https://bixeltek.com/mississauga/seo-services",
+    },
+};
+
+
 import React from 'react'
 import HeroSEOMiss from '@/components/Mississauga/SeoServices/SMissHero'
 import WhySEOMississauga from '@/components/Mississauga/SeoServices/SMissSection1'

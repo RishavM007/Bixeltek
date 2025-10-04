@@ -27,16 +27,16 @@ import Image from 'next/image'
 export default function CasestudyPage() {
     return (
         <>
-            <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-64 mt-[-70px] mx-auto">
+            <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-64 mt-0 pt-[150px] md:pt-0 md:mt-[-70px] mx-auto">
                 <div className="max-w-4xl mx-auto text-center mb-10 lg:mb-14">
-                    <h2 className="text-2xl font-bold md:text-5xl font-inter md:leading-tight">
+                    <h2 className="text-4xl font-bold md:text-5xl font-inter md:leading-tight">
                         Real Results. Real Businesses.
                     </h2>
                     <p className="mt-1 text-gray-600 max-w-2xl mx-auto">
                         Dive into our case studies and see how we’ve helped brands scale with smart strategy and serious execution.
                     </p>
                 </div>
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                     <a className="group flex flex-col focus:outline-hidden" href="/case-studies/digital-marketing-for-dentists-case-study">
                         <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">

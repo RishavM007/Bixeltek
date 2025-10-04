@@ -15,7 +15,7 @@ export const Whiteheader = () => {
             cities: [
                 {
                     name: "Toronto",
-                    link: "/toronto/digital-marketing",
+                    link: "/toronto",
                     services: [
                         { name: "Google Ads Management", link: "/toronto/google-ads-management" },
                         { name: "Search Engine Optimisation", link: "/toronto/seo-services" },
@@ -24,7 +24,7 @@ export const Whiteheader = () => {
                 },
                 {
                     name: "Mississauga",
-                    link: "/mississauga/digital-marketing",
+                    link: "/mississauga",
                     services: [
                         { name: "Google Ads Management", link: "/mississauga/google-ads" },
                         { name: "Search Engine Optimisation", link: "/mississauga/seo-services" },
@@ -37,9 +37,9 @@ export const Whiteheader = () => {
                     link: "/vancouver",
                     services: [
                         { name: "Google Ads Management", link: "/vancouver/google-ads" },
-                        // { name: "Search Engine Optimisation", link: "/mississauga/seo-services" },
-                        // { name: "Web Design and Development", link: "/mississauga/web-design" },
-                        // { name: "Social Media Marketing", link: "/mississauga/social-media-marketing" },
+                        { name: "Search Engine Optimisation", link: "/vancouver/seo-services" },
+                        { name: "Web Design and Development", link: "/vancouver/web-design-services" },
+                        { name: "Social Media Marketing", link: "/vancouver/social-media-marketing" },
                     ],
                 },
             ],
@@ -205,7 +205,7 @@ export const Whiteheader = () => {
                                     onMouseLeave={() => setIsDropdownOpen(false)}
                                 >
                                     <a href="#" className="text-black hover:text-purple-800 transition flex font-semibold items-center">
-                                        Our Solutions <HiChevronDown className="ml-1 text-xs" />
+                                        Our Solutions <HiChevronDown className="ml-1 text-sm" />
                                     </a>
 
                                     {/* Dropdown Wrapper */}
@@ -288,8 +288,8 @@ export const Whiteheader = () => {
                                     </div>
                                 </li>
                                 <li className="flex items-center relative group py-7">
-                                    <Link href="/industries" className="text-black hover:text-purple-800 font-semibold transition">
-                                        Industries
+                                    <Link href="/industries" className="text-black hover:text-purple-800 flex justify-center items-center font-semibold transition">
+                                        Industries <HiChevronDown className="ml-1 text-sm" />
                                     </Link>
                                     <ul className="absolute top-full -left-7 mt-0 bg-white rounded-b-md shadow-lg hidden group-hover:block z-50 min-w-[200px]">
                                         <li>
@@ -488,8 +488,8 @@ export const Whiteheader = () => {
                                                         setActiveTab2(activeTab2 === typedCountry ? null : typedCountry)
                                                     }
                                                     className={`flex justify-between w-full py-2 px-4 rounded ${activeTab2 === typedCountry
-                                                            ? "bg-purple-600 text-white"
-                                                            : "hover:bg-gray-700"
+                                                        ? "bg-purple-600 text-white"
+                                                        : "hover:bg-gray-700"
                                                         }`}
                                                 >
                                                     {locations[typedCountry].title} <HiChevronDown />

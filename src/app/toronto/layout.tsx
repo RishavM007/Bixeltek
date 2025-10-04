@@ -1,18 +1,18 @@
 
 export const metadata = {
-    title: "Web Design Services Toronto | Bixeltek – Websites That Convert & Grow",
+    title: " Digital Marketing Agency Toronto | Google Ads, SEO & Web Design",
     description:
-        " Looking for web design services in Toronto? Bixeltek builds custom, SEO-ready, and conversion-focused websites trusted by businesses across Canada.",
+        " Looking for a digital marketing agency in Toronto? Bixeltek (Google Partner Certified) drives growth with SEO, Google Ads, and web design that deliver 10x ROI.",
     keywords:
         "Web development Hyderabad, Best web development company Hyderabad, Custom website design, Next.js development, React.js development, Full-stack web development, Frontend development, Backend development, E-commerce website development, WordPress development, Responsive web design, UI/UX design Hyderabad, Web application development, Modern web technologies",
     openGraph: {
-        title: "Web Design Services Toronto | Bixeltek – Websites That Convert & Grow",
+        title: "Digital Marketing Agency Toronto | Google Ads, SEO & Web Design",
         description:
-            "Looking for web design services in Toronto? Bixeltek builds custom, SEO-ready, and conversion-focused websites trusted by businesses across Canada.",
+            "Looking for a digital marketing agency in Toronto? Bixeltek (Google Partner Certified) drives growth with SEO, Google Ads, and web design that deliver 10x ROI.",
         type: "website",
     },
     alternates: {
-        canonical: "https://bixeltek.com/toronto/web-design",
+        canonical: "https://bixeltek.com/toronto",
     },
 };
 
