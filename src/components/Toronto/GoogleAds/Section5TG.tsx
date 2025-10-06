@@ -26,10 +26,6 @@ export default function GoogleAdsServicesSectionToronto() {
             description: 'Daily bid management to maximize ROI; no wasted spend.',
         },
         {
-            title: 'Remarketing & Display Campaigns',
-            description: 'Capture and convert visitors who didn’t convert the first time with strategic retargeting.',
-        },
-        {
             title: 'Ongoing Optimization',
             description: 'Continuous A/B testing, negative keyword refinement, and campaign adjustments to keep performance improving.',
         },

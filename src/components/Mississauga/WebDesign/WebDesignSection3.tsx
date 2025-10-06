@@ -34,11 +34,6 @@ export default function WebDesignServicesMississauga() {
       description:
         "Continuous updates, backups, and performance monitoring.",
     },
-    {
-      title: "Branding & Design",
-      description:
-        "Cohesive visuals, graphics, and UI design aligned with your brand identity.",
-    },
   ];
 
   return (

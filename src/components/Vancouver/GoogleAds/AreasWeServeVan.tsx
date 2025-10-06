@@ -8,8 +8,8 @@ export default function AreasWeServeCanada() {
     {
       title: "Toronto & GTA",
       cities: [
-        { name: "Toronto", link: "/toronto/digital-marketing" },
-        { name: "Mississauga", link: "/mississauga/digital-marketing" },
+        { name: "Toronto", link: "/toronto" },
+        { name: "Mississauga", link: "/mississauga" },
         { name: "Brampton" },
         { name: "Vaughan" },
         { name: "Markham" },
@@ -51,10 +51,10 @@ export default function AreasWeServeCanada() {
         {/* Left Side - Content */}
         <div>
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            Web Design Across <span className="text-blue-500">Toronto and Nationwide</span>
+            Web Design Across <span className="text-blue-500">Vancouver and Nationwide</span>
           </h2>
           <p className="text-gray-300 text-lg mb-8">
-            Though many of our clients are based in Toronto, we’ve worked with businesses across Canada — from local service providers to ecommerce brands and national enterprises.
+            Though many of our clients are based in Vancoucer, we’ve worked with businesses across Canada — from local service providers to ecommerce brands and national enterprises.
           </p>
 
           <ul className="space-y-6 text-lg">

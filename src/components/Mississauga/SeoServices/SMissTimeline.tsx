@@ -117,9 +117,9 @@ const SEOTimelineMiss = () => {
                 {/* Call-to-action after last step */}
                 {idx === containers.length - 1 && (
                   <div className="mt-auto absolute -bottom-[20px] flex justify-center w-full">
-                    <a href={'#form'}>
+                    <a href={'mailto:zee@bixeltek.com'}>
                       <button className="px-7 py-3 rounded-2xl bg-blue-600 text-white font-semibold text-sm shadow-lg hover:bg-blue-700 transition">
-                        Book a Free SEO Consultation
+                        Talk To A SEO Specialist
                       </button>
                     </a>
                   </div>

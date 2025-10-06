@@ -31,8 +31,7 @@ import ProcessTorontoWebdev from '@/components/Toronto/Webdev/TWTimeline'
 import BenefitsSectionWebDesign from '@/components/Toronto/Webdev/TWBenefits'
 import AreasWeServeCanadaTW from '@/components/Toronto/Webdev/TWAreasWeServe'
 import ContactFromNew from '@/components/ContactFormNew'
-import Link from 'next/link';
-import { PhoneCall, MessageCircle, CalendarDays } from 'lucide-react';
+import TMWebIndustries from '@/components/Toronto/Webdev/TWSection6';
 import TWFaq from '@/components/Toronto/Webdev/TWFaq'
 export default function page() {
     return (
@@ -44,7 +43,7 @@ export default function page() {
             <WebDesignToronto2 />
             <WebsiteMattersSection />
             <WebDesignServicesToronto />
-            <IndustryCarouselSectionSeo />
+            <TMWebIndustries />
             <ProcessTorontoWebdev />
             <BenefitsSectionWebDesign />
             <AreasWeServeCanadaTW />

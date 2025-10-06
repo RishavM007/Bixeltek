@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import dashboardImg from "@/assets/13-2-seo-high-quality-png.png";
+import dashboardImg from "@/assets/Local-SEO-Dashboard-Customize.webp";
 import { LiaStarOfLifeSolid } from "react-icons/lia";
 import Link from "next/link";
 

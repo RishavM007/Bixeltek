@@ -1,38 +1,60 @@
 "use client";
 
 import { MapPin } from "lucide-react";
+import Link from "next/link";
 
 export default function AreasWeServeCanadaDM() {
   const regions = [
     {
       title: "Toronto & GTA",
-      cities: "Toronto, Mississauga, Brampton, Vaughan, Markham, Oakville",
+      cities: [
+        { name: "Toronto"},
+        { name: "Mississauga", link: "/mississauga" },
+        { name: "Brampton" },
+        { name: "Vaughan" },
+        { name: "Markham" },
+        { name: "Oakville" },
+      ],
     },
     {
       title: "Ontario & Central Canada",
-      cities: "Ottawa, Hamilton, Kitchener-Waterloo, Montreal",
+      cities: [
+        { name: "Ottawa" },
+        { name: "Hamilton" },
+        { name: "Kitchener-Waterloo" },
+        { name: "Montreal" },
+      ],
     },
     {
       title: "Western Canada",
-      cities: "Calgary, Edmonton, Vancouver, Winnipeg",
+      cities: [
+        { name: "Calgary" },
+        { name: "Edmonton" },
+        { name: "Vancouver", link: "/vancouver" },
+        { name: "Winnipeg" },
+      ],
     },
     {
       title: "Atlantic Canada",
-      cities: "Halifax, Moncton, St. John’s",
+      cities: [
+        { name: "Halifax" },
+        { name: "Moncton" },
+        { name: "St. John’s" },
+      ],
     },
   ];
 
   return (
     <section className="w-full bg-black text-white py-10 md:py-20">
-      <div className=" max-w-[95%] md:max-w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-6">
+      <div className="max-w-[95%] md:max-w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-6">
         
         {/* Left Side - Content */}
         <div>
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
-          Proudly Serving <span className="text-blue-500">Toronto and the GTA</span>
+            Proudly Serving <span className="text-blue-500">Toronto and the GTA</span>
           </h2>
           <p className="text-gray-300 text-base md:text-lg mb-8">
-             We help businesses across Toronto and the Greater Toronto Area with digital marketing strategies tailored to their competition and audience.
+            We help businesses across Toronto and the Greater Toronto Area with digital marketing strategies tailored to their competition and audience.
           </p>
 
           <ul className="space-y-6 text-lg">
@@ -40,7 +62,24 @@ export default function AreasWeServeCanadaDM() {
               <li key={index} className="flex text-base md:text-lg items-start gap-3">
                 <MapPin className="text-blue-500 w-6 h-6 mt-1" />
                 <span>
-                  <strong>{region.title}</strong> → {region.cities}
+                  <strong>{region.title}</strong> →{" "}
+                  {region.cities.map((city, idx) =>
+                    city.link ? (
+                      <Link
+                        key={idx}
+                        href={city.link}
+                        className="text-blue-400 hover:underline"
+                      >
+                        {city.name}
+                        {idx < region.cities.length - 1 ? ", " : ""}
+                      </Link>
+                    ) : (
+                      <span key={idx}>
+                        {city.name}
+                        {idx < region.cities.length - 1 ? ", " : ""}
+                      </span>
+                    )
+                  )}
                 </span>
               </li>
             ))}

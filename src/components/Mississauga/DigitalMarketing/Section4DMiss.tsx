@@ -61,15 +61,13 @@ const MississaugaSection4: React.FC = () => {
           whileInView={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           viewport={{ once: true }}
-          className="flex-1 relative w-full lg:w-1/2 h-[400px] md:h-[500px] lg:h-[550px]"
+          className="flex-1 relative w-full justify-center items-center lg:w-1/2 h-[400px] md:h-[500px] lg:h-[550px]"
         >
-          <Image
-            src={dashboardImg}
-            alt="Google Ads Overview"
-            fill
-            className="object-contain object-right rounded-l-2xl shadow-2xl"
-            priority
-          />
+          <a href="https://www.google.com/partners/agency?id=2188074075" target="_blank" className="mt-2 flex justify-center">
+            <img src="https://www.gstatic.com/partners/badge/images/2024/PartnerBadgeClickable.svg"
+              alt="Google Partner Badge"
+              className="w-auto h-[450px]" />
+          </a>
         </motion.div>
       </div>
     </section>

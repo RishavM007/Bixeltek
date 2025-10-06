@@ -9,6 +9,7 @@ import {
   HiOutlineChartSquareBar,
   HiOutlineClipboardCheck,
 } from "react-icons/hi";
+import Link from "next/link";
 
 const benefits = [
   {
@@ -74,6 +75,8 @@ const BenefitsSectionTorontoSeo = () => {
             building SEO systems that scale authority, leads, and market share.
           </motion.p>
 
+
+          <Link href="#form">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -81,6 +84,7 @@ const BenefitsSectionTorontoSeo = () => {
           >
             Get Your Free SEO Audit
           </motion.button>
+          </Link>
         </div>
 
         {/* Right Side: Grid */}

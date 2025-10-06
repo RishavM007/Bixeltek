@@ -58,7 +58,7 @@ export default function DMHero() {
               >
                 Book a Free Strategy Call
               </button>
-              <a href="#services">
+              <a href="mailto:zee@bixeltek.com">
                 <button className="px-6 py-3 rounded-full border border-white text-white font-medium hover:bg-white hover:text-black transition">
                   Explore Our Services
                 </button>

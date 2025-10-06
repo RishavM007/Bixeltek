@@ -303,7 +303,7 @@ export const Header = () => {
                   </motion.ul>
                 )}
               </li>
-              <li><Link href="/about-us" className="block py-2 px-4 hover:bg-purple-600 rounded">About Us</Link></li>
+              {/* <li><Link href="/about-us" className="block py-2 px-4 hover:bg-purple-600 rounded">About Us</Link></li> */}
               <li><Link href="/contact-us" className="block py-2 px-4 hover:bg-purple-600 rounded">Contact Us</Link></li>
             </ul>
             <div className=" justify-center  items-center gap-5 py-4">
@@ -537,11 +537,11 @@ export const Header = () => {
                   Blog
                 </Link>
               </li>
-              <li className="flex items-center py-7 lg:inline">
+              {/* <li className="flex items-center py-7 lg:inline">
                 <Link href='/about-us' className="text-white/70 hover:text-white transition">
                   About Us
                 </Link>
-              </li>
+              </li> */}
               <li className="flex items-center py-7 lg:inline">
                 <Link href='/contact-us' className="text-white/70 hover:text-white transition">
                   Contact Us

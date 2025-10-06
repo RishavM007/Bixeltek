@@ -60,7 +60,7 @@ export default function TWHero() {
                 Get a Free Website Consultation
               </button>
               
-              <a href='tel:+91-9100032301'>
+              <a href='mailto:zee@bixeltek.com'>
               <button
                 
                 className="px-6 py-3 rounded-full border border-white text-white font-medium hover:bg-white hover:text-black transition"

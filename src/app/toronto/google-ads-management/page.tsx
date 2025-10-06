@@ -36,7 +36,7 @@ import { LogoTicker2 } from '@/components/GoogleAdsCarousel'
 export default function page() {
   return (
     <>
-      <section className="relative w-full h-[92vh] md:h-[105vh] flex flex-col items-center justify-center overflow-hidden">
+      <section className="relative w-full h-[92vh] md:h-[99vh] flex flex-col items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
         </div>
         <div className="relative z-10 max-w-7xl text-center px-4">

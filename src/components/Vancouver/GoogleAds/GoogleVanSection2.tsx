@@ -41,13 +41,6 @@ export default function GoogleAdsServicesVancouver() {
       link: "#",
     },
     {
-      title: "Remarketing Campaigns",
-      description:
-        "Re-engage past visitors with tailored ads until they convert.",
-      benefit: "Turn visitors into leads and sales.",
-      link: "#",
-    },
-    {
       title: "Continuous Optimization",
       description:
         "A/B testing, keyword pruning, and campaign refinement.",

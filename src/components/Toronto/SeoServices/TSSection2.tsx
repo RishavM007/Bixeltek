@@ -100,7 +100,7 @@ const SEOGridSection2 = () => {
 
                 {/* Text */}
                 <div className="relative z-10 flex flex-col text-left">
-                  <h3 className="text-2xl font-inter font-bold text-black mb-1">
+                  <h3 className={`text-2xl font-inter font-bold mb-1 ${pillar.title === "AI SEO" ? "text-[#A50E0E]" : "text-black"}`}>
                     {pillar.title}
                   </h3>
                   <p className="text-gray-800 text-sm leading-relaxed">

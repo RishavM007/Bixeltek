@@ -87,16 +87,14 @@ export default function GoogleAdsCampaignsVancouver() {
       <div className="max-w-[85%] mx-auto px-6">
         {/* Section Header */}
         <h3 className="text-blue-600 text-sm font-semibold uppercase tracking-wide text-center">
-          Google Ads Campaigns Tailored to Your Business Goals
+          
         </h3>
-        <h2 className="text-3xl md:text-6xl text-white font-bold mt-2 mb-12 text-center ">
-          Different businesses need different approaches. <br />{" "}
-          <span className="text-blue-500">
-            We manage campaigns to ensure your Vancouver business gets results.
+        <h2 className="text-3xl md:text-6xl text-white font-bold mt-2 mb-3 text-center ">
+          Google Ads Campaigns Tailored to  <br /><span className="text-blue-500"> Your Business Goals 
           </span>
         </h2>
         <p className="text-gray-100 text-base md:text-lg mb-12 text-center max-w-3xl mx-auto">
-          We manage the full range of Google Ads campaign types to give your business the right visibility and ROI.
+          Different businesses need different approaches.We manage campaigns to ensure your Vancouver business gets results.
         </p>
 
         {/* Cards Grid */}

@@ -12,7 +12,7 @@ export default function DesignTrustSection() {
     "Strengthens SEO performance and discoverability",
     "Converts visitors into paying customers",
   ];
-
+  
   return (
     <section className="bg-black py-20 px-6 md:px-10 flex flex-col md:flex-row items-center gap-12">
       

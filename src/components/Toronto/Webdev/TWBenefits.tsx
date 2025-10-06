@@ -10,6 +10,7 @@ import {
   HiOutlineClipboardCheck,
   HiOutlineCog,
 } from "react-icons/hi";
+import Link from "next/link";
 
 const benefits = [
   {
@@ -80,14 +81,15 @@ const BenefitsSectionWebDesign = () => {
           >
             Partnering with Bixeltek means solving your website problems while gaining a scalable, high-performing platform that grows alongside your business.
           </motion.p>
-
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold shadow-md"
-          >
-            Get Your Free Website Audit
-          </motion.button>
+          <Link href="/contact-us">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold shadow-md"
+            >
+              Get Your Free Website Audit
+            </motion.button>
+          </Link>
         </div>
 
         {/* Right Side: Grid */}

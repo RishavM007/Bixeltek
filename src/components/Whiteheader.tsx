@@ -403,11 +403,11 @@ export const Whiteheader = () => {
                                         Blog
                                     </Link>
                                 </li>
-                                <li className="flex items-center py-7 lg:inline">
+                                {/* <li className="flex items-center py-7 lg:inline">
                                     <Link href='/about-us' className="text-black hover:text-purple-800 font-semibold transition">
                                         About Us
                                     </Link>
-                                </li>
+                                </li> */}
                                 <li className="flex items-center py-7 lg:inline">
                                     <Link href='/contact-us' className="text-black hover:text-purple-800 font-semibold transition">
                                         Contact Us
@@ -533,7 +533,7 @@ export const Whiteheader = () => {
                             )}
                         </li>
 
-                        <li><Link href="/about-us" className="block py-2 px-4 hover:bg-purple-600 rounded">About Us</Link></li>
+                        {/* <li><Link href="/about-us" className="block py-2 px-4 hover:bg-purple-600 rounded">About Us</Link></li> */}
                     </ul>
                     <div className=" justify-center  items-center gap-5 py-4">
                         <a href="tel:+919100032301">

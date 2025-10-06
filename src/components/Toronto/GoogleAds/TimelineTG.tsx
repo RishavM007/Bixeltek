@@ -5,40 +5,40 @@ const containers = [
     number: '01',
     title: 'Deep Discovery & Market Analysis',
     text: "Map your goals, competitors, and Toronto’s unique search patterns. Leverage Koray Tuğberk’s frameworks for in-depth entity, intent, and audience mapping.",
-    gradient: 'from-blue-500 via-blue-400 to-[black]',
-    color: 'text-blue-500',
+    gradient: 'from-blue-500 via-blue-400 to-transparent',
+    color: 'text-[#4285F4]',
     bgcolor: 'hover:bg-blue-500',
   },
   {
     number: '02',
     title: 'Custom Campaign Strategy',
     text: "Design campaigns and structures for maximum Quality Score and market coverage. Identify highest-converting and most valuable keywords (including long-tail and local-specific terms).",
-    gradient: 'from-green-500 via-teal-400 to-[#13131333]',
-    color: 'text-teal-500',
+    gradient: 'from-green-500 via-teal-400 to-transparent',
+    color: 'text-[#34A853]',
     bgcolor: 'hover:bg-teal-500',
   },
   {
     number: '03',
     title: 'Ad & Landing Page Creation',
     text: "Write persuasive, benefits-first copy. Build Toronto-optimized landing pages with calls-to-action, trust badges, and social proof.",
-    gradient: 'from-yellow-400 via-yellow-300 to-[#13131333]',
-    color: 'text-yellow-500',
+    gradient: 'from-yellow-400 via-yellow-300 to-transparent',
+    color: 'text-[#EA4335]',
     bgcolor: 'hover:bg-yellow-500',
   },
   {
     number: '04',
     title: 'Launch, Tracking, & Measurement',
     text: "Rapid turnaround (5–10 days). Full analytics, call tracking, and lead attribution from the outset.",
-    gradient: 'from-pink-500 via-purple-400 to-[#13131333]',
-    color: 'text-purple-500',
+    gradient: 'from-pink-500 via-purple-400 to-transparent',
+    color: 'text-[#FBBC04]',
     bgcolor: 'hover:bg-purple-500',
   },
   {
     number: '05',
     title: 'Ongoing Optimization',
     text: "Daily adjustments: Negative keyword pruning, bid management, and search term refinement. Weekly/Monthly deep-dive reports and ROI-boosting recommendations.",
-    gradient: 'from-indigo-500 via-indigo-400 to-[#13131333]',
-    color: 'text-indigo-500',
+    gradient: 'from-indigo-500 via-transparent to-transparent',
+    color: 'text-[#4285F4]',
     bgcolor: 'hover:bg-indigo-500',
   },
 ];
@@ -98,7 +98,7 @@ const GradientBorderContainersMobToronto = () => {
                 {/* Call-to-action after last step */}
                 {idx === containers.length - 1 && (
                   <div className="mt-auto absolute -bottom-[20px] flex justify-center w-full">
-                    <a href={'tel:+919100032301'}>
+                    <a href={'mailto:zee@bixeltek.com'}>
                       <button className="px-7 py-3 rounded-2xl bg-blue-600 text-white font-semibold text-sm shadow-lg hover:bg-blue-700 transition">
                         Talk To Our Ads Specialist
                       </button>

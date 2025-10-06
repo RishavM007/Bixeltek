@@ -19,7 +19,7 @@ export default function WhoIsThisServiceFor() {
         {
             heading: "Serve Any Business Type",
             description:
-                "Whether you run a service business, retail shop, clinic, B2B company, or ecommerce store—this system adapts to your needs.",
+                "Whether you run a service business, retail shop, clinic, B2B company, or ecommerce store — our strategy adapts to your needs.",
             highlight: false,
             icon: businessIcon,
         },
@@ -94,8 +94,8 @@ export default function WhoIsThisServiceFor() {
                 <div className="mt-10 text-center">
                     <p className="text-xl text-white">
                         If generating more revenue from every ad dollar matters,{" "}
-                        <span className="font-bold text-blue-500">
-                            Bixeltek’s system is designed for you.
+                        <span className="font-bold text-[#EA4335]">
+                            Our system is designed for you.
                         </span>
                     </p>
                 </div>

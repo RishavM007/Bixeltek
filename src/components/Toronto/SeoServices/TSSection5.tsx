@@ -78,9 +78,11 @@ export default function SEO_BenefitsInteractive() {
 
                             {isActive && (
                                 <div className="absolute bottom-4 left-4">
+                                    <a href="#form">
                                     <button className="px-4 sm:px-6 py-2 sm:py-3 rounded-2xl bg-blue-600 text-white font-semibold text-xs sm:text-sm shadow-lg hover:bg-blue-700 transition">
                                         Book a Free Strategy Call
                                     </button>
+                                    </a>
                                 </div>
                             )}
                         </motion.div>
@@ -96,12 +98,14 @@ export default function SEO_BenefitsInteractive() {
                             {benefit.title}
                         </h3>
                         <p className="text-gray-700 text-sm mt-2">{benefit.description}</p>
-                        
+
                     </div>
                 ))}
-                <button className="mt-4 px-4 py-3 rounded-2xl bg-blue-600 text-white font-semibold text-sm shadow-lg hover:bg-blue-700 transition">
-                            Book a Free Strategy Call
-                        </button>
+                <a href="#form">
+                    <button className="mt-4 px-4 py-3 rounded-2xl bg-blue-600 text-white font-semibold text-sm shadow-lg hover:bg-blue-700 transition">
+                        Book a Free Strategy Call
+                    </button>
+                </a>
             </div>
 
             {/* Image */}

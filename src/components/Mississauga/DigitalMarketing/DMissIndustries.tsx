@@ -3,9 +3,9 @@ import { useState } from "react";
 import Image from "next/image";
 import cleaningcomp from "@/assets/digital marketing servies for cleaning companies.jpg";
 import oil from "@/assets/digital marketing for oil refinaries.jpg"
-import pet from "@/assets/digital marketing for pet stores.jpg"
+import pet from "@/assets/groupmates-lesson.jpg"
 import roofing from "@/assets/digital marketing for roofing industries.jpg"
-import dental from "@/assets/digital marketing for health care practices.jpg"
+import dental from "@/assets/close-up-dentist-instruments (1).jpg"
 import lawncare from "@/assets/digital marketing for lawn care services.jpg"
 import blackcar from "@/assets/digital marketing for car detailers.jpg"
 import healthcare from "@/assets/digital marketing for health care practices.jpg"
@@ -33,11 +33,11 @@ export default function DMIndustriesMiss(): JSX.Element {
     };
 
     return (
-        <section className="pt-5 md:pt-20 pb-0 md:pb-20  bg-[black] z-10 overflow-hidden">
-            <div className="w-full px-4 md:px-0 relative text-center text-white pb-10">
-                <h1 className="text-5xl xl:text-7xl font-bold mb-2">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-500">
-                       Digital Marketing for Every Industry<br></br> in Mississauga
+        <section className="md:pt-20 mt-10 md:pb-20  bg-[black] z-10 overflow-hidden">
+            <div className="w-full relative text-center text-white pb-10">
+                <h1 className="text-3xl md:text-5xl mx-auto max-w-[90%] md:max-w-full xl:text-7xl font-bold mb-2">
+                    <span className=" text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-500">
+                        Digital Marketing for Every Industry <br></br> in Mississauga
                     </span>
                 </h1>
                 {/* <h1 className="text-5xl xl:text-7xl font-bold mb-4">
@@ -46,7 +46,7 @@ export default function DMIndustriesMiss(): JSX.Element {
                     </span>
                 </h1> */}
                 <p className="text-[16px] xl:text-lg text-gray-50 max-w-[100%] md:max-w-2xl mx-auto">
-                      Every industry faces unique challenges. We design strategies tailored to the business landscape in Mississauga.
+   Every industry faces unique challenges. We design strategies tailored to the business landscape in Mississauga.
                 </p>
             </div>
             <div className="carousel-container md:pl-[500px] relative w-full overflow-hidden">
@@ -66,21 +66,21 @@ export default function DMIndustriesMiss(): JSX.Element {
                             id: "auto",
                             img: blackcar,
                             label: "Digital Marketing for Automobiles",
-                            text: "Automobile industries",
+                            text: "Automobile industry",
                             description: "Maps optimization + hyperlocal PPC to drive more calls and foot traffic.",
                         },
                         {
                             id: "cleaning",
                             img: cleaningcomp,
                             label: "Digital Marketing for Cleaning Companies",
-                            text: "Cleaning Industries",
+                            text: "Cleaning Industry",
                             description: "Maps optimization + hyperlocal PPC to drive more calls and foot traffic.",
                         },
                         {
                             id: "roofing",
                             img: roofing,
                             label: "Digital Marketing for Roofing Companies",
-                            text: "Roofing Industries",
+                            text: "Roofing Industry",
                             description: "High-ticket lead funnels built for real estate and project-based services.",
                         },
                         {
@@ -101,14 +101,14 @@ export default function DMIndustriesMiss(): JSX.Element {
                             id: "pet",
                             img: pet,
                             label: "Digital Marketing for Pet Stores",
-                            text: "Pet Stores",
+                            text: "Educational Institutes",
                             description: "Product SEO, performance ads & retargeting funnels to scale sales.",
                         },
                         {
                             id: "oil",
                             img: oil,
                             label: "Digital Marketing for Oil Refineries",
-                            text: "Oil Refineries",
+                            text: "Oil and Gas Industry",
                             description: "Paid growth loops, demo-booking strategies, and B2B marketing that closes deals.",
                         }
                     ].map(({ id, img, label, text, description }) => (
@@ -135,7 +135,7 @@ export default function DMIndustriesMiss(): JSX.Element {
                             <motion.div
                                 variants={{
                                     rest: { opacity: 0.1 },
-                                    hover: { opacity: 0.25 }
+                                    hover: { opacity: 0.45 }
                                 }}
                                 transition={{ duration: 0.3 }}
                                 className="absolute top-0  left-0 w-full h-full bg-black z-10 rounded-lg"

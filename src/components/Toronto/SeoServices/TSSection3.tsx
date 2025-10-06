@@ -9,7 +9,7 @@ import { Check } from "lucide-react";
 export default function WhySEOMattersToronto() {
     const points = [
         "Over 90% of customer journeys begin with search.",
-        "Businesses on page one capture the majority of traffic and leads.",
+        "Businesses ranking on page #1 capture the majority of traffic and leads.",
         'Local “near me” searches are increasing year over year.',
         "AI-driven search engines are already shaping discovery — and SEO positions you to be included.",
     ];
@@ -27,7 +27,7 @@ export default function WhySEOMattersToronto() {
                 >
                     {/* Heading */}
                     <h2 className="text-3xl md:text-6xl font-bold font-inter leading-snug mb-6">
-                        Why <span className="text-blue-500">SEO Is Critical</span> for Toronto Businesses
+                        Why <span className="text-blue-500">Local SEO Is Critical</span> for Your Business
                     </h2>
 
                     {/* Intro */}

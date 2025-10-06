@@ -60,12 +60,14 @@ export default function HeroGMiss() {
               >
                 Get a Free Ads Audit
               </button>
+              <a href="mailto:zee@bixeltek.com">
               <button
-                onClick={toggleContactForm}
+              
                 className="px-6 py-3 rounded-full border border-white text-white font-medium hover:bg-white hover:text-black transition"
               >
                 Book a Strategy Call
               </button>
+              </a>
             </div>
           </div>
         </div>

@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function WhyGoogleAdsToronto() {
     return (
-        <section className="w-full mt-0 bg-black text-gray-100 py-0 md:py-10 lg:py-20 overflow-hidden">
+        <section className="w-full mt-0 bg-black text-gray-100 py-0 md:py-10 lg:py-10 overflow-hidden">
             <div className="flex flex-col lg:flex-row items-center lg:items-start">
 
                 {/* LEFT IMAGE */}
@@ -47,8 +47,8 @@ export default function WhyGoogleAdsToronto() {
 
                     <ul className="space-y-4 mb-8">
                         <li className="flex gap-3">
-                            <span className="text-blue-500">✔</span> Reach people at the exact moment they search for your service
-                            (“dentist in Toronto,” “roof repair near me,” “best ecommerce store”).
+                            <span className="text-blue-500">✔</span> Reach people at the exact moment they search for your services like
+                            "dentist in Toronto", “roof repair near me", “best shoes online”.
                         </li>
                         <li className="flex gap-3">
                             <span className="text-blue-500">✔</span> Control your budget with pay-per-click (PPC) bidding.
@@ -65,7 +65,7 @@ export default function WhyGoogleAdsToronto() {
                     <motion.div>
                         <Link href={"#form"}>
                             <button className="px-7 py-3 rounded-2xl bg-blue-600 text-white font-semibold text-sm shadow-lg hover:bg-blue-700 transition">
-                                Book a Free Strategy Call
+                                Book A Free Strategy Call
                             </button>
                         </Link>
                     </motion.div>

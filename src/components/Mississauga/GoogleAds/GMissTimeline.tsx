@@ -65,7 +65,7 @@ const GMissTimeline = () => {
       {/* MOBILE VERSION */}
       <div className="space-y-10 md:hidden">
         {containers.map((item, idx) => (
-          <div key={idx} className="flex flex-col items-start">
+          <div key={idx} className="flex flex-col p-6 items-start">
             <p className={`${item.color} text-5xl font-bold mb-2`}>{item.number}</p>
             <h2 className="text-xl font-bold text-white mb-2">{item.title}</h2>
             <p className="text-gray-300">{item.text}</p>
@@ -107,7 +107,7 @@ const GMissTimeline = () => {
                 {/* Call-to-action after last step */}
                 {idx === containers.length - 1 && (
                   <div className="mt-auto absolute -bottom-[20px] flex justify-center w-full">
-                    <a href={'tel:+919100032301'}>
+                    <a href={'mailto:zee@bixeltek.com'}>
                       <button className="px-7 py-3 rounded-2xl bg-blue-600 text-white font-semibold text-sm shadow-lg hover:bg-blue-700 transition">
                         Talk To Our Ads Specialist
                       </button>

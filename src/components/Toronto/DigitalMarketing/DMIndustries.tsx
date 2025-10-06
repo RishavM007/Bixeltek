@@ -3,9 +3,9 @@ import { useState } from "react";
 import Image from "next/image";
 import cleaningcomp from "@/assets/digital marketing servies for cleaning companies.jpg";
 import oil from "@/assets/digital marketing for oil refinaries.jpg"
-import pet from "@/assets/digital marketing for pet stores.jpg"
+import pet from "@/assets/groupmates-lesson.jpg"
 import roofing from "@/assets/digital marketing for roofing industries.jpg"
-import dental from "@/assets/digital marketing for health care practices.jpg"
+import dental from "@/assets/close-up-dentist-instruments (1).jpg"
 import lawncare from "@/assets/digital marketing for lawn care services.jpg"
 import blackcar from "@/assets/digital marketing for car detailers.jpg"
 import healthcare from "@/assets/digital marketing for health care practices.jpg"
@@ -66,21 +66,21 @@ export default function DMIndustries(): JSX.Element {
                             id: "auto",
                             img: blackcar,
                             label: "Digital Marketing for Automobiles",
-                            text: "Automobile industries",
+                            text: "Automobile industry",
                             description: "Maps optimization + hyperlocal PPC to drive more calls and foot traffic.",
                         },
                         {
                             id: "cleaning",
                             img: cleaningcomp,
                             label: "Digital Marketing for Cleaning Companies",
-                            text: "Cleaning Industries",
+                            text: "Cleaning Industry",
                             description: "Maps optimization + hyperlocal PPC to drive more calls and foot traffic.",
                         },
                         {
                             id: "roofing",
                             img: roofing,
                             label: "Digital Marketing for Roofing Companies",
-                            text: "Roofing Industries",
+                            text: "Roofing Industry",
                             description: "High-ticket lead funnels built for real estate and project-based services.",
                         },
                         {
@@ -101,14 +101,14 @@ export default function DMIndustries(): JSX.Element {
                             id: "pet",
                             img: pet,
                             label: "Digital Marketing for Pet Stores",
-                            text: "Pet Stores",
+                            text: "Educational Institutes",
                             description: "Product SEO, performance ads & retargeting funnels to scale sales.",
                         },
                         {
                             id: "oil",
                             img: oil,
                             label: "Digital Marketing for Oil Refineries",
-                            text: "Oil Refineries",
+                            text: "Oil and Gas Industry",
                             description: "Paid growth loops, demo-booking strategies, and B2B marketing that closes deals.",
                         }
                     ].map(({ id, img, label, text, description }) => (
@@ -135,7 +135,7 @@ export default function DMIndustries(): JSX.Element {
                             <motion.div
                                 variants={{
                                     rest: { opacity: 0.1 },
-                                    hover: { opacity: 0.25 }
+                                    hover: { opacity: 0.45 }
                                 }}
                                 transition={{ duration: 0.3 }}
                                 className="absolute top-0  left-0 w-full h-full bg-black z-10 rounded-lg"

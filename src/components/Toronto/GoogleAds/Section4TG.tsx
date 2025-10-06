@@ -20,7 +20,7 @@ const WhyGoogleAdsToronto2: React.FC = () => {
           className="flex-1 lg:w-1/2 px-8 lg:px-16 md:mb-10 lg:mb-0"
         >
           <h2 className="text-3xl md:text-6xl font-bold font-inter leading-snug mb-6">
-            Why Toronto Businesses Can’t<br></br> Ignore <span className="text-blue-500">Google Ads</span>
+            Why Businesses Can’t Ignore <span className="text-blue-500">Google Ads</span>
           </h2>
 
           <p className="text-gray-300 mb-6 font-poppins leading-relaxed max-w-2xl">

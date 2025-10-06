@@ -10,7 +10,7 @@ const GoogleAdsMarquee: React.FC = () => {
     "Remarketing That Works",
     "Landing Pages That Convert",
     "Reduce Wasted Spend",
-    "Scale Your Toronto Ads",
+    "Increased Phone Calls",
     "Dominate Google Search Results",
   ];
 

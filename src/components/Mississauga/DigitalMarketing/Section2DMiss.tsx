@@ -61,7 +61,7 @@ export default function SEO_BenefitsInteractive() {
             </div>
 
             {/* DESKTOP: Expanding horizontal cards */}
-            <div className="hidden md:flex justify-start gap-4 overflow-visible mb-16 px-4 sm:px-8">
+            <div className="hidden md:flex justify-center gap-4 overflow-visible mb-16 px-4 sm:px-8">
                 {benefits.map((benefit, idx) => {
                     const isActive = activeIndex === idx;
                     return (
@@ -69,13 +69,13 @@ export default function SEO_BenefitsInteractive() {
                             key={idx}
                             layout
                             onMouseEnter={() => setActiveIndex(idx)}
-                            className={`relative flex-shrink-0 cursor-pointer overflow-hidden border border-gray-200 bg-white p-4 ${isActive ? "rounded-3xl" : "rounded-full"}`}
+                            className={`relative flex-shrink-0 cursor-pointer h-[400px] overflow-hidden border border-gray-200 bg-white p-4 ${isActive ? "rounded-3xl" : "rounded-full"}`}
                             initial={{ width: "60px" }}
                             animate={{ width: isActive ? "300px" : "60px" }}
                             transition={{ type: "spring", stiffness: 300, damping: 30 }}
                         >
                             <motion.div
-                                className="font-semibold absolute left-4 bottom-0 font-inter transition-all duration-300 ease-in-out whitespace-nowrap"
+                                className="font-semibold absolute left-6 bottom-0 font-inter transition-all duration-300 ease-in-out whitespace-nowrap"
                                 style={{ color: googleColors[idx % googleColors.length] }}
                                 animate={{
                                     rotate: isActive ? 0 : -90,
@@ -102,9 +102,11 @@ export default function SEO_BenefitsInteractive() {
 
                             {isActive && (
                                 <div className="absolute bottom-4 left-4">
+                                    <a href="#form">
                                     <button className="px-4 sm:px-6 py-2 sm:py-3 rounded-2xl bg-blue-600 text-white font-semibold text-xs sm:text-sm shadow-lg hover:bg-blue-700 transition">
-                                        Book a Free Strategy Call
+                                        Book A Free Strategy Call
                                     </button>
+                                    </a>
                                 </div>
                             )}
                         </motion.div>
@@ -134,7 +136,7 @@ export default function SEO_BenefitsInteractive() {
                     </motion.div>
                 ))}
                 <button className="mt-4 px-4 py-3 rounded-2xl bg-blue-600 text-white font-semibold text-sm shadow-lg hover:bg-blue-700 transition">
-                            Book a Free Strategy Call
+                            Book A Free Strategy Call
                         </button>
             </div>
 

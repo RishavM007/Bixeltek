@@ -66,7 +66,7 @@ export default function ServicesToronto() {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`relative w-full h-80 border border-gray-800 bg-black/10 hover:bg-blue-600 transition-all duration-300 flex flex-col justify-center items-center p-10 md:p-16`}
+              className={`relative w-full group h-80 border border-gray-800 bg-black/10 hover:bg-blue-600 transition-all duration-300 flex flex-col justify-center items-center p-10 md:p-16`}
             >
               <h3 className="text-white text-2xl font-bold text-center mb-2">{service.title}</h3>
               <p className="text-gray-300 text-sm text-center">{service.description}</p>
