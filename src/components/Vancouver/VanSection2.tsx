@@ -7,7 +7,7 @@ import peopleImg from '@/assets/vancouver-1.jpg';
 
 export default function BusinessStrugglesVancouver() {
     return (
-        <section className="relative mt-[-70px] md:mt-0 py-0 md:py-20 bg-black">
+        <section className="relative mt-[-70px] md:mt-0 py-0 md:py-10 bg-black">
             <div className="flex flex-col md:flex-row items-center">
                 
                 {/* ✅ Left Content */}
@@ -66,7 +66,7 @@ export default function BusinessStrugglesVancouver() {
                 </div>
 
                 {/* ✅ Right Blue/Image Container */}
-                <div className="relative w-full md:w-2/5 h-[300px] mt-[-80px] md:mt-[-80px] rounded-l-[40px] bg-transparent md:bg-blue-600 flex justify-start items-center">
+                <div className="relative w-full md:w-2/5 h-[300px] md:h-[500px] mt-[-80px] md:mt-[-80px] rounded-l-[40px] bg-transparent md:bg-blue-600 flex justify-start items-center">
                     <div className="w-full h-full py-16 pr-0 pl-6 md:pl-12 flex justify-start relative">
                         <div className="absolute md:-left-20 w-[90%] md:w-[90%]">
                             <Image

@@ -436,8 +436,8 @@ export const Header = () => {
                 </ul>
               </li>
               <li className="flex group relative items-center py-7">
-                <Link href="#" className="text-white/70 hover:text-white transition">
-                  Locations
+                <Link href="#" className="text-white/70 flex justify-center items-center hover:text-white transition">
+                  Locations <HiChevronDown className="text-sm" />
                 </Link>
 
                 {/* Mega Menu */}

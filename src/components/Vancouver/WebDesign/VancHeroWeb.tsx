@@ -23,7 +23,7 @@ export default function HeroWebDesignVancouver() {
 
   return (
     <>
-      <section className="relative flex flex-col items-center justify-center h-[140vh] md:h-[100vh] bg-black text-center px-6 overflow-hidden">
+      <section className="relative flex flex-col items-center justify-center h-[150vh] md:h-[100vh] bg-black text-center px-6 overflow-hidden">
         <div className="flex justify-center items-center">
           <div className="relative z-10 mt-40 max-w-7xl">
             
@@ -41,11 +41,11 @@ export default function HeroWebDesignVancouver() {
             </p>
 
             {/* ✅ Highlights / Stats Cards */}
-            <div className="mt-8 flex flex-wrap justify-center gap-8">
+            <div className="mt-8 flex flex-wrap justify-center gap-2">
               {highlights.map((point) => (
                 <div
                   key={point.id}
-                  className="flex flex-col md:flex-row justify-center items-center gap-4 text-white max-w-[250px] p-4 border-2 border-transparent rounded-2xl transition-all duration-300"
+                  className="flex flex-col md:flex-row justify-center items-center gap-2 text-white max-w-[250px] p-4 border-2 border-transparent rounded-2xl transition-all duration-300"
                 >
                   <Image
                     src={point.icon}
@@ -67,9 +67,9 @@ export default function HeroWebDesignVancouver() {
               >
                 Get a Free Website Consultation
               </button>
-              <a href="/portfolio">
+              <a href="mailto:zee@bixeltek.com">
                 <button className="px-6 py-3 rounded-full border border-white text-white font-medium hover:bg-white hover:text-black transition">
-                  See Our Work
+                  Get In Touch With Us
                 </button>
               </a>
             </div>

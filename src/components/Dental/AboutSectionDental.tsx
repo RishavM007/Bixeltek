@@ -36,9 +36,7 @@ export default function ExperienceSection() {
                        
 
                         {/* Icon & Challenges */}
-                        <div className="w-16 h-16 mb-4 p-2 bg-blue-100 flex items-center justify-center rounded-md">
-                            <Image src={icon} alt="icon" />
-                        </div>
+                       
                         <h3 className="text-xl md:text-2xl font-semibold mb-4">
                             The Challenges Your Practice Faces
                         </h3>
@@ -66,7 +64,7 @@ export default function ExperienceSection() {
                             </li>
                         </ul>
 
-                        <Link href={"tel:+9191000323011"}>
+                        <Link href={"tel:+919100032301"}>
                             <button className="inline-block border border-blue-600 text-blue-700 font-medium px-6 py-3 rounded-md hover:bg-blue-700 hover:text-white transition">
                                 Call Us Right Now
                             </button>

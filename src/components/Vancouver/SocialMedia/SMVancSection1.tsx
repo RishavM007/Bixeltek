@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import socialImg1 from "@/assets/smv1.jpg"; 
-import socialImg2 from "@/assets/smv2.jpg"; 
-import socialImg3 from "@/assets/smv3.jpg"; 
+import socialImg1 from "@/assets/smv1.jpg";
+import socialImg2 from "@/assets/smv2.jpg";
+import socialImg3 from "@/assets/smv3.jpg";
 import { Check } from "lucide-react";
 import { motion } from "framer-motion";
 import rotimage from '@/assets/Text-Round.png'
@@ -56,7 +56,7 @@ export default function VancouverSocialCitySection() {
                 </div>
 
                 {/* ✅ RIGHT IMAGE */}
-                <div className="flex-1 relative flex flex-col md:flex-row justify-center items-stretch gap-5">
+                <div className="flex-1 w-full lg:w-1/2 relative flex flex-col md:flex-row justify-center items-stretch gap-5">
                     <motion.div
                         className="absolute left-[35%] top-[37%]  -translate-x-1/2 -translate-y-1/2 z-20"
                         animate={{ rotate: 360 }}
@@ -71,7 +71,7 @@ export default function VancouverSocialCitySection() {
                             alt="Rotating graphic"
                             width={190}
                             height={190}
-                            className=" select-none pointer-events-none"
+                            className=" hidden lg:block select-none pointer-events-none"
                         />
                     </motion.div>
                     {/* LEFT — Ground-touching main image */}
@@ -81,12 +81,12 @@ export default function VancouverSocialCitySection() {
                             alt="Social media marketing in Vancouver"
                             width={600}
                             height={700}
-                            className="w-full h-auto rounded-2xl shadow-lg hover:scale-[1.02] transition-transform duration-500 object-cover"
+                            className="w-[90%] mx-auto md:w-full md:h-auto rounded-2xl shadow-lg hover:scale-[1.02] transition-transform duration-500 object-cover"
                         />
                     </div>
 
                     {/* RIGHT — Two stacked images */}
-                    <div className="flex w-full md:w-1/2 flex-col gap-5">
+                    <div className="hidden md:flex w-full md:w-1/2 flex-col gap-5">
                         <div className="flex-1">
                             <Image
                                 src={socialImg2}

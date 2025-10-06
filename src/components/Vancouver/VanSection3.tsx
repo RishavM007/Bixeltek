@@ -24,7 +24,7 @@ export default function ServicesVancouver() {
       description:
         "An outdated site costs you trust and conversions. We design SEO-ready, mobile-first websites that convert.",
       benefit: "Stronger brand presence and higher conversions.",
-      link: "vancouver/web-design",
+      link: "vancouver/web-design-services",
     },
     {
       title: "Social Media Marketing",
@@ -38,14 +38,14 @@ export default function ServicesVancouver() {
       description:
         "Without data, you’re guessing. We set up full tracking, analyze performance, and optimize for ROI.",
       benefit: "Smarter decisions, higher ROI.",
-      link: "vancouver/analytics-cro",
+      link: "#",
     },
     {
       title: "Branding & Graphic Design",
       description:
         "Weak branding creates confusion. We design cohesive brand assets that elevate your business.",
       benefit: "Professional identity that stands out.",
-      link: "vancouver/branding",
+      link: "#",
     },
   ];
 
@@ -81,9 +81,9 @@ export default function ServicesVancouver() {
               <p className="text-gray-300 text-sm text-center mb-3">
                 {service.description}
               </p>
-              <p className="text-blue-400 group-hover:text-white group-hover:font-bold text-xs italic text-center mb-3">
+              {/* <p className="text-blue-400 group-hover:text-white group-hover:font-bold text-xs italic text-center mb-3">
                 Benefit: {service.benefit}
-              </p>
+              </p> */}
               <Link href={service.link}>
                 <p className="text-blue-500 group-hover:text-white text-sm mt-2 hover:font-semibold">
                   Discover More

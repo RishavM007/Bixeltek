@@ -95,7 +95,7 @@ export default function SeoChooseVancSection() {
                     </div>
                 </div>
             </div>
-            <div className="mt-16 flex flex-wrap justify-center gap-32">
+            <div className="mt-16 flex flex-wrap justify-center gap-10 md:gap-24 lg:gap-32">
                 <Image src={google} alt="google" className="h-20 w-32 object-contain" />
                 <Image src={meta} alt="meta" className="h-20 w-32 object-contain" />
                 <Image src={hub} alt="hub" className="h-20 w-32 object-contain" />

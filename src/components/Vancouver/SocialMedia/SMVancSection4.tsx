@@ -15,7 +15,7 @@ export default function SocialTrustSection() {
     ];
 
     return (
-        <section className="bg-black max-w-[85%] mx-auto py-20 px-6 md:px-10 flex flex-col md:flex-row items-center justify-center gap-12">
+        <section className="bg-black sm:max-w-[95%] md:max-w-[85%] mx-auto py-10 md:py-20 px-6 md:px-10 flex flex-col md:flex-row items-center justify-center gap-12">
             {/* Left Side - Text */}
             <div className="md:w-1/2 text-white flex flex-col gap-6">
                 <h2 className="text-4xl md:text-5xl font-bold leading-tight">
@@ -51,7 +51,7 @@ export default function SocialTrustSection() {
             </div>
 
             {/* Right Side - Image */}
-            <div className="md:w-1/2 flex justify-center">
+            <div className="w-full md:w-1/2 flex justify-center">
                 <Image
                     src={socialImg}
                     alt="Social media marketing in Vancouver"

@@ -8,8 +8,8 @@ export default function AreasWeServeCanadaTW() {
     {
       title: "Toronto & GTA",
       cities: [
-        { name: "Toronto", link: "/toronto/digital-marketing" },
-        { name: "Mississauga", link: "/mississauga/digital-marketing" },
+        { name: "Toronto", link: "/toronto" },
+        { name: "Mississauga", link: "/mississauga" },
         { name: "Brampton" },
         { name: "Vaughan" },
         { name: "Markham" },
