@@ -66,7 +66,7 @@ export default function HeroSocialMediaVancouver() {
             >
               Get a Free Strategy Call
             </button>
-            <a href="#form">
+            <a href="mailto:zee@bixeltek.com">
               <button className="px-6 py-3 rounded-full border border-white text-white font-medium hover:bg-white hover:text-black transition">
                 Get In Touch With Us
               </button>

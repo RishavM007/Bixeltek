@@ -26,21 +26,26 @@ export default function SeoChooseVancSection() {
             <div className="max-w-[94%] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                 {/* Left Content */}
                 <div className="text-center lg:text-left">
-                    <h2 className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">
+                    <h3 className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">
                         Why Choose Us
-                    </h2>
-                    <h3 className="text-3xl md:text-5xl  font-bold text-gray-900 leading-snug mb-4">
-                        A Google Partner SEO Agency <br /> <span className="text-blue-500">Built for ROI</span>
                     </h3>
-                    <p className="text-lg max-w-xl text-gray-600 mb-8">
+                    <h2 className="text-3xl md:text-5xl  font-bold text-gray-900 leading-snug mb-4">
+                        A Google Partner SEO Agency <br /> <span className="text-blue-500">Built for ROI</span>
+                    </h2>
+                    <p className="text-lg max-w-xl text-gray-600 mb-4">
                         With 4+ years of SEO experience and a 90% client retention rate,{" "}
                         <span className="font-semibold text-gray-900">Bixeltek</span> has
                         become a trusted partner for businesses across Canada. We focus on
                         metrics that matter — traffic, leads, and conversions — not vanity
                         rankings.
                     </p>
+                    <a href="https://www.google.com/partners/agency?id=2188074075" target="_blank" className="mt-2 flex justify-center md:justify-start">
+                        <img src="https://www.gstatic.com/partners/badge/images/2024/PartnerBadgeClickable.svg"
+                            alt="Google Partner Badge"
+                            className="w-auto h-20" />
+                    </a>
                     <a href="mailto:zee@bixltek.com">
-                        <button className="px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-800 text-gray-100 font-medium transition">
+                        <button className="px-6 py-3 mt-5 rounded-full bg-blue-600 hover:bg-blue-800 text-gray-100 font-medium transition">
                             Get Free Proposal
                         </button>
                     </a>
@@ -94,12 +99,6 @@ export default function SeoChooseVancSection() {
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div className="mt-16 flex flex-wrap justify-center gap-10 md:gap-24 lg:gap-32">
-                <Image src={google} alt="google" className="h-20 w-32 object-contain" />
-                <Image src={meta} alt="meta" className="h-20 w-32 object-contain" />
-                <Image src={hub} alt="hub" className="h-20 w-32 object-contain" />
-                <Image src={tiktok} alt="tiktok" className="h-20 w-32 object-contain" />
             </div>
 
         </section>

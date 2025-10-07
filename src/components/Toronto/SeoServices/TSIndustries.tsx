@@ -12,7 +12,7 @@ import healthcare from "@/assets/digital marketing for health care practices.jpg
 import { motion } from 'framer-motion'
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
-export default function IndustryCarouselSectionWeb(): JSX.Element {
+export default function IndustriesTS(): JSX.Element {
     const [carouselOffset, setCarouselOffset] = useState<number>(0);
 
     const cardWidth: number = 450;
@@ -37,15 +37,14 @@ export default function IndustryCarouselSectionWeb(): JSX.Element {
             <div className="w-full relative text-center text-white pb-10">
                 <h1 className="text-3xl md:text-5xl mx-auto max-w-[90%] md:max-w-full xl:text-7xl font-bold mb-2">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-500">
-                        Web Development Solutions <br></br> Tailored for Every Industry
+                        SEO Services in Toronto <br></br> That Drive Traffic, Leads, and Growth
                     </span>
                 </h1>
                 <p className="text-[16px] xl:text-lg text-gray-50 max-w-[100%] md:max-w-2xl mx-auto">
-                    Every industry has its own goals, users, and digital challenges.
-                    Our team builds websites and web apps that align with each sector’s unique needs — whether it’s e-commerce, healthcare, real estate, education, or tech startups.
-                    We translate business objectives into seamless digital experiences that deliver results.
+                    From local startups to large enterprises, our SEO strategies are built to boost visibility, rank higher on Google, and attract your ideal Toronto audience.
                 </p>
             </div>
+
             <div className="carousel-container md:pl-[500px] relative w-full overflow-hidden">
                 <div
                     className="carousel flex gap-6 px-8 w-max transform transition-transform duration-500"

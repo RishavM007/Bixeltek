@@ -41,12 +41,6 @@ export default function WebDesignServicesVancouver() {
         "Ongoing performance monitoring, updates, and support to ensure your website stays secure, fast, and fully functional.",
       link: "#",
     },
-    {
-      title: "Website Accessibility & Compliance",
-      description:
-        "Ensure your website meets accessibility standards and legal compliance, making it usable for all visitors.",
-      link: "#",
-    },
   ];
 
   return (

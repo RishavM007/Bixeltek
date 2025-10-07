@@ -86,11 +86,8 @@ export default function AreasWeServeCanadaVanc() {
 
         {/* Right Side - Map */}
         <div className="w-full h-[500px] rounded-2xl overflow-hidden shadow-lg">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d166655.41811004592!2d-123.28871046916251!3d49.25761824332818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673f143a94fb3%3A0xbb9196ea9b81f38b!2z4KS14KWI4KSC4KSV4KWC4KS14KSwLCDgpKzgpY3gpLDgpL_gpJ_gpL_gpLYg4KSV4KWL4KSy4KSC4KSs4KS_4KSv4KS-LCDgpJXgpYXgpKjgpKHgpL4!5e0!3m2!1smr!2sin!4v1759589594976!5m2!1smr!2sin" 
-          width="600"
-            height="450"
-            loading="lazy"
-            className="min-h-[500px] w-full"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d166655.41811004592!2d-123.28871046916251!3d49.25761824332818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673f143a94fb3%3A0xbb9196ea9b81f38b!2sVancouver%2C%20BC%2C%20Canada!5e0!3m2!1sen!2sin!4v1759822935133!5m2!1sen!2sin" 
+          width="600" height="450"  loading="lazy" className="min-h-[500px] w-full" ></iframe>
         </div>
       </div>
     </section>

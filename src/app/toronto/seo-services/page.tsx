@@ -23,7 +23,6 @@ import MovingBlob from '@/components/Toronto/GoogleAds/BlobTG'
 import SEOGridSection2 from '@/components/Toronto/SeoServices/TSSection2'
 import WhySEOMattersToronto from '@/components/Toronto/SeoServices/TSSection3'
 import SEOcategoryServicesToronto from '@/components/Toronto/SeoServices/TSSection4'
-import IndustryCarouselSectionWeb from '@/components/WebDev/WebDevInd'
 import AreasWeServeCanada from '@/components/Toronto/SeoServices/AreasWeServeTS'
 import SEO_BenefitsGrid from '@/components/Toronto/SeoServices/TSSection5'
 import BenefitsSectionTorontoSeo from '@/components/Toronto/SeoServices/TSSection6'
@@ -31,6 +30,7 @@ import TSFaq from '@/components/Toronto/SeoServices/TSFaq'
 import GradientBorderContainersSEO from '@/components/Toronto/SeoServices/TSTimeline'
 import ContactFromNew from '@/components/ContactFormNew';
 import Link from 'next/link';
+import IndustriesTS from '@/components/Toronto/SeoServices/TSIndustries';
 export default function page() {
   return (
     <>
@@ -40,7 +40,7 @@ export default function page() {
       <SEOGridSection2 />
       <WhySEOMattersToronto />
       <SEOcategoryServicesToronto />
-      <IndustryCarouselSectionWeb />
+      <IndustriesTS/>
       <GradientBorderContainersSEO />
       <SEO_BenefitsGrid />
       <BenefitsSectionTorontoSeo />

@@ -48,7 +48,7 @@ export default function WhyGoogleAdsToronto() {
                     <ul className="space-y-4 mb-8">
                         <li className="flex gap-3">
                             <span className="text-blue-500">✔</span> Reach people at the exact moment they search for your services like
-                            "dentist in Toronto", “roof repair near me", “best shoes online”.
+                            &quot;dentist in Toronto&quot;, &quot;roof repair near me&quot;, &quot;best shoes online&quot;.
                         </li>
                         <li className="flex gap-3">
                             <span className="text-blue-500">✔</span> Control your budget with pay-per-click (PPC) bidding.
