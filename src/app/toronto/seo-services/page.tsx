@@ -29,7 +29,6 @@ import BenefitsSectionTorontoSeo from '@/components/Toronto/SeoServices/TSSectio
 import TSFaq from '@/components/Toronto/SeoServices/TSFaq'
 import GradientBorderContainersSEO from '@/components/Toronto/SeoServices/TSTimeline'
 import ContactFromNew from '@/components/ContactFormNew';
-import Link from 'next/link';
 import IndustriesTS from '@/components/Toronto/SeoServices/TSIndustries';
 export default function page() {
   return (

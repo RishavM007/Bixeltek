@@ -6,6 +6,7 @@ import Script from "next/script";
 import ScrollToTopButton from "@/components/ScrollToTop";
 import "./globals.css";
 import { Preloader } from "@/components/Preloader";
+import DemoPopup from "@/components/CTApopup";
 import TransitionProvider from "@/components/TransitionProvider";
 import PageTransition from "@/components/PageLoader";
 import Loader from "@/components/Loader";
@@ -184,6 +185,7 @@ export default function RootLayout({
       <Loader/>
          {children}
         {/* Floating WhatsApp Button */}
+        <DemoPopup />
         <ScrollToTopButton/>
 
       </body>
