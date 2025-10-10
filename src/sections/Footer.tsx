@@ -9,10 +9,10 @@ import { Mail } from 'lucide-react';
 export const Footer = () => {
   return (
     <footer className="w-full pt-0 pb-16">
-      <div className="mx-auto max-w-[90%] px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[97%] px-4 sm:px-6 lg:px-8">
         <Newsletter />
         <div className="grid grid-cols-2 min-[690px]:grid-cols-4 lg:grid-cols-6 gap-4 xl:gap-8 pt-14 pb-10 max-w-xs mx-auto min-[690px]:max-w-2xl lg:max-w-full">
-          <div className="col-span-full mb-10 lg:col-span-2 lg:mb-0">
+          <div className="col-span-full mb-10 lg:col-span-1  lg:mb-0">
             <Image src='/BIXELTEKLOGO.png' alt="logo" width={100}
               height={40} className="w-auto h-16"></Image>
 
@@ -29,10 +29,10 @@ export const Footer = () => {
             </div>
             <div className="text-white mb-4 flex flex-col gap-3 mt-8">
               <a href="tel:+919100032301">
-                <p className="text-white text-lg hover:text-purple-500 flex gap-3"><PhoneCall className="text-blue-500"/> +91 9100032301</p>
+                <p className="text-white text-lg hover:text-purple-500 flex gap-3"><PhoneCall className="text-blue-500" /> +91 9100032301</p>
               </a>
               <a href="mailto:hello@bixeltek.com">
-                <p className="text-white text-lg hover:text-purple-500 flex gap-3"><Mail className="text-blue-500"/>hello@bixeltek.com</p>
+                <p className="text-white text-lg hover:text-purple-500 flex gap-3"><Mail className="text-blue-500" />hello@bixeltek.com</p>
               </a>
             </div>
 
@@ -72,13 +72,16 @@ export const Footer = () => {
             </ul>
           </div>
           <div className="lg:mx-auto text-left ">
-            <h4 className="text-lg text-gray-100 font-medium mb-7">Our Certifications</h4>
-            <ul className="text-sm  transition-all duration-500">
+            <h4 className="text-lg text-gray-100 font-medium mb-7">Certifications & Recognitions</h4>
+            <ul className="text-sm flex gap-10  transition-all duration-500">
               <li className="mb-6"><a href="https://www.google.com/partners/agency?id=2188074075" target="_blank" className="mt-2 flex justify-start">
                 <img src="https://www.gstatic.com/partners/badge/images/2024/PartnerBadgeClickable.svg"
                   alt="Google Partner Badge"
-                  className="w-auto h-20" />
+                  className="w-auto h-24" />
               </a></li>
+              <li>
+                <div><a target="_blank" href="https://www.goodfirms.co/company/bixeltek"> <img src="https://assets.goodfirms.co/badges/color-badge/top-digital-marketing-companies.svg" title="Top Digital Marketing Company" className="w-32 h-auto" alt="Top Digital Marketing Company on GoodFirms" /></a></div>
+              </li>
 
             </ul>
           </div>

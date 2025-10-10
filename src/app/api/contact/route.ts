@@ -4,7 +4,7 @@ import nodemailer from "nodemailer";
 export async function POST(req: Request) {
     try {
         const data = await req.json();
-        console.log("Received Form Data:", data); // ✅ Debugging
+        console.log("Received Form Data:", data);
 
         const {
             firstName,

@@ -18,7 +18,6 @@ export default function HeroGoogleAdsAudit() {
         console.log(!isVisible ? "Contact form visible" : "Contact form not visible");
     };
 
-    // ✅ Trust Badges
     const highlights = [
         { id: 1, text: "Google Partner Certified", icon: partnerIcon },
         { id: 2, text: "200+ Campaigns Managed", icon: campaignIcon },
