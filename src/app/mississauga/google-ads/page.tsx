@@ -1,12 +1,12 @@
 
 export const metadata = {
-    title: "Google Ads Services Mississauga | Google Partner Agency – Bixeltek",
+    title: "Google Ads Management Mississauga | Google Partner Agency",
     description:
         "Bixeltek is a Google Partner Certified agency in Mississauga. We manage Google Ads campaigns across Search, Display, Shopping, Performance Max & more to deliver qualified leads and measurable ROI.",
     keywords:
         "Web development Hyderabad, Best web development company Hyderabad, Custom website design, Next.js development, React.js development, Full-stack web development, Frontend development, Backend development, E-commerce website development, WordPress development, Responsive web design, UI/UX design Hyderabad, Web application development, Modern web technologies",
     openGraph: {
-        title: "Google Ads Services Mississauga | Google Partner Agency – Bixeltek",
+        title: "Google Ads Management Mississauga | Google Partner Agency",
         description:
             "Bixeltek is a Google Partner Certified agency in Mississauga. We manage Google Ads campaigns across Search, Display, Shopping, Performance Max & more to deliver qualified leads and measurable ROI.",
         type: "website",
