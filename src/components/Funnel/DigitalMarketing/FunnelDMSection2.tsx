@@ -40,9 +40,7 @@ export default function DeliveringMathSection() {
                                 Building marketing systems that learn, scale, and deliver
                                 precision-driven growth.
                             </p>
-                             <button className="bg-white text-indigo-900 font-semibold px-5 py-3 rounded-lg inline-flex items-center gap-2 hover:bg-indigo-50 transition">
-                                See How It Works <ArrowUpRight className="w-4 h-4" />
-                            </button>
+                             
                             
                             {/* <a href="https://www.google.com/partners/agency?id=2188074075" target="_blank" className="mt-2 flex justify-start">
                 <img src="https://www.gstatic.com/partners/badge/images/2024/PartnerBadgeClickable.svg"
@@ -51,7 +49,10 @@ export default function DeliveringMathSection() {
               </a> */}
                         </div>
                         <div className="mt-8">
-                           <Image src={ima1} alt="what we do" ></Image>
+                           {/* <Image src={ima1} alt="what we do" ></Image> */}
+                           <button className="bg-white text-indigo-900 font-semibold px-5 py-3 rounded-lg inline-flex items-center gap-2 hover:bg-indigo-50 transition">
+                                See How It Works <ArrowUpRight className="w-4 h-4" />
+                            </button>
                         </div>
                     </div>
 

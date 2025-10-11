@@ -49,15 +49,15 @@ export default function DigitalMarketingServicesEasternProvince() {
       id="digital-marketing-services"
     >
       {/* Background Glows */}
-      <div className="absolute top-32 -left-20 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
-      <div className="absolute bottom-52 right-0 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
+      <div className="absolute top-32 -left-20 w-[500px] h-[500px] bg-yellow-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
+      <div className="absolute bottom-52 right-0 w-[500px] h-[500px] bg-yellow-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
 
       <div>
         {/* Heading + Intro */}
         <div className="max-w-[90%] md:max-w-[80%] mx-auto mb-10 text-center">
           <h2 className="text-white text-3xl lg:text-6xl font-inter mb-3 font-semibold">
             Comprehensive Digital Marketing Services{" "}
-            <span className="text-blue-500">for Businesses Across the Eastern Province</span>
+            <span className="text-yellow-500">for Businesses Across the Eastern Province</span>
           </h2>
           <p className="text-gray-100 text-base md:text-[17px] tracking-wider mt-4 max-w-4xl mx-auto leading-relaxed">
             Our team manages end-to-end marketing solutions — from strategic planning and content
@@ -71,7 +71,7 @@ export default function DigitalMarketingServicesEasternProvince() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="relative w-full h-96 group border border-gray-800 bg-black/10 hover:bg-blue-600/10 transition-all duration-300 flex flex-col justify-center items-center p-10 md:p-14 rounded-lg"
+              className="relative w-full h-96 group border border-gray-800 bg-black/10 hover:bg-yellow-600/10 transition-all duration-300 flex flex-col justify-center items-center p-10 md:p-14 rounded-lg"
             >
               <h3 className="text-white text-2xl font-bold text-center mb-2">
                 {service.title}
@@ -80,7 +80,7 @@ export default function DigitalMarketingServicesEasternProvince() {
                 {service.description}
               </p>
               <Link href={service.link}>
-                <p className="text-blue-500 group-hover:text-white text-sm mt-2 hover:font-semibold transition-all">
+                <p className="text-green-500 group-hover:text-white text-sm mt-2 hover:font-semibold transition-all">
                   Discover More
                 </p>
               </Link>

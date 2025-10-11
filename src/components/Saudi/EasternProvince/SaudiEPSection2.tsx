@@ -2,33 +2,29 @@
 import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
-import saudiImg from '@/assets/shanghai-aerial-day.jpg'; // ✅ replace with a relevant Eastern Province image
+import saudiImg from '@/assets/Riyadh.jpg'; // ✅ replace with a relevant Eastern Province image
 
 export default function BusinessGrowthEasternProvince() {
     return (
-        <section className="relative py-10 md:py-20 bg-black">
-            <div className="flex flex-col md:flex-row items-center">
+        <section className="relative py-10 md:py-10 bg-black">
+            <div className="flex max-w-[85%] mx-auto gap-10 flex-col md:flex-row items-center">
 
                 {/* ✅ Left Blue/Image Container */}
-                <div className="relative w-full md:w-2/5 h-[800px] rounded-r-[40px] bg-transparent md:bg-blue-600 flex justify-end items-center">
-                    <div className="w-full h-full py-16 pl-0 pr-6 md:pr-12 flex justify-end relative">
-                        <div className="absolute md:-right-40 w-[90%] md:w-[90%]">
-                            <Image
+                <div className="relative w-full md:w-1/2 rounded-r-[40px] bg-transparent flex justify-center items-center">
+                    <Image
                                 src={saudiImg}
                                 alt="Eastern Province skyline"
-                                className="rounded-[30px] md:h-[700px] w-[600px] shadow-2xl object-cover z-10"
+                                className="rounded-[0px] shadow-2xl object-cover z-10"
                             />
-                        </div>
-                    </div>
                 </div>
 
                 {/* ✅ Right Content */}
-                <div className="px-6 w-full mt-[-160px] md:mt-0 md:w-3/5 md:pl-44 md:pr-20 py-16">
+                <div className="px-6 w-full mt-[-160px] md:mt-0 md:w-1/2 py-16">
                     
                     {/* Heading */}
-                    <h2 className="text-3xl md:text-6xl font-inter text-white font-bold mb-4 leading-snug">
+                    <h2 className="text-3xl md:text-5xl font-inter text-white font-medium mb-4 leading-snug">
                         Eastern Province Is Growing Fast — 
-                        <span className="text-blue-600"> Your Marketing Should Too.</span>
+                        <span className="text-yellow-500"> Your Marketing Should Too.</span>
                     </h2>
 
                     {/* Copy */}
@@ -43,11 +39,11 @@ export default function BusinessGrowthEasternProvince() {
                         and decide within seconds. That’s where digital visibility becomes your competitive edge.
                     </p>
 
-                    <p className="text-gray-300 mb-6 font-poppins leading-relaxed max-w-2xl">
+                    {/* <p className="text-gray-300 mb-6 font-poppins leading-relaxed max-w-2xl">
                         Whether your business is in Khobar’s tech district, Dammam’s industrial zones, or 
                         Dhahran’s corporate hubs, being found online can be the difference between growing fast 
                         or getting left behind.
-                    </p>
+                    </p> */}
 
                     <p className="text-gray-300 mb-8 font-poppins leading-relaxed max-w-2xl">
                         At Bixeltek, we bridge this gap — combining advertising, search, and conversion systems 
@@ -56,7 +52,7 @@ export default function BusinessGrowthEasternProvince() {
 
                     {/* CTA Button */}
                     <Link href={"#form"}>
-                        <button className="px-7 py-3 rounded-2xl bg-blue-600 text-white font-semibold text-sm shadow-lg hover:bg-blue-700 transition">
+                        <button className="px-7 py-3 rounded-full bg-gradient-to-tr from-green-500 via-green-700 to-green-950 hover:bg-gradient-to-tr hover:from-green-950 hover:via-green-700 hover:to-green-500 text-white font-semibold text-sm shadow-lg hover:bg-[#d6ae3f] transition">
                             Get a Free Marketing Audit
                         </button>
                     </Link>

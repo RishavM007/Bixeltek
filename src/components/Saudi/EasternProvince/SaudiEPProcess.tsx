@@ -39,7 +39,7 @@ const steps = [
     number: "05",
     title: "Optimization & Scale",
     text: "Once live, we continuously monitor performance through A/B testing, bid adjustments, and audience refinement. Our focus is on scaling what works, improving ROI each month, and ensuring your marketing evolves with real data — not assumptions.",
-    gradient: "from-indigo-500 via-transparent to-transparent",
+    gradient: "from-green-500 via-transparent to-transparent",
     color: "text-indigo-500",
     bgcolor: "hover:bg-indigo-500",
   },
@@ -49,8 +49,8 @@ const SaudiMarketingProcessBixeltek = () => {
   return (
     <div className="min-h-screen relative bg-black py-12 px-4 sm:px-6 lg:px-8">
       {/* Section Header */}
-      <h2 className="text-3xl md:text-6xl text-white text-center max-w-7xl mx-auto font-bold font-inter mb-6">
-        Every Great Result Starts With a <span className="text-blue-500">Clear Process</span>
+      <h2 className="text-3xl md:text-6xl text-white text-center max-w-7xl mx-auto font-medium font-inter mb-6">
+        Every Great Result Starts With a <span className="text-yellow-500">Clear Process</span>
       </h2>
       <p className="text-gray-300 max-w-2xl mx-auto mb-12 font-poppins leading-relaxed text-center">
         We follow a proven five-step marketing framework that aligns business goals with flawless
@@ -110,7 +110,7 @@ const SaudiMarketingProcessBixeltek = () => {
                 {idx === steps.length - 1 && (
                   <div className="mt-auto absolute -bottom-[20px] flex justify-center w-full">
                     <a href={"mailto:zee@bixeltek.com"}>
-                      <button className="px-7 py-3 rounded-2xl bg-blue-600 text-white font-semibold text-sm shadow-lg hover:bg-blue-700 transition">
+                      <button className="px-7 py-3 rounded-2xl bg-gradient-to-tr from-green-500 via-green-700 to-green-950 hover:bg-gradient-to-tr hover:from-green-950 hover:via-green-700 hover:to-green-500 text-white font-semibold text-sm shadow-lg transition">
                         Book a Free Strategy Call
                       </button>
                     </a>

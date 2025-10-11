@@ -10,6 +10,7 @@ import DemoPopup from "@/components/CTApopup";
 import TransitionProvider from "@/components/TransitionProvider";
 import PageTransition from "@/components/PageLoader";
 import Loader from "@/components/Loader";
+import NoCopy from "@/components/NoCopy";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -183,6 +184,7 @@ export default function RootLayout({
         {/* <Loader />
         {children} */}
       <Loader/>
+      {/* <NoCopy/> */}
          {children}
         {/* Floating WhatsApp Button */}
         <DemoPopup />

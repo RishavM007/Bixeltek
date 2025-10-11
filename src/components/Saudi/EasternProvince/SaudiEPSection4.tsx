@@ -10,32 +10,32 @@ export default function BixeltekSystemFramework() {
     {
       id: 1,
       title: "Visibility",
-      icon: <TbEyeStar className="text-blue-500 text-2xl md:text-4xl" />,
+      icon: <TbEyeStar className="text-yellow-500 text-2xl md:text-4xl" />,
       desc: "Appear in front of your ideal audience exactly when they’re searching for your services. We ensure your business is visible across Google, search, and social — wherever your customers spend their time.",
     },
     {
       id: 2,
       title: "Conversion",
-      icon: <VscGraph className="text-blue-500 text-2xl md:text-4xl" />,
+      icon: <VscGraph className="text-yellow-500 text-2xl md:text-4xl" />,
       desc: "Turn that attention into inquiries, leads, and sales through high-performing landing pages, persuasive messaging, and optimized ad funnels designed to convert visitors into loyal customers who return again and again.",
     },
     {
       id: 3,
       title: "Optimization",
-      icon: <IoOptionsOutline className="text-blue-500 text-2xl md:text-4xl" />,
+      icon: <IoOptionsOutline className="text-yellow-500 text-2xl md:text-4xl" />,
       desc: "Use analytics, conversion rate optimization (CRO), and continual data-driven testing to refine campaigns, increase ROI, and scale smarter every month with measurable improvements.",
     },
   ];
 
   return (
-    <section className="bg-black text-white py-20 px-6 md:px-20 text-center overflow-hidden">
+    <section className="bg-black text-white py-0 px-6 md:px-20 text-center overflow-hidden">
       {/* Section Label */}
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="uppercase text-blue-500 font-semibold mb-4 tracking-widest"
+        className="uppercase text-yellow-500 font-semibold mb-4 tracking-widest"
       >
         The Solution — Bixeltek’s Systemized Digital Marketing Framework
       </motion.p>
@@ -46,10 +46,10 @@ export default function BixeltekSystemFramework() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="text-3xl md:text-6xl font-bold mb-6 leading-tight"
+        className="text-3xl md:text-6xl font-inter font-medium mb-6 leading-tight"
       >
         We Don’t Just Run Campaigns.<br />
-        <span className="text-blue-500">We Build Growth Systems.</span>
+        <span className="text-yellow-500">We Build Growth Systems.</span>
       </motion.h2>
 
       {/* Copy */}

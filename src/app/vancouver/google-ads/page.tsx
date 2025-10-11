@@ -1,11 +1,11 @@
 export const metadata = {
-    title: "Google Ads Services Vancouver | Google Partner PPC Agency – Bixeltek",
+    title: "Google Ads Management Vancouver | Google Partner PPC Agency",
     description:
         "Bixeltek is a Google Partner Certified Google Ads agency in Vancouver. We manage PPC campaigns across Search, Display, Shopping, and more to deliver qualified leads and measurable ROI.",
     keywords:
         "Web development Hyderabad, Best web development company Hyderabad, Custom website design, Next.js development, React.js development, Full-stack web development, Frontend development, Backend development, E-commerce website development, WordPress development, Responsive web design, UI/UX design Hyderabad, Web application development, Modern web technologies",
     openGraph: {
-        title: "Google Ads Services Vancouver | Google Partner PPC Agency – Bixeltek",
+        title: "Google Ads Management Vancouver | Google Partner PPC Agency",
         description:
             "Bixeltek is a Google Partner Certified Google Ads agency in Vancouver. We manage PPC campaigns across Search, Display, Shopping, and more to deliver qualified leads and measurable ROI.",
         type: "website",
