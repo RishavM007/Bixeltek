@@ -182,8 +182,8 @@ export default function ContactFromNew() {
 
             <form className="space-y-4" onSubmit={handleSubmit} id='form'>
                 <div className="flex flex-col md:flex-row gap-5">
-                    <div className="w-full md:w-1/2">
-                        <label htmlFor="firstName" className="text-sm font-medium text-gray-700">First Name<span className='text-red-600'>*</span></label>
+                    <div className="w-full md:w-1/2 flex flex-col justify-start items-start">
+                        <label htmlFor="firstName" className="text-sm  font-medium text-gray-700">First Name<span className='text-red-600'>*</span></label>
                         <input
                             type="text"
                             id="firstName"

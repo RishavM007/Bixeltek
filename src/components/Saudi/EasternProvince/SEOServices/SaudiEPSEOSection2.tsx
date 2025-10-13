@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import seoImg from "@/assets/122748606.jpg"; // ✅ replace with your actual image
+import seoImg from "@/assets/SEO Dashboard.png"; // ✅ replace with your actual image
 
 export default function SemanticSEOSection() {
   return (

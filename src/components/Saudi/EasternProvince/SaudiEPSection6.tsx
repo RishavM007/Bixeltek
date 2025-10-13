@@ -1,7 +1,9 @@
 "use client";
 
 import React from "react";
+import { ButtonContactForm } from "@/sections/ButtonContactForm";
 import { FaGoogle, FaGlobe, FaChartLine, FaUserTie, FaHandshake } from "react-icons/fa";
+import { useState } from "react";
 
 export default function SaudiEPWhyChooseBixeltek() {
     const features = [
@@ -31,6 +33,12 @@ export default function SaudiEPWhyChooseBixeltek() {
             desc: "We go beyond short-term wins — building predictable growth systems that scale month after month.",
         },
     ];
+      const [isVisible, setIsVisible] = useState(false);
+    
+      const toggleContactForm = () => {
+        setIsVisible((prev) => !prev);
+        console.log(!isVisible ? "Contact form visible" : "Contact form hidden");
+      };
 
     return (
         <section className="bg-black py-20 px-6 md:px-20 text-center">
@@ -86,11 +94,12 @@ export default function SaudiEPWhyChooseBixeltek() {
                     <p className="text-sm group-hover:text-yellow-700 mb-4">
                         Book your free audit today and discover how your business can scale predictably with Bixeltek.
                     </p>
-                    <button className="px-6 py-3 bg-white text-yellow-600 font-medium rounded-full hover:bg-green-600 hover:text-white transition">
+                    <button className="px-6 py-3 bg-white text-yellow-600 font-medium rounded-full hover:bg-green-600 hover:text-white transition" onClick={toggleContactForm}>
                         Get My Free Audit
                     </button>
                 </div>
             </div>
+             <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
 
         </section>
     );

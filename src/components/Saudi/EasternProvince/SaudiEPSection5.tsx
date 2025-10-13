@@ -9,25 +9,25 @@ export default function DigitalMarketingServicesEasternProvince() {
       title: "Google Ads Management",
       description:
         "Instant visibility, high-intent targeting, and lower cost per lead. We create and optimize ad campaigns that connect your business with ready-to-buy customers across Khobar, Dammam, and beyond.",
-      link: "#",
+      link: "/saudi-arabia/eastern-province/google-ads-management",
     },
     {
       title: "SEO & Local Search Optimization",
       description:
         "Boost your visibility across Arabic and English searches. From technical SEO to Google Map optimization, we help your business rank where your customers are searching most.",
-      link: "#",
+      link: "/saudi-arabia/eastern-province/seo-services",
     },
     {
       title: "Web Design & Development",
       description:
         "Websites that convert — not just impress. We build responsive, SEO-friendly, and high-converting websites tailored specifically for Saudi audiences and regional trends.",
-      link: "#",
+      link: "/saudi-arabia/eastern-province/web-design-services",
     },
     {
       title: "Social Media Marketing",
       description:
         "Build awareness and community through data-backed storytelling. We design campaigns that drive engagement and loyalty across Instagram, LinkedIn, TikTok, and more.",
-      link: "#",
+      link: "//saudi-arabia/eastern-province/social-media-management",
     },
     {
       title: "Branding & Creative Strategy",

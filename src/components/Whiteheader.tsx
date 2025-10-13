@@ -123,6 +123,16 @@ export const Whiteheader = () => {
                         { name: "Social Media Marketing", link: "/saudi-arabia/eastern-province/social-media-management" },
                     ],
                 },
+                {
+                    name: "Riyadh",
+                    link: "/riyadh",
+                    services: [
+                        { name: "Google Ads Management", link: "#" },
+                        { name: "Search Engine Optimisation", link: "#" },
+                        { name: "Web Design and Development", link: "#" },
+                        { name: "Social Media Marketing", link: "#" },
+                    ],
+                },
             ],
         },
         uae: {

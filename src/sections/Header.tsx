@@ -133,6 +133,7 @@ export const Header = () => {
     saudi: {
       title: "Saudi Arabia",
       link: "#",
+
       cities: [
         {
           name: "Eastern Province",
@@ -142,6 +143,16 @@ export const Header = () => {
             { name: "Search Engine Optimisation", link: "/saudi-arabia/eastern-province/seo-services" },
             { name: "Web Design and Development", link: "/saudi-arabia/eastern-province/web-design-services" },
             { name: "Social Media Marketing", link: "/saudi-arabia/eastern-province/social-media-management" },
+          ],
+        },
+        {
+          name: "Riyadh",
+          link: "/riyadh",
+          services: [
+            { name: "Google Ads Management", link: "#" },
+            { name: "Search Engine Optimisation", link: "#" },
+            { name: "Web Design and Development", link: "#" },
+            { name: "Social Media Marketing", link: "#" },
           ],
         },
       ],
@@ -425,13 +436,13 @@ export const Header = () => {
 
                   {/* Right: Image + CTA (20%) */}
                   <div className="w-[20%] flex flex-col justify-between items-center pr-8 min-h-[240px]">
-                     <Image
-                        src={hoveredService.image}
-                        alt={hoveredService.title}
-                        width={200}
-                        height={200}
-                        className="object-contain"
-                      />
+                    <Image
+                      src={hoveredService.image}
+                      alt={hoveredService.title}
+                      width={200}
+                      height={200}
+                      className="object-contain"
+                    />
                   </div>
                 </div>
               </li>
