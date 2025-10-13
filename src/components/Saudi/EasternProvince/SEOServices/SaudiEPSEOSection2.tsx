@@ -7,7 +7,7 @@ import seoImg from "@/assets/122748606.jpg"; // ✅ replace with your actual ima
 export default function SemanticSEOSection() {
   return (
     <section className="relative py-10 md:py-16 bg-black overflow-hidden">
-      <div className="flex max-w-[85%] mx-auto gap-10 flex-col md:flex-row-reverse items-center">
+      <div className="flex max-w-[95%] md:max-w-[85%] mx-auto gap-10 flex-col md:flex-row-reverse items-center">
 
         {/* ✅ Left Image Container */}
         <div className="relative w-full md:w-1/2 h-[300px] md:h-[500px] flex justify-center items-center">

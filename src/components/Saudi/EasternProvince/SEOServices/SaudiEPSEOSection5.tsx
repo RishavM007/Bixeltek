@@ -65,7 +65,7 @@ export default function SEOServicesEasternProvince() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 max-w-[75%] mx-auto mt-10 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 max-w-[75%] mx-auto mt-10 gap-0">
           {services.map((service, index) => (
             <div
               key={index}
@@ -82,6 +82,26 @@ export default function SEOServicesEasternProvince() {
                   Discover More
                 </p>
               </Link>
+              {index % 4 === 0 && (
+                <span className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 text-gray-300 text-3xl z-30">
+                  <i className="fa fa-plus text-2xl" aria-hidden="true"></i>
+                </span>
+              )}
+              {(index % 4 === 1 || index === 0 || index === 2) && (
+                <span className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 text-gray-300 text-3xl z-30">
+                  <i className="fa fa-plus text-2xl" aria-hidden="true"></i>
+                </span>
+              )}
+              {(index % 4 === 2 || index === 0 || index === 3) && (
+                <span className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 text-gray-300 text-3xl z-30">
+                  <i className="fa fa-plus text-2xl" aria-hidden="true"></i>
+                </span>
+              )}
+              {(index % 4 === 3 || index === 5) && (
+                <span className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 text-gray-300 text-3xl z-30">
+                  <i className="fa fa-plus text-2xl" aria-hidden="true"></i>
+                </span>
+              )}
             </div>
           ))}
         </div>

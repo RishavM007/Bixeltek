@@ -24,7 +24,7 @@ export default function HeroGAEasternProvince() {
     ];
 
     return (
-        <section className="relative flex flex-col items-center justify-center h-[140vh] md:h-[100vh] text-center px-6 overflow-hidden">
+        <section className="relative flex flex-col items-center justify-center h-[130vh] md:h-[100vh] text-center px-6 overflow-hidden">
             {/* ✅ YouTube Video Background */}
             {/* <iframe
                 className="absolute inset-0 w-full h-full object-cover -z-20"

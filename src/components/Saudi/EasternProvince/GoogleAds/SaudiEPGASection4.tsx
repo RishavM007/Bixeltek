@@ -69,8 +69,8 @@ const GoogleAdsProcessSection = () => {
             <p className={`${item.color} group-hover:text-white text-5xl font-bold mb-2`}>
               {item.number}
             </p>
-            <h2 className="text-xl font-bold text-white mb-2">{item.title}</h2>
-            <p className="text-gray-300 group-hover:text-white">{item.text}</p>
+            <h2 className="text-xl font-bold group-hover:text-white text-black mb-2">{item.title}</h2>
+            <p className="text-gray-900 group-hover:text-white">{item.text}</p>
           </div>
         ))}
       </div>

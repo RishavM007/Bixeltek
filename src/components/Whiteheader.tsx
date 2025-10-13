@@ -111,14 +111,16 @@ export const Whiteheader = () => {
         },
         saudi: {
             title: "Saudi Arabia",
-            link: "/united-kingdom",
+            link: "#",
             cities: [
                 {
-                    name: "Riyadh",
-                    link: "/united-kingdom/london",
+                    name: "Eastern Province",
+                    link: "/saudi-arabia/eastern-province",
                     services: [
-                        { name: "SEO Services in Riyadh", link: "/united-kingdom/london/seo" },
-                        { name: "PPC in Riyadh", link: "/united-kingdom/london/ppc" },
+                        { name: "Google Ads Management", link: "/saudi-arabia/eastern-province/google-ads-management" },
+                        { name: "Search Engine Optimisation", link: "/saudi-arabia/eastern-province/seo-services" },
+                        { name: "Web Design and Development", link: "/saudi-arabia/eastern-province/web-design-services" },
+                        { name: "Social Media Marketing", link: "/saudi-arabia/eastern-province/social-media-management" },
                     ],
                 },
             ],

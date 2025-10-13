@@ -1,14 +1,13 @@
 'use client';
 import { useState } from "react";
 import Image from "next/image";
-import cleaningcomp from "@/assets/digital marketing servies for cleaning companies.jpg";
-import oil from "@/assets/digital marketing for oil refinaries.jpg"
-import pet from "@/assets/groupmates-lesson.jpg"
-import roofing from "@/assets/digital marketing for roofing industries.jpg"
-import dental from "@/assets/close-up-dentist-instruments (1).jpg"
+import cleaningcomp from "@/assets/environmental-pollution-industry-exterior-daylight.jpg";
+import pet from "@/assets/muslim-person-travelling-through-city.jpg"
+import roofing from "@/assets/ordinary-life-scene-from-mall-america.jpg"
+import dental from "@/assets/asian-man-reading-text-messages-with-his-colleague-making-phone-call-background.jpg"
 import lawncare from "@/assets/digital marketing for lawn care services.jpg"
-import blackcar from "@/assets/digital marketing for car detailers.jpg"
-import healthcare from "@/assets/digital marketing for health care practices.jpg"
+import blackcar from "@/assets/top-view-numerous-cars-traffic-dubai-united-arab-emirates.jpg"
+import healthcare from "@/assets/beautiful-young-female-doctor-looking-camera-office.jpg"
 import { motion } from 'framer-motion'
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
@@ -17,7 +16,7 @@ export default function SaudiGAEPPillarIndustries(): JSX.Element {
 
     const cardWidth: number = 450;
     const visibleCards: number = 3;
-    const totalCards: number = 8;
+    const totalCards: number = 6;
     const containerWidth: number = cardWidth * visibleCards;
     const maxOffset: number = 0;
     const minOffset: number = -(cardWidth * totalCards - containerWidth);
@@ -33,7 +32,7 @@ export default function SaudiGAEPPillarIndustries(): JSX.Element {
     };
 
     return (
-        <section className="md:pt-10  md:pb-20  bg-[#fffdf5] z-10 overflow-hidden">
+        <section className="pt-10 md:pt-10 -mt-2 -mb-2 pb-5 md:pb-20  bg-[#fffdf5] z-10 overflow-hidden">
             <div className="w-full relative text-center text-white pb-10">
                 <h1 className="text-3xl md:text-5xl mx-auto max-w-[90%] md:max-w-full xl:text-7xl font-bold mb-2">
                     <span className=" text-transparent bg-clip-text bg-gradient-to-r from-black to-yellow-500">
@@ -45,7 +44,7 @@ export default function SaudiGAEPPillarIndustries(): JSX.Element {
                         SERVE
                     </span>
                 </h1> */}
-                <p className="text-[16px] xl:text-lg text-gray-50 max-w-[100%] md:max-w-2xl mx-auto">
+                <p className="text-[16px] xl:text-lg text-black max-w-[100%] md:max-w-2xl mx-auto">
           Our expertise spans industries that define the region’s economy:
                 </p>
             </div>
@@ -59,58 +58,44 @@ export default function SaudiGAEPPillarIndustries(): JSX.Element {
                             id: "health",
                             img: healthcare,
                             label: "Digital Marketing for Healthcare",
-                            text: "Health Care Practices",
-                            description: "Local SEO + targeted ads to book 30+ new patients per month.",
+                            text: " Healthcare & Dental Clinics",
+                            description: "Rank for treatments, attract patients, and grow visibility.",
                         },
                         {
                             id: "auto",
                             img: blackcar,
-                            label: "Digital Marketing for Automobiles",
-                            text: "Automobile industry",
-                            description: "Maps optimization + hyperlocal PPC to drive more calls and foot traffic.",
+                            label: "Construction & Engineering",
+                            text: "Construction & Engineering",
+                            description: " Generate high-intent B2B inquiries from organic traffic.",
                         },
                         {
                             id: "cleaning",
                             img: cleaningcomp,
-                            label: "Digital Marketing for Cleaning Companies",
-                            text: "Cleaning Industry",
-                            description: "Maps optimization + hyperlocal PPC to drive more calls and foot traffic.",
+                            label: "Digital Marketing for Industries",
+                            text: " Industrial & Manufacturing Firms ",
+                            description: "Build supplier visibility and trust online.",
                         },
                         {
                             id: "roofing",
                             img: roofing,
-                            label: "Digital Marketing for Roofing Companies",
-                            text: "Roofing Industry",
-                            description: "High-ticket lead funnels built for real estate and project-based services.",
+                            label: "Digital Marketing for Ecommerce",
+                            text: "E-commerce & Retail",
+                            description: "Rank for products and drive consistent conversions.",
                         },
                         {
                             id: "lawncare",
-                            img: lawncare,
-                            label: "Digital Marketing for Lawn Care and Landscaping",
-                            text: "Lawn Care Industries",
-                            description: "Maps optimization + hyperlocal PPC to drive more calls and foot traffic.",
+                            img: pet,
+                            label: "Digital Marketing for Education & Training Institutes",
+                            text: "Education & Training Institutes",
+                            description: "Capture enrollments through search visibility and local maps.",
                         },
                         {
                             id: "dental",
                             img: dental,
-                            label: "Digital Marketing for Dental Clinic",
-                            text: "Dental Clinics",
-                            description: "Local SEO + targeted ads to book 30+ new patients per month.",
+                            label: "Digital Marketing for Corporate & Consulting Firms",
+                            text: "Corporate & Consulting Firms",
+                            description: "Build credibility and inbound visibility for brand trust.",
                         },
-                        {
-                            id: "pet",
-                            img: pet,
-                            label: "Digital Marketing for Pet Stores",
-                            text: "Educational Institutes",
-                            description: "Product SEO, performance ads & retargeting funnels to scale sales.",
-                        },
-                        {
-                            id: "oil",
-                            img: oil,
-                            label: "Digital Marketing for Oil Refineries",
-                            text: "Oil and Gas Industry",
-                            description: "Paid growth loops, demo-booking strategies, and B2B marketing that closes deals.",
-                        }
                     ].map(({ id, img, label, text, description }) => (
                         <motion.a
                             key={id}

@@ -73,14 +73,14 @@ export const Footer = () => {
           </div>
           <div className="lg:mx-auto text-left ">
             <h4 className="text-lg text-gray-100 font-medium mb-7">Certifications & Recognitions</h4>
-            <ul className="text-sm flex gap-10  transition-all duration-500">
+            <ul className="text-sm flex flex-col md:flex-row md:gap-10  transition-all duration-500">
               <li className="mb-6"><a href="https://www.google.com/partners/agency?id=2188074075" target="_blank" className="mt-2 flex justify-start">
                 <img src="https://www.gstatic.com/partners/badge/images/2024/PartnerBadgeClickable.svg"
                   alt="Google Partner Badge"
-                  className="w-auto h-24" />
+                  className="w-auto h-16 md:h-24" />
               </a></li>
               <li>
-                <div><a target="_blank" href="https://www.goodfirms.co/company/bixeltek"> <img src="https://assets.goodfirms.co/badges/color-badge/top-digital-marketing-companies.svg" title="Top Digital Marketing Company" className="w-32 h-auto" alt="Top Digital Marketing Company on GoodFirms" /></a></div>
+                <div><a target="_blank" href="https://www.goodfirms.co/company/bixeltek"> <img src="https://assets.goodfirms.co/badges/color-badge/top-digital-marketing-companies.svg" title="Top Digital Marketing Company" className="w-20 md:w-32 h-auto" alt="Top Digital Marketing Company on GoodFirms" /></a></div>
               </li>
 
             </ul>

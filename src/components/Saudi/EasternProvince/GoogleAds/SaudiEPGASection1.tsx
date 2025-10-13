@@ -6,7 +6,7 @@ import heroImg from '@/assets/desert-x-alula-saudi-arabia-female-artists-DXA-Lit
 
 export default function GoogleAdsAwarenessSection() {
     return (
-        <section className="relative py-10 md:py-10 bg-[#fffdf5]">
+        <section className="relative py-20 md:py-10 bg-[#fffdf5]">
             <div className="flex max-w-[85%] mx-auto gap-10 flex-col md:flex-row items-center">
 
                 {/* ✅ Left Image Container */}
@@ -19,7 +19,7 @@ export default function GoogleAdsAwarenessSection() {
                 </div>
 
                 {/* ✅ Right Content */}
-                <div className="px-6 w-full mt-[-120px] md:mt-0 md:w-1/2 py-16">
+                <div className=" w-full md:mt-0 md:w-1/2 ">
                     
                     {/* Heading */}
                     <h2 className="text-3xl md:text-5xl font-inter text-black font-medium mb-4 leading-snug">

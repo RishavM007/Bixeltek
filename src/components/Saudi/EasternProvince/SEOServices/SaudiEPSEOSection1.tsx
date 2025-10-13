@@ -7,7 +7,7 @@ import searchImg from "@/assets/dammam image.jpg"; // ✅ replace with your rele
 export default function SEOGrowthEasternProvince() {
   return (
     <section className="relative py-10 md:py-16 bg-black overflow-hidden">
-      <div className="flex max-w-[85%] mx-auto gap-10 flex-col md:flex-row items-center">
+      <div className="flex max-w-[95%] md:max-w-[85%] mx-auto gap-10 flex-col md:flex-row items-center">
 
         {/* ✅ Left Image Container */}
         <div className="relative w-full md:w-1/2 flex justify-center items-center">
@@ -16,6 +16,7 @@ export default function SEOGrowthEasternProvince() {
             alt="SEO in Eastern Province"
             className="rounded-[0px] shadow-2xl object-cover z-10"
           />
+           <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent z-20 pointer-events-none" />
 
           {/* ✅ Bottom Fade Mask */}
         </div>

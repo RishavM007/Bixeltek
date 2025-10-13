@@ -5,6 +5,16 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { HiChevronDown, HiMenu, HiX } from 'react-icons/hi';
 import { link } from 'fs';
+import { SiGoogleads, SiInstagram } from "react-icons/si";
+import { TbDeviceImacSearch } from 'react-icons/tb';
+import { IoLogoReact } from 'react-icons/io5';
+import { AiOutlineLineChart, AiOutlinePicture } from "react-icons/ai";
+import anr from '@/assets/anr.jpg'
+import googleads from '@/assets/grow.jpg'
+import graphic from '@/assets/T-shirt Social Media Graphic - Mojahidul Islam.jpg'
+import seo from '@/assets/Is SEO Really Dead_ A Reality Check for Freelancers, Agencies, and Clients.jpg'
+import webdesign from '@/assets/Theatre Dreams Ui Design Concept - Duane Levi Smith.jpg'
+
 
 export const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -12,6 +22,8 @@ export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<keyof typeof locations>("canada");
   const [activeTab2, setActiveTab2] = useState<keyof typeof locations | null>(null);
+
+
 
   const [isLocationsOpen, setIsLocationsOpen] = useState(false);
 
@@ -123,11 +135,13 @@ export const Header = () => {
       link: "#",
       cities: [
         {
-          name: "Riyadh",
-          link: "#",
+          name: "Eastern Province",
+          link: "/saudi-arabia/eastern-province",
           services: [
-            { name: "SEO Services in Riyadh", link: "#" },
-            { name: "PPC in Riyadh", link: "#" },
+            { name: "Google Ads Management", link: "/saudi-arabia/eastern-province/google-ads-management" },
+            { name: "Search Engine Optimisation", link: "/saudi-arabia/eastern-province/seo-services" },
+            { name: "Web Design and Development", link: "/saudi-arabia/eastern-province/web-design-services" },
+            { name: "Social Media Marketing", link: "/saudi-arabia/eastern-province/social-media-management" },
           ],
         },
       ],
@@ -180,10 +194,60 @@ export const Header = () => {
     // },
 
   ];
-
+  const services = [
+    {
+      id: 6,
+      title: "Google Ads Management",
+      desc: "Optimize and manage Google Ads campaigns effectively.",
+      icon: <SiGoogleads size={24} />,
+      link: "/services/google-ads",
+      image: googleads
+    },
+    {
+      id: 7,
+      title: "Search Engine Optimization",
+      desc: "Improve your website ranking and visibility.",
+      icon: <TbDeviceImacSearch size={24} />,
+      link: "/services/seo-services",
+      image: seo
+    },
+    {
+      id: 8,
+      title: "Social Media Management",
+      desc: "Enhance your online presence with expert strategies.",
+      icon: <SiInstagram size={24} />,
+      link: "/social-media-marketing-agency-hyderabad",
+      image: webdesign
+    },
+    {
+      id: 9,
+      title: "Web Design and Development",
+      desc: "Build scalable and modern web solutions.",
+      icon: <IoLogoReact size={24} />,
+      link: "/services/web-design",
+      image: webdesign
+    },
+    {
+      id: 10,
+      title: "Analytics Reporting",
+      desc: "Track and analyze your business metrics for smarter decisions.",
+      icon: <AiOutlineLineChart size={24} />,
+      link: "/services/analytics-reporting",
+      image: anr
+    },
+    {
+      id: 11,
+      title: "Graphic Design",
+      desc: "Create stunning visuals to elevate your brand identity.",
+      icon: <AiOutlinePicture size={24} />,
+      link: "/services/graphic-design",
+      image: graphic
+    },
+  ];
+  const [hoveredService, setHoveredService] = useState(services[0]);
   return (
     <header className="px-3 py-5  max-w-[90%] mx-auto sticky top-0 z-[60]">
-      <div className="container bg-black flex justify-between items-center border-white/15 border-solid border-2 rounded-xl shadow-purple-custom backdrop:blur-3xl">
+      <div className="container relative bg-black flex justify-between items-center border-white/15 border-solid border-2 rounded-xl shadow-purple-custom backdrop:blur-3xl">
         <div className="text-white py-4 md:py-6 xl:py-3">
           <Link href={"/"}>
             <Image src='/BIXELTEKLOGO.png' width={100} height={40} alt="Bixeltek Logo" className='h-7 w-auto' />
@@ -327,97 +391,48 @@ export const Header = () => {
 
               {/* Our Services Dropdown */}
               <li
-                className="relative flex items-center py-7"
+                className="flex items-center py-7"
                 onMouseEnter={() => setIsDropdownOpen(true)}
                 onMouseLeave={() => setIsDropdownOpen(false)}
               >
-                <a href="#" className="text-white/70 hover:text-white transition flex items-center">
-                  Our Solutions <HiChevronDown className="ml-1 text-sm" />
+                <a
+                  href="#"
+                  className="text-white/70 hover:text-white transition flex items-center"
+                >
+                  Our Solutions
                 </a>
 
-                {/* Dropdown Wrapper */}
-                <div className={`absolute top-full left-1/2 -translate-x-[32%] w-[1340px] bg-white rounded-b-2xl shadow-lg py-4 transition-all duration-300 ${isDropdownOpen ? "opacity-100 visible pointer-events-auto" : "opacity-0 invisible pointer-events-none"}`}>
-                  <motion.div
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={isDropdownOpen ? { opacity: 1, y: 0 } : { opacity: 0, y: -10 }}
-                    transition={{ duration: 0.3 }}
-                    className="flex justify-between gap-6 font-sofiasanscondensed text-[16px]"
-                  >
-                    <div className="w-1/2">
-                      <h3 className="text-lg font-semibold px-4 text-[#670ef7]">What we offer</h3>
-                      <div className="grid grid-cols-2 gap-4 px-4">
-                        <ul>
-                          <li>
-                            <Link href="/services/google-ads" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
-                              <h3 className="text-lg font-semibold text-black">Google Ads Management</h3>
-                              <p className="text-sm text-gray-500">Optimize and manage Google Ads campaigns effectively.</p>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/services/seo-services" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
-                              <h3 className="text-lg font-semibold text-black">Search Engine Optimization</h3>
-                              <p className="text-sm text-gray-500">Improve your website ranking and visibility.</p>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/social-media-marketing-agency-hyderabad" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
-                              <h3 className="text-lg font-semibold text-black">Social Media Management</h3>
-                              <p className="text-sm text-gray-500">Enhance your online presence with expert strategies.</p>
-                            </Link>
-                          </li>
-                        </ul>
-                        <ul>
-                          {/* <li>
-                            <Link href="/services/service2" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
-                              <h3 className="text-lg font-semibold text-black">Youtube Ads Management</h3>
-                              <p className="text-sm text-gray-500">Reach more audience with tailored video ads.</p>
-                            </Link>
-                          </li> */}
-                          <li>
-                            <Link href="/services/web-design" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
-                              <h3 className="text-lg font-semibold text-black">Web Design and Development</h3>
-                              <p className="text-sm text-gray-500">Build scalable and modern web solutions.</p>
-                            </Link>
-                          </li>
-                          {/* <li>
-                            <Link href="/web-dev-ad" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
-                              <h3 className="text-lg font-semibold text-black">Web Design</h3>
-                              <p className="text-sm text-gray-500">Build scalable and modern web solutions.</p>
-                            </Link>
-                          </li> */}
-                          {/* <li>
-                            <Link href="/digitalmarketing" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
-                              <h3 className="text-lg font-semibold text-black">Digital Marketing</h3>
-                              <p className="text-sm text-gray-500">Comprehensive marketing strategies for growth.</p>
-                            </Link>
-                          </li> */}
-                        </ul>
+                {/* Mega Menu Dropdown */}
+                <div className={`absolute top-full left-0 right-0 w-full bg-white rounded-b-2xl shadow-lg py-8 flex transition-all duration-300 ${isDropdownOpen ? "opacity-100 visible" : "opacity-0 invisible"
+                  }`}>
+
+                  {/* Left: Services (80%) */}
+                  <div className="w-[80%] grid grid-cols-3 gap-4 px-10">
+                    {services.map((service) => (
+                      <div
+                        key={service.id}
+                        onMouseEnter={() => setHoveredService(service)}
+                        className="flex items-start gap-3 p-4 rounded-lg hover:bg-gray-100 cursor-pointer transition"
+                      >
+                        <div className="text-[#670ef7] flex-shrink-0">{service.icon}</div>
+                        <div>
+                          <h3 className="font-semibold text-black">{service.title}</h3>
+                          <p className="text-gray-500 text-sm">{service.desc}</p>
+                        </div>
                       </div>
-                    </div>
-                    <div className="w-1/2 border-l border-gray-300 pl-6">
-                      <h3 className="text-lg font-semibold text-[#670ef7]">Case Studies</h3>
-                      <div className="grid grid-cols-2 gap-4">
-                        <ul>
-                          {posts.slice(0, Math.ceil(posts.length / 2)).map((post) => (
-                            <li key={post.id} className="hover:text-[#670ef7] transition text-[17px] p-2 cursor-pointer">
-                              <Link href={`${post.link}`}>
-                                {post.title}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                        <ul>
-                          {posts.slice(Math.ceil(posts.length / 2)).map((post) => (
-                            <li key={post.id} className="hover:text-[#670ef7] transition text-[17px] p-2 cursor-pointer">
-                              <Link href={`${post.link}`}>
-                                {post.title}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  </motion.div>
+                    ))}
+                  </div>
+
+                  {/* Right: Image + CTA (20%) */}
+                  <div className="w-[20%] flex flex-col justify-between items-center pr-8 min-h-[240px]">
+                     <Image
+                        src={hoveredService.image}
+                        alt={hoveredService.title}
+                        width={200}
+                        height={200}
+                        className="object-contain"
+                      />
+                  </div>
                 </div>
               </li>
               <li className="flex group relative items-center py-7">

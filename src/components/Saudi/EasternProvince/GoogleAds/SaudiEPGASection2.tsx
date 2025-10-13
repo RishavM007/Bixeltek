@@ -7,8 +7,8 @@ import { Check } from 'lucide-react'; // ✅ replace with your actual image
 
 export default function GoogleAdsStrategySection() {
     return (
-        <section className="relative py-20 px-6 md:px-20 bg-[#fffdf5] overflow-hidden">
-            <div className="flex max-w-[95%] md:max-w-[90%] mx-auto flex-col md:flex-row items-center gap-10">
+        <section className="relative pb-10 md:pb-0 -mt-2 md:py-20 px-6 md:px-20 bg-[#fffdf5] overflow-hidden">
+            <div className="flex max-w-[95%] md:max-w-[90%] mx-auto flex-col-reverse md:flex-row items-center md:gap-10">
 
                 {/* ✅ Left Content */}
                 <div className="w-full md:w-1/2 font-semibold text-left">
