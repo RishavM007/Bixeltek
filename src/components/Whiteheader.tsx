@@ -125,11 +125,11 @@ export const Whiteheader = () => {
                 },
                 {
                     name: "Riyadh",
-                    link: "/riyadh",
+                    link: "/saudi-arabia/riyadh/",
                     services: [
-                        { name: "Google Ads Management", link: "#" },
-                        { name: "Search Engine Optimisation", link: "#" },
-                        { name: "Web Design and Development", link: "#" },
+                        { name: "Google Ads Management", link: "/saudi-arabia/riyadh/google-ads-management" },
+                        { name: "Search Engine Optimisation", link: "saudi-arabia/riyadh/seo-services" },
+                        { name: "Web Design and Development", link: "/saudi-arabia/riyadh/web-design-services" },
                         { name: "Social Media Marketing", link: "#" },
                     ],
                 },

@@ -3,50 +3,50 @@
 import React from "react";
 import Link from "next/link";
 
-export default function DigitalMarketingServicesEasternProvince() {
+export default function GoogleAdsServicesRiyadh() {
   const services = [
     {
-      title: "Google Ads Management",
+      title: "Search Campaigns",
       description:
-        "Instant visibility, high-intent targeting, and lower cost per lead. We create and optimize ad campaigns that connect your business with ready-to-buy customers across Khobar, Dammam, and beyond.",
-      link: "/saudi-arabia/eastern-province/google-ads-management",
+        "Capture ready-to-convert customers actively searching for your services in Riyadh. Every ad group is intent-driven, keyword-mapped, and A/B tested for maximum ROI.",
+      link: "/riyadh/google-ads/search-campaigns",
     },
     {
-      title: "SEO & Local Search Optimization",
+      title: "Performance Max (PMax)",
       description:
-        "Boost your visibility across Arabic and English searches. From technical SEO to Google Map optimization, we help your business rank where your customers are searching most.",
-      link: "/saudi-arabia/eastern-province/seo-services",
+        "Leverage Google’s AI to target across Search, YouTube, and Display — all from one smart campaign. Perfect for Saudi businesses aiming for visibility at scale.",
+      link: "/riyadh/google-ads/performance-max",
     },
     {
-      title: "Web Design & Development",
+      title: "Display Campaigns",
       description:
-        "Websites that convert — not just impress. We build responsive, SEO-friendly, and high-converting websites tailored specifically for Saudi audiences and regional trends.",
-      link: "/saudi-arabia/eastern-province/web-design-services",
+        "Stay visible across top Arabic and English websites. Our design team creates compelling display ads that build awareness and retarget high-value users across Riyadh and beyond.",
+      link: "/riyadh/google-ads/display-campaigns",
     },
     {
-      title: "Social Media Marketing",
+      title: "YouTube Ads",
       description:
-        "Build awareness and community through data-backed storytelling. We design campaigns that drive engagement and loyalty across Instagram, LinkedIn, TikTok, and more.",
-      link: "/saudi-arabia/eastern-province/social-media-management",
+        "Turn storytelling into conversions. We craft localized YouTube campaigns with powerful hooks, precise targeting, and high-retention video sequences tailored to Saudi audiences.",
+      link: "/riyadh/google-ads/youtube-ads",
     },
     {
-      title: "Branding & Creative Strategy",
+      title: "Shopping Ads (E-commerce)",
       description:
-        "Your visual identity defines your reputation. We craft premium, consistent brand experiences that earn trust and differentiate your business in a competitive Saudi market.",
-      link: "#",
+        "Dominate e-commerce searches with optimized product feeds, custom labels, and ROAS-driven structures. Ideal for Saudi retailers scaling on Google Shopping.",
+      link: "/riyadh/google-ads/shopping-ads",
     },
     {
-      title: "Analytics & Conversion Optimization",
+      title: "Remarketing Campaigns",
       description:
-        "What gets measured, gets improved. We install advanced analytics to track performance, refine funnels, and make decisions backed by real data — not guesswork.",
-      link: "#",
+        "Re-engage past visitors with dynamic remarketing. From cart abandoners to returning customers — we personalize every message to drive higher lifetime value.",
+      link: "/riyadh/google-ads/remarketing",
     },
   ];
 
   return (
     <section
       className="relative py-14 md:py-24 bg-black text-gray-100"
-      id="digital-marketing-services"
+      id="google-ads-services-riyadh"
     >
       {/* Background Glows */}
       <div className="absolute top-32 -left-20 w-[500px] h-[500px] bg-yellow-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
@@ -56,13 +56,15 @@ export default function DigitalMarketingServicesEasternProvince() {
         {/* Heading + Intro */}
         <div className="max-w-[90%] md:max-w-[80%] mx-auto mb-10 text-center">
           <h2 className="text-white text-3xl lg:text-6xl font-inter mb-3 font-semibold">
-            Comprehensive Digital Marketing Services{" "}
-            <span className="text-yellow-500">for Businesses Across the Eastern Province</span>
+            Full-Spectrum{" "}
+            <span className="text-yellow-500">Google Ads Management for Riyadh Businesses</span>
           </h2>
           <p className="text-gray-100 text-base md:text-[17px] tracking-wider mt-4 max-w-4xl mx-auto leading-relaxed">
-            Our team manages end-to-end marketing solutions — from strategic planning and content
-            creation to campaign execution and reporting. We help you stay visible, competitive, and
-            profitable in a fast-changing Saudi market.
+            We specialize in multi-channel Google Ads management crafted for Saudi Arabia’s
+            evolving digital ecosystem. Our Riyadh team combines AI automation, cultural insight,
+            and precise analytics to deliver campaigns that attract, convert, and scale profitably.
+            Every campaign is bilingual, conversion-tracked, and compliant with Saudi advertising
+            regulations — ensuring performance with integrity.
           </p>
         </div>
 
@@ -80,7 +82,7 @@ export default function DigitalMarketingServicesEasternProvince() {
                 {service.description}
               </p>
               <Link href={service.link}>
-                <p className="text-green-500 group-hover:text-white text-sm mt-2 hover:font-semibold transition-all">
+                <p className="text-yellow-400 group-hover:text-white text-sm mt-2 hover:font-semibold transition-all">
                   Discover More
                 </p>
               </Link>
@@ -109,6 +111,14 @@ export default function DigitalMarketingServicesEasternProvince() {
             </div>
           ))}
         </div>
+
+        {/* Closing Paragraph */}
+        <p className="text-gray-300 text-center mt-16 text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
+          Our approach blends creative storytelling with analytical precision — transforming ad
+          spend into measurable growth. Whether you’re launching a startup or scaling an enterprise,
+          our Riyadh Google Ads specialists ensure your campaigns perform with{" "}
+          <span className="text-yellow-400 font-medium">clarity, consistency, and confidence.</span>
+        </p>
       </div>
     </section>
   );
