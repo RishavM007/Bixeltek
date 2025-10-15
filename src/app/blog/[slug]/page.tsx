@@ -103,10 +103,10 @@ export default async function SinglePostPage({ params }: Props) {
 
   return (
     <>
-      <div className="bg-blue-700 text-white pt-40 pb-24 px-6 sm:px-12 lg:px-24">
-        <div className="sm:w-[90%] md:w-[80%] lg:w-[70%] mx-auto flex flex-col items-center justify-center text-center lg:text-center">
+      <div className="bg-blue-700  text-white pt-40 pb-24 px-8 md:px-24">
+        <div className="sm:w-[99%]   md:w-[80%] lg:w-[70%] mx-auto flex flex-col items-center justify-center text-center lg:text-center">
 
-          <h1 className="text-4xl sm:text-5xl font-bold text-center leading-tight mb-8">{post.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-center leading-tight mb-8">{post.title}</h1>
 
           {/* Blog excerpt */}
           <p className="md:text-base sm:text-sm text-center max-w-[80%] mx-auto text-white/90  lg:mx-0 mb-6">
@@ -135,7 +135,7 @@ export default async function SinglePostPage({ params }: Props) {
         <div className="sm:w-[90%] md:w-[80%] lg:w-[70%] mx-auto grid grid-cols-1 lg:grid-cols-[5fr_2fr] gap-10">
           {/* Main content */}
           <div>
-            <h1 className="text-4xl font-bold mb-6">{post.title}</h1>
+            <h1 className="text-3xl md:text-4xl text-left font-semibold mb-6">{post.title}</h1>
 
             {post.featuredImage?.node.sourceUrl && (
               <figure className="mb-6">
@@ -150,8 +150,8 @@ export default async function SinglePostPage({ params }: Props) {
 
            <div
   className="font-inter leading-relaxed text-neutral-900 text-base
-             [&_h1]:text-5xl [&_h1]:font-bold
-             [&_h2]:text-3xl [&_h2]:mb-4 [&_h2]:font-semibold
+             [&_h1]:text-4xl [&_h1]:font-semibold
+             [&_h2]:text-3xl [&_h2]:mb-4 [&_h2]:mt-5 [&_h2]:font-semibold
              [&_h3]:text-3xl [&_h3]:mb-4 [&_h3]:mt-5 [&_h3]:font-semibold
              [&_h4]:text-xl
              [&_h5]:text-xl

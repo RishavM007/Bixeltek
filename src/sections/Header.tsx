@@ -271,13 +271,13 @@ export const Header = () => {
           initial={{ x: "100%" }}
           animate={{ x: isMenuOpen ? 0 : "100%" }}
           transition={{ type: "spring", stiffness: 80, damping: 15 }}
-          className="fixed top-0 right-0 h-full w-full bg-black shadow-lg p-6 z-50 xl:hidden"
+          className="fixed top-0 right-0 h-full w-full bg-black shadow-lg p-6 z-50 md:hidden overflow-y-auto overscroll-contain"
         >
 
           <button className="absolute top-4 right-4 text-white text-3xl" onClick={toggleMenu}>
             <HiX />
           </button>
-          <nav className="mt-10">
+          <nav className="mt-10 pb-10">
 
             <ul className="text-white text-xl md:text-2xl font-sofiasanscondensed space-y-4">
               <li><Link href="/" className="block py-2 px-4 hover:bg-purple-600  rounded">Home</Link></li>
@@ -297,19 +297,7 @@ export const Header = () => {
                 )}
               </li>
               <li><Link href="/industries" className="block py-2 px-4 hover:bg-purple-600 rounded">Industries</Link></li>
-              <li>
-                <button onClick={() => { setIsDropdownOpen2(!isDropdownOpen2) }} className="flex justify-between w-full py-2 px-4 hover:bg-purple-600 rounded">Case Studies <HiChevronDown className="text-xl md:text-2xl" /></button>
-                {isDropdownOpen2 && (
-                  <motion.ul initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="ml-4 text-lg md:text-xl space-y-2">
-                    <li><Link href="/case-studies/Tumblewash-Casestudy" className="block py-2 px-4 hover:bg-gray-700 rounded">Tumblewash-Casestudy</Link></li>
-                    <li><Link href="/case-studies/google-ads-case-study-bike-repair-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Eazy Bike Repair Case Study</Link></li>
-                    <li><Link href="/case-studies/digital-marketing-for-dentists-case-study" className="block py-2 px-4 hover:bg-gray-700 rounded">Digital Marketing for Dentists</Link></li>
-                    <li><Link href="/case-studies" className="block py-2 px-4 hover:bg-gray-700 rounded">View More</Link></li>
-                  </motion.ul>
-                )}
-              </li>
-              <li><Link href="/blog" className="block py-2 px-4 hover:bg-purple-600 rounded">Blog</Link></li>
-              <li>
+                            <li>
                 <button
                   onClick={() => setIsLocationsOpen(!isLocationsOpen)}
                   className="flex justify-between w-full py-2 px-4 hover:bg-purple-600 rounded"
@@ -378,6 +366,18 @@ export const Header = () => {
                   </motion.ul>
                 )}
               </li>
+              <li>
+                <button onClick={() => { setIsDropdownOpen2(!isDropdownOpen2) }} className="flex justify-between w-full py-2 px-4 hover:bg-purple-600 rounded">Case Studies <HiChevronDown className="text-xl md:text-2xl" /></button>
+                {isDropdownOpen2 && (
+                  <motion.ul initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="ml-4 text-lg md:text-xl space-y-2">
+                    <li><Link href="/case-studies/Tumblewash-Casestudy" className="block py-2 px-4 hover:bg-gray-700 rounded">Tumblewash-Casestudy</Link></li>
+                    <li><Link href="/case-studies/google-ads-case-study-bike-repair-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Eazy Bike Repair Case Study</Link></li>
+                    <li><Link href="/case-studies/digital-marketing-for-dentists-case-study" className="block py-2 px-4 hover:bg-gray-700 rounded">Digital Marketing for Dentists</Link></li>
+                    <li><Link href="/case-studies" className="block py-2 px-4 hover:bg-gray-700 rounded">View More</Link></li>
+                  </motion.ul>
+                )}
+              </li>
+              <li><Link href="/blog" className="block py-2 px-4 hover:bg-purple-600 rounded">Blog</Link></li>
               {/* <li><Link href="/about-us" className="block py-2 px-4 hover:bg-purple-600 rounded">About Us</Link></li> */}
               <li><Link href="/contact-us" className="block py-2 px-4 hover:bg-purple-600 rounded">Contact Us</Link></li>
             </ul>

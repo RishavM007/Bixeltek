@@ -441,13 +441,13 @@ export const Whiteheader = () => {
                 initial={{ x: "100%" }}
                 animate={{ x: isMenuOpen ? 0 : "100%" }}
                 transition={{ type: "spring", stiffness: 80, damping: 15 }}
-                className="fixed top-0 right-0 h-full w-full bg-black shadow-lg p-6 z-50 md:hidden"
+                className="fixed top-0 right-0 h-full w-full bg-black shadow-lg p-6 z-50 md:hidden overflow-y-auto overscroll-contain"
             >
 
                 <button className="absolute top-4 right-4 text-white text-3xl" onClick={toggleMenu}>
                     <HiX />
                 </button>
-                <nav className="mt-10">
+                <nav className="mt-10 pb-10 ">
 
                     <ul className="text-white text-xl font-sofiasanscondensed space-y-4">
                         <li><Link href="/" className="block py-2 px-4 hover:bg-purple-600  rounded">Home</Link></li>
@@ -466,19 +466,10 @@ export const Whiteheader = () => {
                             )}
                         </li>
                         <li><Link href="/industries" className="block py-2 px-4 hover:bg-purple-600 rounded">Industries</Link></li>
-                        <li><button onClick={() => { setIsDropdownOpen2(!isDropdownOpen2) }} className="flex justify-between w-full py-2 px-4 hover:bg-purple-600 rounded">Case Studies <HiChevronDown className="text-xl md:text-2xl" /></button>
-                            {isDropdownOpen2 && (
-                                <motion.ul initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="ml-4 text-lg md:text-xl space-y-2">
-                                    <li><Link href="/casestudies-bixeltek/Tumblewash-Casestudy" className="block py-2 px-4 hover:bg-gray-700 rounded">Tumblewash-Casestudy</Link></li>
-                                    <li><Link href="/casestudies-bixeltek/google-ads-case-study-bike-repair-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Eazy Bike Repair Case Study</Link></li>
-                                    <li><Link href="/casestudies-bixeltek/digital-marketing-for-dentists-case-study" className="block py-2 px-4 hover:bg-gray-700 rounded">Digital Marketing for Dentists</Link></li>
-                                </motion.ul>
-                            )}</li>
-                        <li><Link href="/blog" className="block py-2 px-4 hover:bg-purple-600 rounded">Blog</Link></li>
                         <li>
                             <button
                                 onClick={() => setIsLocationsOpen(!isLocationsOpen)}
-                                className="flex justify-between w-full py-2 px-4 hover:bg-purple-600 rounded"
+                                className="flex justify-between w-full py-2 px-4 hover:bg-purple-600  rounded"
                             >
                                 Locations <HiChevronDown className="text-xl" />
                             </button>
@@ -488,7 +479,7 @@ export const Whiteheader = () => {
                                     initial={{ opacity: 0, y: -5 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.3 }}
-                                    className="ml-4 text-lg space-y-2"
+                                    className="ml-4 text-lg  space-y-2"
                                 >
                                     {Object.keys(locations).map((country) => {
                                         const typedCountry = country as keyof typeof locations;
@@ -518,7 +509,7 @@ export const Whiteheader = () => {
                                                             <div key={city.name}>
                                                                 <Link
                                                                     href={city.link}
-                                                                    className="block font-semibold text-gray-200 hover:text-purple-400"
+                                                                    className="block font-semibold  text-gray-200 hover:text-purple-400"
                                                                 >
                                                                     {city.name}
                                                                 </Link>
@@ -544,6 +535,16 @@ export const Whiteheader = () => {
                                 </motion.ul>
                             )}
                         </li>
+                        <li><button onClick={() => { setIsDropdownOpen2(!isDropdownOpen2) }} className="flex justify-between w-full py-2 px-4 hover:bg-purple-600 rounded">Case Studies <HiChevronDown className="text-xl md:text-2xl" /></button>
+                            {isDropdownOpen2 && (
+                                <motion.ul initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="ml-4 text-lg md:text-xl space-y-2">
+                                    <li><Link href="/casestudies-bixeltek/Tumblewash-Casestudy" className="block py-2 px-4 hover:bg-gray-700 rounded">Tumblewash-Casestudy</Link></li>
+                                    <li><Link href="/casestudies-bixeltek/google-ads-case-study-bike-repair-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Eazy Bike Repair Case Study</Link></li>
+                                    <li><Link href="/casestudies-bixeltek/digital-marketing-for-dentists-case-study" className="block py-2 px-4 hover:bg-gray-700 rounded">Digital Marketing for Dentists</Link></li>
+                                </motion.ul>
+                            )}</li>
+                        <li><Link href="/blog" className="block py-2 px-4 hover:bg-purple-600 rounded">Blog</Link></li>
+                        
 
                         {/* <li><Link href="/about-us" className="block py-2 px-4 hover:bg-purple-600 rounded">About Us</Link></li> */}
                     </ul>
