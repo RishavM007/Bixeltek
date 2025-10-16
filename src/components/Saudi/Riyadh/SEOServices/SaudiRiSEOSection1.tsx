@@ -1,22 +1,22 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import searchImage from "@/assets/seo-reporting-dashboard-seoreseller-1024x683.png"; // 🖼️ Replace with your actual image
+import searchImage from "@/assets/Google Ads Dashboard.png"; // 🖼️ Replace with your actual image
 
 export default function SEOOpportunity() {
   return (
-    <section className="bg-black max-w-[95%] md:max-w-[85%] mx-auto text-white py-24 px-6 md:px-20 flex flex-col md:flex-row items-center gap-8 md:gap-10 overflow-hidden">
+    <section className="bg-black max-w-[95%] md:max-w-[85%] mx-auto text-white py-24 px-6 md:px-20 flex flex-col md:flex-row items-center gap-8 md:gap-16 overflow-hidden">
       {/* LEFT SIDE — IMAGE */}
-      <div className="relative w-full md:w-1/2 h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-lg">
-        <Image
-          src={searchImage}
-          alt="Google Ads Dashboard"
-          fill
-          className="object-contain object-center"
-          priority
-        />
-        {/* <div className="absolute inset-0 bg-black/20" /> */}
-      </div>
+     <div className="relative w-full md:w-1/2 h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-lg flex justify-center items-center">
+  <Image
+    src={searchImage}
+    alt="Google Ads Dashboard"
+    fill
+    className="object-contain scale-125 md:scale-150 transition-transform duration-500"
+    priority
+  />
+</div>
+
 
       {/* RIGHT SIDE — CONTENT */}
       <div className="w-full md:w-1/2">

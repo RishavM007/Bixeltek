@@ -56,16 +56,14 @@ const GradientCards: React.FC = () => {
                 {corePillars.map((pillar, idx) => (
                     <div
                         key={idx}
-                        className="relative w-auto h-auto bg-[#07182e] rounded-[20px] shadow-[0_20px_40px_rgba(0,0,0,0.3)] overflow-hidden flex flex-col p-6 justify-start items-start"
+                        className="relative w-auto h-auto bg-neutral-900 rounded-[20px] shadow-[0_20px_40px_rgba(0,0,0,0.3)] overflow-hidden flex flex-col p-6 justify-start items-start"
                     >
                         {/* Rotating linear gradient background */}
                         <motion.div
                             className="absolute w-[300%] h-[300%] -top-[100%] -left-[100%] 
              bg-gradient-to-r 
-             from-yellow-200 
-             via-yellow-300
-             via-green-600
-             to-green-200 
+             from-blue-500
+             to-blue-400
              blur-[30px] opacity-60 z-0"
                             animate={{ rotate: 360 }}
                             transition={{ repeat: Infinity, duration: 12, ease: "linear" }}

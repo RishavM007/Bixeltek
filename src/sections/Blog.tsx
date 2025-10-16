@@ -29,13 +29,13 @@ type RecentPostsResponse = {
 };
 
 export default function Blog() {
-  const [posts, setPosts] = useState<Blog[]>([]); // ✅ properly typed
+  const [posts, setPosts] = useState<Blog[]>([]);
 
   useEffect(() => {
     const fetchPosts = async () => {
       try {
         const data = await client.request<RecentPostsResponse>(GET_ALL_POSTS);
-        setPosts(data.posts.nodes.slice(0, 3)); // ✅ limit to 3
+        setPosts(data.posts.nodes.slice(0, 3)); 
       } catch (error) {
         console.error('Error fetching posts:', error);
       }
@@ -47,7 +47,7 @@ export default function Blog() {
   return (
     <section className="py-24 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="font-manrope text-5xl font-bold text-gray-900 text-center mb-14">Our popular blogs</h2>
+        <h2 className="font-manrope text-5xl font-semibold text-gray-900 text-center mb-14">Read the latest insights powering business growth.</h2>
 
         <div className="flex justify-center mb-14 gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8">
           {posts.map((post) => (

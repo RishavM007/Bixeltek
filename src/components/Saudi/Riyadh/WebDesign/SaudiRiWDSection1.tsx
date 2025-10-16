@@ -1,14 +1,14 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import fastWebImage from "@/assets/QClay Design.jpg"; 
+import fastWebImage from "@/assets/laptop dentist 2.png"; 
 import Link from "next/link";// ⚙️ Replace with your actual image
 
 export default function WebSpeedRiyadh() {
     return (
         <section className="bg-black max-w-[95%] md:max-w-[85%] mx-auto text-white py-24 px-6 md:px-20 flex flex-col md:flex-row items-center gap-10 overflow-hidden">
             {/* LEFT SIDE — IMAGE */}
-            <div className="relative w-full md:w-1/2 h-[400px] md:h-[550px] rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative w-full md:w-1/2 h-[400px] md:h-[450px] rounded-2xl overflow-hidden shadow-lg">
                 <Image
                     src={fastWebImage}
                     alt="High-speed web design for Riyadh businesses"
@@ -17,7 +17,7 @@ export default function WebSpeedRiyadh() {
                     priority
                 />
                 {/* Gradient mask overlay */}
-                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_rgba(0,0,0,0.1),_transparent_90%)] before:absolute before:inset-0 before:bg-[linear-gradient(to_right,rgba(0,0,0,0.9),transparent_20%,transparent_80%,rgba(0,0,0,0.9))]" />
+                {/* <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_rgba(0,0,0,0.1),_transparent_90%)] before:absolute before:inset-0 before:bg-[linear-gradient(to_right,rgba(0,0,0,0.9),transparent_20%,transparent_80%,rgba(0,0,0,0.9))]" /> */}
             </div>
 
 

@@ -1,6 +1,10 @@
+'use client';
+
 import React from 'react'
 import image1 from '@/assets/Unlock Your Online Potential_ Pro Web Design_.jpg'
 import Image from 'next/image'
+import { motion } from "framer-motion";
+import websiteImg from "@/assets/omacomputers.com_home_(hd screenshot).png";
 
 export default function SaudiRiWDSection2() {
     return (
@@ -26,17 +30,22 @@ export default function SaudiRiWDSection2() {
             </div>
 
             {/* RIGHT SIDE — IMAGE */}
-            <div className="relative w-full md:w-1/2 h-[400px] md:h-[550px] rounded-2xl overflow-hidden shadow-lg">
-                <Image
-                    src={image1}
-                    alt="High-speed web design for Riyadh businesses"
-                    fill
-                    className="object-cover object-center"
-                    priority
-                />
-                {/* Gradient mask overlay */}
-                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_rgba(0,0,0,0.1),_transparent_90%)] before:absolute before:inset-0 before:bg-[linear-gradient(to_right,rgba(0,0,0,0.9),transparent_20%,transparent_80%,rgba(0,0,0,0.9))]" />
-            </div>
+            <div className="relative w-full md:w-1/2 flex justify-center items-start overflow-hidden rounded-[0px] shadow-2xl h-[550px]">
+          <motion.div
+            className="w-full"
+            initial={{ y: 0 }}
+            whileHover={{ y: -1600 }} // scroll up 200px on hover, adjust as needed
+            transition={{ duration: 3.5, ease: "easeInOut" }}
+          >
+            <Image
+              src={websiteImg}
+              alt="Website trust and conversion"
+              className="w-full h-auto object-cover"
+            />
+          </motion.div>
+
+          <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-black to-transparent z-20 pointer-events-none" />
+        </div>
         </section>
 
     )

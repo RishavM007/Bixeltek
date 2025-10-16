@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import seoAuditImage from "@/assets/pic-3@1x.png";
+import seoAuditImage from "@/assets/SEO Dashboard.png";
 import Link from "next/link"; // replace with your actual image
 
 export default function SEOIssuesSection() {
