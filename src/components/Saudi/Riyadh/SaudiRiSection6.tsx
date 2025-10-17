@@ -6,15 +6,15 @@ import { HiLocationMarker } from "react-icons/hi";
 
 export default function CoverageMapRiyadh() {
   return (
-    <section className="bg-black text-gray-100 py-16">
+    <section className="bg-[#fffdf5] text-gray-900 py-16">
       <div className="max-w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
         {/* LEFT: Content */}
         <div>
-          <h2 className="text-3xl md:text-5xl font-inter font-semibold text-white mb-6 leading-tight">
+          <h2 className="text-3xl md:text-5xl font-inter font-semibold text-black mb-6 leading-tight">
             Proudly Serving Businesses Across <span className="text-yellow-500">Riyadh and Beyond</span> 
           </h2>
 
-          <p className="text-gray-300 mb-6 max-w-2xl font-poppins leading-relaxed">
+          <p className="text-gray-900 mb-6 max-w-2xl font-poppins leading-relaxed">
             Bixeltek partners with organizations across major districts, commercial hubs, and expanding
             business zones, including:
           </p>
@@ -23,52 +23,52 @@ export default function CoverageMapRiyadh() {
             <li className="flex items-start gap-3">
               <HiLocationMarker className="text-yellow-500 mt-1" size={22} />
               <div className="flex gap-3 items-center">
-                <strong className="text-white">Al Olaya</strong>
-                <div className="text-gray-300 text-base">Corporate and financial center of Riyadh.</div>
+                <strong className="text-black">Al Olaya</strong>
+                <div className="text-gray-900 text-base">Corporate and financial center of Riyadh.</div>
               </div>
             </li>
 
             <li className="flex items-start gap-3">
               <HiLocationMarker className="text-yellow-500 mt-1" size={22} />
               <div className="flex gap-3 items-center">
-                <strong className="text-white">Diriyah</strong>
-                <div className="text-gray-300 text-base">The historic capital reimagined for global enterprise.</div>
+                <strong className="text-black">Diriyah</strong>
+                <div className="text-gray-900 text-base">The historic capital reimagined for global enterprise.</div>
               </div>
             </li>
 
             <li className="flex items-start gap-3">
               <HiLocationMarker className="text-yellow-500 mt-1" size={22} />
               <div className="flex gap-3 items-center">
-                <strong className="text-white">Al Yasmin & Qurtubah</strong>
-                <div className="text-gray-300 text-base">Fast-growing residential and retail communities.</div>
+                <strong className="text-black">Al Yasmin & Qurtubah</strong>
+                <div className="text-gray-900 text-base">Fast-growing residential and retail communities.</div>
               </div>
             </li>
 
             <li className="flex items-start gap-3">
               <HiLocationMarker className="text-yellow-500 mt-1" size={22} />
               <div className="flex gap-3 items-center">
-                <strong className="text-white">Al Sulimaniyah & Al Nakheel</strong>
-                <div className="text-gray-300 text-base">Modern districts driving lifestyle and healthcare innovation.</div>
+                <strong className="text-black">Al Sulimaniyah & Al Nakheel</strong>
+                <div className="text-gray-900 text-base">Modern districts driving lifestyle and healthcare innovation.</div>
               </div>
             </li>
 
             <li className="flex items-start gap-3">
               <HiLocationMarker className="text-yellow-500 mt-1" size={22} />
               <div className="flex gap-3 items-center">
-                <strong className="text-white">Al Malaz & Al Murabba</strong>
-                <div className="text-gray-300 text-base">Emerging service-based and tech hubs.</div>
+                <strong className="text-black">Al Malaz & Al Murabba</strong>
+                <div className="text-gray-900 text-base">Emerging service-based and tech hubs.</div>
               </div>
             </li>
           </ul>
 
-          <p className="text-gray-300 leading-relaxed max-w-xl">
+          <p className="text-gray-900 leading-relaxed max-w-xl">
             Each campaign is customized to its local audience — from Arabic-language ad copy to precise geo-targeting.
           </p>
         </div>
 
         {/* RIGHT: Map iframe */}
         <div className="w-full">
-          <div className="relative rounded-2xl shadow-2xl overflow-hidden border border-gray-800">
+          <div className="relative rounded-2xl shadow-2xl overflow-hidden border ">
             {/* Responsive iframe container keeps aspect ratio */}
             <div className="w-full aspect-[16/10]">
               {/* OpenStreetMap embed centered on Riyadh (lat ~24.71, lon ~46.67). BBOX around Riyadh used. */}

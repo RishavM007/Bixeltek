@@ -18,7 +18,7 @@ const SeoMarqueeRiyadh: React.FC = () => {
   return (
     <div className="flex flex-col">
       {/* TOP MARQUEE — Green-Yellow Gradient Background */}
-      <section className="bg-yellow-500 py-7 overflow-hidden">
+      <section className="bg-green-600 py-7 overflow-hidden">
         <motion.div
           className="flex w-max gap-10 whitespace-nowrap"
           animate={{ x: ["0%", "-50%"] }}

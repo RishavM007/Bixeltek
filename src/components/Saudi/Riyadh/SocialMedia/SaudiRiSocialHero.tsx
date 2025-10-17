@@ -26,6 +26,7 @@ export default function HeroRiyadhSocial() {
     ];
 
     return (
+        <>
         <section className="relative flex flex-col pb-20 items-center justify-center h-[140vh] md:h-[110vh] text-center px-6 overflow-hidden">
             {/* Background Image */}
             <Image
@@ -132,8 +133,10 @@ export default function HeroRiyadhSocial() {
              <div className="absolute bottom-0 left-0 w-full h-24 md:h-32 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
 
             {/* Popup Form + Logo Carousel */}
-            <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
+           
             <FunnelSEOLogoTicker />
         </section>
+         <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
+        </>
     );
 }

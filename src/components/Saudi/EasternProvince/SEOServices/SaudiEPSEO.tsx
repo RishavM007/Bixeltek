@@ -11,6 +11,8 @@ import globalIcon from "@/assets/medal-ribbons-star-svgrepo-com.png";
 
 // ✅ Background Image
 import heroBg from "@/assets/SaudiSEOHeroImg.avif";
+import { ChevronRight } from "lucide-react";
+import { EPLogoTickerSaudiEP } from "../GoogleAds/SaudiLogoTickerEP";
 
 export default function HeroEasternProvinceSEO() {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,10 +29,11 @@ export default function HeroEasternProvinceSEO() {
   ];
 
   return (
+    <>
     <section className="relative flex flex-col items-center justify-center h-[140vh] md:h-[120vh] pb-20 text-center px-6 overflow-hidden">
       {/* ✅ Background Image */}
       {/* ✅ Bottom Fade Mask */}
-<div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black to-transparent z-10 pointer-events-none" />
+<div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[#fffdf5] to-transparent z-10 pointer-events-none" />
       <Image
         src={heroBg}
         alt="Eastern Province Skyline"
@@ -40,7 +43,7 @@ export default function HeroEasternProvinceSEO() {
       />
 
       {/* ✅ Dark Overlay */}
-      <div className="absolute inset-0 bg-black/60 -z-10" />
+      <div className="absolute inset-0 bg-black/50 -z-10" />
 
       {/* ✅ Content */}
       <div className="flex justify-center items-center">
@@ -69,15 +72,17 @@ export default function HeroEasternProvinceSEO() {
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <button
               onClick={toggleContactForm}
-              className="px-6 py-3 rounded-full bg-yellow-600 text-white font-medium hover:bg-green-700 transition"
+              className="px-7 py-3 rounded-full bg-gradient-to-tr from-green-500 via-green-700 to-green-950 hover:bg-gradient-to-tr hover:from-green-950 hover:via-green-700 hover:to-green-500 text-white font-semibold text-sm shadow-lg hover:bg-[#d6ae3f] transition"
             >
               Get a Free SEO Audit
             </button>
-            <a href="mailto:zee@bixeltek.com">
-              <button className="px-6 py-3 rounded-full border border-white text-white font-medium hover:bg-green-600 hover:border-green-600 hover:text-white transition">
-                Talk to an SEO Specialist
-              </button>
-            </a>
+             <a href='mailto:zee@bixeltek.com'>
+                        <div className="p-[1px] rounded-full bg-gradient-to-r from-green-500 via-green-700 to-green-950 inline-block">
+                            <button className="px-8 flex gap-2 py-3 bg-black rounded-full text-white font-semibold shadow-lg transition w-full h-full">
+                                 Talk to an SEO Specialist <ChevronRight />
+                            </button>
+                        </div>
+                    </a>
           </div>
 
           {/* Trust Row */}
@@ -104,8 +109,9 @@ export default function HeroEasternProvinceSEO() {
       </div>
 
       {/* Popup Form + Logo Carousel */}
-      <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
-      <FunnelSEOLogoTicker />
     </section>
+      <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
+      <EPLogoTickerSaudiEP />
+    </>
   );
 }

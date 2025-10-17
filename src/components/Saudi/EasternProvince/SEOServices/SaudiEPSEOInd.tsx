@@ -32,14 +32,14 @@ export default function SaudiEPSEOIndustries(): JSX.Element {
     };
 
     return (
-        <section className="md:pt-10 mt-10 md:pb-20  bg-[black] z-10 overflow-hidden">
-            <div className="w-full relative text-center text-white pb-10">
+        <section className=" py-10 md:pb-20  bg-[#fffdf5] z-10 overflow-hidden">
+            <div className="w-full relative text-center text-black pb-10">
                 <h1 className="text-3xl md:text-5xl mx-auto max-w-[90%] md:max-w-full xl:text-7xl font-bold mb-2">
-                    <span className=" text-transparent bg-clip-text bg-gradient-to-r from-white to-yellow-500">
+                    <span className=" text-transparent bg-clip-text bg-gradient-to-r from-black to-yellow-500">
                     Trusted by Businesses Across <br /> Khobar, Dammam, and Dhahran
                     </span>
                 </h1>
-                <p className="text-[16px] xl:text-lg text-gray-50 max-w-[100%] md:max-w-3xl mx-auto">
+                <p className="text-[16px] xl:text-lg text-gray-950 max-w-[100%] md:max-w-3xl mx-auto">
             Our SEO framework adapts to multiple industries across Saudi Arabia’s Eastern Province:
                 </p>
             </div>
@@ -151,13 +151,13 @@ export default function SaudiEPSEOIndustries(): JSX.Element {
 
             <div className="controls flex justify-center mt-10">
                 <button
-                    className="bg-blue-600 text-white p-3 rounded-full mr-4"
+                    className="bg-gradient-to-tr from-green-600 via-green-800 to-black text-white p-3 rounded-full mr-4"
                     onClick={() => handleScroll("left")}
                 >
                     <ArrowLeft size={20} />
                 </button>
                 <button
-                    className="bg-blue-600 text-white p-3 rounded-full"
+                    className="bg-gradient-to-tr from-green-600 via-green-800 to-black text-white p-3 rounded-full"
                     onClick={() => handleScroll("right")}
                 >
                     <ArrowRight size={20} />

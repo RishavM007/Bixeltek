@@ -58,57 +58,57 @@ export const Whiteheader = () => {
                         { name: "Search Engine Optimisation", link: "/seo-agency-hyderabad" },
                     ],
                 },
-                {
-                    name: "Delhi",
-                    link: "#",
-                    services: [
-                        { name: "SEO Services in Vancouver", link: "#" },
-                    ],
-                },
-                {
-                    name: "Bangalore",
-                    link: "/canada/vancouver",
-                    services: [
-                        { name: "SEO Services in Vancouver", link: "/canada/vancouver/seo" },
-                    ],
-                },
+                // {
+                //     name: "Delhi",
+                //     link: "#",
+                //     services: [
+                //         { name: "SEO Services in Vancouver", link: "#" },
+                //     ],
+                // },
+                // {
+                //     name: "Bangalore",
+                //     link: "/canada/vancouver",
+                //     services: [
+                //         { name: "SEO Services in Vancouver", link: "/canada/vancouver/seo" },
+                //     ],
+                // },
             ],
         },
-        usa: {
-            title: "United States",
-            link: "/united-states",
-            cities: [
-                {
-                    name: "New York",
-                    link: "/united-states/new-york",
-                    services: [
-                        { name: "SEO Services in New York", link: "/united-states/new-york/seo" },
-                        { name: "Social Media Marketing", link: "/united-states/new-york/smm" },
-                    ],
-                },
-                {
-                    name: "Chicago",
-                    link: "/united-states/chicago",
-                    services: [
-                        { name: "SEO Services in Chicago", link: "/united-states/chicago/seo" },
-                    ],
-                },
-            ],
-        },
-        uk: {
-            title: "United Kingdom",
-            link: "/united-kingdom",
-            cities: [
-                {
-                    name: "London",
-                    link: "/united-kingdom/london",
-                    services: [
-                        { name: "SEO Services in London", link: "/united-kingdom/london/seo" },
-                        { name: "PPC in London", link: "/united-kingdom/london/ppc" },
-                    ],
-                },
-            ],
-        },
+        // usa: {
+        //     title: "United States",
+        //     link: "/united-states",
+        //     cities: [
+        //         {
+        //             name: "New York",
+        //             link: "/united-states/new-york",
+        //             services: [
+        //                 { name: "SEO Services in New York", link: "/united-states/new-york/seo" },
+        //                 { name: "Social Media Marketing", link: "/united-states/new-york/smm" },
+        //             ],
+        //         },
+        //         {
+        //             name: "Chicago",
+        //             link: "/united-states/chicago",
+        //             services: [
+        //                 { name: "SEO Services in Chicago", link: "/united-states/chicago/seo" },
+        //             ],
+        //         },
+        //     ],
+        // },
+        // uk: {
+        //     title: "United Kingdom",
+        //     link: "/united-kingdom",
+        //     cities: [
+        //         {
+        //             name: "London",
+        //             link: "/united-kingdom/london",
+        //             services: [
+        //                 { name: "SEO Services in London", link: "/united-kingdom/london/seo" },
+        //                 { name: "PPC in London", link: "/united-kingdom/london/ppc" },
+        //             ],
+        //         },
+        //     ],
+        // },
         saudi: {
             title: "Saudi Arabia",
             link: "#",
@@ -135,20 +135,20 @@ export const Whiteheader = () => {
                 },
             ],
         },
-        uae: {
-            title: "United Arab Emirites",
-            link: "/united-kingdom",
-            cities: [
-                {
-                    name: "Dubai",
-                    link: "/united-kingdom/london",
-                    services: [
-                        { name: "SEO Services in Dubai", link: "/united-kingdom/london/seo" },
-                        { name: "PPC in Dubai", link: "/united-kingdom/london/ppc" },
-                    ],
-                },
-            ],
-        },
+        // uae: {
+        //     title: "United Arab Emirites",
+        //     link: "/united-kingdom",
+        //     cities: [
+        //         {
+        //             name: "Dubai",
+        //             link: "/united-kingdom/london",
+        //             services: [
+        //                 { name: "SEO Services in Dubai", link: "/united-kingdom/london/seo" },
+        //                 { name: "PPC in Dubai", link: "/united-kingdom/london/ppc" },
+        //             ],
+        //         },
+        //     ],
+        // },
     };
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);

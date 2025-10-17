@@ -151,13 +151,13 @@ export default function SaudiEPWDIndustries(): JSX.Element {
 
             <div className="controls flex justify-center mt-10">
                 <button
-                    className="bg-blue-600 text-white p-3 rounded-full mr-4"
+                    className="bg-gradient-to-tr from-green-600 via-green-800 to-green-900 text-white p-3 rounded-full mr-4"
                     onClick={() => handleScroll("left")}
                 >
                     <ArrowLeft size={20} />
                 </button>
                 <button
-                    className="bg-blue-600 text-white p-3 rounded-full"
+                    className="bg-gradient-to-tr from-green-600 via-green-800 to-green-900 text-white p-3 rounded-full"
                     onClick={() => handleScroll("right")}
                 >
                     <ArrowRight size={20} />

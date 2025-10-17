@@ -48,12 +48,12 @@ const steps = [
 
 const RiyadhDMSteps = () => {
     return (
-        <div className="min-h-screen relative bg-black py-12 px-4 sm:px-6 lg:px-8">
+        <div className="min-h-screen relative bg-[#fffdf5] py-12 px-4 sm:px-6 lg:px-8">
             {/* Section Header */}
-            <h2 className="text-3xl md:text-6xl text-white text-center max-w-7xl mx-auto font-medium font-inter mb-6">
+            <h2 className="text-3xl md:text-6xl text-black text-center max-w-7xl mx-auto font-medium font-inter mb-6">
                 From First Click to Consistent Growth <br /> <span className="text-yellow-500">A 5-Step Proven System.</span>
             </h2>
-            <p className="text-gray-300 max-w-2xl mx-auto mb-12 font-poppins leading-relaxed text-center">
+            <p className="text-gray-900 max-w-2xl mx-auto mb-12 font-poppins leading-relaxed text-center">
                 Every Riyadh client follows our structured roadmap that transforms their marketing from reactive to predictable.
             </p>
 
@@ -67,8 +67,8 @@ const RiyadhDMSteps = () => {
                         <p className={`${item.color} group-hover:text-white text-5xl font-bold mb-2`}>
                             {item.number}
                         </p>
-                        <h2 className="text-xl font-bold text-white mb-2">{item.title}</h2>
-                        <p className="text-gray-300 group-hover:text-white">{item.text}</p>
+                        <h2 className="text-xl font-bold text-black group-hover:text-white mb-2">{item.title}</h2>
+                        <p className="text-gray-900 group-hover:text-white">{item.text}</p>
                     </div>
                 ))}
             </div>
@@ -91,17 +91,17 @@ const RiyadhDMSteps = () => {
                                     } ${item.gradient} z-0`}
                             ></div>
 
-                            <div className="relative flex flex-col justify-between items-center z-10 bg-black rounded-[20px] p-8 h-[260px]">
+                            <div className="relative flex flex-col justify-between items-center z-10 bg-[#fffdf5] rounded-[20px] p-8 h-[260px]">
                                 {/* Floating Card */}
                                 <div
-                                    className={`absolute flex items-center gap-5 flex-row border border-white/40 bg-black max-w-3xl rounded-2xl p-10 z-10 transition-all duration-300 ${positionClasses}`}
+                                    className={`absolute flex items-center gap-5 flex-row border border-white/40 bg-[#fffdf5] max-w-3xl shadow-2xl rounded-2xl p-10 z-10 transition-all duration-300 ${positionClasses}`}
                                 >
                                     <div>
                                         <p className={`${item.color} text-7xl font-bold`}>{item.number}</p>
                                     </div>
                                     <div>
-                                        <h2 className="text-2xl font-bold text-white mb-4">{item.title}</h2>
-                                        <p className="text-gray-300 leading-relaxed">{item.text}</p>
+                                        <h2 className="text-2xl font-bold text-black mb-4">{item.title}</h2>
+                                        <p className="text-gray-900 leading-relaxed">{item.text}</p>
                                     </div>
                                 </div>
 
@@ -122,7 +122,7 @@ const RiyadhDMSteps = () => {
             </div>
 
             {/* Footer Paragraph */}
-            <p className="text-gray-300 mt-10 max-w-[90%] md:max-w-[50%] mx-auto mb-12 font-poppins leading-relaxed text-center">
+            <p className="text-gray-900 mt-10 max-w-[90%] md:max-w-[50%] mx-auto mb-12 font-poppins leading-relaxed text-center">
                 This systematic approach ensures that your campaigns, SEO, and ads grow smarter over time —
                 guided by insights, not guesswork.
             </p>

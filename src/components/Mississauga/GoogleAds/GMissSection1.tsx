@@ -2,14 +2,14 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import dashboardImg from "@/assets/Google-Ads-Mississauga.avif";
+import dashboardImg from "@/assets/Google-Ads-1.png";
 import { LiaStarOfLifeSolid } from "react-icons/lia";
 import Link from "next/link";
 
 export default function WhyGoogleAdsMississauga() {
     return (
-        <section className="w-[90%] md:w-[85%] mx-auto mt-0 bg-black text-gray-100 py-10 overflow-hidden">
-            <div className="flex flex-col lg:flex-row items-center lg:items-start">
+        <section className="w-[90%] md:w-[75%] mx-auto mt-0 bg-black text-gray-100 py-10 overflow-hidden">
+            <div className="flex flex-col lg:flex-row gap-10 items-center lg:items-start">
 
                 {/* LEFT IMAGE */}
                 <motion.div
@@ -37,7 +37,7 @@ export default function WhyGoogleAdsMississauga() {
                     className="flex-1 lg:w-1/2 px-8 lg:px-8 mt-10 lg:mt-10"
                 >
                     {/* Heading */}
-                    <h2 className="text-3xl md:text-6xl font-bold font-inter leading-snug mb-6">
+                    <h2 className="text-3xl md:text-6xl font-medium font-inter leading-snug mb-6">
                         Your Customers Are Searching Every Day{" "}
                         <span className="text-blue-500">— Are You Visible?</span>
                     </h2>

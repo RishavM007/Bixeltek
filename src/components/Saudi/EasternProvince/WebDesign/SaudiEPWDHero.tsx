@@ -11,6 +11,7 @@ import { ChevronRight } from "lucide-react";
 import googleIcon from "@/assets/google-authenticator-svgrepo-com.png";
 import clientIcon from "@/assets/star-shine-svgrepo-com.png";
 import expertIcon from "@/assets/medal-ribbons-star-svgrepo-com.png";
+import { LogoTickerSaudi } from "@/components/LogoTicker2";
 
 export default function HeroWebDesignSEO() {
   const [isVisible, setIsVisible] = useState(false);
@@ -23,6 +24,7 @@ export default function HeroWebDesignSEO() {
   ];
 
   return (
+    <>
     <section className="relative flex flex-col items-center justify-center h-[130vh] md:h-[100vh] text-center px-6 overflow-hidden">
       {/* ✅ Background Image */}
       <Image
@@ -59,12 +61,12 @@ export default function HeroWebDesignSEO() {
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <button
             onClick={toggleContactForm}
-            className="px-8 py-3 rounded-full bg-gradient-to-tr from-yellow-500 via-yellow-600 to-yellow-700 hover:from-yellow-600 hover:via-yellow-700 hover:to-yellow-800 text-white font-semibold text-sm shadow-lg transition"
+            className="px-8 py-3 rounded-full bg-gradient-to-tr from-green-500 via-green-600 to-green-700 hover:from-green-600 hover:via-green-700 hover:to-green-800 text-white font-semibold text-sm shadow-lg transition"
           >
             Get a Free Website Audit
           </button>
           <a href="mailto:zee@bixeltek.com">
-            <div className="p-[1px] rounded-full bg-gradient-to-r from-yellow-400 via-yellow-600 to-yellow-800 inline-block">
+            <div className="p-[1px] rounded-full bg-gradient-to-r from-green-400 via-green-600 to-green-800 inline-block">
               <button className="px-8 flex gap-2 py-3 bg-black rounded-full text-white font-semibold shadow-lg transition w-full h-full">
                 Talk to a Web Design Expert <ChevronRight />
               </button>
@@ -93,8 +95,9 @@ export default function HeroWebDesignSEO() {
       </div>
 
       {/* Popup Form + Logo Carousel */}
-      <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
-      <FunnelSEOLogoTicker />
     </section>
+        <LogoTickerSaudi />
+      <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
+    </>
   );
 }

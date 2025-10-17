@@ -3,15 +3,16 @@
 import React from "react";
 import Image from "next/image";
 import websiteImg from "@/assets/Saudi Web Design.png"; 
-import Link from "next/link";// replace with your image
+import Link from "next/link";
+import { Check } from "lucide-react"; // ✅ Imported check icon
 
 export default function WebsiteInvestmentSection() {
   const points = [
     "Launch within 30 days.",
     "SEO-ready builds from day one.",
+    "Local + global expertise for bilingual audiences.",
     "Responsive designs across all devices.",
     "Integrated conversion tracking.",
-    "Local + global expertise for bilingual audiences.",
     "Transparent pricing and clear milestones.",
   ];
 
@@ -42,17 +43,31 @@ export default function WebsiteInvestmentSection() {
             You get:
           </p>
 
-          {/* Points */}
-          <ul className="text-gray-300 mb-6 space-y-3 font-poppins list-disc list-inside">
-            {points.map((point, idx) => (
-              <li key={idx}>{point}</li>
-            ))}
-          </ul>
+          {/* Points in 2 Columns with check icons */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 mb-6">
+            <ul className="space-y-3">
+              {points.slice(0, 3).map((point, idx) => (
+                <li key={idx} className="flex items-start gap-3">
+                  <Check className="text-green-500 w-5 h-5 mt-1 flex-shrink-0" />
+                  <span className="text-gray-300 font-poppins">{point}</span>
+                </li>
+              ))}
+            </ul>
+            <ul className="space-y-3">
+              {points.slice(3).map((point, idx) => (
+                <li key={idx + 3} className="flex items-start gap-3">
+                  <Check className="text-green-500 w-5 h-5 mt-1 flex-shrink-0" />
+                  <span className="text-gray-300 font-poppins">{point}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
 
           <p className="text-gray-300 font-poppins leading-relaxed max-w-xl">
             Our websites work 24/7 to grow your business — even while you sleep.
           </p>
-            <Link href={"#form"}>
+
+          <Link href={"#form"}>
             <button className="px-7 mt-6 py-3 rounded-full bg-gradient-to-tr from-green-500 via-green-800 to-green-950 hover:bg-gradient-to-tr hover:from-green-900 hover:via-green-800 hover:to-green-500 text-white font-semibold text-sm shadow-lg transition">
               Get a Free Website Audit
             </button>

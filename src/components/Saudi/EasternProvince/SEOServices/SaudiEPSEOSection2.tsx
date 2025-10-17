@@ -6,7 +6,7 @@ import seoImg from "@/assets/SEO Dashboard.png"; // ✅ replace with your actual
 
 export default function SemanticSEOSection() {
   return (
-    <section className="relative py-10 md:py-16 bg-black overflow-hidden">
+    <section className="relative py-10 md:py-16 bg-[#fffdf5] overflow-hidden">
       <div className="flex max-w-[95%] md:max-w-[85%] mx-auto gap-10 flex-col md:flex-row-reverse items-center">
 
         {/* ✅ Left Image Container */}
@@ -15,38 +15,38 @@ export default function SemanticSEOSection() {
             src={seoImg}
             alt="Semantic SEO"
             fill
-            className="rounded-[0px] object-cover shadow-[rgba(0,0,0,0.4)_0px_2px_4px,rgba(0,0,0,0.3)_0px_7px_13px_-3px]"
+            className="rounded-[0px] object-cover "
             priority
           />
           {/* ✅ Optional bottom fade */}
-          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent z-20 pointer-events-none" />
+          <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-[#fffdf5] to-transparent z-20 pointer-events-none" />
         </div>
 
         {/* ✅ Right Content */}
         <div className="px-6 w-full md:w-1/2 py-10">
           {/* Heading */}
-          <h2 className="text-3xl md:text-5xl font-inter text-white font-medium mb-4 leading-snug">
+          <h2 className="text-3xl md:text-5xl font-inter text-black font-medium mb-4 leading-snug">
             Old SEO Doesn’t Work Anymore.{" "}
             <span className="text-yellow-500">AI Has Changed the Rules.</span>
           </h2>
 
           {/* Copy */}
-          <p className="text-gray-300 mb-6 font-poppins leading-relaxed max-w-2xl">
+          <p className="text-black mb-6 font-poppins leading-relaxed max-w-2xl">
             Most agencies still chase backlinks, keyword density, and random blog posts. The result?
             Thin content that doesn’t convert — or worse, gets ignored by search engines entirely.
           </p>
 
-          <p className="text-gray-300 mb-6 font-poppins leading-relaxed max-w-2xl">
+          <p className="text-black mb-6 font-poppins leading-relaxed max-w-2xl">
             When your site isn’t built around structured data, entity relevance, and user experience,
             even great services stay invisible.
           </p>
 
-          <p className="text-gray-300 mb-6 font-poppins leading-relaxed max-w-2xl">
+          <p className="text-black mb-6 font-poppins leading-relaxed max-w-2xl">
             That’s why at Bixeltek, we replaced outdated tactics with a semantic SEO system that
             search engines — and now AI — actually understand.
           </p>
 
-          <p className="text-gray-300 mb-8 font-poppins leading-relaxed max-w-2xl">
+          <p className="text-black mb-8 font-poppins leading-relaxed max-w-2xl">
             We engineer content that proves who you are, what you offer, and why you’re the best result.
           </p>
 

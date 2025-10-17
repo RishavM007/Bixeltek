@@ -17,9 +17,9 @@ export default function RiyadhWebMapSection() {
                             Serving Al Olaya • Diriyah • Al Yasmin • Al Sulimaniyah • Al Malaz • Al Nakheel • Qurtubah • Al Narjis — each project localized for Saudi search behavior and Arabic-English audiences.
                         </span>
                     </p>
-                    <a href={"mailto:zee@bixeltek.com"}>
+                    <a href={"/contact-us"}>
                         <button className="px-7 py-3 mt-7 rounded-2xl bg-gradient-to-tr from-green-500 via-green-700 to-green-950 hover:bg-gradient-to-tr hover:from-green-950 hover:via-green-700 hover:to-green-500 text-white font-semibold text-sm shadow-lg transition">
-                            Get A Free Quote
+                            Get An Instant Quote
                         </button>
                     </a>
                 </div>

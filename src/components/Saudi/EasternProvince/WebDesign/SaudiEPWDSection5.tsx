@@ -37,7 +37,7 @@ export default function GrowthStatsSection() {
       className="relative py-20 flex flex-col items-center text-center mx-auto w-[95%] md:w-[85%]"
     >
       <motion.div
-        className="relative w-full bg-black rounded-3xl p-12 md:p-16 shadow-[0_0_60px_rgba(255,223,0,0.6)] border border-yellow-400/40 flex flex-col items-center gap-8"
+        className="relative w-full bg-black rounded-3xl p-12 md:p-16 shadow-[0_0_60px_rgba(0,225,128,0.6)] border border-green-400/40 flex flex-col items-center gap-8"
         variants={containerVariants}
         initial="hidden"
         animate={inView ? "visible" : "hidden"}

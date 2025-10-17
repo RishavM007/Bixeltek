@@ -11,6 +11,8 @@ import saudiIcon from "@/assets/medal-ribbons-star-svgrepo-com.png";
 
 // ✅ Background Image
 import heroBg from "@/assets/Riyadh_Skyline.jpg";
+import { EPLogoTickerSaudiEP } from "../EasternProvince/GoogleAds/SaudiLogoTickerEP";
+import { ChevronRight } from "lucide-react";
 
 export default function HeroRiyadh() {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,7 +26,9 @@ export default function HeroRiyadh() {
   ];
 
   return (
-    <section className="relative flex flex-col items-center justify-center h-[140vh] md:h-[100vh] text-center px-6 overflow-hidden">
+    <>
+    
+    <section className="relative flex flex-col items-center justify-center h-[12n0vh] md:h-[95vh] text-center px-6 overflow-hidden">
       {/* Background Image */}
       <Image
         src={heroBg}
@@ -74,22 +78,27 @@ export default function HeroRiyadh() {
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <button
               onClick={toggleContactForm}
-              className="px-6 py-3 rounded-full bg-yellow-600 text-white font-medium hover:bg-green-700 transition"
+              className="px-6 py-3 rounded-full bg-gradient-to-tr from-green-500 via-green-800 to-green-950 text-white font-medium hover:bg-green-700 transition"
             >
               Get My Free Growth Audit
             </button>
-            <a href="mailto:zee@bixeltek.com">
-              <button className="px-6 py-3 rounded-full border border-white text-white font-medium hover:bg-green-600 hover:border-green-600 transition">
-                Talk to a Strategist
-              </button>
-            </a>
+
+            <a href='mailto:zee@bixeltek.com'>
+                <div className="p-[1px] rounded-full bg-gradient-to-r from-green-500 via-green-700 to-green-950 inline-block">
+                  <button className="px-8 flex gap-2 py-3 bg-black rounded-full text-white font-semibold shadow-lg transition w-full h-full">
+                    Talk to a Strategist <ChevronRight />
+                  </button>
+                </div>
+              </a>
           </div>
         </div>
       </div>
 
       {/* Popup Form + Logo Carousel */}
-      <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
-      <FunnelSEOLogoTicker />
+     
     </section>
+      <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
+    <EPLogoTickerSaudiEP/>
+    </>
   );
 }

@@ -16,9 +16,9 @@ const DigitalMarketingMarqueeRiyadh: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col mt-2">
+    <div className="flex flex-col mt-0">
       {/* Yellow Marquee */}
-      <section className="bg-gradient-to-r from-black via-yellow-700/40 to-black py-8 overflow-hidden">
+      <section className="bg-gradient-to-r from-[#fffdf5] via-green-500 to-[#fffdf5] py-8 overflow-hidden">
         <motion.div
           className="flex w-max gap-12 whitespace-nowrap"
           animate={{ x: ["0%", "-50%"] }}
@@ -34,7 +34,7 @@ const DigitalMarketingMarqueeRiyadh: React.FC = () => {
           {marketingTexts.map((text, idx) => (
             <span
               key={idx}
-              className="text-white font-inter text-3xl md:text-5xl font-semibold tracking-tight drop-shadow-lg"
+              className="text-black font-inter text-3xl md:text-5xl font-semibold tracking-tight drop-shadow-lg"
             >
               {text} &nbsp; •
             </span>
@@ -42,7 +42,7 @@ const DigitalMarketingMarqueeRiyadh: React.FC = () => {
           {marketingTexts.map((text, idx) => (
             <span
               key={idx + marketingTexts.length}
-              className="text-white font-inter text-3xl md:text-5xl font-semibold tracking-tight drop-shadow-lg"
+              className="text-black font-inter text-3xl md:text-5xl font-semibold tracking-tight drop-shadow-lg"
             >
               {text} &nbsp; •
             </span>

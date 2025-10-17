@@ -12,6 +12,8 @@ import { FunnelSEOLogoTicker } from "@/components/Funnel/SocialMedia/SEOLogoTick
 
 // ✅ Background Image
 import heroBg from "@/assets/saifaldhaher-vAkHAP27QMk-unsplash.jpg"; // replace with your actual image path
+import { ChevronRight } from "lucide-react";
+import { LogoTickerSaudi } from "@/components/LogoTicker2";
 
 export default function HeroEasternProvince() {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,7 +31,7 @@ export default function HeroEasternProvince() {
 
   return (
     <>
-      <section className="relative flex flex-col items-center justify-center h-[140vh] md:h-[100vh] text-center px-6 overflow-hidden">
+      <section className="relative flex flex-col items-center justify-center h-[140vh] md:h-[90vh] text-center px-6 overflow-hidden">
         {/* ✅ Background Image */}
         <Image
           src={heroBg}
@@ -80,23 +82,26 @@ export default function HeroEasternProvince() {
             <div className="mt-10 flex flex-wrap justify-center gap-4">
               <button
                 onClick={toggleContactForm}
-                className="px-6 py-3 rounded-full bg-yellow-600 text-white font-medium hover:bg-green-700 transition"
+                className="px-6 py-2 rounded-full bg-gradient-to-tr from-green-500 via-green-800 to-green-950  text-white font-medium hover:bg-green-700 transition"
               >
                 Get My Free Marketing Audit
               </button>
-              <a href="mailto:zee@bixeltek.com">
-                <button className="px-6 py-3 rounded-full border border-white text-white font-medium hover:bg-green-600 hover:border-green-600 hover:text-white hover:text-black transition">
-                  Talk to a Strategist
-                </button>
+              <a href='mailto:zee@bixeltek.com'>
+                <div className="p-[1px] rounded-full bg-gradient-to-r from-green-500 via-green-700 to-green-950 inline-block">
+                  <button className="px-8 flex gap-2 py-3 bg-black rounded-full text-white font-semibold shadow-lg transition w-full h-full">
+                    Talk to a Strategist <ChevronRight />
+                  </button>
+                </div>
               </a>
             </div>
           </div>
         </div>
 
         {/* Popup Form + Logo Carousel */}
-        <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
-        <FunnelSEOLogoTicker />
       </section>
+      <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
+      {/* <FunnelSEOLogoTicker /> */}
+      <LogoTickerSaudi/>
     </>
   );
 }

@@ -1,14 +1,15 @@
-"use client";
+'use client';
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import dashboardImg from "@/assets/toronto google ads img 1.webp";
+import dashboardImg from "@/assets/Google Ads Dashboard.png";
 import Link from "next/link";
 
 export default function WhyGoogleAdsToronto() {
     return (
-        <section className="w-full mt-0 bg-black text-gray-100 py-0 md:py-10 lg:py-10 overflow-hidden">
-            <div className="flex flex-col lg:flex-row items-center lg:items-start">
+        <section className="w-full bg-black text-gray-100 py-10 overflow-hidden">
+            {/* Container */}
+            <div className="w-[95%] md:w-[85%] mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-10">
 
                 {/* LEFT IMAGE */}
                 <motion.div
@@ -16,16 +17,15 @@ export default function WhyGoogleAdsToronto() {
                     whileInView={{ x: 0, opacity: 1, scale: 1 }}
                     transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                     viewport={{ once: true }}
-                    className="flex-1 relative w-full lg:w-1/2 h-[400px] md:h-[500px] lg:h-[500px]"
+                    className="flex-1 relative w-full lg:w-1/2 h-[400px] md:h-[550px] lg:h-[600px] overflow-visible"
                 >
                     <Image
                         src={dashboardImg}
                         alt="Google Ads Overview"
                         fill
-                        className="object-contain object-left rounded-r-2xl shadow-2xl"
+                        className="object-cover  rounded-r-2xl shadow-2xl"
                         priority
                     />
-
                 </motion.div>
 
                 {/* RIGHT CONTENT */}
@@ -34,7 +34,7 @@ export default function WhyGoogleAdsToronto() {
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
                     viewport={{ once: true }}
-                    className="flex-1 lg:w-1/2 px-8 lg:px-16 mt-00 lg:mt-0"
+                    className="flex-1 lg:w-1/2 px-4 md:px-8 lg:px-16 mt-10 lg:mt-0"
                 >
                     <h2 className="text-3xl md:text-6xl font-bold font-inter leading-snug mb-6">
                         What Is Google Ads <span className="text-blue-500">and Why Does It Matter?</span>

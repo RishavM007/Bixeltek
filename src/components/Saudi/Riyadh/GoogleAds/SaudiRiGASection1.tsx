@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import searchImage from "@/assets/How to Get Approved for Google AdSense_ A Beginner’s Guide _ Softstribe.jpg"; // 🖼️ Replace with your actual image
+import searchImage from "@/assets/Google-Ads-1.png"; // 🖼️ Replace with your actual image
 
 export default function GoogleAdsOpportunity() {
   return (

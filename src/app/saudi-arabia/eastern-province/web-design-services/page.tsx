@@ -45,7 +45,7 @@ export default function page() {
       {/* LEFT SIDE — TEXT */}
       <div className="w-full md:w-1/2 flex flex-col justify-start items-start px-6">
         <h2 className="text-4xl md:text-6xl font-inter font-bold text-white mb-6">
-          Build a Website That <span className="text-yellow-600">Works as Hard as You Do</span>
+          Build a Website That <span className="text-yellow-500">Works as Hard as You Do</span>
         </h2>
 
         <p className="text-gray-50 font-poppins text-base md:text-lg leading-relaxed mb-8">

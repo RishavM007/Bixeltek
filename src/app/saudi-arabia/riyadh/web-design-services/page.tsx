@@ -1,11 +1,11 @@
 export const metadata = {
-    title:  " Web Design Company in Riyadh That Turns Clicks Into Clients",
+    title:  "Top Web Design Company in Riyadh | Fast & SEO-Ready",
     description:
-        " We design high-performance, SEO-ready, bilingual websites built for conversion. From Riyadh startups to enterprise brands, our sites load fast, rank high, and sell better.",
+        " Rank higher and sell faster with a conversion-focused website. Bixeltek builds premium, bilingual sites that perform across Google Ads and SEO..",
     openGraph: {
-        title: " Web Design Company in Riyadh That Turns Clicks Into Clients",
+        title: " Top Web Design Company in Riyadh | Fast & SEO-Ready",
         description:
-            " We design high-performance, SEO-ready, bilingual websites built for conversion. From Riyadh startups to enterprise brands, our sites load fast, rank high, and sell better.",
+            " Rank higher and sell faster with a conversion-focused website. Bixeltek builds premium, bilingual sites that perform across Google Ads and SEO.",
         type: "website",
     },
     alternates: {
@@ -26,6 +26,7 @@ import RiyadhWebMapSection from '@/components/Saudi/Riyadh/WebDesign/SaudiRiWDSe
 import ShowcaseSectionVanc from '@/components/Vancouver/WebDesign/ShowcaseWebVanc';
 import ContactFromNew from '@/components/ContactFormNew';
 import React from 'react'
+import WebDevRiyadhShowcase from '@/components/Saudi/Riyadh/WebDesign/SaudiRiWDSection3';
 
 export default function page() {
   return (
@@ -36,7 +37,8 @@ export default function page() {
    <GradientCards/>
    <WebDesignServicesRiyadh/>
    <RiyadhWebDesignWorkflow />
-   <ShowcaseSectionVanc/>
+   <WebDevRiyadhShowcase />
+   {/* <ShowcaseSectionVanc/> */}
    <RiyadhWebMapSection />
    <SaudiRiWebIndustry />
    <section

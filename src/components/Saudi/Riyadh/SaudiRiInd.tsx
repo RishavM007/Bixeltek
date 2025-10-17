@@ -32,10 +32,10 @@ export default function SaudiRiIndustries(): JSX.Element {
     };
 
     return (
-        <section className="md:pt-10 mt-10 md:pb-20  bg-[black] z-10 overflow-hidden">
+        <section className="pt-20 md:pb-20  bg-[#fffdf5] z-10 overflow-hidden">
             <div className="w-full relative text-center text-white pb-10">
                 <h1 className="text-3xl md:text-5xl mx-auto max-w-[90%] md:max-w-full xl:text-7xl font-bold mb-2">
-                    <span className=" text-transparent bg-clip-text bg-gradient-to-r from-white to-yellow-500">
+                    <span className=" text-transparent bg-clip-text bg-gradient-to-r from-black to-yellow-500">
                         Digital Systems Built for <br /> Every Saudi Industry
                     </span>
                 </h1>

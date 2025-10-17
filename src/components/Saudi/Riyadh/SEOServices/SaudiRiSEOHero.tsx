@@ -12,6 +12,7 @@ import seoIcon from "@/assets/medal-ribbons-star-svgrepo-com.png";
 
 // ✅ Background Image
 import heroBg from "@/assets/Riyadh_Skyline.jpg";
+import { ChevronRight } from "lucide-react";
 
 export default function HeroRiyadhSEO() {
     const [isVisible, setIsVisible] = useState(false);
@@ -53,15 +54,18 @@ export default function HeroRiyadhSEO() {
                         <div className="mt-10 flex flex-wrap justify-center gap-4">
                             <button
                                 onClick={toggleContactForm}
-                                className="px-8 py-2 rounded-full bg-gradient-to-tr from-yellow-500 via-yellow-700 to-yellow-950 text-white font-medium hover:bg-yellow-700 transition"
+                                className="px-8 py-2 rounded-full bg-gradient-to-tr from-green-500 via-green-700 to-green-950 text-white font-medium hover:bg-yellow-700 transition"
                             >
                                 Get a Free SEO Audit
                             </button>
-                            <a href="mailto:zee@bixeltek.com">
-                                <button className="px-8 py-3 rounded-full border border-white text-white font-medium hover:bg-green-600 hover:border-green-600 transition">
-                                    Talk to an SEO Strategist
-                                </button>
+                            <a href='mailto:zee@bixeltek.com'>
+                                <div className="p-[1px] rounded-full bg-gradient-to-r from-green-500 via-green-700 to-green-950 inline-block">
+                                    <button className="px-8 flex gap-2 py-3 bg-black rounded-full text-white font-semibold shadow-lg transition w-full h-full">
+                                        Talk to an SEO Strategist <ChevronRight />
+                                    </button>
+                                </div>
                             </a>
+
                         </div>
 
                         {/* Proof Points */}

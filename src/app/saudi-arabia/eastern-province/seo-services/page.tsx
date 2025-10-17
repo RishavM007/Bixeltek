@@ -39,12 +39,12 @@ export default function page() {
             <SaudiEPSEOIndustries />
             <FutureSEOSection />
             <section
-                className="bg-[black] py-20 px-4 md:px-20 flex flex-col md:flex-row items-center gap-10"
+                className="bg-[#fffdf5] py-20 px-4 md:px-20 flex flex-col md:flex-row items-center gap-10"
                 id="seo-form"
             >
                 {/* LEFT SIDE — TEXT */}
                 <div className="w-full md:w-1/2 flex flex-col justify-start items-start px-6">
-                    <h2 className="text-4xl md:text-6xl font-inter font-bold text-white mb-6">
+                    <h2 className="text-4xl md:text-6xl font-inter font-bold text-black mb-6">
                         Start Ranking in 60 Days —{" "}
                         <span className="text-yellow-500">Let’s Build Your SEO System Today</span>
                     </h2>

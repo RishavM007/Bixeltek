@@ -31,13 +31,6 @@
     --font-poppins: 'Poppins', sans-serif;
   }
 
-  * {
-  user-select: none;
-  -webkit-user-drag: none;
-}
-
-
-
   
 @layer utilities{
   .card-wrapper{

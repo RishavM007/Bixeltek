@@ -75,7 +75,7 @@ const services: CardData[] = [
   },
   {
     title: "Graphic Design Services",
-    link: "",
+    link: "/contact-us",
     img1: illustrator,
     img2: photoshoplogo,
     description:

@@ -43,7 +43,6 @@ export async function POST(req: Request) {
             );
         }
 
-        // 🧠 Dynamically append conditional service-specific inputs
         let serviceDetails = "";
         if (services === "Web Design and Development" && websiteType) {
             serviceDetails += `\nWebsite Type: ${websiteType}`;

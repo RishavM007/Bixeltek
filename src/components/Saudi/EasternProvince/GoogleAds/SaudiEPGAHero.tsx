@@ -11,6 +11,8 @@ import { ChevronRight  } from "lucide-react";
 import googleIcon from "@/assets/google-authenticator-svgrepo-com.png";
 import clientIcon from "@/assets/star-shine-svgrepo-com.png";
 import saudiIcon from "@/assets/medal-ribbons-star-svgrepo-com.png";
+import { LogoTickerSaudi } from "@/components/LogoTicker2";
+import { EPLogoTickerSaudiEP } from "./SaudiLogoTickerEP";
 
 export default function HeroGAEasternProvince() {
     const [isVisible, setIsVisible] = useState(false);
@@ -24,6 +26,7 @@ export default function HeroGAEasternProvince() {
     ];
 
     return (
+        <>
         <section className="relative flex flex-col items-center justify-center h-[130vh] md:h-[100vh] text-center px-6 overflow-hidden">
             {/* ✅ YouTube Video Background */}
             {/* <iframe
@@ -91,8 +94,9 @@ export default function HeroGAEasternProvince() {
             </div>
 
             {/* Popup Form + Logo Carousel */}
-            <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
-            <FunnelSEOLogoTicker />
         </section>
+            <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
+            <EPLogoTickerSaudiEP />
+        </>
     );
 }

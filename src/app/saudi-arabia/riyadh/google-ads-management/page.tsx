@@ -26,6 +26,7 @@ import DataBeatsGuesswork from '@/components/Saudi/Riyadh/GoogleAds/SaudiRiGASec
 import SaudiRiIndustries from '@/components/Saudi/Riyadh/SaudiRiInd';
 import ContactFromNew from '@/components/ContactFormNew';
 import React from 'react'
+import SaudiRiIndustry from '@/components/Saudi/Riyadh/GoogleAds/SaudiRiGAInd';
 
 export default function page() {
   return (
@@ -38,7 +39,8 @@ export default function page() {
    <RiyadhGoogleAdsFramework/>
    <GoogleAdsServicesRiyadh/>
    <RiyadhGoogleAdsWorkflow/>
-   <SaudiRiIndustries />
+   {/* <SaudiRiIndustries /> */}
+   <SaudiRiIndustry/>
    <DataBeatsGuesswork />
    <section
   className="bg-black py-20 px-4 md:px-20 flex flex-col md:flex-row items-center gap-10"
