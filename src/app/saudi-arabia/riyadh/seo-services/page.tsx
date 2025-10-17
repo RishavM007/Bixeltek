@@ -48,7 +48,7 @@ export default function page() {
       {/* LEFT SIDE — TEXT */}
       <div className="w-full md:w-1/2 flex flex-col justify-start items-start px-6">
         <h2 className="text-4xl md:text-6xl font-inter font-bold text-white mb-6">
-          Ready to <span className="text-yellow-600">Rank, Build Authority, and Dominate Search in Riyadh?</span>
+          Ready to <span className="text-yellow-500">Rank, Build Authority, and Dominate Search in Riyadh?</span>
         </h2>
 
         <p className="text-gray-50 font-poppins text-base md:text-lg leading-relaxed mb-8">

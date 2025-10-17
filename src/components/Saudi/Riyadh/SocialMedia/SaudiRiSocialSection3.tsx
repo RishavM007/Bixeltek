@@ -72,8 +72,8 @@ const SocialMediaHowItWorks = () => {
             >
               {item.number}
             </p>
-            <h2 className="text-xl font-bold text-white mb-2">{item.title}</h2>
-            <p className="text-gray-300 group-hover:text-white">{item.text}</p>
+            <h2 className="text-xl font-bold text-black group-hover:text-white mb-2">{item.title}</h2>
+            <p className="text-gray-900 group-hover:text-white">{item.text}</p>
           </div>
         ))}
       </div>

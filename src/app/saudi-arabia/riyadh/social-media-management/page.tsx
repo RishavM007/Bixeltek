@@ -1,3 +1,20 @@
+export const metadata = {
+    title:  "Social Media Marketing in Riyadh | Ads That Drive Growth",
+    description:
+        " Turn social media into sales. Bixeltek runs high-ROI campaigns in Riyadh — creative content, Meta ads, and full-funnel strategy that converts followers into clients.",
+    openGraph: {
+        title: "Social Media Marketing in Riyadh | Ads That Drive Growth",
+        description:
+            " Turn social media into sales. Bixeltek runs high-ROI campaigns in Riyadh — creative content, Meta ads, and full-funnel strategy that converts followers into clients.",
+        type: "website",
+    },
+    alternates: {
+        canonical: "https://bixeltek.com/saudi-arabia/riyadh/social-media-management",
+    },
+};
+
+
+
 import SaudiRiIndustries from '@/components/Saudi/Riyadh/SaudiRiInd'
 import SaudiRiAreasWeServe from '@/components/Saudi/Riyadh/SocialMedia/SaudiRiSocialAreas'
 import SocialMediaSystemCTA from '@/components/Saudi/Riyadh/SocialMedia/SaudiRiSocialCTA'

@@ -32,7 +32,7 @@ export default function page() {
   {/* LEFT SIDE — TEXT */}
   <div className="w-full md:w-1/2 flex flex-col justify-start items-start px-6">
     <h2 className="text-4xl md:text-6xl font-inter font-bold text-white mb-6">
-      Ready to Build Your <span className="text-yellow-600">Growth System</span> in Riyadh?
+      Ready to Build Your <span className="text-yellow-500">Growth System</span> in Riyadh?
     </h2>
 
     <p className="text-gray-50 font-poppins text-base md:text-lg leading-relaxed mb-6">

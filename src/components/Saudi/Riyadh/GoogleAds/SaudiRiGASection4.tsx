@@ -72,7 +72,7 @@ const RiyadhGoogleAdsFramework = () => {
 
                             <Link href={"#form"}>
                                 <button className="px-7 mt-4 py-3 rounded-full bg-gradient-to-tr from-green-500 via-green-700 to-green-950 hover:bg-gradient-to-tr hover:from-green-950 hover:via-green-700 hover:to-green-500 text-white font-semibold text-sm shadow-lg transition">
-                                    Get a Free SEO Audit
+                                    Get a Free PPC Audit
                                 </button>
                             </Link>
                         </div>
