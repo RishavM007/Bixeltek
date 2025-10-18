@@ -70,7 +70,7 @@ export default function DigitalMarketingServicesRiyadh() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="relative w-full h-96 group border border-gray-500 bg-white/10 hover:bg-green-600/10 transition-all duration-300 flex flex-col justify-center items-center p-10 md:p-14 rounded-lg"
+              className="relative w-full h-96 group border border-gray-500 bg-white/10 hover:bg-gradient-to-tr from-black via-green-700 to-green-500 transition-all duration-300 flex flex-col justify-center items-center p-10 md:p-14 rounded-lg"
             >
               <h3 className="text-black text-2xl font-bold text-center mb-2">
                 {service.title}
