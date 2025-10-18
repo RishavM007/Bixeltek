@@ -56,6 +56,17 @@ export default function page() {
           Work with Riyadh’s most advanced <span className="text-yellow-400 font-semibold">SEO team</span> 
           and turn search visibility into measurable revenue.
         </p>
+         <ul className="text-sm mt-5 flex flex-row md:flex-row gap-5 md:gap-10  transition-all duration-500">
+            <li className="mb-6"><a href="https://www.google.com/partners/agency?id=2188074075" target="_blank" className="mt-2 flex justify-start">
+              <img src="https://www.gstatic.com/partners/badge/images/2024/PartnerBadgeClickable.svg"
+                alt="Google Partner Badge"
+                className="w-auto h-16 md:h-24" />
+            </a></li>
+            <li>
+              <div><a target="_blank" href="https://www.goodfirms.co/company/bixeltek"> <img src="https://assets.goodfirms.co/badges/color-badge/top-digital-marketing-companies.svg" title="Top Digital Marketing Company" className="w-20 md:w-32 h-auto" alt="Top Digital Marketing Company on GoodFirms" /></a></div>
+            </li>
+
+          </ul>
       </div>
 
       {/* RIGHT SIDE — FORM */}

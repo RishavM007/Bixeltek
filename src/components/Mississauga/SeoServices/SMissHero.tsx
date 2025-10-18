@@ -5,6 +5,7 @@ import { ButtonContactForm } from '@/sections/ButtonContactForm';
 import iconimg from '@/assets/medal-ribbons-star-svgrepo-com.png';
 import starimg from '@/assets/star-shine-svgrepo-com.png';
 import googleimg from '@/assets/google-authenticator-svgrepo-com.png';
+import { SEOButtonContactForm } from '@/components/SEOPopupForm';
 import Image from 'next/image';
 
 export default function HeroSEOMiss() {
@@ -67,7 +68,7 @@ export default function HeroSEOMiss() {
           </div>
         </div>
         {/* Popup Form + Logo Carousel */}
-        <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
+        <SEOButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
         <LogoTicker2 />
       </section>
     </>

@@ -8,7 +8,7 @@ import image3 from "@/assets/mobile-app-phone2.webp";
 
 export default function SocialMediaSystemCTA() {
   return (
-    <section className="py-20 bg-white text-black flex flex-col items-center">
+    <section className="py-20 mt-[-2px] md:mt-0 mb-[-2px] md:mb-0 bg-white text-black flex flex-col items-center">
       {/* MAIN CONTAINER */}
       <div
         className="relative w-[90%] md:w-[85%] mx-auto rounded-3xl overflow-hidden bg-cover bg-center text-center bg-neutral-200"
@@ -36,8 +36,8 @@ export default function SocialMediaSystemCTA() {
         </div>
 
         {/* IMAGE STRIP — all touching the base */}
-        <div className="relative z-20 flex justify-center items-end gap-4 md:gap-8 w-full px-10 pb-0 mt-10">
-          <div className="w-1/3 md:w-[30%] flex justify-center">
+        <div className="relative   z-20 flex  justify-center items-end gap-4 md:gap-8 w-full px-10 pb-0 md:mt-10">
+          <div className="w-1/3 md:w-[30%] hidden md:flex justify-center">
             <Image
               src={image2}
               alt="social strategy"
@@ -45,7 +45,7 @@ export default function SocialMediaSystemCTA() {
             />
           </div>
 
-          <div className="w-1/3 md:w-[30%] flex justify-center">
+          <div className="w-full md:w-[30%] flex justify-center">
             <Image
               src={image1}
               alt="creative content"
@@ -53,7 +53,7 @@ export default function SocialMediaSystemCTA() {
             />
           </div>
 
-          <div className="w-1/3 md:w-[30%] flex justify-center">
+          <div className="w-1/3 md:w-[30%] hidden md:flex justify-center">
             <Image
               src={image3}
               alt="analytics dashboard"

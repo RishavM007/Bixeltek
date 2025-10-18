@@ -39,17 +39,17 @@ export default function HeroRiyadhSocial() {
             <Image 
             src={insta}
             alt="insta mockup"
-            className="absolute -right-[400px] mt-[-100px]"
+            className="absolute hidden md:block -right-[400px] mt-[-100px]"
             />
             <Image 
             src={asset2}
             alt="social graph bixeltek"
-            className="absolute w-[600px] mt-[-100px] h-auto -left-[300px] -rotate-[10deg]"
+            className="absolute hidden md:block w-[600px] mt-[-100px] h-auto -left-[300px] -rotate-[10deg]"
             />
             <Image 
             src={asset3}
              alt="social graph bixeltek"
-            className="absolute w-[600px] mt-[200px] h-auto -left-[300px] rotate-[2deg]"
+            className="absolute hidden md:block w-[600px] mt-[200px] h-auto -left-[300px] rotate-[2deg]"
             >
 
             </Image>
@@ -60,13 +60,13 @@ export default function HeroRiyadhSocial() {
 
             {/* Content */}
             <div className="flex justify-center items-center">
-                <div className="relative z-10 mt-40 max-w-7xl">
+                <div className="relative z-10 mt-40 max-w-[100%] md:max-w-[85%] ">
                     {/* Heading */}
-                    <h1 className="text-4xl md:text-7xl font-medium leading-tight text-blue-950 flex flex-wrap items-center justify-center gap-3 md:gap-4">
+                    <h1 className="text-4xl md:text-7xl  font-medium leading-tight text-blue-950 flex flex-wrap items-center justify-center gap-3 md:gap-4">
                         <span> Social Media Marketing</span>
 
                         {/* Middle images */}
-                        <span className="relative flex -gap-4">
+                        <span className="hidden relative md:flex -gap-4">
                             <Image src={textimg} alt="Card 1" className="w-12 md:w-24 z-10 -rotate-12 rounded-lg shadow" />
                             <Image src={textimg} alt="Card 2" className="w-12 md:w-24 rotate-12 z-20 rounded-lg shadow" />
                         </span>

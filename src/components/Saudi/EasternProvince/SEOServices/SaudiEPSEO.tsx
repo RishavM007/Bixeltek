@@ -12,6 +12,7 @@ import globalIcon from "@/assets/medal-ribbons-star-svgrepo-com.png";
 // ✅ Background Image
 import heroBg from "@/assets/SaudiSEOHeroImg.avif";
 import { ChevronRight } from "lucide-react";
+import { SEOButtonContactForm } from "@/components/SEOPopupForm";
 import { EPLogoTickerSaudiEP } from "../GoogleAds/SaudiLogoTickerEP";
 
 export default function HeroEasternProvinceSEO() {
@@ -110,7 +111,7 @@ export default function HeroEasternProvinceSEO() {
 
       {/* Popup Form + Logo Carousel */}
     </section>
-      <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
+      <SEOButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
       <EPLogoTickerSaudiEP />
     </>
   );

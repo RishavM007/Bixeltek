@@ -5,9 +5,9 @@ import phone from "@/assets/creative-reels-composition.png";
 
 const SocialStrategySection = () => {
     return (
-        <section className="bg-white pb-56 text-black py-20 flex flex-col md:flex-row items-center relative">
+        <section className="bg-white mb-[-2px] md:mb-0 pb-20 md:pb-56 text-black mt-[-2px] md:mt-0 md:py-20 flex flex-col-reverse md:flex-row items-center relative">
             {/* LEFT — TEXT */}
-            <div className="w-full pl-40 md:w-1/2 space-y-6 z-10">
+            <div className="w-full px-8 md:px-0 md:pl-40 md:w-1/2 space-y-6 z-10">
                 <h2 className="text-3xl md:text-5xl font-medium text-black leading-tight">
                     Posting Randomly Isn’t a Strategy —{" "}
                     <span className="text-blue-500">It’s a Guess.</span>
@@ -42,8 +42,8 @@ const SocialStrategySection = () => {
             </div>
 
             {/* RIGHT — IMAGE */}
-            <div className="w-full md:w-1/2 h-[500px] mt-10 md:mt-0 md:pl-10 relative">
-                <div className="absolute inset-0 transform scale-[1.4] md:scale-[1.8] translate-x-5 md:translate-x-10">
+            <div className="w-full md:w-1/2 h-[500px] mt-0 md:mt-0 md:pl-10 relative">
+                <div className="absolute inset-0 transform scale-[1.6] md:scale-[1.8] translate-x-5 md:translate-x-10">
                     <Image
                         src={phone}
                         alt="Social Media Marketing Strategy"

@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { LogoTicker2 } from '@/components/GoogleAdsCarousel';
 import { ButtonContactForm } from '@/sections/ButtonContactForm';
+import { SEOButtonContactForm } from '@/components/SEOPopupForm';
 import iconimg from '@/assets/medal-ribbons-star-svgrepo-com.png' 
 import starimg from '@/assets/star-shine-svgrepo-com.png'
 import googleimg from '@/assets/google-authenticator-svgrepo-com.png'
@@ -74,7 +75,7 @@ export default function TSHero() {
           </div>
         </div>
 
-        <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
+        <SEOButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
         <LogoTicker2 />
       </section>
     </>

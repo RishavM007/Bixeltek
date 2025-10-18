@@ -52,7 +52,7 @@ export default function WebDevRiyadhShowcase() {
              <div className="flex flex-col justify-center items-center gap-4 mt-4">
                             <h2 className="text-2xl font-inter font-semibold text-white ">Are You Looking For A High Performing Website?</h2>
                      <Link href={'tel:+919100032301'}>
-                            <button className="px-7 py-3 rounded-2xl bg-blue-600 border border-blur-500 text-white font-semibold text-sm shadow-lg hover:bg-blue-700 transition">
+                            <button className="px-7 py-3 rounded-2xl bg-gradient-to-tr from-green-500 via-green-700 to-green-950 border border-green-600 text-white font-semibold text-sm shadow-lg hover:bg-blue-700 transition">
                                Talk To Our Web Design Team
                             </button>
                         </Link>

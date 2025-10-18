@@ -1,5 +1,5 @@
 export const metadata = {
-    title:  " Social Media Marketing | Eastern Province – Bixeltek",
+    title: " Social Media Marketing | Eastern Province – Bixeltek",
     description:
         " Grow your brand with Bixeltek’s social media marketing services in Khobar & Dammam. Creative content, paid ads & full-funnel strategy for real ROI.",
     openGraph: {
@@ -51,6 +51,17 @@ export default function page() {
                         Don’t let your competitors dominate the feed. Start building a brand that connects, converts,
                         and compounds across the Eastern Province — every post, story, and campaign optimized for ROI.
                     </p>
+                    <ul className="text-sm mt-5 flex flex-row md:flex-row gap-5 md:gap-10  transition-all duration-500">
+                        <li className="mb-6"><a href="https://www.google.com/partners/agency?id=2188074075" target="_blank" className="mt-2 flex justify-start">
+                            <img src="https://www.gstatic.com/partners/badge/images/2024/PartnerBadgeClickable.svg"
+                                alt="Google Partner Badge"
+                                className="w-auto h-16 md:h-24" />
+                        </a></li>
+                        <li>
+                            <div><a target="_blank" href="https://www.goodfirms.co/company/bixeltek"> <img src="https://assets.goodfirms.co/badges/color-badge/top-digital-marketing-companies.svg" title="Top Digital Marketing Company" className="w-20 md:w-32 h-auto" alt="Top Digital Marketing Company on GoodFirms" /></a></div>
+                        </li>
+
+                    </ul>
                 </div>
 
                 <div className="w-[95%] md:w-[50%] lg:mr-10 flex justify-start items-center">

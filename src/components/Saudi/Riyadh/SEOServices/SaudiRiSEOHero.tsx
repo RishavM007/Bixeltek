@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { ButtonContactForm } from "@/sections/ButtonContactForm";
+import { SEOButtonContactForm } from "@/components/SEOPopupForm";
 import { FunnelSEOLogoTicker } from "@/components/Funnel/SocialMedia/SEOLogoTicker";
 
 // ✅ Icons
@@ -90,7 +91,7 @@ export default function HeroRiyadhSEO() {
                 </div>
                 <FunnelSEOLogoTicker />
             </section>
-            <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
+            <SEOButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
         </>
     );
 }

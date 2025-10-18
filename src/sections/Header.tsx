@@ -296,7 +296,7 @@ export const Header = () => {
                 )}
               </li>
               <li><Link href="/industries" className="block py-2 px-4 hover:bg-purple-600 rounded">Industries</Link></li>
-                            <li>
+              <li>
                 <button
                   onClick={() => setIsLocationsOpen(!isLocationsOpen)}
                   className="flex justify-between w-full py-2 px-4 hover:bg-purple-600 rounded"
@@ -419,18 +419,20 @@ export const Header = () => {
                   {/* Left: Services (80%) */}
                   <div className="w-[80%] grid grid-cols-3 gap-4 px-10">
                     {services.map((service) => (
-                      <Link href={service.link}>
-                      <div
-                        key={service.id}
-                        onMouseEnter={() => setHoveredService(service)}
-                        className="flex items-start gap-3 p-4 rounded-lg hover:bg-gray-100 cursor-pointer transition"
+                      <Link
+                        key={service.id} // ✅ key moved here
+                        href={service.link}
                       >
-                        <div className="text-[#670ef7] flex-shrink-0">{service.icon}</div>
-                        <div>
-                          <h3 className="font-semibold text-black">{service.title}</h3>
-                          <p className="text-gray-500 text-sm">{service.desc}</p>
+                        <div
+                          onMouseEnter={() => setHoveredService(service)}
+                          className="flex items-start gap-3 p-4 rounded-lg hover:bg-gray-100 cursor-pointer transition"
+                        >
+                          <div className="text-[#670ef7] flex-shrink-0">{service.icon}</div>
+                          <div>
+                            <h3 className="font-semibold text-black">{service.title}</h3>
+                            <p className="text-gray-500 text-sm">{service.desc}</p>
+                          </div>
                         </div>
-                      </div>
                       </Link>
                     ))}
                   </div>

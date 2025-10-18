@@ -16,11 +16,11 @@ export default function SocialMediaProfitSection() {
   ];
 
   return (
-    <section className="py-20 px-6 md:px-20 bg-white text-black">
+    <section className="py-20 mt-[-2px] md:mt-0 px-6 md:px-20 bg-white text-black">
       <div className="max-w-[95%] md:max-w-[85%] mx-auto flex flex-col md:flex-row items-center gap-14">
         {/* LEFT SIDE — IMAGE */}
         <div className="md:w-1/2 w-full flex justify-center">
-          <div className="relative w-full md:w-[90%] h-[350px] md:h-[450px] rounded-3xl overflow-hidden ">
+          <div className="relative w-full md:w-[90%] h-[250px] md:h-[450px] rounded-3xl overflow-hidden ">
             <Image
               src={teamImage}
               alt="Bixeltek team working"

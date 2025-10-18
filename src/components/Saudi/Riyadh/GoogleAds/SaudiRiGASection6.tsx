@@ -45,21 +45,21 @@ export default function GoogleAdsServicesRiyadh() {
 
   return (
     <section
-      className="relative py-14 md:py-24 bg-black text-gray-100"
+      className="relative py-14 md:py-24 bg-[#fffdf5] text-black"
       id="google-ads-services-riyadh"
     >
       {/* Background Glows */}
-      <div className="absolute top-32 -left-20 w-[500px] h-[500px] bg-yellow-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
-      <div className="absolute bottom-52 right-0 w-[500px] h-[500px] bg-yellow-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
+      <div className="absolute top-32 -left-20 w-[500px] h-[500px] bg-green-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
+      <div className="absolute bottom-52 right-0 w-[500px] h-[500px] bg-green-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
 
       <div>
         {/* Heading + Intro */}
         <div className="max-w-[90%] md:max-w-[80%] mx-auto mb-10 text-center">
-          <h2 className="text-white text-3xl lg:text-6xl font-inter mb-3 font-semibold">
+          <h2 className="text-black text-3xl lg:text-6xl font-inter mb-3 font-semibold">
             Full-Spectrum{" "}
             <span className="text-yellow-500">Google Ads Management for Riyadh Businesses</span>
           </h2>
-          <p className="text-gray-100 text-base md:text-[17px] tracking-wider mt-4 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-gray-900 text-base md:text-[17px] tracking-wider mt-4 max-w-4xl mx-auto leading-relaxed">
             We specialize in multi-channel Google Ads management crafted for Saudi Arabia’s
             evolving digital ecosystem. Our Riyadh team combines AI automation, cultural insight,
             and precise analytics to deliver campaigns that attract, convert, and scale profitably.
@@ -73,38 +73,38 @@ export default function GoogleAdsServicesRiyadh() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="relative w-full h-96 group border border-gray-800 bg-black/10 hover:bg-yellow-600/10 transition-all duration-300 flex flex-col justify-center items-center p-10 md:p-14 rounded-lg"
+              className="relative w-full h-96 group border border-gray-500 bg-black/10 hover:bg-gradient-to-tr hover:from-black hover:via-green-600 hover:to-green-500 transition-all duration-300 flex flex-col justify-center items-center p-10 md:p-14 rounded-lg"
             >
-              <h3 className="text-white text-2xl font-bold text-center mb-2">
+              <h3 className="text-black text-2xl group-hover:text-white font-bold text-center mb-2">
                 {service.title}
               </h3>
-              <p className="text-gray-300 text-sm text-center mb-3 leading-relaxed">
+              <p className="text-gray-900 text-sm group-hover:text-white text-center mb-3 leading-relaxed">
                 {service.description}
               </p>
               <Link href={service.link}>
-                <p className="text-yellow-400 group-hover:text-white text-sm mt-2 hover:font-semibold transition-all">
+                <p className="text-green-700 group-hover:text-white text-sm mt-2 hover:font-semibold transition-all">
                   Discover More
                 </p>
               </Link>
 
               {/* Decorative Plus Icons */}
               {index % 4 === 0 && (
-                <span className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 text-gray-300 text-3xl z-30">
+                <span className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 text-gray-700 text-3xl z-30">
                   <i className="fa fa-plus text-2xl" aria-hidden="true"></i>
                 </span>
               )}
               {(index % 4 === 1 || index === 0 || index === 2) && (
-                <span className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 text-gray-300 text-3xl z-30">
+                <span className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 text-gray-700 text-3xl z-30">
                   <i className="fa fa-plus text-2xl" aria-hidden="true"></i>
                 </span>
               )}
               {(index % 4 === 2 || index === 0 || index === 3) && (
-                <span className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 text-gray-300 text-3xl z-30">
+                <span className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 text-gray-700 text-3xl z-30">
                   <i className="fa fa-plus text-2xl" aria-hidden="true"></i>
                 </span>
               )}
               {(index % 4 === 3 || index === 5) && (
-                <span className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 text-gray-300 text-3xl z-30">
+                <span className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 text-gray-700 text-3xl z-30">
                   <i className="fa fa-plus text-2xl" aria-hidden="true"></i>
                 </span>
               )}
@@ -113,7 +113,7 @@ export default function GoogleAdsServicesRiyadh() {
         </div>
 
         {/* Closing Paragraph */}
-        <p className="text-gray-300 text-center mt-16 text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
+        <p className="text-gray-900 text-center mt-16 text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
           Our approach blends creative storytelling with analytical precision — transforming ad
           spend into measurable growth. Whether you’re launching a startup or scaling an enterprise,
           our Riyadh Google Ads specialists ensure your campaigns perform with{" "}
