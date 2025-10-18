@@ -118,7 +118,7 @@ export default function ContactFromNew() {
 
             window.setTimeout(() => {
                 router.push('/thank-you'); // Redirect to thank you page
-            }, 3000)
+            }, 1000)
 
             console.log("API Response:", result); // Debugging
             setFormData({

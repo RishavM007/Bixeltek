@@ -6,6 +6,7 @@ import Image from 'next/image';
 import webdevads from '@/assets/website post 2.jpg'
 import laptopgrid from '@/assets/ai seo RANKINGS.png'
 import semrush from '@/assets/semrush.png'
+import toast, {Toaster} from 'react-hot-toast';
 import ahref from '@/assets/Ahrefs-Logo-2010.png'
 import rankmath from '@/assets/rankmath.png'
 import screamingfrog from '@/assets/screaming-frog_logo.png'
@@ -96,9 +97,10 @@ export const SEOButtonContactForm: React.FC<ContactFormProps> = ({ isVisible, on
             !formData.message ||
             !formData.website
         ) {
-            alert("Please fill in all required fields.");
+             toast.error("Please fill in all required fields.");
             return;
         }
+         const loadingToast = toast.loading("Submitting your form...");
         try {
             const response = await fetch('/api/contact', {
                 method: 'POST',
@@ -109,6 +111,7 @@ export const SEOButtonContactForm: React.FC<ContactFormProps> = ({ isVisible, on
             const result = await response.json(); // Try parsing response
 
             if (!response.ok) throw new Error(result.error || 'Failed to send message.');
+             toast.success("Thank you for filling the form!", { id: loadingToast });
 
             console.log("API Response:", result); // Debugging
             router.push('/thank-you')
@@ -126,7 +129,7 @@ export const SEOButtonContactForm: React.FC<ContactFormProps> = ({ isVisible, on
             });
         } catch (error: any) {
             console.error("Error submitting form:", error);
-            alert(`Something went wrong: ${error.message}`); // Show exact error
+            toast.error(`Something went wrong: ${error.message}`, { id: loadingToast });
         }
     };
     const [isOpen, setIsOpen] = useState(false);

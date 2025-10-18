@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import webdevads from '@/assets/website post 2.jpg'
+import toast, {Toaster} from 'react-hot-toast';
 import laptopgrid from '@/assets/laptop mockup.jpg'
 type ContactFormProps = {
 
@@ -90,9 +91,10 @@ export const ButtonContactForm: React.FC<ContactFormProps> = ({ isVisible, onClo
             !formData.message ||
             !formData.website
         ) {
-            alert("Please fill in all required fields.");
+             toast.error("Please fill in all required fields.");
             return;
         }
+        const loadingToast = toast.loading("Submitting your form...");
         try {
             const response = await fetch('/api/contact', {
                 method: 'POST',
@@ -103,6 +105,7 @@ export const ButtonContactForm: React.FC<ContactFormProps> = ({ isVisible, onClo
             const result = await response.json(); // Try parsing response
 
             if (!response.ok) throw new Error(result.error || 'Failed to send message.');
+             toast.success("Thank you for filling the form!", { id: loadingToast });
 
             console.log("API Response:", result); // Debugging
             router.push('/thank-you')
@@ -120,7 +123,7 @@ export const ButtonContactForm: React.FC<ContactFormProps> = ({ isVisible, onClo
             });
         } catch (error: any) {
             console.error("Error submitting form:", error);
-            alert(`Something went wrong: ${error.message}`); // Show exact error
+             toast.error(`Something went wrong: ${error.message}`, { id: loadingToast });
         }
     };
     const [isOpen, setIsOpen] = useState(false);
