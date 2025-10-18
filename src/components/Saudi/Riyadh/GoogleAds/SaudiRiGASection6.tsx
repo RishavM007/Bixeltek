@@ -73,7 +73,7 @@ export default function GoogleAdsServicesRiyadh() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="relative w-full h-96 group border border-gray-500 bg-black/10 hover:bg-gradient-to-tr hover:from-black hover:via-green-600 hover:to-green-500 transition-all duration-300 flex flex-col justify-center items-center p-10 md:p-14 rounded-lg"
+              className="relative w-full h-96 group border border-gray-500 bg-white hover:bg-gradient-to-br hover:from-black hover:via-green-600 hover:to-green-500 transition-all duration-300 flex flex-col justify-center items-center p-10 md:p-14 rounded-lg"
             >
               <h3 className="text-black text-2xl group-hover:text-white font-bold text-center mb-2">
                 {service.title}

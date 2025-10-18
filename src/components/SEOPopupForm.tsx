@@ -7,8 +7,10 @@ import webdevads from '@/assets/website post 2.jpg'
 import laptopgrid from '@/assets/ai seo RANKINGS.png'
 import semrush from '@/assets/semrush.png'
 import ahref from '@/assets/Ahrefs-Logo-2010.png'
-import yoast from '@/assets/Yoast_Logo_Large_RGB.png'
+import rankmath from '@/assets/rankmath.png'
 import screamingfrog from '@/assets/screaming-frog_logo.png'
+import googlesearch from '@/assets/Google_Search_Console.svg.png'
+import googleanalytics from '@/assets/lockup_ic_Analytics_horiz_272px_clr.png'
 type ContactFormProps = {
 
     isVisible: boolean;
@@ -187,7 +189,7 @@ export const SEOButtonContactForm: React.FC<ContactFormProps> = ({ isVisible, on
         >
             <div className="w-[95%] max-w-6xl bg-white shadow-2xl rounded-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2 relative max-h-[90vh] overflow-y-auto">
                 {/* 🖼 Left Side Image */}
-                <div className="hidden md:flex flex-col text-center">
+                <div className="hidden md:flex flex-col justify-center items-center text-center">
                     {/* Main Image */}
                     <div className="hidden md:block">
                         <Image
@@ -199,32 +201,42 @@ export const SEOButtonContactForm: React.FC<ContactFormProps> = ({ isVisible, on
 
                     {/* Tech We Use Section */}
                     <h3 className="text-2xl font-semibold text-black mb-6 mt-8">
-                        Technologies We Use
+                        Platforms We Use
                     </h3>
 
-                    <div className="grid grid-cols-3 md:grid-cols-4 gap-6 items-center justify-center px-6">
+                    <div className="flex flex-wrap justify-center items-center gap-8 px-6 mt-2">
                         <Image
                             src={semrush}
                             alt="Semrush"
-
-                            className="mx-auto hover:scale-110 transition-transform duration-300"
+                            className="w-[90px] md:w-[100px] mx-auto hover:scale-110 transition-transform duration-300"
                         />
                         <Image
                             src={ahref}
                             alt="Ahref"
-                            className="mx-auto hover:scale-110 transition-transform duration-300"
+                            className="w-[90px] md:w-[100px] mx-auto hover:scale-110 transition-transform duration-300"
                         />
                         <Image
                             src={screamingfrog}
                             alt="Screaming Frog"
-                            className="mx-auto hover:scale-110 transition-transform duration-300"
+                            className="w-[90px] md:w-[100px] mx-auto hover:scale-110 transition-transform duration-300"
                         />
                         <Image
-                            src={yoast}
-                            alt="Screaming Frog"
-                            className="mx-auto hover:scale-110 transition-transform duration-300"
+                            src={rankmath}
+                            alt="Rank Math SEO"
+                            className="w-[90px] md:w-[100px] mx-auto hover:scale-110 transition-transform duration-300"
                         />
+                        <Image
+                            src={googlesearch}
+                            alt="Google Search Console"
+                            className="w-[160px] md:w-[180px] mx-auto hover:scale-110 transition-transform duration-300"
+                        />
+                        {/* <Image
+                            src={googleanalytics}
+                            alt="Google Analytics"
+                            className="w-[100px] md:w-[120px] mx-auto hover:scale-110 transition-transform duration-300"
+                        /> */}
                     </div>
+
                 </div>
 
 
@@ -243,8 +255,8 @@ export const SEOButtonContactForm: React.FC<ContactFormProps> = ({ isVisible, on
                         &times;
                     </button>
 
-                    <h3 className="text-2xl font-semibold mb-4 text-gray-800">
-                        Get in Touch
+                    <h3 className="text-2xl text-center capitalize font-semibold mb-4 text-gray-800">
+                        Get your free seo audit worth $499
                     </h3>
 
                     <div className="flex flex-col md:flex-row gap-4">
@@ -422,7 +434,7 @@ export const SEOButtonContactForm: React.FC<ContactFormProps> = ({ isVisible, on
 
                     <button
                         type="submit"
-                        className="w-full bg-[#670ef7] text-white py-3 rounded-lg hover:bg-[#5b0cd1] transition"
+                        className="w-full bg-gradient-to-tr from-[black] via-[#090040] to-[#483aa0] text-white py-3 rounded-lg hover:bg-[#5b0cd1] transition"
                     >
                         Submit
                     </button>

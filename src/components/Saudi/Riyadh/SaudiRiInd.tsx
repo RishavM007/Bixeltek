@@ -151,13 +151,13 @@ export default function SaudiRiIndustries(): JSX.Element {
 
             <div className="controls flex justify-center mt-10">
                 <button
-                    className="bg-blue-600 text-white p-3 rounded-full mr-4"
+                    className="bg-green-600 text-white p-3 rounded-full mr-4"
                     onClick={() => handleScroll("left")}
                 >
                     <ArrowLeft size={20} />
                 </button>
                 <button
-                    className="bg-blue-600 text-white p-3 rounded-full"
+                    className="bg-green-600 text-white p-3 rounded-full"
                     onClick={() => handleScroll("right")}
                 >
                     <ArrowRight size={20} />

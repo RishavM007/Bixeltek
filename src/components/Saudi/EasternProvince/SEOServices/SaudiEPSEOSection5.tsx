@@ -69,7 +69,7 @@ export default function SEOServicesEasternProvince() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="relative w-full h-96 group border border-gray-400 bg-black/10 hover:bg-gradient-to-br hover:from-black hover:via-green-700 hover:to-green-500 transition-all duration-300 flex flex-col justify-center items-center p-10 md:p-14 rounded-none"
+              className="relative w-full h-96 group border border-gray-400 bg-white hover:bg-gradient-to-br hover:from-black hover:via-green-700 hover:to-green-500 transition-all duration-300 flex flex-col justify-center items-center p-10 md:p-14 rounded-none"
             >
               <h3 className="text-black group-hover:text-white text-2xl font-bold text-center mb-2">
                 {service.title}

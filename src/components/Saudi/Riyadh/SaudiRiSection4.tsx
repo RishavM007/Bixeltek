@@ -72,14 +72,14 @@ export default function DigitalMarketingServicesRiyadh() {
               key={index}
               className="relative w-full h-96 group border border-gray-500 bg-white/10 hover:bg-gradient-to-tr from-black via-green-700 to-green-500 transition-all duration-300 flex flex-col justify-center items-center p-10 md:p-14 rounded-lg"
             >
-              <h3 className="text-black text-2xl font-bold text-center mb-2">
+              <h3 className="text-black group-hover:text-white text-2xl font-bold text-center mb-2">
                 {service.title}
               </h3>
-              <p className="text-gray-900 text-base text-center mb-3 leading-relaxed">
+              <p className="text-gray-900 group-hover:text-white text-base text-center mb-3 leading-relaxed">
                 {service.description}
               </p>
               <Link href={service.link}>
-                <p className="text-green-500 group-hover:text-black text-sm mt-2 hover:font-semibold transition-all">
+                <p className="text-green-500 group-hover:text-white text-sm mt-2 hover:font-semibold transition-all">
                   Discover More
                 </p>
               </Link>

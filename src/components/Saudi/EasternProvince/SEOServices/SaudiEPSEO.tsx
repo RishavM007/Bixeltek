@@ -48,12 +48,12 @@ export default function HeroEasternProvinceSEO() {
 
       {/* ✅ Content */}
       <div className="flex justify-center items-center">
-        <div className="relative z-10 mt-40 max-w-7xl">
+        <div className="relative z-10 mt-40 max-w-[100%]">
           {/* Heading */}
           <h1 className="text-4xl md:text-7xl font-medium leading-tight text-white">
-            SEO Services in Eastern Province{" "} <br />
+            SEO Services in Eastern Province That Build  <br />
             <span className="text-yellow-500">
-              That Build Visibility, Credibility & Conversions
+               Visibility, Credibility & Conversions
             </span>
           </h1>
 

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import searchImage from "@/assets/Google Ads Dashboard.png"; // 🖼️ Replace with your actual image
+import searchImage from "@/assets/ai seo RANKINGS.png"; // 🖼️ Replace with your actual image
 
 export default function SEOOpportunity() {
   return (
@@ -12,7 +12,7 @@ export default function SEOOpportunity() {
     src={searchImage}
     alt="Google Ads Dashboard"
     fill
-    className="object-contain scale-125 md:scale-150 transition-transform duration-500"
+    className="object-contain  transition-transform duration-500"
     priority
   />
 </div>

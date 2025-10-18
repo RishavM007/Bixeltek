@@ -35,8 +35,8 @@ export default function MarketingChaosRiyadh() {
             <ul className="space-y-3">
               {points.slice(0, 3).map((point, idx) => (
                 <li key={idx} className="flex items-start gap-3">
-                  <Check className="text-green-600 w-5 h-5 mt-1 flex-shrink-0" />
-                  <span className="text-gray-900 font-poppins">{point}</span>
+                  <Check className="text-green-600 w-7 h-7 mt-1 flex-shrink-0" />
+                  <span className="text-gray-900 font-semibold font-poppins">{point}</span>
                 </li>
               ))}
             </ul>
@@ -44,8 +44,8 @@ export default function MarketingChaosRiyadh() {
             <ul className="space-y-3">
               {points.slice(3).map((point, idx) => (
                 <li key={idx + 3} className="flex items-start gap-3">
-                  <Check className="text-green-600 w-5 h-5 mt-1 flex-shrink-0" />
-                  <span className="text-gray-900 font-poppins">{point}</span>
+                  <Check className="text-green-600 w-7 h-7 mt-1 flex-shrink-0" />
+                  <span className="text-gray-900 font-semibold font-poppins">{point}</span>
                 </li>
               ))}
             </ul>

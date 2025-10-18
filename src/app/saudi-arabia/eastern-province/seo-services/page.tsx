@@ -49,11 +49,11 @@ export default function page() {
                         <span className="text-yellow-500">Let’s Build Your SEO System Today</span>
                     </h2>
 
-                    <p className="text-gray-50 font-poppins text-base md:text-lg leading-relaxed mb-8">
+                    <p className="text-gray-950 font-poppins text-base md:text-lg leading-relaxed mb-8">
                         Stop guessing. Start growing.
                         With Bixeltek’s structured SEO framework, you can start seeing measurable
                         ranking improvements in just{" "}
-                        <span className="font-semibold text-white">60 days</span> — and dominate
+                        <span className="font-semibold text-green-700">60 days</span> — and dominate
                         search visibility for the long term.
                     </p>
                      <ul className="text-sm mt-5 flex flex-row md:flex-row gap-5 md:gap-10  transition-all duration-500">

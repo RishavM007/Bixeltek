@@ -329,7 +329,7 @@ export const Whiteheader = () => {
                                                     key={country}
                                                     onMouseEnter={() => setActiveTab(country as keyof typeof locations)}
                                                     className={`cursor-pointer px-4 py-3 font-semibold transition 
-              ${activeTab === country ? "bg-purple-600 text-white" : "hover:bg-purple-100 text-black"}`}
+              ${activeTab === country ? "bg-gradient-to-tr from-[black] via-[#090040] to-[#483aa0] text-white" : "hover:bg-purple-100 text-black"}`}
                                                 >
                                                     <Link href={locations[country as keyof typeof locations].link}>
                                                         {locations[country as keyof typeof locations].title}

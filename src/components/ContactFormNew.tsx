@@ -179,7 +179,6 @@ export default function ContactFromNew() {
 
     return (       
         <div className="w-full md:w-[100%] p-6 relative bg-white rounded-lg shadow-md">
-
             <form className="space-y-4" onSubmit={handleSubmit} id='form'>
                 <div className="flex flex-col md:flex-row gap-5">
                     <div className="w-full md:w-1/2 flex flex-col justify-start items-start">

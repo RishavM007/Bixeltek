@@ -68,9 +68,9 @@ export default function HeroSEOMiss() {
           </div>
         </div>
         {/* Popup Form + Logo Carousel */}
+      </section>
         <SEOButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
         <LogoTicker2 />
-      </section>
     </>
   );
 }

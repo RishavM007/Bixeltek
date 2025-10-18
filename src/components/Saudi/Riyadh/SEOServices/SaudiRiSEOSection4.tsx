@@ -49,8 +49,8 @@ export default function SeoServicesRiyadh() {
       id="seo-services-riyadh"
     >
       {/* Background Glows */}
-      <div className="absolute top-32 -left-20 w-[500px] h-[500px] bg-yellow-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
-      <div className="absolute bottom-52 right-0 w-[500px] h-[500px] bg-yellow-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
+      <div className="absolute top-32 -left-20 w-[500px] h-[500px] bg-green-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
+      <div className="absolute bottom-52 right-0 w-[500px] h-[500px] bg-green-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
 
       <div>
         {/* Heading + Intro */}
@@ -70,7 +70,7 @@ export default function SeoServicesRiyadh() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="relative w-full h-96 group border border-gray-800 bg-black/10 hover:bg-yellow-600/10 transition-all duration-300 flex flex-col justify-center items-center p-10 md:p-14 rounded-lg"
+              className="relative w-full h-96 group border border-gray-800 bg-black/10 hover:bg-gradient-to-tr hover:from-black hover:via-green-700 hover:to-green-500 transition-all duration-300 flex flex-col justify-center items-center p-10 md:p-14 rounded-lg"
             >
               <h3 className="text-white text-2xl font-bold text-center mb-2">
                 {service.title}

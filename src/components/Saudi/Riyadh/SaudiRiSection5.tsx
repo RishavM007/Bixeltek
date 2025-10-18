@@ -18,7 +18,7 @@ const DigitalMarketingMarqueeRiyadh: React.FC = () => {
   return (
     <div className="flex flex-col mt-0">
       {/* Yellow Marquee */}
-      <section className="bg-gradient-to-r from-[#fffdf5] via-green-500 to-[#fffdf5] py-8 overflow-hidden">
+      <section className="bg-gradient-to-r from-[#fffdf5] via-amber-300 to-[#fffdf5] py-8 overflow-hidden">
         <motion.div
           className="flex w-max gap-12 whitespace-nowrap"
           animate={{ x: ["0%", "-50%"] }}

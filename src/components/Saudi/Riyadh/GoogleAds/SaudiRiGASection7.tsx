@@ -2,31 +2,24 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import growthImg from "@/assets/largest_cities_in_saudi_arabia_riyadh_bca0bcf1d6.jpg"; // replace with your image path
+import growthImg from "@/assets/Google Ads Dashboard.png"; // replace with your image path
 
 const DataBeatsGuesswork = () => {
   return (
-    <section className="bg-[#fffdf5] text-black py-24 px-6 md:px-20 ">
+    <section className="bg-[#fffdf5] text-black px-6 md:px-20 ">
       <div className="max-w-[95%] md:max-w-[85%] mx-auto flex flex-col md:flex-row items-center justify-between gap-14">
 
         {/* LEFT — IMAGE */}
-        <motion.div
-          initial={{ opacity: 0, x: -60 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-          className="w-full md:w-1/2 flex justify-center"
-        >
-          <div className="relative w-full h-[380px] md:h-[480px] rounded-2xl overflow-hidden group shadow-2xl">
+
+          <div className="relative w-full md:w-1/2 flex justify-center h-[380px] md:h-[680px] rounded-2xl overflow-hidden group ">
             <Image
               src={growthImg}
               alt="Data-driven ads visualization"
               fill
-              className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+              className="object-cover  transition-transform duration-700 ease-out"
             />
 
           </div>
-        </motion.div>
 
         {/* RIGHT — TEXT CONTENT */}
         <motion.div
