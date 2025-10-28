@@ -11,8 +11,16 @@ import { AiOutlineLineChart, AiOutlinePicture } from "react-icons/ai";
 import anr from '@/assets/anr.jpg'
 import googleads from '@/assets/grow.jpg'
 import graphic from '@/assets/T-shirt Social Media Graphic - Mojahidul Islam.jpg'
-import seo from '@/assets/Is SEO Really Dead_ A Reality Check for Freelancers, Agencies, and Clients.jpg'
-import webdesign from '@/assets/Theatre Dreams Ui Design Concept - Duane Levi Smith.jpg'
+import seo from '@/assets/Dentist Near Me Search Dashboard.png'
+import webdesign from '@/assets/image2.jpeg'
+import { TbLayoutDashboard } from "react-icons/tb";
+import { AiOutlineCode, AiOutlineShoppingCart } from "react-icons/ai";
+import { RiBankCardLine } from "react-icons/ri";
+import cmsImage from '@/assets/laptop dentist 2.png'
+import socialmedia from '@/assets/mobile-app-phone2.webp'
+import customcoded from '@/assets/image 3.jpeg'
+import payment from '@/assets/phone finanacce.png'
+import ecommerce from '@/assets/E-Commerce-Website.png'
 
 
 export const Header = () => {
@@ -227,7 +235,7 @@ export const Header = () => {
       desc: "Enhance your online presence with expert strategies.",
       icon: <SiInstagram size={24} />,
       link: "/social-media-marketing-agency-hyderabad",
-      image: webdesign
+      image: socialmedia
     },
     {
       id: 9,
@@ -253,7 +261,40 @@ export const Header = () => {
       link: "#",
       image: graphic
     },
+    {
+      id: 12,
+      title: "Custom CMS Websites",
+      desc: "Tailor-built CMS platforms with flexibility and SEO-ready architecture.",
+      icon: <TbLayoutDashboard size={24} />, // or any CMS-related icon
+      link: "/custom-cms-websites",
+      image: cmsImage, // import this from assets if you have one
+    },
+    {
+      id: 13,
+      title: "Custom Coded Websites",
+      desc: "Fully hand-coded sites for performance, scalability, and uniqueness.",
+      icon: <AiOutlineCode size={24} />,
+      link: "/custom-coded-websites",
+      image: customcoded, // add your image path here
+    },
+    {
+      id: 14,
+      title: "Payment Gateway Integration",
+      desc: "Seamless integrations with Razorpay, Stripe, PayPal, and more.",
+      icon: <RiBankCardLine size={24} />,
+      link: "/payment-gateway-integration",
+      image: payment, // image import for payment
+    },
+    {
+      id: 15,
+      title: "E-commerce Website",
+      desc: "Conversion-focused online stores built for speed and scalability.",
+      icon: <AiOutlineShoppingCart size={24} />,
+      link: "/ecommerce-websites",
+      image: ecommerce, // image import for ecommerce
+    },
   ];
+
   const [hoveredService, setHoveredService] = useState(services[0]);
   return (
     <header className="px-3 py-5  max-w-[90%] mx-auto sticky top-0 z-[60]">
@@ -270,7 +311,7 @@ export const Header = () => {
           initial={{ x: "100%" }}
           animate={{ x: isMenuOpen ? 0 : "100%" }}
           transition={{ type: "spring", stiffness: 80, damping: 15 }}
-          className="fixed top-0 right-0 h-full w-full bg-black shadow-lg p-6 z-50 md:hidden overflow-y-auto overscroll-contain"
+          className="fixed top-0 right-0 h-full w-full bg-black shadow-lg p-6 z-50 xl:hidden overflow-y-auto overscroll-contain"
         >
 
           <button className="absolute top-4 right-4 text-white text-3xl" onClick={toggleMenu}>
@@ -285,14 +326,64 @@ export const Header = () => {
                   Our Solutions <HiChevronDown className="text-xl md:text-2xl" />
                 </button>
                 {isDropdownOpen && (
-                  <motion.ul initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="ml-4 text-lg md:text-xl space-y-2">
-                    <li><Link href="/services/google-ads" className="block py-2 px-4 hover:bg-gray-700 rounded">Google Ads Management</Link></li>
-                    <li><Link href="/services/seo-services" className="block py-2 px-4 hover:bg-gray-700 rounded">SEO</Link></li>
-                    <li><Link href="/social-media-marketing-agency-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Social Media Management</Link></li>
-                    <li><Link href="/services/web-design" className="block py-2 px-4 hover:bg-gray-700 rounded">Web Design and Development</Link></li>
-                    {/* <li><Link href="/web-dev-ad" className="block py-2 px-4 hover:bg-gray-700 rounded">Web Design</Link></li> */}
-                    {/* <li><Link href="/digitalmarketing" className="block py-2 px-4 hover:bg-gray-700 rounded">Digital Marketing</Link></li> */}
+                  <motion.ul
+                    initial={{ opacity: 0, y: -5 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="ml-4 text-lg md:text-xl space-y-2"
+                  >
+                    <li>
+                      <Link href="/services/google-ads" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                        Google Ads Management
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/services/seo-services" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                        Search Engine Optimization
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/social-media-marketing-agency-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                        Social Media Management
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/services/web-design" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                        Web Design and Development
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="#" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                        Analytics Reporting
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="#" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                        Graphic Design
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/custom-cms-websites" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                        Custom CMS Websites
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/custom-coded-websites" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                        Custom Coded Websites
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/payment-gateway-integration" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                        Payment Gateway Integration
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/ecommerce-websites" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                        E-commerce Website
+                      </Link>
+                    </li>
                   </motion.ul>
+
                 )}
               </li>
               <li><Link href="/industries" className="block py-2 px-4 hover:bg-purple-600 rounded">Industries</Link></li>
@@ -321,7 +412,7 @@ export const Header = () => {
                               setActiveTab2(activeTab2 === typedCountry ? null : typedCountry)
                             }
                             className={`flex justify-between w-full py-2 px-4 rounded ${activeTab2 === typedCountry
-                              ? "bg-purple-600 text-white"
+                              ? "bg-gradient-to-tr from-[black] via-[#090040] to-[#483aa0] text-white"
                               : "hover:bg-gray-700"
                               }`}
                           >
@@ -409,7 +500,7 @@ export const Header = () => {
                   href="#"
                   className="text-white/70 hover:text-white transition flex items-center"
                 >
-                  Our Solutions
+                  Our Solutions <HiChevronDown className="ml-1 text-sm text-white" />
                 </a>
 
                 {/* Mega Menu Dropdown */}
@@ -417,7 +508,7 @@ export const Header = () => {
                   }`}>
 
                   {/* Left: Services (80%) */}
-                  <div className="w-[80%] grid grid-cols-3 gap-4 px-10">
+                  <div className="w-[75%] grid grid-cols-3 gap-4 px-10">
                     {services.map((service) => (
                       <Link
                         key={service.id} // ✅ key moved here
@@ -438,13 +529,11 @@ export const Header = () => {
                   </div>
 
                   {/* Right: Image + CTA (20%) */}
-                  <div className="w-[20%] flex flex-col justify-between items-center pr-8 min-h-[240px]">
+                  <div className="w-[25%] flex flex-col justify-between items-center pr-8 min-h-[240px]">
                     <Image
                       src={hoveredService.image}
                       alt={hoveredService.title}
-                      width={200}
-                      height={200}
-                      className="object-contain"
+                      className="object-contain w-auto h-[300px]"
                     />
                   </div>
                 </div>
@@ -457,7 +546,7 @@ export const Header = () => {
                   <li>
                     <Link
                       href="/industries/dental-marketing"
-                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:rounded-b-md hover:text-white transition"
+                      className="block px-4 py-2 text-black bg-gradient-to-tr hover:from-[black] hover:via-[#090040] hover:to-[#483aa0] hover:rounded-b-md hover:text-white transition"
                     >
                       Dental Marketing
                     </Link>
@@ -473,13 +562,13 @@ export const Header = () => {
                 <div className="absolute top-full -left-72 rounded-br-2xl  rounded-bl-2xl mt-0 bg-white shadow-lg  hidden group-hover:flex z-50 w-[900px] min-h-[350px]">
 
                   {/* Tabs (Countries) */}
-                  <ul className="w-1/3 border-r border-gray-200 rounded-bl-2xl bg-neutral-950">
+                  <ul className="w-1/3 border-r border-gray-200 rounded-bl-2xl bg-white">
                     {Object.keys(locations).map((country) => (
                       <li
                         key={country}
                         onMouseEnter={() => setActiveTab(country as keyof typeof locations)}
-                        className={`cursor-pointer px-4 py-3 font-semibold transition 
-              ${activeTab === country ? "bg-purple-600 text-white" : "hover:bg-purple-100 text-white"}`}
+                        className={`cursor-pointer px-4 py-3 text-black font-semibold transition 
+              ${activeTab === country ? "bg-gradient-to-tr from-[black] via-[#090040] to-[#483aa0] text-white " : "hover:bg-purple-100 text-black"}`}
                       >
                         <Link href={locations[country as keyof typeof locations].link}>
                           {locations[country as keyof typeof locations].title}
@@ -518,7 +607,7 @@ export const Header = () => {
               </li>
               <li className="relative group py-7">
                 <Link href={'/case-studies/'}>
-                  <div className="text-white/70 hover:text-white transition flex items-center">
+                  <div className="text-white/70 hover:text-white  transition flex items-center">
                     Case Studies <HiChevronDown className="ml-1 text-xs" />
                   </div>
                 </Link>
@@ -528,7 +617,7 @@ export const Header = () => {
                   <li>
                     <Link
                       href="/case-studies/Tumblewash-Casestudy"
-                      className="block px-4 py-2 text-black rounded-b-md hover:bg-[#670ef7] hover:text-white transition"
+                      className="block px-4 py-2 hover:bg-gradient-to-tr text-black hover:from-[black] hover:via-[#090040] hover:to-[#483aa0]  rounded-b-md hover:bg-[white] hover:text-white transition"
                     >
                       Tumblewash Case Study
                     </Link>
@@ -536,7 +625,7 @@ export const Header = () => {
                   <li>
                     <Link
                       href="/case-studies/google-ads-case-study-bike-repair-hyderabad"
-                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
+                      className="block px-4 py-2 hover:bg-gradient-to-tr text-black hover:from-[black] hover:via-[#090040] hover:to-[#483aa0]  rounded-b-md hover:bg-[white] hover:text-white transition"
                     >
                       Eazy Bike Repair Case Study
                     </Link>
@@ -544,7 +633,7 @@ export const Header = () => {
                   <li>
                     <Link
                       href="/case-studies/digital-marketing-for-dentists-case-study"
-                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
+                      className="block px-4 py-2 hover:bg-gradient-to-tr text-black hover:from-[black] hover:via-[#090040] hover:to-[#483aa0]  rounded-b-md hover:bg-[white] hover:text-white transition"
                     >
                       Dental Clinic Case Study
                     </Link>
@@ -552,7 +641,7 @@ export const Header = () => {
                   <li>
                     <Link
                       href="/case-studies"
-                      className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
+                      className="block px-4 py-2 hover:bg-gradient-to-tr text-black hover:from-[black] hover:via-[#090040] hover:to-[#483aa0]  rounded-b-md hover:bg-[white] hover:text-white transition"
                     >
                       View All
                     </Link>

@@ -28,7 +28,7 @@ const icons = [
 
 export default function Tech2() {
   return (
-    <section className="py-7 md:py-32 bg-white">
+    <section className="py-7 block md:hidden md:py-32 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-0">
         <div className="mb-20 text-center">
           <span className="text-purple-600 text-sm text-center font-medium mb-4 block">OUR PARTNERS</span>

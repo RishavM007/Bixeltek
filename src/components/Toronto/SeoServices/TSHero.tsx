@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { LogoTicker2 } from '@/components/GoogleAdsCarousel';
 import { ButtonContactForm } from '@/sections/ButtonContactForm';
 import { SEOButtonContactForm } from '@/components/SEOPopupForm';
-import iconimg from '@/assets/medal-ribbons-star-svgrepo-com.png' 
+import iconimg from '@/assets/medal-ribbons-star-svgrepo-com.png'
 import starimg from '@/assets/star-shine-svgrepo-com.png'
 import googleimg from '@/assets/google-authenticator-svgrepo-com.png'
 import Image from 'next/image';
@@ -64,20 +64,20 @@ export default function TSHero() {
               </button>
 
               <a href="mailto:zee@bixeltek.com">
-              <button
-                
-                className="px-6 py-3 rounded-full border border-white text-white font-medium hover:bg-white hover:text-black transition"
-              >
-                Speak With an SEO Specialist
-              </button>
+                <button
+
+                  className="px-6 py-3 rounded-full border border-white text-white font-medium hover:bg-white hover:text-black transition"
+                >
+                  Speak With an SEO Specialist
+                </button>
               </a>
             </div>
           </div>
         </div>
 
-        <SEOButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
-        <LogoTicker2 />
       </section>
+      <SEOButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
+      <LogoTicker2 />
     </>
   );
 }

@@ -71,10 +71,10 @@ export default function TWHero() {
             </div>
           </div>
         </div>
-
-        <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
-        <LogoTicker2 />
+       
       </section>
+       <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
+        <LogoTicker2 />
     </>
   );
 }

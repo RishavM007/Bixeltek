@@ -6,6 +6,23 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Bixeltekblacklogo from '@/assets/Bixeltek Black Logo.png'
 import { HiChevronDown, HiMenu, HiX } from 'react-icons/hi';
+import anr from '@/assets/anr.jpg'
+import googleads from '@/assets/grow.jpg'
+import graphic from '@/assets/T-shirt Social Media Graphic - Mojahidul Islam.jpg'
+import seo from '@/assets/Dentist Near Me Search Dashboard.png'
+import webdesign from '@/assets/image2.jpeg'
+import { TbLayoutDashboard } from "react-icons/tb";
+import { AiOutlineCode, AiOutlineShoppingCart } from "react-icons/ai";
+import { RiBankCardLine } from "react-icons/ri";
+import cmsImage from '@/assets/laptop dentist 2.png'
+import socialmedia from '@/assets/mobile-app-phone2.webp'
+import customcoded from '@/assets/image 3.jpeg'
+import payment from '@/assets/phone finanacce.png'
+import ecommerce from '@/assets/E-Commerce-Website.png'
+import { SiGoogleads, SiInstagram } from "react-icons/si";
+import { TbDeviceImacSearch } from 'react-icons/tb';
+import { IoLogoReact } from 'react-icons/io5';
+import { AiOutlineLineChart, AiOutlinePicture } from "react-icons/ai";
 export const Whiteheader = () => {
 
     const locations = {
@@ -188,6 +205,90 @@ export const Whiteheader = () => {
         },
     ];
 
+
+    const services = [
+        {
+            id: 6,
+            title: "Google Ads Management",
+            desc: "Optimize and manage Google Ads campaigns effectively.",
+            icon: <SiGoogleads size={24} />,
+            link: "/services/google-ads",
+            image: googleads
+        },
+        {
+            id: 7,
+            title: "Search Engine Optimization",
+            desc: "Improve your website ranking and visibility.",
+            icon: <TbDeviceImacSearch size={24} />,
+            link: "/services/seo-services",
+            image: seo
+        },
+        {
+            id: 8,
+            title: "Social Media Management",
+            desc: "Enhance your online presence with expert strategies.",
+            icon: <SiInstagram size={24} />,
+            link: "/social-media-marketing-agency-hyderabad",
+            image: socialmedia
+        },
+        {
+            id: 9,
+            title: "Web Design and Development",
+            desc: "Build scalable and modern web solutions.",
+            icon: <IoLogoReact size={24} />,
+            link: "/services/web-design",
+            image: webdesign
+        },
+        {
+            id: 10,
+            title: "Analytics Reporting",
+            desc: "Track and analyze your business metrics for smarter decisions.",
+            icon: <AiOutlineLineChart size={24} />,
+            link: "#",
+            image: anr
+        },
+        {
+            id: 11,
+            title: "Graphic Design",
+            desc: "Create stunning visuals to elevate your brand identity.",
+            icon: <AiOutlinePicture size={24} />,
+            link: "#",
+            image: graphic
+        },
+        {
+            id: 12,
+            title: "Custom CMS Websites",
+            desc: "Tailor-built CMS platforms with flexibility and SEO-ready architecture.",
+            icon: <TbLayoutDashboard size={24} />, // or any CMS-related icon
+            link: "/custom-cms-websites",
+            image: cmsImage, // import this from assets if you have one
+        },
+        {
+            id: 13,
+            title: "Custom Coded Websites",
+            desc: "Fully hand-coded sites for performance, scalability, and uniqueness.",
+            icon: <AiOutlineCode size={24} />,
+            link: "/custom-coded-websites",
+            image: customcoded, // add your image path here
+        },
+        {
+            id: 14,
+            title: "Payment Gateway Integration",
+            desc: "Seamless integrations with Razorpay, Stripe, PayPal, and more.",
+            icon: <RiBankCardLine size={24} />,
+            link: "/payment-gateway-integration",
+            image: payment, // image import for payment
+        },
+        {
+            id: 15,
+            title: "E-commerce Website",
+            desc: "Conversion-focused online stores built for speed and scalability.",
+            icon: <AiOutlineShoppingCart size={24} />,
+            link: "/ecommerce-websites",
+            image: ecommerce, // image import for ecommerce
+        },
+    ];
+    const [hoveredService, setHoveredService] = useState(services[0]);
     return (
         <>
             <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-[90%] rounded-full bg-white backdrop-blur-3xl shadow-lg px-6 py-0">
@@ -197,12 +298,12 @@ export const Whiteheader = () => {
                             <Image src={Bixeltekblacklogo} width={150} height={40} alt="Bixeltek Logo" className='h-12 w-auto' />
                         </Link>
                     </div>
-                    <button className="md:hidden text-black text-3xl" onClick={toggleMenu}>
+                    <button className="xl:hidden text-black text-3xl" onClick={toggleMenu}>
                         {isMenuOpen ? <HiX /> : <HiMenu />}
                     </button>
 
-                    <div className="hidden md:flex text-[17px] tracking-widest">
-                        <nav className="flex items-stretch">
+                    <div className="hidden xl:flex text-[17px] tracking-widest">
+                        <nav className="flex justify-between gap-44">
                             <ul className="flex gap-8 h-auto font-sofiasanscondensed font-normal tracking-widest">
                                 <li className="flex items-center py-7">
                                     <Link href="/" className="text-black hover:text-purple-800 font-semibold transition">
@@ -212,91 +313,50 @@ export const Whiteheader = () => {
 
                                 {/* Our Services Dropdown */}
                                 <li
-                                    className="relative flex items-center py-7"
+                                    className="flex items-center py-7"
                                     onMouseEnter={() => setIsDropdownOpen(true)}
                                     onMouseLeave={() => setIsDropdownOpen(false)}
                                 >
-                                    <a href="#" className="text-black hover:text-purple-800 transition flex font-semibold items-center">
+                                    <a
+                                        href="#"
+                                        className="text-black font-semibold hover:text-purple transition flex items-center"
+                                    >
                                         Our Solutions <HiChevronDown className="ml-1 text-sm" />
                                     </a>
 
-                                    {/* Dropdown Wrapper */}
-                                    <div className={`absolute top-full left-1/2 -translate-x-[32%] w-[1340px] bg-white rounded-b-2xl shadow-lg py-4 transition-all duration-300 ${isDropdownOpen ? "opacity-100 visible pointer-events-auto" : "opacity-0 invisible pointer-events-none"}`}>
-                                        <motion.div
-                                            initial={{ opacity: 0, y: -10 }}
-                                            animate={isDropdownOpen ? { opacity: 1, y: 0 } : { opacity: 0, y: -10 }}
-                                            transition={{ duration: 0.3 }}
-                                            className="flex justify-between gap-6 font-sofiasanscondensed text-[16px]"
-                                        >
-                                            <div className="w-1/2">
-                                                <h3 className="text-lg font-semibold px-4 text-[#670ef7]">What we offer</h3>
-                                                <div className="grid grid-cols-2 gap-4 px-4">
-                                                    <ul>
-                                                        <li>
-                                                            <Link href="/services/google-ads" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
-                                                                <h3 className="text-lg font-semibold text-black">Google Ads Management</h3>
-                                                                <p className="text-sm text-gray-500">Optimize and manage Google Ads campaigns effectively.</p>
-                                                            </Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link href="/seo-agency-hyderabad" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
-                                                                <h3 className="text-lg font-semibold text-black">SEO</h3>
-                                                                <p className="text-sm text-gray-500">Improve your website ranking and visibility.</p>
-                                                            </Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link href="/social-media-marketing-agency-hyderabad" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
-                                                                <h3 className="text-lg font-semibold text-black">Social Media Management</h3>
-                                                                <p className="text-sm text-gray-500">Enhance your online presence with expert strategies.</p>
-                                                            </Link>
-                                                        </li>
-                                                    </ul>
-                                                    <ul>
-                                                        {/* <li>
-                            <Link href="/services/service2" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
-                              <h3 className="text-lg font-semibold text-black">Youtube Ads Management</h3>
-                              <p className="text-sm text-gray-500">Reach more audience with tailored video ads.</p>
-                            </Link>
-                          </li> */}
-                                                        <li>
-                                                            <Link href="/web-design-services-hyderabad" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
-                                                                <h3 className="text-lg font-semibold text-black">Web Development</h3>
-                                                                <p className="text-sm text-gray-500">Build scalable and modern web solutions.</p>
-                                                            </Link>
-                                                        </li>
-                                                        {/* <li>
-                            <Link href="/digitalmarketing" className="block hover:bg-[#f5f3ff] p-3 rounded-lg transition">
-                              <h3 className="text-lg font-semibold text-black">Digital Marketing</h3>
-                              <p className="text-sm text-gray-500">Comprehensive marketing strategies for growth.</p>
-                            </Link>
-                          </li> */}
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div className="w-1/2 border-l border-gray-300 pl-6">
-                                                <h3 className="text-lg font-semibold text-[#670ef7]">Case Studies</h3>
-                                                <div className="grid grid-cols-2 gap-4">
-                                                    <ul>
-                                                        {posts.slice(0, Math.ceil(posts.length / 2)).map((post) => (
-                                                            <li key={post.id} className="hover:text-[#670ef7] transition text-[17px] p-2 cursor-pointer">
-                                                                <Link href={post.link}>
-                                                                    {post.title}
-                                                                </Link>
-                                                            </li>
-                                                        ))}
-                                                    </ul>
-                                                    <ul>
-                                                        {posts.slice(Math.ceil(posts.length / 2)).map((post) => (
-                                                            <li key={post.id} className="hover:text-[#670ef7] transition text-[17px] p-2 cursor-pointer">
-                                                                <Link href={post.link}>
-                                                                    {post.title}
-                                                                </Link>
-                                                            </li>
-                                                        ))}
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </motion.div>
+                                    {/* Mega Menu Dropdown */}
+                                    <div className={`absolute top-full left-0 right-0 w-full bg-white rounded-2xl shadow-lg py-8 flex transition-all duration-300 ${isDropdownOpen ? "opacity-100 visible" : "opacity-0 invisible"
+                                        }`}>
+
+                                        {/* Left: Services (80%) */}
+                                        <div className="w-[75%] grid grid-cols-3 gap-4 px-10">
+                                            {services.map((service) => (
+                                                <Link
+                                                    key={service.id} // ✅ key moved here
+                                                    href={service.link}
+                                                >
+                                                    <div
+                                                        onMouseEnter={() => setHoveredService(service)}
+                                                        className="flex items-start gap-3 p-4 rounded-lg hover:bg-gray-100 cursor-pointer transition"
+                                                    >
+                                                        <div className="text-[#670ef7] flex-shrink-0">{service.icon}</div>
+                                                        <div>
+                                                            <h3 className="font-semibold text-black">{service.title}</h3>
+                                                            <p className="text-gray-500 text-sm">{service.desc}</p>
+                                                        </div>
+                                                    </div>
+                                                </Link>
+                                            ))}
+                                        </div>
+
+                                        {/* Right: Image + CTA (20%) */}
+                                        <div className="w-[25%] flex flex-col justify-between items-center pr-8 min-h-[240px]">
+                                            <Image
+                                                src={hoveredService.image}
+                                                alt={hoveredService.title}
+                                                className="object-contain w-auto h-[300px]"
+                                            />
+                                        </div>
                                     </div>
                                 </li>
                                 <li className="flex items-center relative group py-7">
@@ -307,7 +367,7 @@ export const Whiteheader = () => {
                                         <li>
                                             <Link
                                                 href="/industries/dental-marketing"
-                                                className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:rounded-b-md hover:text-white transition"
+                                                className="block px-4 py-2 text-black hover:bg-gradient-to-tr hover:from-[black] hover:via-[#090040] hover:to-[#483aa0] hover:rounded-b-md hover:text-white transition"
                                             >
                                                 Dental Marketing
                                             </Link>
@@ -379,7 +439,7 @@ export const Whiteheader = () => {
                                         <li>
                                             <Link
                                                 href="/case-studies/Tumblewash-Casestudy"
-                                                className="block px-4 py-2 text-black rounded-b-md hover:bg-[#670ef7] hover:text-white transition"
+                                                className="block px-4 py-2 hover:bg-gradient-to-tr text-black hover:from-[black] hover:via-[#090040] hover:to-[#483aa0]  rounded-b-md hover:bg-[white] hover:text-white transition"
                                             >
                                                 Tumblewash Case Study
                                             </Link>
@@ -387,7 +447,7 @@ export const Whiteheader = () => {
                                         <li>
                                             <Link
                                                 href="/case-studies/google-ads-case-study-bike-repair-hyderabad"
-                                                className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
+                                                className="block px-4 py-2 hover:bg-gradient-to-tr text-black hover:from-[black] hover:via-[#090040] hover:to-[#483aa0]  rounded-b-md hover:bg-[white] hover:text-white transition"
                                             >
                                                 Eazy Bike Repair Case Study
                                             </Link>
@@ -395,7 +455,7 @@ export const Whiteheader = () => {
                                         <li>
                                             <Link
                                                 href="/case-studies/digital-marketing-for-dentists-case-study"
-                                                className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
+                                                className="block px-4 py-2 hover:bg-gradient-to-tr text-black hover:from-[black] hover:via-[#090040] hover:to-[#483aa0]  rounded-b-md hover:bg-[white] hover:text-white transition"
                                             >
                                                 Dental Clinic Case Study
                                             </Link>
@@ -403,7 +463,7 @@ export const Whiteheader = () => {
                                         <li>
                                             <Link
                                                 href="/case-studies"
-                                                className="block px-4 py-2 text-black hover:bg-[#670ef7] hover:text-white transition"
+                                                className="block px-4 py-2 hover:bg-gradient-to-tr text-black hover:from-[black] hover:via-[#090040] hover:to-[#483aa0]  rounded-b-md hover:bg-[white] hover:text-white transition"
                                             >
                                                 View All
                                             </Link>
@@ -426,22 +486,24 @@ export const Whiteheader = () => {
                                     </Link>
                                 </li>
                             </ul>
+                            <div className="hidden md:flex justify-center items-center gap-5 py-4">
+                                <a href="tel:+919100032301">
+                                    <button className="bg-black border text-white font-normal text-sm py-2 px-4 rounded-lg ">
+                                        <span>Talk to a Specialist</span>
+                                    </button>
+                                </a>
+                            </div>
                         </nav>
+
                     </div>
-                    <div className="hidden md:flex justify-center items-center gap-5 py-4">
-                        <a href="tel:+919100032301">
-                            <button className="bg-black border text-white font-normal text-sm py-2 px-4 rounded-lg ">
-                                <span>Talk to a Specialist</span>
-                            </button>
-                        </a>
-                    </div>
+
                 </div>
             </header>
             <motion.div
                 initial={{ x: "100%" }}
                 animate={{ x: isMenuOpen ? 0 : "100%" }}
                 transition={{ type: "spring", stiffness: 80, damping: 15 }}
-                className="fixed top-0 right-0 h-full w-full bg-black shadow-lg p-6 z-50 md:hidden overflow-y-auto overscroll-contain"
+                className="fixed top-0 right-0 h-full w-full bg-black shadow-lg p-6 z-50 xl:hidden overflow-y-auto overscroll-contain"
             >
 
                 <button className="absolute top-4 right-4 text-white text-3xl" onClick={toggleMenu}>
@@ -456,13 +518,64 @@ export const Whiteheader = () => {
                                 Our Solutions <HiChevronDown className="text-xl" />
                             </button>
                             {isDropdownOpen && (
-                                <motion.ul initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="ml-4 text-lg space-y-2">
-                                    <li><Link href="/services/google-ads" className="block py-2 px-4 hover:bg-gray-700 rounded">Google Ads Management</Link></li>
-                                    <li><Link href="/seo-agency-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">SEO</Link></li>
-                                    <li><Link href="/social-media-marketing-agency-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Social Media Management</Link></li>
-                                    <li><Link href="/web-design-services-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Web Development</Link></li>
-                                    {/* <li><Link href="/digitalmarketing" className="block py-2 px-4 hover:bg-gray-700 rounded">Digital Marketing</Link></li> */}
+                                <motion.ul
+                                    initial={{ opacity: 0, y: -5 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.3 }}
+                                    className="ml-4 text-lg md:text-xl space-y-2"
+                                >
+                                    <li>
+                                        <Link href="/services/google-ads" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                            Google Ads Management
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/services/seo-services" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                            Search Engine Optimization
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/social-media-marketing-agency-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                            Social Media Management
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/services/web-design" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                            Web Design and Development
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="#" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                            Analytics Reporting
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="#" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                            Graphic Design
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/custom-cms-websites" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                            Custom CMS Websites
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/custom-coded-websites" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                            Custom Coded Websites
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/payment-gateway-integration" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                            Payment Gateway Integration
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/ecommerce-websites" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                            E-commerce Website
+                                        </Link>
+                                    </li>
                                 </motion.ul>
+
                             )}
                         </li>
                         <li><Link href="/industries" className="block py-2 px-4 hover:bg-purple-600 rounded">Industries</Link></li>
@@ -544,7 +657,7 @@ export const Whiteheader = () => {
                                 </motion.ul>
                             )}</li>
                         <li><Link href="/blog" className="block py-2 px-4 hover:bg-purple-600 rounded">Blog</Link></li>
-                        
+
 
                         {/* <li><Link href="/about-us" className="block py-2 px-4 hover:bg-purple-600 rounded">About Us</Link></li> */}
                     </ul>

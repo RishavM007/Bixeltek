@@ -46,6 +46,13 @@ const config: Config = {
         'antonio': ['Antonio', 'sans-serif'],
         'sofiasanscondensed': ['Sofia Sans Condensed', 'sans-serif'],
       },
+       colors: {
+        'neon-pink': '#ff00ff',
+        'neon-blue': '#00ffff', 
+        'neon-purple': '#bf00ff',
+        'primary-500': '#6366f1',
+        'dark-900': '#0f0f0f',
+      },
       keyframes:{
         'border-spin': {
           '100%':{

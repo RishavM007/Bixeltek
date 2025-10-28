@@ -8,8 +8,8 @@ export default function AreasWeServeCanada() {
     {
       title: "Toronto & the GTA",
       cities: [
-        { name: "Toronto", link: "/toronto" },
-        { name: "Mississauga", link: "/mississauga" },
+        { name: "Toronto", link: "/toronto/seo-services" },
+        { name: "Mississauga", link: "/mississauga/seo-services" },
         { name: "Brampton" },
         { name: "Vaughan" },
         { name: "Markham" },
@@ -35,7 +35,7 @@ export default function AreasWeServeCanada() {
       cities: [
         { name: "Calgary" },
         { name: "Edmonton" },
-        { name: "Vancouver", link: "/vancouver" },
+        { name: "Vancouver", link: "/vancouver/seo-services" },
         { name: "Winnipeg" },
         { name: "Regina" },
         { name: "Saskatoon" },

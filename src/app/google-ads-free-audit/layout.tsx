@@ -14,6 +14,14 @@ export const metadata = {
     alternates: {
         canonical: "https://bixeltek.com/google-ads-free-audit",
     },
+    robots: {
+        index: false, 
+        follow: false, 
+        googleBot: {
+            index: false,
+            follow: false,
+        },
+    },
 };
 
 

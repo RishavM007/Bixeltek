@@ -10,7 +10,8 @@ import {
 } from 'lucide-react';
 import Image from 'next/image';
 import { motion } from "framer-motion";
-import client from '@/assets/passport-photo-man-caucasian-businessman-professional-attire-with-smile_817921-61353.avif'
+import Link from 'next/link';
+import client from '@/assets/Logo-300x79.png.webp'
 
 const points = [
     {
@@ -83,77 +84,83 @@ export default function WhyChoose() {
 
                     {/* Right Side */}
                     <div className="grid sm:grid-cols-1 gap-6">
-  {points.map((item, index) => (
-    <motion.div
-      key={index}
-      className="rounded-xl p-[1px] transition-transform duration-300 ease-in-out overflow-hidden"
-      style={{
-        backgroundImage: 'linear-gradient(to right, #fa709a 0%, #fee140 100%)',
-        backgroundOrigin: 'border-box',
-        backgroundClip: 'border-box',
-      }}
-      onMouseEnter={e => {
-        e.currentTarget.style.transform = 'scale(1.01)';
-      }}
-      onMouseLeave={e => {
-        e.currentTarget.style.transform = 'scale(1)';
-      }}
-      initial={{ opacity: 0, x: 50 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 0.5, delay: index * 0.2, ease: "easeOut" }}
-    >
-      <div
-        className="flex items-start gap-4 rounded-xl p-6"
-        style={{
-          background: 'linear-gradient(to bottom right, #2a2a2a 1%, #000000 95%)',
-        }}
-      >
-        <div className="flex-shrink-0 bg-purple-700 p-3 rounded-full">
-          {item.icon}
-        </div>
-        <div>
-          <h4 className="text-white text-lg font-semibold mb-1">{item.title}</h4>
-          <p className="text-gray-50 text-sm">{item.desc}</p>
-        </div>
-      </div>
-    </motion.div>
-  ))}
-</div>
+                        {points.map((item, index) => (
+                            <motion.div
+                                key={index}
+                                className="rounded-xl p-[1px] transition-transform duration-300 ease-in-out overflow-hidden"
+                                style={{
+                                    backgroundImage: 'linear-gradient(to right, #fa709a 0%, #fee140 100%)',
+                                    backgroundOrigin: 'border-box',
+                                    backgroundClip: 'border-box',
+                                }}
+                                onMouseEnter={e => {
+                                    e.currentTarget.style.transform = 'scale(1.01)';
+                                }}
+                                onMouseLeave={e => {
+                                    e.currentTarget.style.transform = 'scale(1)';
+                                }}
+                                initial={{ opacity: 0, x: 50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true, amount: 0.3 }}
+                                transition={{ duration: 0.5, delay: index * 0.2, ease: "easeOut" }}
+                            >
+                                <div
+                                    className="flex items-start gap-4 rounded-xl p-6"
+                                    style={{
+                                        background: 'linear-gradient(to bottom right, #2a2a2a 1%, #000000 95%)',
+                                    }}
+                                >
+                                    <div className="flex-shrink-0 bg-purple-700 p-3 rounded-full">
+                                        {item.icon}
+                                    </div>
+                                    <div>
+                                        <h4 className="text-white text-lg font-semibold mb-1">{item.title}</h4>
+                                        <p className="text-gray-50 text-sm">{item.desc}</p>
+                                    </div>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
                 </div>
             </section>
-            <section className="relative mt-[-170px] max-w-[90%] md:max-w-6xl mx-auto rounded-3xl overflow-hidden bg-white bg-cover bg-center" style={{ backgroundImage: `url('/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg')` }}>
+            <section className="relative mt-[-170px] max-w-[100%] md:max-w-6xl mx-auto rounded-3xl overflow-hidden bg-white bg-cover shadow-2xl bg-center" style={{ backgroundImage: `url('/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg')` }}>
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-blue-600 bg-opacity-80"></div>
+
 
                 {/* Content */}
-                <div className="relative z-10 max-w-[7xl] mx-auto px-6 py-16 flex flex-col md:flex-row items-center justify-evenly gap-10">
+                <div className="relative z-10 w-full max-w-[90%] md:max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center justify-evenly gap-10 overflow-hidden">
+
+                    {/* Overlays — full height split background */}
+                    <div className="absolute inset-0 flex">
+                        <div className="w-3/5 bg-blue-800 bg-opacity-90 h-full"></div>
+                        <div className="w-2/5 bg-white  h-full"></div>
+                    </div>
 
                     {/* Left Content */}
-                    <div className="text-white flex flex-col sm:items-center md:items-start md:max-w-xl">
-                        <h2 className="text-3xl md:text-5xl sm:text-center md:text-left font-sofiasanscondensed  font-semibold mb-6 leading-tight">
+                    <div className="relative z-10 text-white flex flex-col sm:items-center md:items-start md:max-w-2xl px-4">
+                        <h2 className="text-3xl md:text-4xl sm:text-center md:text-left font-inter font-medium mb-6 leading-tight">
                             &quot;We’ve grown our revenue 3X since working with Bixeltek. They own the outcome like it’s theirs.&quot;
                         </h2>
-                        <button className="bg-white  text-blue-700 font-semibold px-6 py-2 rounded-md hover:bg-blue-100 transition">
-                            Get More Information
-                        </button>
                     </div>
 
                     {/* Right Content */}
-                    <div className="flex flex-col  md:items-center text-center">
-                        <div className="w-52 h-52 rounded-md overflow-hidden mb-4">
-                            <Image
-                                src={client} // <-- replace this with your client image
-                                alt="Jeffery Mussman"
-                                width={180}
-                                height={180}
-                                className="object-cover w-full h-full"
-                            />
-                        </div>
-                        <p className="text-white font-semibold text-lg">Jeffery Mussman</p>
-                        <p className="text-white/80 text-sm">Founder & CEO</p>
+                    <div className="relative z-10 flex flex-col items-center text-center">
+                        <Link href={'https://demo.bixeltek.com/mgd/'} target="_blank">
+                            <div className="rounded-md h-[100px] w-auto overflow-hidden mb-4">
+                                <Image
+                                    src={client}
+                                    alt="Markham Gateway Dentistry"
+                                    className="object-contain w-full h-full"
+                                />
+                            </div>
+                        </Link>
+
+                        <p className="text-black font-semibold text-lg">Markham Gateway Dentistry</p>
+                        <p className="text-gray-600 text-sm">Canada</p>
                     </div>
+
                 </div>
+
             </section>
         </>
     );

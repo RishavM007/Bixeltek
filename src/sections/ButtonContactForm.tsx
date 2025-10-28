@@ -387,7 +387,7 @@ export const ButtonContactForm: React.FC<ContactFormProps> = ({ isVisible, onClo
 
                     <button
                         type="submit"
-                        className="w-full bg-[#670ef7] text-white py-3 rounded-lg hover:bg-[#5b0cd1] transition"
+                        className="w-full bg-gradient-to-tr from-[black] via-[#090040] to-[#483aa0] text-white py-3 rounded-lg hover:bg-[#5b0cd1] transition"
                     >
                         Submit
                     </button>

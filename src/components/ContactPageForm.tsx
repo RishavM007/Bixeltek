@@ -150,22 +150,22 @@ export const ContactSection: React.FC = () => {
     return (
         <>
             <section className="bg-neutral-900 relative text-white min-h-[80vh] py-40 md:py-64 px-6 md:px-20 lg:px-32" style={{
-                backgroundImage: `url("/pexels-kindelmedia-7688336.jpg")`, // ✅ relative to public folder
+                backgroundImage: `url("/neom-Z6YxSbcIXT0-unsplash.jpg")`, // ✅ relative to public folder
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
             }}>
 
-                <div className="absolute inset-0 bg-black opacity-80 z-0"></div>
+                <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
                 <div className="flex flex-col relative lg:flex-row gap-20">
                     {/* Left Side: Info */}
-                   
+
 
                     <div className='md:w-[60%] flex items-end justify-end'>
 
                         <ContactFromNew />
                     </div>
-                     {/* Left Side: Vertical Steps Info */}
+                    {/* Left Side: Vertical Steps Info */}
                     <div className="w-full lg:w-1/2 space-y-8 text-white">
 
                         <h2 className="text-4xl lg:text-5xl font-bold">
@@ -218,18 +218,26 @@ export const ContactSection: React.FC = () => {
                         </div>
 
                         {/* Bottom Contact Info */}
-                        <div className="pt-6 border-t border-white/20 text-sm">
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                                <div>
-                                    <p className="font-semibold">Headquarters:</p>
-                                    <p>Suncity<br />Hyderabad</p>
+                        <div className="pt-0  bg-white rounded-xl  text-black text-sm">
+                            <div className="grid grid-cols-1 md:grid-cols-2 p-7 gap-6">
+                                <div className='flex flex-col gap-3'>
+                                    <p className="font-semibold text-xl">Headquarters:</p>
+                                    <address className="text-base not-italic">
+                                        Bixeltek,
+                                        3rd Floor, Behind Cult Fit,<br />
+                                        K K Convention Road, Suncity Rd,<br />
+                                        opposite Ratnadeep, Bandlaguda Jagir,<br />
+                                        Hyderabad, Telangana 500091
+                                    </address>
                                     <p className="font-bold mt-1">+91 9100032301</p>
                                 </div>
-                                <div>
-                                    <p className="font-semibold">Office Hours:</p>
-                                    <p>Mon-Fri, 8:30am – 5:30pm CT</p>
-                                    <p className="font-semibold mt-2">Main Phone:</p>
-                                        <p className="font-bold mt-1">+91 9100032301</p>
+                                <div className='flex flex-col gap-3'>
+                                    <p className="font-semibold text-xl">Saudi Office <span className='text-base'>(coming soon)</span>:</p>
+                                    <address className="text-base not-italic">
+                                        Bixeltek,
+                                        Qahtani Building, Above SAB Bank, Dammam 32242, Saudi Arabia
+                                    </address>
+                                    <p className="font-bold mt-1">+91 9100032301</p>
                                 </div>
                             </div>
                         </div>

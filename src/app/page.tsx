@@ -43,6 +43,7 @@ import Blog from "@/sections/Blog";
 import Tech2 from "@/components/Tech2";
 import TimelineSection from '@/sections/Process'
 import GooglePartner from "@/sections/GooglePartner";
+import HomeIntegrationMindMap from "@/components/TechHomePage";
 
 
 export default function Home() {
@@ -62,6 +63,7 @@ export default function Home() {
       {/* <Testimonials />
       <CallToAction /> */}
       <GooglePartner />
+      <HomeIntegrationMindMap/>
       <Tech2 />
       {/* <Casestudy /> */}
       <FAQSection/>
