@@ -65,7 +65,7 @@ export default function MarketingInfrastructureSection() {
                     </h2>
                     <p className="max-w-2xl mx-auto mt-6 font-inter text-gray-900">
                         Businesses across India, UAE, Saudi Arabia, Canada, and the U.S. trust Bixeltek for one reason: measurable results.
-                        Our CMS systems are engineered to align with marketing goals — not just technical specs.
+                        Our CMS systems are engineered to align with marketing goals — not just technical spec.
                     </p>
                 </div>
 
