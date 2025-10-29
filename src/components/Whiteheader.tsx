@@ -292,30 +292,31 @@ export const Whiteheader = () => {
             link: "/ecommerce-websites",
             image: ecommerce, // image import for ecommerce
         },
-         {
+        {
             id: 16,
             title: "Local SEO",
-            desc: "Dominate local search results with optimized Google Business Profiles, local citations, and geo-targeted content strategies.",
+            desc: "Increase local visibility with optimized maps, listings, and reviews.",
             icon: <FaMapMarkerAlt size={24} />,
             link: "/local-seo",
             image: seo1, // import an image named `localseo` from assets
-          },
-          {
+        },
+        {
             id: 17,
             title: "On-Page SEO",
-            desc: "Enhance your website’s content, meta tags, and structure for better relevance, rankings, and user experience.",
+            desc: "Optimize content, meta tags, and structure for stronger relevance.",
             icon: <AiOutlineFileSearch size={24} />,
             link: "/on-page-seo",
             image: seo2, // import from assets
-          },
-          {
+        },
+        {
             id: 18,
             title: "Technical SEO",
-            desc: "Fix crawl errors, improve Core Web Vitals, and implement schema markup to make your site search engine–friendly.",
+            desc: "Enhance site speed, crawlability, and schema for better indexing.",
             icon: <AiOutlineTool size={24} />,
             link: "/technical-seo",
             image: seo3, // import from assets
-          },
+        },
+
     ];
     const [hoveredService, setHoveredService] = useState(services[0]);
     return (
