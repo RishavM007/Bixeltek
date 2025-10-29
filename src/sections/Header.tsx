@@ -17,11 +17,15 @@ import { TbLayoutDashboard } from "react-icons/tb";
 import { AiOutlineCode, AiOutlineShoppingCart } from "react-icons/ai";
 import { RiBankCardLine } from "react-icons/ri";
 import cmsImage from '@/assets/laptop dentist 2.png'
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { AiOutlineFileSearch, AiOutlineTool } from "react-icons/ai";
 import socialmedia from '@/assets/mobile-app-phone2.webp'
 import customcoded from '@/assets/image 3.jpeg'
 import payment from '@/assets/phone finanacce.png'
 import ecommerce from '@/assets/E-Commerce-Website.png'
-
+import seo1 from '@/assets/Component-1-1.png'
+import seo2 from '@/assets/Frame-297.png'
+import seo3 from '@/assets/Card-1.png'
 
 export const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -212,88 +216,115 @@ export const Header = () => {
     // },
 
   ];
-  const services = [
-    {
-      id: 6,
-      title: "Google Ads Management",
-      desc: "Optimize and manage Google Ads campaigns effectively.",
-      icon: <SiGoogleads size={24} />,
-      link: "/services/google-ads",
-      image: googleads
-    },
-    {
-      id: 7,
-      title: "Search Engine Optimization",
-      desc: "Improve your website ranking and visibility.",
-      icon: <TbDeviceImacSearch size={24} />,
-      link: "/services/seo-services",
-      image: seo
-    },
-    {
-      id: 8,
-      title: "Social Media Management",
-      desc: "Enhance your online presence with expert strategies.",
-      icon: <SiInstagram size={24} />,
-      link: "/social-media-marketing-agency-hyderabad",
-      image: socialmedia
-    },
-    {
-      id: 9,
-      title: "Web Design and Development",
-      desc: "Build scalable and modern web solutions.",
-      icon: <IoLogoReact size={24} />,
-      link: "/services/web-design",
-      image: webdesign
-    },
-    {
-      id: 10,
-      title: "Analytics Reporting",
-      desc: "Track and analyze your business metrics for smarter decisions.",
-      icon: <AiOutlineLineChart size={24} />,
-      link: "#",
-      image: anr
-    },
-    {
-      id: 11,
-      title: "Graphic Design",
-      desc: "Create stunning visuals to elevate your brand identity.",
-      icon: <AiOutlinePicture size={24} />,
-      link: "#",
-      image: graphic
-    },
-    {
-      id: 12,
-      title: "Custom CMS Websites",
-      desc: "Tailor-built CMS platforms with flexibility and SEO-ready architecture.",
-      icon: <TbLayoutDashboard size={24} />, // or any CMS-related icon
-      link: "/custom-cms-websites",
-      image: cmsImage, // import this from assets if you have one
-    },
-    {
-      id: 13,
-      title: "Custom Coded Websites",
-      desc: "Fully hand-coded sites for performance, scalability, and uniqueness.",
-      icon: <AiOutlineCode size={24} />,
-      link: "/custom-coded-websites",
-      image: customcoded, // add your image path here
-    },
-    {
-      id: 14,
-      title: "Payment Gateway Integration",
-      desc: "Seamless integrations with Razorpay, Stripe, PayPal, and more.",
-      icon: <RiBankCardLine size={24} />,
-      link: "/payment-gateway-integration",
-      image: payment, // image import for payment
-    },
-    {
-      id: 15,
-      title: "E-commerce Website",
-      desc: "Conversion-focused online stores built for speed and scalability.",
-      icon: <AiOutlineShoppingCart size={24} />,
-      link: "/ecommerce-websites",
-      image: ecommerce, // image import for ecommerce
-    },
-  ];
+const services = [
+  {
+    id: 6,
+    title: "Google Ads Management",
+    desc: "Optimize and manage Google Ads campaigns effectively.",
+    icon: <SiGoogleads size={24} />,
+    link: "/services/google-ads",
+    image: googleads,
+  },
+  {
+    id: 7,
+    title: "Search Engine Optimization",
+    desc: "Improve your website ranking and visibility.",
+    icon: <TbDeviceImacSearch size={24} />,
+    link: "/services/seo-services",
+    image: seo,
+  },
+  {
+    id: 8,
+    title: "Social Media Management",
+    desc: "Enhance your online presence with expert strategies.",
+    icon: <SiInstagram size={24} />,
+    link: "/social-media-marketing-agency-hyderabad",
+    image: socialmedia,
+  },
+  {
+    id: 9,
+    title: "Web Design and Development",
+    desc: "Build scalable and modern web solutions.",
+    icon: <IoLogoReact size={24} />,
+    link: "/services/web-design",
+    image: webdesign,
+  },
+  {
+    id: 10,
+    title: "Analytics Reporting",
+    desc: "Track and analyze your business metrics for smarter decisions.",
+    icon: <AiOutlineLineChart size={24} />,
+    link: "#",
+    image: anr,
+  },
+  {
+    id: 11,
+    title: "Graphic Design",
+    desc: "Create stunning visuals to elevate your brand identity.",
+    icon: <AiOutlinePicture size={24} />,
+    link: "#",
+    image: graphic,
+  },
+  {
+    id: 12,
+    title: "Custom CMS Websites",
+    desc: "Tailor-built CMS platforms with flexibility and SEO-ready architecture.",
+    icon: <TbLayoutDashboard size={24} />,
+    link: "/custom-cms-websites",
+    image: cmsImage,
+  },
+  {
+    id: 13,
+    title: "Custom Coded Websites",
+    desc: "Fully hand-coded sites for performance, scalability, and uniqueness.",
+    icon: <AiOutlineCode size={24} />,
+    link: "/custom-coded-websites",
+    image: customcoded,
+  },
+  {
+    id: 14,
+    title: "Payment Gateway Integration",
+    desc: "Seamless integrations with Razorpay, Stripe, PayPal, and more.",
+    icon: <RiBankCardLine size={24} />,
+    link: "/payment-gateway-integrations",
+    image: payment,
+  },
+  {
+    id: 15,
+    title: "E-commerce Website",
+    desc: "Conversion-focused online stores built for speed and scalability.",
+    icon: <AiOutlineShoppingCart size={24} />,
+    link: "/ecommerce-websites",
+    image: ecommerce,
+  },
+
+  // 🌍 NEWLY ADDED SEO SERVICES
+  {
+    id: 16,
+    title: "Local SEO",
+    desc: "Dominate local search results with optimized Google Business Profiles, local citations, and geo-targeted content strategies.",
+    icon: <FaMapMarkerAlt size={24} />,
+    link: "/local-seo",
+    image: seo1, // import an image named `localseo` from assets
+  },
+  {
+    id: 17,
+    title: "On-Page SEO",
+    desc: "Enhance your website’s content, meta tags, and structure for better relevance, rankings, and user experience.",
+    icon: <AiOutlineFileSearch size={24} />,
+    link: "/on-page-seo",
+    image: seo2, // import from assets
+  },
+  {
+    id: 18,
+    title: "Technical SEO",
+    desc: "Fix crawl errors, improve Core Web Vitals, and implement schema markup to make your site search engine–friendly.",
+    icon: <AiOutlineTool size={24} />,
+    link: "/technical-seo",
+    image: seo3, // import from assets
+  },
+];
+
 
   const [hoveredService, setHoveredService] = useState(services[0]);
   return (
@@ -373,7 +404,7 @@ export const Header = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/payment-gateway-integration" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                      <Link href="/payment-gateway-integrations" className="block py-2 px-4 hover:bg-gray-700 rounded">
                         Payment Gateway Integration
                       </Link>
                     </li>

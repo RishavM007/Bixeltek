@@ -11,7 +11,7 @@ export const metadata = {
         type: "website",
     },
     alternates: {
-        canonical: "https://bixeltek.com/services/seo-services", 
+        canonical: "https://bixeltek.com/services/seo-services",
     },
 };
 
@@ -28,46 +28,73 @@ import IndustryCarouselSection from '@/components/Hyderabad/HydSection8';
 import FAQSectionSEO from '@/components/Seo/SeoFaq';
 import SeoSection6 from '@/components/Seo/SeoSection6';
 export default function Seo() {
-    
+
     const seoServices = [
         {
-            title: 'Keyword Research',
-            description: 'Discover high-volume, low-competition keywords to improve SEO rankings, drive organic traffic, and target the right audience.',
-            color: "bg-zinc-500"
+            title: "Keyword Research",
+            description:
+                "Discover high-volume, low-competition keywords to improve SEO rankings, drive organic traffic, and target the right audience.",
+            color: "bg-zinc-500",
+            linkText: "Explore Keyword Research Strategies",
+            linkUrl: "#",
         },
         {
-            title: 'On-Page Optimization',
-            description: 'Optimize meta tags, headings, URLs, and content structure to boost search engine rankings and enhance user experience.',
-            color: "bg-violet-400"
+            title: "On-Page Optimization",
+            description:
+                "Optimize meta tags, headings, URLs, and content structure to boost search engine rankings and enhance user experience.",
+            color: "bg-violet-400",
+            linkText: "Learn More About On-Page SEO",
+            linkUrl: "/on-page-seo",
         },
         {
-            title: 'Link Building',
-            description: 'Earn high-quality, authoritative backlinks using white-hat SEO techniques to improve domain authority and organic search rankings.',
-            color: "bg-green-500"
+            title: "Link Building",
+            description:
+                "Earn high-quality, authoritative backlinks using white-hat SEO techniques to improve domain authority and organic search rankings.",
+            color: "bg-green-500",
+            linkText: "See Our Link Building Process",
+            linkUrl: "#",
         },
         {
-            title: 'Content Marketing',
-            description: 'Create keyword-rich, engaging, and SEO-optimized content to increase website traffic, improve search rankings, and drive conversions.',
+            title: "Content Marketing",
+            description:
+                "Create keyword-rich, engaging, and SEO-optimized content to increase website traffic, improve search rankings, and drive conversions.",
+            linkText: "Read About Content Marketing",
+            linkUrl: "#",
         },
         {
-            title: 'Technical SEO',
-            description: 'Optimize site speed, mobile-friendliness, structured data, and indexing to ensure search engines crawl and rank your site effectively.',
+            title: "Technical SEO",
+            description:
+                "Optimize site speed, mobile-friendliness, structured data, and indexing to ensure search engines crawl and rank your site effectively.",
+            linkText: "Understand Technical SEO",
+            linkUrl: "technical-seo",
         },
         {
-            title: 'Mobile Optimization',
-            description: 'Enhance mobile responsiveness, loading speed, and UX to improve mobile search rankings and reduce bounce rates.',
+            title: "Mobile Optimization",
+            description:
+                "Enhance mobile responsiveness, loading speed, and UX to improve mobile search rankings and reduce bounce rates.",
+            linkText: "Improve Mobile SEO Performance",
+            linkUrl: "#",
         },
         {
-            title: 'Local SEO',
-            description: 'Boost local search rankings with Google My Business optimization, geo-targeted keywords, citations, and customer reviews.',
+            title: "Local SEO",
+            description:
+                "Boost local search rankings with Google My Business optimization, geo-targeted keywords, citations, and customer reviews.",
+            linkText: "See Our Local SEO Packages",
+            linkUrl: "/local-seo",
         },
         {
-            title: 'SEO Audits',
-            description: 'Conduct in-depth website SEO audits to identify and fix errors, enhance performance, and improve search engine rankings.',
+            title: "SEO Audits",
+            description:
+                "Conduct in-depth website SEO audits to identify and fix errors, enhance performance, and improve search engine rankings.",
+            linkText: "Request a Free SEO Audit",
+            linkUrl: "#",
         },
         {
-            title: 'Conversion Rate Optimization (CRO)',
-            description: 'Optimize landing pages, CTAs, and user journey using A/B testing to increase conversions, sales, and lead generation.',
+            title: "Conversion Rate Optimization (CRO)",
+            description:
+                "Optimize landing pages, CTAs, and user journey using A/B testing to increase conversions, sales, and lead generation.",
+            linkText: "Boost Conversions with CRO",
+            linkUrl: "#",
         },
     ];
 
@@ -286,14 +313,21 @@ export default function Seo() {
                         <h2 className='text-white text-4xl lg:text-6xl max-w-7xl mx-auto font-inter mb-3 font-semibold '>Our <span className='text-blue-500'>Comprehensive SEO Services</span> in Hyderabad</h2>
                         <p className='text-gray-100 text-base md:text-[17px] tracking-wider mt-4 max-w-3xl mx-auto'>At Bixeltek, our services are built around one goal: helping businesses turn visibility into revenue.</p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 max-w-[75%] mx-auto mt-10">
+                    <div className="grid grid-cols-1 md:grid-cols-3 max-w-[85%] mx-auto mt-10">
                         {seoServices.map((service, index) => (
                             <div
                                 key={index}
-                                className={`relative w-full h-80 border border-gray-800 bg-black/10 hover:bg-blue-600 transition-all duration-300  flex flex-col justify-center items-center p-10 md:p-16`}>
+                                className={`relative group w-full h-80 border border-gray-800 bg-black/10 hover:bg-blue-600 transition-all duration-300  flex flex-col justify-center items-center p-10 md:p-20`}>
 
-                                <h3 className="text-white text-3xl font-bold text-center mb-2">{service.title}</h3>
-                                <p className="text-gray-300 text-center">{service.description}</p>
+                                <h3 className="text-white text-3xl font-medium text-center mb-2">{service.title}</h3>
+                                <p className="text-gray-300 text-sm text-center mb-3">{service.description}</p>
+
+                                <a
+                                    href={service.linkUrl}
+                                    className="text-blue-400 group-hover:text-white hover:scale-105 transition-all duration-300 text-base  mt-2"
+                                >
+                                    {service.linkText}
+                                </a>
 
                                 {index % 4 === 0 && (
                                     <span className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 text-gray-300 text-3xl z-30"><i className="fa fa-plus text-2xl" aria-hidden="true"></i></span>

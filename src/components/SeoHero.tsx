@@ -4,6 +4,7 @@ import { VscDebugBreakpointDataUnverified } from "react-icons/vsc";
 import { ContactForm } from '@/sections/ContactForm';
 import Link from 'next/link';
 import { useState } from 'react';
+import { SEOButtonContactForm } from './SEOPopupForm';
 export default function SeoHero() {
     const [isVisible, setIsVisible] = useState(false);
 
@@ -117,7 +118,7 @@ export default function SeoHero() {
                     </div>
                 </div>
             </section>
-            <ContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
+            <SEOButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
         </>
     )
 }

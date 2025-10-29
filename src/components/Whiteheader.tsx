@@ -19,9 +19,14 @@ import socialmedia from '@/assets/mobile-app-phone2.webp'
 import customcoded from '@/assets/image 3.jpeg'
 import payment from '@/assets/phone finanacce.png'
 import ecommerce from '@/assets/E-Commerce-Website.png'
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { AiOutlineFileSearch, AiOutlineTool } from "react-icons/ai";
 import { SiGoogleads, SiInstagram } from "react-icons/si";
 import { TbDeviceImacSearch } from 'react-icons/tb';
 import { IoLogoReact } from 'react-icons/io5';
+import seo1 from '@/assets/Component-1-1.png'
+import seo2 from '@/assets/Frame-297.png'
+import seo3 from '@/assets/Card-1.png'
 import { AiOutlineLineChart, AiOutlinePicture } from "react-icons/ai";
 export const Whiteheader = () => {
 
@@ -276,7 +281,7 @@ export const Whiteheader = () => {
             title: "Payment Gateway Integration",
             desc: "Seamless integrations with Razorpay, Stripe, PayPal, and more.",
             icon: <RiBankCardLine size={24} />,
-            link: "/payment-gateway-integration",
+            link: "/payment-gateway-integrations",
             image: payment, // image import for payment
         },
         {
@@ -287,6 +292,30 @@ export const Whiteheader = () => {
             link: "/ecommerce-websites",
             image: ecommerce, // image import for ecommerce
         },
+         {
+            id: 16,
+            title: "Local SEO",
+            desc: "Dominate local search results with optimized Google Business Profiles, local citations, and geo-targeted content strategies.",
+            icon: <FaMapMarkerAlt size={24} />,
+            link: "/local-seo",
+            image: seo1, // import an image named `localseo` from assets
+          },
+          {
+            id: 17,
+            title: "On-Page SEO",
+            desc: "Enhance your website’s content, meta tags, and structure for better relevance, rankings, and user experience.",
+            icon: <AiOutlineFileSearch size={24} />,
+            link: "/on-page-seo",
+            image: seo2, // import from assets
+          },
+          {
+            id: 18,
+            title: "Technical SEO",
+            desc: "Fix crawl errors, improve Core Web Vitals, and implement schema markup to make your site search engine–friendly.",
+            icon: <AiOutlineTool size={24} />,
+            link: "/technical-seo",
+            image: seo3, // import from assets
+          },
     ];
     const [hoveredService, setHoveredService] = useState(services[0]);
     return (
@@ -565,7 +594,7 @@ export const Whiteheader = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/payment-gateway-integration" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                        <Link href="/payment-gateway-integrations" className="block py-2 px-4 hover:bg-gray-700 rounded">
                                             Payment Gateway Integration
                                         </Link>
                                     </li>
