@@ -17,7 +17,7 @@ const locations = [
     desc: (
       <>
         <a
-          href="/saudi-arabia/riyadh"
+          href="/saudi-arabia/riyadh/web-design-services"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-400 hover:underline"
@@ -26,7 +26,7 @@ const locations = [
         </a>
         ,{" "}
         <a
-          href="saudi-arabia/eastern-province"
+          href="/saudi-arabia/eastern-province/web-design-services"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-400 hover:underline"
@@ -34,6 +34,14 @@ const locations = [
           Eastern Province
         </a>
         ,{" "}
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          className=""
+        >
+          Dhahran
+        </a>{" "}
         — bilingual builds with Arabic + English parity, mobile-first layouts,
         and GCC-compliant hosting.
       </>
@@ -46,7 +54,7 @@ const locations = [
     desc: (
       <>
         <a
-          href="/hyderabad"
+          href="/web-design-services-hyderabad"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-400 hover:underline"
@@ -54,6 +62,23 @@ const locations = [
           Hyderabad
         </a>
         ,{" "}
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white "
+        >
+          Bangalore
+        </a>
+        ,{" "}
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white "
+        >
+          Mumbai
+        </a>{" "}
         — fast, marketing-ready hybrid websites integrating CMS, CRM, and
         automation tools.
       </>
@@ -82,8 +107,8 @@ const locations = [
         >
           Abu Dhabi
         </a>{" "}
-        — premium design + high-performance React front-ends for luxury,
-        real estate, and financial brands.
+        — premium design + high-performance React front-ends for luxury, real
+        estate, and financial brands.
       </>
     ),
   },
@@ -94,7 +119,7 @@ const locations = [
     desc: (
       <>
         <a
-          href="/toronto"
+          href="/toronto/web-design"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-400 hover:underline"
@@ -103,21 +128,20 @@ const locations = [
         </a>
         ,{" "}
         <a
-          href="/vancouver"
+          href="/vancouver/web-design-services"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-400 hover:underline"
         >
           Vancouver
-        </a>
-        ,{" "}
+        </a>{" "}
         <a
-          href="/mississauga"
+          href="/mississauga/web-design"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-400 hover:underline"
         >
-          Mississauga
+          Missassauga
         </a>{" "}
         — bilingual (EN/FR) systems built for accessibility, compliance, and
         Core Web Vitals excellence.

@@ -1,38 +1,39 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 export default function WebDesignServicesMississauga() {
   const services = [
     {
       title: "Custom CMS Websites",
-      description:
-        "Easy-to-manage, scalable websites for businesses of all sizes.",
+      description: "Easy-to-manage, scalable websites for businesses of all sizes.",
+      link: "/custom-cms-websites",
     },
     {
       title: "Custom Coded Builds",
-      description:
-        "Advanced designs and unique functionality for complex business needs.",
+      description: "Advanced designs and unique functionality for complex business needs.",
+      link: "/custom-coded-websites",
     },
     {
       title: "Ecommerce Websites",
-      description:
-        "Optimized online stores that boost sales and user experience.",
+      description: "Optimized online stores that boost sales and user experience.",
+      link: "/ecommerce-websites",
     },
     {
       title: "Payment Gateway Integrations",
-      description:
-        "Secure and seamless checkout systems for a better customer experience.",
+      description: "Secure and seamless checkout systems for a better customer experience.",
+      link: "/payment-gateway-integrations",
     },
     {
       title: "Landing Page Design",
-      description:
-        "High-converting pages built for Ads and SEO campaigns.",
+      description: "High-converting pages built for Ads and SEO campaigns.",
+      link: "#",
     },
     {
       title: "Support & Maintenance",
-      description:
-        "Continuous updates, backups, and performance monitoring.",
+      description: "Continuous updates, backups, and performance monitoring.",
+      link: "#",
     },
   ];
 
@@ -60,14 +61,22 @@ export default function WebDesignServicesMississauga() {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`relative w-full h-80 border border-gray-800 bg-black/10 hover:bg-blue-600 transition-all duration-300 flex flex-col justify-center items-center p-10 md:p-14`}
+              className="relative w-full h-80 border group border-gray-800 bg-black/10 hover:bg-blue-600 transition-all duration-300 flex flex-col justify-center items-center p-10 md:p-14"
             >
               <h3 className="text-white text-2xl font-bold text-center mb-2">
                 {service.title}
               </h3>
-              <p className="text-gray-300 text-sm text-center">
+              <p className="text-gray-300 text-sm text-center mb-6">
                 {service.description}
               </p>
+
+              {/* Discover More Link */}
+              <Link
+                href={service.link}
+                className="text-blue-400 group-hover:text-white font-semibold text-sm transition-all duration-200"
+              >
+                Discover More 
+              </Link>
 
               {/* Decorative Plus Icons */}
               {index % 4 === 0 && (

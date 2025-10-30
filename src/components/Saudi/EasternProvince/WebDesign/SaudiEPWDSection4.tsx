@@ -9,25 +9,25 @@ export default function WebDevServicesEasternProvince() {
       title: "Custom CMS Builds",
       description:
         "Powerful, flexible websites built on WordPress, Next.js, or fully custom frameworks — easy for your team to manage, scale, and update without technical hassle.",
-      link: "#",
+      link: "/custom-cms-websites",
     },
     {
       title: "E-Commerce Websites",
       description:
         "Launch your online store with seamless checkout flows, conversion-driven product grids, and lightning-fast mobile optimization that drives real sales.",
-      link: "#",
+      link: "/ecommerce-websites",
     },
     {
       title: "Payment Gateway Integrations",
       description:
         "From Razorpay and PayTabs to Stripe, we integrate secure, multi-currency payment systems tailored for Saudi businesses and international scalability.",
-      link: "#",
+      link: "/payment-gateway-integrations",
     },
     {
       title: "Custom Coded Websites",
       description:
         "For enterprises and complex workflows, we engineer fully bespoke web solutions — clean, maintainable, and built for long-term performance.",
-      link: "#",
+      link: "/custom-cms-websites",
     },
     {
       title: "Conversion Landing Pages",
@@ -79,7 +79,7 @@ export default function WebDevServicesEasternProvince() {
                 {service.description}
               </p>
               <Link href={service.link}>
-                <p className="text-green-500 group-hover:text-white text-sm mt-2 hover:font-semibold transition-all">
+                <p className="text-green-500 group-hover:text-white  group-hover:scale-105 text-base mt-2 hover:font-semibold transition-all">
                   Discover More
                 </p>
               </Link>

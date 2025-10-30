@@ -23,7 +23,7 @@ export default function HeroSocialMediaMiss() {
 
   return (
     <>
-      <section className="relative flex flex-col items-center justify-center h-[140vh] md:h-[110vh] bg-black text-center px-6 overflow-hidden">
+      <section className="relative flex flex-col items-center justify-center h-[140vh] md:h-[90vh] bg-black text-center px-6 overflow-hidden">
         <div className="flex justify-center items-center">
           <div className="relative z-10 mt-40 max-w-7xl">
             {/* Headline */}
@@ -77,9 +77,9 @@ export default function HeroSocialMediaMiss() {
           </div>
         </div>
         {/* Popup Form + Logo Carousel */}
+      </section>
         <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
         <LogoTicker2 />
-      </section>
     </>
   );
 }

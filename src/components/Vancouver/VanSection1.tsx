@@ -7,7 +7,7 @@ import peopleImg from '@/assets/new-york-city-manhattan-central-park.jpg'; // âœ
 
 export default function BusinessProblemsVancouver() {
     return (
-        <section className="relative py-10 md:py-20 bg-black">
+        <section className="relative py-10 md:py-32 bg-black">
             <div className="flex flex-col md:flex-row items-center">
 
                 {/* Left Blue Container */}

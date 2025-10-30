@@ -9,6 +9,7 @@ import { IoIosLaptop } from "react-icons/io";
 import { AiOutlineSecurityScan } from "react-icons/ai";
 import { RiCustomerService2Line } from "react-icons/ri";
 import { Laptop, Laptop2 } from "lucide-react";
+import Link from "next/link";
 
 export default function CustomCodedHeroSection() {
     const [showForm, setShowForm] = useState(false);
@@ -54,13 +55,14 @@ export default function CustomCodedHeroSection() {
 
                 {/* Buttons */}
                 <div className="mt-10 flex flex-wrap  justify-center gap-4">
+                    <Link href={'/contact-us'}>
                     <button
-                        onClick={() => setShowForm(true)}
                         className="px-6 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition"
                     >
                         Get My Free IT Consultation
                     </button>
-                    <a href="mailto:info@yourcompany.com">
+                    </Link>
+                    <a href="mailto:zee@bixeltek.com">
                         <button className="px-6 py-3 rounded-full border border-white text-white font-medium hover:bg-white hover:text-black transition">
                             Talk to a Developer
                         </button>

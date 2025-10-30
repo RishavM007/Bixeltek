@@ -22,12 +22,12 @@ export default function AudienceReachSection() {
   ];
 
   return (
-    <section className="relative bg-black text-white py-28 px-6 md:px-20 flex flex-col items-center justify-center text-center">
+    <section className="relative bg-black text-white py-20 px-6 md:px-20 flex flex-col items-center justify-center text-center">
       {/* Heading */}
-      <div className="max-w-3xl mx-auto space-y-6 mb-16">
+      <div className="max-w-5xl mx-auto space-y-6 mb-16">
         <h2 className="text-4xl md:text-6xl font-bold leading-tight">
           Your Audience Is Online —{" "}
-          <span className="text-blue-400">Are You Reaching Them?</span>
+          <span className="text-blue-500">Are You Reaching Them?</span>
         </h2>
         <p className="text-gray-300 text-base md:text-lg leading-relaxed">
           Whether it’s a homeowner scrolling Instagram, a professional networking on LinkedIn,

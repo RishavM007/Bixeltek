@@ -8,8 +8,8 @@ export default function AreasWeServeVancWeb() {
     {
       title: "Toronto & GTA",
       cities: [
-        { name: "Toronto", link: "/toronto" },
-        { name: "Mississauga", link: "/mississauga" },
+        { name: "Toronto", link: "/toronto/web-design" },
+        { name: "Mississauga", link: "/mississauga/web-design" },
         { name: "Brampton" },
         { name: "Vaughan" },
         { name: "Markham" },
@@ -30,7 +30,7 @@ export default function AreasWeServeVancWeb() {
       cities: [
         { name: "Calgary" },
         { name: "Edmonton" },
-        { name: "Vancouver", link: "/vancouver" },
+        { name: "Vancouver", link: "/vancouver/web-design-services" },
         { name: "Winnipeg" },
       ],
     },

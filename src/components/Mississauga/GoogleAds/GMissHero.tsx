@@ -72,9 +72,9 @@ export default function HeroGMiss() {
           </div>
         </div>
         {/* Popup Form + Logo Carousel */}
-        <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
-        <LogoTicker2 />
       </section>
+         <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
+        <LogoTicker2 />
     </>
   );
 }

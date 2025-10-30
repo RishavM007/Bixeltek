@@ -47,7 +47,7 @@ export const Footer = () => {
             <ul className="text-sm  transition-all duration-500">
               <li className="mb-6"><Link href="/" className="text-gray-300 whitespace-nowrap hover:text-purple-700">Home</Link></li>
               <li className="mb-6"><Link href="/about-us" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">About Us</Link></li>
-              <li className="mb-6"><Link href="/pricing" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">Our Pricing</Link></li>
+              {/* <li className="mb-6"><Link href="/pricing" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">Our Pricing</Link></li> */}
               <li className="mb-6"><Link href="/industries" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">Industries We Serve</Link></li>
               <li className="mb-6"><Link href="/case-studies" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">Read Our Case Studies</Link></li>
               <li className="mb-6"><Link href="/privacy-policy" className=" text-gray-300 whitespace-nowrap hover:text-purple-700">Privacy Policy</Link></li>
@@ -58,10 +58,16 @@ export const Footer = () => {
           <div className="lg:mx-auto text-left ">
             <h4 className="text-lg text-gray-100 font-medium mb-7">Services</h4>
             <ul className="text-sm  transition-all duration-500">
-              <li className="mb-6"><Link href="/google-ads-agency-hyderabad" className="text-gray-300 hover:text-purple-700">Google Ads Management in Hyderabad</Link></li>
-              <li className="mb-6"><Link href="/seo-agency-hyderabad" className=" text-gray-300 hover:text-purple-700">SEO Services in Hyderabad</Link></li>
-              <li className="mb-6"><Link href="/social-media-marketing-agency-hyderabad" className=" text-gray-300 hover:text-purple-700">Social Media Management in Hyderabad</Link></li>
-              <li className="mb-6"><Link href="/web-design-services-hyderabad" className=" text-gray-300 hover:text-purple-700">Web Design Services in Hyderabad</Link></li>
+              <li className="mb-6"><Link href="/services/google-ads" className="text-gray-300 hover:text-purple-700">Google Ads Management</Link></li>
+              <li className="mb-6"><Link href="/services/seo-services" className=" text-gray-300 hover:text-purple-700">SEO Services</Link></li>
+              <li className="mb-6"><Link href="/social-media-marketing-agency-hyderabad" className=" text-gray-300 hover:text-purple-700">Social Media Management</Link></li>
+              <li className="mb-6"><Link href="/custom-coded-websites" className=" text-gray-300 hover:text-purple-700">Custom Coded Websites</Link></li>
+              <li className="mb-6"><Link href="/custom-cms-websites" className=" text-gray-300 hover:text-purple-700">Custom CMS Websites</Link></li>
+              <li className="mb-6"><Link href="/payment-gateway-integrations" className=" text-gray-300 hover:text-purple-700">Payment Gateway Integrations</Link></li>
+              <li className="mb-6"><Link href="/ecommerce-websites" className=" text-gray-300 hover:text-purple-700">E-Commerce Websites</Link></li>
+              <li className="mb-6"><Link href="/local-seo" className=" text-gray-300 hover:text-purple-700">Local SEO</Link></li>
+              <li className="mb-6"><Link href="/on-page-seo" className=" text-gray-300 hover:text-purple-700">On Page SEO</Link></li>
+              <li className="mb-6"><Link href="/technical-seo" className=" text-gray-300 hover:text-purple-700">Technical SEO</Link></li>
               {/* <li className="mb-6"><Link href="#" className=" text-gray-300 hover:text-purple-700">Youtube Ads Management in Hyderabad</Link></li> */}
             </ul>
           </div>
@@ -69,11 +75,11 @@ export const Footer = () => {
             <h4 className="text-lg text-gray-100 font-medium mb-7">Locations</h4>
             <ul className="text-sm  transition-all duration-500">
               <li className="mb-6"><Link href="/hyderabad" className="text-gray-300 hover:text-purple-700">Hyderabad</Link></li>
-              <li className="mb-6"><Link href="#" className=" text-gray-300 hover:text-purple-700">Canada</Link></li>
-              <li className="mb-6"><Link href="#" className=" text-gray-300 hover:text-purple-700">United States</Link></li>
-              <li className="mb-6"><Link href="#" className=" text-gray-300 hover:text-purple-700">Saudi Arabia</Link></li>
-              <li className="mb-6"><Link href="#" className=" text-gray-300 hover:text-purple-700">United Arab Emirates</Link></li>
-              <li className="mb-6"><Link href="#" className=" text-gray-300 hover:text-purple-700">United Kingdom</Link></li>
+              <li className="mb-6"><Link href="/toronto" className=" text-gray-300 hover:text-purple-700">Toronto</Link></li>
+              <li className="mb-6"><Link href="/vancouver" className=" text-gray-300 hover:text-purple-700">Vancouver</Link></li>
+              <li className="mb-6"><Link href="/mississauga" className=" text-gray-300 hover:text-purple-700">Missassauga</Link></li>
+              <li className="mb-6"><Link href="/saudi-arabia/eastern-province" className=" text-gray-300 hover:text-purple-700">Eastern Province</Link></li>
+              <li className="mb-6"><Link href="/saudi-arabia/riyadh" className=" text-gray-300 hover:text-purple-700">Riyadh</Link></li>
             </ul>
           </div>
           <div className="lg:mx-auto text-left ">

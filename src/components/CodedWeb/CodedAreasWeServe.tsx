@@ -16,7 +16,7 @@ const locations = [
     desc: (
       <>
         <a
-          href="/saudi-arabia/riyadh"
+          href="/saudi-arabia/riyadh/web-design-services"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-400 hover:underline"
@@ -25,7 +25,7 @@ const locations = [
         </a>
         ,{" "}
         <a
-          href="saudi-arabia/eastern-province"
+          href="/saudi-arabia/eastern-province/web-design-services"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-400 hover:underline"
@@ -53,7 +53,7 @@ const locations = [
     desc: (
       <>
         <a
-          href="/hyderabad"
+          href="/web-design-services-hyderabad"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-400 hover:underline"
@@ -118,7 +118,7 @@ const locations = [
     desc: (
       <>
         <a
-          href="/toronto"
+          href="/toronto/web-design"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-400 hover:underline"
@@ -127,7 +127,7 @@ const locations = [
         </a>
         ,{" "}
         <a
-          href="/vancouver"
+          href="/vancouver/web-design-services"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-400 hover:underline"
@@ -135,7 +135,7 @@ const locations = [
           Vancouver
         </a>{" "}
         <a
-          href="/mississauga"
+          href="/mississauga/web-design"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-400 hover:underline"

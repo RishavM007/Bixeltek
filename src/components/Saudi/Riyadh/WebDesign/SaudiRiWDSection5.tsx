@@ -9,13 +9,13 @@ export default function WebDesignServicesRiyadh() {
       title: "Custom Website Design & Development",
       description:
         "Tailored websites reflecting your brand identity and business goals.",
-      link: "#",
+      link: "/custom-coded-websites",
     },
     {
       title: "CMS Website Development",
       description:
         "WordPress, Webflow, or headless CMS for easy content management and scalable performance.",
-      link: "#",
+      link: "/custom-cms-websites",
     },
     {
       title: "Landing Pages for CRO Campaigns",
@@ -27,7 +27,7 @@ export default function WebDesignServicesRiyadh() {
       title: "E-Commerce Solutions",
       description:
         "Fast, secure, bilingual online stores with payment gateway integration (SADAD, HyperPay, PayTabs, Stripe).",
-      link: "#",
+      link: "/ecommerce-websites",
     },
     {
       title: "Website Redesign & UX Optimization",
@@ -74,7 +74,7 @@ export default function WebDesignServicesRiyadh() {
                 {service.description}
               </p>
               <Link href={service.link}>
-                <p className="text-green-400 group-hover:text-white text-sm mt-2 hover:font-semibold transition-all">
+                <p className="text-green-400 group-hover:text-white group-hover:scale-105 text-base mt-2 hover:font-semibold transition-all duration-300">
                   Discover More
                 </p>
               </Link>

@@ -9,19 +9,19 @@ export default function WebDesignServicesVancouver() {
       title: "Custom CMS Builds",
       description:
         "Dynamic and scalable websites built on flexible CMS platforms like WordPress — fully optimized for SEO and easy content management.",
-      link: "#",
+      link: "/custom-cms-websites",
     },
     {
       title: "Custom-Coded Websites",
       description:
         "For businesses needing advanced functionality or unique design systems, we develop tailor-made websites with performance and scalability in mind.",
-      link: "#",
+      link: "/custom-coded-websites",
     },
     {
       title: "Ecommerce Websites",
       description:
         "Boost online sales with ecommerce stores optimized for speed, conversions, and secure checkout experiences.",
-      link: "#",
+      link: "/ecommerce-websites",
     },
     {
       title: "Conversion Landing Pages",
@@ -33,7 +33,7 @@ export default function WebDesignServicesVancouver() {
       title: "Payment Gateway Integrations",
       description:
         "Seamless, secure, and fast payment integrations that enhance user trust and improve conversion rates.",
-      link: "#",
+      link: "/payment-gateway-integrations",
     },
     {
       title: "Website Maintenance & Support",

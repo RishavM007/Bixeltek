@@ -10,21 +10,21 @@ export default function SeoServicesVancouver() {
       description:
         "Get found by customers searching “near me.” We optimize your Google Business Profile, local citations, reviews, and service pages to help you rank in the Vancouver Map Pack.",
       benefit: "More local leads and walk-ins.",
-      link: "#",
+      link: "/local-seo",
     },
     {
       title: "On-Page SEO",
       description:
         "Content and structure that align with Google’s Helpful Content and E-E-A-T principles. We optimize headings, schema, internal links, and keyword relevance for maximum visibility.",
       benefit: "Better rankings with trustworthy content.",
-      link: "#",
+      link: "/on-page-seo",
     },
     {
       title: "Technical SEO",
       description:
         "Fix crawl errors, improve page speed, mobile UX, and indexing signals that boost your site’s performance and trust.",
       benefit: "Search engines + users love your site.",
-      link: "#",
+      link: "/technical-seo",
     },
     {
       title: "AI SEO (Next-Gen Optimization)",

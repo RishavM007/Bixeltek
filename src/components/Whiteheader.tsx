@@ -604,6 +604,21 @@ export const Whiteheader = () => {
                                             E-commerce Website
                                         </Link>
                                     </li>
+                                    <li>
+                                        <Link href="/local-seo" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                            Local SEO
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/technical-seo" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                            Technical SEO
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/on-page-seo" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                            On Page SEO
+                                        </Link>
+                                    </li>
                                 </motion.ul>
 
                             )}

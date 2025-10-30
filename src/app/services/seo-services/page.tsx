@@ -66,7 +66,7 @@ export default function Seo() {
             description:
                 "Optimize site speed, mobile-friendliness, structured data, and indexing to ensure search engines crawl and rank your site effectively.",
             linkText: "Understand Technical SEO",
-            linkUrl: "technical-seo",
+            linkUrl: "/technical-seo",
         },
         {
             title: "Mobile Optimization",

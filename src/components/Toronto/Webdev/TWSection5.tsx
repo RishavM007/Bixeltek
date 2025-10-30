@@ -1,44 +1,52 @@
 "use client";
 
 import React from 'react';
+import Link from 'next/link';
 
 export default function WebDesignServicesToronto() {
 
-const webServices = [
-  {
-    title: "Custom Website Design",
-    description: "We create unique, brand-aligned website designs that build trust, engage visitors, and reflect your company’s personality, ensuring a strong and memorable online presence.",
-  },
-  {
-    title: "Custom Coded Websites",
-    description: "Develop complex, feature-rich websites using clean, efficient code tailored to your advanced requirements, providing performance, scalability, and full customization for your business needs.",
-  },
-  {
-    title: "Custom CMS Development",
-    description: "Build fully custom content management systems with WordPress, Next.js, or bespoke platforms, designed to streamline your workflows and give you complete control over website content.",
-  },
-  {
-    title: "Ecommerce Websites",
-    description: "Create Shopify, WooCommerce, or custom ecommerce websites optimized for sales, providing seamless user experiences, smooth checkout processes, and high conversion rates for online stores.",
-  },
-  {
-    title: "Payment Gateway Integrations",
-    description: "Integrate secure, reliable payment gateways into your website, enabling smooth online transactions, protecting sensitive data, and offering multiple payment options for your customers.",
-  },
-  {
-    title: "Landing Page Design",
-    description: "Design high-converting landing pages tailored for campaigns, promotions, and PPC ads, crafted to capture leads effectively and maximize marketing ROI for your business.",
-  },
-  {
-    title: "Website Redesigns",
-    description: "Modernize outdated websites with fresh designs, improved functionality, and optimized user experience, ensuring your site aligns with current trends and enhances brand credibility.",
-  },
-  {
-    title: "Support & Maintenance",
-    description: "Provide ongoing website support including updates, backups, security monitoring, and performance optimization, ensuring your website remains reliable, fast, and secure at all times.",
-  },
-];
-
+  const webServices = [
+    {
+      title: "Custom Website Design",
+      description: "We create unique, brand-aligned website designs that build trust, engage visitors, and reflect your company’s personality, ensuring a strong and memorable online presence.",
+      link: "/custom-coded-websites",
+    },
+    {
+      title: "Custom Coded Websites",
+      description: "Develop complex, feature-rich websites using clean, efficient code tailored to your advanced requirements, providing performance, scalability, and full customization for your business needs.",
+      link: "/custom-coded-websites",
+    },
+    {
+      title: "Custom CMS Development",
+      description: "Build fully custom content management systems with WordPress, Next.js, or bespoke platforms, designed to streamline your workflows and give you complete control over website content.",
+      link: "/custom-cms-websites",
+    },
+    {
+      title: "Ecommerce Websites",
+      description: "Create Shopify, WooCommerce, or custom ecommerce websites optimized for sales, providing seamless user experiences, smooth checkout processes, and high conversion rates for online stores.",
+      link: "/ecommerce-websites",
+    },
+    {
+      title: "Payment Gateway Integrations",
+      description: "Integrate secure, reliable payment gateways into your website, enabling smooth online transactions, protecting sensitive data, and offering multiple payment options for your customers.",
+      link: "/payment-gateway-integrations",
+    },
+    {
+      title: "Landing Page Design",
+      description: "Design high-converting landing pages tailored for campaigns, promotions, and PPC ads, crafted to capture leads effectively and maximize marketing ROI for your business.",
+      link: "#",
+    },
+    {
+      title: "Website Redesigns",
+      description: "Modernize outdated websites with fresh designs, improved functionality, and optimized user experience, ensuring your site aligns with current trends and enhances brand credibility.",
+      link: "#",
+    },
+    {
+      title: "Support & Maintenance",
+      description: "Provide ongoing website support including updates, backups, security monitoring, and performance optimization, ensuring your website remains reliable, fast, and secure at all times.",
+      link: "#",
+    },
+  ];
 
   return (
     <section className='relative md:py-24'>
@@ -62,10 +70,18 @@ const webServices = [
           {webServices.map((service, index) => (
             <div
               key={index}
-              className={`relative w-full h-80 border border-gray-800 bg-black/10 hover:bg-blue-600 transition-all duration-300 flex flex-col justify-center items-center p-10 md:p-16`}
+              className={`relative group w-full h-80 border border-gray-800 bg-black/10 hover:bg-blue-600 transition-all duration-300 flex flex-col justify-center items-center p-10 md:p-16`}
             >
               <h3 className="text-white text-2xl font-bold text-center mb-2">{service.title}</h3>
-              <p className="text-gray-300 text-sm text-center">{service.description}</p>
+              <p className="text-gray-300 text-sm text-center mb-6">{service.description}</p>
+
+              {/* Discover More Link */}
+              <Link
+                href={service.link}
+                className="text-blue-400 group-hover:text-white font-semibold text-sm mt-auto transition-all duration-200"
+              >
+                Discover More
+              </Link>
 
               {/* Decorative Plus Icons */}
               {index % 4 === 0 && (

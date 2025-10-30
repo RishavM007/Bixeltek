@@ -41,15 +41,13 @@ export default function HeroLocalSEO() {
                     <div className="relative z-10 mt-24 max-w-7xl">
                         {/* Heading */}
                         <h1 className="text-4xl md:text-7xl font-medium leading-tight text-white">
-                            Your customers aren’t just online {" "}
-                            <span className="text-blue-500">they’re nearby.</span>
+                            Local SEO That Puts You on the Map {" "}
+                            <span className="text-blue-500">Literally</span>
                         </h1>
 
                         {/* Subheading */}
                         <p className="mt-6 text-lg md:text-base text-gray-100 max-w-5xl mx-auto">
-                            Bixeltek’s Local SEO framework ensures you appear where people act: on Google Maps,
-                            “near me” searches, and mobile voice results. We build local authority systems that
-                            drive calls, directions, and in-store visits — not vanity impressions.
+                          Your customers aren’t just online — they’re nearby. Bixeltek’s Local SEO framework ensures you appear where people act: on Google Maps, “near me” searches, and mobile voice results. We build local authority systems that drive calls, directions, and in-store visits — not vanity impressions.
                         </p>
 
                         {/* Proof Points */}

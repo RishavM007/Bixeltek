@@ -16,7 +16,7 @@ const locations = [
         desc: (
             <>
                 <a
-                    href="/saudi-arabia/riyadh"
+                    href="/saudi-arabia/riyadh/seo-services"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-400 hover:underline"
@@ -25,7 +25,7 @@ const locations = [
                 </a>
                 ,{" "}
                 <a
-                    href="saudi-arabia/eastern-province"
+                    href="/saudi-arabia/eastern-province/seo-services"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-400 hover:underline"
@@ -53,7 +53,7 @@ const locations = [
         desc: (
             <>
                 <a
-                    href="/hyderabad"
+                    href="/social-media-marketing-agency-hyderabad"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-400 hover:underline"
@@ -118,7 +118,7 @@ const locations = [
         desc: (
             <>
                 <a
-                    href="/toronto"
+                    href="/toronto/seo-services"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-400 hover:underline"
@@ -127,7 +127,7 @@ const locations = [
                 </a>
                 ,{" "}
                 <a
-                    href="/vancouver"
+                    href="/vancouver/seo-services"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-400 hover:underline"
@@ -135,7 +135,7 @@ const locations = [
                     Vancouver
                 </a>{" "}
                 <a
-                    href="/mississauga"
+                    href="/mississauga/seo-services"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-400 hover:underline"
@@ -168,6 +168,7 @@ const locations = [
         ),
     },
 ];
+
 
 const OnPageAreas = () => {
     return (

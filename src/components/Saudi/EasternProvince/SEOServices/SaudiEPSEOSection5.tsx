@@ -9,19 +9,19 @@ export default function SEOServicesEasternProvince() {
       title: "Local SEO",
       description:
         "Dominate searches in Khobar and Dammam with localized maps, NAP consistency, and review optimization.",
-      link: "#",
+      link: "/local-seo",
     },
     {
       title: "On-Page SEO",
       description:
         "Optimize page titles, headers, and schema for maximum clarity and intent matching.",
-      link: "#",
+      link: "/on-page-seo",
     },
     {
       title: "Technical SEO",
       description:
         "Improve site speed, fix indexing issues, and enhance mobile usability for better user experience and crawlability.",
-      link: "#",
+      link: "/technical-seo",
     },
     {
       title: "Content Strategy & Topical Maps",
@@ -78,7 +78,7 @@ export default function SEOServicesEasternProvince() {
                 {service.description}
               </p>
               <Link href={service.link}>
-                <p className="text-green-500 group-hover:text-white text-sm mt-2 hover:font-semibold transition-all">
+                <p className="text-green-500 group-hover:text-white group-hover:scale-105 text-base  mt-2 hover:font-semibold transition-all duration-300">
                   Discover More
                 </p>
               </Link>
