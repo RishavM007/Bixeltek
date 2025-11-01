@@ -16,7 +16,7 @@ export default function WebDevHero() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowContactForm(true);
-    }, 5000); // triggers after 5 seconds
+    }, 40000); // triggers after 5 seconds
 
     return () => clearTimeout(timer); // cleanup on unmount
   }, []);

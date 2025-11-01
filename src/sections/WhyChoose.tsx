@@ -132,12 +132,12 @@ export default function WhyChoose() {
 
                     {/* Overlays — full height split background */}
                     <div className="absolute inset-0 flex">
-                        <div className="w-3/5 bg-blue-800 bg-opacity-90 h-full"></div>
-                        <div className="w-2/5 bg-white  h-full"></div>
+                        <div className="w-0 md:w-3/5 bg-blue-800 bg-opacity-90 h-full"></div>
+                        <div className="w-full md:w-2/5 bg-white  h-full"></div>
                     </div>
 
                     {/* Left Content */}
-                    <div className="relative z-10 text-white flex flex-col sm:items-center md:items-start md:max-w-2xl px-4">
+                    <div className="relative z-10 text-black md:text-white flex flex-col sm:items-center md:items-start md:max-w-2xl px-4">
                         <h2 className="text-3xl md:text-4xl sm:text-center md:text-left font-inter font-medium mb-6 leading-tight">
                             &quot;We’ve grown our revenue 3X since working with Bixeltek. They own the outcome like it’s theirs.&quot;
                         </h2>
