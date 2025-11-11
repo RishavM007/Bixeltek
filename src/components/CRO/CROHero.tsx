@@ -80,7 +80,7 @@ export default function HeroAnalytics() {
 
                         {/* Subheading */}
                         <p className="mt-6 text-lg md:text-base text-gray-900 max-w-5xl mx-auto">
-                            Most websites collect data — but very few understand it. At Bixeltek, we don't just set up tracking; we engineer insight. We connect every digital touchpoint — from ads to forms to CRM — into a unified analytics ecosystem that reveals what truly drives conversions.
+                            Most websites collect data — but very few understand it. At Bixeltek, we don&apos;t just set up tracking; we engineer insight. We connect every digital touchpoint — from ads to forms to CRM — into a unified analytics ecosystem that reveals what truly drives conversions.
                         </p>
 
                         {/* Proof Points */}

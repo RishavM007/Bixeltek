@@ -90,20 +90,15 @@ export const Header = () => {
             { name: "Social Media Marketing", link: "/social-media-marketing-agency-hyderabad" },
           ],
         },
-        // {
-        //   name: "Delhi",
-        //   link: "#",
-        //   services: [
-        //     { name: "SEO Services in Delhi", link: "#" },
-        //   ],
-        // },
-        // {
-        //   name: "Bangalore",
-        //   link: "#",
-        //   services: [
-        //     { name: "SEO Services in Bangalore", link: "#" },
-        //   ],
-        // },
+        {
+          name: "Bangalore",
+          link: "/bangalore",
+          services: [
+            { name: "Google Ads Management", link: "/bangalore/google-ads-management" },
+            { name: "Web Design and Development", link: "/bangalore/website-design-company" },
+            { name: "Search Engine Optimisation", link: "/bangalore/seo-services" },
+          ],
+        },
       ],
     },
     // usa: {
@@ -216,115 +211,115 @@ export const Header = () => {
     // },
 
   ];
-const services = [
-  {
-    id: 6,
-    title: "Google Ads Management",
-    desc: "Optimize and manage Google Ads campaigns effectively.",
-    icon: <SiGoogleads size={24} />,
-    link: "/services/google-ads",
-    image: googleads,
-  },
-  {
-    id: 7,
-    title: "Search Engine Optimization",
-    desc: "Improve your website ranking and visibility.",
-    icon: <TbDeviceImacSearch size={24} />,
-    link: "/services/seo-services",
-    image: seo,
-  },
-  {
-    id: 8,
-    title: "Social Media Management",
-    desc: "Enhance your online presence with expert strategies.",
-    icon: <SiInstagram size={24} />,
-    link: "/social-media-marketing-agency-hyderabad",
-    image: socialmedia,
-  },
-  {
-    id: 9,
-    title: "Web Design and Development",
-    desc: "Build scalable and modern web solutions.",
-    icon: <IoLogoReact size={24} />,
-    link: "/services/web-design",
-    image: webdesign,
-  },
-  {
-    id: 10,
-    title: "Analytics Reporting",
-    desc: "Track and analyze your business metrics for smarter decisions.",
-    icon: <AiOutlineLineChart size={24} />,
-    link: "#",
-    image: anr,
-  },
-  {
-    id: 11,
-    title: "Graphic Design",
-    desc: "Create stunning visuals to elevate your brand identity.",
-    icon: <AiOutlinePicture size={24} />,
-    link: "#",
-    image: graphic,
-  },
-  {
-    id: 12,
-    title: "Custom CMS Websites",
-    desc: "Tailor-built CMS platforms with flexibility and SEO-ready architecture.",
-    icon: <TbLayoutDashboard size={24} />,
-    link: "/custom-cms-websites",
-    image: cmsImage,
-  },
-  {
-    id: 13,
-    title: "Custom Coded Websites",
-    desc: "Fully hand-coded sites for performance, scalability, and uniqueness.",
-    icon: <AiOutlineCode size={24} />,
-    link: "/custom-coded-websites",
-    image: customcoded,
-  },
-  {
-    id: 14,
-    title: "Payment Gateway Integration",
-    desc: "Seamless integrations with Razorpay, Stripe, PayPal, and more.",
-    icon: <RiBankCardLine size={24} />,
-    link: "/payment-gateway-integrations",
-    image: payment,
-  },
-  {
-    id: 15,
-    title: "E-commerce Website",
-    desc: "Conversion-focused online stores built for speed and scalability.",
-    icon: <AiOutlineShoppingCart size={24} />,
-    link: "/ecommerce-websites",
-    image: ecommerce,
-  },
+  const services = [
+    {
+      id: 6,
+      title: "Google Ads Management",
+      desc: "Optimize and manage Google Ads campaigns effectively.",
+      icon: <SiGoogleads size={24} />,
+      link: "/services/google-ads",
+      image: googleads,
+    },
+    {
+      id: 7,
+      title: "Search Engine Optimization",
+      desc: "Improve your website ranking and visibility.",
+      icon: <TbDeviceImacSearch size={24} />,
+      link: "/services/seo-services",
+      image: seo,
+    },
+    {
+      id: 8,
+      title: "Social Media Management",
+      desc: "Enhance your online presence with expert strategies.",
+      icon: <SiInstagram size={24} />,
+      link: "/social-media-marketing-agency-hyderabad",
+      image: socialmedia,
+    },
+    {
+      id: 9,
+      title: "Web Design and Development",
+      desc: "Build scalable and modern web solutions.",
+      icon: <IoLogoReact size={24} />,
+      link: "/services/web-design",
+      image: webdesign,
+    },
+    {
+      id: 10,
+      title: "Analytics Reporting",
+      desc: "Track and analyze your business metrics for smarter decisions.",
+      icon: <AiOutlineLineChart size={24} />,
+      link: "#",
+      image: anr,
+    },
+    {
+      id: 11,
+      title: "Graphic Design",
+      desc: "Create stunning visuals to elevate your brand identity.",
+      icon: <AiOutlinePicture size={24} />,
+      link: "#",
+      image: graphic,
+    },
+    {
+      id: 12,
+      title: "Custom CMS Websites",
+      desc: "Tailor-built CMS platforms with flexibility and SEO-ready architecture.",
+      icon: <TbLayoutDashboard size={24} />,
+      link: "/custom-cms-websites",
+      image: cmsImage,
+    },
+    {
+      id: 13,
+      title: "Custom Coded Websites",
+      desc: "Fully hand-coded sites for performance, scalability, and uniqueness.",
+      icon: <AiOutlineCode size={24} />,
+      link: "/custom-coded-websites",
+      image: customcoded,
+    },
+    {
+      id: 14,
+      title: "Payment Gateway Integration",
+      desc: "Seamless integrations with Razorpay, Stripe, PayPal, and more.",
+      icon: <RiBankCardLine size={24} />,
+      link: "/payment-gateway-integrations",
+      image: payment,
+    },
+    {
+      id: 15,
+      title: "E-commerce Website",
+      desc: "Conversion-focused online stores built for speed and scalability.",
+      icon: <AiOutlineShoppingCart size={24} />,
+      link: "/ecommerce-websites",
+      image: ecommerce,
+    },
 
-  // 🌍 NEWLY ADDED SEO SERVICES
-{
-  id: 16,
-  title: "Local SEO",
-  desc: "Increase local visibility with optimized maps, listings, and reviews.",
-  icon: <FaMapMarkerAlt size={24} />,
-  link: "/local-seo",
-  image: seo1, // import an image named `localseo` from assets
-},
-{
-  id: 17,
-  title: "On-Page SEO",
-  desc: "Optimize content, meta tags, and structure for stronger relevance.",
-  icon: <AiOutlineFileSearch size={24} />,
-  link: "/on-page-seo",
-  image: seo2, // import from assets
-},
-{
-  id: 18,
-  title: "Technical SEO",
-  desc: "Enhance site speed, crawlability, and schema for better indexing.",
-  icon: <AiOutlineTool size={24} />,
-  link: "/technical-seo",
-  image: seo3, // import from assets
-},
+    // 🌍 NEWLY ADDED SEO SERVICES
+    {
+      id: 16,
+      title: "Local SEO",
+      desc: "Increase local visibility with optimized maps, listings, and reviews.",
+      icon: <FaMapMarkerAlt size={24} />,
+      link: "/local-seo",
+      image: seo1, // import an image named `localseo` from assets
+    },
+    {
+      id: 17,
+      title: "On-Page SEO",
+      desc: "Optimize content, meta tags, and structure for stronger relevance.",
+      icon: <AiOutlineFileSearch size={24} />,
+      link: "/on-page-seo",
+      image: seo2, // import from assets
+    },
+    {
+      id: 18,
+      title: "Technical SEO",
+      desc: "Enhance site speed, crawlability, and schema for better indexing.",
+      icon: <AiOutlineTool size={24} />,
+      link: "/technical-seo",
+      image: seo3, // import from assets
+    },
 
-];
+  ];
 
 
   const [hoveredService, setHoveredService] = useState(services[0]);
@@ -416,7 +411,7 @@ const services = [
                     </li>
                     <li>
                       <Link href="/local-seo" className="block py-2 px-4 hover:bg-gray-700 rounded">
-                       Local SEO
+                        Local SEO
                       </Link>
                     </li>
                     <li>

@@ -87,13 +87,15 @@ export const Whiteheader = () => {
                 //         { name: "SEO Services in Vancouver", link: "#" },
                 //     ],
                 // },
-                // {
-                //     name: "Bangalore",
-                //     link: "/canada/vancouver",
-                //     services: [
-                //         { name: "SEO Services in Vancouver", link: "/canada/vancouver/seo" },
-                //     ],
-                // },
+                {
+                    name: "Bangalore",
+                    link: "/bangalore",
+                    services: [
+                        { name: "Google Ads Management", link: "/bangalore/google-ads-management" },
+                        { name: "Web Design and Development", link: "/bangalore/website-design-company" },
+                        { name: "Search Engine Optimisation", link: "/bangalore/seo-services" },
+                    ],
+                },
             ],
         },
         // usa: {
