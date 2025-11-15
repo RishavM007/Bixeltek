@@ -229,7 +229,10 @@ export const ContactSection: React.FC = () => {
                                         opposite Ratnadeep, Bandlaguda Jagir,<br />
                                         Hyderabad, Telangana 500091
                                     </address>
-                                    <p className="font-bold mt-1">+91 9100032301</p>
+                                    <a href="tel:+919100032301">
+                                        <p className="font-bold mt-1">+91 9100032301</p>
+                                    </a>
+
                                 </div>
                                 <div className='flex flex-col gap-3'>
                                     <p className="font-semibold text-xl">Saudi Office <span className='text-base'>(coming soon)</span>:</p>
@@ -237,7 +240,9 @@ export const ContactSection: React.FC = () => {
                                         Bixeltek,
                                         Qahtani Building, Above SAB Bank, Dammam 32242, Saudi Arabia
                                     </address>
-                                    <p className="font-bold mt-1">+91 9100032301</p>
+                                    <a href="tel:+919100032301">
+                                        <p className="font-bold mt-1">+91 9100032301</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
