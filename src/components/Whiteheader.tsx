@@ -323,7 +323,7 @@ export const Whiteheader = () => {
     const [hoveredService, setHoveredService] = useState(services[0]);
     return (
         <>
-            <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-[90%] rounded-full bg-white backdrop-blur-3xl shadow-lg px-6 py-0">
+           <header className={`fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-[90%] rounded-full bg-white backdrop-blur-3xl shadow-lg px-6 py-0`}>
                 <div className=" flex justify-between px-6 items-center">
                     <div className="text-white py-3">
                         <Link href={"/"}>
@@ -334,10 +334,10 @@ export const Whiteheader = () => {
                         {isMenuOpen ? <HiX /> : <HiMenu />}
                     </button>
 
-                    <div className="hidden xl:flex text-[17px] tracking-widest">
-                        <nav className="flex justify-between gap-44">
+                    <div className="hidden xl:flex text-[17px] tracking-widest z-50">
+                        <nav className="flex justify-between gap-44 z-50">
                             <ul className="flex gap-8 h-auto font-sofiasanscondensed font-normal tracking-widest">
-                                <li className="flex items-center py-7">
+                                <li className="flex items-center py-7 z-50">
                                     <Link href="/" className="text-black hover:text-purple-800 font-semibold transition">
                                         Home
                                     </Link>
@@ -345,7 +345,7 @@ export const Whiteheader = () => {
 
                                 {/* Our Services Dropdown */}
                                 <li
-                                    className="flex items-center py-7"
+                                    className="flex items-center py-7 z-50"
                                     onMouseEnter={() => setIsDropdownOpen(true)}
                                     onMouseLeave={() => setIsDropdownOpen(false)}
                                 >
@@ -357,7 +357,7 @@ export const Whiteheader = () => {
                                     </a>
 
                                     {/* Mega Menu Dropdown */}
-                                    <div className={`absolute top-full left-0 right-0 w-full bg-white rounded-2xl shadow-lg py-8 flex transition-all duration-300 ${isDropdownOpen ? "opacity-100 visible" : "opacity-0 invisible"
+                                    <div className={`absolute top-[28%] left-0 right-0 w-[100%] mx-auto bg-white rounded-b-2xl mt-6 pt-10 py-8 flex transition-all duration-300 z-40 ${isDropdownOpen ? "opacity-100 visible" : "opacity-0 invisible"
                                         }`}>
 
                                         {/* Left: Services (80%) */}
@@ -391,7 +391,7 @@ export const Whiteheader = () => {
                                         </div>
                                     </div>
                                 </li>
-                                <li className="flex items-center relative group py-7">
+                                <li className="flex items-center relative group py-7 z-50">
                                     <Link href="/industries" className="text-black hover:text-purple-800 flex justify-center items-center font-semibold transition">
                                         Industries <HiChevronDown className="ml-1 text-sm" />
                                     </Link>
@@ -406,7 +406,7 @@ export const Whiteheader = () => {
                                         </li>
                                     </ul>
                                 </li>
-                                <li className="flex group relative items-center py-7">
+                                <li className="flex group relative items-center py-7 z-50">
                                     <Link href="#" className="text-black hover:text-purple-800 flex justify-center items-center font-semibold transition">
                                         Locations <HiChevronDown className="ml-1 text-sm" />
                                     </Link>
@@ -459,7 +459,7 @@ export const Whiteheader = () => {
                                     </div>
                                 </li>
 
-                                <li className="relative group py-7">
+                                <li className="relative group py-7 z-50">
                                     <Link href={'/case-studies/'}>
                                         <div className="flex items-center text-black hover:text-purple-800 transition cursor-pointer">
                                             Case Studies <HiChevronDown className="ml-1 text-xs" />
@@ -502,7 +502,7 @@ export const Whiteheader = () => {
                                         </li>
                                     </ul>
                                 </li>
-                                <li className="flex items-center py-7">
+                                <li className="flex items-center py-7 z-50">
                                     <Link href="/blog" className="text-black hover:text-purple-800 font-semibold transition">
                                         Blog
                                     </Link>
@@ -512,13 +512,13 @@ export const Whiteheader = () => {
                                         About Us
                                     </Link>
                                 </li> */}
-                                <li className="flex items-center py-7 lg:inline">
+                                <li className="flex items-center py-7 lg:inline z-50">
                                     <Link href='/contact-us' className="text-black hover:text-purple-800 font-semibold transition">
                                         Contact Us
                                     </Link>
                                 </li>
                             </ul>
-                            <div className="hidden md:flex justify-center items-center gap-5 py-4">
+                            <div className="hidden md:flex justify-center items-center gap-5 py-4 z-50">
                                 <a href="tel:+919100032301">
                                     <button className="bg-black border text-white font-normal text-sm py-2 px-4 rounded-lg ">
                                         <span>Talk to a Specialist</span>
