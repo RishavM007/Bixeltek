@@ -19,12 +19,14 @@ export const Footer = () => {
             <p className="py-5 text-gray-100 lg:max-w-xs text-center lg:text-left">Trusted by brands. Certified by Google. Focused on ROI.</p>
             <div className="text-sm text-white mb-4">
               <p className="mb-2 text-xl font-semibold">Address</p>
-              <address className="text-base not-italic">
+              <address className="text-base not-italic">      
                 Bixeltek,
-                3rd Floor, Behind Cult Fit,<br />
-                K K Convention Road, Suncity Rd,<br />
-                opposite Ratnadeep, Bandlaguda Jagir,<br />
-                Hyderabad, Telangana 500091
+               3rd Floor,
+               Nahid Plaza,  
+               beside AR Banquet,
+               Salar Jung Colony,<br/>
+               Toli Chowki,
+               Hyderabad, Telangana 500008       
               </address>
                <p className="mb-2 mt-5 text-base font-semibold">Saudi Arabia <span className="text-white">(Coming Soon)</span></p>
               <address className="text-base not-italic">
