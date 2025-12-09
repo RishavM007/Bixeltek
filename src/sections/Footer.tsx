@@ -38,6 +38,9 @@ export const Footer = () => {
               <a href="tel:+919100032301">
                 <p className="text-white text-lg hover:text-purple-500 flex gap-3"><PhoneCall className="text-blue-500" /> +91 9100032301</p>
               </a>
+              <a href="tel:+914035095538">
+                <p className="text-white text-lg hover:text-purple-500 flex gap-3"><PhoneCall className="text-blue-500" /> +91 40-35095538</p>
+              </a>
               <a href="mailto:hello@bixeltek.com">
                 <p className="text-white text-lg hover:text-purple-500 flex gap-3"><Mail className="text-blue-500" />hello@bixeltek.com</p>
               </a>
