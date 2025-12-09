@@ -224,10 +224,12 @@ export const ContactSection: React.FC = () => {
                                     <p className="font-semibold text-xl">Headquarters:</p>
                                     <address className="text-base not-italic">
                                         Bixeltek,
-                                        3rd Floor, Behind Cult Fit,<br />
-                                        K K Convention Road, Suncity Rd,<br />
-                                        opposite Ratnadeep, Bandlaguda Jagir,<br />
-                                        Hyderabad, Telangana 500091
+                                        3rd Floor,
+                                        Nahid Plaza,  
+                                        beside AR Banquet,
+                                        Salar Jung Colony,<br/>
+                                        Toli Chowki,
+                                        Hyderabad, Telangana 500008  
                                     </address>
                                     <a href="tel:+919100032301">
                                         <p className="font-bold mt-1">+91 9100032301</p>

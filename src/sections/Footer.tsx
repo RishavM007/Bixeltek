@@ -19,12 +19,14 @@ export const Footer = () => {
             <p className="py-5 text-gray-100 lg:max-w-xs text-center lg:text-left">Trusted by brands. Certified by Google. Focused on ROI.</p>
             <div className="text-sm text-white mb-4">
               <p className="mb-2 text-xl font-semibold">Address</p>
-              <address className="text-base not-italic">
+              <address className="text-base not-italic">      
                 Bixeltek,
-                3rd Floor, Behind Cult Fit,<br />
-                K K Convention Road, Suncity Rd,<br />
-                opposite Ratnadeep, Bandlaguda Jagir,<br />
-                Hyderabad, Telangana 500091
+               3rd Floor,
+               Nahid Plaza,  
+               beside AR Banquet,
+               Salar Jung Colony,<br/>
+               Toli Chowki,
+               Hyderabad, Telangana 500008       
               </address>
                <p className="mb-2 mt-5 text-base font-semibold">Saudi Arabia <span className="text-white">(Coming Soon)</span></p>
               <address className="text-base not-italic">
@@ -35,6 +37,9 @@ export const Footer = () => {
             <div className="text-white mb-4 flex flex-col gap-3 mt-8">
               <a href="tel:+919100032301">
                 <p className="text-white text-lg hover:text-purple-500 flex gap-3"><PhoneCall className="text-blue-500" /> +91 9100032301</p>
+              </a>
+              <a href="tel:+914035095538">
+                <p className="text-white text-lg hover:text-purple-500 flex gap-3"><PhoneCall className="text-blue-500" /> +91 40-35095538</p>
               </a>
               <a href="mailto:hello@bixeltek.com">
                 <p className="text-white text-lg hover:text-purple-500 flex gap-3"><Mail className="text-blue-500" />hello@bixeltek.com</p>
