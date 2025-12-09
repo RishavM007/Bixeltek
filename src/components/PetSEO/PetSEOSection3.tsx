@@ -135,7 +135,7 @@ const PetCaseStudySection = () => {
                         >
                             <h3 className="text-2xl font-bold mb-4">Ready for Similar Results?</h3>
                             <p className="mb-6 opacity-90">
-                                Let's discuss how we can transform your pet business with data-driven SEO strategies.
+                                Let&quot;s discuss how we can transform your pet business with data-driven SEO strategies.
                             </p>
                             <motion.a
                                 href="/contact"
