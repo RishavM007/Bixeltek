@@ -74,7 +74,7 @@ export const Whiteheader = () => {
                     name: "Hyderabad",
                     link: "/hyderabad",
                     services: [
-                        { name: "Google Ads Management", link: "/google-ads-agency-hydeabad" },
+                        { name: "Google Ads Management", link: "/google-ads-agency-hyderabad" },
                         { name: "Social Media Marketing", link: "/social-media-marketing-agency-hyderabad" },
                         { name: "Web Design and Development", link: "/web-design-services-hyderabad" },
                         { name: "Search Engine Optimisation", link: "/seo-agency-hyderabad" },
