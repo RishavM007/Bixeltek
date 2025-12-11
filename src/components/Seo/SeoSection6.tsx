@@ -52,7 +52,7 @@ export default function SeoSection6() {
                                             </div>
 
                                             <blockquote className="flex-1 mt-8">
-                                                <p className="text-base leading-relaxed text-gray-900 font-pj">"Our arborist business in Canada relied on word-of-mouth for 57 years, but broken ads and tough competition started cutting into revenue. Bixeltek introduced an AI-first SEO approach that finally put us on the map. Now we rank for local terms, get steady leads, and are winning back business we’d been losing."</p>
+                                                <p className="text-base leading-relaxed text-gray-900 font-pj">&quot;Our arborist business in Canada relied on word-of-mouth for 57 years, but broken ads and tough competition started cutting into revenue. Bixeltek introduced an AI-first SEO approach that finally put us on the map. Now we rank for local terms, get steady leads, and are winning back business we’d been losing.&quot;</p>
                                             </blockquote>
                                         </div>
 
@@ -99,7 +99,7 @@ export default function SeoSection6() {
                                             </div>
 
                                             <blockquote className="flex-1 mt-8">
-                                                <p className="text-base leading-relaxed text-gray-900 font-pj">"As a dentist in Canada, we were frustrated that new patients couldn’t find us online. Bixeltek built a consistent SEO plan that focused on visibility and ranking for the treatments people actually search for. Within months, we saw new patient inquiries rise — and our schedule has stayed full."</p>
+                                                <p className="text-base leading-relaxed text-gray-900 font-pj">&quot;As a dentist in Canada, we were frustrated that new patients couldn’t find us online. Bixeltek built a consistent SEO plan that focused on visibility and ranking for the treatments people actually search for. Within months, we saw new patient inquiries rise — and our schedule has stayed full.&quot;</p>
                                             </blockquote>
                                         </div>
 
@@ -145,7 +145,7 @@ export default function SeoSection6() {
                                             </div>
 
                                             <blockquote className="flex-1 mt-8">
-                                                <p className="text-base leading-relaxed text-gray-900 font-pj">"Our window cleaning business in Texas had a website that barely brought in any work. With competition growing, we needed real visibility. Bixeltek optimized our site, improved rankings, and applied AI tools to track performance. The result: steady traffic, more service calls, and a noticeable boost in revenue."</p>
+                                                <p className="text-base leading-relaxed text-gray-900 font-pj">&quot;Our window cleaning business in Texas had a website that barely brought in any work. With competition growing, we needed real visibility. Bixeltek optimized our site, improved rankings, and applied AI tools to track performance. The result: steady traffic, more service calls, and a noticeable boost in revenue.&quot;</p>
                                             </blockquote>
                                         </div>
 
