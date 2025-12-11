@@ -6,6 +6,7 @@ import googleadslogo from "@/assets/6929233_google ads_logo_icon.png";
 import nextjsicon from "@/assets/icons8-nextjs-96.png";
 import reactksicon from "@/assets/1174949_js_react js_logo_react_react native_icon.png";
 import shoppingads from "@/assets/645a617a7f00617222c630ee_6452937893cd84e81e81c96e_google_shopping_icon.png";
+import Link from "next/link";
 
 const topRow = [
   { src: semrush, alt: "Semrush" },
@@ -35,9 +36,11 @@ const TechStackSection = () => {
             analytics to creative optimization, every component is designed to
             maximize ROI and scale profitably.
           </p>
-          <button className="px-6 sm:px-8 py-3 sm:py-3.5 rounded-2xl bg-blue-500 text-white font-semibold text-sm sm:text-base shadow-lg hover:bg-blue-600 transition duration-300">
-            Explore Full Stack
+          <Link href="/case-studies">
+          <button className="my-6 px-6 sm:px-8 py-3 sm:py-3.5 rounded-2xl bg-blue-500 text-white font-semibold text-sm sm:text-base shadow-lg hover:bg-blue-600 transition duration-300">
+            View Case Studies
           </button>
+          </Link>
         </div>
 
         {/* RIGHT SIDE GRID */}

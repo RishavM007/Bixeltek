@@ -11,6 +11,7 @@ import {
     Target,
     Star
 } from "lucide-react";
+import Link from "next/link";
 
 const WhyChooseBixeltekSEO = () => {
     const features = [
@@ -202,7 +203,10 @@ const WhyChooseBixeltekSEO = () => {
                                 whileHover={{ scale: 1.02 }}
                                 whileTap={{ scale: 0.98 }}
                             >
+                                <a href="#form">
+
                                 Start Your Journey
+                                </a>
                                 <ArrowRight className="w-4 h-4" />
                             </motion.button>
                         </div>

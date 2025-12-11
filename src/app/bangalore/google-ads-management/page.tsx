@@ -78,12 +78,14 @@ export default function page() {
 
                     {/* CTA Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4 mt-4">
-                        <button className="px-6 py-3 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-all duration-300">
+                        {/* <button className="px-6 py-3 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-all duration-300">
                             Get My Free PPC Audit
-                        </button>
+                        </button> */}
+                        <a href='mailto:zee@bixeltek.com'>
                         <button className="px-6 py-3 rounded-full border border-blue-500 text-blue-400 font-semibold hover:bg-blue-600/20 transition-all duration-300">
                             Speak to an Ads Specialist
                         </button>
+                        </a>
                     </div>
 
                     {/* Trust Badges */}

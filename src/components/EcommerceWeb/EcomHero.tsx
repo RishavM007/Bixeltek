@@ -6,6 +6,7 @@ import { ArrowRight, TrendingUp, Globe, ShoppingCart } from "lucide-react";
 
 // Replace with your actual e-commerce image
 import ecommerceImage from "@/assets/download.png";
+import Link from "next/link";
 
 const EcommerceHeroSection = () => {
     return (
@@ -66,6 +67,7 @@ const EcommerceHeroSection = () => {
                             viewport={{ once: true }}
                             className="flex flex-col sm:flex-row gap-4"
                         >
+                            <Link href="#form">
                             <motion.button
                                 whileHover={{
                                     scale: 1.05,
@@ -77,6 +79,7 @@ const EcommerceHeroSection = () => {
                                 Get My Free Store Audit
                                 <ArrowRight className="w-5 h-5" />
                             </motion.button>
+                            </Link>
 
 
                         </motion.div>

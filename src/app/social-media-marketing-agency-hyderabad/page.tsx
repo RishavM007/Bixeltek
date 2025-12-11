@@ -149,7 +149,7 @@ export default function SocialMedia() {
                 {/* <div className="absolute h-[300px] w-[600px] md:w-[1200px] lg:w-[2400px] lg:h-[1200px] rounded-[100%] bg-black left-1/2 -translate-x-1/2 border border-[#B48CDE] bg-[radial-gradient(closest-side,#000_82%,#9560EB)] top-[calc(100% - 96px)] md:top-[calc(100% - 120px)]">
                 </div> */}
             </section>
-            <section className=" pt-8 flex justify-center items-center max-w-[100%] md:max-w-[85%] mx-auto text-white sm:py-24">
+            <section className=" pt-8 flex justify-center items-center max-w-[100%] md:max-w-[85%] mx-auto text-white sm:py-24" id="form">
                 <div className="mx-auto flex max-w-md flex-col md:flex-row justify-center items-center rounded-lg lg:max-w-screen-xl lg:flex-row">
                     <div className="w-full md:w-1/2 px-4 pb-10 md:pb-0 lg:pr-24">
                         <h3 className="mb-2 text-purple-600">Why Choose Us?</h3>
@@ -394,7 +394,7 @@ export default function SocialMedia() {
                             </p>
                         </div>
                         <a
-                            href="#"
+                            href="#form"
                             className="flex items-center gap-2 bg-white rounded-full shadow-sm text-lg text-indigo-600 font-semibold py-4 px-8 transition-all duration-500"
                         >Get In Touch
                             <svg

@@ -50,7 +50,7 @@ const HowItWorks = () => {
                 </p>
                 <a
                   className="inline-block px-8 py-3 text-white font-bold bg-purple-600 hover:bg-purple-700 rounded-full shadow-lg transition duration-200"
-                  href="#"
+                  href="#form"
                 >
                   Get Started
                 </a>

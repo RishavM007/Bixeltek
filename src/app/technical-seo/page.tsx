@@ -57,11 +57,11 @@ export default function page() {
                 </ul>
 
                 {/* CTA BUTTON */}
-                <button
+                {/* <button
                     className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-8 py-3 rounded-full transition-all duration-300 shadow-lg"
                 >
                     Get My Free Audit
-                </button>
+                </button> */}
 
                 {/* Trust Badges */}
                 <ul className="text-sm mt-10 flex flex-row md:flex-row gap-5 md:gap-10 transition-all duration-500">

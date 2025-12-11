@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import ctaBg from "@/assets/EVP_Banner.png";
+import Link from "next/link";
 
 const CodedCTASection = () => {
   return (
@@ -28,12 +29,16 @@ const CodedCTASection = () => {
             Bixeltek engineers websites that bridge marketing, design, and technology — built for longevity, speed, and measurable ROI.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
+            <a href='mailto:zee@bixeltek.com'>
             <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition">
               Talk to our Developer
             </button>
+            </a>
+            <Link href='#form'>
             <button className="bg-white text-blue-600 hover:bg-gray-100 font-semibold py-3 px-6 rounded-md transition">
               Request a Consultation
             </button>
+            </Link>
           </div>
         </div>
 

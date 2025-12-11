@@ -23,6 +23,7 @@ if (typeof window !== 'undefined') {
 import shopifyImg from "@/assets/SHOPIFY IMAGE.webp";
 import woocommerceImg from "@/assets/Feature-for-Top-websites-using-woocommerce.png";
 import headlessImg from "@/assets/what_is_aws.avif";
+import Link from "next/link";
 
 const EcommercePlatforms = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -49,7 +50,8 @@ const EcommercePlatforms = () => {
         "GCC, Canada, and U.S. tax compliance",
       ],
       description: "Shopify dominates for stability, scalability, and integrations. We go beyond basic themes to create high-performance stores that load faster, rank better, and convert higher.",
-      cta: "Launch Shopify Store"
+      cta: "Launch Shopify Store",
+      href: "/contact-us"
     },
     {
       id: 2,
@@ -71,7 +73,8 @@ const EcommercePlatforms = () => {
         "SEO-optimized architecture"
       ],
       description: "WooCommerce offers total flexibility for businesses that rely heavily on content and SEO. We combine the storytelling power of WordPress with conversion-optimized checkouts.",
-      cta: "Build WooCommerce Site"
+      cta: "Build WooCommerce Site",
+      href: "/contact-us"
     },
     {
       id: 3,
@@ -93,7 +96,8 @@ const EcommercePlatforms = () => {
         "Enterprise-grade performance"
       ],
       description: "When speed and scale are non-negotiable, headless commerce delivers the Amazon experience without the overhead. Instant loading and limitless scalability that boosts ranking.",
-      cta: "Go Headless"
+      cta: "Go Headless",
+      href: "/contact-us"
     }
   ];
 
@@ -293,6 +297,7 @@ const EcommercePlatforms = () => {
                 
 
                 {/* CTA Button */}
+                <Link href={platform.href}>
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -301,6 +306,7 @@ const EcommercePlatforms = () => {
                   {platform.cta}
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </motion.button>
+                </Link>
               </div>
 
               {/* Floating Particles */}
