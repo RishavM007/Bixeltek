@@ -9,6 +9,7 @@ import {
   Zap,
   Target
 } from "lucide-react";
+import Link from "next/link";
 
 const BangaloreGoogleAdsCampaigns = () => {
   const campaigns = [
@@ -149,9 +150,11 @@ const BangaloreGoogleAdsCampaigns = () => {
           <p className="text-gray-600 mb-6">
             Ready to launch high-converting Google Ads campaigns?
           </p>
+          <Link href='#form'>
           <button className="px-8 py-3 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition-colors duration-300 shadow-lg hover:shadow-xl">
             Get Free Campaign Strategy
           </button>
+          </Link>
         </motion.div>
       </div>
     </section>

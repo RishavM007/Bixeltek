@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import phoneMockup from "@/assets/phone finanacce.png";
+import Link from "next/link";
 
 export default function PaymentHeroSection() {
     return (
@@ -27,6 +28,7 @@ export default function PaymentHeroSection() {
                     </p>
 
                     <div className="flex justify-center md:justify-start gap-4 mt-2">
+                        <Link href="#form">
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
@@ -34,6 +36,8 @@ export default function PaymentHeroSection() {
                         >
                             Get Started
                         </motion.button>
+                        </Link>
+                        <Link href="/contact-us">
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
@@ -41,6 +45,7 @@ export default function PaymentHeroSection() {
                         >
                             Get In Touch With Us
                         </motion.button>
+                        </Link>
                     </div>
                 </motion.div>
 

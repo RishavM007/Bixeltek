@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ChevronRight, Star, Target, TrendingUp, MapPin } from "lucide-react";
 import { LogoTicker } from "@/sections/LogoTicker";
 import { BangaloreLogoTicker } from "./BanLogoTicker";
+import Link from "next/link";
 
 const GoogleAdsHero = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -102,6 +103,7 @@ const GoogleAdsHero = () => {
                         variants={itemVariants}
                         className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
                     >
+                        <Link href='#form'>
                         <button
                             onClick={toggleContactForm}
                             className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2"
@@ -109,6 +111,7 @@ const GoogleAdsHero = () => {
                             Get My Free PPC Audit
                             <ChevronRight className="w-5 h-5" />
                         </button>
+                        </Link>
 
                         <a href="mailto:zee@bixeltek.com">
                             <button className="px-8 py-4 rounded-full border-2 border-gray-300 text-gray-700 font-semibold hover:border-blue-600 hover:text-blue-600 transition-all duration-300 flex items-center gap-2">

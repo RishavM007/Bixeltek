@@ -1,12 +1,19 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import seoImg from "@/assets/SEO Dashboard.png"; // 🔁 replace with your image
 import { ChevronRight } from "lucide-react";
+import { SEOButtonContactForm } from "@/components/SEOPopupForm";
 
 const SEOVisibilitySection = () => {
+        const [isVisible, setIsVisible] = useState(false);
+    
+        const toggleContactForm = () => {
+            setIsVisible((prev) => !prev);
+        };
     return (
+        <>
         <section className="w-[95%] md:w-[85%] mx-auto py-10  flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20">
             {/* LEFT — Image */}
             <div className="relative w-full md:w-1/2 h-[320px] md:h-[520px] rounded-2xl overflow-hidden">
@@ -45,13 +52,15 @@ const SEOVisibilitySection = () => {
                 <button
                     className="p-[1px] w-fit mt-6 rounded-full bg-gradient-to-r from-red-300 via-red-400 via-red-600 to-red-950 text-white font-semibold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2"
                 >
-                    <span className="bg-white text-black flex flex-row gap-2 px-5 py-3 rounded-full">
+                    <span className="bg-white text-black flex flex-row gap-2 px-5 py-3 rounded-full" onClick={toggleContactForm}>
                         Get a Free SEO Audit
                          <ChevronRight className="w-5 h-5" />
                     </span>                   
                 </button>
             </div>
         </section>
+                    <SEOButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
+        </>
     );
 };
 

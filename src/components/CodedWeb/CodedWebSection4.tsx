@@ -9,6 +9,7 @@ import icon2 from '@/assets/generated-svg-image (11).png'
 // ✅ Replace these with your own image imports
 import sampleImg1 from "@/assets/what-we-highlighted-image.jpg";
 import sampleImg2 from "@/assets/what-we-image.jpg";
+import Link from "next/link";
 
 // Animation variants
 const containerVariants = {
@@ -126,6 +127,7 @@ const SecureByDefault = () => {
           Our infrastructure follows global security and accessibility standards —
           from OWASP ASVS and HSTS to GDPR compliance and WCAG conformance.
         </motion.p>
+        <Link href='/case-studies'>
         <motion.button 
           className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 transition-all text-white px-6 py-3 rounded-xl font-semibold"
           variants={buttonVariants}
@@ -133,6 +135,7 @@ const SecureByDefault = () => {
         >
           Learn More <ArrowRight className="w-4 h-4" />
         </motion.button>
+        </Link>
       </motion.div>
 
       {/* Cards Section */}
