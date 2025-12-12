@@ -30,11 +30,8 @@ export default function HeroLocalSEO() {
 
     return (
         <>
-            <section className="relative flex flex-col items-center justify-center h-[140vh] md:h-[80vh] text-center px-6 overflow-hidden">
+            <section className="relative bg-black flex flex-col items-center justify-center h-[140vh] md:h-[80vh] text-center px-6 overflow-hidden">
                 {/* ✅ Background Image */}
-
-                {/* ✅ Dark Overlay */}
-                <div className="absolute inset-0 bg-black/60 -z-10" />
 
                 {/* ✅ Content */}
                 <div className="flex justify-center items-center">

@@ -30,7 +30,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Whiteheader />
-      <main className="min-h-screen bg-white overflow-hidden">{children}</main>
+      <main className="min-h-screen bg-black overflow-hidden">{children}</main>
       <Footer />
     </>
   );
