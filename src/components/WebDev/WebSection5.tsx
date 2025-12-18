@@ -59,10 +59,10 @@ const FeaturesSection = () => {
         <section className="w-full py-10 md:py-0 bg-[#f5f7fd] text-black relative overflow-hidden">
             <Image src={shape1} alt="shape1" className="absolute bottom-0 left-0" />
 
-            <div className="max-w-full mx-auto flex flex-col lg:flex-row items-center gap-5">
+            <div className="max-w-full mx-auto flex flex-col-reverse lg:flex-row items-center gap-5">
                 {/* Left: Text + Features Grid */}
                 <div className="flex-1 flex flex-col gap-8 pl-4 pr-4 md:pl-32 md:pr-16">
-                    <h2 className="text-center md:text-left text-4xl md:text-6xl font-bold font-inter leading-snug mb-2">
+                    <h2 className=" mt-10 text-center md:text-left text-4xl md:text-6xl font-bold font-inter leading-snug mb-2">
                         <span className="text-blue-500">Key Features </span>of Our Websites
                     </h2>
                     <p className="text-gray-800 text-center md:text-left text-base md:text-lg mb-4">
@@ -70,7 +70,7 @@ const FeaturesSection = () => {
                     </p>
 
                     {/* Features Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
                         {features.map((feature, index) => (
                             <motion.div
                                 key={index}
@@ -124,13 +124,13 @@ const FeaturesSection = () => {
                     whileInView={{ x: 0, opacity: 1, scale: 1 }}
                     transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                     viewport={{ once: true }}
-                    className="relative flex-1 w-full lg:w-1/2 h-[400px] md:h-[500px] lg:h-[1030px]"
+                    className="relative lg:flex-1 w-full md:w-2/3 lg:w-1/2 h-[400px] md:h-[500px] lg:h-[1030px]"
                 >
                     <Image
                         src={dashboard2}
                         alt="Website Features Preview"
                         fill
-                        className="object-cover object-left rounded-r-2xl"
+                        className="object-cover object-left rounded-r-2xl my-auto"
                         priority
                     />
                 </motion.div>

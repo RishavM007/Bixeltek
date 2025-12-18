@@ -39,7 +39,7 @@ export default function HeroCMSDevelopment() {
 
   return (
     <>
-      <section className="relative bg-black flex flex-col items-center justify-center h-[120vh] md:h-[100vh] text-center px-6 overflow-hidden">
+      <section className="relative bg-black flex flex-col items-center justify-center sm:h-[130vh] md:h-[70vh] lg:h-[120vh] xl:h-[100vh] text-center px-6 overflow-hidden">
         {/* 🔹 Background Image */}
         <Image
           src={bgImage}
@@ -51,7 +51,7 @@ export default function HeroCMSDevelopment() {
 
 
         {/* 🔹 Content */}
-        <div className="relative z-10 mt-40 max-w-7xl mx-auto">
+        <div className="relative z-10 mt-16 lg:mt-28 xl:mt-40 max-w-7xl mx-auto">
           {/* ✅ Heading */}
           <h1 className="text-4xl md:text-6xl font-medium leading-tight text-white">
             Custom CMS Website Development  That Powers Growth Across{" "} <br></br>

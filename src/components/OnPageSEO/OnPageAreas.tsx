@@ -140,7 +140,7 @@ const locations = [
                     rel="noopener noreferrer"
                     className="text-blue-400 hover:underline"
                 >
-                    Missassauga
+                    Mississauga
                 </a>{" "}
                 — bilingual (EN/FR) systems built for accessibility, compliance, and
                 Core Web Vitals excellence.

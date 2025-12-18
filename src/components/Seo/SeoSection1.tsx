@@ -22,7 +22,6 @@ export default function WhySeo() {
                     <Image
                         src={seodashboardimg}
                         alt="Google Ads Dashboard"
-                        fill
                         className="object-cover object-right rounded-r-2xl shadow-2xl"
                         priority
                     />

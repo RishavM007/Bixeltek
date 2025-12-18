@@ -33,7 +33,7 @@ const GoogleAdsMarquee: React.FC = () => {
           {blueTexts.map((text, idx) => (
             <span
               key={idx}
-              className="text-white font-inter text-3xl md:text-5xl font-semibold"
+              className="text-white font-inter text-2xl md:text-5xl font-semibold"
             >
             {text} &nbsp;  •
             </span>
@@ -41,7 +41,7 @@ const GoogleAdsMarquee: React.FC = () => {
           {blueTexts.map((text, idx) => (
             <span
               key={idx + blueTexts.length}
-              className="text-white font-inter text-3xl md:text-5xl font-semibold"
+              className="text-white font-inter text-2xl md:text-5xl font-semibold"
             >
               {text} &nbsp; •
             </span>

@@ -167,7 +167,7 @@ export default function ContactFrom() {
 
 
     return (
-        <div className="w-[100%] md:w-1/2 p-6 relative bg-white rounded-lg shadow-md">
+        <div className="w-[100%] lg:w-1/2 p-6 relative bg-white rounded-lg shadow-md">
             
             <form className="space-y-4" onSubmit={handleSubmit}>
                 <div className="flex flex-col md:flex-row gap-5">

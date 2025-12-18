@@ -54,7 +54,7 @@ export default function Newsletter() {
             </div>
             <form
                 onSubmit={handleSubmit}
-                className="flex items-center flex-col gap-4 lg:flex-row"
+                className="flex items-center flex-col gap-4 md:flex-row"
             >
                 <input
                     onChange={handleInputChange}

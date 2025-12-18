@@ -23,13 +23,13 @@ export default function SeoHero() {
                                 Your Business Needs Visibility, And We Can Help you rank on <span className='font-bold italic'>Google</span>
                             </span>
                         </p>
-                        <h1 className="mt-8 text-2xl font-normal text-white lg:text-6xl xl:text-6xl">
+                        <h1 className="mt-8 text-4xl font-normal text-white lg:text-6xl xl:text-6xl">
                             Turn Google Searches Into Customers With Bixeltek SEO
                         </h1>
-                        <p className='text-base text-white/80 mt-4'>
+                        <p className='text-sm md:text-base text-white/80 mt-4'>
                             If you’re not on Page One of Google, you’re invisible to your customers. Stop relying only on paid ads. With Bixeltek’s proven SEO services, we help businesses across India, USA, Canada, UAE, Saudi Arabia, and the UK generate consistent, free leads from organic search.                    </p>
 
-                        <div className="flex flex-col items-center justify-center px-8 mt-12 space-y-5 sm:space-y-0 sm:px-0 sm:space-x-5 sm:flex-row">
+                        <div className="flex flex-col md:flex-row items-center justify-center px-8 mt-12 sm:space-y-5 md:space-y-0 sm:px-0 sm:space-x-5">
                             <div className="relative inline-flex items-center justify-center w-full sm:w-auto group">
                                 <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-cyan-500/50"></div>
                                 <button onClick={toggleContactForm} className="relative inline-flex items-center justify-center w-full px-8 py-3 text-base font-normal text-white bg-black border border-transparent rounded-full sm:w-auto">
@@ -74,7 +74,7 @@ export default function SeoHero() {
                         </div>
 
 
-                        <div className="bg-blue-500 max-w-full pt-2 md:pt-5 mx-auto shadow-purple-custom2 rounded-t-2xl">
+                        <div className="bg-blue-500 md:max-w-[80%] lg:max-w-full pt-2 md:pt-5 mx-auto shadow-purple-custom2 rounded-t-2xl">
                             <div className="max-w-[97%] pt-4 md:pt-10 pb-5  px-5 mx-auto bg-black rounded-t-2xl flex flex-col lg:flex-row justify-center items-center">
                                 {/* Left side */}
                                 <div className=" w-full md:w-1/2 flex flex-col">

@@ -46,7 +46,7 @@ const SustainableGrowth = () => {
             Companies in Riyadh trust us because we:
           </p>
 
-          <ul className="space-y-2 grid grid-cols-2 mb-6">
+          <ul className="space-y-2 grid md:grid-cols-2 mb-6">
             {points.map((point, i) => (
               <li key={i} className="flex items-start gap-3">
                 <Check className="text-yellow-500 mt-1 flex-shrink-0" size={20} />

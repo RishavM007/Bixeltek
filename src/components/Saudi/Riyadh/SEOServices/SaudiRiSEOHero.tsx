@@ -27,7 +27,7 @@ export default function HeroRiyadhSEO() {
 
     return (
         <>
-            <section className="relative bg-black flex flex-col items-center justify-center h-[130vh] md:h-[100vh] text-center px-6 overflow-hidden">
+            <section className="relative bg-black flex flex-col items-center justify-center h-[120vh] md:h-[100vh] text-center px-6 overflow-hidden">
                 <Image
                     src={heroBg}
                     alt="Riyadh Skyline"
@@ -89,9 +89,9 @@ export default function HeroRiyadhSEO() {
                         </div>
                     </div>
                 </div>
-                <FunnelSEOLogoTicker />
             </section>
             <SEOButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
+            <FunnelSEOLogoTicker />
         </>
     );
 }

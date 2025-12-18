@@ -35,7 +35,7 @@ export default function IndustryCarouselSection(): JSX.Element {
     return (
         <section className="pt-32 pb-20  bg-[black] z-10 overflow-hidden">
             <div className="w-full relative text-center text-white pb-10">
-                <h1 className="text-5xl xl:text-7xl font-bold mb-2">
+                <h1 className="text-3xl md:text-5xl xl:text-7xl font-bold mb-2">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-500">
                         INDUSTRIES WE SERVE
                     </span>

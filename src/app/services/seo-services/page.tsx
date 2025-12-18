@@ -313,7 +313,7 @@ export default function Seo() {
                         <h2 className='text-white text-4xl lg:text-6xl max-w-7xl mx-auto font-inter mb-3 font-semibold '>Our <span className='text-blue-500'>Comprehensive SEO Services</span> in Hyderabad</h2>
                         <p className='text-gray-100 text-base md:text-[17px] tracking-wider mt-4 max-w-3xl mx-auto'>At Bixeltek, our services are built around one goal: helping businesses turn visibility into revenue.</p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 max-w-[85%] mx-auto mt-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[85%] mx-auto mt-10">
                         {seoServices.map((service, index) => (
                             <div
                                 key={index}

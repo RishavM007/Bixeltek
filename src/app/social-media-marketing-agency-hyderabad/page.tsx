@@ -104,7 +104,7 @@ export default function SocialMedia() {
                     </div>
                 </div>
 
-                <div className="bg-[#7b00e0] max-w-[80%] mt-20  pt-2 md:pt-5 mx-auto shadow-purple-custom2 rounded-t-2xl">
+                <div className="bg-[#7b00e0] max-w-[90%] md:max-w-[80%] mt-20  pt-2 md:pt-5 mx-auto shadow-purple-custom2 rounded-t-2xl">
                     <div className="max-w-[97%] pt-4 md:pt-10 pb-5  px-5 mx-auto bg-black rounded-t-2xl flex flex-col lg:flex-row justify-center items-center">
                         {/* Left side */}
                         <div className=" w-full md:w-1/2 flex flex-col">
@@ -149,9 +149,9 @@ export default function SocialMedia() {
                 {/* <div className="absolute h-[300px] w-[600px] md:w-[1200px] lg:w-[2400px] lg:h-[1200px] rounded-[100%] bg-black left-1/2 -translate-x-1/2 border border-[#B48CDE] bg-[radial-gradient(closest-side,#000_82%,#9560EB)] top-[calc(100% - 96px)] md:top-[calc(100% - 120px)]">
                 </div> */}
             </section>
-            <section className=" pt-8 flex justify-center items-center max-w-[100%] md:max-w-[85%] mx-auto text-white sm:py-24" id="form">
-                <div className="mx-auto flex max-w-md flex-col md:flex-row justify-center items-center rounded-lg lg:max-w-screen-xl lg:flex-row">
-                    <div className="w-full md:w-1/2 px-4 pb-10 md:pb-0 lg:pr-24">
+            <section className=" pt-8 flex flex-col justify-center items-center max-w-[100%] lg:max-w-[85%] mx-auto text-white sm:py-24" id="form">
+                <div className="mx-auto flex max-w-md  flex-col justify-center items-center rounded-lg lg:max-w-screen-xl lg:flex-row">
+                    <div className="w-full lg:w-1/2 px-4 pb-10 md:pb-0 lg:pr-24">
                         <h3 className="mb-2 text-purple-600">Why Choose Us?</h3>
                         <h2 className="mb-5 text-3xl font-semibold"> Why Bixeltek is Hyderabad&apos;s Trusted Social Media Marketing Agency</h2>
                         <p className="mb-16 text-sm md:text-lg text-gray-50">Bixeltek stands out as a leading social media management agency in Hyderabad, known for innovative strategies, exceptional creativity, and measurable results. Our specialized team delivers bespoke solutions designed to meet the unique needs of Hyderabad&apos;s dynamic market.</p>
@@ -195,9 +195,9 @@ export default function SocialMedia() {
 
             <section className="py-20 w-full">
                 <div className="flex justify-center items-center">
-                    <h2 className="text-white text-center text-5xl font-sofiasanscondensed">Our Specialized Social Media Management Services</h2>
+                    <h2 className="text-white text-center md:text-4xl lg:text-5xl font-sofiasanscondensed">Our Specialized Social Media Management Services</h2>
                 </div>
-                <div className="w-full flex flex-col md:flex-row py-24 bg-black">
+                <div className="w-full flex flex-col lg:flex lg:flex-row md:grid md:grid-cols-3 py-24 bg-black">
                     <div className="relative w-full ml-auto mt-6 md:!mt-0 md:-mr-[68px] md:w-auto">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -289,7 +289,7 @@ export default function SocialMedia() {
                         </div>
                     </div>
 
-                    <div className="relative w-full mt-6 md:w-auto md:-ml-[302px] md:mt-[283px]">
+                    <div className="relative w-full md:ml-[40px] md:-mt-[150px] lg:w-auto lg:-ml-[302px] lg:mt-[283px]">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="relative z-10 rotate-90 mx-auto  w-[95%] md:w-[300px] md:h-[300px]"
@@ -308,7 +308,7 @@ export default function SocialMedia() {
                                     <stop stop-color="#000000" offset="1"></stop>
                                 </linearGradient>
                             </defs>
-                        </svg>                    <div className="absolute max-w-[60%] left-[19%] md:left-[13%] md:max-w-[75%] z-20 top-0 text-center text-white max-h-[300px] pt-3 md:!pt-12 overflow-hidden">
+                        </svg>                    <div className="absolute max-w-[60%] left-[19%] lg:left-[13%] md:max-w-[75%] z-20 top-0 text-center text-white max-h-[300px] pt-3 md:pt-8 lg:!pt-12 overflow-hidden">
                             <h1 className="text-2xl mt-16 md:text-xl font-semibold  dark:text-white md:my-2">
                                 Landing Page <span className="text-[#FF5733]">Development & Optimization</span>
                             </h1>
@@ -317,7 +317,7 @@ export default function SocialMedia() {
                         </div>
                     </div>
 
-                    <div className="relative w-full mt-6 md:w-auto md:mt-[141px] md:-ml-[68px]">
+                    <div className="relative w-full mt-6 md:w-auto md:-mt-[10px] md:ml-[3px] lg:mt-[141px] lg:-ml-[68px]">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="relative z-10 rotate-90 mx-auto  w-[90%] md:w-[300px] md:h-[300px]"
@@ -336,7 +336,7 @@ export default function SocialMedia() {
                                     <stop stop-color="#000000" offset="1"></stop>
                                 </linearGradient>
                             </defs>
-                        </svg>                    <div className="absolute max-w-[60%] left-[19%] md:left-[13%] md:max-w-[75%] z-20 top-0 text-center text-white max-h-[300px] pt-3 md:!pt-12 overflow-hidden">
+                        </svg>                    <div className="absolute max-w-[60%] left-[19%] lg:left-[13%] md:max-w-[75%] z-20 top-0 text-center text-white max-h-[300px] pt-3 md:!pt-12 overflow-hidden">
                             <h1 className="text-2xl mt-16 md:text-xl font-semibold text-emerald-400 dark:text-white md:my-2">
                                 Conversion Rate Optimization<span className="text-[#0096FF]"> (CRO)</span>
                             </h1>
@@ -345,7 +345,7 @@ export default function SocialMedia() {
                         </div>
                     </div>
 
-                    <div className="relative w-full mr-auto mt-6 md:!mt-0 md:w-auto md:-ml-[68px]">
+                    <div className="relative w-full mr-auto mt-6 md:-mt-[150px] md:-ml-[40px] lg:!mt-0 md:w-auto lg:-ml-[68px]">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="relative z-10 rotate-90 mx-auto  w-[90%] md:w-[300px] md:h-[300px]"

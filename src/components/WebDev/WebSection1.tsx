@@ -47,9 +47,8 @@ export default function WebSection1() {
                     </div>
                 </div>
                 <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
-                <LogoTicker2 />
             </section>
-
+                <LogoTicker2 />
         </>
     )
 }

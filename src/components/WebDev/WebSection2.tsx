@@ -23,7 +23,6 @@ export default function WhyWebDev() {
                     <Image
                         src={seodashboardimg}
                         alt="Web Design Showcase"
-                        fill
                         className="object-cover object-right rounded-r-2xl shadow-2xl"
                         priority
                     />

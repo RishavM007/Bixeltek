@@ -8,7 +8,7 @@ import Link from "next/link";// replace with your image path
 export default function WhyGoogleAds() {
   return (
     <section className="w-full mt-0 bg-black text-gray-100 py-10 md:py-20 overflow-hidden">
-      <div className="flex flex-col lg:flex-row items-center lg:items-start">
+      <div className="flex flex-col lg:flex-row items-center lg:items-start md:gap-10 lg:gap-0">
         
         {/* LEFT IMAGE */}
         <motion.div
@@ -16,13 +16,12 @@ export default function WhyGoogleAds() {
           whileInView={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           viewport={{ once: true }}
-          className="flex-1 relative w-full lg:w-1/2 h-[400px] md:h-[500px] lg:h-[600px]"
+          className="flex-1 relative w-full lg:w-1/2 h-[400px] md:h-[500px] lg:h-[600px] "
         >
           <Image
             src={dashboardImg}
             alt="Google Ads Dashboard"
-            fill
-            className="object-cover object-left rounded-r-2xl shadow-2xl"
+            className="object-cover object-center rounded-r-2xl shadow-2xl"
             priority
           />
         </motion.div>

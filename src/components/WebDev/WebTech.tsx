@@ -33,20 +33,20 @@ const logos = [
 export default function WebTech() {
   return (
     <section className="w-full py-16 mt-20 bg-black">
-      <div className="max-w-[90%] mx-auto flex flex-col md:flex-row gap-8">
+      <div className="max-w-[90%] mx-auto flex flex-col lg:flex-row gap-8">
         {/* Left text */}
-        <div className="w-full md:w-[40%] flex items-center justify-center md:justify-start">
+        <div className="w-full lg:w-[40%] flex items-center justify-center lg:justify-start">
           <h2 className=" text-3xl md:text-5xl text-center md:text-left font-semibold text-gray-50">
             Powered by<br /> Industry-Leading Tools
           </h2>
         </div>
         
         {/* Right side logos */}
-        <div className="w-full md:w-[60%] col-span-2 md:col-span-3">
+        <div className="w-full lg:w-[60%] col-span-2 lg:col-span-3">
           {Array.from({ length: 3 }).map((_, rowIndex) => (
             <div
               key={rowIndex}
-              className={`grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-14 md:gap-7 p-5 items-center justify-items-center py-2  ${
+              className={`grid grid-cols-2 lg:grid-cols-4 gap-14 md:gap-7 p-5 items-center justify-items-center py-2  ${
                 rowIndex !== 2 ? "" : ""
               }`}
             >

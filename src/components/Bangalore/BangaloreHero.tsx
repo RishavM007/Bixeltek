@@ -36,7 +36,7 @@ const HeroBangalore = () => {
 
     return (
         <section className="relative bg-white py-20 lg:py-40 px-6 overflow-hidden">
-            <div className="max-w-[85%] mx-auto">
+            <div className="md:max-w-[85%] mx-auto">
                 <motion.div
                     className="flex flex-col items-center text-center"
                     initial="hidden"
@@ -125,7 +125,7 @@ const HeroBangalore = () => {
                     {/* CTA Buttons */}
                     <motion.div
                         variants={itemVariants}
-                        className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+                        className="flex flex-col md:flex-row gap-4 justify-center items-center"
                     >
                     <Link href='/contact-us'>
                         <button

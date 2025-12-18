@@ -202,7 +202,7 @@ export default function Seo() {
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-sofiasanscondensed font-medium text-white mb-1">Why Your Website Isn&apos;t Ranking</h2>
                 <h2 className='text-5xl font-sofiasanscondensed text-purple-500 mb-6'>The SEO Challenge</h2>
 
-                <div className="grid grid-cols-2 px-2 md:px-0 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 px-2 md:px-0 md:grid-cols-3 gap-6">
                     {seoChallenges.map((item, index) => (
                         <div key={index} className="px-2 py-6 md:px-6 text-white flex flex-col justify-center items-center bg-transparent">
                             <div className="text-white text-3xl mb-3">{item.icon}</div>
@@ -397,17 +397,17 @@ export default function Seo() {
             <section className='py-24'>
                 <div>
                     <div className=' max-w-[80%] mx-auto mb-5 text-center'>
-                        <h2 className='text-white text-5xl font-sofiasanscondensed mb-3 font-semibold '>Our Comprehensive SEO Services in Hyderabad</h2>
-                        <p className='text-gray-100 text-[17px] tracking-wider max-w-3xl mx-auto'>We offer a full suite of strategies and solutions, meticulously designed to propel your website above the competition. Each service aims to improve your online presence, boost conversions, and ensure long-term digital growth.</p>
+                        <h2 className='text-white text-3xl md:text-5xl font-sofiasanscondensed mb-3 font-semibold '>Our Comprehensive SEO Services in Hyderabad</h2>
+                        <p className='text-gray-100 text-sm md:text-[17px] tracking-wider max-w-3xl mx-auto'>We offer a full suite of strategies and solutions, meticulously designed to propel your website above the competition. Each service aims to improve your online presence, boost conversions, and ensure long-term digital growth.</p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 max-w-[75%] mx-auto mt-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[75%] mx-auto mt-10">
                         {seoServices.map((service, index) => (
                             <div
                                 key={index}
-                                className={`relative w-full h-80 border border-gray-800 bg-black hover:bg-[#670ef7] transition-all duration-300  flex flex-col justify-center items-center p-16`}>
+                                className={`relative w-full h-80 border border-gray-800 bg-black hover:bg-[#670ef7] transition-all duration-300  flex flex-col justify-center items-center p-8 md:p-16`}>
 
-                                <h3 className="text-white text-3xl font-bold text-center mb-2">{service.title}</h3>
-                                <p className="text-gray-300 text-center">{service.description}</p>
+                                <h3 className="text-white text-2xl md:text-3xl font-bold text-center mb-2">{service.title}</h3>
+                                <p className="text-sm md:text-base text-gray-300 text-center">{service.description}</p>
 
                                 {index % 4 === 0 && (
                                     <span className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 text-gray-300 text-3xl z-30"><i className="fa fa-plus text-2xl" aria-hidden="true"></i></span>

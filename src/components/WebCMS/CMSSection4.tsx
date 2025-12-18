@@ -8,10 +8,10 @@ import { motion } from 'framer-motion';
 export default function CMSInfoSection() {
     return (
         <section className="py-10 md:py-20 ">
-            <div className="max-w-[85%] mx-auto px-0 flex flex-col-reverse md:flex-row items-center gap-12">
+            <div className="max-w-[85%] mx-auto px-0 flex flex-col-reverse lg:flex-row items-center gap-12">
 
                 {/* Left Column - Text */}
-                <div className="md:w-1/2 px-0 md:px-0">
+                <div className="lg:w-1/2 px-0 md:px-0">
                     <h2 className="text-3xl md:text-5xl font-medium mb-6">
                         Your CMS Isn&apos;t Just a Backend — <span className="text-blue-500">It&apos;s the Foundation of Digital Growth.</span>
                     </h2>

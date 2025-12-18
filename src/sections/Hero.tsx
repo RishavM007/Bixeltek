@@ -81,7 +81,7 @@ export const Hero = () => {
       <div className="flex justify-center items-center mt-10 gap-5">
         <a href="tel:+919100032301">
           <button className="bg-gradient-to-t from-[#4a208a] to-[#13012e] border border-[white] text-white font-normal text-sm py-2 px-4 md:px-6 md:py-3 md:text-md rounded-lg md:mt-5 shadow-custom">
-            <span>Talk to an Expect</span>
+            <span>Talk to an Expert</span>
           </button>
         </a>
         <Link href='/contact-us'>
