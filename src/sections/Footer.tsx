@@ -11,7 +11,7 @@ export const Footer = () => {
     <footer className="w-full pt-0 pb-16">
       <div className="mx-auto max-w-[97%] px-4 sm:px-6 lg:px-8">
         <Newsletter />
-        <div className="grid grid-cols-2 min-[690px]:grid-cols-4 lg:grid-cols-6 gap-4 xl:gap-8 pt-14 pb-10 max-w-xs mx-auto min-[690px]:max-w-2xl lg:max-w-full">
+        <div className="grid grid-cols-2 min-[690px]:grid-cols-4 lg:grid-cols-5 gap-4 xl:gap-8 pt-14 pb-10 max-w-xs mx-auto min-[690px]:max-w-2xl lg:max-w-full">
           <div className="col-span-full mb-10 lg:col-span-1  lg:mb-0">
             <Image src='/BIXELTEKLOGO.png' alt="logo" width={100}
               height={40} className="w-auto h-16"></Image>
@@ -82,7 +82,7 @@ export const Footer = () => {
               <li className="mb-6"><Link href="/hyderabad" className="text-gray-300 hover:text-purple-700">Hyderabad</Link></li>
               <li className="mb-6"><Link href="/toronto" className=" text-gray-300 hover:text-purple-700">Toronto</Link></li>
               <li className="mb-6"><Link href="/vancouver" className=" text-gray-300 hover:text-purple-700">Vancouver</Link></li>
-              <li className="mb-6"><Link href="/mississauga" className=" text-gray-300 hover:text-purple-700">Missassauga</Link></li>
+              <li className="mb-6"><Link href="/mississauga" className=" text-gray-300 hover:text-purple-700">Mississauga</Link></li>
               <li className="mb-6"><Link href="/saudi-arabia/eastern-province" className=" text-gray-300 hover:text-purple-700">Eastern Province</Link></li>
               <li className="mb-6"><Link href="/saudi-arabia/riyadh" className=" text-gray-300 hover:text-purple-700">Riyadh</Link></li>
             </ul>

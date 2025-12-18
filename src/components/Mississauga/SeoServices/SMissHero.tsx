@@ -24,7 +24,7 @@ export default function HeroSEOMiss() {
 
   return (
     <>
-      <section className="relative flex flex-col items-center justify-center h-[140vh] md:h-[100vh] bg-black text-center px-6 overflow-hidden">
+      <section className="relative flex flex-col items-center justify-center h-[150vh] md:h-[100vh] bg-black text-center px-6 overflow-hidden">
         <div className="flex justify-center items-center">
           <div className="relative z-10 mt-40 max-w-7xl">
             {/* Headline */}

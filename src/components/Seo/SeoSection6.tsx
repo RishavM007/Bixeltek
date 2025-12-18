@@ -19,7 +19,7 @@ export default function SeoSection6() {
                                 ></div>
                             </div>
 
-                            <div className="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
+                            <div className="relative grid max-w-lg grid-cols-1 md:grid-cols-2 gap-6 mx-auto md:max-w-none lg:gap-10 lg:grid-cols-3">
                                 <div className="flex flex-col overflow-hidden shadow-xl">
                                     <div className="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
                                         <div className="flex-1">
@@ -152,7 +152,7 @@ export default function SeoSection6() {
                                         <div className="flex items-center mt-8">
                                             <img className="flex-shrink-0 object-cover rounded-full w-11 h-11" src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-2.png" alt="" />
                                             <div className="ml-4">
-                                                <p className="text-base font-bold text-gray-900 font-pj">Matehew Martin</p>
+                                                <p className="text-base font-bold text-gray-900 font-pj">Matthew Martin</p>
                                                 <p className="mt-0.5 text-sm font-pj text-gray-600">Texas</p>
                                                
                                             </div>

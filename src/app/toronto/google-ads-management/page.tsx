@@ -48,7 +48,7 @@ export default function page() {
             Bixeltek is a certified Google Partner agency helping Toronto &amp; GTA businesses run smarter PPC campaigns that deliver high-quality leads and measurable ROI.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col md:flex-row gap-4 justify-center">
             <Link href="#form">
               <button className="px-6 py-3 bg-black/10 backdrop:blur-2xl border border-blue-500 hover:bg-blue-700 text-white font-semibold rounded-full shadow-lg transition">
                 Get Your Free Google Ads Audit

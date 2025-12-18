@@ -41,13 +41,13 @@ export default function WebSection4() {
                     <h2 className='text-white text-4xl lg:text-6xl max-w-7xl mx-auto font-inter mb-3 font-semibold '>Our<span className='text-blue-500'> Web Design</span> Services</h2>
                     <p className='text-gray-100 text-base md:text-[17px] tracking-wider mt-4 max-w-3xl mx-auto'>As a leading web design agency, Bixeltek delivers websites tailored to your goals. From fully custom-coded platforms to flexible WordPress builds, our solutions combine aesthetics, performance, and growth.</p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 max-w-[75%] mx-auto mt-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[75%] mx-auto mt-10">
                     {webServices.map((service, index) => (
                         <div
                             key={index}
-                            className={`relative w-full h-80 border border-gray-800 bg-black/10 hover:bg-blue-600 transition-all duration-300  flex flex-col justify-center items-center p-10 md:p-16`}>
+                            className={`relative w-full xs:h-80 md:h-fit lg:h-80 border border-gray-800 bg-black/10 hover:bg-blue-600 transition-all duration-300  flex flex-col justify-center items-center p-10 lg:p-10 xl:p-16`}>
 
-                            <h3 className="text-white text-2xl font-bold text-center mb-2">{service.title}</h3>
+                            <h3 className="text-white md:text-xl lg:text-2xl font-bold text-center mb-2">{service.title}</h3>
                             <p className="text-gray-300 text-sm text-center">{service.description}</p>
 
                             {index % 4 === 0 && (

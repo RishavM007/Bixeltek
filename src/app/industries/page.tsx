@@ -145,7 +145,7 @@ export default function Industries() {
             ))}
           </div>
         </div>
-        <div className="flex w-full lg:w-[40%] ml-[-150px] justify-center gap-4 p-1">
+        <div className="flex w-full lg:w-[40%] lg:ml-[-150px] justify-center gap-4 p-1">
           <div className='w-1/3 flex flex-col  items-center justify-center gap-3'>
             <Image src={healthcare} alt='healthcare' className='rounded-xl'></Image>
             <Image src={oil} alt='oil' className='rounded-xl'></Image>

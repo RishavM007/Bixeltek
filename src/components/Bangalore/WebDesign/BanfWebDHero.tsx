@@ -35,8 +35,8 @@ const BangaloreWebsiteDesignHero = () => {
     };
 
     return (
-        <section className="relative h-[110vh] flex flex-col justify-center items-center bg-white py-10 lg:py-14 px-6 overflow-hidden">
-            <div className="max-w-[85%] mx-auto">
+        <section className="relative h-[160vh] md:h[110vh] flex flex-col justify-center items-center bg-white py-10 lg:py-14 px-6 overflow-hidden">
+            <div className="md:max-w-[85%] mx-auto">
                 <motion.div
                     className="flex flex-col items-center text-center"
                     initial="hidden"
@@ -99,7 +99,7 @@ const BangaloreWebsiteDesignHero = () => {
                     {/* CTA Buttons */}
                     <motion.div
                         variants={itemVariants}
-                        className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
+                        className="flex flex-col md:flex-row gap-4 justify-center items-center mb-12"
                     >
                         <Link href="#form">
                         <button

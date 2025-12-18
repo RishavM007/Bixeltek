@@ -103,7 +103,6 @@ const SEOGridSection = () => {
                     <Image
                         src={dashboard2}
                         alt="SEO Dashboard"
-                        fill
                         className="object-cover object-left rounded-r-2xl"
                         priority
                     />

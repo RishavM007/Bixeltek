@@ -63,14 +63,14 @@ export default function page() {
 
     return (
         <>
-            <section className="relative flex flex-col items-center justify-center h-[100vh] md:h-[100vh] bg-black -mt-32 text-center px-6 overflow-hidden">
+            <section className="relative flex flex-col items-center justify-center h-[55vh] lg:h-[100vh]  bg-black -mt-32 text-center px-6 overflow-hidden">
                 <div className='flex justify-center items-center'>
                     {/* Blue Sphere Glow */}
                     <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-blue-500 opacity-20 blur-3xl pointer-events-none" />
 
-                    <div className="relative z-10 mt-40 max-w-7xl">
+                    <div className="relative z-10 lg:mt-40 max-w-7xl">
                         {/* Headline */}
-                        <h1 className="text-4xl md:text-7xl font-bold leading-tight text-white">
+                        <h1 className="md:text-5xl lg:text-7xl font-bold leading-tight text-white">
                             Google Ads Management Services {" "}
                             <span className="text-blue-500">That Deliver Real Growth</span>
                         </h1>
@@ -97,8 +97,8 @@ export default function page() {
                         </div>
                     </div>
                 </div>
-                <LogoTicker2 />
             </section>
+            <LogoTicker2 />
             <Section1 />
             <WhyGoogleAds />
             <ProtectAds />
@@ -110,7 +110,7 @@ export default function page() {
             <TechStackSection />
             <GoogleAdsSection10/>
             <FAQSection8/>
-           <section className='bg-black p-2 md:p-20 mx-auto flex flex-col justify-center gap-10 items-center md:flex-row ' id='form'>
+           <section className='bg-black p-2 md:p-20 mx-auto flex flex-col justify-center gap-10 items-center lg:flex-row ' id='form'>
                 <div className="w-full mt-14 md:mt-0 flex justify-center items-center px-6">
                     <div className="space-y-5 text-white max-w-xl ">
                         <h2 className="text-4xl md:text-4xl capitalize font-bold">

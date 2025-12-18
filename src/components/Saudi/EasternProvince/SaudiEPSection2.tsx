@@ -7,7 +7,7 @@ import saudiImg from '@/assets/Riyadh.jpg'; // ✅ replace with a relevant Easte
 export default function BusinessGrowthEasternProvince() {
     return (
         <section className="relative py-10 md:py-10 bg-black">
-            <div className="flex max-w-[85%] mx-auto gap-10 flex-col md:flex-row items-center">
+            <div className="flex max-w-[85%] mx-auto gap-0 md:gap-10 flex-col md:flex-row items-center">
 
                 {/* ✅ Left Blue/Image Container */}
                 <div className="relative w-full md:w-1/2 rounded-r-[40px] bg-transparent flex justify-center items-center">
@@ -19,10 +19,10 @@ export default function BusinessGrowthEasternProvince() {
                 </div>
 
                 {/* ✅ Right Content */}
-                <div className="px-6 w-full mt-[-160px] md:mt-0 md:w-1/2 py-16">
+                <div className="px-6 w-full md:mt-0 md:w-1/2 py-16">
                     
                     {/* Heading */}
-                    <h2 className="text-3xl md:text-5xl font-inter text-white font-medium mb-4 leading-snug">
+                    <h2 className="text-3xl md:text-5xl font-inter text-white font-medium mb-4 md:leading-snug">
                         Eastern Province Is Growing Fast — 
                         <span className="text-yellow-500"> Your Marketing Should Too.</span>
                     </h2>

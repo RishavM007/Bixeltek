@@ -39,7 +39,7 @@ const CodeConversionSection = () => {
           viewport={{ once: true }}
           className="w-full md:w-1/2 relative h-[400px] md:h-[570px] rounded-3xl overflow-hidden"
         >
-          <div className="relative h-full w-full grow">
+          <div className="relative h-full w-full md:grow">
             <div className="absolute bottom-0 left-0 md:left-10 top-10 right-0 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl">
               <div className="flex bg-gray-800/40 ring-1 ring-white/5">
                 <div className="-mb-px flex text-sm font-medium text-gray-400">

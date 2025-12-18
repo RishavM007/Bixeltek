@@ -71,7 +71,7 @@ export default function CMSProblemsSection() {
         </p>
 
         {/* 🔹 Cards Grid */}
-        <div className="grid md:grid-cols-3 gap-8 justify-center">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {problems.map((item) => (
             <div
               key={item.id}

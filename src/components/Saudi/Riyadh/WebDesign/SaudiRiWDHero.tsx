@@ -26,7 +26,7 @@ export default function HeroRiyadhWebDesign() {
 
   return (
     <>
-      <section className="relative bg-black flex flex-col items-center justify-center h-[130vh] md:h-[100vh] text-center px-6 overflow-hidden">
+      <section className="relative bg-black flex flex-col items-center justify-center h-[140vh] md:h-auto text-center px-6 overflow-hidden">
         <div className="absolute inset-0 bg-black/70 -z-10" />
 
         <div className="flex justify-center items-center w-full">

@@ -96,7 +96,7 @@ export default function GoogleAdsCostSection() {
         </div>
 
         {/* Right Side Image */}
-        <div className="rounded-l-2xl overflow-hidden shadow-lg lg:ml-auto lg:mr-0 lg:pr-0">
+        <div className="rounded-l-2xl overflow-hidden shadow-lg lg:ml-auto lg:mr-0 lg:pr-0 mx-6 lg:mx-0 ">
           <Image
             src={googleadsimage}
             alt="Google Ads Costs"

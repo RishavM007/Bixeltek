@@ -35,7 +35,7 @@ export default function IndustryCarouselSectionWeb(): JSX.Element {
     return (
         <section className="pt-20 mt-10 pb-20  bg-[black] z-10 overflow-hidden">
             <div className="w-full relative text-center text-white pb-10">
-                <h1 className="text-3xl md:text-5xl mx-auto max-w-[90%] md:max-w-full xl:text-7xl font-bold mb-2">
+                <h1 className="text-3xl md:text-5xl mx-auto max-w-[90%] lg:max-w-full xl:text-7xl font-bold mb-2">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-500">
                         Web Development Solutions <br></br> Tailored for Every Industry
                     </span>

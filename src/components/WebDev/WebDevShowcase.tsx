@@ -22,7 +22,7 @@ export default function WebShowcaseSection() {
     ];
 
     return (
-        <section className="w-full mt-5 md:mt-20 min-h-screen relative bg-black text-white gap-5  flex flex-col items-center justify-center">
+        <section className="w-[90%] mx-auto lg:w-full mt-5 md:mt-20 min-h-screen relative bg-black text-white gap-5  flex flex-col items-center justify-center">
             <div className="absolute top-32 -left-20 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
             <h2 className="text-center text-4xl md:text-6xl max-w-5xl font-semibold mx-auto"> <span className="text-blue-500">AI-First </span>Web Design </h2>
             <p className="text-base max-w-[95%] md:max-w-5xl mx-auto text-center text-white ">Web design in 2025 isn’t just about looks — it’s about being AI-ready. Customers now discover businesses through AI Overviews, Answer Engines, and Generative Search.</p>

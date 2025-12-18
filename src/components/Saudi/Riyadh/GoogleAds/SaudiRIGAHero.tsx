@@ -90,9 +90,9 @@ export default function HeroRiyadhGoogleAds() {
         </div>
 
         {/* Popup Form + Logo Carousel */}
-        <FunnelSEOLogoTicker />
       </section>
       <ButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
+       <FunnelSEOLogoTicker />
     </>
   );
 }

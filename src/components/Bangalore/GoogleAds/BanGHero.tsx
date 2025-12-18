@@ -101,7 +101,7 @@ const GoogleAdsHero = () => {
                     {/* CTA Buttons */}
                     <motion.div
                         variants={itemVariants}
-                        className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
+                        className="flex flex-col md:flex-row gap-4 justify-center items-center mb-12"
                     >
                         <Link href='#form'>
                         <button
