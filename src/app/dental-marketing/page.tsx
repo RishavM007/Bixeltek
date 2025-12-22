@@ -16,8 +16,6 @@ export const metadata = {
 };
 
 
-
-
 import React from 'react';
 import { Menu, X, ChevronDown, Star, CheckCircle, Phone, Mail, MapPin, TrendingUp, Users, Target, Zap, Award, BarChart3, MessageSquare, Globe, Search, MousePointerClick, Shield } from 'lucide-react';
 import Image from 'next/image';
@@ -292,7 +290,7 @@ export default function BixelTekLanding() {
                   </button>
 
                   <p className="text-xs text-center text-gray-500">
-                    By submiting the form above, you consent to receive informational SMS and SMS-based appointment reminders from Bixeltek's Ideas at the phone number provided. Msg & data rates may apply. Msg frequency varies. Unsubscribe at any time by replying STOP. Reply HELP for help. Privacy Policy & Terms.
+                    By submiting the form above, you consent to receive informational SMS and SMS-based appointment reminders from Bixeltek&apos;s Ideas at the phone number provided. Msg & data rates may apply. Msg frequency varies. Unsubscribe at any time by replying STOP. Reply HELP for help. Privacy Policy & Terms.
                   </p>
                 </form>
               </div>
@@ -318,7 +316,7 @@ export default function BixelTekLanding() {
             Tired of Empty Schedules?
           </h2>
           <p className="text-xl text-gray-700 mb-12 max-w-3xl mx-auto">
-            You're not alone. Most dental practices face these challenges every single day:
+            You&apos;re not alone. Most dental practices face these challenges every single day:
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
@@ -370,10 +368,10 @@ export default function BixelTekLanding() {
               Sounds familiar? 
             </p>
             <p className="text-gray-600 mb-4">
-              We've helped over 500 practices break free from these challenges and achieve consistent growth.
+              We&apos;ve helped over 500 practices break free from these challenges and achieve consistent growth.
             </p>
             <a href="#contact" className="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-3 rounded-full font-semibold hover:shadow-xl transition transform hover:scale-105">
-              Let's Fix This Together →
+              Let&apos;s Fix This Together →
             </a>
           </div>
         </div>
@@ -444,7 +442,7 @@ export default function BixelTekLanding() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Real Results for Real Practices</h2>
-            <p className="text-xl text-gray-600">See how we've transformed dental practices like yours</p>
+            <p className="text-xl text-gray-600">See how we&apos;ve transformed dental practices like yours</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {caseStudies.map((study, i) => (
@@ -487,7 +485,7 @@ export default function BixelTekLanding() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Why Dentist Choose BixelTek</h2>
-            <p className="text-xl text-gray-600">We're not just another marketing agency</p>
+            <p className="text-xl text-gray-600">We&apos;re not just another marketing agency</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {whyChoose.map((item, i) => {
@@ -511,7 +509,7 @@ export default function BixelTekLanding() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">What Dentists Say About Us</h2>
-            <p className="text-xl text-gray-600">Don't just take our word for it</p>
+            <p className="text-xl text-gray-600">Don&apos;t just take our word for it</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, i) => (
@@ -521,7 +519,7 @@ export default function BixelTekLanding() {
                     <Star key={j} className="text-yellow-400 fill-current" size={20} />
                   ))}
                 </div>
-                <p className="text-gray-700 mb-6 italic">"{testimonial.text}"</p>
+                <p className="text-gray-700 mb-6 italic">&quot;{testimonial.text}&quot;</p>
                 <div className="border-t pt-4">
                   <p className="font-bold">{testimonial.name}</p>
                   <p className="text-sm text-gray-600">{testimonial.practice}</p>
@@ -557,10 +555,10 @@ export default function BixelTekLanding() {
              Ready to Grow Your Practice?
             </h2>
             <p className="text-gray-200 mb-4 max-w-2xl text-lg md:text-xl">
-              Every week you delay is another week your competitors’ phones keep ringing instead of yours. Patients are searching right now. If they don’t find you, they’ll book with someone else.
+              Every week you delay is another week your competitors&apos; phones keep ringing instead of yours. Patients are searching right now. If they don’t find you, they’ll book with someone else.
             </p>
             <p className="text-gray-200 mb-6 text-lg md:text-xl">
-              Let's discuss your goals - no pressure, just results
+              Let&apos;s discuss your goals - no pressure, just results
             </p>
 
             {/* CTA Button */}
