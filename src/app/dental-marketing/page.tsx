@@ -22,6 +22,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ContactFromNew from '@/components/ContactFormNew';
 import AccordianDental from '@/components/Dental/AccordianDental';
+import DentalForm from '@/components/Dental/DentalForm';
 
 export default function BixelTekLanding() {
 
@@ -198,102 +199,7 @@ export default function BixelTekLanding() {
             </div>
             {/* Form */}
            <div className="relative">
-              <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-10 max-w-xl mx-auto">
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
-                  Get Your Free Dental Growth Audit
-                </h3>
-                <p className="text-sm text-gray-600 mb-6">
-                  Fill out the form and our dental marketing experts will contact you.
-                </p>
-
-                <form className="space-y-4">
-                  {/* Row 1: Dental Name & Email */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="text-sm font-medium text-gray-700">
-                        Dental Practice Name<span className="text-red-500">*</span>
-                      </label>
-                      <input
-                        type="text"
-                        placeholder="Clinic Name"
-                        className="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="text-sm font-medium text-gray-700">
-                        Email<span className="text-red-500">*</span>
-                      </label>
-                      <input
-                        type="email"
-                        placeholder="Enter your email"
-                        className="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
-                      />
-                    </div>
-                  </div>
-
-                  {/* Row 2: Website & Phone */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="text-sm font-medium text-gray-700">
-                        Website
-                      </label>
-                      <input
-                        type="text"
-                        placeholder="www.yourclinic.com"
-                        className="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="text-sm font-medium text-gray-700">
-                        Phone Number<span className="text-red-500">*</span>
-                      </label>
-                      <input
-                        type="tel"
-                        placeholder="Enter your phone number"
-                        className="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
-                      />
-                    </div>
-                  </div>
-
-                  {/* Row 3: City (Full Width) */}
-                  <div>
-                    <label className="text-sm font-medium text-gray-700">
-                      City<span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="Enter your city"
-                      className="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
-                    />
-                  </div>
-
-                  {/* Row 4: Message */}
-                  <div>
-                    <label className="text-sm font-medium text-gray-700">
-                      Message
-                    </label>
-                    <textarea
-                      rows={4}
-                      placeholder="Tell us about your current challenges"
-                      className="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
-                    />
-                  </div>
-
-                  {/* Submit Button */}
-                  <button
-                    type="submit"
-                    className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 rounded-lg font-semibold hover:shadow-lg transition transform hover:scale-[1.02]"
-                  >
-                    Get Free Audit
-                  </button>
-
-                  <p className="text-xs text-center text-gray-500">
-                    By submiting the form above, you consent to receive informational SMS and SMS-based appointment reminders from Bixeltek&apos;s Ideas at the phone number provided. Msg & data rates may apply. Msg frequency varies. Unsubscribe at any time by replying STOP. Reply HELP for help. Privacy Policy & Terms.
-                  </p>
-                </form>
-              </div>
+              <DentalForm/>
             </div>
 
           </div>
