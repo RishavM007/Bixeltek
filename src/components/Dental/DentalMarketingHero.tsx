@@ -4,7 +4,7 @@ import DentalForm from "./DentalForm";
 
 export default function DentalMarketingHero() {
     return (
-        <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
+        <section className=" mt-[-120px] lg:mt-[-128px] pt-48 lg:pt-60 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
       style={{
         backgroundImage: "url('/hero_slider_1.jpg')",
         backgroundSize: "cover",

@@ -154,24 +154,24 @@ export default function BixelTekLanding() {
   ];
 
   return (
-    <div className="min-h-screen ">
+    <>
 
       <DentalMarketingHero/>      
       <DentalMarketingPain/>
+            <DentalMarketingExamples
+      caseStudies={caseStudies}
+      />
       <DentalMarketingSolutions 
       services={services}
       />
       <DentalMarketingProcess
       process={process}
       />
-      <DentalMarketingExamples
-      caseStudies={caseStudies}
-      />
       <DentalMarketingWhyChooseUs
       whyChoose={whyChoose}
       />
      <AccordianDental/>
      <DentalMarketingFinalCTA/>
-    </div>
+     </>
   );
 }

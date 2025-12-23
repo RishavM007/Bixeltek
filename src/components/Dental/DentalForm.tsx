@@ -9,13 +9,14 @@ export default function DentalForm() {
   const router = useRouter();
 
   const [formData, setFormData] = useState({
-    company: "", // Dental Practice Name
+    company: "",
+    name: "",
     email: "",
     website: "",
     phone: "",
     city: "",
     message: "",
-    services: "Dental Marketing", // static tag for backend
+    services: "Dental Marketing", 
   });
 
   const handleChange = (
@@ -32,7 +33,9 @@ export default function DentalForm() {
       !formData.company ||
       !formData.email ||
       !formData.phone ||
-      !formData.city
+      !formData.city ||
+      !formData.name ||
+      !formData.website
     ) {
       toast.error("Please fill in all required fields.");
       return;
@@ -60,6 +63,7 @@ export default function DentalForm() {
 
       setFormData({
         company: "",
+        name: "",
         email: "",
         website: "",
         phone: "",
@@ -98,8 +102,23 @@ export default function DentalForm() {
               className="w-full mt-2 p-3 border rounded-lg focus:ring-2 focus:ring-blue-600"
             />
           </div>
+           <div>
+            <label className="text-sm font-medium text-gray-700">
+              Full Name<span className="text-red-500">*</span>
+            </label>
+            <input
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Full Name"
+              className="w-full mt-2 p-3 border rounded-lg focus:ring-2 focus:ring-blue-600"
+            />
+          </div>
+        </div>
 
-          <div>
+        {/* Row 2 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
             <label className="text-sm font-medium text-gray-700">
               Email<span className="text-red-500">*</span>
             </label>
@@ -109,20 +128,6 @@ export default function DentalForm() {
               value={formData.email}
               onChange={handleChange}
               placeholder="Enter your email"
-              className="w-full mt-2 p-3 border rounded-lg focus:ring-2 focus:ring-blue-600"
-            />
-          </div>
-        </div>
-
-        {/* Row 2 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <label className="text-sm font-medium text-gray-700">Website</label>
-            <input
-              name="website"
-              value={formData.website}
-              onChange={handleChange}
-              placeholder="www.yourclinic.com"
               className="w-full mt-2 p-3 border rounded-lg focus:ring-2 focus:ring-blue-600"
             />
           </div>
@@ -142,6 +147,17 @@ export default function DentalForm() {
         </div>
 
         {/* City */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+            <label className="text-sm font-medium text-gray-700">Website<span className="text-red-500">*</span></label>
+            <input
+              name="website"
+              value={formData.website}
+              onChange={handleChange}
+              placeholder="www.yourclinic.com"
+              className="w-full mt-2 p-3 border rounded-lg focus:ring-2 focus:ring-blue-600"
+            />
+          </div>
         <div>
           <label className="text-sm font-medium text-gray-700">
             City<span className="text-red-500">*</span>
@@ -153,6 +169,7 @@ export default function DentalForm() {
             placeholder="Enter your city"
             className="w-full mt-2 p-3 border rounded-lg focus:ring-2 focus:ring-blue-600"
           />
+        </div>
         </div>
 
         {/* Message */}
