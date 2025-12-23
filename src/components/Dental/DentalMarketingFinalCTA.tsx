@@ -31,13 +31,13 @@ export default function DentalMarketingFinalCTA() {
             </p>
 
             {/* CTA Button */}
-            <div className="mt-8">
+            {/* <div className="mt-8">
               <Link href={"tel:+919100032301"}>
                 <button className="bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
                   Be the First Choice for Patients..!!
                 </button>
               </Link>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Contact Form */}

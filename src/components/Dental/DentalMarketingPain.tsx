@@ -10,7 +10,7 @@ export default function DentalMarketingPain() {
         <div className="max-w-7xl mx-auto text-center relative z-10">
           <div className="inline-block mb-4">
             <span className="bg-red-100 text-red-600 px-4 py-2 rounded-full text-sm font-semibold">
-              😰 Common Practice Struggles
+               Common Practice Struggles
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-red-600 to-orange-600 bg-clip-text text-transparent">

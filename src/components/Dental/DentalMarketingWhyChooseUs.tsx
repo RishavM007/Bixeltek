@@ -7,7 +7,7 @@ export default function DentalMarketingWhyChooseUs({whyChoose}: {whyChoose: {ico
                 <div className="max-w-7xl mx-auto">
                   <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold mb-4">Why Dentist Choose BixelTek</h2>
-                    <p className="text-xl text-gray-600">We&apos;re not just another marketing agency</p>
+                    <p className="text-xl text-gray-600">We&apos;re not just another marketing agency; we&apos;re strategic growth partners for dental practices.</p>
                   </div>
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {whyChoose.map((item, i) => {

@@ -11,7 +11,7 @@ export default function DentalMarketingHero() {
         backgroundPosition: "center cemter",
         }}
       >
-        <div className="absolute inset-0 bg-black opacity-80"/>
+        <div className="absolute inset-0 bg-black opacity-40"/>
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -27,12 +27,7 @@ export default function DentalMarketingHero() {
               <p className="text-lg md:text-xl text-white">
                We help dental practices in the USA & Canada generate predictable patient leads and revenue.
               </p>
-              <div className="flex flex-col md:flex-row gap-4">
-                <a href="/case-studies/digital-marketing-for-dentists-case-study" className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl transition transform hover:scale-105 text-center">
-                   See Our Success Stories
-                </a>
-              </div>
-              <div className="flex items-center md:justify-center lg:justify-normal gap-8 pt-4">
+                <div className="flex items-center md:justify-center lg:justify-normal gap-8 ">
                 <div>
                   <p className="text-3xl font-bold text-blue-600">50+</p>
                   <p className="text-white text-sm">Practices Grown</p>
@@ -46,6 +41,12 @@ export default function DentalMarketingHero() {
                   <p className="text-white text-sm">Average ROI</p>
                 </div>
               </div>
+              <div className="flex flex-col md:flex-row gap-4">
+                <a href="/case-studies/digital-marketing-for-dentists-case-study" className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl transition transform hover:scale-105 text-center">
+                   See Our Success Stories
+                </a>
+              </div>
+
             </div>
             {/* Form */}
            <div className="relative">
