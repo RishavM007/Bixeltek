@@ -9,6 +9,7 @@ export async function POST(req: Request) {
         const {
             firstName,
             lastName,
+            name,
             email,
             phone,
             company,
@@ -20,7 +21,14 @@ export async function POST(req: Request) {
             websiteType,
             seoGoals,
             ppcPlatform,
+            city
         } = data;
+
+        const fullName =
+    firstName && lastName
+        ? `${firstName} ${lastName}`
+        : name || "N/A";
+        const Location = country || city ;
 
         let transporter = nodemailer.createTransport({
             host: "smtp.hostinger.com",
@@ -59,17 +67,17 @@ export async function POST(req: Request) {
             to: "zee@bixeltek.com",
             subject: "Bixeltek - New Contact Form Submission",
             text: `
-Name: ${firstName} ${lastName}
-Email: ${email}
-Phone: ${phone}
-Company: ${company}
-Country: ${country}
-Marketing Budget: ${marketingBudget}
-Interested Service: ${services}${serviceDetails}
-Message: ${message}
-Website: ${website}
-            `,
-        };
+            Name: ${fullName}
+            Email: ${email}
+            Phone: ${phone}
+            Company: ${company}
+            Country/City: ${Location}
+            Marketing Budget: ${marketingBudget || "N/A"}
+            Interested Service: ${services}${serviceDetails}
+            Message: ${message}
+            Website: ${website}
+                        `,
+                    };
 
         let info = await transporter.sendMail(mailOptions);
         console.log("📩 Email Sent:", info.response);
