@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { toast } from "react-hot-toast";
+import Link from "next/link";
 
 export default function DentalForm() {
   const router = useRouter();
@@ -174,10 +175,7 @@ export default function DentalForm() {
           Get Free Audit
         </button>
 
-        <p className="text-xs text-center text-gray-500">
-          By submitting this form, you consent to receive informational SMS from
-          Bixeltek. Msg & data rates may apply.
-        </p>
+    <p className='text-black text-center mt-5 text-xs' >By submitting the form above, you consent to receive informational SMS and SMS-based appointment reminders from Bixeltek&apos;s Ideas at the phone number provided. Msg & data rates may apply. Msg frequency varies. Unsubscribe at any time by replying STOP. Reply HELP for help. <Link href={'privacy-policy'}><span className='underline underline-offset-2'>Privacy Policy & Terms.</span></Link> </p>
       </form>
     </div>
   );
