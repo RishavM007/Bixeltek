@@ -100,6 +100,11 @@ export const Footer = () => {
               </li>
 
             </ul>
+            <ul className="text-sm flex flex-col md:flex-row md:gap-10  transition-all duration-500 mt-6">
+              <li className="mb-6">
+                <div><a target="_blank" href="https://www.vision2030.gov.sa/en"> <img src="/Group 3@2x.png.png" title="Partner in Vision 2030" className="w-20 lg:w-32 h-auto" alt="Vision 2030 Logo" /></a></div>
+              </li>
+            </ul>
           </div>
 
         </div>
