@@ -52,22 +52,22 @@ export default function BixelTekLanding() {
     {
       name: "Markham Gateway Dentistry",
       location: "Scarborough, CA",
-      challenge: "Started with $20k revenue per month, we scaled them to over $100,000 a month in revenues ",
-      result: "127 new patients in 90 days",
+      challenge: "Started with $20k revenue per month, we scaled them to over $100,000 a month in revenue ",
+      result: "750 new patients in 90 days",
       metrics: { patients: "+380%", roi: "520%", calls: "+295%" }
     },
     {
       name: "Revita Family Dentistry",
       location: "Brampton, CA",
-      challenge: "From brand new dentistry to $80,000 in revenues a months",
-      result: "Ranked #1 for 23 local keywords",
+      challenge: "From brand new dentistry in 2024 to $80,000 in revenues a month",
+      result: "Consistent flow of 170 calls each month",
       metrics: { traffic: "+425%", bookings: "+310%", revenue: "+265%" }
     },
     {
       name: "Listiyo Family Dentistry",
       location: "California, US",
-      challenge: "Struggling with high competition and low calls , we help them consistently book 50 patients a month",
-      result: "Cut cost per patient by 65%",
+      challenge: "Struggling with high competition and low calls , we helped them consistently book 50+ patients a month",
+      result: "Increased bookings for high ticket patients",
       metrics: { cpl: "-65%", conversions: "+240%", roi: "680%" }
     }
   ];

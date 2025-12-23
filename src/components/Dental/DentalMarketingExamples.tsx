@@ -41,7 +41,7 @@ export default function DentalMarketingExamples({caseStudies}: any) {
           </div>
           <div className="text-center mt-12">
             <a href="#contact" className="inline-block bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl transition transform hover:scale-105">
-              Get Results Like These
+              Get Similar Results Like These
             </a>
           </div>
         </div>
