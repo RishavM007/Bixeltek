@@ -360,11 +360,11 @@ export const Whiteheader = () => {
                                     <div className={`absolute top-[28%] left-0 right-0 w-[100%] mx-auto bg-white rounded-b-2xl mt-6 pt-10 py-8 flex transition-all duration-300 z-40 ${isDropdownOpen ? "opacity-100 visible" : "opacity-0 invisible"
                                         }`}>
 
-                                        {/* Left: Services (80%) */}
+     
                                         <div className="w-[75%] grid grid-cols-3 gap-4 px-10">
                                             {services.map((service) => (
                                                 <Link
-                                                    key={service.id} // ✅ key moved here
+                                                    key={service.id} 
                                                     href={service.link}
                                                 >
                                                     <div
@@ -380,8 +380,6 @@ export const Whiteheader = () => {
                                                 </Link>
                                             ))}
                                         </div>
-
-                                        {/* Right: Image + CTA (20%) */}
                                         <div className="w-[25%] flex flex-col justify-between items-center pr-8 min-h-[240px]">
                                             <Image
                                                 src={hoveredService.image}
@@ -410,11 +408,7 @@ export const Whiteheader = () => {
                                     <Link href="#" className="text-black hover:text-purple-800 flex justify-center items-center font-semibold transition">
                                         Locations <HiChevronDown className="ml-1 text-sm" />
                                     </Link>
-
-                                    {/* Mega Menu */}
                                     <div className="absolute top-full -left-72 mt-0 bg-white shadow-lg rounded-b-2xl hidden group-hover:flex z-50 w-[1000px] min-h-[350px]">
-
-                                        {/* Tabs (Countries) */}
                                         <ul className="w-1/3 border-r rounded-bl-2xl border-gray-200 bg-gray-50">
                                             {Object.keys(locations).map((country) => (
                                                 <li
@@ -698,9 +692,9 @@ export const Whiteheader = () => {
                         <li><button onClick={() => { setIsDropdownOpen2(!isDropdownOpen2) }} className="flex justify-between w-full py-2 px-4 hover:bg-purple-600 rounded">Case Studies <HiChevronDown className="text-xl md:text-2xl" /></button>
                             {isDropdownOpen2 && (
                                 <motion.ul initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="ml-4 text-lg md:text-xl space-y-2">
-                                    <li><Link href="/casestudies-bixeltek/Tumblewash-Casestudy" className="block py-2 px-4 hover:bg-gray-700 rounded">Tumblewash-Casestudy</Link></li>
-                                    <li><Link href="/casestudies-bixeltek/google-ads-case-study-bike-repair-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Eazy Bike Repair Case Study</Link></li>
-                                    <li><Link href="/casestudies-bixeltek/digital-marketing-for-dentists-case-study" className="block py-2 px-4 hover:bg-gray-700 rounded">Digital Marketing for Dentists</Link></li>
+                                    <li><Link href="/case-studies/Tumblewash-Casestudy" className="block py-2 px-4 hover:bg-gray-700 rounded">Tumblewash-Casestudy</Link></li>
+                                    <li><Link href="/case-studies/google-ads-case-study-bike-repair-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Eazy Bike Repair Case Study</Link></li>
+                                    <li><Link href="/case-studies/digital-marketing-for-dentists-case-study" className="block py-2 px-4 hover:bg-gray-700 rounded">Digital Marketing for Dentists</Link></li>
                                 </motion.ul>
                             )}</li>
                         <li><Link href="/blog" className="block py-2 px-4 hover:bg-purple-600 rounded">Blog</Link></li>
