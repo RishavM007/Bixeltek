@@ -61,7 +61,7 @@ const WebDesignSection = () => {
             <div className="max-w-7xl mx-auto px-6 text-center">
                 {/* Title */}
                 <h2 className="text-4xl md:text-6xl font-bold font-inter leading-snug mb-6">
-                    <span className="text-blue-500">How</span> Web Design Works
+                    <span className="text-blue-500">How</span> Our Web Design Works For Your Brand
                 </h2>
 
                 {/* First Paragraph */}
