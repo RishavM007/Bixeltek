@@ -9,37 +9,37 @@ export default function DigitalMarketingServicesRiyadh() {
       title: "Google Ads Management",
       description:
         "Instant visibility, high-intent targeting, and smarter bidding. We design campaigns that capture Arabic and English search audiences in Riyadh with measurable lead tracking.",
-      link: "/riyadh/google-ads-management",
+      link: "/saudi-arabia/riyadh/google-ads-management",
     },
     {
       title: "SEO & Local Search Optimization",
       description:
         "From technical SEO to topical mapping and Google Business optimization — we build bilingual authority so your brand ranks where it matters.",
-      link: "/riyadh/seo-services",
+      link: "/saudi-arabia/riyadh/seo-services",
     },
     {
       title: "Web Design & Development",
       description:
         "Fast, conversion-optimized websites built on Next.js or WordPress. Every site is SEO-ready, mobile-first, and tracked for conversions.",
-      link: "/riyadh/web-design-development",
+      link: "/saudi-arabia/riyadh/web-design-development",
     },
     {
       title: "Social Media Marketing",
       description:
         "Storytelling that converts — creative campaigns on Meta, LinkedIn, and TikTok designed for engagement and lead generation.",
-      link: "/riyadh/social-media-marketing",
+      link: "/saudi-arabia/riyadh/social-media-marketing",
     },
     {
       title: "Branding & Creative Strategy",
       description:
         "From logos to corporate identity and ad creatives, we craft brand visuals that inspire trust and recognition.",
-      link: "/riyadh/branding-and-creative",
+      link: "/saudi-arabia/riyadh/branding-and-creative",
     },
     {
       title: "Analytics & Conversion Optimization",
       description:
         "GA4 dashboards, funnel tracking, and CRO experiments that turn data into decisions — and decisions into revenue.",
-      link: "/riyadh/analytics-and-cro",
+      link: "/saudi-arabia/riyadh/analytics-and-cro",
     },
   ];
 
