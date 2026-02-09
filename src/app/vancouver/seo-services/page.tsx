@@ -25,25 +25,75 @@ import AreasWeServeCanadaVanc from '@/components/Vancouver/SeoServices/VanSeoAre
 import VancouverSeoChallenges from '@/components/Vancouver/SeoServices/SeoVncSection3';
 
 import ContactFromNew from '@/components/ContactFormNew';
+import ServicesSection from '@/components/Common/ServicesGrid';
 
 export default function page() {
+    const services = [
+    {
+      title: "Local SEO",
+      description:
+        "Get found by customers searching “near me.” We optimize your Google Business Profile, local citations, reviews, and service pages to help you rank in the Vancouver Map Pack.",
+      benefit: "More local leads and walk-ins.",
+      link: "/local-seo",
+    },
+    {
+      title: "On-Page SEO",
+      description:
+        "Content and structure that align with Google’s Helpful Content and E-E-A-T principles. We optimize headings, schema, internal links, and keyword relevance for maximum visibility.",
+      benefit: "Better rankings with trustworthy content.",
+      link: "/on-page-seo",
+    },
+    {
+      title: "Technical SEO",
+      description:
+        "Fix crawl errors, improve page speed, mobile UX, and indexing signals that boost your site’s performance and trust.",
+      benefit: "Search engines + users love your site.",
+      link: "/technical-seo",
+    },
+    {
+      title: "AI SEO (Next-Gen Optimization)",
+      description:
+        "We optimize your content to be understood and recommended by AI systems — including Google Gemini, ChatGPT, and Perplexity. Through entity mapping, structured data, and semantic optimization, your business gains visibility across AI-driven search experiences.",
+      benefit: "Future-proof SEO with AI integration.",
+      link: "#",
+    },
+    {
+      title: "Content Strategy & Topical Maps",
+      description:
+        "We develop content clusters and entity-driven strategies that build authority around your core services and industry expertise.",
+      benefit: "Your site becomes an authority hub.",
+      link: "#",
+    },
+    {
+      title: "Link Building & Digital PR",
+      description:
+        "Build backlinks from relevant, high-authority websites to increase your domain strength and reputation in Google’s eyes.",
+      benefit: "More authority = higher rankings.",
+      link: "#",
+    },
+  ];
     return (
         <>
             <HeroSeoVancouver />
             <SeoImportanceSection />
             <VancouverSeoChallenges/>
-            <SeoServicesVancouver />
+            <ServicesSection
+            heading='Complete SEO Solutions'
+            spanText='Tailored for Vancouver Businesses'
+            description='Our SEO approach covers every aspect of search optimization — from local visibility to AI-driven recommendations — designed to help your business dominate Vancouver search results..'
+            services={services}
+            />
             <SeoProcessVancouver />
             <SeoVanIndustries />
             <SeoChooseVancSection />
             <AreasWeServeCanadaVanc />
 
             <section
-                className="bg-black py-20 px-4 md:px-20 flex flex-col md:flex-row items-center gap-10"
+                className="bg-black py-20 md:px-10 lg:px-20 flex flex-col lg:flex-row items-center gap-10"
                 id="form"
             >
                 {/* Left Side - Text & CTAs */}
-                <div className="w-full md:w-1/2 flex flex-col justify-start items-start px-6">
+                <div className="w-full lg:w-1/2 flex flex-col justify-start items-start px-6">
                     <h2 className="text-4xl md:text-5xl font-inter font-bold text-white mb-6">
                         Ready to Grow Your Vancouver Business<span className="text-blue-500"> With SEO That Works?</span>
                     </h2>
@@ -56,7 +106,7 @@ export default function page() {
                 </div>
 
                 {/* Right Side - Contact Form */}
-                <div className="w-[95%] md:w-[50%] lg:mr-32 flex justify-start items-center">
+                <div className="w-[90%] lg:w-[50%] lg:mr-32 flex justify-start items-center">
                     <ContactFromNew />
                 </div>
             </section>

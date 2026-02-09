@@ -25,7 +25,7 @@ export default function DentalHero() {
     >
       {/* Overlay */}
       {/* Content */}
-      <div className="relative z-10 max-w-5xl text-left px-6 md:ml-20">
+      <div className="relative z-10 lg:max-w-5xl text-left px-6 lg:ml-20">
         <h1 className="text-3xl text-black md:text-6xl font-inter font-bold leading-tight mb-6">
           Stop Losing <span className="text-blue-600">Patients to Competitors</span> — Let Us Help You Fill More Chairs Every Month
         </h1>

@@ -50,15 +50,15 @@ export default function ServicesVancouver() {
   ];
 
   return (
-    <section className="relative py-24" id="services">
+    <section className="relative py-10 md:py-24" id="services">
       {/* Background Blobs */}
       <div className="absolute top-32 -left-20 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
       <div className="absolute bottom-52 right-0 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
 
       <div>
         {/* Section Heading */}
-        <div className="max-w-[90%] md:max-w-[80%] mx-auto mb-5 text-center">
-          <h2 className="text-white text-3xl lg:text-6xl max-w-7xl mx-auto font-inter mb-3 font-semibold">
+        <div className="max-w-[90%] lg:max-w-[80%] mx-auto mb-5 text-center">
+          <h2 className="text-white text-3xl md:text-6xl max-w-7xl mx-auto font-inter mb-3 font-semibold">
             Digital Marketing Services That{" "}
             <span className="text-blue-500">Solve Business Challenges</span>
           </h2>
@@ -69,7 +69,7 @@ export default function ServicesVancouver() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 max-w-[75%] mx-auto mt-10 gap-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[90%] lg:max-w-[75%] mx-auto mt-10 gap-0">
           {services.map((service, index) => (
             <div
               key={index}

@@ -18,10 +18,10 @@ const CodedCTASection = () => {
       </div>
 
       {/* 🌟 Content Container */}
-      <div className="relative z-10 flex flex-col md:flex-row justify-between items-center h-auto md:h-[400px] px-6 md:px-16 py-10 md:py-0 text-black">
+      <div className="relative z-10 flex flex-col md:flex-row justify-between items-center h-auto lg:h-[400px] px-6 md:px-16 py-10 md:py-0 text-black">
         
         {/* ✏️ Text Block */}
-        <div className="w-full md:w-1/2 text-left bg-white/80 backdrop-blur-sm p-6 md:p-0 rounded-2xl md:rounded-none">
+        <div className="w-full md:w-[70%] lg:w-1/2 text-left bg-white/80 backdrop-blur-sm p-6 lg:p-0 rounded-2xl md:rounded-none">
           <h2 className="text-2xl md:text-4xl font-semibold mb-4">
             Let’s Build Your High-Performance Website — Together
           </h2>

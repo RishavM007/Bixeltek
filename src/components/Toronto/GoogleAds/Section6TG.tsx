@@ -40,8 +40,8 @@ export default function WhoIsThisServiceFor() {
     ];
 
     return (
-        <section className="bg-black py-16 px-4">
-            <div className="max-w-[100%] md:max-w-[80%] mx-auto">
+        <section className="bg-black py-16 md:px-4">
+            <div className="max-w-[100%] lg:max-w-[80%] mx-auto">
                 <h3 className="text-center text-blue-500 text-sm tracking-wider font-semibold mb-2 uppercase">
                     Who Is This Service For?
                 </h3>
@@ -49,7 +49,7 @@ export default function WhoIsThisServiceFor() {
                     Our Google Ads Management Is <br /><span className="text-blue-500">Perfect If You…</span>
                 </h2>
 
-                <div className="grid  md:grid-cols-2 gap-6">
+                <div className="grid  md:grid-cols-2 gap-6 px-6  lg:px-0">
                     {points.map((point, idx) => (
                         <div
                             key={idx}

@@ -13,9 +13,9 @@ export default function ScienceOfRelevance() {
   ];
 
   return (
-    <section className="w-[95%] md:w-[85%] mx-auto flex flex-col md:flex-row items-center justify-between py-20 gap-10 md:gap-5">
+    <section className="w-[90%] md:w-[85%] mx-auto flex flex-col lg:flex-row items-center justify-between py-20 gap-10 md:gap-5">
       {/* Left — Image */}
-      <div className="relative w-full md:w-1/2 h-[300px] md:h-[500px] rounded-2xl overflow-hidden shadow-lg">
+      <div className="relative w-full lg:w-1/2 h-[300px] md:h-[500px] rounded-2xl overflow-hidden shadow-lg">
         <Image
           src={seoScienceImg}
           alt="On-Page SEO Relevance"
@@ -26,7 +26,7 @@ export default function ScienceOfRelevance() {
       </div>
 
       {/* Right — Text Content */}
-      <div className="w-full md:w-1/2 text-left flex flex-col justify-center">
+      <div className="w-full lg:w-1/2 text-left flex flex-col justify-center">
         <h2 className="text-3xl md:text-5xl font-medium text-white leading-tight">
           The Science of <span className="text-blue-500">Relevance</span>
         </h2>

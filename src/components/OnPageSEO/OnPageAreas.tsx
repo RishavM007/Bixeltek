@@ -195,11 +195,11 @@ const OnPageAreas = () => {
             </div>
 
             {/* Cards */}
-            <div className="relative z-10 flex flex-wrap justify-center gap-8 max-w-7xl mx-auto">
+            <div className="relative z-10 flex flex-wrap md:grid md:grid-cols-2 lg:flex lg:flex-wrap justify-center gap-8 max-w-7xl mx-auto">
                 {locations.map((loc, idx) => (
                     <div
                         key={idx}
-                        className={`flex flex-col bg-black/70 hover:bg-neutral-800 rounded-2xl p-6 max-w-sm w-full md:w-[30%] transition-all duration-300`}
+                        className={`flex flex-col bg-black/70 hover:bg-neutral-800 rounded-2xl p-6 max-w-sm w-full lg:w-[30%] transition-all duration-300`}
                         style={{
                             marginTop: idx >= 3 ? "2rem" : "0",
                         }}

@@ -30,7 +30,7 @@ export default function HeroLocalSEO() {
 
     return (
         <>
-            <section className="relative bg-black flex flex-col items-center justify-center h-[140vh] md:h-[80vh] text-center px-6 overflow-hidden">
+            <section className="relative bg-black flex flex-col items-center justify-center h-[140vh] md:h-[100vh] lg:h-[80vh] text-center px-6 overflow-hidden">
                 {/* ✅ Background Image */}
 
                 {/* ✅ Content */}

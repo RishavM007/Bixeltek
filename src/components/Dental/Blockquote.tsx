@@ -8,7 +8,7 @@ const BlockQuoteSection = () => {
   return (
     <section className="w-full bg-gray-50">
       <div
-        className="relative flex justify-center items-center text-white min-h-[70vh] shadow-xl p-10 overflow-hidden"
+        className="relative flex justify-center items-center text-white min-h-[70vh] shadow-xl p-5 lg:p-10 overflow-hidden"
         style={{
           backgroundImage: `url('/cta_bg_1.jpeg')`,
           backgroundSize: "cover",

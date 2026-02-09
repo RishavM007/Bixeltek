@@ -44,13 +44,13 @@ export default function SocialMediaServicesVancouver() {
   ];
 
   return (
-    <section className="relative py-16 md:py-24 bg-black text-gray-100" id="social-media-services">
+    <section className="relative py-10 md:py-24 bg-black text-gray-100" id="social-media-services">
       {/* Background Blobs */}
       <div className="absolute top-20 -left-20 w-[450px] h-[450px] bg-blue-600 rounded-full opacity-30 blur-[180px] pointer-events-none"></div>
       <div className="absolute bottom-24 right-0 w-[450px] h-[450px] bg-purple-600 rounded-full opacity-30 blur-[180px] pointer-events-none"></div>
 
       {/* Section Heading */}
-      <div className="max-w-[90%] md:max-w-[80%] mx-auto mb-10 text-center">
+      <div className="max-w-[90%] lg:max-w-[80%] mx-auto mb-10 text-center">
         <h2 className="text-white text-3xl lg:text-6xl font-inter mb-3 font-semibold">
           Everything You Need to <span className="text-blue-500">Grow Through Social Media</span>
         </h2>
@@ -61,7 +61,7 @@ export default function SocialMediaServicesVancouver() {
       </div>
 
       {/* Services Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 max-w-[75%] mx-auto mt-10 gap-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[75%] mx-auto mt-10 gap-0">
         {services.map((service, index) => (
           <div
             key={index}

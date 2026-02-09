@@ -8,7 +8,7 @@ export default function CheckoutTrustBanner() {
   return (
     <section className="relative w-full flex justify-center py-10 md:py-20">
       {/* Background Image with Overlay */}
-      <div className="relative w-[95%] md:w-[85%] h-[600px] md:h-[500px]  rounded-3xl overflow-hidden shadow-2xl">
+      <div className="relative w-[95%] lg:w-[85%] h-[600px] lg:h-[500px]  rounded-3xl overflow-hidden shadow-2xl">
         <Image
           src={bgCheckout}
           alt="Checkout Trust Banner"

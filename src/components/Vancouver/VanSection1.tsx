@@ -7,24 +7,24 @@ import peopleImg from '@/assets/new-york-city-manhattan-central-park.jpg'; // âœ
 
 export default function BusinessProblemsVancouver() {
     return (
-        <section className="relative py-10 md:py-32 bg-black">
-            <div className="flex flex-col md:flex-row items-center">
+        <section className="relative py-10 lg:py-32 bg-black ">
+            <div className="flex flex-col lg:flex-row items-center w-[90%] lg:w-full mx-auto">
 
                 {/* Left Blue Container */}
-                <div className="relative w-full md:w-2/5 h-[800px] rounded-r-[40px] bg-transparent md:bg-blue-600 flex justify-end items-center">
-                    <div className="w-full h-full py-16 pl-0 pr-6 md:pr-12 flex justify-end relative">
-                        <div className="absolute md:-right-40 w-[90%] md:w-[90%]">
+                <div className="relative w-full lg:w-2/5 lg:h-[800px] rounded-r-[40px] bg-transparent lg:bg-blue-600 flex justify-center lg:justify-end items-center">
+                    <div className="w-full h-full md:py-16 lg:pr-12 flex justify-center lg:justify-end relative">
+                        <div className="lg:absolute md:-right-40 w-[90%] md:w-[90%]">
                             <Image
                                 src={peopleImg}
                                 alt="Business team"
-                                className="rounded-[30px] md:h-[700px] w-[600px] shadow-2xl object-cover z-10"
+                                className="rounded-[30px] h-[300px] md:h-[400px] lg:h-[700px] lg:w-[600px] shadow-2xl object-cover z-10"
                             />
                         </div>
                     </div>
                 </div>
 
                 {/* Right Content */}
-                <div className="px-6 w-full mt-[-160px] md:mt-0 md:w-3/5 md:pl-44 md:pr-20 py-16">
+                <div className="px-6 w-full lg:w-3/5 lg:pl-44 lg:pr-20 py-6 lg:py-16">
                     
                     {/* âœ… Heading */}
                     <h2 className="text-3xl md:text-6xl font-inter text-white font-bold mb-4 leading-snug">

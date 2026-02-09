@@ -30,14 +30,14 @@ const textVariants = {
 const CodeConversionSection = () => {
   return (
     <section className="w-full bg-black text-white py-4 md:py-24 px-6 md:px-16">
-      <div className="max-w-[95%] md:max-w-[85%] mx-auto flex flex-col md:flex-row items-center gap-12">
+      <div className="max-w-[95%] md:max-w-[85%] mx-auto flex flex-col lg:flex-row items-center gap-12">
         {/* Left Code Image Block */}
         <motion.div
           initial={{ opacity: 0, x: -60 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="w-full md:w-1/2 relative h-[400px] md:h-[570px] rounded-3xl overflow-hidden"
+          className="w-full lg:w-1/2 relative h-[400px] lg:h-[570px] rounded-3xl overflow-hidden"
         >
           <div className="relative h-full w-full md:grow">
             <div className="absolute bottom-0 left-0 md:left-10 top-10 right-0 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl">
@@ -68,7 +68,7 @@ const CodeConversionSection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="w-full md:w-1/2"
+          className="w-full lg:w-1/2"
         >
           <h2 className="text-3xl md:text-5xl font-semibold mb-6 leading-tight">
             Where <span className="text-blue-500">Code</span> and{" "}

@@ -6,9 +6,9 @@ import logFileImg from "@/assets/All_SEO_data_sources_1d5f013db2.webp"; // repla
 export default function LogFileAnalysisSection() {
     return (
         <section className="relative px-6 md:px-20 py-24 bg-black">
-            <div className="max-w-[95%] md:max-w-[85%] mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div className="max-w-[95%] md:max-w-[85%] mx-auto flex flex-col lg:flex-row items-center justify-between">
                 {/* Left Content */}
-                <div className="md:w-1/2 flex flex-col items-start space-y-6 text-white">
+                <div className="lg:w-1/2 flex flex-col items-start space-y-6 text-white">
                     {/* Tagline */}
                     <span className="inline-block bg-blue-700 text-white text-sm font-semibold px-4 py-1 rounded-full shadow-md">
                         Because Data Always Tells the Truth
@@ -55,7 +55,7 @@ export default function LogFileAnalysisSection() {
                 </div>
 
                 {/* Right Image */}
-                <div className="md:w-1/2 flex justify-center mt-12 md:mt-0">
+                <div className="lg:w-1/2 flex justify-center mt-12 md:mt-0">
                     <div className="relative w-[90%] md:w-[690px] overflow-hidden rounded-2xl shadow-lg">
                         <Image
                             src={logFileImg}

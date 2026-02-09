@@ -23,7 +23,7 @@ export default function SeoHero() {
                                 Your Business Needs Visibility, And We Can Help you rank on <span className='font-bold italic'>Google</span>
                             </span>
                         </p>
-                        <h1 className="mt-8 text-4xl font-normal text-white lg:text-6xl xl:text-6xl">
+                        <h1 className="mt-8 text-3xl font-normal text-white md:text-6xl xl:text-6xl">
                             Turn Google Searches Into Customers With Bixeltek SEO
                         </h1>
                         <p className='text-sm md:text-base text-white/80 mt-4'>
@@ -77,7 +77,7 @@ export default function SeoHero() {
                         <div className="bg-blue-500 md:max-w-[80%] lg:max-w-full pt-2 md:pt-5 mx-auto shadow-purple-custom2 rounded-t-2xl">
                             <div className="max-w-[97%] pt-4 md:pt-10 pb-5  px-5 mx-auto bg-black rounded-t-2xl flex flex-col lg:flex-row justify-center items-center">
                                 {/* Left side */}
-                                <div className=" w-full md:w-1/2 flex flex-col">
+                                <div className=" w-full lg:w-1/2 flex flex-col">
                                     <h2 className="text-xl md:text-2xl lg:text-4xl text-white mt-4 md:mt-10 mx-2 md:mx-5 lg:mx-7">
                                         <span className="text-blue-500">Rank Higher, Get More Traffic</span> & Skyrocket Your Business Growth
                                     </h2>
@@ -96,7 +96,7 @@ export default function SeoHero() {
                                 </div>
 
                                 {/* Right side */}
-                                <div className="w-full md:w-1/2 pb-10 md:pb-0">
+                                <div className="w-full lg:w-1/2 pb-10 md:pb-0">
                                     <ul className="flex flex-col text-gray-100 gap-10 px-2 md:px-6">
                                         <li className="flex items-start gap-4 text-sm md:text-[16px]">
                                             <VscDebugBreakpointDataUnverified className="text-[#670ef7] mt-[-17px] text-6xl" />

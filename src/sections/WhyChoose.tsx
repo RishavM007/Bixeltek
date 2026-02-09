@@ -59,7 +59,7 @@ export default function WhyChoose() {
                 backgroundRepeat: "no-repeat",
             }}>
 
-                <div className=" max-w-[90%] md:max-w-[85%] z-30 mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-start">
+                <div className=" max-w-[90%] md:max-w-[85%] z-30 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-start">
                     {/* Left Side */}
                     <div className=''>
                         <span className="block z-50  mb-6 text-white text-sm font-semibold text-primary">

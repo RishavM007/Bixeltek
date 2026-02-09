@@ -32,14 +32,14 @@ export default function SeoChooseVancSection() {
                     <h2 className="text-3xl md:text-5xl  font-bold text-gray-900 leading-snug mb-4">
                         A Google Partner SEO Agency <br /> <span className="text-blue-500">Built for ROI</span>
                     </h2>
-                    <p className="text-lg max-w-xl text-gray-600 mb-4">
+                    <p className="text-lg lg:max-w-xl text-gray-600 mb-4">
                         With 4+ years of SEO experience and a 90% client retention rate,{" "}
                         <span className="font-semibold text-gray-900">Bixeltek</span> has
                         become a trusted partner for businesses across Canada. We focus on
                         metrics that matter — traffic, leads, and conversions — not vanity
                         rankings.
                     </p>
-                    <a href="https://www.google.com/partners/agency?id=2188074075" target="_blank" className="mt-2 flex justify-center md:justify-start">
+                    <a href="https://www.google.com/partners/agency?id=2188074075" target="_blank" className="mt-2 flex justify-center lg:justify-start">
                         <img src="https://www.gstatic.com/partners/badge/images/2024/PartnerBadgeClickable.svg"
                             alt="Google Partner Badge"
                             className="w-auto h-20" />

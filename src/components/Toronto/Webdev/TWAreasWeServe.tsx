@@ -46,11 +46,11 @@ export default function AreasWeServeCanadaTW() {
 
   return (
     <section className="w-full bg-black text-white py-20">
-      <div className="max-w-[95%] md:max-w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-6">
+      <div className="max-w-[95%] lg:max-w-[85%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center px-6">
         
         {/* Left Side - Content */}
         <div>
-          <h2 className="text-4xl md:text-6xl font-bold mb-6">
+          <h2 className="text-3xl md:text-6xl font-bold mb-6">
             Web Design Across <span className="text-blue-500">Toronto and Nationwide</span>
           </h2>
           <p className="text-gray-300 text-lg mb-8">

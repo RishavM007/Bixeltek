@@ -130,12 +130,12 @@ Bixeltek ensures these systems integrate deeply with your backend for compliant,
               ref={(el) => {
                 if (el) cardsRef.current[index] = el;
               }}
-              className={`stacking__card relative md:w-[85%] w-[95%] mx-auto flex flex-col ${
-                isReversed ? "md:flex-row-reverse" : "md:flex-row"
+              className={`stacking__card relative lg:w-[85%] w-[95%] mx-auto flex flex-col ${
+                isReversed ? "lg:flex-row-reverse" : "lg:flex-row"
               } justify-between items-center rounded-3xl backdrop-blur-sm shadow-2xl p-8 md:p-12 mb-[30vh] border ${gradientClass} transition-transform duration-500 hover:scale-[1.02]`}
             >
               {/* Text Section */}
-              <div className="md:w-1/2 space-y-4">
+              <div className="lg:w-1/2 space-y-4">
                 <span className="inline-block bg-purple-600 text-white text-sm font-semibold px-4 py-1 rounded-full shadow-md">
                   {card.tag}
                 </span>
@@ -170,7 +170,7 @@ Bixeltek ensures these systems integrate deeply with your backend for compliant,
               </div>
 
               {/* Image Section */}
-              <div className="relative md:w-1/2 flex justify-center mt-8 md:mt-0 overflow-hidden rounded-2xl">
+              <div className="relative lg:w-1/2 flex justify-center mt-8 md:mt-0 overflow-hidden rounded-2xl">
                 <Image
                   src={card.image}
                   alt={card.title}

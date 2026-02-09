@@ -8,7 +8,7 @@ export default function DentalMarketingHero() {
       style={{
         backgroundImage: "url('/hero_slider_1.jpg')",
         backgroundSize: "cover",
-        backgroundPosition: "center cemter",
+        backgroundPosition: "center",
         }}
       >
         <div className="absolute inset-0 bg-black opacity-40"/>

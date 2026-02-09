@@ -188,7 +188,7 @@ const TechnicalTech = () => {
           <h2 className="text-white text-6xl font-bold">
             The Tools Behind  <span className="text-blue-500">the Precision</span>
           </h2>
-          <p className="text-gray-400 mt-6 text-lg">
+          <p className="text-gray-400 my-6 text-lg">
             We use enterprise-grade tools and proprietary scripts to achieve consistency at scale.
           </p>
         </div>

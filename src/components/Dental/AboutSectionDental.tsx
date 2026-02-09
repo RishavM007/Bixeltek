@@ -20,9 +20,9 @@ export default function ExperienceSection() {
                 </div>
 
                 {/* 2 Columns */}
-                <div className="flex flex-col md:flex-row gap-10 items-center">
+                <div className="flex flex-col lg:flex-row gap-10 items-center">
                     {/* Left Column - Image */}
-                    <div className="relative w-full md:w-1/2 rounded-2xl overflow-hidden shadow-lg">
+                    <div className="relative w-full lg:w-1/2 rounded-2xl overflow-hidden shadow-lg">
                         <Image
                             src={doctorImage}
                             alt="Doctor"
@@ -31,7 +31,7 @@ export default function ExperienceSection() {
                     </div>
 
                     {/* Right Column - Content */}
-                    <div className="w-full md:w-1/2">
+                    <div className="w-full lg:w-1/2">
                         {/* Years of Experience */}
                        
 

@@ -82,7 +82,7 @@ function Counter({
 export default function SolutionSection() {
   return (
     <section className="bg-black text-gray-100 py-10 md:py-20 px-6 md:px-12 lg:px-20">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[90%] lg:max-w-7xl mx-auto">
         {/* Heading */}
         <h2 className="text-3xl md:text-6xl font-bold leading-snug mb-6">
           Web Design That{" "}

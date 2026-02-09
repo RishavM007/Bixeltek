@@ -7,7 +7,7 @@ import analyticsImg from "@/assets/dashboard-image.png"; // replace with your im
 const PayFinanceToGrowth = () => {
   return (
     <section className="w-full bg-white py-10 md:py-20 px-6 md:px-12 lg:px-24">
-      <div className="max-w-[95%] md:max-w-[85%] mx-auto grid md:grid-cols-2 items-center gap-16">
+      <div className="max-w-[95%] md:max-w-[85%] mx-auto grid lg:grid-cols-2 items-center gap-16">
         {/* IMAGE LEFT */}
         <div className="relative flex justify-center md:justify-center">
           <div className="relative w-[95%] ">

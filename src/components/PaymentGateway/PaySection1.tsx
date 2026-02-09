@@ -22,15 +22,15 @@ const points = [
 
 export default function PaymentTrustSection() {
   return (
-    <section className="bg-transparent text-black pt-32 pb-20 px-6 md:px-20">
-      <div className="max-w-[95%] md:max-w-[85%] mx-auto flex flex-col md:flex-row items-center gap-12">
+    <section className="bg-transparent text-black pt-20 md:pt-0 lg:pt-32 pb-20 px-6 md:px-20">
+      <div className="max-w-[95%] lg:max-w-[85%] mx-auto flex flex-col lg:flex-row items-center gap-12">
         {/* Left - Image */}
         <motion.div
           initial={{ opacity: 0, x: -60 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="w-full md:w-1/2 flex justify-center"
+          className="w-full lg:w-1/2 flex justify-center"
         >
           <div className="rounded-2xl overflow-hidden">
             <Image
@@ -48,7 +48,7 @@ export default function PaymentTrustSection() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
           viewport={{ once: true }}
-          className="w-full md:w-1/2 space-y-6"
+          className="w-full lg:w-1/2 space-y-6"
         >
           <h2 className="text-4xl md:text-5xl font-inter font-semibold leading-tight">
             Where Business Meets Trust<span className="text-purple-600"> and Code Makes It Work</span>

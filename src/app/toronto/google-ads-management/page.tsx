@@ -33,15 +33,42 @@ import TGDevFaq from '@/components/Toronto/GoogleAds/SectionFaqTG'
 import ContactFromNew from '@/components/ContactFormNew'
 import Link from 'next/link'
 import { LogoTicker2 } from '@/components/GoogleAdsCarousel'
+import ServicesSection from '@/components/Common/ServicesGrid';
 
 export default function page() {
+  const services = [
+        {
+            title: 'Comprehensive Account Setup',
+            description: 'From keyword research and competitor analysis to campaign structuring and ad group creation, we design campaigns to target your exact audience in Toronto.',
+        },
+        {
+            title: 'Expert Ad Copywriting',
+            description: 'We craft compelling ads that resonate with your Toronto customers and highlight your unique selling points.',
+        },
+        {
+            title: 'Landing Page Optimization',
+            description: 'Drive conversions with custom landing pages designed for clear calls-to-action and local trust signals.',
+        },
+        {
+            title: 'Conversion Tracking & Analytics',
+            description: 'Implement full tracking for calls, form submissions, sales, and more, with transparent, real-time reporting.',
+        },
+        {
+            title: 'Budget Management & Bidding',
+            description: 'Daily bid management to maximize ROI; no wasted spend.',
+        },
+        {
+            title: 'Ongoing Optimization',
+            description: 'Continuous A/B testing, negative keyword refinement, and campaign adjustments to keep performance improving.',
+        },
+    ];
   return (
     <>
-      <section className="relative w-full h-[92vh] md:h-[99vh] flex flex-col items-center justify-center overflow-hidden">
+      <section className="relative w-full h-[80vh] md:h-[90vh] flex flex-col items-center justify-end lg:justify-center overflow-hidden">
         <div className="absolute inset-0">
         </div>
         <div className="relative z-10 max-w-7xl text-center px-4">
-          <h1 className="text-4xl md:text-7xl font-inter font-bold text-white/90 text-white mb-4 leading-tight">
+          <h1 className="text-3xl md:text-7xl font-inter font-bold text-white/90 text-white mb-4 leading-tight">
             Toronto’s <span className='text-blue-500'>Trusted Google Ads Partner</span> for Scalable Lead Growth
           </h1>
           <p className="text-lg md:text-xl max-w-4xl mx-auto text-gray-200 mb-6">
@@ -70,16 +97,21 @@ export default function page() {
       <MovingBlob />
       <WhyGoogleAdsToronto2 />
       <TextMarquee />
-      <GoogleAdsServicesSectionToronto />
+      <ServicesSection
+            heading='At Bixeltek, We Specialize in'
+            spanText='Making Your Ad Spend Work Smarter'
+            description='Our Google Ads Management service in Toronto delivers full-cycle PPC management, tailored to your business goals and local market dynamics. We handle all the complexities so you can focus on growing your business and closing leads.'
+            services={services}
+            />
       <GradientBorderContainersMobToronto />
       <WhoIsThisServiceFor />
       <TGDevFaq />
       <section
-        className="bg-black p-8 md:p-20 mx-auto flex flex-col md:flex-row justify-center items-center gap-10"
+        className="bg-black p-4 md:p-8 lg:p-20 mx-auto flex flex-col lg:flex-row justify-center items-center gap-10"
         id="form"
       >
         {/* Left Side - Text & CTAs */}
-        <div className="w-full md:w-1/2 flex flex-col justify-start items-start px-6">
+        <div className="w-full lg:w-1/2 flex flex-col justify-start items-start px-6">
           <div className="space-y-5 text-white max-w-2xl">
             <h2 className="text-4xl md:text-6xl capitalize font-inter font-bold">
               Ready to Boost Your <span className="text-blue-500">Toronto Business with Google Ads?</span>
@@ -96,7 +128,7 @@ export default function page() {
         </div>
 
         {/* Right Side - Contact Form */}
-        <div className="w-full md:w-1/2 flex justify-center items-center mt-10 md:mt-0">
+        <div className="w-full lg:w-1/2 flex justify-center items-center mt-10 md:mt-0">
           <ContactFromNew />
         </div>
       </section>

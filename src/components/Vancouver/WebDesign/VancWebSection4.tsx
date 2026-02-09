@@ -49,8 +49,8 @@ export default function WhyChooseBixeltekVancouver() {
   ];
 
   return (
-    <section className="max-w-[94%] md:max-w-[80%] mx-auto bg-black md:py-20 px-6 md:px-12 lg:px-20">
-      <div className="max-w-[95%] md:max-w-6xl mx-auto text-center mb-16">
+    <section className=" lg:max-w-[80%] mx-auto bg-black md:py-20 px-8 lg:px-20">
+      <div className="max-w-[90%] lg:max-w-6xl mx-auto text-center mb-16">
         <h2 className="text-3xl md:text-6xl font-bold text-white font-inter mb-6">
           Vancouver’s Trusted Partner for <br />
           <span className="text-blue-500">Conversion-Driven Web Design</span>

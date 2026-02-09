@@ -63,14 +63,14 @@ export default function page() {
 
     return (
         <>
-            <section className="relative flex flex-col items-center justify-center h-[55vh] lg:h-[100vh]  bg-black -mt-32 text-center px-6 overflow-hidden">
+            <section className="relative flex flex-col items-center justify-center h-[70vh] lg:h-[100vh]  bg-black -mt-32 text-center px-6 overflow-hidden">
                 <div className='flex justify-center items-center'>
                     {/* Blue Sphere Glow */}
                     <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-blue-500 opacity-20 blur-3xl pointer-events-none" />
 
-                    <div className="relative z-10 lg:mt-40 max-w-7xl">
+                    <div className="relative z-10 mt-40 max-w-7xl">
                         {/* Headline */}
-                        <h1 className="md:text-5xl lg:text-7xl font-bold leading-tight text-white">
+                        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold leading-tight text-white">
                             Google Ads Management Services {" "}
                             <span className="text-blue-500">That Deliver Real Growth</span>
                         </h1>

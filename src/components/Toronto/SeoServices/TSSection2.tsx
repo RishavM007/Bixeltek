@@ -57,9 +57,9 @@ const SEOGridSection2 = () => {
     <section className="w-full py-14 md:py-24 bg-[#f5f7fd] text-black relative overflow-hidden">
       <Image src={shape1} alt="shape1" className="absolute bottom-0 left-0" />
 
-      <div className="max-w-full mx-auto flex flex-col lg:flex-row items-center gap-12">
+      <div className="w-[90%] lg:max-w-full mx-auto flex flex-col lg:flex-row items-center gap-12">
         {/* Left: Grid of Pillars */}
-        <div className="flex-1 pl-4 pr-4 md:pl-32 md:pr-16">
+        <div className="flex-1 pl-4 pr-4 lg:pl-32 lg:pr-16">
           <h2 className="text-4xl md:text-6xl font-bold font-inter leading-snug mb-4">
             The Mechanics of <span className="text-blue-500">Modern SEO</span>
           </h2>

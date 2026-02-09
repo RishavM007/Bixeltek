@@ -353,7 +353,7 @@ export default function Seo() {
 
             <section className="pt-20 pb-10 md:pb-20">
                 <div className="flex flex-col items-center gap-3">
-                    <h2 className="text-4xl max-w-6xl mx-auto md:text-6xl font-semibold text-center text-white font-inter">
+                    <h2 className="text-4xl max-w-6xl mx-auto md:text-6xl font-semibold text-center text-white font-inter px-6 md:px-0">
                         How We Help Businesses Thrive in the Age of{" "}
                         <span className="text-blue-500">AI with AI-First SEO</span>
                     </h2>

@@ -8,18 +8,18 @@ import peopleImg from '@/assets/h1-choose.jpg'; // replace with your image
 export default function BusinessProblems() {
     return (
         <section className="relative py-10 md:py-20 bg-black">
-            <div className="flex flex-col md:flex-row items-center">
+            <div className="flex flex-col lg:flex-row items-center w-[90%] lg:w-full mx-auto">
 
                 {/* Left Blue Container */}
-                <div className="relative w-full md:w-2/5 h-[800px] rounded-r-[40px] bg-transparent md:bg-blue-600 flex justify-end items-center">
+                <div className="relative w-full lg:w-2/5 lg:h-[800px] rounded-r-[40px] bg-transparent lg:bg-blue-600 flex justify-end items-center">
                     {/* The big blue block touching left edge */}
-                    <div className="w-full h-full py-16 pl-0 pr-6 md:pr-12 flex justify-end relative">
+                    <div className="w-full h-full py-10 lg:py-16 pl-0 pr-6 md:pr-12 flex justify-end relative">
                         {/* Image overlapping outside */}
-                        <div className=" absolute md:-right-32 w-[90%] md:w-[90%]">
+                        <div className=" lg:absolute lg:-right-32 w-[90%] text-center">
                             <Image
                                 src={peopleImg}
                                 alt="Business team"
-                                className="rounded-[30px]  shadow-lg object-cover z-10"
+                                className="rounded-[30px] h-[200px] md:h-[400px] lg:h-auto shadow-lg object-cover z-10"
                             />
                             {/* Extend image outside the blue container */}
                             {/* <div className="absolute top-0 right-[-100%] h-full w-[20%] bg-transparent"></div> */}
@@ -28,7 +28,7 @@ export default function BusinessProblems() {
                 </div>
 
                 {/* Right Content */}
-                <div className="px-6 w-full mt-[-310px] md:mt-0 md:w-3/5  md:pl-44 md:pr-20 py-16">
+                <div className="px-6 w-full lg:mt-[-310px] md:mt-0 lg:w-3/5  lg:pl-44 lg:pr-20 py-10 lg:py-16">
                     {/* Main heading */}
                     <h2 className="text-3xl md:text-6xl font-inter text-white font-bold mb-4 leading-snug">
                         If Customers Can’t Find You Online,

@@ -7,7 +7,7 @@ export default function GooglePartner() {
     <>
      
       <div className=" bg-white">
-        <section className="w-[90%] mx-auto flex relative flex-col md:flex-row items-center justify-evenly text-black px-2 md:px-40 py-20">
+        <section className="w-[90%] mx-auto flex relative flex-col lg:flex-row items-center justify-evenly text-black px-2 lg:px-40 py-20">
           {/* <motion.div
             className="absolute w-2 sm:w-3 md:w-2 h-[33px] bg-[#4285F4] top-0 right-0 origin-top"
             animate={{ scaleY: [0, 10, 0] }}
@@ -65,7 +65,7 @@ export default function GooglePartner() {
             style={{ width: '100%' }}
           /> */}
 
-          <div className="w-full md:w-2/3 mb-6 md:mb-0 text-center md:text-left">
+          <div className="w-full lg:w-2/3 mb-6 md:mb-0 text-center md:text-left">
             <h2 className="text-3xl md:text-5xl font-semibold mb-4">
               &quot;Proud to Be a {' '}
               <span className="text-blue-500">G</span>

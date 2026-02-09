@@ -28,14 +28,58 @@ import WebTech from '@/components/WebDev/WebTech';
 import ShowcaseSectionVanc from '@/components/Vancouver/WebDesign/ShowcaseWebVanc';
 import ContactFromNew from '@/components/ContactFormNew';
 import VancouverWebDesignFaqs from '@/components/Vancouver/WebDesign/WebVancFaq';
+import ServicesSection from '@/components/Common/ServicesGrid';
 
 export default function page() {
+    const services = [
+    {
+      title: "Custom CMS Builds",
+      description:
+        "Dynamic and scalable websites built on flexible CMS platforms like WordPress — fully optimized for SEO and easy content management.",
+      link: "/custom-cms-websites",
+    },
+    {
+      title: "Custom-Coded Websites",
+      description:
+        "For businesses needing advanced functionality or unique design systems, we develop tailor-made websites with performance and scalability in mind.",
+      link: "/custom-coded-websites",
+    },
+    {
+      title: "Ecommerce Websites",
+      description:
+        "Boost online sales with ecommerce stores optimized for speed, conversions, and secure checkout experiences.",
+      link: "/ecommerce-websites",
+    },
+    {
+      title: "Conversion Landing Pages",
+      description:
+        "We design dedicated landing pages for campaigns, offers, or product launches — built using conversion psychology, persuasive copy, and fast-loading architecture. Perfect for Google Ads, Meta Ads, or email marketing funnels.",
+      link: "#",
+    },
+    {
+      title: "Payment Gateway Integrations",
+      description:
+        "Seamless, secure, and fast payment integrations that enhance user trust and improve conversion rates.",
+      link: "/payment-gateway-integrations",
+    },
+    {
+      title: "Website Maintenance & Support",
+      description:
+        "Ongoing performance monitoring, updates, and support to ensure your website stays secure, fast, and fully functional.",
+      link: "#",
+    },
+  ];
     return (
         <>
             <HeroWebDesignVancouver />
             <WebsiteFailureSection />
             <WebsiteFailureSection2 />
-            <WebDesignServicesVancouver />
+            <ServicesSection
+            heading='Websites Designed to'
+            spanText='Convert, Built to Last'
+            description=' Bixeltek offers full-service web design and development solutions, customized for Vancouver businesses. Every build is crafted to reflect your brand, enhance visibility, and increase conversions.'
+            services={services}
+            />
             <WebDesignProcessVancouver />
             <ShowcaseSectionVanc />
             <WebTech />
@@ -44,11 +88,11 @@ export default function page() {
             <WebVanIndustries />
             <VancouverWebDesignFaqs />
             <section
-                className="bg-black py-20 px-4 md:px-20 flex flex-col md:flex-row items-center gap-10"
+                className="bg-black py-20 px-6 lg:px-20 flex flex-col lg:flex-row items-center gap-10"
                 id="form"
             >
                 {/* Left Side - Text & CTAs */}
-                <div className="w-full md:w-1/2 flex flex-col justify-start items-start px-6">
+                <div className="w-full lg:w-1/2 flex flex-col justify-start items-start md:px-6">
                     <h2 className="text-4xl md:text-5xl font-inter font-bold text-white mb-6">
                        Ready to Build a Website <span className="text-blue-500">That Converts?</span>
                     </h2>
@@ -61,7 +105,7 @@ export default function page() {
                 </div>
 
                 {/* Right Side - Contact Form */}
-                <div className="w-[95%] md:w-[50%] lg:mr-32 flex justify-start items-center">
+                <div className="lg:w-[50%] lg:mr-32 flex justify-start items-center">
                     <ContactFromNew />
                 </div>
             </section>

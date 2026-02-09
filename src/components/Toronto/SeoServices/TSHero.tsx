@@ -29,7 +29,7 @@ export default function TSHero() {
           {/* Blue Sphere Glow */}
           <div className="relative z-10 mt-40 max-w-7xl">
             {/* Headline */}
-            <h1 className="text-4xl md:text-7xl font-bold leading-tight text-white">
+            <h1 className="text-3xl md:text-6xl font-bold leading-tight text-white">
               SEO Services in Toronto Designed for{" "}
               <span className="text-blue-500">Growth and Market Leadership</span>
             </h1>

@@ -140,7 +140,7 @@ const SecureByDefault = () => {
 
       {/* Cards Section */}
       <motion.div 
-        className="flex justify-center items-end gap-6 max-w-[90%] mx-auto flex-wrap md:flex-nowrap"
+        className="flex justify-center items-end md:items-start lg:items-end  gap-6 max-w-[90%] mx-auto flex-col lg:flex-row"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-50px" }}
@@ -148,7 +148,7 @@ const SecureByDefault = () => {
       >
         {/* 1️⃣ Card 1 — Text + Description */}
         <motion.div 
-          className="flex flex-col justify-between bg-[#111111] rounded-3xl p-6 transition-all hover:bg-[#1A1A1A] h-[270px] md:h-[460px] w-full md:w-[18%] hover:shadow-2xl hover:shadow-blue-500/10 cursor-pointer"
+          className="flex flex-col justify-between bg-[#111111] rounded-3xl p-6 transition-all hover:bg-[#1A1A1A] h-[270px] lg:h-[460px] w-full lg:w-[18%] hover:shadow-2xl hover:shadow-blue-500/10 cursor-pointer"
           variants={cardVariants}
           whileHover={{ 
             y: -10,
@@ -168,7 +168,7 @@ const SecureByDefault = () => {
 
         {/* 2️⃣ Card 2 — Text only */}
         <motion.div 
-          className="flex flex-col justify-between bg-[#111111] border-2 border-blue-500 rounded-3xl p-6 transition-all hover:bg-[#1A1A1A] h-[300px] w-full md:w-[18%] hover:shadow-2xl hover:shadow-green-500/10 cursor-pointer"
+          className="flex flex-col justify-between bg-[#111111] border-2 border-blue-500 rounded-3xl p-6 transition-all hover:bg-[#1A1A1A] h-[300px] w-full lg:w-[18%] hover:shadow-2xl hover:shadow-green-500/10 cursor-pointer"
           variants={cardVariants}
           whileHover={{ 
             y: -8,
@@ -190,7 +190,7 @@ const SecureByDefault = () => {
 
         {/* 3️⃣ Card 3 — Image + Heading Overlay */}
         <motion.div 
-          className="relative rounded-3xl overflow-hidden h-[220px] w-full md:w-[22%] cursor-pointer"
+          className="relative rounded-3xl overflow-hidden h-[220px] w-full lg:w-[22%] cursor-pointer"
           variants={imageCardVariants}
           whileHover={{ 
             scale: 1.03,
@@ -224,7 +224,7 @@ const SecureByDefault = () => {
 
         {/* 4️⃣ Card 4 — Text only */}
         <motion.div 
-          className="flex flex-col justify-between bg-[#111111] border-2 border-red-500 rounded-3xl p-6 transition-all hover:bg-[#1A1A1A] h-[300px] w-full md:w-[18%] hover:shadow-2xl hover:shadow-purple-500/10 cursor-pointer"
+          className="flex flex-col justify-between bg-[#111111] border-2 border-red-500 rounded-3xl p-6 transition-all hover:bg-[#1A1A1A] h-[300px] w-full lg:w-[18%] hover:shadow-2xl hover:shadow-purple-500/10 cursor-pointer"
           variants={cardVariants}
           whileHover={{ 
             y: -8,
@@ -246,7 +246,7 @@ const SecureByDefault = () => {
 
         {/* 5️⃣ Card 5 — Image only */}
         <motion.div 
-          className="relative rounded-[40px] overflow-hidden h-[300px] md:h-[500px] w-full md:w-[18%] cursor-pointer"
+          className="relative rounded-[40px] overflow-hidden h-[300px] lg:h-[500px] w-full lg:w-[18%] cursor-pointer"
           variants={imageCardVariants}
           whileHover={{ 
             scale: 1.03,

@@ -143,7 +143,7 @@ export default function DentalServicesTabs() {
             </h2>
 
             {/* Tabs */}
-            <div className="flex flex-col md:flex-row justify-center  px-4 gap-4 mb-8">
+            <div className="flex flex-col md:grid md:grid-cols-2  lg:flex lg:flex-row justify-center  px-4 gap-4 mb-8">
                 {services.map((service) => (
                     <motion.button
                         key={service.id}

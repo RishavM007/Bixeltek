@@ -1,68 +1,33 @@
-'use client';
-
-import React from "react";
 import Link from "next/link";
+import React from "react";
 
-export default function GoogleAdsServicesVancouver() {
-  const services = [
-    {
-      title: "Campaign Setup & Strategy",
-      description:
-        "Keyword research, competitor analysis, and campaign structuring designed for Vancouver’s competitive market.",
-      benefit: "Campaigns built for maximum ROI.",
-      link: "#",
-    },
-    {
-      title: "Compelling Ad Copywriting",
-      description:
-        "Ads written to resonate with local customers and drive action.",
-      benefit: "Higher click-through rates and engagement.",
-      link: "#",
-    },
-    {
-      title: "Landing Page Optimization",
-      description:
-        "SEO-friendly, conversion-focused designs built to capture leads.",
-      benefit: "More conversions from your ad traffic.",
-      link: "#",
-    },
-    {
-      title: "Conversion Tracking & Analytics",
-      description:
-        "Track every click, call, and form with transparent reporting.",
-      benefit: "Complete visibility on ROI.",
-      link: "#",
-    },
-    {
-      title: "Bid & Budget Management",
-      description:
-        "Daily adjustments to maximize ROI and minimize waste.",
-      benefit: "Optimized spend and lower cost-per-lead.",
-      link: "#",
-    },
-    {
-      title: "Continuous Optimization",
-      description:
-        "A/B testing, keyword pruning, and campaign refinement.",
-      benefit: "Better performance over time.",
-      link: "#",
-    },
-  ];
+interface ServicesGridProps {
+    heading: string;
+    spanText: string;
+    description: string;
+  services: {
+    title: string;
+    description: string;
+    link?: string;
+  }[];
+}
 
-  return (
-    <section className="relative py-14 md:py-20 bg-black text-gray-100" id="google-ads-services">
+
+const ServicesSection = ({heading, spanText, description, services}:ServicesGridProps) => {
+    return (
+        <section className="relative py-10 md:py-24" id="services">
       {/* Background Blobs */}
       <div className="absolute top-32 -left-20 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
       <div className="absolute bottom-52 right-0 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
 
       <div>
         {/* Section Heading */}
-        <div className="max-w-[90%] lg:max-w-[80%] mx-auto mb-10 text-center">
-          <h2 className="text-white text-3xl md:text-6xl font-inter mb-3 font-semibold">
-            Smarter Campaigns That <span className="text-blue-500">Deliver Real Results</span>
+        <div className="max-w-[90%] lg:max-w-[80%] mx-auto mb-5 text-center">
+          <h2 className="text-white text-3xl md:text-6xl max-w-7xl mx-auto font-inter mb-3 font-semibold">
+            {heading} <span className="text-blue-500">{spanText}</span>
           </h2>
           <p className="text-gray-100 text-base md:text-[17px] tracking-wider mt-4 max-w-4xl mx-auto">
-            Bixeltek provides complete Google Ads management in Vancouver — from setup to optimization — ensuring your budget works harder for better results.
+            {description}
           </p>
         </div>
 
@@ -79,14 +44,14 @@ export default function GoogleAdsServicesVancouver() {
               <p className="text-gray-300 text-sm text-center mb-3">
                 {service.description}
               </p>
-              <p className="text-blue-400 group-hover:text-white group-hover:font-bold text-xs italic text-center mb-3">
+              {/* <p className="text-blue-400 group-hover:text-white group-hover:font-bold text-xs italic text-center mb-3">
                 Benefit: {service.benefit}
-              </p>
-              <Link href={service.link}>
+              </p> */}
+              {service?.link &&(<Link href={service.link}>
                 <p className="text-blue-500 group-hover:text-white text-sm mt-2 hover:font-semibold">
                   Discover More
                 </p>
-              </Link>
+              </Link>)}
 
               {/* Decorative Plus Icons */}
               {index % 4 === 0 && (
@@ -114,5 +79,7 @@ export default function GoogleAdsServicesVancouver() {
         </div>
       </div>
     </section>
-  );
-}
+      );
+    }
+
+export default ServicesSection;

@@ -37,7 +37,7 @@ export default function SEO_BenefitsInteractive() {
             </div>
 
             {/* DESKTOP: Expanding horizontal cards */}
-            <div className="hidden md:flex justify-center gap-4 h-96 overflow-visible mb-16 px-4 sm:px-8">
+            <div className="hidden lg:flex justify-center gap-4 h-96 overflow-visible mb-16 px-4 sm:px-8">
                 {benefits.map((benefit, idx) => {
                     const isActive = activeIndex === idx;
                     return (
@@ -91,7 +91,7 @@ export default function SEO_BenefitsInteractive() {
             </div>
 
             {/* MOBILE/TABLET: Vertical static cards */}
-            <div className="flex flex-col md:hidden gap-4 mb-16 px-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:hidden gap-4 mb-16 px-6">
                 {benefits.map((benefit, idx) => (
                     <div key={idx} className="border border-gray-200 rounded-3xl bg-white p-6">
                         <h3 className="font-semibold text-xl" style={{ color: googleColors[idx % googleColors.length] }}>

@@ -27,7 +27,7 @@ export default function CMSProblemSection2() {
         </div>
 
         {/* Content Right */}
-        <div className="lg:w-1/2 w-full">
+        <div className="lg:w-1/2 md:w-[90%]">
           <h2 className="text-3xl md:text-5xl font-medium mb-6">
             <span className='text-blue-500'>The Problem</span>  — Why Most CMS Websites Underperform
           </h2>

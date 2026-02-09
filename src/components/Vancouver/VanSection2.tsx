@@ -7,11 +7,11 @@ import peopleImg from '@/assets/vancouver-1.jpg';
 
 export default function BusinessStrugglesVancouver() {
     return (
-        <section className="relative mt-[-70px] md:mt-0 py-0 md:py-10 bg-black">
-            <div className="flex flex-col md:flex-row items-center">
+        <section className="relative mb-16 lg:mb-0  mt-[-70px] lg:mt-0 py-0 md:py-10 bg-black">
+            <div className="flex flex-col lg:flex-row items-center w-[90%] lg:w-full mx-auto">
                 
                 {/* ✅ Left Content */}
-                <div className="px-6 w-full md:w-3/5  md:pl-20 md:pr-16 py-16">
+                <div className="px-6 w-full lg:w-3/5  lg:pl-20 lg:pr-16 py-16">
                     
                     {/* Heading */}
                     <h2 className="text-3xl md:text-6xl font-inter text-white font-bold mb-4 leading-snug">
@@ -66,9 +66,9 @@ export default function BusinessStrugglesVancouver() {
                 </div>
 
                 {/* ✅ Right Blue/Image Container */}
-                <div className="relative w-full md:w-2/5 h-[300px] md:h-[500px] mt-[-80px] md:mt-[-80px] rounded-l-[40px] bg-transparent md:bg-blue-600 flex justify-start items-center">
-                    <div className="w-full h-full py-16 pr-0 pl-6 md:pl-12 flex justify-start relative">
-                        <div className="absolute md:-left-20 w-[90%] md:w-[90%]">
+                <div className="lg:relative w-full lg:w-2/5 h-[300px] lg:h-[500px] mt-[-80px] lg:mt-[-80px] rounded-l-[40px] bg-transparent lg:bg-blue-600 flex justify-center lg:justify-start items-center">
+                    <div className="w-full h-full py-16 lg:pl-12 flex justify-center lg:justify-start lg:relative">
+                        <div className="lg:absolute lg:-left-10 lg:w-[90%]">
                             <Image
                                 src={peopleImg}
                                 alt="Struggling businesses"

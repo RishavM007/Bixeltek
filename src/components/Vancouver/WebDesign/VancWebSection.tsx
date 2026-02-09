@@ -14,10 +14,10 @@ export default function DesignTrustSection() {
   ];
   
   return (
-    <section className="bg-black py-20 px-6 md:px-10 flex flex-col md:flex-row items-center gap-12">
+    <section className="bg-black py-20 px-6 md:px-10 flex flex-col lg:flex-row items-center gap-12">
       
       {/* Left Side - Image */}
-      <div className="md:w-1/2 flex justify-center">
+      <div className="lg:w-1/2 flex justify-center">
         <Image
           src={designImg}
           alt="Professional website design"
@@ -29,7 +29,7 @@ export default function DesignTrustSection() {
       </div>
 
       {/* Right Side - Text */}
-      <div className="md:w-1/2 text-white max-w-2xl flex flex-col gap-6">
+      <div className="lg:w-1/2 text-white max-w-2xl flex flex-col gap-6">
         <h2 className="text-4xl md:text-6xl font-bold">
           In Vancouver’s Competitive Market, <span className="text-blue-500">Design Defines Trust</span>
         </h2>

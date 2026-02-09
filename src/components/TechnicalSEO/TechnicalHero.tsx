@@ -26,7 +26,7 @@ export default function HeroTechnicalSEO() {
 
   return (
     <>
-      <section className="relative flex flex-col items-center justify-center h-[140vh] md:h-[85vh] text-center px-6 overflow-hidden">
+      <section className="relative flex flex-col items-center justify-center h-[140vh] md:h-screen lg:h-[85vh] text-center px-6 overflow-hidden">
         {/* ✅ Optional Background */}
         {/* <Image src={techSeoBg} alt="Technical SEO Background" fill className="object-cover -z-10" /> */}
         <div className="absolute inset-0 bg-black/60 -z-10" />
@@ -35,7 +35,7 @@ export default function HeroTechnicalSEO() {
         <div className="flex justify-center items-center">
           <div className="relative z-10 mt-24 max-w-7xl">
             {/* Heading */}
-            <h1 className="text-4xl md:text-7xl font-medium leading-tight text-white">
+            <h1 className="text-4xl md:text-6xl font-medium leading-tight text-white">
               Technical SEO That Engineers Visibility —{" "}
               <span className="text-blue-500">Not Just Rankings</span>
             </h1>

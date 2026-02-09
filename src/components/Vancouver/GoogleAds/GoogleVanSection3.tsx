@@ -83,8 +83,8 @@ const campaigns = [
 
 export default function GoogleAdsCampaignsVancouver() {
   return (
-    <section className="pt-12 md:pt-20 pb-20 bg-black">
-      <div className="max-w-[85%] mx-auto px-6">
+    <section className="pt-10 lg:pt-20 pb-20 bg-black">
+      <div className="max-w-[90%] lg:max-w-[85%] mx-auto px-6">
         {/* Section Header */}
         <h3 className="text-blue-600 text-sm font-semibold uppercase tracking-wide text-center">
           

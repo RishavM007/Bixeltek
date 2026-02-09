@@ -18,11 +18,11 @@ export default function VancouverSocialCitySection() {
 
     return (
         <section className="bg-black text-white py-24 px-6">
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-16">
+            <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-16">
 
                 {/* ✅ LEFT TEXT CONTENT */}
                 <div className="flex-1">
-                    <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                    <h2 className="text-3xl md:text-6xl font-bold leading-tight mb-6">
                         Vancouver Is a Social City — <span className="text-blue-500">Your Business Should Be Too</span>
                     </h2>
 

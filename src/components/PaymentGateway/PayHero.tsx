@@ -8,7 +8,7 @@ export default function PaymentHeroSection() {
     return (
         <section className="relative w-full bg-white overflow-hidden">
             {/* Main Content */}
-            <div className="max-w-[95%] md:max-w-[90%] h-auto md:h-[94vh] mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-20 gap-10">
+            <div className="max-w-[95%] md:max-w-[90%] h-auto lg:h-[94vh] mx-auto flex flex-col lg:flex-row items-center justify-between px-6 md:px-12 py-20 gap-10">
 
                 {/* Left Text Section */}
                 <motion.div
@@ -16,7 +16,7 @@ export default function PaymentHeroSection() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     viewport={{ once: true }}
-                    className="flex flex-col mt-32 md:mt-0 gap-6 md:w-2/3 text-center md:text-left"
+                    className="flex flex-col mt-32 md:mt-16 lg:mt-0 gap-6 lg:w-2/3 text-center md:text-left"
                 >
                     <h1 className="text-4xl md:text-6xl font-medium text-gray-900 leading-tight">
                        Secure, Seamless Payment Gateway Integrations 

@@ -10,19 +10,69 @@ import VanIndustries from '@/components/Vancouver/VanIndustries'
 import VancouverDMFaqs from '@/components/Vancouver/VanFaq'
 import ContactFromNew from '@/components/ContactFormNew'
 import Link from 'next/link'
+import ServicesSection from '@/components/Common/ServicesGrid'
 
 export default function page() {
+    const services = [
+    {
+      title: "Google Ads Management",
+      description:
+        "Most businesses waste money on irrelevant clicks. We build campaigns that cut wasted spend and deliver qualified leads.",
+      benefit: "More leads at a lower cost per acquisition.",
+      link: "vancouver/google-ads-management",
+    },
+    {
+      title: "SEO Services",
+      description:
+        "Ranking on Google is critical for Vancouver businesses. Our SEO strategies cover local, national, and AI-driven visibility.",
+      benefit: "Sustainable traffic and consistent organic leads.",
+      link: "vancouver/seo-services",
+    },
+    {
+      title: "Web Design & Development",
+      description:
+        "An outdated site costs you trust and conversions. We design SEO-ready, mobile-first websites that convert.",
+      benefit: "Stronger brand presence and higher conversions.",
+      link: "vancouver/web-design-services",
+    },
+    {
+      title: "Social Media Marketing",
+      description:
+        "Posting randomly doesn’t work. We run organic + paid campaigns that boost engagement and generate leads.",
+      benefit: "Build awareness and connect with your audience.",
+      link: "vancouver/social-media-marketing",
+    },
+    {
+      title: "Analytics & CRO",
+      description:
+        "Without data, you’re guessing. We set up full tracking, analyze performance, and optimize for ROI.",
+      benefit: "Smarter decisions, higher ROI.",
+      link: "#",
+    },
+    {
+      title: "Branding & Graphic Design",
+      description:
+        "Weak branding creates confusion. We design cohesive brand assets that elevate your business.",
+      benefit: "Professional identity that stands out.",
+      link: "#",
+    },
+  ];
     return (
         <>
             <HeroDVancouver />
             <BusinessProblemsVancouver />
             <BusinessStrugglesVancouver />
-            <ServicesVancouver />
+            <ServicesSection
+            heading='Digital Marketing Services That'
+            spanText='Solve Business Challenges'
+            description='We deliver end-to-end digital marketing services to help Vancouver'
+            services={services}
+            />
             <BenefitsSectionVancouver />
             <VanIndustries />
             <VancouverDMFaqs />
             <section
-                className="bg-black p-2 md:p-20 mx-auto flex flex-col justify-center gap-10 items-center md:flex-row"
+                className="bg-black md:p-8 lg:p-20 mx-auto flex flex-col justify-center gap-10 items-center lg :flex-row"
                 id="form"
             >
                 {/* Left Side - Text & CTAs */}
@@ -52,7 +102,7 @@ export default function page() {
                 </div>
 
                 {/* Right Side - Contact Form */}
-                <div className="w-[87%] lg:mr-32 flex justify-start items-center">
+                <div className="lg:w-[87%] lg:mr-32 flex justify-start items-center px-6 lg:px-0">
                     <ContactFromNew />
                 </div>
             </section>

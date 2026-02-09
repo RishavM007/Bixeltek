@@ -13,9 +13,9 @@ export default function LocalSEOProximitySection() {
   ];
 
   return (
-    <section className="w-[95%] md:w-[85%] mx-auto flex flex-col md:flex-row-reverse items-center justify-between py-20 gap-10 md:gap-16">
+    <section className="w-[90%] md:w-[85%] mx-auto flex flex-col lg:flex-row-reverse items-center justify-between py-20 gap-10 md:gap-16">
       {/* Right - Image */}
-      <div className="relative w-full md:w-1/2 h-[300px] md:h-[500px] rounded-2xl overflow-hidden shadow-lg">
+      <div className="relative w-full lg:w-1/2 h-[300px] md:h-[500px] rounded-2xl overflow-hidden shadow-lg">
         <Image
           src={intentImg}
           alt="Local SEO Proximity Optimization"
@@ -26,7 +26,7 @@ export default function LocalSEOProximitySection() {
       </div>
 
       {/* Left - Content */}
-      <div className="w-full md:w-1/2 text-left flex flex-col justify-center">
+      <div className="w-full lg:w-1/2 text-left flex flex-col justify-center">
         <h2 className="text-3xl md:text-5xl font-medium text-white leading-tight">
           Proximity Has Become the{" "}
           <span className="text-blue-500">Strongest Signal of Intent</span>

@@ -93,7 +93,7 @@ export default function CmsServicesGrid() {
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
     >
-      <motion.div className="max-w-[95%] md:max-w-[80%] mx-auto px-6 text-center">
+      <motion.div className="max-w-[95%] lg:max-w-[80%] mx-auto px-6 text-center">
         {/* Heading */}
         <motion.h2
           className="text-3xl md:text-6xl font-semibold text-black mb-6 font-inter"
