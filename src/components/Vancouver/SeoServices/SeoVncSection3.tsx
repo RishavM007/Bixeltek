@@ -47,8 +47,8 @@ const challenges = [
 
 export default function VancouverSeoChallenges() {
     return (
-        <section className="bg-black py-20 px-4 md:px-20">
-            <div className="max-w-[95%] md:max-w-[85%] mx-auto flex flex-col gap-12">
+        <section className="bg-black py-10 lg:py-20 px-10 lg:px-20">
+            <div className=" lg:max-w-[85%] mx-auto flex flex-col gap-12">
                 {/* Heading */}
                 <div className="text-center">
                     <h2 className="text-4xl md:text-6xl font-inter font-bold text-white mb-6">

@@ -40,7 +40,7 @@ export default function GoogleAdsServicesSectionToronto() {
             <div>
                 {/* Section Heading */}
                 <div className=' max-w-[80%] mx-auto mb-5 text-center'>
-                    <h2 className='text-white text-3xl lg:text-6xl max-w-7xl mx-auto font-inter mb-3 font-semibold '>
+                    <h2 className='text-white text-3xl md:text-6xl max-w-7xl mx-auto font-inter mb-3 font-semibold '>
                         At Bixeltek, We Specialize in<br></br> <span className='text-blue-500'>Making Your Ad Spend Work Smarter</span>
                     </h2>
                     <p className='text-gray-100 text-base md:text-[17px] tracking-wider mt-4 max-w-4xl mx-auto'>
@@ -49,7 +49,7 @@ export default function GoogleAdsServicesSectionToronto() {
                 </div>
 
                 {/* Services Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 max-w-[75%] mx-auto mt-10 gap-0">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[80%] lg:max-w-[75%] mx-auto mt-10 gap-0">
                     {googleAdsServices.map((service, index) => (
                         <div
                             key={index}

@@ -103,7 +103,7 @@ const PaymentWorkflow = () => {
 
                             <div className="relative flex flex-col justify-between items-center z-10 bg-[white] rounded-[20px] p-8 h-[260px]">
                                 <div
-                                    className={`absolute flex items-center gap-5 flex-row border border-white/40 bg-[white] max-w-3xl shadow-[rgba(0,0,0,0.4)_0px_2px_4px,rgba(0,0,0,0.3)_0px_7px_13px_-3px,rgba(0,0,0,0.2)_0px_-3px_0px_inset] rounded-2xl p-10 z-10 transition-all duration-300 ${positionClasses}`}
+                                    className={`absolute flex items-center gap-5 flex-row border border-white/40 bg-[white] w-[85%] lg:max-w-3xl shadow-[rgba(0,0,0,0.4)_0px_2px_4px,rgba(0,0,0,0.3)_0px_7px_13px_-3px,rgba(0,0,0,0.2)_0px_-3px_0px_inset] rounded-2xl p-10 z-10 transition-all duration-300 ${positionClasses}`}
                                 >
                                     <div>
                                         <p className={`${item.color} text-7xl font-bold`}>{item.number}</p>
@@ -131,7 +131,7 @@ const PaymentWorkflow = () => {
             </div>
 
             {/* Footer Paragraph */}
-            <p className="text-gray-900 mt-10 max-w-[90%] md:max-w-[50%] mx-auto mb-12 font-poppins leading-relaxed text-center">
+            <p className="text-gray-900 mt-10 max-w-[90%] lg:max-w-[50%] mx-auto mb-12 font-poppins leading-relaxed text-center">
                 Every payment workflow we deploy is built for speed, trust, and transparency — ensuring your
                 e-commerce or SaaS brand scales globally with complete financial confidence.
             </p>

@@ -107,7 +107,7 @@ export default function SocialMedia() {
                 <div className="bg-[#7b00e0] max-w-[90%] md:max-w-[80%] mt-20  pt-2 md:pt-5 mx-auto shadow-purple-custom2 rounded-t-2xl">
                     <div className="max-w-[97%] pt-4 md:pt-10 pb-5  px-5 mx-auto bg-black rounded-t-2xl flex flex-col lg:flex-row justify-center items-center">
                         {/* Left side */}
-                        <div className=" w-full md:w-1/2 flex flex-col">
+                        <div className=" w-full lg:w-1/2 flex flex-col">
                             <h2 className="text-xl md:text-2xl lg:text-4xl text-white mt-4 md:mt-10 mx-2 md:mx-5 lg:mx-7">
                                 <span className="text-[#7b00e0]">Rank Higher, Get More Traffic</span> & Skyrocket Your Business Growth
                             </h2>
@@ -126,7 +126,7 @@ export default function SocialMedia() {
                         </div>
 
                         {/* Right side */}
-                        <div className="w-full md:w-1/2 pb-10 md:pb-0">
+                        <div className="w-full lg:w-1/2 pb-10 md:pb-0">
                             <ul className="flex flex-col text-gray-100 gap-10 px-2 md:px-6">
                                 <li className="flex items-start gap-4 text-sm md:text-[16px]">
                                     <VscDebugBreakpointDataUnverified className="text-[#670ef7] mt-[-17px] text-6xl" />
@@ -150,7 +150,7 @@ export default function SocialMedia() {
                 </div> */}
             </section>
             <section className=" pt-8 flex flex-col justify-center items-center max-w-[100%] lg:max-w-[85%] mx-auto text-white sm:py-24" id="form">
-                <div className="mx-auto flex max-w-md  flex-col justify-center items-center rounded-lg lg:max-w-screen-xl lg:flex-row">
+                <div className="mx-auto flex max-w-md md:max-w-[90%]  flex-col justify-center items-center rounded-lg lg:max-w-screen-xl lg:flex-row">
                     <div className="w-full lg:w-1/2 px-4 pb-10 md:pb-0 lg:pr-24">
                         <h3 className="mb-2 text-purple-600">Why Choose Us?</h3>
                         <h2 className="mb-5 text-3xl font-semibold"> Why Bixeltek is Hyderabad&apos;s Trusted Social Media Marketing Agency</h2>
@@ -197,11 +197,11 @@ export default function SocialMedia() {
                 <div className="flex justify-center items-center">
                     <h2 className="text-white text-center md:text-4xl lg:text-5xl font-sofiasanscondensed">Our Specialized Social Media Management Services</h2>
                 </div>
-                <div className="w-full flex flex-col lg:flex lg:flex-row md:grid md:grid-cols-3 py-24 bg-black">
-                    <div className="relative w-full ml-auto mt-6 md:!mt-0 md:-mr-[68px] md:w-auto">
+                <div className="w-full flex flex-col lg:flex lg:flex-row  py-24 bg-black">
+                    <div className="relative w-full ml-auto mt-6 lg:!mt-0 lg:-mr-[68px] lg:w-auto">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="relative z-10 rotate-90 mx-auto w-[90%] md:w-[300px] md:h-[300px]"
+                            className="relative z-10 rotate-90 mx-auto w-[90%] md:w-[50%] lg:w-[300px] lg:h-[300px]"
                             id="Layer_1"
                             viewBox="0 0 512 512"
                         >
@@ -219,20 +219,20 @@ export default function SocialMedia() {
                             </defs>
                         </svg>
 
-                        <div className="absolute max-w-[60%] left-[19%] md:left-[13%] md:max-w-[75%] z-20 top-0 text-center text-white max-h-[300px] pt-3 md:!pt-12 overflow-hidden">
-                            <h1 className="text-xl mt-16 md:text-lg font-semibold text-[#FFCE1B] mx-2 dark:text-white md:my-2">
+                        <div className="absolute max-w-[60%] left-[19%] md:max-w-[40%] md:left-[30%] lg:left-[13%] lg:max-w-[75%] z-20 top-0 text-center text-white max-h-[300px] pt-3 md:pt-32 lg:!pt-12 overflow-hidden">
+                            <h1 className="text-xl mt-16 lg:text-lg font-semibold text-[#FFCE1B] mx-2 dark:text-white md:my-2">
                                 Strategic Content<span className="text-[#FFCE1B]"> Creation & Management </span>
                             </h1>
-                            <p className="w-full md:text-sm text-sm my-3 md:mt-6 line-clamp-4 md:line-clamp-none">
+                            <p className="w-full  text-sm my-3 lg:mt-6 line-clamp-4 lg:line-clamp-none">
                                 Drive meaningful engagement through expertly curated content designed specifically for Hyderabad&apos;s diverse audience.
                             </p>
                         </div>
                     </div>
 
-                    <div className="relative w-full mt-6 md:w-auto md:mt-[141px] md:-mr-[21px]">
+                    <div className="relative w-full mt-6 lg:w-auto lg:mt-[141px] lg:-mr-[21px]">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="relative z-10 rotate-90 mx-auto  w-[90%] md:w-[300px] md:h-[300px]"
+                            className="relative z-10 rotate-90 mx-auto w-[90%] md:w-[50%] lg:w-[300px] lg:h-[300px]"
                             id="Layer_1"
                             viewBox="0 0 512 512"
                         >
@@ -249,19 +249,19 @@ export default function SocialMedia() {
                                 </linearGradient>
                             </defs>
                         </svg>
-                        <div className="absolute max-w-[60%] left-[19%] md:left-[13%] md:max-w-[75%] z-20 top-0 text-center text-white max-h-[300px] pt-3 md:!pt-12 overflow-hidden">
+                        <div className="absolute max-w-[60%] left-[19%] md:max-w-[40%] md:left-[30%] lg:left-[13%] lg:max-w-[75%] z-20 top-0 text-center text-white max-h-[300px] pt-3 md:pt-32 lg:!pt-12 overflow-hidden">
                             <h1 className="text-xl mt-16 md:text-lg font-semibold text-[#0096FF] mx-2 dark:text-white md:my-2">
                                 Instagram & Facebook  <span className="text-[#0096FF]">Ads Management </span>
                             </h1>
-                            <p className="w-full md:text-sm text-sm my-3 md:mt-6 line-clamp-4 md:line-clamp-none">
+                            <p className="w-full  text-sm my-3 lg:mt-6 line-clamp-4 lg:line-clamp-none">
                                 Expand your reach and attract quality leads with precision-targeted Instagram and Facebook advertising campaigns tailored to Hyderabad demographics.                        </p>
                         </div>
                     </div>
 
-                    <div className="relative w-full mt-6 md:!mt-0 md:!w-auto md:-ml-[48px]">
+                    <div className="relative w-full mt-6 lg:!mt-0 lg:!w-auto lg:-ml-[48px]">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="relative z-10 rotate-90 mx-auto  w-[90%] md:w-[300px] md:h-[300px]"
+                            className="relative z-10 rotate-90 mx-auto w-[90%] md:w-[50%] lg:w-[300px] lg:h-[300px]"
                             id="Layer_1"
                             viewBox="0 0 512 512"
                         >
@@ -279,20 +279,20 @@ export default function SocialMedia() {
                             </defs>
                         </svg>
 
-                        <div className="absolute max-w-[60%] left-[19%] md:left-[13%] md:max-w-[75%] z-20 top-0  text-center text-white max-h-[300px] pt-3 md:!pt-12 overflow-hidden">
+                        <div className="absolute max-w-[60%] left-[19%] md:max-w-[40%] md:left-[30%] lg:left-[13%] lg:max-w-[75%] z-20 top-0 text-center text-white max-h-[300px] pt-3 md:pt-32 lg:!pt-12 overflow-hidden">
                             <h1 className="text-2xl mt-16 md:text-xl font-semibold  dark:text-white md:my-2">
                                 Professional <span className="text-[#FF5733]">Photo & Video</span> Production
                             </h1>
-                            <p className="w-full md:text-sm text-sm my-3 md:mt-6 line-clamp-4 md:line-clamp-none">
+                            <p className="w-full  text-sm my-3 lg:mt-6 line-clamp-4 lg:line-clamp-none">
                                 Amplify your brand storytelling through professionally crafted photos and video content, resonating with Hyderabad consumers.
                             </p>
                         </div>
                     </div>
 
-                    <div className="relative w-full md:ml-[40px] md:-mt-[150px] lg:w-auto lg:-ml-[302px] lg:mt-[283px]">
+                    <div className="relative w-full mt-6 lg:w-auto lg:-ml-[302px] lg:mt-[283px]">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="relative z-10 rotate-90 mx-auto  w-[95%] md:w-[300px] md:h-[300px]"
+                            className="relative z-10 rotate-90 mx-auto w-[90%] md:w-[50%] lg:w-[300px] lg:h-[300px]"
                             id="Layer_1"
                             viewBox="0 0 512 512"
                         >
@@ -308,19 +308,20 @@ export default function SocialMedia() {
                                     <stop stop-color="#000000" offset="1"></stop>
                                 </linearGradient>
                             </defs>
-                        </svg>                    <div className="absolute max-w-[60%] left-[19%] lg:left-[13%] md:max-w-[75%] z-20 top-0 text-center text-white max-h-[300px] pt-3 md:pt-8 lg:!pt-12 overflow-hidden">
+                        </svg>                   
+                         <div className="absolute max-w-[60%] left-[19%] md:max-w-[40%] md:left-[30%] lg:left-[13%] lg:max-w-[75%] z-20 top-0 text-center text-white max-h-[300px] pt-3 md:pt-32 lg:!pt-12 overflow-hidden">
                             <h1 className="text-2xl mt-16 md:text-xl font-semibold  dark:text-white md:my-2">
                                 Landing Page <span className="text-[#FF5733]">Development & Optimization</span>
                             </h1>
-                            <p className="w-full md:text-sm text-sm my-3 md:mt-6 line-clamp-4 md:line-clamp-none">
+                            <p className="w-full  text-sm my-3 lg:mt-6 line-clamp-4 lg:line-clamp-none">
                                 Maximize conversions with expertly designed landing pages aligned perfectly with your social media campaigns, optimized to capture leads effectively.</p>
                         </div>
                     </div>
 
-                    <div className="relative w-full mt-6 md:w-auto md:-mt-[10px] md:ml-[3px] lg:mt-[141px] lg:-ml-[68px]">
+                    <div className="relative w-full mt-6 lg:w-auto lg:mt-[141px] lg:-ml-[68px]">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="relative z-10 rotate-90 mx-auto  w-[90%] md:w-[300px] md:h-[300px]"
+                            className="relative z-10 rotate-90 mx-auto w-[90%] md:w-[50%] lg:w-[300px] lg:h-[300px]"
                             id="Layer_1"
                             viewBox="0 0 512 512"
                         >
@@ -336,19 +337,20 @@ export default function SocialMedia() {
                                     <stop stop-color="#000000" offset="1"></stop>
                                 </linearGradient>
                             </defs>
-                        </svg>                    <div className="absolute max-w-[60%] left-[19%] lg:left-[13%] md:max-w-[75%] z-20 top-0 text-center text-white max-h-[300px] pt-3 md:!pt-12 overflow-hidden">
+                        </svg>                    
+                        <div className="absolute max-w-[60%] left-[19%] md:max-w-[40%] md:left-[30%] lg:left-[13%] lg:max-w-[75%] z-20 top-0 text-center text-white max-h-[300px] pt-3 md:pt-32 lg:!pt-12 overflow-hidden">
                             <h1 className="text-2xl mt-16 md:text-xl font-semibold text-emerald-400 dark:text-white md:my-2">
                                 Conversion Rate Optimization<span className="text-[#0096FF]"> (CRO)</span>
                             </h1>
-                            <p className="w-full md:text-sm text-sm my-3 md:mt-6 line-clamp-4 md:line-clamp-none">
+                            <p className="w-full  text-sm my-3 lg:mt-6 line-clamp-4 lg:line-clamp-none">
                                 Enhance your social media effectiveness by optimizing campaigns to deliver higher engagement, clicks, and sales conversions.</p>
                         </div>
                     </div>
 
-                    <div className="relative w-full mr-auto mt-6 md:-mt-[150px] md:-ml-[40px] lg:!mt-0 md:w-auto lg:-ml-[68px]">
+                    <div className="relative w-full mr-auto mt-6 lg:!mt-0 lg:w-auto lg:-ml-[68px]">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="relative z-10 rotate-90 mx-auto  w-[90%] md:w-[300px] md:h-[300px]"
+                            className="relative z-10 rotate-90 mx-auto w-[90%] md:w-[50%] lg:w-[300px] lg:h-[300px]"
                             id="Layer_1"
                             viewBox="0 0 512 512"
                         >
@@ -364,11 +366,12 @@ export default function SocialMedia() {
                                     <stop stop-color="#000000" offset="1"></stop>
                                 </linearGradient>
                             </defs>
-                        </svg>                    <div className="absolute max-w-[60%] left-[19%] md:left-[13%] md:max-w-[75%] z-20 top-0 text-center text-white max-h-[300px] pt-3 md:!pt-12 overflow-hidden">
+                        </svg>                    
+                        <div className="absolute max-w-[60%] left-[19%] md:max-w-[40%] md:left-[30%] lg:left-[13%] lg:max-w-[75%] z-20 top-0 text-center text-white max-h-[300px] pt-3 md:pt-32 lg:!pt-12 overflow-hidden">
                             <h1 className="text-2xl mt-16 md:text-xl font-semibold text-emerald-400 dark:text-white md:my-2">
                                 Comprehensive<span className="text-[#FFCE1B]"> Analytics & Reporting</span>
                             </h1>
-                            <p className="w-full md:text-sm text-sm my-3 md:mt-6 line-clamp-4 md:line-clamp-none">
+                            <p className="w-full  text-sm my-3 lg:mt-6 line-clamp-4 lg:line-clamp-none">
                                 Transparent monthly reporting offering actionable insights and data-driven recommendations to improve social media performance continuously.
                             </p>
                         </div>

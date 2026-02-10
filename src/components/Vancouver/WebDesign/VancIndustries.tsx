@@ -33,7 +33,7 @@ export default function WebVanIndustries(): JSX.Element {
     };
 
     return (
-        <section className="md:pt-20 mt-10 md:pb-20  bg-[black] z-10 overflow-hidden">
+        <section className="lg:pt-20 mt-10 md:pb-20  bg-[black] z-10 overflow-hidden">
             <div className="w-full relative text-center text-white pb-10">
                 <h1 className="text-3xl md:text-5xl mx-auto max-w-[90%] md:max-w-full xl:text-7xl font-bold mb-2">
                     <span className=" text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-500">
@@ -49,7 +49,7 @@ export default function WebVanIndustries(): JSX.Element {
            Different industries require different design approaches. We craft custom solutions that speak directly to your audience’s needs and motivations.
                 </p>
             </div>
-            <div className="carousel-container md:pl-[500px] relative w-full overflow-hidden">
+            <div className="carousel-container md:pl-[400px] lg:pl-[500px] relative w-full overflow-hidden">
                 <div
                     className="carousel flex gap-6 px-8 w-max transform transition-transform duration-500"
                     style={{ transform: `translateX(${carouselOffset}px)` }}

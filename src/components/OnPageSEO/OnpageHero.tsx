@@ -26,7 +26,7 @@ export default function HeroOnPageSEO() {
 
   return (
     <>
-      <section className="relative flex flex-col items-center justify-center h-[140vh] md:h-[85vh] text-center px-6 overflow-hidden">
+      <section className="relative flex flex-col items-center justify-center h-[140vh] md:h-screen lg:h-[85vh] text-center px-6 overflow-hidden">
         {/* ✅ Optional Background */}
         {/* <Image src={onpageBg} alt="On-Page SEO Background" fill className="object-cover -z-10" /> */}
         <div className="absolute inset-0 bg-black/60 -z-10" />
@@ -35,7 +35,7 @@ export default function HeroOnPageSEO() {
         <div className="flex justify-center items-center">
           <div className="relative z-10 mt-24 max-w-7xl">
             {/* H1 */}
-            <h1 className="text-4xl md:text-7xl font-medium leading-tight text-white">
+            <h1 className="text-3xl md:text-6xl font-medium leading-tight text-white">
               On-Page SEO That Turns Every Paragraph{" "}
               <span className="text-blue-500">into Performance</span>
             </h1>

@@ -28,7 +28,7 @@ export default function DMHero() {
         <div className="flex justify-center items-center">
           <div className="relative z-10 mt-40 max-w-7xl">
             {/* Headline */}
-            <h1 className="text-4xl md:text-7xl font-bold leading-tight text-white">
+            <h1 className="text-3xl md:text-6xl font-bold leading-tight text-white">
               Digital Marketing Services in <span className="text-blue-500">Toronto That Deliver Real Growth</span>
             </h1>
 

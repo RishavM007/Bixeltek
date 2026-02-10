@@ -6,7 +6,7 @@ import heroImg from "@/assets/laptop dentist 2.png"; // Replace with your image
 export default function CustomDevelopmentSection() {
   return (
     <section className="relative w-full bg-black text-white py-24 px-6 md:px-12">
-      <div className="max-w-[85%] mx-auto flex flex-col-reverse md:flex-row-reverse items-center gap-12">
+      <div className="max-w-[85%] mx-auto flex flex-col-reverse lg:flex-row-reverse items-center gap-12">
         
         {/* Left Content */}
         <div className="flex-1">

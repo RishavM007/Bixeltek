@@ -47,11 +47,11 @@ export default function CMSFlexibilitySection() {
                 </h2>
 
                 {/* Flex row for all cards */}
-                <div className="flex flex-col md:flex-row gap-8">
+                <div className="flex flex-col lg:flex-row gap-8">
                     {cards.map((card, idx) => (
                         <div
                             key={idx}
-                            className={`flex flex-col justify-between p-10 rounded-3xl bg-neutral-900 items-center gap-10 md:w-1/3 ${card.reverse ? "md:flex-col-reverse" : ""
+                            className={`flex flex-col justify-between p-10 rounded-3xl bg-neutral-900 items-center gap-10 lg:w-1/3 ${card.reverse ? "lg:flex-col-reverse" : ""
                                 }`}
                         >
                             {/* Text */}

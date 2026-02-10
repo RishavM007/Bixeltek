@@ -143,11 +143,11 @@ export default function TechnicalSEOStacked() {
               key={card.id}
               ref={(el: any) => (cardsRef.current[index] = el)}
               className={`stacking__card relative md:w-[85%] w-[95%] mx-auto flex flex-col ${
-                isReversed ? "md:flex-row-reverse" : "md:flex-row"
+                isReversed ? "lg:flex-row-reverse" : "lg:flex-row"
               } justify-between items-center rounded-3xl backdrop-blur-md shadow-xl p-10 md:p-14 mb-[40vh] border border-gray-200 ${card.color.gradient} transition-transform duration-500 hover:scale-[1.015]`}
             >
               {/* Left - Text */}
-              <div className="md:w-1/2 space-y-5">
+              <div className="lg:w-1/2 space-y-5">
                 <span
                   className={`inline-block ${card.color.tag} text-white text-sm font-semibold px-4 py-1 rounded-full shadow-md`}
                 >
@@ -184,7 +184,7 @@ export default function TechnicalSEOStacked() {
               </div>
 
               {/* Right - Visual Placeholder */}
-              <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+              <div className="w-full lg:w-1/2 mt-10 md:mt-0 flex justify-center">
                 <div className="w-[85%] h-[280px] rounded-2xl bg-white/70 shadow-lg backdrop-blur-sm border border-gray-200 flex items-center justify-center">
                   <span className={`text-6xl ${card.color.icon}`}>✦</span>
                 </div>

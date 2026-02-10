@@ -93,9 +93,9 @@ const OnPageSEOFramework = () => {
                 } ${layer.gradient} z-0`}
               ></div>
 
-              <div className="relative flex flex-col justify-between items-center z-10 bg-black rounded-[20px] p-8 h-[260px]">
+              <div className="relative flex flex-col justify-between items-center z-10 bg-black rounded-[20px] p-8 h-[300px] lg:h-[260px]">
                 <div
-                  className={`absolute flex items-center gap-5 flex-row border border-white/40 bg-black max-w-3xl rounded-2xl p-10 z-10 transition-all duration-300 ${positionClasses}`}
+                  className={`absolute flex items-center gap-5 flex-row border border-white/40 bg-black w-[85%] lg:max-w-3xl rounded-2xl p-10 z-10 transition-all duration-300 ${positionClasses}`}
                 >
                   <div>
                     <p className={`${layer.color} text-7xl font-bold`}>{layer.number}</p>
@@ -123,7 +123,7 @@ const OnPageSEOFramework = () => {
       </div>
 
       {/* Footer */}
-      <p className="text-gray-300 mt-10 max-w-[90%] md:max-w-[55%] mx-auto mb-12 leading-relaxed text-center">
+      <p className="text-gray-300 mt-10 max-w-[90%] lg:max-w-[55%] mx-auto mb-12 leading-relaxed text-center">
         Every word becomes a signal. Every signal builds context. And context is what earns you both rankings and reader trust — sustainably.
       </p>
     </div>

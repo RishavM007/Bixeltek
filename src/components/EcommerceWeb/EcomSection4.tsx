@@ -32,9 +32,9 @@ const painPoints = [
 
 export default function EcomPerformanceSection() {
     return (
-        <section className="bg-black text-white max-w-[90%] mx-auto md:py-20 px-6 md:px-20 flex flex-col md:flex-row-reverse items-center gap-12">
+        <section className="bg-black text-white max-w-[90%] mx-auto md:py-20 px-6 md:px-20 flex flex-col lg:flex-row-reverse items-center gap-12">
             {/* Left - Image (flipped position) */}
-            <div className="relative w-full md:w-1/2 flex justify-center items-start overflow-hidden rounded-[0px] h-[590px]">
+            <div className="relative w-full lg:w-1/2 flex justify-center items-start overflow-hidden rounded-[0px] h-[590px]">
              <motion.div
                         className="w-full"
                         initial={{ y: 0 }}
@@ -51,7 +51,7 @@ export default function EcomPerformanceSection() {
             </div>
 
             {/* Right - Content */}
-            <div className="w-full md:w-1/2 flex flex-col justify-center items-start">
+            <div className="w-full lg:w-1/2 flex flex-col justify-center items-start">
                 <h2 className="text-4xl md:text-5xl font-inter font-medium mb-6 leading-tight">
                     Most Stores Don’t Fail Because of Products
                     They Fail Because of <span className="text-blue-500">Performance and Process</span>

@@ -140,12 +140,12 @@ Visibility without metrics is guesswork, so we turn engagement into measurable g
             <div
               key={card.id}
               ref={(el : any ) => (cardsRef.current[index] = el)}
-              className={`stacking__card relative md:w-[85%] w-[95%] mx-auto flex flex-col ${
-                isReversed ? "md:flex-row-reverse" : "md:flex-row"
+              className={`stacking__card relative lg:w-[85%] w-[95%] mx-auto flex flex-col ${
+                isReversed ? "lg:flex-row-reverse" : "lg:flex-row"
               } justify-between items-center rounded-3xl backdrop-blur-sm shadow-2xl p-8 md:p-12 mb-[30vh] border ${card.color.gradient} transition-transform duration-500 hover:scale-[1.02]`}
             >
               {/* Text Section */}
-              <div className="md:w-1/2 space-y-4">
+              <div className="lg:w-1/2 space-y-4">
                 <span
                   className={`inline-block ${card.color.tag} text-white text-sm font-semibold px-4 py-1 rounded-full shadow-md`}
                 >
@@ -183,7 +183,7 @@ Visibility without metrics is guesswork, so we turn engagement into measurable g
               </div>
 
               {/* Image Section */}
-              <div className="relative md:w-1/2 flex justify-center mt-8 md:mt-0 overflow-hidden rounded-2xl">
+              <div className="relative lg:w-1/2 flex justify-center mt-8 md:mt-0 overflow-hidden rounded-2xl">
                 <Image
                   src={card.image}
                   alt={card.title}

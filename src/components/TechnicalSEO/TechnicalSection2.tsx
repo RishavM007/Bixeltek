@@ -18,9 +18,9 @@ export default function CrawlOptimizationSection() {
   ];
 
   return (
-    <section className="w-[95%] md:w-[85%] mx-auto flex flex-col md:flex-row items-center justify-between py-20 gap-10 md:gap-16">
+    <section className="w-[90%] md:w-[85%] mx-auto flex flex-col lg:flex-row items-center justify-between py-20 gap-10 md:gap-16">
       {/* Left - Content */}
-      <div className="w-full md:w-1/2 text-left flex flex-col justify-center">
+      <div className="w-full lg:w-1/2 text-left flex flex-col justify-center">
         <h2 className="text-3xl md:text-5xl font-medium text-white leading-tight">
           Google Can’t Rank What It <span className="text-blue-500">Can’t Reach</span>
         </h2>
@@ -64,7 +64,7 @@ export default function CrawlOptimizationSection() {
       </div>
 
       {/* Right - Image */}
-      <div className="relative w-full md:w-1/2 h-[300px] md:h-[500px] rounded-2xl overflow-hidden shadow-lg">
+      <div className="relative w-full lg:w-1/2 h-[300px] md:h-[500px] rounded-2xl overflow-hidden shadow-lg">
         <Image
           src={crawlBudgetImg}
           alt="Crawl Optimization Dashboard"

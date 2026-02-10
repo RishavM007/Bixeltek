@@ -46,7 +46,7 @@ export default function AreasWeServeCanada() {
 
   return (
     <section className="w-full bg-black text-white py-20">
-      <div className="max-w-[95%] md:max-w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-6">
+      <div className="max-w-[90%] lg:max-w-[85%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center px-6">
 
         {/* Left Side - Content */}
         <div>

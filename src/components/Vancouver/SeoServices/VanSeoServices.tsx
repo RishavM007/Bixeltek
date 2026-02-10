@@ -50,15 +50,15 @@ export default function SeoServicesVancouver() {
   ];
 
   return (
-    <section className="relative py-14 md:py-24 bg-black text-gray-100" id="seo-services">
+    <section className="relative py-10 md:py-20 bg-black text-gray-100" id="seo-services">
       {/* Background Blobs */}
       <div className="absolute top-32 -left-20 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
       <div className="absolute bottom-52 right-0 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
 
       <div>
         {/* Section Heading */}
-        <div className="max-w-[90%] md:max-w-[80%] mx-auto mb-10 text-center">
-          <h2 className="text-white text-3xl lg:text-6xl font-inter mb-3 font-semibold">
+        <div className="max-w-[90%] lg:max-w-[80%] mx-auto mb-10 text-center">
+          <h2 className="text-white text-3xl md:text-6xl font-inter mb-3 font-semibold">
             Complete <span className="text-blue-500">SEO Solutions</span> Tailored for Vancouver Businesses
           </h2>
           <p className="text-gray-100 text-base md:text-[17px] tracking-wider mt-4 max-w-4xl mx-auto">
@@ -67,7 +67,7 @@ export default function SeoServicesVancouver() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 max-w-[75%] mx-auto mt-10 gap-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[90%] lg:max-w-[75%] mx-auto mt-10 gap-0">
           {services.map((service, index) => (
             <div
               key={index}

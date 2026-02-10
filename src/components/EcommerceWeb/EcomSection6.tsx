@@ -14,9 +14,9 @@ const growthPoints = [
 
 const GrowthAfterGoLive = () => {
   return (
-    <section className="bg-black text-white py-10 md:py-20 max-w-[90%] mx-auto px-6 md:px-20 flex flex-col md:flex-row items-center gap-12">
+    <section className="bg-black text-white py-10 md:py-20 max-w-[90%] mx-auto px-6 md:px-20 flex flex-col lg:flex-row items-center gap-12">
       {/* Left - Image */}
-      <div className="w-full md:w-1/2 relative">
+      <div className="w-full lg:w-1/2 relative">
         <div className="rounded-2xl overflow-hidden shadow-2xl">
           <Image
             src={growthImg}
@@ -28,7 +28,7 @@ const GrowthAfterGoLive = () => {
       </div>
 
       {/* Right - Content */}
-      <div className="w-full md:w-1/2 space-y-6">
+      <div className="w-full lg:w-1/2 space-y-6">
         <h2 className="text-4xl md:text-5xl font-inter font-medium leading-tight">
           Growth Starts After{" "}
           <span className="text-blue-500">“Go Live”</span>

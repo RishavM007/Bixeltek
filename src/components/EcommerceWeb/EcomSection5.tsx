@@ -29,9 +29,9 @@ const psychologyPoints = [
 
 const DesignPsychologySection = () => {
   return (
-    <section className="bg-black text-white md:py-20 max-w-[90%] mx-auto px-6 md:px-20 flex flex-col md:flex-row-reverse items-center md:gap-12">
+    <section className="bg-black text-white md:py-20 max-w-[90%] mx-auto px-6 md:px-20 flex flex-col lg:flex-row-reverse items-center md:gap-12">
       {/* Left - Image */}
-      <div className="w-full hidden md:block md:w-1/2 relative">
+      <div className="w-full hidden md:block lg:w-1/2 relative">
         <div className="rounded-2xl overflow-hidden shadow-2xl">
           <Image
             src={psychologyImg}
@@ -43,7 +43,7 @@ const DesignPsychologySection = () => {
       </div>
 
       {/* Right - Content */}
-      <div className="w-full md:w-1/2 space-y-6">
+      <div className="w-full lg:w-1/2 space-y-6">
         <h2 className="text-3xl md:text-5xl font-inter font-medium leading-tight">
           How <span className="text-blue-600">Design Psychology</span> Becomes{" "}
           <span className="text-blue-600">Measurable Revenue</span>

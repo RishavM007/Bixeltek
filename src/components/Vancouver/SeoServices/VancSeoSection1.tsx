@@ -14,10 +14,10 @@ export default function SeoImportanceSection() {
   ];
 
   return (
-    <section className="bg-black py-20 px-6 md:px-20 flex flex-col md:flex-row items-center gap-12">
+    <section className="bg-black py-10 lg:py-20 px-10 lg:px-20 flex flex-col lg:flex-row items-center gap-12">
       
       {/* Left Side - Image */}
-      <div className="md:w-1/2 flex justify-center">
+      <div className="lg:w-1/2 flex justify-center">
         <Image
           src={seoImg}
           alt="SEO importance illustration"
@@ -29,7 +29,7 @@ export default function SeoImportanceSection() {
       </div>
 
       {/* Right Side - Text */}
-      <div className="md:w-1/2 text-white max-w-xl flex flex-col gap-6">
+      <div className="lg:w-1/2 text-white lg:max-w-xl flex flex-col gap-6">
         <h2 className="text-4xl md:text-5xl font-bold">
           Visibility on Google Isn’t Optional —{" "}
           <span className="text-blue-500">It’s the Lifeline of Your Business</span>

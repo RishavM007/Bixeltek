@@ -49,14 +49,14 @@ export default function WhyBusinessesStruggleSocial() {
   ];
 
   return (
-    <section className="max-w-[94%] md:max-w-[80%] mx-auto bg-black md:py-20 px-6 md:px-12 lg:px-20 relative z-10">
+    <section className="lg:max-w-[80%] mx-auto bg-black py-10 md:py-20 px-6 lg:px-20 relative z-10">
       {/* ✅ Heading + Paragraph */}
-      <div className="max-w-[95%] md:max-w-6xl mx-auto text-center mb-16">
+      <div className="lg:max-w-6xl mx-auto text-center mb-16">
         <h2 className="text-3xl md:text-6xl font-bold text-white font-inter mb-6">
           Why Most Businesses{" "}
           <span className="text-blue-500">Struggle With Social Media</span>
         </h2>
-        <p className="text-gray-300 max-w-3xl mx-auto font-poppins leading-relaxed">
+        <p className="text-gray-300 lg:max-w-3xl mx-auto font-poppins leading-relaxed">
           Many Vancouver businesses spend time and money on social media without
           seeing results — because they focus on <span className="text-white font-semibold">activity, not strategy</span>.
           From low engagement to wasted ad spend, most challenges stem from missing the

@@ -15,10 +15,10 @@ export default function WebsiteFailureSection2() {
   ];
 
   return (
-    <section className="bg-black py-20 px-6 md:px-20 flex flex-col md:flex-row-reverse items-center gap-12">
+    <section className="bg-black py-20 px-6 lg:px-20 flex flex-col lg:flex-row-reverse items-center gap-12">
       
       {/* Right Side - Image */}
-      <div className="md:w-1/2 flex justify-center">
+      <div className="lg:w-1/2 flex justify-center">
         <Image
           src={websiteImg}
           alt="Website failure illustration"
@@ -30,7 +30,7 @@ export default function WebsiteFailureSection2() {
       </div>
 
       {/* Left Side - Text */}
-      <div className="md:w-1/2 text-white max-w-2xl flex flex-col gap-6">
+      <div className="lg:w-1/2 text-white max-w-2xl flex flex-col gap-6">
         <h2 className="text-4xl md:text-6xl font-bold">
           Why Most Vancouver Websites <span className="text-blue-500">Fail to Deliver Results</span>
         </h2>

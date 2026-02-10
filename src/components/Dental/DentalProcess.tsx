@@ -90,7 +90,7 @@ const GradientBorderContainersMobDental = () => {
               <div className="relative flex flex-col justify-between items-center z-10 bg-gray-50 rounded-[20px] p-8 h-[260px]">
                 {/* Floating black content box */}
                 <div
-                  className={`absolute flex items-center gap-5 flex-row border border-white/50 ${item.color} max-w-3xl rounded-2xl p-10 z-10 ${positionClasses}`}
+                  className={`absolute flex items-center gap-5 flex-row border border-white/50 ${item.color} w-[85%] lg:max-w-3xl rounded-2xl p-10 z-10 ${positionClasses}`}
                 >
                   <div>
                     <p className={`text-white text-7xl font-bold`}>{item.number}</p>
@@ -118,7 +118,7 @@ const GradientBorderContainersMobDental = () => {
 
 
 
-      <p className="text-gray-900 mt-10 max-w-[90%] md:max-w-[30%] mx-auto mb-12 font-poppins leading-relaxed text-center">
+      <p className="text-gray-900 mt-10 max-w-[90%] lg:max-w-[30%] mx-auto mb-12 font-poppins leading-relaxed text-center">
         This structured approach ensures your website is not only launched but consistently optimized for growth.
       </p>
     </div>

@@ -5,9 +5,9 @@ import velocityImg from "@/assets/national-seo-services.png";
 export default function VisibilityToVelocity() {
     return (
         <section className="relative  px-6 md:px-20 py-24 bg-black">
-            <div className="max-w-[95%] md:max-w-[85%] mx-auto flex flex-col  md:flex-row items-center justify-between">
+            <div className="max-w-[90%] md:max-w-[85%] mx-auto flex flex-col  lg:flex-row items-center justify-between">
                 {/* Left Content */}
-                <div className="md:w-1/2 flex flex-col items-start space-y-6 text-white">
+                <div className="lg:w-1/2 flex flex-col items-start space-y-6 text-white">
                     <h2 className="text-3xl md:text-5xl font-semibold leading-tight">
                         From <span className="text-blue-600">Visibility</span> to{" "}
                         <span className="text-blue-600">Velocity</span>
@@ -48,7 +48,7 @@ export default function VisibilityToVelocity() {
                 </div>
 
                 {/* Right Image */}
-                <div className="md:w-1/2 flex justify-center mt-12 md:mt-0">
+                <div className="lg:w-1/2 flex justify-center mt-12 md:mt-0">
                     <div className="relative w-[90%] md:w-[85%] overflow-hidden">
                         <Image
                             src={velocityImg}

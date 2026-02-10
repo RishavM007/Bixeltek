@@ -36,7 +36,7 @@ export default function BixeltekAdvantage() {
 
                 {/* Left Section - Heading & Description */}
                 <div>
-                    <h2 className="md:text-5xl text-white lg:text-6xl font-bold leading-tight mb-6">
+                    <h2 className="text-3xl md:text-5xl text-white lg:text-6xl font-bold leading-tight mb-6">
                         The <span className="text-blue-500">Bixeltek </span>Advantage
                     </h2>
                     <p className="text-gray-100 text-lg leading-relaxed mb-8">

@@ -25,7 +25,7 @@ export default function ShowcaseSectionVanc() {
         <section className="w-[90%] mx-auto md:w-full min-h-screen bg-black text-white gap-5  flex flex-col items-center justify-center">
             <h2 className="text-center text-4xl md:text-6xl max-w-5xl font-semibold mx-auto">Crafting <span className="text-blue-500">Digital Experiences</span> That Inspire</h2>
             <p className="text-sm text-center text-white ">Here’s a look at some of the websites we’ve crafted — designed for growth, trust, and performance.</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-7xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-[90%] lg:max-w-7xl">
                 {images.map((item, i) => (
                     <div
                         key={i}

@@ -15,7 +15,7 @@ export default function CustomCodedHeroSection() {
     const [showForm, setShowForm] = useState(false);
 
     return (
-        <section className="relative h-auto md:h-[120vh] bg-black text-center flex flex-col items-center justify-center overflow-hidden">
+        <section className="relative h-auto lg:h-[140vh] bg-black text-center flex flex-col items-center justify-center overflow-hidden">
             {/* Background Image */}
             <Image
                 src={bgimg}
@@ -26,14 +26,14 @@ export default function CustomCodedHeroSection() {
             />
 
             {/* Content */}
-            <div className="relative z-10 w-full px-6 md:px-0 mt-52 md:mt-24">
+            <div className="relative z-10 w-full px-6 md:px-0 mt-52 md:mt-36 lg:mt-24">
                 {/* Heading */}
-                <h1 className="text-4xl md:text-6xl font-medium text-white leading-tight">
+                <h1 className="text-3xl md:text-6xl font-medium text-white leading-tight md:px-3 lg:px-0">
                     Custom-Coded, Headless & Hybrid Websites <br /> Engineered for Performance
                 </h1>
 
                 {/* Subheading */}
-                <p className="mt-6 text-gray-300 text-base md:text-lg max-w-3xl mx-auto">
+                <p className="mt-6 text-gray-300 text-base md:text-lg max-w-2xl lg:max-w-3xl mx-auto">
                     Bixeltek builds custom-engineered web systems — blending React, Next.js, and headless CMS architecture — designed to load faster, rank higher, and convert better across global markets.
                 </p>
 
@@ -70,9 +70,9 @@ export default function CustomCodedHeroSection() {
                 </div>
 
                 {/* Cards Section */}
-                <div className=" flex flex-col md:flex-row w-[90%] mt-20 mx-auto gap-8">
+                <div className=" flex flex-col lg:flex-row w-[90%] mt-20 mx-auto gap-8">
                     {/* Card 1 */}
-                    <div className="relative backdrop-blur-lg w-full md:w-1/3 font-inter flex flex-col gap-12 justify-between bg-white/10  rounded-3xl p-8 hover:scale-105 transition-transform mx-auto">
+                    <div className="relative backdrop-blur-lg w-full lg:w-1/3 font-inter flex flex-col gap-12 justify-between bg-white/10  rounded-3xl p-8 hover:scale-105 transition-transform mx-auto">
 
                         <div className="flex justify-between  items-start gap-6 mb-6">
                             <div className="flex flex-col gap-2">
@@ -100,7 +100,7 @@ export default function CustomCodedHeroSection() {
                         </div>
                     </div>
 
-                    <div className="relative backdrop-blur-lg w-full md:w-1/3 font-inter flex flex-col gap-12 justify-between bg-white/10  rounded-3xl p-8 hover:scale-105 transition-transform mx-auto">
+                    <div className="relative backdrop-blur-lg w-full lg:w-1/3 font-inter flex flex-col gap-12 justify-between bg-white/10  rounded-3xl p-8 hover:scale-105 transition-transform mx-auto">
                         {/* Inner Card / Highlight Section */}
                         <div className="flex justify-evenly items-center gap-6 bg-white/10   rounded-3xl p-6 mb-0">
                             <div className="">
@@ -129,7 +129,7 @@ export default function CustomCodedHeroSection() {
 
                     </div>
 
-                    <div className="relative backdrop-blur-lg w-full md:w-1/3 h-[350px] md:h-auto font-inter flex flex-col gap-16 justify-between bg-white/10  rounded-3xl p-8 hover:scale-105 transition-transform mx-auto">
+                    <div className="relative backdrop-blur-lg w-full lg:w-1/3 h-[350px] lg:h-auto font-inter flex flex-col gap-16 justify-between bg-white/10  rounded-3xl p-8 hover:scale-105 transition-transform mx-auto">
                         <div className="flex justify-between  items-start gap-6 mb-0">
                             <div className="flex flex-col gap-2">
                                 <h3 className="font-semibold text-left text-white text-2xl">24/7 Support & Monitoring</h3>

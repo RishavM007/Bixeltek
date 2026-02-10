@@ -60,9 +60,9 @@ const benefits = [
 const BenefitsSectionDental = () => {
     return (
         <section className="w-full bg-gray-50 text-gray-900 py-20 px-6 md:px-12 lg:px-24">
-            <div className="max-w-[95%] mx-auto flex flex-col md:flex-row gap-12 items-start">
+            <div className="max-w-[95%] mx-auto flex flex-col lg:flex-row gap-12 items-start">
                 {/* Left Side */}
-                <div className="md:w-[34%] flex flex-col justify-start items-start space-y-6">
+                <div className="lg:w-[34%] flex flex-col justify-start items-start space-y-6">
                     <motion.h2
                         initial={{ y: 40, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
@@ -96,7 +96,7 @@ const BenefitsSectionDental = () => {
                 </div>
 
                 {/* Right Side: Grid */}
-                <div className="md:w-[66%] grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="lg:w-[66%] grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {benefits.map((benefit, index) => (
                         <motion.div
                             key={index}

@@ -127,12 +127,12 @@ export default function Industries() {
           <h2 className="text-4xl md:text-5xl font-semibold  font-sofiasanscondensed text-white">
             Proven Results Across <span className='text-purple-500'>Diverse Industries</span>
           </h2>
-          <p className="mt-4 text-sm md:text-lg max-w-2xl text-gray-300">
+          <p className="mt-4 text-sm md:text-lg lg:max-w-xl text-gray-300">
             Our expertise spans multiple industries, helping businesses achieve growth through data-driven strategies and
             innovative solutions. From technology and finance to healthcare and retail, we empower brands with actionable insights
             and cutting-edge digital solutions.
           </p>
-          <p className="mt-2 text-sm md:text-lg max-w-2xl text-gray-300">
+          <p className="mt-2 text-sm md:text-lg lg:max-w-xl text-gray-300">
             Explore how our tailored approach delivers measurable success, increasing engagement, conversions, and brand visibility
             in a competitive landscape.
           </p>
@@ -145,7 +145,7 @@ export default function Industries() {
             ))}
           </div>
         </div>
-        <div className="flex w-full lg:w-[40%] lg:ml-[-150px] justify-center gap-4 p-1">
+        <div className="flex w-full lg:w-[40%] lg:ml-[-70px] justify-center gap-4 p-1">
           <div className='w-1/3 flex flex-col  items-center justify-center gap-3'>
             <Image src={healthcare} alt='healthcare' className='rounded-xl'></Image>
             <Image src={oil} alt='oil' className='rounded-xl'></Image>
@@ -169,13 +169,13 @@ export default function Industries() {
             Experience the unrivaled power of our proven methods that have catapulted countless businesses to new heights.
           </p>
         </div>
-        <div className="grid grid-cols-1  md:grid-cols-4 gap-4 justify-items-center items-center h-auto w-full bg-black text-white">
+        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-4 justify-items-center items-center h-auto w-full bg-black text-white">
           {cards.map((card, index) => (
             <div
               key={index}
               className={`card-wrapper mx-4 my-1 h-[350px] w-[300px] bg-slate-800 rounded-lg shadow-lg transform transition-transform ${index < cards.length / 2
-                ? "md:translate-x-10" // Upper-row cards
-                : "md:-translate-x-10" // Bottom-row cards
+                ? "lg:translate-x-10" // Upper-row cards
+                : "lg:-translate-x-10" // Bottom-row cards
                 }`}
             >
               <div className="card-content flex flex-col items-center justify-start text-center p-4">
@@ -198,7 +198,7 @@ export default function Industries() {
       </section>
       <section>
       </section>
-      <section className="flex relative flex-col md:flex-row items-center mx-auto justify-between bg-black text-white px-2 md:px-40 py-20">
+      <section className="flex relative flex-col md:flex-row items-center mx-auto justify-between bg-black text-white px-2 md:px-20 lg:px-40 py-20">
         <motion.div
           className="absolute w-2 sm:w-3 md:w-3 h-[33px] bg-[#4285F4] top-0 right-0 origin-top"
           animate={{ scaleY: [0, 10, 0] }}
@@ -257,7 +257,7 @@ export default function Industries() {
         />
 
 
-        <div className="w-full md:w-1/2 mb-6 md:mb-0 text-center md:text-left">
+        <div className="w-full lg:w-1/2 mb-6 md:mb-0 text-center md:text-left">
           <h2 className="text-4xl font-semibold mb-4">
             &quot;Hey, We&apos;re <span className="text-blue-500">G</span>
             <span className="text-red-500">o</span>

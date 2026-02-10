@@ -33,7 +33,7 @@ export default function WhySeo() {
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
                     viewport={{ once: true }}
-                    className="flex-1 lg:w-1/2 px-8 justify-center items-center lg:px-16 md:mt-10 lg:mt-0"
+                    className="flex-1 lg:w-1/2 px-8 justify-center items-center lg:px-16 mt-8 md:mt-10 lg:mt-0"
                 >
                     <h2 className="text-4xl md:text-6xl font-bold font-inter leading-snug mb-6">
                        Why <span className="text-blue-500">SEO Matters</span>  for Your Business ?

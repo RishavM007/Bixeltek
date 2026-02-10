@@ -8,18 +8,18 @@ import agencyImg from '@/assets/blog-5.jpg'; // replace with your own image
 export default function WhyChooseBixeltek() {
     return (
         <section className="relative md:py-20 bg-black">
-            <div className="flex flex-col-reverse md:flex-row items-center">
+            <div className="flex flex-col-reverse lg:flex-row items-center justify-center w-[90%] lg:w-full mx-auto">
                 
                 {/* LEFT CONTENT */}
-                <div className="px-6 w-full mt-[-200px] md:mt-0 md:w-3/5 md:pl-32 md:pr-12 py-0">
+                <div className="px-6 w-full mt-[-200px] md:mt-5 lg:mt-0 lg:w-3/5 lg:pl-32 lg:pr-12 py-0">
                     {/* Main heading */}
-                    <h2 className="text-3xl md:text-6xl font-inter max-w-3xl text-white font-bold mb-4 leading-snug">
+                    <h2 className="text-3xl md:text-6xl font-inter max-w-2xl xl:max-w-3xl text-white font-bold mb-4 leading-snug">
                         A Google Partner Agency With{" "}
                         <span className=" text-blue-600">4+ Years of Proven Results</span> in Canada
                     </h2>
 
                     {/* Paragraph */}
-                    <p className="text-gray-300 mb-6 font-poppins leading-relaxed max-w-2xl">
+                    <p className="text-gray-300 mb-6 font-poppins leading-relaxed max-w-xl xl:max-w-2xl">
                         We’re not another “do-it-all” agency. We’re a{" "}
                         <span className="font-semibold text-white">Google Partner Certified</span> agency 
                         with over 4 years of experience helping Toronto businesses generate more leads, 
@@ -61,10 +61,10 @@ export default function WhyChooseBixeltek() {
                 </div>
 
                 {/* RIGHT Blue Container */}
-                <div className="relative w-full md:w-2/5 h-[300px] mb-[200px] md:mb-0 md:h-[450px] rounded-l-[40px] bg-transparent md:bg-blue-600 flex justify-start items-center">
-                    <div className="w-full h-full py-6 pl-0 md:pl-12 pr-0 flex justify-center items-center relative">
+                <div className="relative w-full lg:w-2/5 lg:h-[300px] mb-[200px] md:mb-0 md:h-[450px] rounded-l-[40px] bg-transparent lg:bg-blue-600 flex justify-start items-center">
+                    <div className="w-full h-full py-6 px-6 lg:px-0 pl-0 lg:pl-12 pr-0 flex justify-center items-center relative">
                         {/* Image overlapping outside */}
-                        <div className="flex md:absolute md:-left-32 w-[90%] md:w-[90%]">
+                        <div className="flex lg:absolute -left-10 xl:-left-32 w-[90%] md:w-[90%]">
                             <Image
                                 src={agencyImg}
                                 alt="Bixeltek Agency Team"

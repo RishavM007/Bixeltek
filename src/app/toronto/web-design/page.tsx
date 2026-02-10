@@ -33,7 +33,50 @@ import AreasWeServeCanadaTW from '@/components/Toronto/Webdev/TWAreasWeServe'
 import ContactFromNew from '@/components/ContactFormNew'
 import TMWebIndustries from '@/components/Toronto/Webdev/TWSection6';
 import TWFaq from '@/components/Toronto/Webdev/TWFaq'
+import ServicesSection from '@/components/Common/ServicesGrid';
 export default function page() {
+      const services = [
+    {
+      title: "Custom Website Design",
+      description: "We create unique, brand-aligned website designs that build trust, engage visitors, and reflect your company’s personality, ensuring a strong and memorable online presence.",
+      link: "/custom-coded-websites",
+    },
+    {
+      title: "Custom Coded Websites",
+      description: "Develop complex, feature-rich websites using clean, efficient code tailored to your advanced requirements, providing performance, scalability, and full customization for your business needs.",
+      link: "/custom-coded-websites",
+    },
+    {
+      title: "Custom CMS Development",
+      description: "Build fully custom content management systems with WordPress, Next.js, or bespoke platforms, designed to streamline your workflows and give you complete control over website content.",
+      link: "/custom-cms-websites",
+    },
+    {
+      title: "Ecommerce Websites",
+      description: "Create Shopify, WooCommerce, or custom ecommerce websites optimized for sales, providing seamless user experiences, smooth checkout processes, and high conversion rates for online stores.",
+      link: "/ecommerce-websites",
+    },
+    {
+      title: "Payment Gateway Integrations",
+      description: "Integrate secure, reliable payment gateways into your website, enabling smooth online transactions, protecting sensitive data, and offering multiple payment options for your customers.",
+      link: "/payment-gateway-integrations",
+    },
+    {
+      title: "Landing Page Design",
+      description: "Design high-converting landing pages tailored for campaigns, promotions, and PPC ads, crafted to capture leads effectively and maximize marketing ROI for your business.",
+      link: "#",
+    },
+    {
+      title: "Website Redesigns",
+      description: "Modernize outdated websites with fresh designs, improved functionality, and optimized user experience, ensuring your site aligns with current trends and enhances brand credibility.",
+      link: "#",
+    },
+    {
+      title: "Support & Maintenance",
+      description: "Provide ongoing website support including updates, backups, security monitoring, and performance optimization, ensuring your website remains reliable, fast, and secure at all times.",
+      link: "#",
+    },
+  ];
     return (
         <>
             <TWHero />
@@ -42,14 +85,19 @@ export default function page() {
             <SolutionSection />
             <WebDesignToronto2 />
             <WebsiteMattersSection />
-            <WebDesignServicesToronto />
+            <ServicesSection
+            heading='Full-Spectrum '
+            spanText='Web Design & Development Services'
+            description='Different businesses have different needs. That’s why we provide a complete range of web design and development services — from simple landing pages to complex custom builds. Whatever your vision, we deliver websites that scale with your business.'
+            services={services}
+            />
             <TMWebIndustries />
             <ProcessTorontoWebdev />
             <BenefitsSectionWebDesign />
             <AreasWeServeCanadaTW />
             <TWFaq />
             <section
-                className="bg-black p-2 md:p-20 mx-auto flex flex-col justify-center gap-10 items-center md:flex-row"
+                className="bg-black p-8 lg:p-20 mx-auto flex flex-col justify-center gap-10 items-center lg:flex-row"
                 id="form"
             >
                 {/* Left Side - Text & CTAs */}
@@ -68,7 +116,7 @@ export default function page() {
                 </div>
 
                 {/* Right Side - Contact Form */}
-                <div className="w-[87%] lg:mr-32 flex justify-start items-center">
+                <div className="lg:w-[87%] lg:mr-32 flex justify-start items-center">
                     <ContactFromNew />
                 </div>
             </section>

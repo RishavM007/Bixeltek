@@ -52,8 +52,8 @@ export default function ServicesToronto() {
 
       <div>
         {/* Section Heading */}
-        <div className='max-w-[90%] md:max-w-[80%] mx-auto mb-5 text-center'>
-          <h2 className='text-white text-3xl lg:text-6xl max-w-7xl mx-auto font-inter mb-3 font-semibold'>
+        <div className='max-w-[90%] lg:max-w-[80%] mx-auto mb-5 text-center'>
+          <h2 className='text-white text-3xl md:text-6xl max-w-7xl mx-auto font-inter mb-3 font-semibold'>
             Digital Marketing Services That <span className='text-blue-500'>Solve Your Business Challenges</span>
           </h2>
           <p className='text-gray-100 text-base md:text-[17px] tracking-wider mt-4 max-w-4xl mx-auto'>
@@ -62,7 +62,7 @@ export default function ServicesToronto() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 max-w-[75%] mx-auto mt-10 gap-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[90%] lg:max-w-[75%] mx-auto mt-10 gap-0">
           {services.map((service, index) => (
             <div
               key={index}

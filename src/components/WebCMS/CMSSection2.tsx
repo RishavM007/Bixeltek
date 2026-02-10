@@ -132,10 +132,10 @@ By separating the backend (content) from the frontend (experience), we deliver i
               ref={(el) => {
                 if (el) cardsRef.current[index] = el;
               }}
-              className={`stacking__card relative md:w-[85%] w-[95%] mx-auto flex flex-col md:flex-row justify-between items-center rounded-3xl backdrop-blur-sm shadow-2xl p-8 md:p-12 mb-[25vh] border ${gradientClass} transition-transform duration-500 hover:scale-[1.02]`}
+              className={`stacking__card relative lg:w-[85%] w-[95%] mx-auto flex flex-col lg:flex-row justify-between items-center rounded-3xl backdrop-blur-sm shadow-2xl p-8 lg:p-12 mb-[25vh] border ${gradientClass} transition-transform duration-500 hover:scale-[1.02]`}
             >
               {/* Text Section */}
-              <div className="md:w-1/2 space-y-4">
+              <div className="lg:w-1/2 space-y-4">
                 <h2 className="text-2xl md:text-3xl font-medium text-white">
                   {card.title}
                 </h2>

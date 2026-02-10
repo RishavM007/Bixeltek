@@ -15,11 +15,11 @@ export default function AdBudgetSection() {
   ];
 
   return (
-    <section className="bg-black max-w-[95%] md:max-w-[85%] mx-auto py-20 px-6 md:px-20">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-12">
+    <section className="bg-black max-w-[90%] lg:max-w-[85%] mx-auto py-10 md:py-20 px-6 lg:px-20">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
 
         {/* Left Side - Image */}
-        <div className="md:w-1/2 flex justify-center items-center relative w-full h-[400px] md:h-[600px] lg:h-[700px]">
+        <div className="lg:w-1/2 flex justify-center items-center relative w-full h-[400px] md:h-[600px] lg:h-[700px]">
           <Image
             src={adsImg}
             alt="Ad budget issues"
@@ -30,7 +30,7 @@ export default function AdBudgetSection() {
         </div>
 
         {/* Right Side - Text */}
-        <div className="md:w-1/2 flex flex-col justify-center text-white gap-6 ">
+        <div className="lg:w-1/2 flex flex-col justify-center text-white gap-6 ">
           <h2 className="text-4xl md:text-5xl font-bold">
             Why Many Vancouver Businesses <span className="text-blue-500">Waste Ad Budgets</span>
           </h2>
