@@ -45,7 +45,7 @@ const ContactCTASection = ({
       </div>
 
       {/* Right Side - Contact Form */}
-      <div className="lg:w-[87%] lg:mr-32 flex justify-start items-center px-6">
+      <div className="lg:w-[87%] lg:mr-10 flex justify-start items-center px-6">
         <ContactFromNew />
       </div>
     </section>
