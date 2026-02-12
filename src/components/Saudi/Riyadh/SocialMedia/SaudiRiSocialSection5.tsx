@@ -16,10 +16,10 @@ export default function SocialMediaProfitSection() {
   ];
 
   return (
-    <section className="py-20 mt-[-2px] md:mt-0 px-6 md:px-20 bg-white text-black">
-      <div className="max-w-[95%] md:max-w-[85%] mx-auto flex flex-col md:flex-row items-center gap-14">
+    <section className="py-20 mt-[-2px] md:mt-0 px-6 lg:px-20 bg-white text-black">
+      <div className="lg:max-w-[85%] mx-auto flex flex-col lg:flex-row items-center gap-14">
         {/* LEFT SIDE — IMAGE */}
-        <div className="md:w-1/2 w-full flex justify-center">
+        <div className="lg:w-1/2 w-full flex justify-center">
           <div className="relative w-full md:w-[90%] h-[250px] md:h-[450px] rounded-3xl overflow-hidden ">
             <Image
               src={teamImage}
@@ -31,7 +31,7 @@ export default function SocialMediaProfitSection() {
         </div>
 
         {/* RIGHT SIDE — TEXT CONTENT */}
-        <div className="md:w-1/2 w-full space-y-6">
+        <div className="lg:w-1/2 w-full space-y-6">
           <h2 className="text-4xl md:text-5xl font-medium leading-tight">
             Because We Turn{" "}
             <span className="text-blue-500">

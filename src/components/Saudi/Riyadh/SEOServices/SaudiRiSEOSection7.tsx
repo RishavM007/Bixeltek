@@ -16,10 +16,10 @@ export default function SeoSystemsSection() {
   ];
 
   return (
-    <section className="py-20 px-4 md:px-20 bg-black text-white">
-      <div className="max-w-[95%] md:max-w-[85%] mx-auto flex flex-col md:flex-row items-center gap-12">
+    <section className="py-10 lg:py-20 px-6 lg:px-20 bg-black text-white">
+      <div className="lg:max-w-[95%] mx-auto flex flex-col lg:flex-row items-center gap-12">
         {/* LEFT — Image */}
-        <div className="md:w-1/2 w-full">
+        <div className="lg:w-1/2 w-full">
           <Image
             src={seoIllustration}
             alt="SEO Illustration"
@@ -31,8 +31,8 @@ export default function SeoSystemsSection() {
         </div>
 
         {/* RIGHT — Content */}
-        <div className="md:w-1/2 w-full space-y-6">
-          <h2 className="text-4xl md:text-5xl font-bold">
+        <div className="lg:w-1/2 w-full space-y-6">
+          <h2 className="text-3xl md:text-6xl font-bold">
             Because We Build <span className="text-yellow-500">SEO Systems</span> — Not Just Pages.
           </h2>
           <ul className="text-gray-300 space-y-4 leading-relaxed text-lg">

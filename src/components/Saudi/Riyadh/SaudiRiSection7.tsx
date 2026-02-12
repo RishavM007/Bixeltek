@@ -17,8 +17,8 @@ const SustainableGrowth = () => {
   ];
 
   return (
-    <section className="bg-[#fffdf5] text-black py-20">
-      <div className="max-w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
+    <section className="bg-[#fffdf5] text-black py-20 px-6">
+      <div className="lg;max-w-[85%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
         {/* LEFT: IMAGE */}
 
           <div className="overflow-hidden relative h-auto ">
@@ -37,7 +37,7 @@ const SustainableGrowth = () => {
           viewport={{ once: true }}
           className="flex flex-col"
         >
-          <h2 className="text-3xl md:text-5xl font-inter font-semibold leading-tight text-black mb-6">
+          <h2 className="text-3xl md:text-6xl font-inter font-semibold leading-tight text-black mb-6">
             Because <span className="text-yellow-500">Sustainable Growth</span> Requires Systems, Not Guesswork.
           </h2>
 

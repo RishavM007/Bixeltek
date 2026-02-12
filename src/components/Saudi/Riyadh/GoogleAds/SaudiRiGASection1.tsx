@@ -5,10 +5,10 @@ import searchImage from "@/assets/Google-Ads-1.png"; // 🖼️ Replace with you
 
 export default function GoogleAdsOpportunity() {
   return (
-    <section className="bg-[#fffdf5]  text-black py-24 px-6 md:px-20  overflow-hidden">
-      <div className="max-w-[95%] md:max-w-[85%] mx-auto flex flex-col md:flex-row items-center gap-14 md:gap-20 ">
+    <section className="bg-[#fffdf5]  text-black py-24 px-6 lg:px-16  overflow-hidden">
+      <div className="lg:max-w-[95%] mx-auto flex flex-col lg:flex-row items-center gap-14 lg:gap-20 ">
         {/* LEFT SIDE — IMAGE */}
-        <div className="relative w-full md:w-1/2 h-[300px] md:h-[520px] rounded-2xl overflow-hidden ">
+        <div className="relative w-full lg:w-1/2 h-[300px] md:h-[520px] rounded-2xl overflow-hidden ">
           <Image
             src={searchImage}
             alt="Google Ads Dashboard"
@@ -20,8 +20,8 @@ export default function GoogleAdsOpportunity() {
         </div>
 
         {/* RIGHT SIDE — CONTENT */}
-        <div className="w-full md:w-1/2">
-          <h2 className="text-3xl md:text-5xl font-medium leading-tight mb-6 text-black">
+        <div className="w-full lg:w-1/2">
+          <h2 className="text-3xl md:text-6xl font-medium leading-tight mb-6 text-black">
             Because Every Search Is an Opportunity — <span className="text-yellow-500">and Visibility Wins It.</span>
           </h2>
 

@@ -27,7 +27,7 @@ export default function HowItWorks() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-4 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         
         <div className="bg-black/70 border-2 border-blue-600 rounded-2xl p-8 text-center hover:bg-blue-600/10 transition">
           <div className="counter-text text-6xl mb-6">01</div>

@@ -161,7 +161,7 @@ export const ContactSection: React.FC = () => {
                     {/* Left Side: Info */}
 
 
-                    <div className='md:w-[60%] flex items-end justify-end'>
+                    <div className='lg:w-[60%] flex items-end justify-end'>
 
                         <ContactFromNew />
                     </div>

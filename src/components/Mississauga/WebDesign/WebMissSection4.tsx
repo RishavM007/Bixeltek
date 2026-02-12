@@ -37,7 +37,7 @@ export default function BusinessGoalsSection() {
   ];
 
   return (
-    <section className="bg-black text-white py-0 md:py-20 px-8 md:px-20">
+    <section className="bg-black text-white py-0 md:py-20 px-6 lg:px-20">
       <div className="max-w-full mx-auto">
         {/* Heading + Paragraph */}
         <div className="text-center max-w-3xl mx-auto mb-14">

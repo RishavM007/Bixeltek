@@ -26,11 +26,100 @@ import GoogleAdsProcessSection from '@/components/Saudi/EasternProvince/GoogleAd
 import GoogleAdsCampaignTypesSaudi from '@/components/Saudi/EasternProvince/GoogleAds/SaudiEPGASection5'
 import ContactFromNew from '@/components/ContactFormNew'
 import React from 'react'
+import LocationHeroSection from '@/components/Common/location/LocationHeroSection';
+import googleIcon from "@/assets/google-authenticator-svgrepo-com.png";
+import clientIcon from "@/assets/star-shine-svgrepo-com.png";
+import saudiIcon from "@/assets/medal-ribbons-star-svgrepo-com.png";
+import heroBg from '@/assets/glenov-brankovic-flsXgoPoIuY-unsplash.jpg'
+import LocationIndustrySection from '@/components/Common/location/LocationIndustrySection';
+import cleaningcomp from "@/assets/environmental-pollution-industry-exterior-daylight.jpg";
+import pet from "@/assets/muslim-person-travelling-through-city.jpg"
+import roofing from "@/assets/ordinary-life-scene-from-mall-america.jpg"
+import dental from "@/assets/asian-man-reading-text-messages-with-his-colleague-making-phone-call-background.jpg"
+import lawncare from "@/assets/digital marketing for lawn care services.jpg"
+import blackcar from "@/assets/top-view-numerous-cars-traffic-dubai-united-arab-emirates.jpg"
+import healthcare from "@/assets/beautiful-young-female-doctor-looking-camera-office.jpg"
+
+const proofPoints = [
+        { id: 1, text: "Google Partner Certified", icon: googleIcon },
+        { id: 2, text: "90% Client Retention", icon: clientIcon },
+        { id: 3, text: "Proven ROI Systems", icon: saudiIcon },
+    ];
+
+ const industries = [
+                        {
+                            id: "health",
+                            img: healthcare,
+                            label: "Digital Marketing for Healthcare",
+                            text: " Healthcare & Dental Clinics",
+                            description: "Rank for treatments, attract patients, and grow visibility.",
+                        },
+                        {
+                            id: "auto",
+                            img: blackcar,
+                            label: "Construction & Engineering",
+                            text: "Construction & Engineering",
+                            description: " Generate high-intent B2B inquiries from organic traffic.",
+                        },
+                        {
+                            id: "cleaning",
+                            img: cleaningcomp,
+                            label: "Digital Marketing for Industries",
+                            text: " Industrial & Manufacturing Firms ",
+                            description: "Build supplier visibility and trust online.",
+                        },
+                        {
+                            id: "roofing",
+                            img: roofing,
+                            label: "Digital Marketing for Ecommerce",
+                            text: "E-commerce & Retail",
+                            description: "Rank for products and drive consistent conversions.",
+                        },
+                        {
+                            id: "lawncare",
+                            img: pet,
+                            label: "Digital Marketing for Education & Training Institutes",
+                            text: "Education & Training Institutes",
+                            description: "Capture enrollments through search visibility and local maps.",
+                        },
+                        {
+                            id: "dental",
+                            img: dental,
+                            label: "Digital Marketing for Corporate & Consulting Firms",
+                            text: "Corporate & Consulting Firms",
+                            description: "Build credibility and inbound visibility for brand trust.",
+                        },
+                    ]
 
 export default function page() {
     return (
         <>
-            <HeroGAEasternProvince />
+            {/* <HeroGAEasternProvince /> */}
+            <LocationHeroSection
+            ctaTheme='green'
+            heading={
+                <>
+                <span>Google Ads Management in Eastern Province{" "}
+                    <span className="text-yellow-500">That Delivers More Leads, Not Just Clicks</span></span>
+                </>
+            }
+            description='Serving Khobar, Dammam, Jubail and Riyadh in Central Province — Bixeltek helps Saudi businesses turn advertising
+                    budgets into predictable growth with data-driven campaings and strategies.'
+              proofPoints={proofPoints}
+              primaryCTA={{
+                    text: 'Get a Free Campaign Audit',
+                    action: { type: 'openForm', form: 'contact' },
+                }}
+                secondaryCTA={{
+                    text: 'Talk to a Google Ads Expert',
+                    variant: 'secondary',
+                    action: {
+                    type: 'link',
+                    href: 'mailto:zee@bixeltek.com',
+                    },
+                }}
+                backgroundImage={heroBg}      
+            />
             <GoogleAdsAwarenessSection />
             <GoogleAdsStrategySection />
             <GooglePartnerBanner2 />
@@ -39,11 +128,11 @@ export default function page() {
             <SaudiGAEPPillarIndustries />
             <PrecisionPerformanceSection />
             <section
-                className="bg-[#fffdf5] py-20 px-4 md:px-20 flex flex-col md:flex-row items-center gap-10"
+                className="bg-[#fffdf5] py-20 px-6 lg:px-20 flex flex-col lg:flex-row items-center gap-10"
                 id="form"
             >
                 {/* Left Side - Text & CTAs */}
-                <div className="w-full md:w-1/2 flex flex-col justify-start items-start px-6">
+                <div className="w-full lg:w-1/2 flex flex-col justify-start items-start">
                     <h2 className="text-4xl md:text-6xl font-inter font-bold text-black mb-6">
                         Start Running Google Ads That <span className="text-yellow-600">Actually Deliver ROI</span>
                     </h2>
@@ -65,7 +154,7 @@ export default function page() {
                 </div>
 
                 {/* Right Side - Contact Form */}
-                <div className="w-[95%] md:w-[50%] lg:mr-32 flex justify-start items-center">
+                <div className="lg:w-[50%] lg:mr-32 flex justify-start items-center">
                     <ContactFromNew />
                 </div>
             </section>

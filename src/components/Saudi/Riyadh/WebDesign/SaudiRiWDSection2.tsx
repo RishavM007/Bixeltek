@@ -16,10 +16,10 @@ export default function SaudiRiWDSection2() {
   ];
 
   return (
-    <section className="bg-black max-w-[95%] mx-auto md:max-w-[85%] text-white py-20 px-4 md:px-20 flex flex-col md:flex-row items-center gap-16">
+    <section className="bg-black mx-auto lg:max-w-[95%] text-white py-20 px-6 lg:px-20 flex flex-col-reverse lg:flex-row items-center gap-16">
       {/* LEFT SIDE — TEXT */}
-      <div className="w-full md:w-1/2 flex flex-col gap-6">
-        <h2 className="text-3xl md:text-5xl font-medium text-white leading-tight">
+      <div className="w-full lg:w-1/2 flex flex-col gap-6">
+        <h2 className="text-3xl md:text-6xl font-medium text-white leading-tight">
           Beautiful Isn’t Enough —{" "}
           <span className="text-yellow-500">Your Website Has to Perform.</span>
         </h2>
@@ -47,7 +47,7 @@ export default function SaudiRiWDSection2() {
       </div>
 
       {/* RIGHT SIDE — IMAGE */}
-      <div className="relative w-full md:w-1/2 flex justify-center items-start overflow-hidden rounded-[0px] h-[550px]">
+      <div className="relative w-full lg:w-1/2 flex justify-center items-start overflow-hidden rounded-[0px] h-[550px]">
         <motion.div
           className="w-full"
           initial={{ y: 0 }}

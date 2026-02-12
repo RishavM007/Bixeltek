@@ -60,9 +60,9 @@ export default function Counter() {
     
     
   return (
-   <section className="py-10 h-auto md:h-[40vh] max-w-[90%] md:max-w-[85%] mx-auto">
+   <section className="py-10 h-auto lg:h-[40vh] max-w-[95%] lg:max-w-[85%] mx-auto">
                    <div className="flex justify-center items-center">
-                       <div className="relative flex w-full max-w-[85%] ">
+                       <div className="relative flex w-full px-6 md:px-10 lg:px-0">
                            {/* Background Image */}
                            <Image
                                src={dottedbg}

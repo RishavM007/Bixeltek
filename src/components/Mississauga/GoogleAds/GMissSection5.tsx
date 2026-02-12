@@ -83,7 +83,7 @@ const campaigns = [
 export default function GoogleAdsCampaignsCards() {
   return (
     <section className="pt-32 pb-20 bg-black">
-      <div className="max-w-[85%] mx-auto px-6">
+      <div className="lg:max-w-[85%] mx-auto px-6">
         {/* Section Header */}
         <h3 className="text-blue-600 text-sm font-semibold uppercase tracking-wide text-center">
           Google Ads Campaigns Tailored to Your Business Goals

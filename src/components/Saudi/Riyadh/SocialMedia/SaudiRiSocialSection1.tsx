@@ -3,8 +3,8 @@ import leftImage from "@/assets/Instagram-removebg-preview (1).png"; // replace 
 
 export function AudienceSection() {
     return (
-        <section className="bg-white py-16 px-4 md:px-20 flex flex-col md:flex-row items-center gap-10">
-            <div className=" max-w-[95%] md:max-w-[85%] flex flex-col md:flex-row gap-0 justify-center items-center mx-auto">
+        <section className="bg-white py-16 px-6 lg:px-20 flex flex-col lg:flex-row items-center gap-10">
+            <div className=" lg:max-w-[85%] flex flex-col lg:flex-row gap-0 justify-center items-center mx-auto">
                 {/* LEFT SIDE — IMAGE */}
                 <div className="flex-1">
                     <Image
@@ -16,7 +16,7 @@ export function AudienceSection() {
 
                 {/* RIGHT SIDE — CONTENT */}
                 <div className="flex-1 flex flex-col gap-4">
-                    <h2 className="text-3xl md:text-5xl font-medium text-black leading-tight">
+                    <h2 className="text-3xl md:text-6xl font-medium text-black leading-tight">
                         Where the Audience Scrolls, <span className="text-blue-500">Business Happens.</span>
                     </h2>
                     <p className="text-base md:text-lg text-gray-700">

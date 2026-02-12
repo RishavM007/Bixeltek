@@ -128,7 +128,7 @@ export default function ServiceCards() {
           Our Digtal Marketing Services
         </h2>
         <p className="text-white text-base max-w-3xl mx-auto mb-16 text-center"> At Bixeltek, we bring global digital expertise with a local Hyderabad touch. From data-driven advertising and SEO to creative branding and web design, our services are crafted to help Hyderabad businesses scale with confidence.</p>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
           {services.map((service, idx) => (
             <div key={idx} className="bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 inline-block p-[1px] rounded-2xl h-full">

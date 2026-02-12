@@ -145,7 +145,7 @@ const ServicesSectionBangalore = () => {
     };
 
     return (
-        <section className="py-20 px-6 bg-white">
+        <section className="py-16 md:py-20 px-6 bg-white">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <motion.div
@@ -158,10 +158,10 @@ const ServicesSectionBangalore = () => {
                     <h3 className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-4">
                         What We Offer
                     </h3>
-                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                        Complete Digital Marketing Solutions for <br /> <span className="text-blue-500">Bangalore Businesses</span>
+                    <h2 className="text-3xl md:text-6xl font-bold text-gray-900 mb-6">
+                        Complete Digital Marketing Solutions for <br className="hidden md:block" /> <span className="text-blue-500">Bangalore Businesses</span>
                     </h2>
-                    <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                    <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
                         Our in-house teams manage your entire digital ecosystem — from ad strategy and creative content to analytics and automation. We help Bangalore&apos;s forward-thinking brands stay visible, profitable, and positioned ahead of competitors.
                     </p>
                 </motion.div>

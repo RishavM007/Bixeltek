@@ -5,8 +5,8 @@ import aiOverviewImg from "@/assets/SEO Dashboard.png"; // 🖼️ Replace with 
 
 export default function AIFutureProofSection() {
     return (
-        <section className="relative px-0 md:px-20 py-24 bg-black">
-            <div className="max-w-[90%] md:max-w-[85%] mx-auto flex flex-col lg:flex-row-reverse items-center justify-between">
+        <section className="relative px-6 lg:px-20 py-24 bg-black">
+            <div className="lg:max-w-[85%] mx-auto flex flex-col lg:flex-row-reverse items-center justify-between">
                 {/* Right Content */}
                 <div className="lg:w-1/2 flex flex-col items-start space-y-6 text-white">
                     {/* Tagline */}

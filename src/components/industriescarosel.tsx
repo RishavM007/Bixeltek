@@ -50,7 +50,7 @@ export default function CarouselSection(): JSX.Element {
                     Discover the diverse industries we proudly cater to, offering innovative solutions to help you excel in your field.
                 </p>
             </div>
-            <div className="carousel-container lg:pl-[500px] relative w-full overflow-hidden">
+            <div className="carousel-container md:pl-[400px] lg:pl-[500px] relative w-full overflow-hidden">
                 <div
                     className="carousel flex gap-6 px-8 w-max transform transition-transform duration-500"
                     style={{ transform: `translateX(${carouselOffset}px)` }}

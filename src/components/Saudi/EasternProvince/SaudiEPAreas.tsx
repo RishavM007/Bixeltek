@@ -4,8 +4,8 @@ import React from "react";
 
 const EasternProvinceAreasSection = () => {
   return (
-    <section className="bg-black py-20 px-6 md:px-16 lg:px-24">
-      <div className="max-w-[95%] md:max-w-[85%] mx-auto flex flex-col md:flex-row items-center gap-12">
+    <section className="bg-black py-20 px-6 lg:px-16">
+      <div className="lg:max-w-[85%] mx-auto flex flex-col lg:flex-row items-center gap-12">
         {/* LEFT CONTENT */}
         <div className="flex-1">
           <h2 className="text-3xl md:text-6xl font-semibold text-white leading-tight mb-6">

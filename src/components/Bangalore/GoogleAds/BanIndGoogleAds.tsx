@@ -139,7 +139,7 @@ export default function BangaloreGoogleAdsndustries(): JSX.Element {
     return (
         <section className="pt-10 md:pt-10 -mt-2 -mb-2 pb-5 md:pb-20 bg-[#fff] z-10 overflow-hidden">
             <div className="w-full relative text-center text-white pb-10">
-                <h1 className="text-3xl md:text-5xl mx-auto max-w-[90%] md:max-w-full xl:text-6xl font-bold mb-2">
+                <h1 className="text-3xl md:text-6xl mx-auto max-w-[90%] md:max-w-full xl:text-6xl font-bold mb-2">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-black to-blue-500">
                         Industry Use Cases
                     </span>

@@ -143,7 +143,7 @@ const BangaloreWebSolutions = () => {
     };
 
     return (
-        <section className="py-20 px-6 bg-white">
+        <section className="py-16 md:py-20 px-6 bg-white">
             <div className="max-w-7xl mx-auto">
                 {/* Header - Clean Version */}
                 <motion.div
@@ -153,11 +153,11 @@ const BangaloreWebSolutions = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl md:text-6xl font-semibold text-gray-900 mb-6">
+                    <h2 className="text-3xl md:text-6xl font-semibold text-gray-900 mb-6">
                         Custom Web Solutions <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Tailored for Bangalore Businesses</span> 
                     </h2>
 
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                         Bixeltek provides end-to-end design and development services for startups, service providers, and enterprises looking for websites that perform as hard as they look good.
                     </p>
                 </motion.div>

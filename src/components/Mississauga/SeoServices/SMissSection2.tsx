@@ -48,7 +48,7 @@ const WhySEOVisibilityMississauga = () => {
 
       <div className="max-w-full mx-auto flex flex-col lg:flex-row items-center gap-12">
         {/* Left: Issues List */}
-        <div className="flex-1 pl-4 pr-4 md:pl-32 md:pr-16">
+        <div className="flex-1 pl-4 pr-4 lg:pl-32 lg:pr-16">
           <h2 className="text-4xl md:text-6xl font-bold font-inter leading-snug mb-4">
             Why Mississauga Businesses <span className="text-blue-500">Struggle With Online Visibility</span>
           </h2>

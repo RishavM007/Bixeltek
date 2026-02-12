@@ -14,7 +14,7 @@ export default function LocalSEODailyCareSection() {
   ];
 
   return (
-    <section className="w-[90%] md:w-[85%] mx-auto flex flex-col lg:flex-row items-center justify-between py-20 gap-10 md:gap-5">
+    <section className="px-6 lg:w-[85%] mx-auto flex flex-col lg:flex-row items-center justify-between py-20 gap-10 md:gap-5">
       {/* Left - Image */}
       <div className="relative w-full lg:w-1/2 h-[300px] md:h-[560px] rounded-2xl overflow-hidden shadow-lg">
         <Image
@@ -28,7 +28,7 @@ export default function LocalSEODailyCareSection() {
 
       {/* Right - Content */}
       <div className="w-full lg:w-1/2 text-left flex flex-col justify-center">
-        <h2 className="text-3xl md:text-5xl font-medium text-white leading-tight">
+        <h2 className="text-3xl md:text-6xl font-medium text-white leading-tight">
           Your Digital Storefront{" "}
           <span className="text-blue-500">Needs Daily Care</span>
         </h2>

@@ -13,11 +13,11 @@ export default function WhyBusinessesLoseCustomers() {
   ];
 
   return (
-    <section className="flex flex-col md:flex-row items-center bg-black text-white px-8 md:px-20 py-5 md:py-20 gap-10">
+    <section className="flex flex-col lg:flex-row items-center bg-black text-white px-6 lg:px-20 py-5 md:py-20 gap-10">
       
       {/* Left Side - Text */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center space-y-6">
-        <h2 className="text-4xl md:text-6xl font-bold">
+      <div className="w-full lg:w-1/2 flex flex-col justify-center space-y-6">
+        <h2 className="text-3xl md:text-6xl font-bold">
           Why Businesses <span className="text-blue-500">Lose Customers Online</span>
         </h2>
         <p className="text-gray-300 text-lg">
@@ -43,7 +43,7 @@ export default function WhyBusinessesLoseCustomers() {
       </div>
 
       {/* Right Side - Image */}
-      <div className="w-full md:w-1/2 relative">
+      <div className="w-full lg:w-1/2 relative">
         <Image
           src={laptopimage}
           alt="Why Businesses Lose Customers"

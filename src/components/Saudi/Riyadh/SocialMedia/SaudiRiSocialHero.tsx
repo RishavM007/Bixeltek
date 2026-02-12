@@ -27,7 +27,7 @@ export default function HeroRiyadhSocial() {
 
     return (
         <>
-        <section className="relative flex flex-col pb-20 items-center justify-center h-[150vh] md:h-[110vh] text-center px-6 overflow-hidden">
+        <section className="relative flex flex-col pb-20 items-center justify-center h-[150vh] lg:h-[110vh] text-center px-6 overflow-hidden">
             {/* Background Image */}
             <Image
                 src={heroBg}

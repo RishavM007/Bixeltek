@@ -78,10 +78,10 @@ const MarketingEngines = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-6xl font-semibold text-gray-900 mb-6">
            <span className="text-blue-500">We Don&apos;t Just Run Ads</span>  We Build Scalable Marketing Engines.
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Bixeltek approaches marketing like infrastructure — engineered,
             measurable, and continually optimized.
           </p>

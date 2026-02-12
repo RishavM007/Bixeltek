@@ -41,7 +41,7 @@ export default function SaudiEPWhyChooseBixeltek() {
       };
 
     return (
-        <section className="bg-black py-20 px-6 md:px-20 text-center">
+        <section className="bg-black py-20 px-6 lg:px-20 text-center">
             {/* Small Label */}
             <p className="text-gray-100 uppercase tracking-wide font-medium mb-4">
                 Why Businesses Choose Bixeltek

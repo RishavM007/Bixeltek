@@ -7,11 +7,11 @@ import { Check } from 'lucide-react'; // ✅ replace with your actual image
 
 export default function GoogleAdsStrategySection() {
     return (
-        <section className="relative pb-10 md:pb-0 -mt-2 md:py-20 px-6 md:px-20 bg-[#fffdf5] overflow-hidden">
-            <div className="flex max-w-[95%] md:max-w-[90%] mx-auto flex-col-reverse md:flex-row items-center md:gap-10">
+        <section className="relative pb-10 lg:pb-0 -mt-2 lg:py-20 px-6 lg:px-20 bg-[#fffdf5] overflow-hidden">
+            <div className="flex lg:max-w-[85%] mx-auto flex-col-reverse lg:flex-row items-center md:gap-10">
 
                 {/* ✅ Left Content */}
-                <div className="w-full md:w-1/2 font-semibold text-left">
+                <div className="w-full lg:w-1/2 font-semibold text-left">
                     {/* Heading */}
                     <h2 className="text-3xl md:text-5xl font-inter font-semibold mb-6 leading-snug text-black">
                         Your Ads Aren’t the Problem.{" "}
@@ -67,7 +67,7 @@ export default function GoogleAdsStrategySection() {
                 </div>
 
                 {/* ✅ Right Image */}
-                <div className="relative w-full md:w-1/2 h-[400px] md:h-[700px] flex justify-center items-center">
+                <div className="relative w-full lg:w-1/2 h-[400px] md:h-[700px] flex justify-center items-center">
                     <Image
                         src={bgImg}
                         alt="Google Ads Optimization"

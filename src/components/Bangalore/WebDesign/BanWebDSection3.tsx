@@ -141,7 +141,7 @@ const WebDevelopmentProcessCards = () => {
     };
 
     return (
-        <section className="py-20 px-6 bg-white">
+        <section className="py-16 md:py-20 px-6 bg-white">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <motion.div
@@ -151,10 +151,10 @@ const WebDevelopmentProcessCards = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    <h2 className="text-3xl md:text-6xl font-bold text-gray-900 mb-6">
                         We Don&apos;t Just Build Websites. We Build <span className="text-purple-600">Growth Systems</span>.
                     </h2>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                         Our process ensures every site we create performs flawlessly across devices and contributes to measurable business outcomes.
                     </p>
                 </motion.div>

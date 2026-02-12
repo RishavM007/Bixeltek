@@ -35,6 +35,15 @@ import section2img3 from '@/assets/Landscap.jpg'
 import GooglePartner from '@/sections/GooglePartner'
 import img2 from "@/assets/Reflect ✦ MaxiBestOf.jpg";
 import ShowcaseSection from '@/components/Showcase';
+import WDChallenges from '@/components/Hyderabad/WebDesign/WDChallenges';
+import WDStats from '@/components/Hyderabad/WebDesign/WDStats';
+import WDCTA1 from '@/components/Hyderabad/WebDesign/WDCTA1';
+import WDPartner from '@/components/Hyderabad/WebDesign/WDPartner';
+import WDWhyChooseUs from '@/components/Hyderabad/WebDesign/WDWhyChooseUs';
+import WDCTA2 from '@/components/Hyderabad/WebDesign/WDCTA2';
+import WDLocations from '@/components/Hyderabad/WebDesign/WDLocations';
+import WDIndustries from '@/components/Hyderabad/WebDesign/WDIndustries';
+import WDContact from '@/components/Hyderabad/WebDesign/WDContact';
 
 export default function WebDevAd() {
     const features = [
@@ -177,192 +186,10 @@ export default function WebDevAd() {
     return (
         <>
             <WebDevHero />
+            <WDChallenges/>
             {/* <WebdevCar/> */}
-            <section className="bg-transparent px-8 pt-32 pb-14 text-black">
-                <div className="max-w-7xl mx-auto">
-                    <div className="grid md:grid-cols-2 gap-10 items-start mb-16">
-                        {/* Text Content */}
-                        <div>
-                            <h2 className="text-3xl font-inter md:text-5xl font-bold  leading-tight mb-4">
-                                What’s Wrong With Most <span className="text-purple-600">Business Websites</span> in Hyderabad
-                            </h2>
-                            <p className="text-gray-800 text-base mb-4">
-                                Most websites fail for one simple reason: they aren’t designed to solve business problems. They look decent on a desktop but break on mobile. They have flashy visuals but no clear call to action. And worse, they don’t show up on Google — even when people are searching for the exact service you offer.
-                            </p>
-                            <p className="text-gray-800 text-base mb-4">
-                                If this sounds like your website, you’re not alone. We’ve worked with dozens of business owners across Hyderabad who were frustrated that their website wasn’t doing its job. They were spending money on ads and not getting leads. Losing customers to competitors with better search rankings. And watching visitors land on their site, only to leave without taking any action.
-
-                            </p>
-                            <p className="text-gray-800 text-base">
-                                These are not design problems — they are growth problems. And that’s exactly what Bixeltek solves.
-                            </p>
-                        </div>
-
-                        {/* Image Placeholder */}
-                        <div className="w-full h-full flex items-center justify-center">
-                            <Image src={section2img2} alt='laptop' className='w-full h-auto object-cover rounded-xl' />
-                            {/* Replace with your actual image */}
-
-                        </div>
-                    </div>
-
-                    <div className="grid md:grid-cols-3 gap-10 mt-12 border-t pt-10">
-                        {/* Card 1 */}
-                        <div className="flex items-start gap-10">
-                            <div className="bg-blue-100 text-blue-600 p-3 rounded-xl">
-                                <MdDevices className="text-3xl" />
-
-                            </div>
-                            <div>
-                                <h3 className="text-5xl font-sofiasanscondensed font-bold text-purple-600 mb-2">100%</h3>
-                                <p className="text-lg font-semibold text-black mb-3">High-Performance Websites</p>
-                                <p className="text-gray-500 text-sm">
-                                    All our custom websites are built from scratch with zero templates, delivering lightning-fast load speeds, 100% mobile responsiveness, and optimal Core Web Vitals scores.
-                                </p>
-                            </div>
-                        </div>
-
-                        {/* Card 2 */}
-                        <div className="flex items-start gap-9">
-                            <div className="bg-green-100 text-green-600 p-3 rounded-xl">
-                                <MdTrendingUp className="text-3xl" />
-                            </div>
-                            <div>
-                                <h3 className="text-5xl font-sofiasanscondensed font-bold text-purple-600 mb-2">120%+</h3>
-                                <p className="text-lg font-semibold text-black mb-3">SEO-Optimized Architecture</p>
-                                <p className="text-gray-500 text-sm">
-                                    Our SEO-first web development approach increases organic traffic and search rankings—clients report up to 200% boost in visibility within the first 3 months of launch.
-                                </p>
-                            </div>
-                        </div>
-
-                        {/* Card 3 */}
-                        <div className="flex items-start gap-10">
-                            <div className="bg-yellow-100 text-yellow-600 p-3 rounded-xl">
-                                <Factory className="text-3xl" />
-                            </div>
-                            <div>
-                                <h3 className="text-5xl font-sofiasanscondensed font-bold text-purple-600 mb-2">15+</h3>
-                                <p className="text-lg font-semibold text-black mb-3">Years of Industry Expertise</p>
-                                <p className="text-gray-500 text-sm">
-                                    Since 2009, Our founders have empowered 150+ brands globally through performance-driven websites, ongoing maintenance, and conversion-optimized user experiences.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-            
-            <section className="bg-white pt-20 px-4 lg:px-20">
-                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
-                    {/* Left stacked cards */}
-                    {/* <div className="relative flex flex-col items-start justify-center -space-y-10">
-                        {[0, 1, 2].map((i) => (
-                            <div
-                                key={i}
-                                style={{
-                                    transform: `translate(${i * 150}px, ${i * 10}px)`
-                                }}
-                                className="relative z-10 p-10 rounded-xl  bg-white border border-gray-400 w-72"
-                            >
-                                <div className="text-sm text-yellow-600 font-medium mb-1">0{i + 1} Step</div>
-                                <div className="text-2xl font-sofiasanscondensed font-semibold text-gray-900">
-                                    {['Initial Consultation', 'Data Analysis', 'Strategy Development'][i]}
-                                </div>
-                                <p className="mt-2 text-sm text-gray-600">
-                                    {[
-                                        'Introduction between consultant and the client. Understand the client’s financial situation.',
-                                        'Analyze cash flow, expenses, debts, assets, liabilities, and financial ratios. Identify potential risks.',
-                                        'Work with the client to set short-term and long-term financial goals, retirement planning, debt.'
-                                    ][i]}
-                                </p>
-                            </div>
-                        ))}
-
-                    </div> */}
-                    <StepCards />
-
-                    {/* Right Problem Cards */}
-                    <div className="max-w-5xl mx-auto px-4">
-                        <h2 className="text-4xl md:text-4xl lg:text-5xl font-semibold font-inter leading-tight mb-4">
-                            Common Problems with Website Design in Hyderabad
-                        </h2>
-                        <h3 className='text-xl md:text-xl font-semibold font-inter mt-4 mb-5'>
-                            Why Most Websites in Hyderabad Don’t Generate Leads
-                        </h3>
-                        <div className="divide-y divide-gray-200 border-b border-gray-200 rounded-lg overflow-hidden">
-                            {problems.map((problem, index) => (
-                                <div
-                                    key={index}
-                                    className="flex items-start space-x-4 py-6 pr-5 bg-white hover:bg-gray-50 transition"
-                                >
-                                    <div className="mt-1">{problem.icon}</div>
-                                    <div>
-                                        <h4 className="text-lg font-semibold text-gray-800">{problem.title}</h4>
-                                        <p className="text-gray-600 text-sm mt-1">{problem.desc}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="bg-gradient-to-r from-white to-purple-50 py-6 md:py-16 px-6 md:px-0">
-                <div className=" w-full mx-auto flex flex-col md:flex-row justify-between gap-5 md:gap-20 items-center">
-                    {/* Left Image with Blue Background */}
-                    <div className="relative w-full md:w-1/3 h-80vh bg-transparent md:bg-purple-100 rounded-r-3xl overflow-visible flex items-center justify-center p-6 md:p-12">
-                        <Image src={hyderabad} alt='' className='h-[400px] object-cover translate-x-0 md:translate-x-52 rounded-2xl'></Image>
-                    </div>
-                    {/* Right Content */}
-                    <div className='w-full md:w-2/3 py-20 px-2 md:px-40'>
-                        {/* <p className="text-purple-600 text-sm font-semibold uppercase mb-3">Why Choose Us</p> */}
-                        <h2 className="text-4xl md:text-4xl lg:text-5xl font-semibold font-inter leading-tight mb-4">
-                            Custom Websites Tailored for <br />
-                            <span className="underline decoration-purple-600 underline-offset-4">Hyderabad’s Top Industries</span>
-                        </h2>
-
-                        <p className="text-gray-700 text-base mb-6 mt-7">
-                            Hyderabad is diverse — tech startups in Gachibowli, dental clinics in Jubilee Hills, cloud kitchens in Madhapur, and NGOs in Secunderabad. Each has a different buyer persona, different brand story, and different online behavior.
-                            <br /><span className='italic font-semibold'>That’s why we never use templates. We tailor each site to the exact needs of your industry.</span>
-                        </p>
-
-                        {/* <div className="flex gap-4 mb-6 flex-wrap">
-                            <button className="bg-purple-600 text-white text-sm px-5 py-2.5 rounded-full font-semibold shadow hover:bg-purple-700 transition">
-                                Data Analysis
-                            </button>
-                            <button className="border border-gray-300 text-sm px-5 py-2.5 rounded-full font-medium text-gray-800 hover:bg-gray-100 transition">
-                                Mission & Vision
-                            </button>
-                        </div> */}
-
-                        <p className="text-gray-700 text-base mb-4">
-                            If you run a dental clinic, we’ll showcase services, before-after cases, and Google reviews. If you’re in ecommerce, we’ll focus on fast product discovery, secure payment integration, and mobile UX. If you’re a local service provider, we’ll build trust, highlight service zones, and make it easy to call or WhatsApp instantly.
-
-                        </p>
-                        <p className="text-gray-700 text-base mb-6">
-                            We serve businesses across healthcare, education, ecommerce, real estate, consulting, home services, restaurants, non-profits, and more.
-                        </p>
-                        <div className='flex flex-row gap-6'>
-                            <Link href={'#form'}>
-                                <button className="inline-flex items-center gap-2 bg-purple-600 text-white px-5 py-3 rounded-full font-semibold hover:bg-purple-700 transition text-sm">
-                                    Get in Touch <ArrowUpRight className="w-4 h-4" />
-                                </button>
-                            </Link>
-
-                            <Link href={'tel:+919100032301'}>
-                                <button className="inline-flex items-center gap-2 bg-white text-purple-500 px-5 py-3 rounded-full border border-purple-500 font-semibold hover:bg-purple-700 hover:text-white transition text-sm">
-                                    Call Us <ArrowUpRight className="w-4 h-4" />
-                                </button>
-                            </Link>
-
-
-                        </div>
-
-                    </div>
-                </div>
-            </section>
+            <WDStats problems={problems}/>
+            <WDCTA1/>
             {/* <section className="relative bg-gradient-to-r to-[#5F54D3] from-purple-500 pt-16 pb-16 px-6 md:px-16 text-white overflow-hidden">
                 
                 <Image
@@ -422,89 +249,10 @@ export default function WebDevAd() {
                     </div>
                 </div>
             </section> */}
-            <section className="pt-14 pb-0 md:pb-24 px-6 md:px-16 bg-white text-center">
-                <p className="text-sm text-purple-500 font-semibold uppercase mb-2">WHAT YOU GET</p>
-                <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-4 max-w-6xl mx-auto">
-                    Everything You Get with Our Web Design Services in Hyderabad
-                </h2>
-                <p className="text-gray-700 text-base mb-6 mt-7 mx-auto max-w-3xl">
-                    When you partner with Bixeltek, you’re not just getting a design — you’re getting a full-stack growth-ready website. Every project includes:
-                </p>
-
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 max-w-7xl mx-auto">
-                    {features.map((feature, index) => (
-                        <div
-                            key={index}
-                            className="flex items-start gap-4 p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition bg-white"
-                        >
-                            <div className={`rounded-full p-3 ${feature.bg} shrink-0`}>
-                                {feature.icon}
-                            </div>
-                            <div className="text-left">
-                                <h3 className="font-semibold text-2xl font-sofiasanscondensed text-gray-900 mb-1">{feature.title}</h3>
-                                <p className="text-gray-700 text-sm font-poppins">{feature.desc}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-
-                <p className="text-gray-500 text-sm mt-12 max-w-3xl mx-auto">
-                    Every project is managed by an experienced team, small projects are delivered in 2 weeks, and starts from just ₹30,000 — no hidden charges, no unnecessary upsells.
-                </p>
-            </section>
+            <WDPartner features={features}/>
             <ServicesSection />
-            
-            <section className="pt-48 pb-16 bg-white">
-                <div className="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-                    {/* Left: Image with overlay chart */}
-                    <div className="relative">
-                        <div className="rounded-2xl overflow-hidden">
-                            <Image
-                                src={img2}
-                                alt="Team working"
-                                className="w-full object-cover "
-                            />
-
-                        </div>
-                        {/* Chart or overlay image */}
-
-                    </div>
-
-                    {/* Right: Text Content */}
-                    <div>
-                        <p className="text-sm text-purple-600 font-semibold uppercase tracking-wider mb-2">
-                            Why Choose Us
-                        </p>
-                        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-                            Why Bixeltek is the
-                            <span className="text-purple-600"> Best Web Design Agency </span>in Hyderabad
-                        </h2>
-                        <p className="text-gray-600 mb-6 leading-relaxed">
-                            Bixeltek isn’t a freelancer network. We’re a full-service digital marketing agency with in-house designers, developers, SEO specialists, and strategists — all under one roof. We’re Google Partner Certified, and we’ve helped 100+ businesses across India, Canada, the US, and the Middle East scale online.
-                        </p>
-                        <p className="text-gray-600 mb-6 leading-relaxed">
-                            Unlike others, we don’t start with color palettes or “inspiration sites.” We start with your business problems. Your goals. Your audience behavior. Then we design backward — using data, not guesses — to build a site that actually performs.
-                        </p>
-                        <p className="text-gray-600 leading-relaxed">
-                            We understand what Hyderabad businesses need. We’re based here. We’ve worked with clients in your lanes. And we’re ready to help you win online.
-                        </p>
-                        <div className="flex flex-wrap gap-4 mt-10">
-                            <Link href="tel:+919100032301">
-                                <button className="px-6 py-3 border border-black bg-white text-black rounded-md hover:bg-white hover:text-black hover:border-black hover:ring-1 transition">
-                                    Get A Quote
-                                </button>
-                            </Link>
-
-                            <Link href="#form" >
-                                <button className="px-6 py-3 border-white bg-black text-white  hover:bg-white hover:text-black hover:border-black hover:ring-1 transition rounded-md hover:bg-transparent  hover:border ">
-                                    Book a Free Consultation
-                                </button>
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+             <WDWhyChooseUs/>   
+             <WDCTA2/>   
             {/* 
             <section className="bg-[white] text-black py-20 px-4">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -621,168 +369,13 @@ export default function WebDevAd() {
                     </div>
                 </div>
             </section> */}
-            <section className=' hidden md:flex md:flex-col md:justify-center md:items-center max-w-7xl mt-36 mb-36 mx-auto'>
-                <h2 className='text-4xl md:text-6xl font-bold text-gray-900 text-center mb-10'>Responsive webdesign layout <br /> for every device</h2>
-
-                <button className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block">
-                    <span className="absolute inset-0 overflow-hidden rounded-full">
-                        <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                    </span>
-                    <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 ">
-                        <span className="text-base">
-                            Get A Responsive Website
-                        </span>
-                        <svg
-                            fill="none"
-                            height="16"
-                            viewBox="0 0 24 24"
-                            width="16"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M10.75 8.75L14.25 12L10.75 15.25"
-                                stroke="currentColor"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="1.5"
-                            />
-                        </svg>
-                    </div>
-                    <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40" />
-                </button>
-
-                <Image src={techimg} alt='techimg'></Image>
-            </section>
-
-            <div className="w-full px-4 py-10 md:px-16 bg-white">
-                <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 md:gap-20 items-center">
-
-                    {/* Left: Google Map */}
-                    <div className="w-full md:w-1/2 h-[450px] rounded-3xl overflow-hidden shadow-md">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4685.653616836566!2d78.39224697516438!3d17.362613883520346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x801d7036c2b29689%3A0x147a268620903039!2sBixeltek%20-%20A%20Google%20Partner%20Agency%20%7C%20Digital%20Marketing%20Agency!5e1!3m2!1sen!2sin!4v1754213095413!5m2!1sen!2sin"
-                            width="100%"
-                            height="100%"
-                            style={{ border: 0 }}
-                            allowFullScreen
-                            loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                        ></iframe>
-                    </div>
-
-                    {/* Right: Areas We Serve */}
-                    <div className="w-full md:w-1/2 space-y-4">
-                        <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-4">Supporting Local Brands Across Hyderabad’s Key Areas</h2>
-                        <p className="text-gray-900 font-poppins text-lg leading-relaxed">
-                            We proudly serve clients across:
-                        </p>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-6">
-                            {locations.map((location, index) => (
-                                <div key={index} className="flex items-center gap-3">
-                                    <MapPin className="text-purple-600 w-5 h-5 shrink-0" />
-                                    <span className="text-gray-700">{location}</span>
-                                </div>
-                            ))}
-                        </div>
-                        <p className="text-gray-800 mt-2 font-poppins text-lg">
-                            We also work remotely with clients across India, the US, Canada, Saudi Arabia, and the UAE.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
+            <WDLocations locations={locations}/>
             <Tech2 />
-            <section className='w-full flex  flex-wrap sm:max-w-[90%] md:max-w-[85%] mx-auto lg:flex-nowrap overflow-y-hidden items-center justify-center py-20 gap-10'>
-                {/* Left Content Section */}
-                <div className='w-full lg:w-1/2 px-1 md:px-6 py-10 lg:py-14'>
-                    <h2 className="text-4xl md:text-5xl font-semibold font-sofiasanscondensed text-black">
-                        Building High Converting Websites Across <span className='text-purple-500'>Diverse Industries</span>
-                    </h2>
-                    <p className="mt-4 text-sm md:text-lg text-gray-900">
-                        Our web design expertise spans multiple industries, helping businesses achieve higher conversion rates through stragically designed websites conpatible for SEO, Google Ads and Meta Marketing. From technology and finance to healthcare and retail, we empower brands with actionable insights
-                        and cutting-edge digital solutions.
-                    </p>
-                    <p className="mt-2 text-sm md:text-lg text-gray-900">
-                        Explore how our beautifully crafted websites deliver success by increasing engagement rate, by delivering more conversions, leads, sales and brand visibility
-                        in a competitive landscape.
-                    </p>
-                    <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-5">
-                        {industries.map((industry, index) => (
-                            <div key={index} className="flex items-center text-lg text-black">
-                                <span className="text-black text-xl inline-block  mr-3">{industry.icon}</span>
-                                <h2 className='font-poppins text-sm'>Web design services for {industry.name}</h2>
-                            </div>
-                        ))}
-                    </div>
-                    <div className="flex flex-wrap gap-4 mt-10">
-                        <Link href="tel:+919100032301" target="_blank">
-                            <button className="px-6 py-3 border border-white bg-black text-white rounded-md hover:bg-white hover:text-black hover:border-black hover:ring-1 transition">
-                                Get A Custom Website
-                            </button>
-                        </Link>
-
-                        <Link href="#form" target="_blank">
-                            <button className="px-6 py-3 border-white bg-black text-white  hover:bg-white hover:text-black hover:border-black hover:ring-1 transition rounded-md hover:bg-transparent  hover:border ">
-                                Book a Free Consultation
-                            </button>
-                        </Link>
-                    </div>
-
-                </div>
-                <div className="flex w-full lg:w-2/5 items-center justify-center gap-4 p-2 md:p-1">
-                    <div className='w-1/3 flex flex-col  items-center justify-center gap-3'>
-                        <Image src={healthcare} alt='healthcare' className='rounded-xl'></Image>
-                        <Image src={oil} alt='oil' className='rounded-xl'></Image>
-                    </div>
-                    <div className='w-1/3 flex flex-col gap-3'>
-                        <Image src={roofing} alt='roofind' className='rounded-xl'></Image>
-                        <Image src={pet} alt='pet' className='rounded-xl'></Image>
-                        <Image src={school} alt='dental' className='rounded-xl'></Image>
-                    </div>
-                    <div className='w-1/3 flex flex-col justify-center gap-3'>
-                        <Image src={lawncare} alt='lawncare' className='rounded-xl'></Image>
-                        <Image src={blackcar} alt='automobiles' className='rounded-xl'></Image>
-                    </div>
-                </div>
-            </section>
+            <WDIndustries industries={industries}/>
             {/* <CaseStudies /> */}
             <LogoGrid />
             <DarkFaqSection faqs={faqs} />
-            <section className='bg-black p-2 md:p-20 mx-auto flex flex-col justify-center gap-10 items-center md:flex-row ' id='form'>
-                <div className="w-full mt-14 md:mt-0 flex justify-center items-center px-6">
-                    <div className="space-y-5 text-white max-w-xl ">
-                        <h2 className="text-4xl md:text-5xl font-sofiasanscondensed font-bold">
-                            Ready to Work with
-                            <span className='text-purple-500'> Hyderabad&apos;s Leading Web Design</span> Company?
-                        </h2>
-                        <p className="text-white font-poppins text-base leading-relaxed">
-                            Your current website might be costing you leads, visibility, and money every single day. Let’s change that.
-                        </p>
-                        <p className="text-white font-poppins text-base leading-relaxed">
-                            Book a free 30-minute strategy call with our Hyderabad-based team. We’ll audit your current website, identify what’s holding you back, and show you how we can fix it — fast.
-                        </p>
-                        <p className="text-white font-poppins text-base leading-relaxed">
-                            Whether you&apos;re looking to rebuild your online presence or launch a new business with a strong digital foundation, <span className="font-semibold">Bixeltek</span> is your trusted web design partner in Hyderabad.
-                        </p>
-
-                        <div className="space-y-3 pt-3">
-                            <Link href={'tel:+919100032301'}>
-                                <div className="flex items-center gap-2">
-                                    <PhoneCall size={20} />
-                                    <span className="text-white text-lg">Call: +91-9100032301</span>
-                                </div>
-                            </Link>           
-                        </div>
-                        <p className="text-sm text-gray-200 pt-3">
-                            Starting at ₹30,000 | Delivered in 7–15 Days | Built for SEO, Ads, and Conversions
-                        </p>
-                    </div>
-                </div>
-                <div className='w-full flex justify-center items-center' >
-                    <ContactFromNew />
-                </div>
-            </section>
-
+            <WDContact/>
         </>
     )
 }

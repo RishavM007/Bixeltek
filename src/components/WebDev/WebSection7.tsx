@@ -8,10 +8,10 @@ import googleanalytics from '@/assets/4202007_analytics_google_logo_social_socia
 export default function WebSection7() {
     return (
         <>
-            <section className=" relative pt-20 pb-10 md:pb-20">
+            <section className=" relative pt-20 pb-10 md:pb-20 px-6">
                  <div className="absolute -bottom-56 -left-20 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
                 <div className="flex flex-col items-center gap-3">
-                    <h2 className="text-4xl max-w-6xl mx-auto md:text-6xl font-semibold text-center text-white font-inter">
+                    <h2 className="text-3xl max-w-6xl mx-auto md:text-6xl font-semibold text-center text-white font-inter">
                         A Website Alone{" "}
                         <span className="text-blue-500">Won’t Get You Sales</span>
                     </h2>

@@ -15,10 +15,10 @@ export default function SocialMediaBranding() {
   ];
 
   return (
-    <section className="py-16 bg-black flex flex-col md:flex-row items-center max-w-[95%] md:max-w-[85%] mx-auto gap-10">
+    <section className="py-16 bg-black flex flex-col lg:flex-row items-center px-6 lg:max-w-[85%] mx-auto gap-10">
       
       {/* Left Image */}
-      <div className="w-full md:w-1/2 relative flex justify-center items-center">
+      <div className="w-full lg:w-1/2 relative flex justify-center items-center">
         <Image
           src={socialMediaImg}
           alt="Social Media Branding"
@@ -28,7 +28,7 @@ export default function SocialMediaBranding() {
       </div>
 
       {/* Right Content */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center px-4 md:px-0">
+      <div className="w-full lg:w-1/2 flex flex-col justify-center">
         <h2 className="text-3xl md:text-5xl font-inter font-semibold text-white mb-6 leading-snug">
           Because We Don’t Just Manage Accounts <span className="text-yellow-500">We Build Brands.</span>
           

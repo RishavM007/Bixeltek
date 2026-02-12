@@ -17,13 +17,13 @@ export default function WhySEOMississauga() {
                     whileInView={{ x: 0, opacity: 1, scale: 1 }}
                     transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                     viewport={{ once: true }}
-                    className="flex-1 relative w-full lg:w-1/2 h-[400px] md:h-[500px] lg:h-[620px]"
+                    className="lg:flex-1 relative w-full lg:w-1/2 h-[400px] md:h-[500px] lg:h-[620px]"
                 >
                     <Image
                         src={dashboardImg}
                         alt="SEO Dashboard Mississauga"
                         fill
-                        className="object-contain object-left rounded-r-2xl shadow-2xl"
+                        className="object-contain lg:object-left rounded-r-2xl shadow-2xl"
                         priority
                     />
                 </motion.div>

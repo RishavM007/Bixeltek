@@ -6,10 +6,10 @@ import seoImage from "@/assets/KSA-and-Cisco_1200x675.jpg"; // replace with your
 
 export default function FutureSEOSection() {
   return (
-    <section className="flex flex-col bg-[#fffdf5] md:flex-row items-center justify-center  py-16 gap-10">
-      <div className="mx-auto max-w-[90%] md:max-w-[85%] flex flex-col bg-[#fffdf5] md:flex-row items-center justify-center gap-20">
+    <section className="flex flex-col bg-[#fffdf5] lg:flex-row items-center justify-center px-6  py-14 gap-10">
+      <div className="mx-auto lg:max-w-[85%] flex flex-col bg-[#fffdf5] lg:flex-row items-center justify-center gap-20">
         {/* LEFT IMAGE */}
-        <div className="w-full relative md:w-1/2">
+        <div className="w-full relative lg:w-1/2">
           <Image
             src={seoImage}
             alt="AI-powered SEO strategy"
@@ -19,7 +19,7 @@ export default function FutureSEOSection() {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="w-full md:w-1/2 flex flex-col gap-6">
+        <div className="w-full lg:w-1/2 flex flex-col gap-6">
           <h2 className="text-3xl md:text-5xl font-medium text-black leading-snug">
             Because We Don’t Do SEO the Old Way — <span className="text-yellow-500">We Build for the Future.</span>
           </h2>

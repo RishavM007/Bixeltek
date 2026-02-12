@@ -45,9 +45,9 @@ export default function WebDesignScienceSection() {
 
   return (
     <section className="relative py-20 bg-black text-white overflow-hidden">
-      <div className="max-w-[95%] md:max-w-[75%] mx-auto text-center">
+      <div className="px-6 lg:max-w-[75%] mx-auto text-center">
         {/* ✅ Heading */}
-        <h2 className="text-3xl md:text-5xl font-semibold mb-6 leading-tight">
+        <h2 className="text-3xl md:text-6xl font-semibold mb-6 leading-tight">
           We Build Websites That Combine <span className="text-yellow-500">Design, SEO, and Psychology.</span>
         </h2>
 

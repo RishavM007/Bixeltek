@@ -26,7 +26,7 @@ export default function UnderstandingWhySection() {
   ];
 
   return (
-    <section className="w-[90%] md:w-[85%] mx-auto flex flex-col lg:flex-row-reverse items-center justify-between py-20 gap-10 md:gap-16">
+    <section className="px-6 lg:w-[85%] mx-auto flex flex-col lg:flex-row-reverse items-center justify-between py-20 gap-10 md:gap-16">
       {/* RIGHT - IMAGE */}
       <div className="relative w-full lg:w-1/2 h-[300px] md:h-[430px] rounded-2xl overflow-hidden shadow-lg">
         <Image
@@ -40,7 +40,7 @@ export default function UnderstandingWhySection() {
 
       {/* LEFT - CONTENT */}
       <div className="w-full lg:w-1/2 text-left flex flex-col justify-center">
-        <h2 className="text-3xl md:text-5xl font-medium text-white leading-tight">
+        <h2 className="text-3xl md:text-6xl font-medium text-white leading-tight">
           <span className="text-blue-500">Understanding Why</span> Before What
         </h2>
 

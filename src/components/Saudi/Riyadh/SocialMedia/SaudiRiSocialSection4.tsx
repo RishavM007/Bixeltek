@@ -57,7 +57,7 @@ const SocialMediaCards = () => {
     const toggleContactForm = () => setIsVisible((prev) => !prev);
   return (
     <>
-    <section className="bg-white text-black py-20 px-6 md:px-16 text-center">
+    <section className="bg-white text-black py-20 px-6 lg:px-16 text-center">
       {/* Heading */}
       <h2 className="text-3xl md:text-6xl font-semibold mb-6 leading-tight">
         We Don’t Just Manage Accounts <br />

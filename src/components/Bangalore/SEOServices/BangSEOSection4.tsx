@@ -15,9 +15,9 @@ const SEOWhatYouGetSection = () => {
   ];
 
   return (
-    <section className="w-[95%] md:w-[85%] mx-auto py-24 flex flex-col md:flex-row-reverse items-center justify-between gap-12 md:gap-20">
+    <section className="px-6 lg:w-[85%] mx-auto py-10 md:py-24 flex flex-col lg:flex-row-reverse items-center justify-between gap-12 md:gap-20">
       {/* RIGHT — Image */}
-      <div className="relative w-full md:w-1/2 h-[320px] md:h-[520px] rounded-2xl overflow-hidden ">
+      <div className="relative w-full lg:w-1/2 h-[320px] md:h-[520px] rounded-2xl overflow-hidden ">
         <Image
           src={seoBenefitsImg}
           alt="SEO performance metrics dashboard"
@@ -28,9 +28,9 @@ const SEOWhatYouGetSection = () => {
       </div>
 
       {/* LEFT — Content */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center text-left">
+      <div className="w-full lg:w-1/2 flex flex-col justify-center text-left">
         {/* Heading */}
-        <h2 className="text-3xl md:text-5xl font-semibold text-gray-900 leading-tight mb-4">
+        <h2 className="text-3xl md:text-6xl font-semibold text-gray-900 leading-tight mb-4">
           What <span className="text-red-600">You Get</span>
         </h2>
 

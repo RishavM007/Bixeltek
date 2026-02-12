@@ -34,7 +34,7 @@ export default function SaudiEPSEOIndustries(): JSX.Element {
     return (
         <section className=" py-10 md:pb-20  bg-[#fffdf5] z-10 overflow-hidden">
             <div className="w-full relative text-center text-black pb-10">
-                <h1 className="text-3xl md:text-5xl mx-auto max-w-[90%] md:max-w-full xl:text-7xl font-bold mb-2">
+                <h1 className="text-3xl md:text-6xl mx-auto max-w-[90%] md:max-w-full xl:text-7xl font-bold mb-2">
                     <span className=" text-transparent bg-clip-text bg-gradient-to-r from-black to-yellow-500">
                     Trusted by Businesses Across <br /> Khobar, Dammam, and Dhahran
                     </span>
@@ -43,7 +43,7 @@ export default function SaudiEPSEOIndustries(): JSX.Element {
             Our SEO framework adapts to multiple industries across Saudi Arabia’s Eastern Province:
                 </p>
             </div>
-            <div className="carousel-container md:pl-[500px] relative w-full overflow-hidden">
+            <div className="carousel-container md:pl-[400px] lg:pl-[500px] relative w-full overflow-hidden">
                 <div
                     className="carousel flex gap-6 px-8 w-max transform transition-transform duration-500"
                     style={{ transform: `translateX(${carouselOffset}px)` }}

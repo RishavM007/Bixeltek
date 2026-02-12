@@ -77,10 +77,10 @@ export default function BenefitsSection() {
   return (
     <section
       ref={sectionRef}
-      className="max-w-[85%] mx-auto bg-black flex flex-col md:flex-row items-stretch gap-20"
+      className="max-w-[85%] mx-auto bg-black flex flex-col lg:flex-row items-stretch gap-20"
     >
       {/* Left Content */}
-      <div className="w-full md:w-1/2 px-0 py-2 md:py-16 flex flex-col justify-center">
+      <div className="w-full lg:w-1/2 px-0 py-2 md:py-16 flex flex-col justify-center">
         <h2 className="benefits-heading text-4xl md:text-6xl font-bold mb-6 text-white">
           Benefits of Digital Marketing for Businesses in{" "}
           <span className="text-blue-500">Hyderabad</span>
@@ -99,7 +99,7 @@ export default function BenefitsSection() {
       </div>
 
       {/* Right Side with Flex Columns */}
-      <div className="w-full md:w-1/2 md:px-6 py-2 md:py-16 flex flex-col justify-center items-center">
+      <div className="w-full lg:w-1/2 md:px-6 py-2 md:py-16 flex flex-col justify-center items-center">
         <div className="flex flex-col md:flex-row gap-4 md:gap-12">
 
           {/* Left Column */}

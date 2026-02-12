@@ -24,7 +24,7 @@ export default function LogoGrid() {
     return (
         <section className="bg-white py-12 px-4 flex justify-center items-center flex-col gap-7 ">
             <h2 className="text-5xl font-semibold  font-inter text-center">Our Clients</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-4 gap-14 place-items-center">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-4 gap-14 place-items-center">
                 {logos.map((logo, idx) => (
                     <div key={idx} className="flex items-center justify-center">
                         <Image

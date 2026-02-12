@@ -61,7 +61,7 @@ export default function SEO_BenefitsInteractive() {
             </div>
 
             {/* DESKTOP: Expanding horizontal cards */}
-            <div className="hidden md:flex justify-center gap-4 overflow-visible mb-16 px-4 sm:px-8">
+            <div className="hidden lg:flex justify-center gap-4 overflow-visible mb-16 px-4 sm:px-8">
                 {benefits.map((benefit, idx) => {
                     const isActive = activeIndex === idx;
                     return (
@@ -115,7 +115,7 @@ export default function SEO_BenefitsInteractive() {
             </div>
 
             {/* MOBILE/TABLET: Vertical stacked cards */}
-            <div className="flex flex-col md:hidden gap-6 mb-16 px-4">
+            <div className="flex flex-col lg:hidden gap-6 mb-16 px-4">
                 {benefits.map((benefit, idx) => (
                     <motion.div
                         key={idx}
@@ -135,7 +135,7 @@ export default function SEO_BenefitsInteractive() {
                         
                     </motion.div>
                 ))}
-                <button className="mt-4 px-4 py-3 rounded-2xl bg-blue-600 text-white font-semibold text-sm shadow-lg hover:bg-blue-700 transition">
+                <button className="mt-4 px-4 py-3 md:w-1/2 mx-auto rounded-2xl bg-blue-600 text-white font-semibold text-sm shadow-lg hover:bg-blue-700 transition">
                             Book A Free Strategy Call
                         </button>
             </div>

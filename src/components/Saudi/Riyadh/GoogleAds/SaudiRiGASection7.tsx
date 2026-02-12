@@ -6,12 +6,12 @@ import growthImg from "@/assets/Google Ads Dashboard.png"; // replace with your 
 
 const DataBeatsGuesswork = () => {
   return (
-    <section className="bg-[#fffdf5] text-black px-6 md:px-20 ">
-      <div className="max-w-[95%] md:max-w-[85%] mx-auto flex flex-col md:flex-row items-center justify-between gap-14">
+    <section className="bg-[#fffdf5] text-black px-6 lg:px-20 ">
+      <div className=" lg:max-w-[85%] mx-auto flex flex-col lg:flex-row items-center justify-between md:gap-14">
 
         {/* LEFT — IMAGE */}
 
-          <div className="relative w-full md:w-1/2 flex justify-center h-[380px] md:h-[680px] rounded-2xl overflow-hidden group ">
+          <div className="relative w-full lg:w-1/2 flex justify-center h-[380px] lg:h-[680px] rounded-2xl overflow-hidden group ">
             <Image
               src={growthImg}
               alt="Data-driven ads visualization"
@@ -27,9 +27,9 @@ const DataBeatsGuesswork = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
           viewport={{ once: true }}
-          className="w-full md:w-1/2"
+          className="w-full lg:w-1/2"
         >
-          <h2 className="text-3xl md:text-5xl text-black font-semibold mb-6 leading-tight">
+          <h2 className="text-3xl md:text-6xl text-black font-semibold mb-6 leading-tight">
             Because <span className="text-yellow-500">Data Beats Guesswork</span> — Every Time.
           </h2>
 

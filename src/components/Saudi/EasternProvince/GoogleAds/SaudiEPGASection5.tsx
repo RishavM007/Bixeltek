@@ -45,7 +45,7 @@ export default function GoogleAdsCampaignTypesSaudi() {
 
   return (
     <section
-      className="relative py-14 md:py-24 bg-[#fffdf5] text-gray-950"
+      className="relative px-6 py-16 lg:py-20 bg-[#fffdf5] text-gray-950"
       id="google-ads-campaigns"
     >
       {/* Background Glows */}
@@ -54,8 +54,8 @@ export default function GoogleAdsCampaignTypesSaudi() {
 
       <div>
         {/* Heading + Copy */}
-        <div className="max-w-[90%] md:max-w-[80%] mx-auto mb-10 text-center">
-          <h2 className="text-black text-3xl lg:text-6xl font-inter mb-3 font-semibold">
+        <div className="lg:max-w-[85%] mx-auto mb-10 text-center">
+          <h2 className="text-black text-3xl md:text-6xl font-inter mb-3 font-semibold">
             Comprehensive Google Ads Campaigns{" "}
             <span className="text-yellow-600">for Every Business Model</span>
           </h2>
@@ -67,7 +67,7 @@ export default function GoogleAdsCampaignTypesSaudi() {
         </div>
 
         {/* Campaigns Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 max-w-[75%] mx-auto mt-10 gap-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:max-w-[75%] mx-auto mt-10 gap-0">
           {campaigns.map((campaign, index) => (
             <div
               key={index}
@@ -85,7 +85,7 @@ export default function GoogleAdsCampaignTypesSaudi() {
                 </p>
               </Link>
               {/* Decorative Plus Icons */}
-              {index % 4 === 0 && (
+              {/* {index % 4 === 0 && (
                 <span className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 text-gray-300 text-3xl z-30">
                   <i className="fa fa-plus text-black text-2xl" aria-hidden="true"></i>
                 </span>
@@ -104,7 +104,7 @@ export default function GoogleAdsCampaignTypesSaudi() {
                 <span className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 text-gray-300 text-3xl z-30">
                   <i className="fa fa-plus text-black text-2xl" aria-hidden="true"></i>
                 </span>
-              )}
+              )} */}
             </div>
           ))}
         </div>

@@ -14,10 +14,10 @@ export default function RiyadhGoogleAdsStrategySection() {
   ];
 
   return (
-    <section className="bg-[#fffdf5]  text-black py-24 px-6 md:px-20  overflow-hidden">
-      <div className="max-w-[95%] md:max-w-[85%] mx-auto flex flex-col-reverse md:flex-row items-center gap-14 md:gap-20">
+    <section className="bg-[#fffdf5]  text-black py-10 lg:py-24 px-6 lg:px-16  overflow-hidden">
+      <div className="lg:max-w-[95%] mx-auto flex flex-col-reverse lg:flex-row items-center md:gap-14 lg:gap-20">
         {/* LEFT SIDE — CONTENT */}
-        <div className="w-full md:w-1/2">
+        <div className="w-full lg:w-1/2">
           <h2 className="text-3xl md:text-5xl font-medium leading-tight mb-6 text-black">
             Without Strategy, Google Ads Becomes{" "}
             <span className="text-yellow-500">Expensive Guesswork.</span>
@@ -52,7 +52,7 @@ export default function RiyadhGoogleAdsStrategySection() {
         </div>
 
         {/* RIGHT SIDE — IMAGE */}
-        <div className="relative w-full md:w-1/2 h-[400px] md:h-[720px] rounded-2xl overflow-hidden ">
+        <div className="relative w-full lg:w-1/2 h-[400px] lg:h-[720px] rounded-2xl overflow-hidden ">
           <Image
             src={adsStrategyImage}
             alt="Google Ads Strategy Dashboard"

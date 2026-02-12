@@ -25,9 +25,54 @@ import SEOGrowthSection from '@/components/Bangalore/SEOServices/BangSEOSection2
 import BangaloreSEOProcessCards from '@/components/Bangalore/SEOServices/BangSEOSection3'
 import SEOWhatYouGetSection from '@/components/Bangalore/SEOServices/BangSEOSection4'
 import WhyChooseBixeltekSEO from '@/components/Bangalore/SEOServices/BangSEOSection5'
+import LocationProcessSection from '@/components/Common/location/LocationProcessSection';
 import ContactFromNew from '@/components/ContactFormNew'
 import { Check } from 'lucide-react'
 import React from 'react'
+
+
+const steps = [
+  {
+    number: "01",
+    title: "Audit & Research",
+    text: "We begin by identifying everything that’s holding your visibility back — from missing meta data and crawl errors to poor site speed, broken links, and weak content depth. Our SEO audit uncovers technical, on-page, and competitive gaps that limit your reach.",
+    gradient: "from-blue-500 via-cyan-400 to-transparent",
+    color: "text-blue-400",
+    bgcolor: "hover:bg-blue-500",
+  },
+  {
+    number: "02",
+    title: "Strategy & Mapping",
+    text: "Once insights are gathered, we create an actionable blueprint — keyword clusters, topical content pillars, and internal linking maps designed to strengthen topical authority. Every keyword and page is mapped to intent, ensuring both search relevance and conversion focus.",
+    gradient: "from-green-500 via-lime-400 to-transparent",
+    color: "text-green-400",
+    bgcolor: "hover:bg-green-500",
+  },
+  {
+    number: "03",
+    title: "Implementation",
+    text: "Our team executes with precision — optimizing meta tags, headings, content hierarchy, and backlinks. We deploy both on-page and off-page SEO strategies, ensuring search engines and users experience a seamless, optimized journey from discovery to engagement.",
+    gradient: "from-yellow-400 via-orange-400 to-transparent",
+    color: "text-yellow-400",
+    bgcolor: "hover:bg-yellow-500",
+  },
+  {
+    number: "04",
+    title: "Tracking & Reporting",
+    text: "Real-time data drives decisions. We integrate GA4, Google Search Console, and Tag Manager to track rankings, clicks, and conversions. Weekly progress reports highlight performance wins, new keyword visibility, and ongoing optimization opportunities.",
+    gradient: "from-teal-400 via-emerald-500 to-transparent",
+    color: "text-emerald-400",
+    bgcolor: "hover:bg-emerald-500",
+  },
+  {
+    number: "05",
+    title: "Scaling & Authority Building",
+    text: "SEO doesn’t stop at ranking. We focus on authority growth — earning backlinks, creating evergreen content, and expanding into new keyword territories. Through consistent publication and optimization, your brand becomes the go-to authority in its niche.",
+    gradient: "from-red-500 via-transparent to-transparent",
+    color: "text-purple-400",
+    bgcolor: "hover:bg-purple-500",
+  },
+];
 
 export default function page() {
   return (
@@ -39,14 +84,35 @@ export default function page() {
       <SEOWhatYouGetSection />
       <BangaloreCoverageSection />
       <BangaloreSEOndustries />
-      <SEOFrameworkSection />
+      {/* <SEOFrameworkSection /> */}
+      <LocationProcessSection
+      bg='bg-white'
+      heading={
+        <>
+        <span>From Audit to Authority <br />{" "}
+        <span className="text-red-500">A Proven 5-Stage SEO Framework</span></span>
+        </>
+      }
+      description='Every project follows a structured, data-driven SEO cycle — designed to build 
+        authority, trust, and measurable organic growth. No shortcuts, no guesswork — 
+        only systems engineered for long-term visibility.'
+        steps={steps}
+        cta={{
+          text:'Request an SEO Audit',
+          href:'mailto:strategy@bixeltek.com',
+          bg:'bg-gradient-to-tr from-red-600 via-red-700 to-red-900 hover:from-red-900 hover:via-red-700 hover:to-red-600 text-white'
+        }}
+      footerText='Each stage reinforces the next — audits identify issues, strategy defines solutions,
+        implementation drives traction, and analytics guide ongoing scaling. That’s how
+        we convert visibility into consistent, compounding growth.'  
+      />
       <WhyChooseBixeltekSEO />
       <section
-      className="bg-black py-20 px-4 md:px-20 flex flex-col md:flex-row items-center gap-10"
+      className="bg-black py-20 px-6 lg:px-20 flex flex-col lg:flex-row items-center gap-10"
       id="seo-audit"
     >
       {/* LEFT SIDE — Text & CTAs */}
-      <div className="w-full md:w-1/2 flex flex-col justify-start items-start px-6">
+      <div className="w-full lg:w-1/2 flex flex-col justify-start items-start ">
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-inter font-medium text-white mb-6 leading-tight">
           Find Out Why Your Website{" "}
@@ -109,7 +175,7 @@ export default function page() {
       </div>
 
       {/* RIGHT SIDE — Contact Form */}
-      <div className="w-[95%] md:w-[50%] lg:mr-10 flex justify-start items-center">
+      <div className="lg:w-[50%] lg:mr-10 flex justify-start items-center">
         <ContactFromNew />
       </div>
     </section>

@@ -171,7 +171,7 @@ const locations = [
 
 const LocalAreas = () => {
     return (
-        <section className="relative w-full py-24 px-6 md:px-16 bg-black text-white overflow-hidden">
+        <section className="relative w-full py-24 px-6 lg:px-16 bg-black text-white overflow-hidden">
             {/* Background Image */}
             <div className="absolute inset-0">
                 <Image

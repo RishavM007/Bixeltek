@@ -48,7 +48,7 @@ const containers = [
 
 const GradientBorderContainersMobWeb = () => {
   return (
-    <div className="min-h-screen relative bg-black py-5 md:py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen relative bg-black py-5 md:py-12 px-6 lg:px-8">
       <h2 className="text-3xl md:text-6xl text-white text-center max-w-3xl mx-auto font-bold font-inter mb-6">
         Our<span className="text-blue-500"> Web Design <br></br></span>Process
       </h2>
@@ -59,7 +59,7 @@ const GradientBorderContainersMobWeb = () => {
       {/* ✅ MOBILE VERSION (simple cards) */}
       <div className="space-y-10 md:hidden">
         {containers.map((item, idx) => (
-          <div key={idx} className="flex flex-col items-start p-6">
+          <div key={idx} className="flex flex-col items-start py-6">
             <p className={`${item.color} text-5xl font-bold mb-2`}>{item.number}</p>
             <h2 className="text-xl font-bold text-white mb-2">{item.title}</h2>
             <p className="text-gray-300">{item.text}</p>
@@ -89,7 +89,7 @@ const GradientBorderContainersMobWeb = () => {
               <div className="relative flex flex-col justify-between items-center z-10 bg-black rounded-[20px] p-8 h-[260px]">
                 {/* Floating black content box */}
                 <div
-                  className={`absolute flex items-center gap-5 flex-row border border-white/50 bg-black max-w-3xl rounded-2xl p-10 z-10 ${positionClasses}`}
+                  className={`absolute flex items-center gap-5 flex-row border border-white/50 bg-black w-[85%] lg:max-w-3xl rounded-2xl p-10 z-10 ${positionClasses}`}
                 >
                   <div>
                     <p className={`${item.color} text-7xl font-bold`}>{item.number}</p>
@@ -117,7 +117,7 @@ const GradientBorderContainersMobWeb = () => {
 
 
 
-      <p className="text-gray-300 mt-10 max-w-[90%] md:max-w-[30%] mx-auto mb-12 font-poppins leading-relaxed text-center">
+      <p className="text-gray-300 mt-10 max-w-[90%] lg:max-w-[30%] mx-auto mb-12 font-poppins leading-relaxed text-center">
         This structured approach ensures your website is not only launched but consistently optimized for growth.
       </p>
     </div>

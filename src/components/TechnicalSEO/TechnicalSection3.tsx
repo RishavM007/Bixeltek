@@ -142,7 +142,7 @@ export default function TechnicalSEOStacked() {
             <div
               key={card.id}
               ref={(el: any) => (cardsRef.current[index] = el)}
-              className={`stacking__card relative md:w-[85%] w-[95%] mx-auto flex flex-col ${
+              className={`stacking__card relative lg:w-[85%] mx-auto flex flex-col ${
                 isReversed ? "lg:flex-row-reverse" : "lg:flex-row"
               } justify-between items-center rounded-3xl backdrop-blur-md shadow-xl p-10 md:p-14 mb-[40vh] border border-gray-200 ${card.color.gradient} transition-transform duration-500 hover:scale-[1.015]`}
             >

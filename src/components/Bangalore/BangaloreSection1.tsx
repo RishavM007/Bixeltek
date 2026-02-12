@@ -13,9 +13,9 @@ export default function MarketingStructureSection() {
   ];
 
   return (
-    <section className="w-[95%] md:w-[85%] mx-auto flex flex-col md:flex-row items-center justify-between py-0 gap-12 md:gap-20 bg-white">
+    <section className="px-6 lg:px-0 lg:w-[85%] mx-auto flex flex-col lg:flex-row items-center justify-between py-0 gap-12 md:gap-20 bg-white">
       {/* Left — Image */}
-      <div className="relative w-full md:w-1/2 h-[320px] md:h-[520px] rounded-2xl overflow-hidden shadow-lg">
+      <div className="relative w-full lg:w-1/2 h-[320px] md:h-[520px] rounded-2xl overflow-hidden shadow-lg">
         <Image
           src={strategyImg}
           alt="Marketing Structure Visualization"
@@ -26,7 +26,7 @@ export default function MarketingStructureSection() {
       </div>
 
       {/* Right — Text Content */}
-      <div className="w-full md:w-1/2 text-left flex flex-col justify-center">
+      <div className="w-full lg:w-1/2 text-left flex flex-col justify-center">
         <h2 className="text-3xl md:text-5xl font-semibold text-gray-900 leading-tight mb-6">
           If You’re Still Boosting Posts,{" "}
           <span className="text-blue-600">You’re Missing the Bigger Picture.</span>

@@ -17,9 +17,9 @@ const WhatYouGetSection = () => {
     ];
 
     return (
-        <section className="w-[95%] md:w-[85%] mx-auto py-24 flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20">
+        <section className="px-6 lg:w-[85%] mx-auto py-16 md:py-24 flex flex-col lg:flex-row items-center justify-between gap-12 md:gap-20">
             {/* LEFT — TEXT CONTENT */}
-            <div className="w-full md:w-1/2 text-left flex flex-col justify-center">
+            <div className="w-full lg:w-1/2 text-left flex flex-col justify-center">
                 {/* Heading */}
                 <h2 className="text-3xl md:text-5xl font-semibold text-gray-900 leading-tight mb-6">
                     What You Get with <span className="text-purple-600">Bixeltek</span>
@@ -56,7 +56,7 @@ const WhatYouGetSection = () => {
             </div>
 
             {/* RIGHT — IMAGE */}
-            <div className="relative w-full md:w-1/2 h-[320px] md:h-[520px] rounded-2xl ">
+            <div className="relative w-full lg:w-1/2 h-[320px] md:h-[520px] rounded-2xl ">
                 <Image
                     src={whatYouGetImg}
                     alt="Professional web design illustration"

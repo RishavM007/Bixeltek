@@ -57,7 +57,7 @@ const industries = [
 
 export default function IndustrySections() {
   return (
-    <section className="py-12 px-6 max-w-[90%] mx-auto bg-black text-white">
+    <section className="py-12 px-6 lg:max-w-[90%] mx-auto bg-black text-white">
       {industries.map((industry, index) => (
         <div key={index} className={`flex flex-col  lg:flex-row ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-8 mb-12`}>          
           <div className="lg:w-1/2 ">

@@ -10,11 +10,22 @@ import ContactFromNew from '@/components/ContactFormNew'
 import DMFaq from '@/components/Toronto/DigitalMarketing/DMFaq'
 import Link from 'next/link'
 import ServicesSection from '@/components/Common/ServicesGrid'
-import LocationHeroSection from '@/components/Common/LocationHeroSection'
+import LocationHeroSection from '@/components/Common/location/LocationHeroSection'
 import { LogoTicker2 } from '@/components/GoogleAdsCarousel'
 import iconimg from '@/assets/medal-ribbons-star-svgrepo-com.png';
 import starimg from '@/assets/star-shine-svgrepo-com.png';
 import googleimg from '@/assets/google-authenticator-svgrepo-com.png';
+import ContactCTASection from '@/components/Common/location/LocationCtaSection'
+import LocationIndustrySection from '@/components/Common/location/LocationIndustrySection'
+import cleaningcomp from "@/assets/digital marketing servies for cleaning companies.jpg";
+import oil from "@/assets/digital marketing for oil refinaries.jpg"
+import pet from "@/assets/groupmates-lesson.jpg"
+import roofing from "@/assets/digital marketing for roofing industries.jpg"
+import dental from "@/assets/close-up-dentist-instruments (1).jpg"
+import lawncare from "@/assets/digital marketing for lawn care services.jpg"
+import blackcar from "@/assets/digital marketing for car detailers.jpg"
+import healthcare from "@/assets/digital marketing for health care practices.jpg"
+import LocationFaqSection from '@/components/Common/location/LocationFaqSection'
 
 
  const proofPoints = [
@@ -62,6 +73,87 @@ import googleimg from '@/assets/google-authenticator-svgrepo-com.png';
     },
   ];
 
+ const industries = [
+                        {
+                            id: "health",
+                            img: healthcare,
+                            label: "Digital Marketing for Healthcare",
+                            text: "Health Care Practices",
+                            description: "Local SEO + targeted ads to book 30+ new patients per month.",
+                        },
+                        {
+                            id: "auto",
+                            img: blackcar,
+                            label: "Digital Marketing for Automobiles",
+                            text: "Automobile industry",
+                            description: "Maps optimization + hyperlocal PPC to drive more calls and foot traffic.",
+                        },
+                        {
+                            id: "cleaning",
+                            img: cleaningcomp,
+                            label: "Digital Marketing for Cleaning Companies",
+                            text: "Cleaning Industry",
+                            description: "Maps optimization + hyperlocal PPC to drive more calls and foot traffic.",
+                        },
+                        {
+                            id: "roofing",
+                            img: roofing,
+                            label: "Digital Marketing for Roofing Companies",
+                            text: "Roofing Industry",
+                            description: "High-ticket lead funnels built for real estate and project-based services.",
+                        },
+                        {
+                            id: "lawncare",
+                            img: lawncare,
+                            label: "Digital Marketing for Lawn Care and Landscaping",
+                            text: "Lawn Care Industries",
+                            description: "Maps optimization + hyperlocal PPC to drive more calls and foot traffic.",
+                        },
+                        {
+                            id: "dental",
+                            img: dental,
+                            label: "Digital Marketing for Dental Clinic",
+                            text: "Dental Clinics",
+                            description: "Local SEO + targeted ads to book 30+ new patients per month.",
+                        },
+                        {
+                            id: "pet",
+                            img: pet,
+                            label: "Digital Marketing for Pet Stores",
+                            text: "Educational Institutes",
+                            description: "Product SEO, performance ads & retargeting funnels to scale sales.",
+                        },
+                        {
+                            id: "oil",
+                            img: oil,
+                            label: "Digital Marketing for Oil Refineries",
+                            text: "Oil and Gas Industry",
+                            description: "Paid growth loops, demo-booking strategies, and B2B marketing that closes deals.",
+                        }
+                    ] 
+
+    const faqs = [
+  {
+    question: "Do you only work with Toronto businesses?",
+    answer:
+      "No, we serve clients across Canada, but Toronto and the GTA are a key focus.",
+  },
+  {
+    question: "What ROI can I expect?",
+    answer:
+      "Google Ads bring immediate results, while SEO builds over 3–6 months. Most clients see measurable ROI scaling within months.",
+  },
+  {
+    question: "Do you combine services like SEO and Ads?",
+    answer:
+      "Yes, we specialize in integrated strategies that deliver better results.",
+  },
+  {
+    question: "Do you work with small businesses?",
+    answer:
+      "Absolutely — we help startups, SMBs, and enterprises alike.",
+  },
+];
 
 export default function page() {
     
@@ -69,8 +161,11 @@ export default function page() {
         <>
             {/* <DMHero /> */}
             <LocationHeroSection
-                heading="Digital Marketing Services in"
-                highlightText="Toronto That Deliver Real Growth"
+                heading={
+                    <>
+                    <span>Digital Marketing Services in <span className="text-blue-500">Toronto That Deliver Real Growth</span></span>
+                    </>
+                }
                 description="Your customers are searching online right now. If they can’t find you, they’ll find your competitors."
                 proofPoints={proofPoints}
                 primaryCTA={{
@@ -82,7 +177,7 @@ export default function page() {
                     variant: 'secondary',
                     action: {
                     type: 'link',
-                    href: 'mailto:zee@bixeltek.com',
+                    href: '#services',
                     },
                 }}
                 >
@@ -97,47 +192,36 @@ export default function page() {
             services={services}
             />
             <WhyChooseBixeltekToronto />
-            <DMIndustries />
+            <LocationIndustrySection
+            heading={
+                <>
+                <span className=" text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-500">
+                        Digital Marketing Solutions Tailored for <br></br> Every Industry in Toronto
+                    </span>
+                </>
+            }
+            description='Every industry has unique challenges. We design strategies that align with your goals and customer journey.'
+            industries={industries}/>
+            {/* <DMIndustries /> */}
             <AreasWeServeCanadaDM />
-            <DMFaq />
-            <section
-                className="bg-black p-2 md:p-10 lg:p-20 mx-auto flex flex-col justify-center gap-10 items-center lg:flex-row"
-                id="form"
-            >
-                {/* Left Side - Text & CTAs */}
-                <div className="w-full mt-14 md:mt-0 flex justify-start items-start px-6">
-                    <div className="space-y-5 text-white max-w-2xl">
-                        <h2 className="text-4xl md:text-6xl capitalize font-inter font-bold">
-                            Ready to Grow Your <span className="text-blue-500">Toronto Business?</span>
-                        </h2>
-                        <p className="text-white font-poppins text-base leading-relaxed">
-                            Your customers are searching online right now. If you’re not visible, you’re losing leads.
-                            Bixeltek helps Toronto businesses get found, generate qualified leads, and scale ROI by 10x
-                            through integrated digital marketing.
-                        </p>
-
-                        {/* CTA Buttons */}
-                        {/* <div className="flex flex-col sm:flex-row gap-4 mt-4">
-                <Link href="/strategy-call">
-                    <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold shadow-md transition">
-                        Book a Free Strategy Call
-                    </button>
-                </Link>
-                <Link href="/services">
-                    <button className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-xl font-semibold shadow-md transition">
-                        Explore Our Services
-                    </button>
-                </Link>
-            </div> */}
-                    </div>
-                </div>
-
-                {/* Right Side - Contact Form */}
-                <div className="lg:w-[87%] lg:mr-32 flex justify-start items-center">
-                    <ContactFromNew />
-                </div>
-            </section>
-
+            {/* <DMFaq /> */}
+            <LocationFaqSection
+            label='Frequently Asked Questions'
+            heading={
+                <>
+                <h2 className="text-3xl text-center md:text-6xl font-inter font-bold text-white mb-6">
+              <span className='text-blue-500'>Questions We Hear</span><br></br> From Toronto Businesses
+            </h2>
+            </>
+            }
+            description='Here are answers to the most common questions Toronto businesses ask us about web design, development, and online growth.'
+            faqs={faqs}
+            />
+            <ContactCTASection
+              heading="Ready to Grow Your"
+              spanText="Toronto Business?"
+              description="Your customers are searching online right now. If you’re not visible, you’re losing leads. Bixeltek helps Toronto businesses get found, generate qualified leads, and scale ROI by 10x through integrated digital marketing."
+            />
         </>
     )
 }

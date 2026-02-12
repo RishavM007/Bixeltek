@@ -70,7 +70,7 @@ export default function page() {
 
                     <div className="relative z-10 mt-40 max-w-7xl">
                         {/* Headline */}
-                        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold leading-tight text-white">
+                        <h1 className="text-3xl md:text-6xl font-bold leading-tight text-white">
                             Google Ads Management Services {" "}
                             <span className="text-blue-500">That Deliver Real Growth</span>
                         </h1>

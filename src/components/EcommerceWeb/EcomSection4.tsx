@@ -32,7 +32,7 @@ const painPoints = [
 
 export default function EcomPerformanceSection() {
     return (
-        <section className="bg-black text-white max-w-[90%] mx-auto md:py-20 px-6 md:px-20 flex flex-col lg:flex-row-reverse items-center gap-12">
+        <section className="bg-black text-white lg:max-w-[90%] mx-auto md:py-20 px-6 lg:px-20 flex flex-col lg:flex-row-reverse items-center gap-12">
             {/* Left - Image (flipped position) */}
             <div className="relative w-full lg:w-1/2 flex justify-center items-start overflow-hidden rounded-[0px] h-[590px]">
              <motion.div

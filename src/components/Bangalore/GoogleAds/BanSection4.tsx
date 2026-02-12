@@ -15,9 +15,9 @@ const PPCPerformanceSection = () => {
   ];
 
   return (
-    <section className="w-[95%] md:w-[85%] mx-auto py-10 flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20">
+    <section className="px-6 lg:w-[85%] mx-auto py-10 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
       {/* LEFT — Image */}
-      <div className="relative w-full md:w-1/2 h-[320px] md:h-[590px] rounded-2xl overflow-hidden">
+      <div className="relative w-full lg:w-1/2 h-[320px] md:h-[590px] rounded-2xl overflow-hidden">
         <Image
           src={performanceImg}
           alt="Bixeltek PPC Performance Management"
@@ -28,7 +28,7 @@ const PPCPerformanceSection = () => {
       </div>
 
       {/* RIGHT — Content */}
-      <div className="w-full md:w-1/2 text-left flex flex-col justify-center">
+      <div className="w-full lg:w-1/2 text-left flex flex-col justify-center">
         <h2 className="text-3xl md:text-5xl font-semibold text-gray-900 leading-tight mb-6">
           Performance <span className="text-blue-600">Is in the Details.</span>
         </h2>
