@@ -329,7 +329,7 @@ export default function Seo() {
                                     {service.linkText}
                                 </a>
 
-                                {index % 4 === 0 && (
+                                {/* {index % 4 === 0 && (
                                     <span className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 text-gray-300 text-3xl z-30"><i className="fa fa-plus text-2xl" aria-hidden="true"></i></span>
                                 )}
 
@@ -343,7 +343,7 @@ export default function Seo() {
 
                                 {(index % 4 === 3 || index == 5 || index == 6 || index == 8) && (
                                     <span className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 text-gray-300 text-3xl z-30"><i className="fa fa-plus text-2xl" aria-hidden="true"></i></span>
-                                )}
+                                )} */}
                             </div>
                         ))}
                     </div>
@@ -353,7 +353,7 @@ export default function Seo() {
 
             <section className="pt-20 pb-10 md:pb-20">
                 <div className="flex flex-col items-center gap-3">
-                    <h2 className="text-4xl max-w-6xl mx-auto md:text-6xl font-semibold text-center text-white font-inter px-6 md:px-0">
+                    <h2 className="text-3xl max-w-6xl mx-auto md:text-6xl font-semibold text-center text-white font-inter px-6 md:px-0">
                         How We Help Businesses Thrive in the Age of{" "}
                         <span className="text-blue-500">AI with AI-First SEO</span>
                     </h2>
