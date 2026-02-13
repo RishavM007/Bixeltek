@@ -28,7 +28,7 @@ export default function BusinessProblems() {
                 </div>
 
                 {/* Right Content */}
-                <div className="px-6 w-full lg:mt-[-310px] md:mt-0 lg:w-3/5  lg:pl-44 lg:pr-20 py-10 lg:py-16">
+                <div className="px-6 w-full lg:w-3/5  lg:pl-44 lg:pr-20 py-10 lg:py-16">
                     {/* Main heading */}
                     <h2 className="text-3xl md:text-6xl font-inter text-white font-bold mb-4 leading-snug">
                         If Customers Can’t Find You Online,
