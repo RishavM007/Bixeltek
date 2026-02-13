@@ -1,4 +1,4 @@
-export const metadata = {
+  export const metadata = {
   title: "Best Digital Marketing Agency | SEO, Google Ads & Web Design",
   description:
     "Bixeltek is a Google-certified digital marketing agency offering SEO, Google Ads, web design & social media marketing. Trusted in India, USA, Canada & Saudi. & Saudi.",
