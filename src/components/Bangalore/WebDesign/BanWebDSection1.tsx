@@ -6,9 +6,9 @@ import websiteAssetImg from "@/assets/laptop dentist 2.png"; // 🖼️ replace 
 
 const WebsiteValueSection = () => {
   return (
-    <section className="w-[95%] md:w-[85%] mx-auto pb-14 flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20">
+    <section className="px-6 lg:w-[85%] mx-auto pb-14 flex flex-col lg:flex-row items-center justify-between gap-12 md:gap-20">
       {/* LEFT — IMAGE */}
-      <div className="relative w-full md:w-1/2 h-[320px] md:h-[450px] rounded-2xl overflow-hidden ">
+      <div className="relative w-full lg:w-1/2 h-[320px] md:h-[450px] rounded-2xl overflow-hidden ">
         <Image
           src={websiteAssetImg}
           alt="Website design and optimization concept"
@@ -19,9 +19,9 @@ const WebsiteValueSection = () => {
       </div>
 
       {/* RIGHT — CONTENT */}
-      <div className="w-full md:w-1/2 text-left flex flex-col justify-center">
+      <div className="w-full lg:w-1/2 text-left flex flex-col justify-center">
         {/* Heading */}
-        <h2 className="text-3xl md:text-5xl font-semibold text-gray-900 leading-tight mb-6">
+        <h2 className="text-3xl md:text-6xl font-semibold text-gray-900 leading-tight mb-6">
           Your Website Is Your Most{" "}
           <span className="text-purple-600">Valuable Digital Asset.</span>
         </h2>

@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function WhyGoogleAdsMississauga() {
     return (
-        <section className="w-[90%] md:w-[75%] mx-auto mt-0 bg-black text-gray-100 py-10 overflow-hidden">
+        <section className="w-[90%] lg:w-[75%] mx-auto mt-0 bg-black text-gray-100 py-10 overflow-hidden">
             <div className="flex flex-col lg:flex-row gap-10 items-center lg:items-start">
 
                 {/* LEFT IMAGE */}
@@ -17,7 +17,7 @@ export default function WhyGoogleAdsMississauga() {
                     whileInView={{ x: 0, opacity: 1, scale: 1 }}
                     transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                     viewport={{ once: true }}
-                    className="flex-1 relative w-full lg:w-1/2 h-[400px] md:h-[500px] lg:h-[600px]"
+                    className="lg:flex-1 relative w-full lg:w-1/2 h-[400px] md:h-[500px] lg:h-[600px]"
                 >
                     <Image
                         src={dashboardImg}
@@ -34,7 +34,7 @@ export default function WhyGoogleAdsMississauga() {
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
                     viewport={{ once: true }}
-                    className="flex-1 lg:w-1/2 px-8 lg:px-8 mt-10 lg:mt-10"
+                    className="flex-1 lg:w-1/2 px-8 lg:px-8 lg:mt-10"
                 >
                     {/* Heading */}
                     <h2 className="text-3xl md:text-6xl font-medium font-inter leading-snug mb-6">
@@ -49,18 +49,18 @@ export default function WhyGoogleAdsMississauga() {
                     </p>
 
                     {/* Benefits of Google Ads */}
-                    <ul className="space-y-4 mb-8">
-                        <li className="flex gap-3">
-                            <LiaStarOfLifeSolid className="text-blue-500" /> Appear instantly at the top of Google
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5 max-w-xl mx-auto lg:mx-0">
+                        <li className="flex gap-3 items-center">
+                            <LiaStarOfLifeSolid className="text-blue-500 shrink-0" /> Appear instantly at the top of Google
                         </li>
-                        <li className="flex gap-3">
-                            <LiaStarOfLifeSolid className="text-blue-500" /> Target Mississauga customers ready to buy
+                        <li className="flex gap-3 items-center">
+                            <LiaStarOfLifeSolid className="text-blue-500 shrink-0" /> Target Mississauga customers ready to buy
                         </li>
-                        <li className="flex gap-3">
-                            <LiaStarOfLifeSolid className="text-blue-500" /> Pay only when people click
+                        <li className="flex gap-3 items-center">
+                            <LiaStarOfLifeSolid className="text-blue-500 shrink-0" /> Pay only when people click
                         </li>
-                        <li className="flex gap-3">
-                            <LiaStarOfLifeSolid className="text-blue-500" /> Track every lead, call, and sale
+                        <li className="flex gap-3 items-center">
+                            <LiaStarOfLifeSolid className="text-blue-500 shrink-0" /> Track every lead, call, and sale
                         </li>
                     </ul>
 

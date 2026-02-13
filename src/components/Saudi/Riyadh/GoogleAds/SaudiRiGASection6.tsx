@@ -45,7 +45,7 @@ export default function GoogleAdsServicesRiyadh() {
 
   return (
     <section
-      className="relative py-14 md:py-24 bg-[#fffdf5] text-black"
+      className="relative px-6 py-14 lg:py-24 bg-[#fffdf5] text-black"
       id="google-ads-services-riyadh"
     >
       {/* Background Glows */}
@@ -54,8 +54,8 @@ export default function GoogleAdsServicesRiyadh() {
 
       <div>
         {/* Heading + Intro */}
-        <div className="max-w-[90%] md:max-w-[80%] mx-auto mb-10 text-center">
-          <h2 className="text-black text-3xl lg:text-6xl font-inter mb-3 font-semibold">
+        <div className="lg:max-w-[80%] mx-auto mb-10 text-center">
+          <h2 className="text-black text-3xl md:text-6xl font-inter mb-3 font-semibold">
             Full-Spectrum{" "}
             <span className="text-yellow-500">Google Ads Management for Riyadh Businesses</span>
           </h2>
@@ -69,7 +69,7 @@ export default function GoogleAdsServicesRiyadh() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 max-w-[75%] mx-auto mt-10 gap-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:max-w-[75%] mx-auto mt-10 gap-0">
           {services.map((service, index) => (
             <div
               key={index}

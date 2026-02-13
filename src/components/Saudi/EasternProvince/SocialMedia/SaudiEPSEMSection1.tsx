@@ -6,11 +6,11 @@ import socialImg from "@/assets/Success-removebg-preview (1).png"; // ✅ replac
 
 export default function SocialMediaTrustSection() {
   return (
-    <section className="relative py-10 md:py-16 bg-black overflow-hidden">
-      <div className="flex maxw-w-[95%] md:max-w-[85%] mx-auto gap-10 flex-col md:flex-row items-center">
+    <section className="relative py-10 lg:py-16 bg-black overflow-hidden">
+      <div className="flex px-6 lg:max-w-[85%] mx-auto gap-10 flex-col lg:flex-row items-center">
 
         {/* ✅ Left Image */}
-        <div className="relative w-full md:w-1/2 flex justify-center items-center">
+        <div className="relative w-full lg:w-1/2 flex justify-center items-center">
           <Image
             src={socialImg}
             alt="Social Media Trust"
@@ -20,7 +20,7 @@ export default function SocialMediaTrustSection() {
         </div>
 
         {/* ✅ Right Content */}
-        <div className="px-6 w-full md:w-1/2 py-10">
+        <div className=" w-full lg:w-1/2 py-10">
           {/* Heading */}
           <h2 className="text-3xl md:text-5xl font-inter text-white font-medium mb-6 leading-snug">
             <span className="text-yellow-500">

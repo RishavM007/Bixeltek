@@ -37,7 +37,7 @@ const GoogleAdsHero = () => {
     };
 
     return (
-        <section className="relative bg-white py-20 lg:py-40 flex flex-col justify-center items-center  px-6 overflow-hidden">
+        <section className="relative bg-white pt-32 lg:py-40 flex flex-col justify-center items-center  px-6 overflow-hidden">
             <div className="max-w-6xl mx-auto">
                 <motion.div
                     className="flex flex-col items-center text-center"
@@ -59,7 +59,7 @@ const GoogleAdsHero = () => {
                     {/* Main Heading */}
                     <motion.h1
                         variants={itemVariants}
-                        className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6 max-w-7xl"
+                        className="text-3xl md:text-6xl font-bold text-gray-900 leading-tight mb-6 max-w-7xl"
                     >
                         Google Ads Management Company in Bangalore That Drives{" "}
                         <span className="text-blue-600">Real ROI</span>
@@ -68,35 +68,52 @@ const GoogleAdsHero = () => {
                     {/* Subheading */}
                     <motion.p
                         variants={itemVariants}
-                        className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl leading-relaxed"
+                        className="text-lg md:text-xl text-gray-600 mb-8 max-w-4xl leading-relaxed"
                     >
                         Bixeltek helps Bangalore businesses run high-performing PPC campaigns with advanced targeting, lead tracking, and smart budget optimization.
                     </motion.p>
                       <motion.div
                         variants={itemVariants}
-                        className="flex flex-wrap justify-center items-center gap-8 md:gap-12 text-gray-600 mb-12"
-                    >
-                        <div className="flex items-center gap-3">
+                        className="
+                            flex flex-col
+                            items-start
+                            gap-5
+                            mb-12
+                            md:flex-row
+                            md:flex-wrap
+                            md:justify-center
+                            md:items-center
+                            md:gap-12
+                        "
+                        >
+                        <div className="flex items-center gap-3 w-full md:w-auto">
                             <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
-                                <Star className="w-5 h-5 text-green-600" />
+                            <Star className="w-5 h-5 text-green-600" />
                             </div>
-                            <span className="font-semibold text-gray-900">Google Partner Certified</span>
+                            <span className="font-semibold text-sm md:text-base text-gray-900">
+                            Google Partner Certified
+                            </span>
                         </div>
 
-                        <div className="flex items-center gap-3">
+                        <div className="flex items-center gap-3 w-full md:w-auto">
                             <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                                <TrendingUp className="w-5 h-5 text-blue-600" />
+                            <TrendingUp className="w-5 h-5 text-blue-600" />
                             </div>
-                            <span className="font-semibold text-gray-900">90% Client Retention</span>
+                            <span className="font-semibold text-sm md:text-base text-gray-900">
+                            90% Client Retention
+                            </span>
                         </div>
 
-                        <div className="flex items-center gap-3">
+                        <div className="flex items-center gap-3 w-full md:w-auto">
                             <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
-                                <MapPin className="w-5 h-5 text-purple-600" />
+                            <MapPin className="w-5 h-5 text-purple-600" />
                             </div>
-                            <span className="font-semibold text-gray-900">Trusted by Businesses Across Bangalore</span>
+                            <span className="font-semibold text-sm md:text-base text-left text-gray-900">
+                            Trusted by Businesses Across Bangalore
+                            </span>
                         </div>
-                    </motion.div>
+                        </motion.div>
+
 
                     {/* CTA Buttons */}
                     <motion.div

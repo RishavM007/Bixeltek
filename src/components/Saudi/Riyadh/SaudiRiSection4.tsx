@@ -45,7 +45,7 @@ export default function DigitalMarketingServicesRiyadh() {
 
   return (
     <section
-      className="relative py-14 md:py-24 bg-[#fffdf5] text-gray-900"
+      className="relative px-6 py-14 md:py-24 bg-[#fffdf5] text-gray-900"
       id="digital-marketing-services"
     >
       {/* Background Glows */}
@@ -54,7 +54,7 @@ export default function DigitalMarketingServicesRiyadh() {
 
       <div>
         {/* Heading + Intro */}
-        <div className="max-w-[90%] md:max-w-[80%] mx-auto mb-10 text-center">
+        <div className="lg:max-w-[80%] mx-auto mb-10 text-center">
           <h2 className="text-black text-3xl lg:text-6xl font-inter mb-3 font-semibold">
              Comprehensive Digital Marketing Services <br /> 
             <span className="text-yellow-500"> for Riyadh Businesses</span>
@@ -66,7 +66,7 @@ export default function DigitalMarketingServicesRiyadh() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 max-w-[75%] mx-auto mt-10 gap-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:max-w-[75%] mx-auto mt-10 gap-0">
           {services.map((service, index) => (
             <div
               key={index}
@@ -85,7 +85,7 @@ export default function DigitalMarketingServicesRiyadh() {
               </Link>
 
               {/* Decorative Plus Icons */}
-              {index % 4 === 0 && (
+              {/* {index % 4 === 0 && (
                 <span className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 text-black text-3xl z-30">
                   <i className="fa fa-plus text-2xl" aria-hidden="true"></i>
                 </span>
@@ -104,7 +104,7 @@ export default function DigitalMarketingServicesRiyadh() {
                 <span className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 text-black text-3xl z-30">
                   <i className="fa fa-plus text-2xl" aria-hidden="true"></i>
                 </span>
-              )}
+              )} */}
             </div>
           ))}
         </div>

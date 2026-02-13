@@ -56,7 +56,7 @@ export default function WebDevHero() {
   return (
     <>
       <div
-        className="relative sm:h-[80vh] md:h-[120vh] -mt-32 bg-cover bg-center flex flex-col items-center bg-[url('/54543de4-2078-4bb1-8cf6-088ec431bef7.jpg')]"
+        className="relative sm:h-[80vh] md:h-[140vh] lg:h-[120vh] -mt-32 bg-cover bg-center flex flex-col items-center bg-[url('/54543de4-2078-4bb1-8cf6-088ec431bef7.jpg')]"
       >
           <div className="absolute inset-0 bg-black/30"></div>
         <ContactForm isVisible={showContactForm} onClose={() => setShowContactForm(false)} />

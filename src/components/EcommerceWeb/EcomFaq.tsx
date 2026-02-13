@@ -64,7 +64,7 @@ export default function EcommerceFAQ() {
 
   return (
     <section className="py-16 bg-black">
-      <div className="mx-auto max-w-[95%] md:max-w-[85%] px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[95%] lg:max-w-[85%] px-6 lg:px-8">
         <div className="flex flex-col gap-12">
           <div className="w-full">
             <h6 className="text-lg text-center font-medium text-blue-400 mb-2">

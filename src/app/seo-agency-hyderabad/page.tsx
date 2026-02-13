@@ -54,6 +54,13 @@ import blooming from '@/assets/Logo2-2048x548.png';
 import cloud from '@/assets/logo-2.png';
 import ananta from '@/assets/Ananta Ananda-01.png';
 import daddysharklogo from "@/assets/daddyshark logo-01.png";
+import SeoChallenges from '@/components/Hyderabad/Seo/SeoChallenges';
+import SeoWhyChooseUs from '@/components/Hyderabad/Seo/SeoWhyChooseUs';
+import SeoCTA1 from '@/components/Hyderabad/Seo/SeoCTA1';
+import ServicesSection from '@/components/Common/ServicesGrid';
+import SeoLeads from '@/components/Hyderabad/Seo/SeoLeads';
+import SeoResults from '@/components/Hyderabad/Seo/SeoResults';
+import SeoPartners from '@/components/Hyderabad/Seo/SeoPartners';
 
 
 
@@ -197,117 +204,10 @@ export default function Seo() {
                 position="bottom-center"
                 reverseOrder={false}
             />
-            <SeoHero />
-            <section className="max-w-5xl mx-auto text-center py-12">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-sofiasanscondensed font-medium text-white mb-1">Why Your Website Isn&apos;t Ranking</h2>
-                <h2 className='text-5xl font-sofiasanscondensed text-purple-500 mb-6'>The SEO Challenge</h2>
-
-                <div className="grid grid-cols-1 px-2 md:px-0 md:grid-cols-3 gap-6">
-                    {seoChallenges.map((item, index) => (
-                        <div key={index} className="px-2 py-6 md:px-6 text-white flex flex-col justify-center items-center bg-transparent">
-                            <div className="text-white text-3xl mb-3">{item.icon}</div>
-                            <h3 className="text-lg font-semibold text-center">{item.title}</h3>
-                            <p className="text-sm text-gray-300 text-center">{item.desc}</p>
-                        </div>
-                    ))}
-                </div>
-
-                <div className="mt-8">
-                    <a href="tel:+919100032301" className="text-white text-xl font-sans group font-semibold ">
-                        Book A Call With An <span className='text-purple-500 text-xl'>SEO Expert<PiGreaterThan className='inline-block text-lg group-hover:translate-x-2 transition-all duration-300 ml-1 mb-1' /></span>
-                    </a>
-                </div>
-            </section>
-
-
-            <section>
-                <section>
-                    <div className="min-h-screen bg-black flex items-center justify-center px-0 md:px-4 py-10">
-                        <div className="max-w-7xl w-full bg-black text-white rounded-xl shadow-md p-8 flex flex-col md:flex-row">
-
-                            <div className="w-full md:w-1/2 p-0 md:py-6 md:px-3">
-                                <h2 className="text-3xl md:text-5xl font-normal font-sofiasanscondensed tracking-wide text-white mb-4 ">
-                                    Why Choose <span className='text-[#6728cc]'>Bixeltek</span> – Your Trusted SEO Company in Hyderabad?
-                                </h2>
-
-                                <p className="text-gray-300 relative font-sans text-lg py-5 leading-relaxed">
-                                    Ready to outshine the competition and drive consistent leads? Bixeltek is your trusted SEO company in Hyderabad, offering cutting-edge SEO services that propel your business to the top of Google&apos;s search results. Let&apos;s turn organic traffic into tangible growth.
-                                </p>
-
-
-                                <div className='grid grid-cols-1 gap-y-7 pb-10 pt-5  text-white'>
-                                    <h3 className='font-light text-[16px] tracking-wide flex'>
-                                        <VscDebugBreakpointDataUnverified size={30} className="text-[#670ef7] mr-2 mt-1" />
-                                        Proven Local Expertise – We optimize your SEO for Hyderabad&apos;s unique market, ensuring high-intent local audiences find your business.
-                                    </h3>
-                                    <h3 className='font-light text-[16px] tracking-wide flex'>
-                                        <VscDebugBreakpointDataUnverified size={30} className="text-[#670ef7] mr-2 mt-1" />
-                                        Data-Driven Methodology – Our SEO strategies evolve with keyword analytics, competitor insights, and real-time performance tracking.
-                                    </h3>
-                                    <h3 className='font-light text-[16px] tracking-wide flex'>
-                                        <VscDebugBreakpointDataUnverified size={30} className="text-[#670ef7] mr-2 mt-1" />
-                                        Transparent & Collaborative – We provide clear reporting, regular updates, and involve you in key SEO strategy decisions.
-                                    </h3>
-                                    <h3 className='font-light text-[16px] tracking-wide flex'>
-                                        <VscDebugBreakpointDataUnverified size={30} className="text-[#670ef7] mr-2 mt-1" />
-                                        Cutting-Edge Tools – Advanced keyword research, auditing software, and optimization ensure peak SEO performance.
-                                    </h3>
-                                </div>
-                                <div className='mt-2 mb-10 ml-2'>
-                                    <a href="tel:+919100032301" >
-                                        <button className='px-4 py-3 bg-[#670ef7] text-white transition-all duration-300 hover:bg-white font-medium hover:text-black rounded-md'>Book An Appointment</button>
-                                    </a>
-                                </div>
-                            </div>
-
-
-                            {/* Right Section: Contact Form */}
-                            <ContactFrom />
-                        </div>
-                    </div>
-                </section>
-            </section>
-            <section className="pt-2 pb-20">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div
-                        className="lg:py-14 lg:px-20 p-10 rounded-2xl bg-gradient-to-r from-indigo-800 to-violet-800 flex items-center justify-between flex-col lg:flex-row"
-                    >
-                        <div className="block text-center w-full md:w-3/4 mb-5 lg:text-left lg:mb-0">
-                            <h2
-                                className="font-manrope text-2xl text-white font-semibold mb-5 lg:mb-2"
-                            >
-                                Dominate &quot;Near Me&quot; Searches in Hyderabad with Local SEO
-                            </h2>
-                            <p className=" text-base md:text-xl text-indigo-100">
-                                Capture high-intent customers who are actively searching for services nearby. Our targeted local SEO ensures your business appears at the top of “near me” results, driving foot traffic and real leads in Hyderabad.
-                            </p>
-                        </div>
-                        <div className='w-full md:w-1/4 flex justify-center md:justify-end'>
-                            <Link
-                                href="/contact-us"
-                                className="flex w-fit items-center text-center gap-2 bg-white rounded-full shadow-sm text-lg text-indigo-600 font-semibold py-4 px-10 transition-all duration-500"
-                            >Get In Touch
-                                <svg
-                                    width="19"
-                                    height="14"
-                                    viewBox="0 0 19 14"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M1.75 7L16.4167 7M11.8333 12.5L16.6852 7.64818C16.9907 7.34263 17.1435 7.18985 17.1435 7C17.1435 6.81015 16.9907 6.65737 16.6852 6.35182L11.8333 1.5"
-                                        stroke="#4F46E5"
-                                        stroke-width="2.4"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </Link>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
+            <SeoHero /> 
+            <SeoChallenges seoChallenges={seoChallenges} />
+            <SeoWhyChooseUs />
+            <SeoCTA1/>
             {/* <section className="bg-black text-gray-300 py-16">
                 <div className="max-w-[90%] mx-auto px-6 lg:px-8">
                     
@@ -394,7 +294,7 @@ export default function Seo() {
             </section> */}
 
 
-            <section className='py-24'>
+            {/* <section className='py-24'>
                 <div>
                     <div className=' max-w-[80%] mx-auto mb-5 text-center'>
                         <h2 className='text-white text-3xl md:text-5xl font-sofiasanscondensed mb-3 font-semibold '>Our Comprehensive SEO Services in Hyderabad</h2>
@@ -428,113 +328,18 @@ export default function Seo() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
+            <ServicesSection
+            heading='Our Comprehensive'
+            spanText='SEO Services in Hyderabad'
+            description='We offer a full suite of strategies and solutions, meticulously designed to propel your website above the competition. Each service aims to improve your online presence, boost conversions, and ensure long-term digital growth.'
+            services={seoServices}
+            />
 
-            <section className='pt-20 pb-10 md:pb-20'>
-                <div className='flex flex-col items-center gap-3'>
-                    <h2 className='text-4xl md:text-5xl text-center text-white font-sofiasanscondensed'>We&apos;re an <span className='text-[#670ef7]'>ROI-led</span> SEO agency. What does that mean?</h2>
-                    <p className='text-white max-w-[90%] md:max-w-5xl text-center text-[15px] md:text-[16px] '>It&apos;s simple. We&apos;re not just about ticking boxes or chasing vanity metrics. As SEO specialists,every campaign, every strategy, every decision we make is geared towards one goal: maximising your return on investment through our expert SEO services. Here&apos;s how we make it happen:</p>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 gap-0 max-w-7xl text-white mx-auto text-center">
-
-                    <div className="flex flex-col gap-3 text-xl items-center border-none md:border-r md:border-dashed  border-[#670ef7] justify-center p-6 ">
-                        {items[0].icon}
-                        <h3 className="mt-2 font-semibold font-poppins">{items[0].text}</h3>
-                        <p className="text-sm mt-2">{items[0].description}</p>
-                    </div>
-
-                    {/* Top-right */}
-                    <div className="flex flex-col gap-3 text-xl items-center border-none md:border-r md:border-dashed  border-[#670ef7] justify-center p-6">
-                        {items[1].icon}
-                        <h3 className="mt-2 font-semibold font-poppins">{items[1].text}</h3>
-                        <p className="text-sm mt-2">{items[1].description}</p>
-                    </div>
-
-                    {/* Bottom-left */}
-                    <div className="flex flex-col gap-3 text-xl items-center justify-center p-6  border-none md:border-r md:border-dashed  border-[#670ef7]">
-                        {items[2].icon}
-                        <h3 className="mt-2 font-semibold font-poppins">{items[2].text}</h3>
-                        <p className="text-sm mt-2">{items[2].description}</p>
-                    </div>
-
-                    {/* Bottom-right */}
-                    <div className="flex flex-col gap-3 text-xl items-center  justify-center p-6">
-                        {items[3].icon}
-                        <h3 className="mt-2 font-semibold font-poppins">{items[3].text}</h3>
-                        <p className="text-sm mt-2 ">{items[3].description}</p>
-                    </div>
-                </div>
-            </section>
-            <section className='w-full flex flex-wrap max-w-[90%] mx-auto lg:flex-nowrap overflow-y-hidden items-center'>
-                {/* Left Content Section */}
-                <div className='w-full lg:w-1/2 px-6 py-10 lg:py-14'>
-                    <h2 className="text-4xl md:text-5xl font-semibold  font-sofiasanscondensed text-white">
-                        Proven Results Across <span className='text-purple-500'>Diverse Industries</span>
-                    </h2>
-                    <p className="mt-4 text-[16px] md:text-lg text-gray-300">
-                        Our expertise spans multiple industries, helping businesses achieve growth through data-driven strategies and
-                        innovative solutions. From technology and finance to healthcare and retail, we empower brands with actionable insights
-                        and cutting-edge digital solutions.
-                    </p>
-                    <p className="mt-2 text-[16px] md:text-lg text-gray-300">
-                        Explore how our tailored approach delivers measurable success, increasing engagement, conversions, and brand visibility
-                        in a competitive landscape.
-                    </p>
-                    <div className="mt-6 grid grid-cols-2 md:grid-cols-2 gap-5">
-                        {industries.map((industry, index) => (
-                            <div key={index} className="flex items-center text-lg text-white">
-                                <span className="text-white text-xl inline-block  mr-3">{industry.icon}</span>
-                                <h2 className='font-poppins text-xs md:text-sm'>SEO for {industry.name}</h2>
-                            </div>
-                        ))}
-                    </div>
-                    <Link href={'/industries'}>
-                        <button className=" mt-6 md:mt-8 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow hover:bg-purple-700">
-                            Learn More
-                        </button>
-                    </Link>
-                </div>
-
-                <div className="flex w-full lg:w-1/2 justify-center gap-4 p-1">
-                    <div className='w-1/3 flex flex-col  items-center justify-center gap-3'>
-                        <Image src={healthcare} alt='healthcare' className='rounded-xl'></Image>
-                        <Image src={oil} alt='oil' className='rounded-xl'></Image>
-                    </div>
-                    <div className='w-1/3 flex flex-col gap-3'>
-                        <Image src={roofing} alt='roofind' className='rounded-xl'></Image>
-                        <Image src={pet} alt='pet' className='rounded-xl'></Image>
-                        <Image src={school} alt='dental' className='rounded-xl'></Image>
-                    </div>
-                    <div className='w-1/3 flex flex-col justify-center gap-3'>
-                        <Image src={lawncare} alt='lawncare' className='rounded-xl'></Image>
-                        <Image src={blackcar} alt='automobiles' className='rounded-xl'></Image>
-                    </div>
-                </div>
-            </section>
-            <section className="py-10 bg-white">
-                <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-
-                    <div className="w-2/3 lg:w-1/3 mx-auto text-center mb-6">
-                        <h2 className=" text-xl text-neutral-900">
-                            Trusted by Open Source, enterprise, and more than 99,000 of you
-                        </h2>
-                    </div>
-
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 items-center">
-                        {logos.map((logo, idx) => (
-                            <div key={idx} className="flex justify-center">
-                                <Image
-                                    src={logo.src}
-                                    alt={logo.alt}
-                                    className="h-12 w-auto object-contain"
-                                />
-                            </div>
-                        ))}
-                    </div>
-
-                </div>
-            </section>
+            <SeoLeads items={items}/>  
+            <SeoResults industries={industries}/>  
+            <SeoPartners logos={logos}/>
             <DarkFaqSection faqs={faqs} />
         </>
     );

@@ -43,11 +43,11 @@ export default function page() {
             <BangaloreWebDndustries />
             <WhyChooseBixeltek />
             <section
-                className="bg-black py-20 px-4 md:px-20 flex flex-col md:flex-row items-center gap-10"
+                className="bg-black py-20 px-6 lg:px-20 flex flex-col lg:flex-row items-center gap-10"
                 id="website-audit"
             >
                 {/* LEFT SIDE — Text & CTAs */}
-                <div className="w-full md:w-1/2 flex flex-col justify-start items-start px-6">
+                <div className="w-full lg:w-1/2 flex flex-col justify-start items-start">
                     {/* Heading */}
                     <h2 className="text-4xl md:text-5xl font-inter font-medium text-white mb-6 leading-tight">
                         Find Out What’s{" "}
@@ -115,7 +115,7 @@ export default function page() {
                 </div>
 
                 {/* RIGHT SIDE — Contact Form */}
-                <div className="w-[95%] md:w-[50%] lg:mr-10 flex justify-start items-center">
+                <div className="lg:w-[50%] lg:mr-10 flex justify-start items-center">
                     <ContactFromNew />
                 </div>
             </section>

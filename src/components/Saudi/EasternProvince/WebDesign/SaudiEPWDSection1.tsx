@@ -7,11 +7,11 @@ import websiteImg from "@/assets/Desktop - 2.png";
 
 export default function WebsiteTrustSection() {
   return (
-    <section className="relative py-10 md:py-16 bg-black overflow-hidden">
-      <div className="flex max-w-[95%] md:max-w-[85%] mx-auto gap-10 flex-col md:flex-row items-center">
+    <section className="relative px-6 py-10 md:py-16 bg-black overflow-hidden">
+      <div className="flex lg:max-w-[85%] mx-auto gap-10 flex-col lg:flex-row items-center">
 
         {/* LEFT IMAGE */}
-        <div className="relative w-full md:w-1/2 flex justify-center items-start overflow-hidden rounded-[0px] shadow-2xl h-[550px]">
+        <div className="relative w-full lg:w-1/2 flex justify-center items-start overflow-hidden rounded-[0px] shadow-2xl h-[550px]">
           <motion.div
             className="w-full"
             initial={{ y: 0 }}
@@ -29,8 +29,8 @@ export default function WebsiteTrustSection() {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="px-6 w-full md:w-1/2 py-10">
-          <h2 className="text-3xl md:text-5xl font-inter text-white font-medium mb-6 leading-snug">
+        <div className=" w-full lg:w-1/2 py-10">
+          <h2 className="text-3xl md:text-6xl font-inter text-white font-medium mb-6 leading-snug">
             <span className="text-yellow-500">Because in 2025, </span>
             Your Website Is the Deciding Factor Between Trust and Exit.
           </h2>

@@ -62,7 +62,7 @@ const GradientBorderContainersMobDental = () => {
       {/* ✅ MOBILE VERSION (simple cards) */}
       <div className="space-y-10 md:hidden">
         {containers.map((item, idx) => (
-          <div key={idx} className={`flex group ${item.bgcolor} p-6 rounded-3xl flex-col items-start`}>
+          <div key={idx} className={`flex group ${item.bgcolor} py-6 rounded-3xl flex-col items-start`}>
             <p className={`${item.color2} group-hover:text-white text-5xl font-bold mb-2`}>{item.number}</p>
             <h2 className="text-xl font-bold text-neutral-900 group-hover:text-white mb-2">{item.title}</h2>
             <p className="text-black group-hover:text-white">{item.text}</p>

@@ -6,11 +6,11 @@ import { HiLocationMarker } from "react-icons/hi";
 
 export default function CoverageMapRiyadh() {
   return (
-    <section className="bg-[#fffdf5] text-gray-900 py-16">
-      <div className="max-w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+    <section className="bg-[#fffdf5] text-gray-900 py-16 px-6">
+      <div className="lg:max-w-[85%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
         {/* LEFT: Content */}
         <div>
-          <h2 className="text-3xl md:text-5xl font-inter font-semibold text-black mb-6 leading-tight">
+          <h2 className="text-3xl md:text-6xl font-inter font-semibold text-black mb-6 leading-tight">
             Proudly Serving Businesses Across <span className="text-yellow-500">Riyadh and Beyond</span> 
           </h2>
 

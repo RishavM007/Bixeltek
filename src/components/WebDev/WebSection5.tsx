@@ -56,7 +56,7 @@ const FeaturesSection = () => {
     ];
 
     return (
-        <section className="w-full py-10 md:py-0 bg-[#f5f7fd] text-black relative overflow-hidden">
+        <section className="w-full py-10 lg:py-0 bg-[#f5f7fd] text-black relative overflow-hidden">
             <Image src={shape1} alt="shape1" className="absolute bottom-0 left-0" />
 
             <div className="max-w-full mx-auto flex flex-col-reverse lg:flex-row items-center gap-5">

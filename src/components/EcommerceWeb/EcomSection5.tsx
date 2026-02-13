@@ -29,7 +29,7 @@ const psychologyPoints = [
 
 const DesignPsychologySection = () => {
   return (
-    <section className="bg-black text-white md:py-20 max-w-[90%] mx-auto px-6 md:px-20 flex flex-col lg:flex-row-reverse items-center md:gap-12">
+    <section className="bg-black text-white md:py-20 lg:max-w-[90%] mx-auto px-6 lg:px-20 flex flex-col lg:flex-row-reverse items-center md:gap-12">
       {/* Left - Image */}
       <div className="w-full hidden md:block lg:w-1/2 relative">
         <div className="rounded-2xl overflow-hidden shadow-2xl">

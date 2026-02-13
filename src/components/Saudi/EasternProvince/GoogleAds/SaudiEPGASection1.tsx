@@ -6,11 +6,11 @@ import heroImg from '@/assets/desert-x-alula-saudi-arabia-female-artists-DXA-Lit
 
 export default function GoogleAdsAwarenessSection() {
     return (
-        <section className="relative py-20 md:py-10 bg-[#fffdf5]">
-            <div className="flex max-w-[85%] mx-auto gap-10 flex-col md:flex-row items-center">
+        <section className="relative px-6 py-16 md:py-20 bg-[#fffdf5]">
+            <div className="flex lg:max-w-[85%] mx-auto gap-10 flex-col lg:flex-row items-center">
 
                 {/* ✅ Left Image Container */}
-                <div className="relative w-full md:w-1/2 rounded-r-[40px] flex justify-center items-center">
+                <div className="relative w-full lg:w-1/2 rounded-r-[40px] flex justify-center items-center">
                     <Image
                         src={heroImg}
                         alt="Google search illustration"
@@ -19,10 +19,10 @@ export default function GoogleAdsAwarenessSection() {
                 </div>
 
                 {/* ✅ Right Content */}
-                <div className=" w-full md:mt-0 md:w-1/2 ">
+                <div className=" w-full lg:mt-0 lg:w-1/2 ">
                     
                     {/* Heading */}
-                    <h2 className="text-3xl md:text-5xl font-inter text-black font-medium mb-4 leading-snug">
+                    <h2 className="text-3xl md:text-6xl font-inter text-black font-medium mb-4 leading-snug">
                         Your Customers Are Searching — 
                         <span className="text-yellow-600"> You Just Need to Be There When They Do.</span>
                     </h2>

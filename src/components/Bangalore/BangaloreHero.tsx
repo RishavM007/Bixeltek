@@ -35,8 +35,8 @@ const HeroBangalore = () => {
     };
 
     return (
-        <section className="relative bg-white py-20 lg:py-40 px-6 overflow-hidden">
-            <div className="md:max-w-[85%] mx-auto">
+        <section className="relative bg-white py-32 lg:py-40 px-6 overflow-hidden">
+            <div className="lg:max-w-[85%] mx-auto">
                 <motion.div
                     className="flex flex-col items-center text-center"
                     initial="hidden"
@@ -57,18 +57,18 @@ const HeroBangalore = () => {
                     {/* Main Heading */}
                     <motion.h1
                         variants={itemVariants}
-                        className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-8  max-w-[85%] mx-auto"
+                        className="text-3xl md:text-6xl font-bold text-gray-900 leading-tight mb-8  md:max-w-[85%] mx-auto"
                     >
-                        Digital Marketing Agency in Bangalore That  <br />{" "}
+                        Digital Marketing Agency in Bangalore That  <br className="hidden md:block" />{" "}
                         <span className="text-blue-600">Delivers Performance and Precision</span>
                     </motion.h1>
 
                     {/* Body Text */}
                     <motion.div
                         variants={itemVariants}
-                        className="space-y-6 mb-12 max-w-[85%] mx-auto"
+                        className="space-y-6 mb-12 md:max-w-[85%] mx-auto"
                     >
-                        <p className="text-xl text-gray-700 leading-relaxed">
+                        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
                            From Koramangala to Whitefield and Indiranagar, Bixeltek helps Bangalore businesses drive visibility, generate qualified leads, and grow revenue through data-driven marketing systems.
                         </p>
                     </motion.div>

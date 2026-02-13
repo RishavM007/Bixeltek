@@ -15,10 +15,10 @@ export default function MarketingChaosRiyadh() {
   ];
 
   return (
-    <section className="relative -mt-[2px] pb-20 md:pb-10 py-0 md:py-0 bg-[#fffdf5]">
-      <div className="flex max-w-[85%] mx-auto gap-10 flex-col-reverse md:flex-row items-center">
+    <section className="relative px-6 -mt-[2px] pb-20 md:pb-10 py-0 md:py-0 bg-[#fffdf5]">
+      <div className="flex lg:max-w-[85%] mx-auto gap-10 flex-col-reverse lg:flex-row items-center">
         {/* Left Content */}
-        <div className="md:pl-6 w-full md:w-1/2 mt-[-50px] md:mt-0 md:py-16">
+        <div className="w-full lg:w-1/2 mt-[-50px] md:mt-0 lg:py-16">
           {/* Heading */}
           <h2 className="text-3xl md:text-5xl font-inter text-black font-medium mb-6 leading-snug">
             If You’re Still Relying on Guesswork,{' '}
@@ -64,11 +64,11 @@ export default function MarketingChaosRiyadh() {
         </div>
 
         {/* Right Image */}
-        <div className="relative w-full md:w-1/2 rounded-l-[40px] bg-transparent flex justify-center items-center">
+        <div className="relative w-full lg:w-1/2 rounded-l-[40px] bg-transparent flex justify-center items-center">
           <Image
             src={chaosImg}
             alt="Marketing chaos in Riyadh"
-            className="rounded-[0px] h-[400px] md:h-[800px] object-cover z-10 "
+            className="rounded-[0px] h-[400px] lg:h-[800px] object-cover z-10 "
           />
         </div>
       </div>

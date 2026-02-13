@@ -24,11 +24,11 @@ export default function page() {
     <CMSIndustries/>
     <MarketingInfrastructureSection/>
     <section
-  className="bg-black py-20 px-4 md:px-20 flex flex-col lg:flex-row items-center gap-10"
+  className="bg-black py-20 px-6 lg:px-20 flex flex-col lg:flex-row items-center gap-10"
   id="form"
 >
   {/* Left Side - Text & CTAs */}
-  <div className="w-full lg:w-1/2 flex flex-col justify-start items-start px-6">
+  <div className="w-full lg:w-1/2 flex flex-col justify-start items-start">
     <h2 className="text-4xl md:text-6xl font-inter font-medium text-white mb-6">
       Find Out If Your <span className="text-blue-500">CMS Is Holding You Back</span>.
     </h2>
@@ -104,7 +104,7 @@ export default function page() {
   </div>
 
   {/* Right Side - Contact Form */}
-  <div className="w-[95%] lg:w-[50%] lg:mr-20 flex justify-start items-center">
+  <div className="lg:w-[50%] lg:mr-20 flex justify-start items-center">
     <ContactFromNew />
   </div>
 </section>

@@ -18,9 +18,9 @@ export default function WebsiteInvestmentSection() {
 
   return (
     <section className="relative py-16 bg-black text-white flex justify-center">
-      <div className="flex flex-col md:flex-row items-center w-[95%] md:w-[85%] gap-10">
+      <div className="flex flex-col lg:flex-row items-center px-6 lg:w-[85%] gap-10">
         {/* Left Image */}
-        <div className="relative w-full md:w-1/2 flex justify-center items-center">
+        <div className="relative w-full lg:w-1/2 flex justify-center items-center">
           <Image
             src={websiteImg}
             alt="Website Investment"
@@ -31,7 +31,7 @@ export default function WebsiteInvestmentSection() {
         </div>
 
         {/* Right Content */}
-        <div className="w-full md:w-1/2 px-6">
+        <div className="w-full lg:w-1/2 ">
           {/* Heading */}
           <h2 className="text-3xl md:text-5xl font-inter font-medium mb-6 leading-snug">
             Because a Website Is an <span className="text-yellow-500">Investment — Not an Expense.</span>

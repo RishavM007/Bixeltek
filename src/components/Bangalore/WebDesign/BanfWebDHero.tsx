@@ -35,7 +35,7 @@ const BangaloreWebsiteDesignHero = () => {
     };
 
     return (
-        <section className="relative h-[160vh] md:h[110vh] flex flex-col justify-center items-center bg-white py-10 lg:py-14 px-6 overflow-hidden">
+        <section className="relative md:h-[130vh] lg:h-[110vh] flex flex-col justify-center items-center bg-white pt-32 pb-10 md:py-10 lg:py-14 px-6 overflow-hidden">
             <div className="md:max-w-[85%] mx-auto">
                 <motion.div
                     className="flex flex-col items-center text-center"
@@ -71,30 +71,47 @@ const BangaloreWebsiteDesignHero = () => {
                         Bixeltek builds websites that combine visual excellence with measurable business impact. From corporate sites to e-commerce platforms, our Bangalore team delivers design systems built to convert.
                     </motion.p>
                      <motion.div
-                        variants={itemVariants}
-                        className="flex flex-wrap justify-center items-center gap-8 md:gap-12 text-gray-600 mb-12"
+                    variants={itemVariants}
+                    className="
+                        flex flex-col
+                        items-start
+                        gap-5
+                        mb-12
+                        md:flex-row
+                        md:flex-wrap
+                        md:justify-center
+                        md:items-center
+                        md:gap-12
+                    "
                     >
-                        <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
-                                <Palette className="w-5 h-5 text-purple-600" />
-                            </div>
-                            <span className="font-semibold text-gray-900">Design & Development Experts</span>
+                    <div className="flex items-center gap-3 w-full md:w-auto">
+                        <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
+                        <Palette className="w-5 h-5 text-purple-600" />
                         </div>
-                        
-                        <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                                <Zap className="w-5 h-5 text-blue-600" />
-                            </div>
-                            <span className="font-semibold text-gray-900">High-Speed Websites</span>
+                        <span className="font-semibold text-sm md:text-base text-gray-900">
+                        Design & Development Experts
+                        </span>
+                    </div>
+
+                    <div className="flex items-center gap-3 w-full md:w-auto">
+                        <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                        <Zap className="w-5 h-5 text-blue-600" />
                         </div>
-                        
-                        <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
-                                <TrendingUp className="w-5 h-5 text-green-600" />
-                            </div>
-                            <span className="font-semibold text-gray-900">Conversion-Optimized Frameworks</span>
+                        <span className="font-semibold text-sm md:text-base text-gray-900">
+                        High-Speed Websites
+                        </span>
+                    </div>
+
+                    <div className="flex items-center gap-3 w-full md:w-auto">
+                        <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                        <TrendingUp className="w-5 h-5 text-green-600" />
                         </div>
+                        <span className="font-semibold text-sm md:text-base text-left text-gray-900">
+                        Conversion-Optimized Frameworks
+                        </span>
+                    </div>
                     </motion.div>
+
 
                     {/* CTA Buttons */}
                     <motion.div

@@ -44,7 +44,7 @@ const corePillars: CardProps[] = [
 
 const GradientCards: React.FC = () => {
   return (
-    <section className="py-20 max-w-[95%] md:max-w-[85%] mx-auto flex flex-col items-center">
+    <section className="py-20 px-6 lg:max-w-[85%] mx-auto flex flex-col items-center">
       {/* Heading */}
       <div className="text-center mb-12 px-4 md:px-0">
         <h2 className="text-3xl md:text-6xl font-medium font-inter text-white mb-4">
@@ -60,7 +60,7 @@ const GradientCards: React.FC = () => {
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-8 w-[95%] md:w-[85%]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-8 lg:w-[85%]">
         {corePillars.map((pillar, idx) => (
           <div
             key={idx}

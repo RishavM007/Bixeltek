@@ -11,26 +11,124 @@ import CoverageMapRiyadh from '@/components/Saudi/Riyadh/SaudiRiSection6'
 import SustainableGrowth from '@/components/Saudi/Riyadh/SaudiRiSection7'
 import ContactFromNew from '@/components/ContactFormNew'
 import React from 'react'
+import LocationHeroSection from '@/components/Common/location/LocationHeroSection'
+import googleIcon from "@/assets/google-authenticator-svgrepo-com.png";
+import clientIcon from "@/assets/star-shine-svgrepo-com.png";
+import saudiIcon from "@/assets/medal-ribbons-star-svgrepo-com.png";
+
+// ✅ Background Image
+import heroBg from "@/assets/Riyadh_Skyline.jpg";
+import LocationProcessSection from '@/components/Common/location/LocationProcessSection'
+
+ const proofPoints = [
+    { id: 1, text: "Google Partner Certified", icon: googleIcon },
+    { id: 2, text: "90% Client Retention", icon: clientIcon },
+    { id: 3, text: "Trusted by Businesses Across Saudi Arabia", icon: saudiIcon },
+  ];
+
+  const steps = [
+    {
+        number: "01",
+        title: "Discovery & Audit",
+        text: "We analyze your current digital presence, competitors, and growth potential. This step uncovers performance gaps, hidden opportunities, and defines benchmarks for success in Riyadh’s competitive market.",
+        gradient: "from-blue-500 via-blue-400 to-transparent",
+        color: "text-yellow-500",
+        bgcolor: "hover:bg-yellow-500",
+    },
+    {
+        number: "02",
+        title: "Strategy & Keyword Mapping",
+        text: "We identify Arabic and English search opportunities that align with your business goals — building a strategic roadmap based on audience behavior, search intent, and market dynamics.",
+        gradient: "from-green-500 via-teal-400 to-transparent",
+        color: "text-orange-500",
+        bgcolor: "hover:bg-orange-500",
+    },
+    {
+        number: "03",
+        title: "Campaign Design & Web Setup",
+        text: "Our team creates high-performing ad campaigns, localized SEO clusters, and conversion-focused landing pages. Every component is engineered to attract, engage, and convert.",
+        gradient: "from-yellow-400 via-yellow-300 to-transparent",
+        color: "text-yellow-400",
+        bgcolor: "hover:bg-yellow-400",
+    },
+    {
+        number: "04",
+        title: "Launch & Tracking",
+        text: "We deploy your campaigns with precision — full GA4 integration, Tag Manager setup, and conversion event tracking ensure every click is measured and every lead accounted for.",
+        gradient: "from-pink-500 via-purple-400 to-transparent",
+        color: "text-yellow-500",
+        bgcolor: "hover:bg-yellow-500",
+    },
+    {
+        number: "05",
+        title: "Optimization & Scale",
+        text: "Continuous A/B testing, conversion rate optimization, and data-backed scaling — turning your marketing from reactive to predictable, and from clicks to consistent growth.",
+        gradient: "from-green-500 via-transparent to-transparent",
+        color: "text-yellow-600",
+        bgcolor: "hover:bg-yellow-600",
+    },
+];
 
 export default function page() {
   return (
     <>
-      <HeroRiyadh />
+      {/* <HeroRiyadh /> */}
+      <LocationHeroSection
+            ctaTheme='green'
+            heading={
+                <>
+                <span>Digital Marketing Agency in Riyadh{" "}
+            <span className="text-yellow-500">That Drives Measurable Growth</span></span>
+                </>
+            }
+            description=' From Al Olaya to Diriyah and Al Yasmin — Bixeltek helps Saudi businesses attract more customers, optimize ad spend, and dominate online visibility through performance-driven marketing systems.'
+              proofPoints={proofPoints}
+              primaryCTA={{
+                    text: 'Get My Free Growth Audit',
+                    action: { type: 'openForm', form: 'contact' },
+                }}
+                secondaryCTA={{
+                    text: 'Talk to a Strategist',
+                    variant: 'secondary',
+                    action: {
+                    type: 'link',
+                    href: 'mailto:zee@bixeltek.com',
+                    },
+                }}
+                backgroundImage={heroBg}      
+            />
       <BusinessGrowthRiyadh />
       <MarketingChaosRiyadh />
       <DigitalMarketingMarqueeRiyadh />
       <GrowthCards />
       <DigitalMarketingServicesRiyadh />
-      <RiyadhDMSteps />
+            {/* <RiyadhDMSteps /> */}
+      <LocationProcessSection
+      bg='bg-white'
+      heading={
+        <>
+        <span>From First Click to Consistent Growth <br /> <span className="text-yellow-500">A 5-Step Proven System.</span></span>
+        </>
+      }
+      description='Every Riyadh client follows our structured roadmap that transforms their marketing from reactive to predictable.'
+      steps={steps}
+      cta={{
+        text:'Book a Free Strategy Call',
+        href:'mailto:zee@bixeltek.com',
+        bg:'bg-gradient-to-tr from-green-500 via-green-700 to-green-950 hover:bg-gradient-to-tr hover:from-green-950 hover:via-green-700 hover:to-green-500 text-white'
+      }}
+      footerText='This systematic approach ensures that your campaigns, SEO, and ads grow smarter over time —
+                guided by insights, not guesswork.'
+      />
       <CoverageMapRiyadh />
       <SaudiRiIndustries />
       <SustainableGrowth />
       <section
-        className="bg-[#fffdf5] py-20 px-4 md:px-20 flex flex-col md:flex-row items-center gap-10"
+        className="bg-[#fffdf5] py-20 px-6 lg:px-20 flex flex-col lg:flex-row items-center gap-10"
         id="growth-system-riyadh"
       >
         {/* LEFT SIDE — TEXT */}
-        <div className="w-full md:w-1/2 flex flex-col justify-start items-start px-6">
+        <div className="w-full lg:w-1/2 flex flex-col justify-start items-start">
           <h2 className="text-4xl md:text-6xl font-inter font-bold text-black mb-6">
             Ready to Build Your <span className="text-yellow-500">Growth System</span> in Riyadh?
           </h2>
@@ -57,7 +155,7 @@ export default function page() {
         </div>
 
         {/* RIGHT SIDE — FORM */}
-        <div className="w-[95%] md:w-[50%] lg:mr-10 flex justify-start items-center">
+        <div className="lg:w-[50%] lg:mr-10 flex justify-start items-center">
           <ContactFromNew />
         </div>
       </section>

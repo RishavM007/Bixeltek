@@ -109,7 +109,7 @@ export default function page() {
                 </div>
 
                 {/* Right Side - Contact Form */}
-                <div className="w-[95%] lg:w-[50%] lg:mr-20 flex justify-start items-center">
+                <div className="w-[95%] lg:w-[50%] lg:mr-10 flex justify-start items-center">
                     <ContactFromNew />
                 </div>
             </section>

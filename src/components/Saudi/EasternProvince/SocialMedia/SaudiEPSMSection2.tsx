@@ -15,12 +15,12 @@ export default function SocialStrategySection() {
 
   return (
     <section className="relative py-16 bg-black overflow-hidden">
-      <div className="flex max-w-[95%] md:max-w-[85%] mx-auto gap-10 flex-col md:flex-row items-center">
+      <div className="flex px-6 lg:max-w-[85%] mx-auto gap-10 flex-col-reverse lg:flex-row items-center">
 
         {/* ✅ Left Content */}
-        <div className="w-full md:w-1/2 px-6">
+        <div className="w-full lg:w-1/2">
           {/* Heading */}
-          <h2 className="text-3xl md:text-5xl font-inter text-white font-medium mb-6 leading-snug">
+          <h2 className="text-3xl md:text-6xl font-inter text-white font-medium mb-6 leading-snug">
             <span className="text-yellow-500">
               Posting Randomly Isn’t a Strategy —
             </span>{" "}
@@ -53,7 +53,7 @@ export default function SocialStrategySection() {
         </div>
 
         {/* ✅ Right Image */}
-        <div className="relative w-full md:w-1/2 flex justify-center items-center">
+        <div className="relative w-full lg:w-1/2 flex justify-center items-center">
           <Image
             src={socialStrategyImg}
             alt="Social media strategy"

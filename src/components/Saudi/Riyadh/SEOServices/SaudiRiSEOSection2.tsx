@@ -16,10 +16,10 @@ export default function SEOIssuesSection() {
   ];
 
   return (
-    <section className="bg-black text-white py-24 px-6 md:px-20">
-      <div className="max-w-[85%] mx-auto flex flex-col md:flex-row-reverse items-center gap-10">
+    <section className="bg-black text-white py-10 lg:py-24 px-6 lg:px-20">
+      <div className="lg:max-w-[95%] mx-auto flex flex-col lg:flex-row-reverse items-center gap-10">
         {/* Left Side — Image */}
-        <div className="w-full md:w-1/2 flex justify-center items-center">
+        <div className="w-full lg:w-1/2 flex justify-center items-center">
           <Image
             src={seoAuditImage}
             alt="SEO Audit in Riyadh"
@@ -31,8 +31,8 @@ export default function SEOIssuesSection() {
         </div>
 
         {/* Right Side — Content */}
-        <div className="w-full md:w-1/2 flex flex-col justify-start items-start">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
+        <div className="w-full lg:w-1/2 flex flex-col justify-start items-start">
+          <h2 className="text-3xl md:text-6xl font-bold mb-6 text-white leading-tight">
             If Your SEO Still Relies on Keywords Alone,{" "}
             <span className="text-yellow-500">You’re Invisible to Google’s AI</span>.
           </h2>

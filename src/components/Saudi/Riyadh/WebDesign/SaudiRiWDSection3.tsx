@@ -22,8 +22,8 @@ export default function WebDevRiyadhShowcase() {
     ];
 
     return (
-        <section className="w-full min-h-screen bg-black text-white gap-5  flex flex-col items-center justify-center">
-            <h2 className="text-center text-4xl md:text-6xl max-w-5xl font-semibold mx-auto">Crafting <span className="text-yellow-500">Digital Experiences</span> That Inspire</h2>
+        <section className="w-full min-h-screen bg-black text-white gap-5  flex flex-col items-center justify-center px-6">
+            <h2 className="text-center text-3xl md:text-6xl md:max-w-5xl font-semibold mx-auto">Crafting <span className="text-yellow-500">Digital Experiences</span> That Inspire</h2>
             <p className="text-sm text-white ">Here’s a look at some of the websites we’ve crafted — designed for growth, trust, and performance.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-7xl">
                 {images.map((item, i) => (
@@ -50,7 +50,7 @@ export default function WebDevRiyadhShowcase() {
                
             </div>
              <div className="flex flex-col justify-center items-center gap-4 mt-4">
-                            <h2 className="text-2xl font-inter font-semibold text-white ">Are You Looking For A High Performing Website?</h2>
+                            <h2 className="text-2xl font-inter font-semibold text-white text-center">Are You Looking For A High Performing Website?</h2>
                      <Link href={'mailto:zee@bixeltek.com'}>
                             <button className="px-7 py-3 rounded-2xl bg-gradient-to-tr from-green-500 via-green-700 to-green-950 border border-green-600 text-white font-semibold text-sm shadow-lg hover:bg-blue-700 transition">
                                Talk To Our Web Design Team

@@ -29,7 +29,7 @@ export default function MobileTechGrid() {
   ];
 
   return (
-    <section className="block md:hidden w-full bg-black py-20">
+    <section className="block lg:hidden w-full bg-black py-20">
           <div className="text-center mb-6">
           <h2 className="text-white text-3xl md:text-6xl font-bold">
             Your Digital Storefront <span className="text-blue-400">Perfected</span>

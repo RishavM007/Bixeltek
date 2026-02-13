@@ -15,7 +15,7 @@ export default function WebSection1() {
 
     return (
         <>
-            <section className="relative flex flex-col items-center justify-center h-[90vh] md:h-[100vh] bg-black -mt-32 text-center px-6 overflow-hidden">
+            <section className="relative flex flex-col items-center justify-center h-[100vh] md:h-[100vh] bg-black -mt-32 text-center px-6 overflow-hidden">
                 <div className='flex justify-center items-center'>
                     {/* Blue Sphere Glow */}
                     <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-blue-500 opacity-20 blur-3xl pointer-events-none" />

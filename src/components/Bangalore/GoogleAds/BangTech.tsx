@@ -176,7 +176,7 @@ const BangaloreTech = () => {
     };
 
     return (
-        <section className="relative hidden md:block bg-white py-10 px-6 overflow-hidden">
+        <section className="relative hidden lg:block bg-white py-10 px-6 overflow-hidden">
             <div ref={containerRef} className="max-w-7xl mx-auto relative min-h-[800px]">
                 {/* Title */}
                 <div className="text-center mb-6">

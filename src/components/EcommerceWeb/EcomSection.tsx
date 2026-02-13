@@ -8,7 +8,7 @@ import storefrontImage from "@/assets/ecommerce.png";
 
 const EcommerceSystemSection = () => {
     return (
-        <section className="bg-black text-white max-w-[90%] mx-auto py-20 px-6 md:px-20 flex flex-col lg:flex-row items-center gap-12">
+        <section className="bg-black text-white lg:max-w-[90%] mx-auto py-20 px-6 lg:px-20 flex flex-col lg:flex-row items-center gap-12">
             {/* Left Side - Image - ENLARGED */}
             <div className="w-full lg:w-1/2 relative">
                 <div className="relative  rounded-2xl shadow-xl overflow-hidden">
@@ -23,7 +23,7 @@ const EcommerceSystemSection = () => {
 
             {/* Right Side - Content */}
             <div className="w-full lg:w-1/2 flex flex-col justify-center items-start">
-                <h2 className="text-2xl md:text-4xl font-inter font-medium mb-6 leading-tight">
+                <h2 className="text-3xl md:text-6xl font-inter font-medium mb-6 leading-tight">
                     Your Storefront Is No Longer a Website — <br className="hidden md:block" />
                     It&apos;s a System of <span className="text-blue-500">Trust, Data, and Psychology</span>
                 </h2>

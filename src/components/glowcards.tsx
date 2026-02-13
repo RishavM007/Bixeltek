@@ -75,7 +75,7 @@ const services = [
 export default function ServicesSection() {
   return (
     <section
-      className="w-full bg-cover bg-center bg-no-repeat py-32  px-6 md:px-16 relative  bg-[#fff]"
+      className="w-full bg-cover bg-center bg-no-repeat py-32  px-6 lg:px-16 relative  bg-[#fff]"
     // style={{
     //   backgroundImage: "linear-gradient(to top, #e14fad 0%, #f9d423 100%)"
     // }}
@@ -113,7 +113,7 @@ export default function ServicesSection() {
 
       <ShowcaseSection/>
       </div>
-      <div className='mb-[-270px] mt-20'>
+      <div className='mb-[-270px] mt-8 md:mt-20'>
         <Counter />
       </div>
     </section>

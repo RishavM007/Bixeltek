@@ -104,9 +104,9 @@ const colorClasses = {
 
 export default function SeoCards() {
     return (
-        <section className="py-20 px-4 md:px-20 bg-black text-white">
-            <div className="text-center mb-12 max-w-[85%] mx-auto">
-                <h2 className="text-3xl md:text-6xl font-bold mb-4">
+        <section className="py-20 px-6 lg:px-20 bg-black text-white">
+            <div className="text-center mb-12 lg:max-w-[85%] mx-auto">
+                <h2 className="text-2xl md:text-6xl font-bold mb-4">
                     We Build SEO Systems That Google’s AI <br /> <span className="text-yellow-500">Understands and Customers Trust.</span> 
                 </h2>
                 <p className="text-gray-300 max-w-5xl mx-auto text-lg">

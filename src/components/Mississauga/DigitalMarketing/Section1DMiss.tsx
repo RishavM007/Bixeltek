@@ -17,13 +17,13 @@ export default function WhyGoogleAdsMississauga() {
                     whileInView={{ x: 0, opacity: 1, scale: 1 }}
                     transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                     viewport={{ once: true }}
-                    className="flex-1 relative w-full lg:w-1/2 h-[400px] md:h-[500px] ml-[-100px] lg:h-[690px]"
+                    className="lg:flex-1 relative w-full lg:w-1/2 h-[400px] md:h-[500px] ml-[-100px] lg:h-[690px]"
                 >
                     <Image
                         src={dashboardImg}
                         alt="Digital Marketing Overview"
                         fill
-                        className="object-contain object-left rounded-r-2xl shadow-2xl"
+                        className="object-contain lg:object-left rounded-r-2xl shadow-2xl"
                         priority
                     />
                 </motion.div>
@@ -34,7 +34,7 @@ export default function WhyGoogleAdsMississauga() {
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
                     viewport={{ once: true }}
-                    className="flex-1 lg:w-1/2 px-8 lg:px-16 mt-10 lg:mt-10"
+                    className="flex-1 lg:w-1/2 px-8 lg:px-16 md:mt-10"
                 >
                     <h2 className="text-3xl md:text-6xl font-bold font-inter leading-snug mb-6">
                         If You’re Not Online, <span className="text-blue-500">You’re Losing Business</span>

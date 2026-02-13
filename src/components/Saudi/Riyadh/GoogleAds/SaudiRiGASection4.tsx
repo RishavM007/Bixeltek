@@ -28,10 +28,10 @@ const RiyadhGoogleAdsFramework = () => {
     ];
 
     return (
-        <section className="bg-[#fffdf5]  text-black py-12 md:py-2 px-6 md:px-20 ">
-            <div className="max-w-[95%] md:max-w-[85%] mx-auto text-center">
+        <section className="bg-[#fffdf5]  text-black py-12 md:py-2 px-6 lg:px-20 ">
+            <div className=" lg:max-w-[85%] mx-auto text-center">
                 {/* Heading */}
-                <h2 className="text-3xl md:text-5xl font-semibold mb-6 text-black">
+                <h2 className="text-3xl md:text-6xl font-semibold mb-6 text-black">
                     Our Google Ads Framework Combines <br /> <span className="text-yellow-500">Strategy, Science, and Scale.</span>
                 </h2>
 
@@ -42,7 +42,7 @@ const RiyadhGoogleAdsFramework = () => {
                 </p>
 
                 {/* Cards Row */}
-                <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-12">
+                <div className="flex flex-col lg:flex-row justify-center items-center gap-10 md:gap-12">
                     {cards.map((card, index) => (
                         <motion.div
                             key={card.id}
@@ -50,7 +50,7 @@ const RiyadhGoogleAdsFramework = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: index * 0.2 }}
                             viewport={{ once: true }}
-                            className="relative w-[95%] md:w-1/4 h-[420px] flex flex-col justify-center items-center rounded-2xl overflow-hidden group"
+                            className="relative w-[95%] lg:w-1/4 h-[420px] flex flex-col justify-center items-center rounded-2xl overflow-hidden group"
                         >
                             {/* Animated rotating gradient border */}
                             <motion.div

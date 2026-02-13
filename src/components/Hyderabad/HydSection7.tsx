@@ -13,10 +13,10 @@ export default function ExpertiseSection() {
     ];
 
     return (
-        <section className="max-w-[90%] mx-auto bg-black text-white md:py-20 px-6 md:px-16 lg:px-24">
-            <div className="flex flex-col md:flex-row gap-12">
+        <section className="max-w-[90%] mx-auto bg-black text-white lg:py-20 px-6 lg:px-24">
+            <div className="flex flex-col lg:flex-row gap-12">
                 {/* Left side */}
-                <div className="relative w-full md:w-2/5 flex flex-col">
+                <div className="relative w-full lg:w-2/5 flex flex-col">
                     {/* Consultation Card */}
                     <div className="bg-gradient-to-br absolute top-0 left-0 z-20 from-black to-black rounded-br-3xl p-6 w-[80%] md:w-[70%] shadow-lg border-neutral-800">
                         <h3 className="text-2xl font-bold mb-2">
@@ -45,7 +45,7 @@ export default function ExpertiseSection() {
                 </div>
 
                 {/* Right side */}
-                <div className="w-full md:w-3/5 flex flex-col justify-center gap-10">
+                <div className="w-full lg:w-3/5 flex flex-col justify-center gap-10">
                     {/* Heading & intro */}
                     <div>
                         <span className="text-blue-400 text-sm font-medium uppercase tracking-wider">

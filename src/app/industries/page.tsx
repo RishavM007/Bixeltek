@@ -162,9 +162,9 @@ export default function Industries() {
         </div>
       </section>
       <IndustrySections />
-      <section className="max-w-[90%] xl:max-w-[80%] py-10 mx-auto">
+      <section className="lg:max-w-[90%] xl:max-w-[80%] py-10 mx-auto">
         <div className="py-10  md:px-0 text-center">
-          <h2 className="text-4xl font-sofiasanscondensed md:text-5xl font-semibold text-white mb-5">Why Choose Us?</h2>
+          <h2 className="text-3xl font-sofiasanscondensed md:text-6xl font-semibold text-white mb-5">Why Choose Us?</h2>
           <p className="text-sm xl:text-xl max-w-xl mx-auto text-gray-100">
             Experience the unrivaled power of our proven methods that have catapulted countless businesses to new heights.
           </p>

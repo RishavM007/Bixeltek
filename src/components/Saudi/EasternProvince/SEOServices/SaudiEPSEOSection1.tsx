@@ -6,11 +6,11 @@ import searchImg from "@/assets/ai seo RANKINGS.png"; // ✅ replace with your r
 
 export default function SEOGrowthEasternProvince() {
   return (
-    <section className="relative py-10 md:py-16 bg-[#fffdf5] overflow-hidden">
-      <div className="flex max-w-[95%] md:max-w-[85%] mx-auto gap-10 flex-col md:flex-row items-center">
+    <section className="relative px-6 py-10 md:py-16 bg-[#fffdf5] overflow-hidden">
+      <div className="flex lg:max-w-[85%] mx-auto gap-10 flex-col lg:flex-row items-center">
 
         {/* ✅ Left Image Container */}
-        <div className="relative w-full md:w-1/2 flex justify-center items-center">
+        <div className="relative w-full lg:w-1/2 flex justify-center items-center">
           <Image
             src={searchImg}
             alt="SEO in Eastern Province"
@@ -22,7 +22,7 @@ export default function SEOGrowthEasternProvince() {
         </div>
 
         {/* ✅ Right Content */}
-        <div className="px-6 w-full md:w-1/2 py-10">
+        <div className=" w-full lg:w-1/2 lg:py-10">
           {/* Heading */}
           <h2 className="text-3xl md:text-5xl font-inter text-black font-medium mb-4 leading-snug">
             Your Customers Are Searching —{" "}

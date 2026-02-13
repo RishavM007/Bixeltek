@@ -48,7 +48,7 @@ export default function SaudiGAEPPillarIndustries(): JSX.Element {
           Our expertise spans industries that define the region’s economy:
                 </p>
             </div>
-            <div className="carousel-container md:pl-[500px] relative w-full overflow-hidden">
+            <div className="carousel-container md:pl-[400px] lg:pl-[500px] relative w-full overflow-hidden">
                 <div
                     className="carousel flex gap-6 px-8 w-max transform transition-transform duration-500"
                     style={{ transform: `translateX(${carouselOffset}px)` }}

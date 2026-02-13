@@ -16,10 +16,10 @@ export default function PrecisionPerformanceSection() {
   ];
 
   return (
-    <section className="relative bg-[#fffdf5] text-black py-20 px-6 md:px-16 overflow-hidden">
-      <div className="max-w-[95%] md:max-w-[85%] mx-auto flex flex-col md:flex-row items-center gap-10">
+    <section className="relative bg-[#fffdf5] text-black py-20 px-6 lg:px-16 overflow-hidden">
+      <div className="lg:max-w-[85%] mx-auto flex flex-col lg:flex-row items-center gap-10">
         {/* Left - Image */}
-        <div className="relative w-full md:w-1/2 flex justify-center">
+        <div className="relative w-full lg:w-1/2 flex justify-center">
           <Image
             src={image1}
             alt="Google Ads Management Precision"
@@ -28,7 +28,7 @@ export default function PrecisionPerformanceSection() {
         </div>
 
         {/* Right - Content */}
-        <div className="w-full md:w-1/2 space-y-6">
+        <div className="w-full lg:w-1/2 space-y-6">
           <h2 className="text-3xl text-black md:text-5xl font-inter font-semibold leading-snug">
             Because Real Performance Comes From{" "}
             <span className="text-yellow-500">Precision, Not Guesswork.</span>

@@ -6,9 +6,9 @@ import Link from "next/link";// ⚙️ Replace with your actual image
 
 export default function WebSpeedRiyadh() {
     return (
-        <section className="bg-black max-w-[95%] md:max-w-[85%] mx-auto text-white py-24 px-6 md:px-20 flex flex-col md:flex-row items-center gap-10 overflow-hidden">
+        <section className="bg-black lg:max-w-[95%] mx-auto text-white py-24 px-6 lg:px-20 flex flex-col lg:flex-row items-center gap-10 overflow-hidden">
             {/* LEFT SIDE — IMAGE */}
-            <div className="relative w-full md:w-1/2 h-[400px] md:h-[450px] rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative w-full lg:w-1/2 h-[400px] lg:h-[450px] rounded-2xl overflow-hidden shadow-lg">
                 <Image
                     src={fastWebImage}
                     alt="High-speed web design for Riyadh businesses"
@@ -22,8 +22,8 @@ export default function WebSpeedRiyadh() {
 
 
             {/* RIGHT SIDE — CONTENT */}
-            <div className="w-full md:w-1/2 space-y-6">
-                <h2 className="text-3xl md:text-5xl font-medium leading-tight">
+            <div className="w-full lg:w-1/2 space-y-6">
+                <h2 className="text-3xl md:text-6xl font-medium leading-tight">
                     Riyadh Is Moving Fast —{" "}
                     <span className="text-yellow-500">Your Website Should Too.</span>
                 </h2>

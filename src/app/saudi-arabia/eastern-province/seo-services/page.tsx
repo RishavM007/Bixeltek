@@ -25,11 +25,58 @@ import SEOServicesEasternProvince from '@/components/Saudi/EasternProvince/SEOSe
 import FutureSEOSection from '@/components/Saudi/EasternProvince/SEOServices/SaudiEPSEOSection6';
 import ContactFromNew from '@/components/ContactFormNew';
 import React from 'react'
+import LocationHeroSection from '@/components/Common/location/LocationHeroSection';
+import heroBg from "@/assets/SaudiSEOHeroImg.avif";
+import googleIcon from "@/assets/google-authenticator-svgrepo-com.png";
+import clientIcon from "@/assets/star-shine-svgrepo-com.png";
+import globalIcon from "@/assets/medal-ribbons-star-svgrepo-com.png";
+
+
+const proofPoints = [
+    { id: 1, text: "Google Partner Certified", icon: googleIcon },
+    { id: 2, text: "90% Client Retention", icon: clientIcon },
+    { id: 3, text: "Global SEO Expertise", icon: globalIcon },
+  ];
 
 export default function page() {
     return (
         <>
-            <HeroEasternProvinceSEO />
+            {/* <HeroEasternProvinceSEO /> */}
+            <LocationHeroSection
+            ctaTheme='green'
+            heading={
+                <>
+                <span>SEO Services in Eastern Province That Build  <br />
+            <span className="text-yellow-500">
+               Visibility, Credibility & Conversions
+            </span></span>
+                </>
+            }
+            description='Serving businesses across Khobar, Dammam, and Dhahran — Bixeltek’s SEO systems combine
+            search intent, content depth, and AI-driven optimization to help your brand rank where
+            customers are looking.'
+            statement = {
+                <>
+                <p className="mt-6 text-xl md:text-2xl font-inter text-yellow-300 font-medium">
+         Start Ranking in Just 60 Days — With Bixeltek’s Proven SEO Framework.
+          </p>
+                </>
+            }
+              proofPoints={proofPoints}
+              primaryCTA={{
+                    text: 'Get a Free SEO Audit',
+                    action: { type: 'openForm', form: 'seo' },
+                }}
+                secondaryCTA={{
+                    text: 'Talk to an SEO Specialist',
+                    variant: 'secondary',
+                    action: {
+                    type: 'link',
+                    href: 'mailto:zee@bixeltek.com',
+                    },
+                }}
+                backgroundImage={heroBg}      
+            />
             <SEOGrowthEasternProvince />
             <SemanticSEOSection />
             <SEOMarqueeSaudi />
@@ -39,11 +86,11 @@ export default function page() {
             <SaudiEPSEOIndustries />
             <FutureSEOSection />
             <section
-                className="bg-[#fffdf5] py-20 px-4 md:px-20 flex flex-col md:flex-row items-center gap-10"
+                className="bg-[#fffdf5] py-20 px-6 lg:px-20 flex flex-col lg:flex-row items-center gap-10"
                 id="seo-form"
             >
                 {/* LEFT SIDE — TEXT */}
-                <div className="w-full md:w-1/2 flex flex-col justify-start items-start px-6">
+                <div className="w-full lg:w-1/2 flex flex-col justify-start items-start">
                     <h2 className="text-4xl md:text-6xl font-inter font-bold text-black mb-6">
                         Start Ranking in 60 Days —{" "}
                         <span className="text-yellow-500">Let’s Build Your SEO System Today</span>
@@ -84,7 +131,7 @@ export default function page() {
                 </div>
 
                 {/* RIGHT SIDE — CONTACT FORM */}
-                <div className="w-[95%] md:w-[50%] lg:mr-10 flex justify-start items-center">
+                <div className="lg:w-[50%] lg:mr-10 flex justify-start items-center">
                     <ContactFromNew />
                 </div>
             </section>

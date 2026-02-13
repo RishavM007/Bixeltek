@@ -64,7 +64,7 @@ export default function DentalFaq() {
 
   return (
     <section className="py-14 bg-gray-50">
-      <div className="mx-auto max-w-[95%] md:max-w-[85%] px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[95%] lg:max-w-[85%] px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-12">
           {/* FAQ Content */}
           <div className="w-full">

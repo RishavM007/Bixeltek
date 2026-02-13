@@ -63,7 +63,7 @@ export default function GaSection() {
                             alt="Google Partner Badge"
                             className="w-auto h-auto" />
                     </a>
-                    <div className='flex flex-col md:flex-row gap-5 mt-10'>
+                    <div className='flex flex-col lg:flex-row gap-5 mt-10'>
                         <Link href={'/contact-us'}>
                     <button className='bg-neutral-800 rounded-lg text-white px-5 py-3'>Get An Audit</button>
                         </Link>

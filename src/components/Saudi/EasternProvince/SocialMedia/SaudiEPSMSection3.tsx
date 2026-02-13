@@ -49,9 +49,9 @@ export default function SocialMediaCards() {
     ];
 
     return (
-        <section className="py-16 bg-black flex flex-col items-center">
-            <div className="max-w-[80%] text-center mb-12">
-                <h2 className="text-3xl md:text-5xl font-inter font-medium text-white mb-6 leading-snug">
+        <section className=" px-6 py-16 bg-black flex flex-col items-center">
+            <div className="md:max-w-[80%] text-center mb-12">
+                <h2 className="text-3xl md:text-6xl font-inter font-medium text-white mb-6 leading-snug">
                     <span className="text-yellow-500">We Combine Creativity</span> With Conversion Science.
                 </h2>
                 <p className="text-gray-300 font-poppins text-lg md:text-xl leading-relaxed">
@@ -60,11 +60,11 @@ export default function SocialMediaCards() {
                 </p>
             </div>
 
-            <div className="flex max-w-[85%] flex-wrap justify-center gap-8 w-full">
+            <div className="grid md:grid-cols-2 lg:flex lg:max-w-[85%] lg:flex-wrap justify-center gap-8 w-full">
                 {cards.map((card) => (
                     <div
                         key={card.id}
-                        className="bg-white px-6 py-6 rounded-3xl overflow-hidden shadow-lg flex flex-col items-center w-full md:w-[25%] transition-transform hover:scale-105"
+                        className="bg-white px-6 py-6 rounded-3xl overflow-hidden shadow-lg flex flex-col items-center w-full lg:w-[25%] transition-transform hover:scale-105"
                     >
                         <div className="w-full h-48 relative">
                             <Image

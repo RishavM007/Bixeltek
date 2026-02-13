@@ -63,7 +63,7 @@ const OnPageSEOFramework = () => {
         {layers.map((layer, idx) => (
           <div
             key={idx}
-            className={`flex group ${layer.bgcolor} p-6 rounded-3xl flex-col items-start transition-all duration-300`}
+            className={`flex group ${layer.bgcolor} py-6 rounded-3xl flex-col items-start transition-all duration-300`}
           >
             <p className={`${layer.color} group-hover:text-white text-5xl font-bold mb-2`}>
               {layer.number}

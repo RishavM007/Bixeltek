@@ -7,11 +7,11 @@ import { ChevronRight } from 'lucide-react'; // ✅ replace with your preferred 
 
 export default function MarketingSystemsEasternProvince() {
     return (
-        <section className="relative py-10 md:py-20 bg-black">
-            <div className="flex max-w-[95%] md:max-w-[85%] mx-auto  flex-col md:flex-row-reverse items-center">
+        <section className="relative px-6 py-10 md:py-20 bg-black">
+            <div className="flex max-w-[95%] lg:max-w-[85%] mx-auto  flex-col lg:flex-row-reverse items-center">
 
                 {/* ✅ Right Image Container */}
-                <div className="relative w-full md:w-2/5 h-[800px] rounded-l-[40px] bg-transparent flex justify-center items-center">
+                <div className="relative w-full lg:w-2/5 md:h-[800px] rounded-l-[40px] bg-transparent flex justify-center items-center">
                     <Image
                         src={systemImg}
                         alt="Marketing systems visualization"
@@ -20,7 +20,7 @@ export default function MarketingSystemsEasternProvince() {
                 </div>
 
                 {/* ✅ Left Text Content */}
-                <div className="px-6 w-full mt-[-160px] md:mt-0 md:w-3/5 md:pl-28 md:pr-44 py-16">
+                <div className="w-full mt-[-160px] md:mt-0 lg:w-3/5 xl:pl-28 lg:pr-32  xl:pr-44 lg:py-16">
 
                     {/* Heading */}
                     <h2 className="text-3xl md:text-5xl font-inter text-white font-medium mb-4 leading-snug">

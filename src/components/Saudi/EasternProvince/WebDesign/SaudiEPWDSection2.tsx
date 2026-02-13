@@ -14,10 +14,10 @@ const WebsiteAuditSection = () => {
   ];
 
   return (
-    <section className="bg-black py-10 md:py-20 flex flex-col md:flex-row items-center justify-between mx-auto max-w-[95%] md:max-w-[85%] gap-10">
+    <section className="bg-black py-10 lg:py-20 flex flex-col lg:flex-row items-center justify-between mx-auto px-6 lg:max-w-[85%] gap-10">
       {/* Left Side - Text */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center text-left">
-        <h2 className="text-3xl md:text-5xl font-inter font-medium text-white mb-6 leading-snug">
+      <div className="w-full lg:w-1/2 flex flex-col justify-center text-left">
+        <h2 className="text-3xl md:text-6xl font-inter font-medium text-white mb-6 leading-snug">
           A Beautiful Website That Doesn’t Convert{" "}
           <span className="text-yellow-500">
             Is Just an Expensive Poster.
@@ -62,7 +62,7 @@ const WebsiteAuditSection = () => {
       </div>
 
       {/* Right Side - Image */}
-      <div className="w-full md:w-1/2 flex justify-center items-center">
+      <div className="w-full lg:w-1/2 flex justify-center items-center">
         <Image
           src={laptopimg}
           alt="Website Audit Illustration"

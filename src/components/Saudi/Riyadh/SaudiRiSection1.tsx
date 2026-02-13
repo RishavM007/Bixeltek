@@ -6,23 +6,23 @@ import riyadhImg from '@/assets/A_business_traveller’s_guide_to_Riyadh_Saudi_A
 
 export default function BusinessGrowthRiyadh() {
     return (
-        <section className="relative py-0 md:py-10 bg-[#fffdf5]">
-            <div className="flex max-w-[85%] mx-auto md:gap-10 flex-col md:flex-row items-center">
+        <section className="relative px-6 py-10 bg-[#fffdf5]">
+            <div className="flex lg:max-w-[85%] mx-auto md:gap-10 flex-col lg:flex-row items-center">
 
                 {/* Left Image */}
-                <div className="relative w-full md:w-1/2 rounded-r-[40px] bg-transparent flex justify-center items-center">
+                <div className="relative w-full lg:w-1/2 rounded-r-[40px] bg-transparent flex justify-center items-center">
                     <Image
                         src={riyadhImg}
                         alt="Riyadh skyline"
-                        className="rounded-[0px] shadow-2xl h-[500px] object-cover z-10"
+                        className="rounded-[0px] shadow-2xl lg:h-[500px] object-cover z-10"
                     />
                 </div>
 
                 {/* Right Content */}
-                <div className="md:px-6 w-full md:mt-0 md:w-1/2 py-16">
+                <div className="w-full mt-8 md:mt-0 lg:w-1/2 lg:py-16">
                     
                     {/* Heading */}
-                    <h2 className="text-3xl md:text-5xl font-inter text-black font-medium mb-4 leading-snug">
+                    <h2 className="text-3xl md:text-6xl font-inter text-black font-medium mb-4 leading-snug">
                         Riyadh Is the Heart of Vision 2030 — 
                         <span className="text-yellow-500"> Your Marketing Should Match Its Pace.</span>
                     </h2>
