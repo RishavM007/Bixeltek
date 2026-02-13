@@ -59,7 +59,7 @@ const SEOGridSection2 = () => {
 
       <div className="w-[90%] lg:max-w-full mx-auto flex flex-col lg:flex-row items-center gap-12">
         {/* Left: Grid of Pillars */}
-        <div className="flex-1 pl-4 pr-4 lg:pl-32 lg:pr-16">
+        <div className="flex-1 pl-4 pr-4 lg:pl-20 lg:pr-16">
           <h2 className="text-4xl md:text-6xl font-bold font-inter leading-snug mb-4">
             The Mechanics of <span className="text-blue-500">Modern SEO</span>
           </h2>
@@ -73,7 +73,7 @@ const SEOGridSection2 = () => {
             {pillars.map((pillar, index) => (
               <motion.div
                 key={index}
-                className="relative bg-transparent rounded-xl p-6 flex items-start gap-4 overflow-hidden"
+                className="relative bg-transparent rounded-xl p-6 flex flex-col items-start gap-4 overflow-hidden"
                 whileHover={{ scale: 1.03 }}
               >
                 {/* Animated border */}

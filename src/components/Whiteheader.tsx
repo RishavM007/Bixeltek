@@ -544,7 +544,7 @@ export const Whiteheader = () => {
                 <nav className="mt-10 pb-10 ">
 
                     <ul className="text-white text-xl font-sofiasanscondensed space-y-4">
-                        <li><Link href="/" className="block py-2 px-4 hover:bg-purple-600  rounded">Home</Link></li>
+                        <li><Link href="/" onClick={toggleMenu} className="block py-2 px-4 hover:bg-purple-600  rounded">Home</Link></li>
                         <li>
                             <button onClick={() => setIsDropdownOpen(!isDropdownOpen)} className="flex justify-between w-full py-2 px-4 hover:bg-purple-600 rounded">
                                 Our Solutions <HiChevronDown className="text-xl" />
@@ -557,67 +557,67 @@ export const Whiteheader = () => {
                                     className="ml-4 text-lg md:text-xl space-y-2"
                                 >
                                     <li>
-                                        <Link href="/services/google-ads" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                        <Link href="/services/google-ads" onClick={toggleMenu} className="block py-2 px-4 hover:bg-gray-700 rounded">
                                             Google Ads Management
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/services/seo-services" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                        <Link href="/services/seo-services" onClick={toggleMenu} className="block py-2 px-4 hover:bg-gray-700 rounded">
                                             Search Engine Optimization
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/social-media-marketing-agency-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                        <Link href="/social-media-marketing-agency-hyderabad" onClick={toggleMenu} className="block py-2 px-4 hover:bg-gray-700 rounded">
                                             Social Media Management
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/services/web-design" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                        <Link href="/services/web-design" onClick={toggleMenu} className="block py-2 px-4 hover:bg-gray-700 rounded">
                                             Web Design and Development
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="#" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                        <Link href="#" onClick={toggleMenu} className="block py-2 px-4 hover:bg-gray-700 rounded">
                                             Analytics Reporting
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="#" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                        <Link href="#" onClick={toggleMenu} className="block py-2 px-4 hover:bg-gray-700 rounded">
                                             Graphic Design
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/custom-cms-websites" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                        <Link href="/custom-cms-websites" onClick={toggleMenu} className="block py-2 px-4 hover:bg-gray-700 rounded">
                                             Custom CMS Websites
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/custom-coded-websites" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                        <Link href="/custom-coded-websites" onClick={toggleMenu} className="block py-2 px-4 hover:bg-gray-700 rounded">
                                             Custom Coded Websites
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/payment-gateway-integrations" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                        <Link href="/payment-gateway-integrations" onClick={toggleMenu} className="block py-2 px-4 hover:bg-gray-700 rounded">
                                             Payment Gateway Integration
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/ecommerce-websites" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                        <Link href="/ecommerce-websites" onClick={toggleMenu} className="block py-2 px-4 hover:bg-gray-700 rounded">
                                             E-commerce Website
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/local-seo" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                        <Link href="/local-seo" onClick={toggleMenu} className="block py-2 px-4 hover:bg-gray-700 rounded">
                                             Local SEO
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/technical-seo" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                        <Link href="/technical-seo" onClick={toggleMenu} className="block py-2 px-4 hover:bg-gray-700 rounded">
                                             Technical SEO
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/on-page-seo" className="block py-2 px-4 hover:bg-gray-700 rounded">
+                                        <Link href="/on-page-seo" onClick={toggleMenu} className="block py-2 px-4 hover:bg-gray-700 rounded">
                                             On Page SEO
                                         </Link>
                                     </li>
@@ -669,6 +669,7 @@ export const Whiteheader = () => {
                                                             <div key={city.name}>
                                                                 <Link
                                                                     href={city.link}
+                                                                    onClick={toggleMenu}
                                                                     className="block font-semibold  text-gray-200 hover:text-purple-400"
                                                                 >
                                                                     {city.name}
@@ -678,6 +679,7 @@ export const Whiteheader = () => {
                                                                         <li key={service.name}>
                                                                             <Link
                                                                                 href={service.link}
+                                                                                 onClick={toggleMenu}
                                                                                 className="text-sm text-gray-400 hover:text-purple-300"
                                                                             >
                                                                                 {service.name}
@@ -698,12 +700,12 @@ export const Whiteheader = () => {
                         <li><button onClick={() => { setIsDropdownOpen2(!isDropdownOpen2) }} className="flex justify-between w-full py-2 px-4 hover:bg-purple-600 rounded">Case Studies <HiChevronDown className="text-xl md:text-2xl" /></button>
                             {isDropdownOpen2 && (
                                 <motion.ul initial={{ opacity: 0, y: -5 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="ml-4 text-lg md:text-xl space-y-2">
-                                    <li><Link href="/casestudies-bixeltek/Tumblewash-Casestudy" className="block py-2 px-4 hover:bg-gray-700 rounded">Tumblewash-Casestudy</Link></li>
-                                    <li><Link href="/casestudies-bixeltek/google-ads-case-study-bike-repair-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Eazy Bike Repair Case Study</Link></li>
-                                    <li><Link href="/casestudies-bixeltek/digital-marketing-for-dentists-case-study" className="block py-2 px-4 hover:bg-gray-700 rounded">Digital Marketing for Dentists</Link></li>
+                                    <li><Link  onClick={toggleMenu} href="/casestudies-bixeltek/Tumblewash-Casestudy" className="block py-2 px-4 hover:bg-gray-700 rounded">Tumblewash-Casestudy</Link></li>
+                                    <li><Link  onClick={toggleMenu} href="/casestudies-bixeltek/google-ads-case-study-bike-repair-hyderabad" className="block py-2 px-4 hover:bg-gray-700 rounded">Eazy Bike Repair Case Study</Link></li>
+                                    <li><Link  onClick={toggleMenu} href="/casestudies-bixeltek/digital-marketing-for-dentists-case-study" className="block py-2 px-4 hover:bg-gray-700 rounded">Digital Marketing for Dentists</Link></li>
                                 </motion.ul>
                             )}</li>
-                        <li><Link href="/blog" className="block py-2 px-4 hover:bg-purple-600 rounded">Blog</Link></li>
+                        <li><Link href="/blog"  onClick={toggleMenu} className="block py-2 px-4 hover:bg-purple-600 rounded">Blog</Link></li>
 
 
                         {/* <li><Link href="/about-us" className="block py-2 px-4 hover:bg-purple-600 rounded">About Us</Link></li> */}

@@ -249,7 +249,7 @@ export default function page() {
     />
     <SaudiEPWhyChooseBixeltek />
     <section
-    className="bg-black py-20 px-6 lg:px-20 flex flex-col lgl:flex-row items-center gap-10"
+    className="bg-black py-20 px-6 lg:px-20 flex flex-col lg:flex-row items-center gap-10"
     id="growth-system-cta"
 >
     {/* LEFT SIDE — TEXT */}
