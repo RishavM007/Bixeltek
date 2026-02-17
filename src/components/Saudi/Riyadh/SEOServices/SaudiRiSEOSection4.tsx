@@ -9,37 +9,37 @@ export default function SeoServicesRiyadh() {
       title: "SEO Audit & Strategy",
       description:
         "Full website audit, competitor analysis, and a growth roadmap tailored for Riyadh’s search intent.",
-      link: "/riyadh/seo/audit-strategy",
+      link: "/services/seo-services",
     },
     {
       title: "On-Page Optimization",
       description:
         "Meta tags, structured data, internal linking, keyword placement, and Core Web Vitals optimization for better rankings.",
-      link: "/riyadh/seo/on-page-optimization",
+      link: "/on-page-seo",
     },
     {
       title: "Off-Page SEO & Link Building",
       description:
         "Acquire high-quality backlinks through PR, partnerships, and contextual citations to boost authority and trust.",
-      link: "/riyadh/seo/off-page-seo",
+      link: "/on-page-seo",
     },
     {
       title: "Local SEO",
       description:
         "Google Business optimization, Arabic/English listings, and area-specific pages for districts like Al Olaya, Diriyah, and Qurtubah.",
-      link: "/riyadh/seo/local-seo",
+      link: "/local-seo",
     },
     {
       title: "Content Strategy & Blogging",
       description:
         "Topical map-driven content plans aligned with E-E-A-T principles and bilingual storytelling for your target audience.",
-      link: "/riyadh/seo/content-strategy",
+      link: "#",
     },
     {
       title: "Analytics & Reporting",
       description:
         "GA4 + GSC integration, ranking dashboards, and conversion analysis — transparent and measurable results.",
-      link: "/riyadh/seo/analytics-reporting",
+      link: "#",
     },
   ];
 

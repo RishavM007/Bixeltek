@@ -203,9 +203,9 @@ const HomeIntegrationMindMap = () => {
                             d={generatePath(pos)}
                             fill="none"
                             stroke="url(#mapLine)"
-                            strokeWidth="2"
+                            strokeWidth="1"
                             strokeDasharray="6,0"
-                            opacity="0.7"
+                            opacity="0.3"
                         />
                     ))}
                 </svg>
