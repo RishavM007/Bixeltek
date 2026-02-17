@@ -1,5 +1,5 @@
 'use client';
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import cleaningcomp from "@/assets/digital marketing servies for cleaning companies.jpg";
 import oil from "@/assets/digital marketing for oil refinaries.jpg"
@@ -14,23 +14,57 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 export default function CarouselSection(): JSX.Element {
     const [carouselOffset, setCarouselOffset] = useState<number>(0);
+    const [cardWidth,setCardWidth] = useState<number>(0)
 
-    const cardWidth: number = 450;
-    const visibleCards: number = 3;
-    const totalCards: number = 8;
-    const containerWidth: number = cardWidth * visibleCards;
-    const maxOffset: number = 0;
-    const minOffset: number = -(cardWidth * totalCards - containerWidth);
+    useEffect(() => {
+    const updateWidth = () => {
+        const width = window.innerWidth;
 
-    const handleScroll = (direction: "left" | "right"): void => {
-        setCarouselOffset((prev: number) => {
-            const newOffset =
-                direction === "left"
-                    ? Math.min(prev + cardWidth, maxOffset)
-                    : Math.max(prev - cardWidth, minOffset);
-            return newOffset;
-        });
+        if (width >= 1024) {
+            setCardWidth(480); // 350 + 24 gap
+        } else if (width >= 768) {
+            setCardWidth(374);
+        } else {
+            setCardWidth(324); // 300 + 24 gap
+        }
     };
+
+    updateWidth();
+    window.addEventListener("resize", updateWidth);
+
+    return () => window.removeEventListener("resize", updateWidth);
+}, []);
+
+
+    const carouselRef = useRef<HTMLDivElement | null>(null);
+
+const handleScroll = (direction: "left" | "right") => {
+    if (!carouselRef.current) return;
+
+    const totalWidth = carouselRef.current.scrollWidth;
+    const containerWidth =
+        carouselRef.current.parentElement?.offsetWidth || 0;
+
+    const maxOffset = 0;
+    const minOffset = -(totalWidth - containerWidth);
+
+    setCarouselOffset((prev) => {
+        if (direction === "left") {
+            return Math.min(prev + cardWidth, maxOffset);
+        } else {
+            const next = prev - cardWidth;
+
+            // 🔥 if next scroll passes minOffset, snap exactly to minOffset
+            if (next <= minOffset) {
+                return minOffset;
+            }
+
+            return next;
+        }
+    });
+};
+
+
 
     return (
         <section className="pt-32 pb-20  bg-white z-10 overflow-hidden">
@@ -50,7 +84,8 @@ export default function CarouselSection(): JSX.Element {
                     Discover the diverse industries we proudly cater to, offering innovative solutions to help you excel in your field.
                 </p>
             </div>
-            <div className="carousel-container md:pl-[400px] lg:pl-[500px] relative w-full overflow-hidden">
+            <div                 ref={carouselRef}
+className="carousel-container md:pl-[300px] lg:pl-[500px] relative w-full overflow-hidden">
                 <div
                     className="carousel flex gap-6 px-8 w-max transform transition-transform duration-500"
                     style={{ transform: `translateX(${carouselOffset}px)` }}
