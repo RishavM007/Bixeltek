@@ -1,6 +1,6 @@
   'use client';
 
-  import React, { useState } from 'react';
+  import React, { useEffect, useRef, useState } from 'react';
   import Image, { StaticImageData } from 'next/image';
   import { motion } from 'framer-motion';
   import { ArrowLeft, ArrowRight } from 'lucide-react';
@@ -19,33 +19,67 @@
     industries: IndustryCard[];
     cardWidth?: number;
     visibleCards?: number;
-    theme?: 'blue'|'green'
+    theme?: 'blue'|'green'| 'purple'
   }
 
   export default function LocationIndustrySection ({
     heading,
     description,
     industries,
-    cardWidth = 450,
     visibleCards = 3,
     theme='blue'
   }: LocatoionIndustriesProps): JSX.Element {
-    const [carouselOffset, setCarouselOffset] = useState<number>(0);
+     const [carouselOffset, setCarouselOffset] = useState<number>(0);
+    const [cardWidth,setCardWidth] = useState<number>(0)
 
-    const totalCards = industries.length;
-    const containerWidth = cardWidth * visibleCards;
-    const maxOffset = 0;
-    const minOffset = -(cardWidth * totalCards - containerWidth);
+    useEffect(() => {
+    const updateWidth = () => {
+        const width = window.innerWidth;
 
-    const handleScroll = (direction: 'left' | 'right'): void => {
-      setCarouselOffset((prev) => {
-        const newOffset =
-          direction === 'left'
-            ? Math.min(prev + cardWidth, maxOffset)
-            : Math.max(prev - cardWidth, minOffset);
-        return newOffset;
-      });
+        if (width >= 1024) {
+            setCardWidth(480); // 350 + 24 gap
+        } else if (width >= 768) {
+            setCardWidth(374);
+        } else {
+            setCardWidth(324); // 300 + 24 gap
+        }
     };
+
+    updateWidth();
+    window.addEventListener("resize", updateWidth);
+
+    return () => window.removeEventListener("resize", updateWidth);
+}, []);
+
+
+    const carouselRef = useRef<HTMLDivElement | null>(null);
+
+const handleScroll = (direction: "left" | "right") => {
+    if (!carouselRef.current) return;
+
+    const totalWidth = carouselRef.current.scrollWidth;
+    const containerWidth =
+        carouselRef.current.parentElement?.offsetWidth || 0;
+
+    const maxOffset = 0;
+    const minOffset = -(totalWidth - containerWidth);
+
+    setCarouselOffset((prev) => {
+        if (direction === "left") {
+            return Math.min(prev + cardWidth, maxOffset);
+        } else {
+            const next = prev - cardWidth;
+
+            // 🔥 if next scroll passes minOffset, snap exactly to minOffset
+            if (next <= minOffset) {
+                return minOffset;
+            }
+
+            return next;
+        }
+    });
+};
+
 
     return (
       <section className="px-6 pt-20 mt-10 pb-20 bg-[black] z-10 overflow-hidden">
@@ -61,7 +95,8 @@
         </div>
 
         {/* Carousel */}
-        <div className="carousel-container md:pl-[300px] lg:pl-[500px] relative w-full overflow-hidden">
+        <div  ref={carouselRef}
+          className="carousel-container md:pl-[300px] lg:pl-[500px] relative w-full overflow-hidden">
           <div
             className="carousel flex gap-6 px-8 w-max transform transition-transform duration-500"
             style={{ transform: `translateX(${carouselOffset}px)` }}
@@ -132,7 +167,9 @@
           <button
             className={` text-white p-3 rounded-full mr-4 ${
               theme == 'blue'?
-              "bg-blue-600": "bg-gradient-to-tr from-green-600 via-green-800 to-green-900"
+              "bg-blue-600": theme =='green'? 
+               "bg-gradient-to-tr from-green-600 via-green-800 to-green-900" :
+               "bg-purple-600"
             }`}
             onClick={() => handleScroll('left')}
           >
@@ -141,7 +178,9 @@
           <button
             className={` text-white p-3 rounded-full ${
               theme == 'blue'?
-              "bg-blue-600": "bg-gradient-to-tr from-green-600 via-green-800 to-green-900"
+              "bg-blue-600": theme =='green'? 
+               "bg-gradient-to-tr from-green-600 via-green-800 to-green-900" :
+               "bg-purple-600"
             }`}
             onClick={() => handleScroll('right')}
           >

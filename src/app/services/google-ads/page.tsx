@@ -57,13 +57,81 @@ import { PhoneCall } from "lucide-react";
 import GradientBorderContainersMob from '@/components/GoogleAds/TimelineMobile';
 import TechStackSection from '@/components/GoogleAds/Section9';
 import Link from 'next/link';
+import cleaningcomp from "@/assets/digital marketing servies for cleaning companies.jpg";
+import oil from "@/assets/digital marketing for oil refinaries.jpg"
+import pet from "@/assets/digital marketing for pet stores.jpg"
+import roofing from "@/assets/digital marketing for roofing industries.jpg"
+import dental from "@/assets/digital marketing for health care practices.jpg"
+import lawncare from "@/assets/digital marketing for lawn care services.jpg"
+import blackcar from "@/assets/digital marketing for car detailers.jpg"
+import healthcare from "@/assets/digital marketing for health care practices.jpg"
+import LocationIndustrySection from '@/components/Common/location/LocationIndustrySection';
+
+const industries = [
+                        {
+                            id: "health",
+                            img: healthcare,
+                            label: "Digital Marketing for Healthcare",
+                            text: "Health Care Practices",
+                            description: "Local SEO + targeted ads to book 30+ new patients per month.",
+                        },
+                        {
+                            id: "auto",
+                            img: blackcar,
+                            label: "Digital Marketing for Automobiles",
+                            text: "Automobile industries",
+                            description: "Maps optimization + hyperlocal PPC to drive more calls and foot traffic.",
+                        },
+                        {
+                            id: "cleaning",
+                            img: cleaningcomp,
+                            label: "Digital Marketing for Cleaning Companies",
+                            text: "Cleaning Industries",
+                            description: "Maps optimization + hyperlocal PPC to drive more calls and foot traffic.",
+                        },
+                        {
+                            id: "roofing",
+                            img: roofing,
+                            label: "Digital Marketing for Roofing Companies",
+                            text: "Roofing Industries",
+                            description: "High-ticket lead funnels built for real estate and project-based services.",
+                        },
+                        {
+                            id: "lawncare",
+                            img: lawncare,
+                            label: "Digital Marketing for Lawn Care and Landscaping",
+                            text: "Lawn Care Industries",
+                            description: "Maps optimization + hyperlocal PPC to drive more calls and foot traffic.",
+                        },
+                        {
+                            id: "dental",
+                            img: dental,
+                            label: "Digital Marketing for Dental Clinic",
+                            text: "Dental Clinics",
+                            description: "Local SEO + targeted ads to book 30+ new patients per month.",
+                        },
+                        {
+                            id: "pet",
+                            img: pet,
+                            label: "Digital Marketing for Pet Stores",
+                            text: "Pet Stores",
+                            description: "Product SEO, performance ads & retargeting funnels to scale sales.",
+                        },
+                        {
+                            id: "oil",
+                            img: oil,
+                            label: "Digital Marketing for Oil Refineries",
+                            text: "Oil Refineries",
+                            description: "Paid growth loops, demo-booking strategies, and B2B marketing that closes deals.",
+                        }
+                    ]
 
 export default function page() {
 
 
     return (
         <>
-            <section className="relative flex flex-col items-center justify-center h-[70vh] lg:h-[100vh]  bg-black -mt-32 text-center px-6 overflow-hidden">
+            <section className="relative flex flex-col items-center justify-center min-h-[70vh] lg:min-h-[80vh]  bg-black -mt-32 text-center px-6 overflow-hidden">
                 <div className='flex justify-center items-center'>
                     {/* Blue Sphere Glow */}
                     <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-blue-500 opacity-20 blur-3xl pointer-events-none" />
@@ -105,7 +173,18 @@ export default function page() {
             <GradientBorderContainersMob/>
             <BiddingStrategies />
             <GoogleAdsCostSection/>
-            <IndustryCarouselSection />
+            {/* <IndustryCarouselSection /> */}
+            <LocationIndustrySection
+            heading={<>
+            <span><span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-500">
+                        INDUSTRIES WE
+                    </span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-pink-500">
+                        SERVE
+                    </span></span>
+            </>}
+            description='Discover the diverse industries we proudly cater to, offering innovative solutions to help you excel in your field.'
+            industries={industries}
+            />
             <BixeltekAdvantage />
             <TechStackSection />
             <GoogleAdsSection10/>

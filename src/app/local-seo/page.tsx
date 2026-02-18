@@ -8,6 +8,50 @@ import LocalSEOStacked from '@/components/LocalSEO/LocalSection4'
 import ContactFromNew from '@/components/ContactFormNew'
 import React from 'react'
 import { Check } from 'lucide-react'
+import LocationProcessSection from '@/components/Common/location/LocationProcessSection'
+
+const steps = [
+  {
+    number: "01",
+    title: "Audit & NAP Correction",
+    text: "We start by running a complete Local SEO audit — identifying data conflicts, duplicate listings, and NAP (Name, Address, Phone) inconsistencies across Google, Apple Maps, and local directories. Standardizing this ensures Google trusts your business data at every touchpoint.",
+    gradient: "from-green-500 via-lime-400 to-transparent",
+    color: "text-green-500",
+    bgcolor: "hover:bg-green-500",
+  },
+  {
+    number: "02",
+    title: "Google Business Profile Optimization",
+    text: "We go beyond claiming your listing — we optimize it for conversion. That means category-aligned descriptions, geo-tagged photos, FAQ optimization, service areas, and UTM tracking so every customer action is measurable and attributed.",
+    gradient: "from-blue-500 via-cyan-400 to-transparent",
+    color: "text-cyan-400",
+    bgcolor: "hover:bg-blue-500",
+  },
+  {
+    number: "03",
+    title: "Local Content & Landing Pages",
+    text: "We create SEO-rich location pages tailored to each service area — blending human-first copywriting with local keywords, schema markup, and internal linking. These pages boost both organic reach and relevance in city-level search results.",
+    gradient: "from-yellow-400 via-orange-400 to-transparent",
+    color: "text-yellow-400",
+    bgcolor: "hover:bg-yellow-500",
+  },
+  {
+    number: "04",
+    title: "Citations & Local Backlinks",
+    text: "We build authority by listing your business in trusted regional directories — from Yelp and JustDial to Arab Local and GCC Yellow Pages. Every mention acts as a trust signal, strengthening your local domain authority and Google Map Pack ranking.",
+    gradient: "from-teal-400 via-emerald-500 to-transparent",
+    color: "text-emerald-400",
+    bgcolor: "hover:bg-emerald-500",
+  },
+  {
+    number: "05",
+    title: "Review & Reputation Management",
+    text: "We help you scale authentic reviews through automated WhatsApp and email funnels. Sentiment analysis tools monitor every response, feeding real feedback into your CRO (Conversion Rate Optimization) loop — so your reputation drives measurable ROI.",
+    gradient: "from-purple-500 via-transparent to-transparent",
+    color: "text-purple-400",
+    bgcolor: "hover:bg-purple-500",
+  },
+];
 
 export default function page() {
   return (
@@ -15,7 +59,27 @@ export default function page() {
     <HeroLocalSEO/>
     <LocalSEOIntroSection/>
     <LocalSEOProximitySection/>
-    <LocalSEOFrameworkSection/>
+    {/* <LocalSEOFrameworkSection/> */}
+    <LocationProcessSection
+            heading={
+                <>
+                <span>
+                    We Engineer <span className="text-blue-500">Local Trust</span> at Scale
+                </span>
+                </>
+            }
+            description='We don’t just claim your listing — we build a repeatable Local SEO system combining data accuracy, 
+        social proof, and geo-targeted content. Our 5-layer framework ensures your brand earns visibility, 
+        trust, and measurable conversions in every market.'
+            steps={steps}
+            cta={{
+                text:'Get My Local SEO Audit',
+                href:'mailto:zee@bixeltek.com',
+                bg:'bg-gradient-to-tr from-purple-500 via-purple-700 to-purple-950 hover:from-purple-950 hover:via-purple-700 hover:to-purple-500  text-white'
+            }}
+            footerText='Each layer reinforces the next — visibility builds trust, trust drives engagement, and
+        engagement leads to real, trackable sales growth.'
+            />
     <LocalSEODailyCareSection/>
     <LocalSEOStacked/>
     <LocalAreas/>

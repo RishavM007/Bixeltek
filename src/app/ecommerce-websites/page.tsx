@@ -13,6 +13,59 @@ import React from 'react'
 import ContactFromNew from '@/components/ContactFormNew'
 import EcommerceFAQ from '@/components/EcommerceWeb/EcomFaq'
 import MobileTechGrid from '@/components/EcommerceWeb/EcomTechMob'
+import LocationProcessSection from '@/components/Common/location/LocationProcessSection'
+
+
+const steps = [
+  {
+    number: "01",
+    title: "Discovery & Audit",
+    text: "We benchmark your store’s vitals: performance, funnel leaks, search visibility, and competitor landscape. Then we define KPIs — speed, conversion, retention.",
+    gradient: "from-blue-400 via-cyan-400 to-transparent",
+    color: "text-blue-400",
+    bgcolor: "hover:bg-blue-500/20",
+  },
+  {
+    number: "02",
+    title: "Information Architecture & UX Strategy",
+    text: "We design the journey. From navigation to product cards, every interaction supports intent. UX is built on user psychology — clarity before creativity.",
+    gradient: "from-cyan-400 via-green-400 to-transparent",
+    color: "text-green-400",
+    bgcolor: "hover:bg-green-500/20",
+  },
+  {
+    number: "03",
+    title: "Design System & Prototyping",
+    text: "Visual hierarchy, trust signals, and conversion paths take precedence. Every page is tested for readability, load sequence, and CTA logic.",
+    gradient: "from-purple-400 via-pink-400 to-transparent",
+    color: "text-pink-400",
+    bgcolor: "hover:bg-purple-500/20",
+  },
+  {
+    number: "04",
+    title: "Development & Integration",
+    text: "Full-stack build on Shopify, WooCommerce, or Next.js. We connect ERPs, CRMs, and marketing automation tools like Klaviyo, HubSpot, or Odoo for unified operations.",
+    gradient: "from-orange-400 via-yellow-400 to-transparent",
+    color: "text-yellow-400",
+    bgcolor: "hover:bg-orange-500/20",
+  },
+  {
+    number: "05",
+    title: "Optimization & Launch",
+    text: "Continuous testing via Lighthouse CI, GTMetrix, and Core Web Vitals. Server-side tracking and A/B testing setups are finalized before going live.",
+    gradient: "from-pink-400 via-red-400 to-transparent",
+    color: "text-red-400",
+    bgcolor: "hover:bg-pink-500/20",
+  },
+  {
+    number: "06",
+    title: "Scale & Evolve",
+    text: "After launch, we move to continuous CRO and technical scaling — caching, API refinement, new market adaptation, and SEO expansion.",
+    gradient: "from-blue-400 via-transparent to-transparent",
+    color: "text-teal-400",
+    bgcolor: "hover:bg-green-500/20",
+  },
+];
 
 export default function page() {
   return (
@@ -23,7 +76,22 @@ export default function page() {
       <IntegrationMindMap />
       <MobileTechGrid/>
       <EcomPerformanceSection />
-      <EcomProcessWorkflow />
+      {/* <EcomProcessWorkflow /> */}
+      <LocationProcessSection
+      heading={
+        <>
+        <span> A Repeatable, Data-Driven Process <br />
+        <span className="text-blue-400">for High-Performing Stores</span></span>
+        </>
+      }
+      description='Our process combines audit, UX, design, and development into a unified growth engine — built to convert faster, scale smoother, and perform longer.'
+      steps={steps}
+      cta={{
+        text:'Talk To E-commerce Expert',
+        href:'mailto:zee@bixeltek.com'
+      }}
+      footerText=' We don’t just launch stores — we build scalable growth systems engineered for performance, psychology, and long-term ROI.'
+      />
       <DesignPsychologySection />
       <EcomAreas />
       <GrowthAfterGoLive />

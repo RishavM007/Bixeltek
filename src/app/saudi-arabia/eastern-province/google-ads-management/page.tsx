@@ -39,6 +39,7 @@ import dental from "@/assets/asian-man-reading-text-messages-with-his-colleague-
 import lawncare from "@/assets/digital marketing for lawn care services.jpg"
 import blackcar from "@/assets/top-view-numerous-cars-traffic-dubai-united-arab-emirates.jpg"
 import healthcare from "@/assets/beautiful-young-female-doctor-looking-camera-office.jpg"
+import LocationProcessSection from '@/components/Common/location/LocationProcessSection';
 
 const proofPoints = [
         { id: 1, text: "Google Partner Certified", icon: googleIcon },
@@ -91,6 +92,50 @@ const proofPoints = [
                         },
                     ]
 
+
+const steps = [
+  {
+    number: "01",
+    title: "Market & Competitor Analysis",
+    text: "We analyze your industry, competitors, and target demographics in Khobar, Dammam, and nearby regions to identify profitable opportunities.",
+    gradient: "from-green-500 via-green-400 to-transparent",
+    color: "text-green-500",
+    bgcolor: "hover:bg-green-500",
+  },
+  {
+    number: "02",
+    title: "Campaign Architecture & Setup",
+    text: "We design structured campaigns — separating branded, non-branded, service-specific, and remarketing ads to maximize control and clarity.",
+    gradient: "from-yellow-400 via-yellow-300 to-transparent",
+    color: "text-yellow-500",
+    bgcolor: "hover:bg-yellow-500",
+  },
+  {
+    number: "03",
+    title: "Ad Copywriting & Creative Strategy",
+    text: "Our copywriters craft ads that speak directly to user intent, increasing click-through rates and reducing cost-per-click.",
+    gradient: "from-blue-500 via-blue-400 to-transparent",
+    color: "text-blue-500",
+    bgcolor: "hover:bg-blue-500",
+  },
+  {
+    number: "04",
+    title: "Tracking & Analytics",
+    text: "We implement Google Tag Manager, Call Tracking, and Conversion APIs to measure every action — calls, forms, sales, and more.",
+    gradient: "from-pink-500 via-purple-400 to-transparent",
+    color: "text-purple-500",
+    bgcolor: "hover:bg-purple-500",
+  },
+  {
+    number: "05",
+    title: "Continuous Optimization & Reporting",
+    text: "Daily bid management, search term pruning, A/B testing, and ROI reporting ensure performance keeps improving every week.",
+    gradient: "from-green-500 via-transparent to-transparent",
+    color: "text-indigo-500",
+    bgcolor: "hover:bg-indigo-500",
+  },
+];
+
 export default function page() {
     return (
         <>
@@ -123,7 +168,23 @@ export default function page() {
             <GoogleAdsAwarenessSection />
             <GoogleAdsStrategySection />
             <GooglePartnerBanner2 />
-            <GoogleAdsProcessSection />
+            {/* <GoogleAdsProcessSection /> */}
+            <LocationProcessSection
+            bg='bg-white'
+            heading={
+                <>
+                <span>How We Turn Ad Spend into ROI<span className=""></span></span>
+                </>
+            }
+            description='We follow a precise, data-backed process to ensure every Riyal spent delivers measurable growth.'
+            steps={steps}
+            footerText='This isn’t a one-time setup — it’s a continuous growth engine designed to make your Google Ads perform better every single week.'
+            cta={{
+                text:'Talk To Our Google Ads Expert',
+                href:'mailto:zee@bixeltek.com',
+                bg:'bg-gradient-to-tr from-green-500 via-green-700 to-green-950 text-white hover:bg-[#d6ae3f]'    
+            }}  
+            />
             <GoogleAdsCampaignTypesSaudi />
             <SaudiGAEPPillarIndustries />
             <PrecisionPerformanceSection />
