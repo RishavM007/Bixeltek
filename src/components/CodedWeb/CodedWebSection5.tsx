@@ -30,7 +30,7 @@ const textVariants = {
 const CodeConversionSection = () => {
   return (
     <section className="w-full bg-black text-white py-4 md:py-24 px-6 md:px-16">
-      <div className="max-w-[95%] md:max-w-[85%] mx-auto flex flex-col lg:flex-row items-center gap-12">
+      <div className="md:max-w-[85%] mx-auto flex flex-col lg:flex-row items-center gap-12">
         {/* Left Code Image Block */}
         <motion.div
           initial={{ opacity: 0, x: -60 }}

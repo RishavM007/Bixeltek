@@ -124,7 +124,7 @@ const FeaturesSection = () => {
                     whileInView={{ x: 0, opacity: 1, scale: 1 }}
                     transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                     viewport={{ once: true }}
-                    className="relative lg:flex-1 w-full md:w-2/3 lg:w-1/2 h-[400px] md:h-[500px] lg:h-[1030px]"
+                    className="relative lg:flex-1 w-full md:w-2/3 lg:w-1/2 h-[400px] md:h-[500px] lg:h-[1030px] px-6 lg:px-0"
                 >
                     <Image
                         src={dashboard2}

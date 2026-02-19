@@ -30,8 +30,8 @@ export default function CustomGrowthCoded() {
   ];
 
   return (
-    <section className="relative w-full bg-black text-white py-10 md:py-24 px-6 md:px-12">
-      <div className="max-w-[85%] mx-auto flex flex-col-reverse lg:flex-row items-center gap-12">
+    <section className="relative w-full bg-black text-white md:py-24 px-6 md:px-12">
+      <div className="md:max-w-[85%] mx-auto flex flex-col-reverse lg:flex-row items-center gap-12">
         
         {/* Left Content */}
         <div className="w-full lg:w-1/2">

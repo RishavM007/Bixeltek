@@ -50,7 +50,7 @@ export default function WhyChoose() {
     return (
         <>
 
-            <section className="pt-20 pb-64 relative bg-neutral-900" style={{
+            <section className="pt-20 pb-20 md:pb-64 relative bg-neutral-900" style={{
                 backgroundImage: `
       linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.95)),
       url('/SL-072622-51930-14.jpg')`,
@@ -59,7 +59,7 @@ export default function WhyChoose() {
                 backgroundRepeat: "no-repeat",
             }}>
 
-                <div className=" max-w-[90%] md:max-w-[85%] z-30 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-start">
+                <div className=" max-w-[90%] md:max-w-[85%] z-30 mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-start">
                     {/* Left Side */}
                     <div className=''>
                         <span className="block z-50  mb-6 text-white text-sm font-semibold text-primary">
@@ -123,7 +123,7 @@ export default function WhyChoose() {
                     </div>
                 </div>
             </section>
-            <section className="relative mt-[-170px] max-w-[100%] md:max-w-6xl mx-auto rounded-3xl overflow-hidden bg-white bg-cover shadow-2xl bg-center" style={{ backgroundImage: `url('/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg')` }}>
+            <section className="hidden md:relative mt-[-170px] max-w-[100%] md:max-w-6xl mx-auto rounded-3xl overflow-hidden bg-black md:bg-cover shadow-2xl bg-center" style={{ backgroundImage: `url('/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg')` }}>
                 {/* Overlay */}
 
 

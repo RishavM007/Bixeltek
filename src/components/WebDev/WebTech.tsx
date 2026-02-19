@@ -13,6 +13,7 @@ import hostinder from '@/assets/Hostinger-logo.png'
 import shopify from '@/assets/shopify_logo_white.png'
 import mongoose from "@/assets/razorpay.png";
 import redis from "@/assets/redis-icon.webp";
+import TechGrid from "../Common/TechGrid";
 
 const logos = [
   { src: wordpress, alt: "WordPress" },
@@ -32,7 +33,7 @@ const logos = [
 
 export default function WebTech() {
   return (
-    <section className="w-full py-16 mt-20 bg-black">
+    <section className="w-full py-20 mt-10 md:mt-20 bg-black">
       <div className="max-w-[90%] mx-auto flex flex-col lg:flex-row gap-8">
         {/* Left text */}
         <div className="w-full lg:w-[40%] flex items-center justify-center lg:justify-start">
@@ -43,25 +44,7 @@ export default function WebTech() {
         
         {/* Right side logos */}
         <div className="w-full lg:w-[60%] col-span-2 lg:col-span-3">
-          {Array.from({ length: 3 }).map((_, rowIndex) => (
-            <div
-              key={rowIndex}
-              className={`grid grid-cols-2 lg:grid-cols-4 gap-14 md:gap-7 p-5 items-center justify-items-center py-2  ${
-                rowIndex !== 2 ? "" : ""
-              }`}
-            >
-              {logos
-                .slice(rowIndex * 4, rowIndex * 4 + 4)
-                .map((logo, idx) => (
-                  <Image
-                    key={idx}
-                    src={logo.src}
-                    alt={logo.alt}
-                    className={` h-10 w-auto object-contain ${logo.alt === "Hostinger" ? "md:h-14" : "h-10"} ${logo.alt === "Next.js" ? "md:h-6" : "h-10"} ${logo.alt === "Redis" ? "md:h-32" : "h-10"} ${logo.alt === "Mongoose" ? "md:h-10" : "h-10"} ${logo.alt === "Node.js" ? "md:h-16" : "h-10"} ${logo.alt === "Shopify" ? "h-12" : "h-10"} ${logo.alt === "TailwindCSS" ? "h-24" : "h-10"}` }
-                  />
-                ))}
-            </div>
-          ))}
+          <TechGrid/>
         </div>
       </div>
     </section>

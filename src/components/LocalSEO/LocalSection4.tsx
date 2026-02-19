@@ -97,7 +97,7 @@ Visibility without metrics is guesswork, so we turn engagement into measurable g
   ];
 
   useEffect(() => {
-    const spacer = 100;
+    const spacer = 80;
     const ctx = gsap.context(() => {
       cardsRef.current.forEach((card, index) => {
         ScrollTrigger.create({

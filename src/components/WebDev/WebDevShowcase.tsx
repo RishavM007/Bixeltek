@@ -52,7 +52,7 @@ export default function WebShowcaseSection() {
 
             </div>
             <div className="flex flex-col justify-center items-center gap-4 mt-4">
-                <h2 className="text-2xl font-inter font-semibold text-black ">Are You Looking For A High Performing Website?</h2>
+                <h2 className="text-2xl font-inter font-semibold text-white text-center ">Are You Looking For A High Performing Website?</h2>
                 <Link href={'tel:+919100032301'}>
                     <button className="px-7 py-3 rounded-2xl bg-blue-600 border border-blur-500 text-white font-semibold text-sm shadow-lg hover:bg-blue-700 transition">
                         Talk To Our Web Design Team

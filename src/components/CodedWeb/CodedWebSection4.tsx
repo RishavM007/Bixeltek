@@ -140,7 +140,7 @@ const SecureByDefault = () => {
 
       {/* Cards Section */}
       <motion.div 
-        className="flex justify-center items-end md:items-start lg:items-end  gap-6 max-w-[90%] mx-auto flex-col lg:flex-row"
+        className="flex justify-center items-end md:items-start lg:items-end  gap-6 md:max-w-[90%] mx-auto flex-col lg:flex-row"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-50px" }}
@@ -148,7 +148,7 @@ const SecureByDefault = () => {
       >
         {/* 1️⃣ Card 1 — Text + Description */}
         <motion.div 
-          className="flex flex-col justify-between bg-[#111111] rounded-3xl p-6 transition-all hover:bg-[#1A1A1A] h-[270px] lg:h-[460px] w-full lg:w-[18%] hover:shadow-2xl hover:shadow-blue-500/10 cursor-pointer"
+          className="flex flex-col justify-between bg-[#111111] rounded-3xl p-6 transition-all hover:bg-[#1A1A1A] md:h-[270px] lg:h-[460px] w-full lg:w-[18%] hover:shadow-2xl hover:shadow-blue-500/10 cursor-pointer"
           variants={cardVariants}
           whileHover={{ 
             y: -10,

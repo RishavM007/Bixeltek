@@ -125,10 +125,10 @@ const Card: React.FC<CardProps> = ({ title, img1, img2, description, link, isEve
 const CardList: React.FC = () => {
   return (
     <>
-      <div className='relative flex flex-col justify-center bg-white items-center pt-32 pb-28 '>
+      <div className='relative flex flex-col justify-center bg-white items-center py-20 md:pt-32 md:pb-28 '>
 
-        <h2 className="text-4xl md:text-5xl max-w-6xl mx-auto lg:text-6xl font-bold text-black  mb-14 text-center font-inter">Our Digital Marketing Solutions <br /> For Your Business</h2>
-        <div className="sm:max-w-[90%]  lg:max-w-[75%] mx-auto grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 items-stretch">
+        <h2 className="text-3xl md:text-5xl max-w-6xl mx-auto lg:text-6xl font-bold text-black  mb-14 text-center font-inter">Our Digital Marketing Solutions <br /> For Your Business</h2>
+        <div className="max-w-[90%] lg:max-w-[75%] mx-auto grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 items-stretch">
 
           {services.map((card, index) => {
             const isEven = (index + 1) % 2 === 0;

@@ -6,7 +6,7 @@ import logFileImg from "@/assets/All_SEO_data_sources_1d5f013db2.webp"; // repla
 export default function LogFileAnalysisSection() {
     return (
         <section className="relative px-6 lg:px-20 py-24 bg-black">
-            <div className="lg:max-w-[85%] mx-auto flex flex-col lg:flex-row items-center justify-between">
+            <div className="lg:max-w-[85%] mx-auto flex flex-col-reverse lg:flex-row items-center justify-between">
                 {/* Left Content */}
                 <div className="lg:w-1/2 flex flex-col items-start space-y-6 text-white">
                     {/* Tagline */}
@@ -55,8 +55,8 @@ export default function LogFileAnalysisSection() {
                 </div>
 
                 {/* Right Image */}
-                <div className="lg:w-1/2 flex justify-center mt-12 md:mt-0">
-                    <div className="relative w-[90%] md:w-[690px] overflow-hidden rounded-2xl shadow-lg">
+                <div className="lg:w-1/2 flex justify-center mb-12 md:mb-0">
+                    <div className="relative  md:w-[690px] overflow-hidden rounded-2xl shadow-lg">
                         <Image
                             src={logFileImg}
                             alt="Log File Analysis Dashboard"

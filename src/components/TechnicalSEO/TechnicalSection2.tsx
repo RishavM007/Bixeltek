@@ -18,7 +18,7 @@ export default function CrawlOptimizationSection() {
   ];
 
   return (
-    <section className="px-6 lg:w-[85%] mx-auto flex flex-col-reverse lg:flex-row items-center justify-between py-20 gap-10 md:gap-16">
+    <section className="px-6 lg:w-[85%] mx-auto flex flex-col-reverse lg:flex-row items-center justify-between md:py-20 gap-10 md:gap-16">
       {/* Left - Content */}
       <div className="w-full lg:w-1/2 text-left flex flex-col justify-center">
         <h2 className="text-3xl md:text-5xl font-medium text-white leading-tight">

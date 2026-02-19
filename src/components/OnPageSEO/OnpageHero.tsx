@@ -9,6 +9,7 @@ import { LogoTickerSaudi } from "@/components/LogoTicker2";
 import semanticIcon from "@/assets/star-shine-svgrepo-com.png"
 import ctrIcon from "@/assets/google-authenticator-svgrepo-com.png";
 import multilingualIcon from "@/assets/medal-ribbons-star-svgrepo-com.png";
+import { LogoTicker } from "@/sections/LogoTicker";
 
 // ✅ Background Image (optional — you can add a bg if desired)
 // import onpageBg from "@/assets/onpage-seo-bg.jpg";
@@ -91,7 +92,9 @@ export default function HeroOnPageSEO() {
 
       {/* ✅ Popup Form + Logo Carousel */}
       <SEOButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
-      <LogoTickerSaudi />
+      <LogoTicker 
+      bg="bg-black"
+      />
     </>
   );
 }

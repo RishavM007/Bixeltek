@@ -2,6 +2,9 @@ import Image from 'next/image';
 import cleaningcomp from "@/assets/digital marketing servies for cleaning companies.jpg";
 import dentalimg from '@/assets/dental-clinics-manitoba-768x431.jpg'
 import demoimg from "@/assets/zyro-w48LglCMKFI-unsplash.jpg"
+import realEstate from  '@/assets/real-estate.jpg'
+import localBusiness from '@/assets/local-market.jpg'
+import ecommerce from '@/assets/ecommerce-industry.png'
 
 
 const industries = [
@@ -27,7 +30,7 @@ const industries = [
       'SEO for location + property type keywords',
       'Video content for listings and walkthroughs',
     ],
-    image: demoimg,
+    image: realEstate,
   },
   {
     title: 'Local Service Businesses',
@@ -39,7 +42,7 @@ const industries = [
       'Review building and reputation management',
       'Mobile-friendly websites with call tracking',
     ],
-    image: demoimg,
+    image: localBusiness,
   },
   {
     title: 'E-commerce & D2C Brands',
@@ -51,13 +54,13 @@ const industries = [
       'Shopify/WooCommerce store builds',
       'Retargeting and upsell automation',
     ],
-    image: demoimg,
+    image: ecommerce,
   },
 ];
 
 export default function IndustrySections() {
   return (
-    <section className="py-12 px-6 lg:max-w-[90%] mx-auto bg-black text-white">
+    <section className="pt-10 md:py-12 px-6 lg:max-w-[90%] mx-auto bg-black text-white">
       {industries.map((industry, index) => (
         <div key={index} className={`flex flex-col  lg:flex-row ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-8 mb-12`}>          
           <div className="lg:w-1/2 ">

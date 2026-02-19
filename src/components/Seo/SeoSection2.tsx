@@ -42,7 +42,7 @@ const SEOSection = () => {
     ];
 
     return (
-        <section className=" overflow-hidden relative w-full py-24 bg-black text-white">
+        <section className=" overflow-hidden relative w-full py-20 md:py-24 bg-black text-white">
             {/* Glowing blue circle */}
             <div className="absolute top-32 -left-20 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
             <motion.div

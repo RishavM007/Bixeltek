@@ -8,7 +8,7 @@ import seodashboardimg from '@/assets/main-image.png'
 
 export default function WhySeo() {
     return (
-        <section className="w-full md:mt-20 bg-black text-gray-100 py-20 overflow-hidden">
+        <section className="w-full md:mt-20 bg-black text-gray-100 pt-20 md:py-20 overflow-hidden">
             <div className="flex flex-col lg:flex-row items-center lg:items-start">
 
                 {/* LEFT IMAGE */}
@@ -17,7 +17,7 @@ export default function WhySeo() {
                     whileInView={{ x: 0, opacity: 1, scale: 1 }}
                     transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                     viewport={{ once: true }}
-                    className="flex-1 relative w-full lg:w-1/2 h-[300px] md:h-[500px] lg:h-[680px]"
+                    className="flex-1 relative w-full lg:w-1/2 h-[300px] md:h-[500px] lg:h-[680px] px-6"
                 >
                     <Image
                         src={seodashboardimg}

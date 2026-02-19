@@ -56,7 +56,7 @@ export default function CMSProblemsSection() {
   ];
 
   return (
-    <section className="relative py-24 px-6 bg-transparent text-black">
+    <section className="relative py-20 md:py-24 px-6 bg-transparent text-black">
       <div className="max-w-7xl mx-auto text-center">
         {/* 🔹 Heading */}
         <h2 className="text-4xl md:text-6xl font-semibold mb-6">

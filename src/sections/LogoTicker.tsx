@@ -10,14 +10,25 @@ import {motion} from 'framer-motion'
 import anata from '@/assets/Ananta Ananda-01.png'
 import Image from 'next/image';
 
-export const LogoTicker = () => {
+interface props {
+  bg?:string;
+}
+
+export const LogoTicker = ({
+  bg='bg-white'
+}:props) => {
+
+  const isWhite = bg.includes('white')
+
   return (
-    <section className='pb-20 bg-white mt-10 pt-20 flex flex-col gap-20'>
+    <section className={`${bg} mt-10 py-10 md:py-20 flex flex-col gap-20`}>
 
       <div className="w-[90%] md:w-[90%] lg:w-[90%] mx-auto">
         <div className='flex items-center'>
-          <div className='flex-1 md:flex-none mr-2 md:mr-5 lg:mr-8'>
-          <h2 className='text-black text-sm font-semibold capitalize md:text-2xl tracking-wide'>Trusted by top Companies</h2>
+          <div className='hidden lg:flex flex-1 md:flex-none mr-2 md:mr-5 lg:mr-8'>
+          <h2 className={ `text-sm font-semibold capitalize md:text-2xl tracking-wide ${
+            isWhite ? 'text-black' : 'text-white'
+          }`}>Trusted by top Companies</h2>
           </div>
           <div className=' flex flex-1 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_20%,black_96%,transparent)]'>
           <motion.div 
