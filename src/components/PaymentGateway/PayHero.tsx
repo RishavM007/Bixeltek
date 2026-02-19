@@ -16,7 +16,7 @@ export default function PaymentHeroSection() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     viewport={{ once: true }}
-                    className="flex flex-col mt-32 md:mt-16 lg:mt-0 gap-6 lg:w-2/3 text-center md:text-left"
+                    className="flex flex-col mt-20 md:mt-16 lg:mt-0 gap-6 lg:w-2/3 text-center md:text-left"
                 >
                     <h1 className="text-4xl md:text-6xl font-medium text-gray-900 leading-tight">
                        Secure, Seamless Payment Gateway Integrations 

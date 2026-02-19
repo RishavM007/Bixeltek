@@ -40,8 +40,8 @@ export default function CMSFlexibilitySection() {
     ];
 
     return (
-        <section className="relative w-full bg-black text-white py-24 px-6 md:px-12">
-            <div className="max-w-[90%] mx-auto flex flex-col gap-16">
+        <section className="relative w-full bg-black text-white py-20 md:py-24 px-6 md:px-12">
+            <div className="md:max-w-[90%] mx-auto flex flex-col gap-16">
                 <h2 className="text-3xl md:text-6xl font-medium text-center mb-12">
                     When CMS Flexibility Meets <br /> <span className="text-blue-500">Engineering Freedom</span>
                 </h2>

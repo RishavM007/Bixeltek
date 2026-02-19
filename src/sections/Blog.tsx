@@ -45,7 +45,7 @@ export default function Blog() {
   }, []);
 
   return (
-    <section className="py-24 bg-white">
+    <section className="pt-6 pb-20 md:py-24 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="font-manrope text-3xl md:text-5xl font-semibold text-gray-900 text-center mb-14">Read the latest insights powering business growth.</h2>
 

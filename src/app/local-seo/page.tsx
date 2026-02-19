@@ -9,6 +9,175 @@ import ContactFromNew from '@/components/ContactFormNew'
 import React from 'react'
 import { Check } from 'lucide-react'
 import LocationProcessSection from '@/components/Common/location/LocationProcessSection'
+import GlobalExpertiseSection from '@/components/Common/GlobalExpertiseSection'
+import saudiImg from "@/assets/Saudi Web Design.png";
+import indiaImg from "@/assets/india-gate-delhi-1-attr-hero.jpeg";
+import uaeImg from "@/assets/pexels-photo-13736456.jpeg";
+import canadaImg from "@/assets/m_Toronto_destination_main_1_l_572_1000.webp";
+import usaImg from "@/assets/17.jpg";
+import bgimage from "@/assets/dotted-map-1.webp";
+
+const locations = [
+    {
+        country: "Saudi Arabia",
+        emoji: "🇸🇦",
+        image: saudiImg,
+        desc: (
+            <>
+                <a
+                    href="/saudi-arabia/riyadh/seo-services"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:underline"
+                >
+                    Riyadh
+                </a>
+                ,{" "}
+                <a
+                    href="/saudi-arabia/eastern-province/seo-services"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:underline"
+                >
+                    Eastern Province
+                </a>
+                ,{" "}
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=""
+                >
+                    Dhahran
+                </a>{" "}
+                — bilingual builds with Arabic + English parity, mobile-first layouts,
+                and GCC-compliant hosting.
+            </>
+        ),
+    },
+    {
+        country: "India",
+        emoji: "🇮🇳",
+        image: indiaImg,
+        desc: (
+            <>
+                <a
+                    href="/social-media-marketing-agency-hyderabad"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:underline"
+                >
+                    Hyderabad
+                </a>
+                ,{" "}
+                <a
+                    href="/bangalore/seo-services"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:underline"
+                >
+                    Bangalore
+                </a>
+                ,{" "}
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white "
+                >
+                    Mumbai
+                </a>{" "}
+                — fast, marketing-ready hybrid websites integrating CMS, CRM, and
+                automation tools.
+            </>
+        ),
+    },
+    {
+        country: "UAE",
+        emoji: "🇦🇪",
+        image: uaeImg,
+        desc: (
+            <>
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=""
+                >
+                    Dubai
+                </a>
+                ,{" "}
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=""
+                >
+                    Abu Dhabi
+                </a>{" "}
+                — premium design + high-performance React front-ends for luxury, real
+                estate, and financial brands.
+            </>
+        ),
+    },
+    {
+        country: "Canada",
+        emoji: "🇨🇦",
+        image: canadaImg,
+        desc: (
+            <>
+                <a
+                    href="/toronto/seo-services"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:underline"
+                >
+                    Toronto
+                </a>
+                ,{" "}
+                <a
+                    href="/vancouver/seo-services"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:underline"
+                >
+                    Vancouver
+                </a>,{" "}
+                <a
+                    href="/mississauga/seo-services"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:underline"
+                >
+                    Mississauga
+                </a>{" "}
+                — bilingual (EN/FR) systems built for accessibility, compliance, and
+                Core Web Vitals excellence.
+            </>
+        ),
+    },
+    {
+        country: "United States",
+        emoji: "🇺🇸",
+        image: usaImg,
+        desc: (
+            <>
+                SaaS and enterprise clients across{" "}
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=""
+                >
+                    the U.S.
+                </a>{" "}
+                using Next.js + Node for speed, analytics depth, and compliance
+                readiness.
+            </>
+        ),
+    },
+];
+
 
 const steps = [
   {
@@ -53,6 +222,8 @@ const steps = [
   },
 ];
 
+
+
 export default function page() {
   return (
     <>
@@ -82,9 +253,21 @@ export default function page() {
             />
     <LocalSEODailyCareSection/>
     <LocalSEOStacked/>
-    <LocalAreas/>
+    {/* <LocalAreas/> */}
+    <GlobalExpertiseSection
+    heading={
+      <span>
+        Local Expertise ,{" "}
+                    <span className="text-blue-500">with Global Execution</span>
+      </span>
+    }
+    description='We manage multi-location Local SEO systems across :'
+    locations={locations}
+    footerText='Wherever your users are, we deploy your site on the edge — close,
+                compliant, and lightning-fast.'
+    />
       <section
-      className="bg-black py-20 px-6 lg:px-20 flex flex-col lg:flex-row items-center gap-10"
+      className="bg-black md:py-20 px-6 lg:px-20 flex flex-col lg:flex-row items-center gap-10"
       id="local-seo-audit"
     >
       {/* Left Side - Text & CTAs */}

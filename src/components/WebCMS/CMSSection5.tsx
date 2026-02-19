@@ -14,8 +14,8 @@ export default function CMSProblemSection2() {
   ];
 
   return (
-    <section className="md:py-16 bg-transparent">
-      <div className="container mx-auto flex flex-col lg:flex-row items-center gap-12 px-4">
+    <section className="pt-5 md:py-16 bg-transparent">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center gap-12 px-6">
         {/* Image Left */}
         <div className="lg:w-1/2 w-full">
           <Image

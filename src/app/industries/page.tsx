@@ -80,7 +80,7 @@ export default function Industries() {
   return (
     <>
       <section>
-        <div className="relative isolate mt-[-60px] md:mt-[-120px] mb-[-70px] overflow-hidden bg-black h-[100vh] md:h-[100vh] lg:h-[100vh] xl:h-[100vh] flex items-center justify-center">
+        <div className="relative isolate pb-20 md:pb-0  md:mt-[-120px] mb-[-70px] overflow-hidden bg-black md:h-[100vh] lg:h-[100vh] xl:h-[100vh] flex items-center justify-center">
           <svg
             className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
             aria-hidden="true">
@@ -102,7 +102,7 @@ export default function Industries() {
               }}
             ></div>
           </div>
-          <div className="max-w-full px-4 text-center lg:max-w-3xl">
+          <div className="max-w-full px-4 mt-20 text-center lg:max-w-3xl">
             <h1 className="text-5xl md:text-7xl font-bold font-sofiasanscondensed tracking-tight text-white ">
             We Know Your Industry.<br /><span className="text-purple-500"> We Know How to Scale It.</span>
             </h1>
@@ -162,7 +162,7 @@ export default function Industries() {
         </div>
       </section>
       <IndustrySections />
-      <section className="lg:max-w-[90%] xl:max-w-[80%] py-10 mx-auto">
+      <section className="lg:max-w-[90%] xl:max-w-[80%] md:py-10 mx-auto">
         <div className="py-10  md:px-0 text-center">
           <h2 className="text-3xl font-sofiasanscondensed md:text-6xl font-semibold text-white mb-5">Why Choose Us?</h2>
           <p className="text-sm xl:text-xl max-w-xl mx-auto text-gray-100">

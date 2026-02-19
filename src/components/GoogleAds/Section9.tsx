@@ -21,6 +21,16 @@ const bottomRow = [
   { src: reactksicon, alt: "React.js" },
 ];
 
+const techStack=[
+  { src: semrush, alt: "Semrush" },
+  { src: seranking, alt: "SE Ranking" },
+  { src: looker, alt: "Looker Studio" },
+  { src: googleadslogo, alt: "Google Ads" },
+  { src: shoppingads, alt: "Shopping Ads" },
+  { src: nextjsicon, alt: "Next.js" },
+  { src: reactksicon, alt: "React.js" },
+]
+
 const TechStackSection = () => {
   return (
     <section className="bg-[#131313] py-12 md:py-20 px-5 sm:px-8 md:px-12 lg:px-20">
@@ -45,9 +55,8 @@ const TechStackSection = () => {
 
         {/* RIGHT SIDE GRID */}
         <div className="flex flex-col items-center justify-center gap-6 sm:gap-8">
-          {/* Top Row */}
-          <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 sm:gap-6">
-            {topRow.map((tool, index) => (
+          <div className="grid grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">
+            {techStack.map((tool, index) => (
               <div
                 key={index}
                 className="bg-black border border-blue-800 rounded-2xl flex items-center justify-center h-20 w-20 sm:h-24 sm:w-24 hover:scale-105 transition-transform duration-300"
@@ -62,7 +71,7 @@ const TechStackSection = () => {
           </div>
 
           {/* Bottom Row */}
-          <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 sm:gap-6">
+          {/* <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 sm:gap-6">
             {bottomRow.map((tool, index) => (
               <div
                 key={index}
@@ -75,7 +84,7 @@ const TechStackSection = () => {
                 />
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
 
       </div>

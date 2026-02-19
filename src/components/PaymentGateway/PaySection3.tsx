@@ -79,7 +79,7 @@ Bixeltek ensures these systems integrate deeply with your backend for compliant,
   ];
 
   useEffect(() => {
-    const spacer = 100; // gap between stacked cards
+    const spacer = 80; // gap between stacked cards
     const ctx = gsap.context(() => {
       cardsRef.current.forEach((card, index) => {
         ScrollTrigger.create({

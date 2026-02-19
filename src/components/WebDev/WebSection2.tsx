@@ -8,7 +8,7 @@ import seodashboardimg from "@/assets/laptop dentist 2.png";
 
 export default function WhyWebDev() {
     return (
-        <section className="w-full relative md:mt-20 bg-black text-gray-100 py-20  overflow-x-hidden">
+        <section className="w-full relative mt-20 bg-black text-gray-100 py-20  overflow-x-hidden">
              <div className="absolute bottom-12 -right-20 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
             <div className="flex flex-col lg:flex-row items-center lg:items-start">
 
@@ -18,7 +18,7 @@ export default function WhyWebDev() {
                     whileInView={{ x: 0, opacity: 1, scale: 1 }}
                     transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                     viewport={{ once: true }}
-                    className="flex-1 relative w-full lg:w-1/2 h-[300px] md:h-[500px] lg:h-[600px]"
+                    className="flex-1 relative w-full lg:w-1/2 h-[300px] md:h-[500px] lg:h-[600px] px-6"
                 >
                     <Image
                         src={seodashboardimg}

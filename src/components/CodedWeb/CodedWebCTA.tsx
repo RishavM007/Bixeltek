@@ -8,7 +8,7 @@ const CodedCTASection = () => {
   return (
     <section className="relative w-[90%] md:w-[85%] my-10 md:my-20 rounded-[40px] mx-auto bg-gray-800 overflow-hidden">
       {/* 🖼️ Background Image */}
-      <div className="absolute inset-0 ">
+      <div className="hidden md:block absolute inset-0 ">
         <Image
           src={ctaBg}
           alt="CTA Background"

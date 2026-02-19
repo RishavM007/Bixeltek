@@ -9,6 +9,7 @@ import { LogoTicker2 } from "@/components/GoogleAdsCarousel";
 import { FaWordpress, FaShopify, FaGlobe, FaHandshake } from "react-icons/fa";
 import { MdSpeed } from "react-icons/md";
 import { EPLogoTickerSaudiEP } from "../Saudi/EasternProvince/GoogleAds/SaudiLogoTickerEP";
+import { LogoTicker } from "@/sections/LogoTicker";
 
 export default function HeroCMSDevelopment() {
   const [isVisible, setIsVisible] = useState(false);
@@ -39,7 +40,7 @@ export default function HeroCMSDevelopment() {
 
   return (
     <>
-      <section className="relative bg-black flex flex-col items-center justify-center sm:h-[130vh] md:h-[100vh] lg:h-[120vh] xl:h-[100vh] text-center px-6 overflow-hidden">
+      <section className="relative bg-black flex flex-col items-center justify-center text-center px-6 overflow-hidden">
         {/* 🔹 Background Image */}
         <Image
           src={bgImage}
@@ -51,7 +52,7 @@ export default function HeroCMSDevelopment() {
 
 
         {/* 🔹 Content */}
-        <div className="relative z-10 mt-16 lg:mt-28 xl:mt-40 max-w-7xl mx-auto">
+        <div className="relative z-10 mt-40 mb-10 md:my-36 lg:my-40 lg:py-10 max-w-7xl mx-auto">
           {/* ✅ Heading */}
           <h1 className="text-3xl md:text-6xl font-medium leading-tight text-white">
             Custom CMS Website Development  That Powers Growth Across{" "} <br></br>
@@ -103,7 +104,8 @@ export default function HeroCMSDevelopment() {
         isVisible={isVisible}
         onClose={() => setIsVisible(false)}
       />
-      <EPLogoTickerSaudiEP />
+      {/* <EPLogoTickerSaudiEP /> */}
+      <LogoTicker/>
     </>
   );
 }

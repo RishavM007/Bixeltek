@@ -26,7 +26,7 @@ export default function UnderstandingWhySection() {
   ];
 
   return (
-    <section className="px-6 lg:w-[85%] mx-auto flex flex-col lg:flex-row-reverse items-center justify-between py-20 gap-10 md:gap-16">
+    <section className="px-6 lg:w-[85%] mx-auto flex flex-col lg:flex-row-reverse items-center justify-between pt-20 md:py-20 gap-10 md:gap-16">
       {/* RIGHT - IMAGE */}
       <div className="relative w-full lg:w-1/2 h-[300px] md:h-[430px] rounded-2xl overflow-hidden shadow-lg">
         <Image

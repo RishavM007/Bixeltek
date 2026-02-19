@@ -41,6 +41,8 @@ import lawncare from "@/assets/digital marketing for lawn care services.jpg"
 import blackcar from "@/assets/digital marketing for car detailers.jpg"
 import healthcare from "@/assets/digital marketing for health care practices.jpg"
 import LocationProcessSection from '@/components/Common/location/LocationProcessSection';
+import Tech2 from '@/components/Tech2';
+import DynamicIndustrySection from '@/components/Common/IndustryCarousel';
 
 const steps = [
   {
@@ -175,7 +177,21 @@ export default function page() {
             <WebTech/>
             <AreasWeServe/>
             {/* <IndustryCarouselSectionWeb/> */}
-            <LocationIndustrySection
+            <DynamicIndustrySection
+            backgroundColor='bg-black'
+            heading={
+                <>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-500">
+                        Web Development Solutions <br></br> Tailored for Every Industry
+                    </span>
+                </>
+            }
+            description='Every industry has its own goals, users, and digital challenges.
+                    Our team builds websites and web apps that align with each sector’s unique needs — whether it’s e-commerce, healthcare, real estate, education, or tech startups.
+                    We translate business objectives into seamless digital experiences that deliver results.'
+             industries={industries} 
+            />
+            {/* <LocationIndustrySection
             heading={
                 <>
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-500">
@@ -187,7 +203,7 @@ export default function page() {
                     Our team builds websites and web apps that align with each sector’s unique needs — whether it’s e-commerce, healthcare, real estate, education, or tech startups.
                     We translate business objectives into seamless digital experiences that deliver results.'
              industries={industries}       
-            />
+            /> */}
             <WebdevTestimonials />
             <WebDevFaq/>
         </>

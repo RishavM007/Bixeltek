@@ -7,8 +7,8 @@ import { motion } from 'framer-motion';
 
 export default function CMSInfoSection() {
     return (
-        <section className="py-10 md:py-20 ">
-            <div className="max-w-[85%] mx-auto px-0 flex flex-col-reverse lg:flex-row items-center gap-12">
+        <section className="px-6 py-10 md:py-20 ">
+            <div className="md:max-w-[85%] mx-auto px-0 flex flex-col-reverse lg:flex-row items-center gap-12">
 
                 {/* Left Column - Text */}
                 <div className="lg:w-1/2 px-0 md:px-0">

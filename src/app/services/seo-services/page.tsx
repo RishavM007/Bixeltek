@@ -36,6 +36,8 @@ import dental from "@/assets/digital marketing for health care practices.jpg"
 import lawncare from "@/assets/digital marketing for lawn care services.jpg"
 import blackcar from "@/assets/digital marketing for car detailers.jpg"
 import healthcare from "@/assets/digital marketing for health care practices.jpg"
+import ServicesSection from '@/components/Common/ServicesGrid';
+import DynamicIndustrySection from '@/components/Common/IndustryCarousel';
 
 const industries = [
                         {
@@ -373,8 +375,14 @@ export default function Seo() {
                 </div>
             </section> */}
 
-
-            <section className='relative py-24'>
+            <ServicesSection
+            heading={
+                <span>Our <span className='text-blue-500'>Comprehensive SEO Services</span> in Hyderabad</span>
+            }
+            description='At Bixeltek, our services are built around one goal: helping businesses turn visibility into revenue.'
+            services={seoServices}
+            />
+            {/* <section className='relative py-24'>
                 <div className="absolute top-32 -left-20 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
                 <div className="absolute bottom-52 right-0 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-30 blur-[190px] pointer-events-none"></div>
                 <div>
@@ -397,30 +405,13 @@ export default function Seo() {
                                 >
                                     {service.linkText}
                                 </a>
-
-                                {/* {index % 4 === 0 && (
-                                    <span className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 text-gray-300 text-3xl z-30"><i className="fa fa-plus text-2xl" aria-hidden="true"></i></span>
-                                )}
-
-                                {(index % 4 === 1 || index == 0 || index == 2) && (
-                                    <span className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 text-gray-300 text-3xl z-30"><i className="fa fa-plus text-2xl" aria-hidden="true"></i></span>
-                                )}
-
-                                {(index % 4 === 2 || index == 0 || index == 3) && (
-                                    <span className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 text-gray-300 text-3xl z-30"><i className="fa fa-plus text-2xl" aria-hidden="true"></i></span>
-                                )}
-
-                                {(index % 4 === 3 || index == 5 || index == 6 || index == 8) && (
-                                    <span className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 text-gray-300 text-3xl z-30"><i className="fa fa-plus text-2xl" aria-hidden="true"></i></span>
-                                )} */}
-                            </div>
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
 
-            <section className="pt-20 pb-10 md:pb-20">
+            <section className="pt-10 md:pt-20 pb-10 md:pb-20">
                 <div className="flex flex-col items-center gap-3">
                     <h2 className="text-3xl max-w-6xl mx-auto md:text-6xl font-semibold text-center text-white font-inter px-6 md:px-0">
                         How We Help Businesses Thrive in the Age of{" "}
@@ -494,7 +485,8 @@ export default function Seo() {
                 </div>
             </section>
             {/* <IndustryCarouselSection /> */}
-            <LocationIndustrySection
+            <DynamicIndustrySection
+            backgroundColor='bg-black'
             theme='purple'
             heading={
                 <>
@@ -506,6 +498,18 @@ export default function Seo() {
             description='Discover the diverse industries we proudly cater to, offering innovative solutions to help you excel in your field.'
             industries={industries}
             />
+            {/* <LocationIndustrySection
+            theme='purple'
+            heading={
+                <>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-500">
+                        INDUSTRIES WE SERVE
+                    </span>
+                </>
+            }
+            description='Discover the diverse industries we proudly cater to, offering innovative solutions to help you excel in your field.'
+            industries={industries}
+            /> */}
             <SeoSection6 />
             <FAQSectionSEO />
 

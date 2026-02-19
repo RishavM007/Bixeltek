@@ -14,7 +14,12 @@ import ContactFromNew from '@/components/ContactFormNew'
 import EcommerceFAQ from '@/components/EcommerceWeb/EcomFaq'
 import MobileTechGrid from '@/components/EcommerceWeb/EcomTechMob'
 import LocationProcessSection from '@/components/Common/location/LocationProcessSection'
-
+import GlobalExpertiseSection from '@/components/Common/GlobalExpertiseSection'
+import saudiImg from "@/assets/Saudi Web Design.png";
+import indiaImg from "@/assets/india-gate-delhi-1-attr-hero.jpeg";
+import uaeImg from "@/assets/pexels-photo-13736456.jpeg";
+import canadaImg from "@/assets/m_Toronto_destination_main_1_l_572_1000.webp";
+import usaImg from "@/assets/17.jpg";
 
 const steps = [
   {
@@ -67,6 +72,167 @@ const steps = [
   },
 ];
 
+const locations = [
+  {
+    country: "Saudi Arabia",
+    emoji: "🇸🇦",
+    image: saudiImg,
+    desc: (
+      <>
+        <a
+          href="/saudi-arabia/riyadh/web-design-services"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:underline"
+        >
+          Riyadh
+        </a>
+        ,{" "}
+        <a
+          href="/saudi-arabia/eastern-province/web-design-services"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:underline"
+        >
+          Eastern Province
+        </a>
+        ,{" "}
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          className=""
+        >
+          Dhahran
+        </a>{" "}
+        — bilingual builds with Arabic + English parity, mobile-first layouts,
+        and GCC-compliant hosting.
+      </>
+    ),
+  },
+  {
+    country: "India",
+    emoji: "🇮🇳",
+    image: indiaImg,
+    desc: (
+      <>
+        <a
+          href="/web-design-services-hyderabad"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:underline"
+        >
+          Hyderabad
+        </a>
+        ,{" "}
+        <a
+          href="/bangalore/website-design-company"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:underline"
+        >
+          Bangalore
+        </a>
+        ,{" "}
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white "
+        >
+          Mumbai
+        </a>{" "}
+        — fast, marketing-ready hybrid websites integrating CMS, CRM, and
+        automation tools.
+      </>
+    ),
+  },
+  {
+    country: "UAE",
+    emoji: "🇦🇪",
+    image: uaeImg,
+    desc: (
+      <>
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          className=""
+        >
+          Dubai
+        </a>
+        ,{" "}
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          className=""
+        >
+          Abu Dhabi
+        </a>{" "}
+        — premium design + high-performance React front-ends for luxury, real
+        estate, and financial brands.
+      </>
+    ),
+  },
+  {
+    country: "Canada",
+    emoji: "🇨🇦",
+    image: canadaImg,
+    desc: (
+      <>
+        <a
+          href="/toronto/web-design"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:underline"
+        >
+          Toronto
+        </a>
+        ,{" "}
+        <a
+          href="/vancouver/web-design-services"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:underline"
+        >
+          Vancouver
+        </a>{" "}
+        <a
+          href="/mississauga/web-design"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:underline"
+        >
+          Mississauga
+        </a>{" "}
+        — bilingual (EN/FR) systems built for accessibility, compliance, and
+        Core Web Vitals excellence.
+      </>
+    ),
+  },
+  {
+    country: "United States",
+    emoji: "🇺🇸",
+    image: usaImg,
+    desc: (
+      <>
+        SaaS and enterprise clients across{" "}
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          className=""
+        >
+          the U.S.
+        </a>{" "}
+        using Next.js + Node for speed, analytics depth, and compliance
+        readiness.
+      </>
+    ),
+  },
+];
+
 export default function page() {
   return (
     <>
@@ -93,7 +259,17 @@ export default function page() {
       footerText=' We don’t just launch stores — we build scalable growth systems engineered for performance, psychology, and long-term ROI.'
       />
       <DesignPsychologySection />
-      <EcomAreas />
+      {/* <EcomAreas /> */}
+      <GlobalExpertiseSection
+      heading={
+        <span>Local Payment Systems,{" "}
+          <span className="text-blue-500">Global Performance</span></span>
+      }
+      description='We engineer e-commerce ecosystems for businesses in:'
+      locations={locations}
+      footerText='Wherever your users are, we deploy your site on the edge — close,
+        compliant, and lightning-fast.'
+      />
       <GrowthAfterGoLive />
       <EcommerceFAQ/>
       <section

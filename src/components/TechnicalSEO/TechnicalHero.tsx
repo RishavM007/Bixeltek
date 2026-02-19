@@ -10,6 +10,7 @@ import { LogoTickerSaudi } from "@/components/LogoTicker2";
 import vitalsIcon from "@/assets/star-shine-svgrepo-com.png";
 import schemaIcon from "@/assets/medal-ribbons-star-svgrepo-com.png";
 import globeIcon from "@/assets/google-authenticator-svgrepo-com.png";
+import { LogoTicker } from "@/sections/LogoTicker";
 
 // ✅ Background Image (optional)
 // import techSeoBg from "@/assets/technical-seo-bg.jpg";
@@ -91,7 +92,9 @@ export default function HeroTechnicalSEO() {
 
       {/* ✅ Popup Form + Logo Carousel */}
       <SEOButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
-      <LogoTickerSaudi />
+      <LogoTicker
+      bg="bg-black"
+      />
     </>
   );
 }

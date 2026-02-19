@@ -11,6 +11,7 @@ interface ProcessStep {
 }
 
 interface LocationProcessSectionProps {
+  tag?:React.ReactNode;
   heading: React.ReactNode;
   highlightText?: string;
   description: string;
@@ -25,6 +26,7 @@ interface LocationProcessSectionProps {
 }
 
 const LocationProcessSection = ({
+  tag,
   heading,
   highlightText,
   description,
@@ -39,6 +41,7 @@ const LocationProcessSection = ({
     <div className={`min-h-screen relative ${bg} py-12 px-4 sm:px-6 lg:px-8`}>
       
       {/* Heading */}
+      {tag}
       <h2
         className={`text-3xl md:text-6xl md:text-center max-w-6xl mx-auto font-bold font-inter mb-6 ${
           isWhite ? "text-black" : "text-white"
@@ -57,37 +60,40 @@ const LocationProcessSection = ({
 
       {/* ================= MOBILE ================= */}
       <div className="space-y-10 md:hidden">
-        {steps.map((item, idx) => (
-          <div
-            key={idx}
-            className={`flex group ${item.hoverBg ?? ""} py-6 rounded-3xl flex-col items-start`}
-          >
-            <p
-              className={`${item.color} ${
-                isWhite ? "" : "group-hover:text-white"
-              } text-5xl font-bold mb-2`}
-            >
-              {item.number}
-            </p>
+  {steps.map((item, idx) => (
+    <div
+      key={idx}
+      className={`p-[1.5px] rounded-3xl bg-gradient-to-r ${item.gradient}`}
+    >
+      <div
+        className={`flex group ${item.hoverBg ?? ""} 
+        p-6 rounded-3xl flex-col items-start 
+        ${isWhite ? "bg-white" : "bg-black"}`}
+      >
+        <p className={`${item.color} text-5xl font-bold mb-2`}>
+          {item.number}
+        </p>
 
-            <h3
-              className={`text-xl font-bold mb-2 ${
-                isWhite ? "text-black" : "text-white"
-              }`}
-            >
-              {item.title}
-            </h3>
+        <h3
+          className={`text-xl font-bold mb-2 ${
+            isWhite ? "text-black" : "text-white"
+          }`}
+        >
+          {item.title}
+        </h3>
 
-            <p
-              className={`${
-                isWhite ? "text-gray-900" : "text-gray-300"
-              }`}
-            >
-              {item.text}
-            </p>
-          </div>
-        ))}
+        <p
+          className={`${
+            isWhite ? "text-gray-900" : "text-gray-300"
+          }`}
+        >
+          {item.text}
+        </p>
       </div>
+    </div>
+  ))}
+</div>
+
 
       {/* ================= DESKTOP ================= */}
       <div className="hidden md:block max-w-7xl mx-auto mt-40 space-y-[4px]">

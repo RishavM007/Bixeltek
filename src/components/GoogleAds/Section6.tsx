@@ -5,10 +5,10 @@ import Link from "next/link";
 
 export default function GoogleAdsCostSection() {
   return (
-    <div className="bg-[#131313] text-white md:py-16  font-poppins">
+    <div className="bg-[#131313] text-white pb-10 md:py-16  font-poppins">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Side Content */}
-        <div className="pr-6 lg:pr-16 px-6 md:px-12 lg:px-20">
+        <div className="lg:pr-16 px-6 md:px-12 lg:px-20">
           <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
             What Does<br></br> <span className="text-blue-500">Google Ads Cost?</span>
           </h2>
@@ -96,7 +96,7 @@ export default function GoogleAdsCostSection() {
         </div>
 
         {/* Right Side Image */}
-        <div className="rounded-l-2xl overflow-hidden shadow-lg lg:ml-auto lg:mr-0 lg:pr-0 mx-6 lg:mx-0 ">
+        <div className="rounded-l-2xl overflow-hidden shadow-lg lg:ml-auto lg:mr-0 lg:pr-0 px-6 lg:mx-0 ">
           <Image
             src={googleadsimage}
             alt="Google Ads Costs"

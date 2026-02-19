@@ -4,8 +4,8 @@ export const About = () => {
 
     return (
         <>
-            <section className="overflow-hidden  pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark">
-                <div className="container max-w-[85%]  mx-auto">
+            <section className="overflow-hidden pt-10 md:pt-20 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark">
+                <div className="container max-w-[90%] md:max-w-[85%]  mx-auto">
                     <div className="flex flex-wrap items-center justify-between -mx-4">
                         <div className="w-full px-4 lg:w-5/12 ">
                             <div className="flex items-center -mx-3 sm:-mx-4">

@@ -70,7 +70,7 @@ export default function CustomCodedHeroSection() {
                 </div>
 
                 {/* Cards Section */}
-                <div className=" flex flex-col lg:flex-row w-[90%] mt-20 mx-auto gap-8">
+                <div className="hidden md:flex flex-col lg:flex-row w-[90%] mt-20 mx-auto gap-8">
                     {/* Card 1 */}
                     <div className="relative backdrop-blur-lg w-full lg:w-1/3 font-inter flex flex-col gap-12 justify-between bg-white/10  rounded-3xl p-8 hover:scale-105 transition-transform mx-auto">
 

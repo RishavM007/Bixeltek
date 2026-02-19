@@ -13,6 +13,7 @@ import bilingualIcon from "@/assets/star-shine-svgrepo-com.png";
 // ✅ Background Image
 import heroBg from "@/assets/local-seo-bg.jpg"; // replace with your actual local SEO bg image
 import { SEOButtonContactForm } from "../SEOPopupForm";
+import { LogoTicker } from "@/sections/LogoTicker";
 
 export default function HeroLocalSEO() {
     const [isVisible, setIsVisible] = useState(false);
@@ -30,11 +31,11 @@ export default function HeroLocalSEO() {
 
     return (
         <>
-            <section className="relative bg-black flex flex-col items-center justify-center h-[140vh] md:h-[100vh] lg:h-[80vh] text-center px-6 overflow-hidden">
+            <section className="relative bg-black flex flex-col items-center justify-center text-center px-6 overflow-hidden">
                 {/* ✅ Background Image */}
 
                 {/* ✅ Content */}
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center  md:px-0 mt-20 md:mt-36 lg:mt-24">
                     <div className="relative z-10 mt-24 max-w-7xl">
                         {/* Heading */}
                         <h1 className="text-4xl md:text-7xl font-medium leading-tight text-white">
@@ -87,7 +88,7 @@ export default function HeroLocalSEO() {
             </section>
             {/* ✅ Popup Form + Logo Carousel */}
                 <SEOButtonContactForm isVisible={isVisible} onClose={() => setIsVisible(false)} />
-            <LogoTickerSaudi />
+            <LogoTicker bg="bg-black"/>
         </>
     );
 }

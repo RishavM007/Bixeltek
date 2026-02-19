@@ -10,6 +10,103 @@ import CMSProblemSection2 from '@/components/WebCMS/CMSSection5'
 import MarketingInfrastructureSection from '@/components/WebCMS/CMSWhyChooseUs'
 import ContactFromNew from '@/components/ContactFormNew'
 import React from 'react'
+import LocationProcessSection from '@/components/Common/location/LocationProcessSection'
+import DynamicIndustrySection from '@/components/Common/IndustryCarousel'
+import cleaningcomp from "@/assets/environmental-pollution-industry-exterior-daylight.jpg";
+import pet from "@/assets/muslim-person-travelling-through-city.jpg";
+import roofing from "@/assets/ordinary-life-scene-from-mall-america.jpg";
+import dental from "@/assets/asian-man-reading-text-messages-with-his-colleague-making-phone-call-background.jpg";
+import blackcar from "@/assets/top-view-numerous-cars-traffic-dubai-united-arab-emirates.jpg";
+import healthcare from "@/assets/beautiful-young-female-doctor-looking-camera-office.jpg";
+
+
+const steps = [
+  {
+    number: "01",
+    title: "Discovery & Audit",
+    text: "We analyze your existing infrastructure, identifying technical and marketing inefficiencies while mapping opportunities for scalability, SEO, and performance gains.",
+    gradient: "from-blue-500 via-cyan-400 to-transparent",
+    color: "text-yellow-500",
+    bgcolor: "hover:bg-yellow-500",
+  },
+  {
+    number: "02",
+    title: "Architecture & Strategy",
+    text: "We design a modular CMS architecture — with scalable taxonomies, optimized URL trees, multilingual logic, and content governance frameworks built for long-term growth.",
+    gradient: "from-green-500 via-teal-400 to-transparent",
+    color: "text-green-500",
+    bgcolor: "hover:bg-orange-500",
+  },
+  {
+    number: "03",
+    title: "Design & Development",
+    text: "We translate the architecture into seamless user experiences using React, Next.js, or native WordPress environments — ensuring every pixel and interaction drives engagement.",
+    gradient: "from-yellow-400 via-yellow-300 to-transparent",
+    color: "text-blue-500",
+    bgcolor: "hover:bg-yellow-400",
+  },
+  {
+    number: "04",
+    title: "Integration & Tracking",
+    text: "We integrate GA4, Meta Pixel, conversion APIs, and CRMs — ensuring complete visibility into every lead, conversion, and campaign event across your digital ecosystem.",
+    gradient: "from-pink-500 via-purple-400 to-transparent",
+    color: "text-red-500",
+    bgcolor: "hover:bg-yellow-500",
+  },
+  {
+    number: "05",
+    title: "Optimization & Scaling",
+    text: "After launch, we continuously monitor performance, conduct A/B tests, refine conversion funnels, and scale winning modules — turning data into measurable growth.",
+    gradient: "from-green-500 via-transparent to-transparent",
+    color: "text-blue-600",
+    bgcolor: "hover:bg-yellow-600",
+  },
+];
+
+const industries = [
+        {
+            id: "health",
+            img: healthcare,
+            label: "Digital Marketing for Healthcare",
+            text: " Healthcare & Dental Clinics",
+            description: "Rank for treatments, attract patients, and grow visibility.",
+        },
+        {
+            id: "auto",
+            img: blackcar,
+            label: "Construction & Engineering",
+            text: "Construction & Engineering",
+            description: " Generate high-intent B2B inquiries from organic traffic.",
+        },
+        {
+            id: "cleaning",
+            img: cleaningcomp,
+            label: "Digital Marketing for Industries",
+            text: " Industrial & Manufacturing Firms ",
+            description: "Build supplier visibility and trust online.",
+        },
+        {
+            id: "roofing",
+            img: roofing,
+            label: "Digital Marketing for Ecommerce",
+            text: "E-commerce & Retail",
+            description: "Rank for products and drive consistent conversions.",
+        },
+        {
+            id: "lawncare",
+            img: pet,
+            label: "Digital Marketing for Education & Training Institutes",
+            text: "Education & Training Institutes",
+            description: "Capture enrollments through search visibility and local maps.",
+        },
+        {
+            id: "dental",
+            img: dental,
+            label: "Digital Marketing for Corporate & Consulting Firms",
+            text: "Corporate & Consulting Firms",
+            description: "Build credibility and inbound visibility for brand trust.",
+        },
+    ];
 
 export default function page() {
   return (
@@ -19,9 +116,35 @@ export default function page() {
     <CMSProblemSection2 />
     <CMSProblemsSection/>
     <CMSStackedCards />
-    <CMSWorkflow />
+    {/* <CMSWorkflow /> */}
+    <LocationProcessSection
+    bg='bg-white'
+    heading={
+      <span> Our Process Combines <br />{" "}
+        <span className="text-yellow-500">Engineering Discipline & Marketing Foresight</span></span>
+    }
+    description='Every CMS build we deliver is a living system — structured for performance, optimized for
+        SEO, and designed to evolve with your campaigns and business goals.'
+    steps={steps}
+    cta={{
+      text:'Book a Free Strategy Call',
+      href:'mailto:zee@bixeltek.com',
+      bg:'bg-gradient-to-tr from-green-500 via-green-700 to-green-950 hover:bg-gradient-to-tr hover:from-green-950 hover:via-green-700 hover:to-green-500 text-white'
+    }}
+    footerText='Your CMS doesn’t just go live — it evolves with your campaigns. Every feature is crafted to
+        deliver clarity, control, and continuous performance improvement.'
+    />
     <CmsServicesGrid/>
-    <CMSIndustries/>
+    {/* <CMSIndustries/> */}
+    <DynamicIndustrySection
+    heading={
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-black to-blue-500">
+                       Driving Measurable Results Across  <br></br>  Eastern Province&apos;s Leading Sectors
+                    </span>
+    }
+    description='Our expertise spans industries that define the region&apos;s economy:'
+    industries={industries}
+    />
     <MarketingInfrastructureSection/>
     <section
   className="bg-black py-20 px-6 lg:px-20 flex flex-col lg:flex-row items-center gap-10"

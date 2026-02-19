@@ -13,7 +13,7 @@ export default function LocalSEOProximitySection() {
   ];
 
   return (
-    <section className="lg:w-[85%] mx-auto flex flex-col lg:flex-row-reverse items-center justify-between px-6 py-20 gap-10 md:gap-16">
+    <section className="lg:w-[85%] mx-auto flex flex-col lg:flex-row-reverse items-center justify-between px-6 pb-16 pt-8 md:py-20 gap-10 md:gap-16">
       {/* Right - Image */}
       <div className="relative w-full lg:w-1/2 h-[300px] md:h-[500px] rounded-2xl overflow-hidden shadow-lg">
         <Image

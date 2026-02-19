@@ -50,14 +50,18 @@ const cardVariants = {
 
 const HowItWorks = () => {
   return (
-    <section 
-      className="relative w-full min-h-screen bg-black text-white py-24 px-6 md:px-16 overflow-hidden"
-      style={{
-        backgroundImage: `url(${bgImage.src})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
-    >
+          <section
+  className="
+    relative w-full min-h-screen
+    bg-black text-white
+    pt-10 md:py-24 px-6 md:px-16
+    overflow-hidden
+    lg:bg-[url('/dark-section-bg.png')]
+    md:bg-cover
+    md:bg-center
+  "
+  >
+
       {/* Overlay for better readability */}
       <div className="absolute inset-0 bg-black/20 backdrop-blur-[1px]"></div>
       

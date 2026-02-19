@@ -63,7 +63,7 @@ export default function OnPageSeoFaq() {
   };
 
   return (
-    <section className="py-14 bg-black" id="onpage-seo-faq">
+    <section className="md:py-14 bg-black" id="onpage-seo-faq">
       <div className="mx-auto lg:max-w-[85%] px-6 lg:px-8">
         <div className="flex flex-col gap-12">
           <div className="w-full">

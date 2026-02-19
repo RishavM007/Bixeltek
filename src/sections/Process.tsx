@@ -37,9 +37,9 @@ const steps = [
 
 export default function TimelineSection() {
   return (
-    <section className="bg-white text-black pt-16 pb-10 px-6">
+    <section className="bg-white text-black md:pt-16 md:pb-10 px-6">
       <div className="max-w-6xl mx-auto justify-center items-center flex flex-col">
-        <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">
+        <h2 className="text-3xl md:text-5xl font-bold mb-16 text-center">
           Our Approach to Your <span className="text-purple-500">Success</span>
         </h2>
 

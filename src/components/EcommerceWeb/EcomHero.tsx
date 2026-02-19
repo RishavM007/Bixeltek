@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const EcommerceHeroSection = () => {
     return (
-        <section className="w-full bg-black text-white py-24 md:pt-40 lg:py-24 px-6 md:px-16 overflow-hidden">
+        <section className="w-full bg-black text-white py-28 md:pt-40 lg:py-24 px-6 md:px-16 overflow-hidden">
             <div className="max-w-[94%] h-[100vh] md:h-auto lg:h-[85vh] flex items-center justify-center mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 mt-60 md:mt-0 gap-20 items-center w-full">
                     {/* Left Content */}

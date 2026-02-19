@@ -61,12 +61,12 @@ const locations = [
 
 export default function AreasWeServe() {
   return (
-    <section className="w-full bg-black text-white py-20">
+    <section className="w-full bg-black text-white py-10 md:py-20">
       <div className="max-w-[95%] lg:max-w-[85%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center px-6">
         
         {/* Left Side - Areas */}
         <div>
-          <h2 className="text-4xl md:text-6xl font-bold mb-6">Areas We Serve</h2>
+          <h2 className="text-3xl md:text-6xl font-bold mb-6">Areas We Serve</h2>
           <ul className="space-y-6 text-lg">
             {locations.map((location, index) => (
               <li key={index} className="flex items-start gap-3">

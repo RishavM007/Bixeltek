@@ -133,7 +133,7 @@ const locations = [
           className="text-blue-400 hover:underline"
         >
           Vancouver
-        </a>{" "}
+        </a> & {" "}
         <a
           href="/mississauga/web-design"
           target="_blank"

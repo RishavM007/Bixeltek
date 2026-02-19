@@ -75,9 +75,9 @@ export default function GooglePartner() {
               <span className="text-green-500">l</span>
               <span className="text-red-500">e</span> Partner Agency&quot;
             </h2>
-            <h3 className='sm:text-xl md:text-xl font-semibold max-w-6xl font-inter leading-relaxed'>
+            {/* <h3 className='sm:text-xl md:text-xl font-semibold max-w-6xl font-inter leading-relaxed'>
                 Our Google Partner badge isn’t just for show — it’s proof of our certified expertise, advanced skills, and consistent success in Google Ads and digital marketing.
-            </h3>
+            </h3> */}
             <p className="text-sm my-5 md:text-base font-light font-poppins leading-relaxed">
               When you work with us, you’re partnering with a vetted agency trusted by Google to deliver high-performing campaigns, measurable ROI, and strategies that take your business to the next level.
             </p>

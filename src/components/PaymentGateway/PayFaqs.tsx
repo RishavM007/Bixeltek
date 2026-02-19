@@ -78,7 +78,7 @@ export default function PaymentGatewayFAQ() {
     };
 
     return (
-        <section className="py-16 bg-white">
+        <section className="pt-4 pb-20 md:py-16 bg-white">
             <div className="mx-auto max-w-[95%] md:max-w-[85%] px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col gap-12">
                     <div className="w-full">

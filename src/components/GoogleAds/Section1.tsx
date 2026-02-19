@@ -81,7 +81,7 @@ const cardVariants = {
 
 
   return (
-    <section className="w-full mt-0 bg-black text-gray-50 py-16">
+    <section className="w-full mt-0 bg-black text-gray-50 pt-32 md:py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-10">
         {/* LEFT SIDE */}
         <div className="flex flex-col justify-center">

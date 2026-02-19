@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 
 const WhyChooseBixeltek = () => {
   return (
-    <section className="w-full py-24 bg-black text-white relative overflow-hidden">
-      <div className=" max-w-[90%] md:max-w-[80%] mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
+    <section className="w-full pt-20 md:py-24 bg-black text-white relative overflow-hidden">
+      <div className=" lg:max-w-[80%] mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
         {/* Left: Text */}
         <motion.div
           initial={{ x: -80, opacity: 0 }}

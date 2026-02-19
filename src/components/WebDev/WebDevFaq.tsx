@@ -66,7 +66,7 @@ export default function WebDevFaq() {
   };
 
   return (
-    <section className="py-14 bg-[black]" >
+    <section className="py-20 bg-[black]" >
       <div className="mx-auto max-w-[95%] md:max-w-[85%] px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-12">
           {/* FAQ Content */}

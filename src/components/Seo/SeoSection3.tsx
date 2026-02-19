@@ -42,13 +42,13 @@ const SEOGridSection = () => {
     ];
 
     return (
-        <section className="w-full py-24 bg-[#f5f7fd] text-black relative overflow-hidden">
+        <section className="w-full py-20 md:py-24 bg-[#f5f7fd] text-black relative overflow-hidden">
             <Image src={shape1} alt="shape1" className="absolute bottom-0 left-0" />
 
             <div className="max-w-full mx-auto flex flex-col lg:flex-row items-center gap-12">
                 {/* Left: Vertical stacked cards */}
-                <div className="flex-1 flex flex-col gap-8 pl-4 pr-4 md:pl-32 md:pr-16">
-                    <h2 className="text-4xl md:text-6xl font-bold font-inter leading-snug mb-6">
+                <div className="flex flex-col gap-8 px-6 lg:pl-32 lg:pr-16">
+                    <h2 className="text-3xl md:text-6xl font-bold font-inter leading-snug mb-6">
                         <span className="text-blue-500">Benefits </span>of <br></br> Implementing SEO
                     </h2>
                     {benefits.map((benefit, index) => (
@@ -98,7 +98,7 @@ const SEOGridSection = () => {
                     whileInView={{ x: 0, opacity: 1, scale: 1 }}
                     transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                     viewport={{ once: true }}
-                    className="relative flex-1 w-full lg:w-1/2 h-[400px] md:h-[500px] lg:h-[730px]"
+                    className="relative flex-1 w-full lg:w-1/2 h-[400px] md:h-[500px] lg:h-[730px] px-6 lg:px-0"
                 >
                     <Image
                         src={dashboard2}
