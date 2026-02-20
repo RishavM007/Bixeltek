@@ -1,6 +1,6 @@
 'use client';
 import React, { useRef, useState, useLayoutEffect } from "react";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import logo2 from '@/assets/BIXELTEKLOGO (1).png'
@@ -16,8 +16,69 @@ import mailchimp from '@/assets/mailchimp-svgrepo-com.png'
 import nextjs from '@/assets/dango-inner-2.webp'
 import wordpress from '@/assets/wordpress-color-svgrepo-com.png'
 import elementor from '@/assets/Elementor-Logo-Symbol-Red.png'
+import frappe from '@/assets/technologies/frappe.png'
+import python from '@/assets/technologies/python-symbol.png'
+import vue from '@/assets/technologies/vue-symbol.png'
+import nuxt from '@/assets/technologies/nuxt-symbol.png'
+import razorpay from '@/assets/technologies/razorpay-symbol.png'
+import stripe from '@/assets/Stripe_Logo,_revised_2016.svg.png'
 import notion from '@/assets/Notion-logo.svg.png'
 import next from "next";
+
+// import googleadslogo from '@/assets/googleads-logo.png'
+// import Image from "next/image";
+// import shopifylogo from '@/assets/shopifylogo.png'
+// import react from '@/assets/React-icon.svg (1).png'
+// import slack from '@/assets/Slack_icon_2019.svg.png'
+// import woo from '@/assets/woocommerce.png'
+// import zapier from '@/assets/zapier-icon-svgrepo-com.png'
+// import magento from '@/assets/magento-2-logo-svgrepo-com.png'
+// import mailchimp from '@/assets/mailchimp-svgrepo-com.png'
+// import nextjs from '@/assets/dango-inner-2.webp'
+// import wordpress from '@/assets/wordpress-color-svgrepo-com.png'
+// import elementor from '@/assets/Elementor-Logo-Symbol-Red.png'
+// import frappe from '@/assets/technologies/frappe.png'
+// import python from '@/assets/technologies/python-symbol.png'
+// import vue from '@/assets/technologies/vue-symbol.png'
+// import nuxt from '@/assets/technologies/nuxt-symbol.png'
+// import razorpay from '@/assets/technologies/razorpay-symbol.png'
+// import stripe from '@/assets/Stripe_Logo,_revised_2016.svg.png'
+// import nodejs from '@/assets/Node.js_logo.svg.png'
+// import docker from '@/assets/technologies/docker-symbol.webp'
+// import drupal from '@/assets/technologies/drupal-symbol.png'
+// import mongo from '@/assets/technologies/mongodb_logo.png'
+// import redis from '@/assets/technologies/redis-symbol.png'
+// import hostinger from '@/assets/technologies/hostinger-symbol.png'
+// import notion from '@/assets/Notion-logo.svg.png'
+
+    // const topRow = [
+    //     { id: 1, name: googleadslogo, color: "border border-blue-400" },
+    //     { id: 2, name: woo, color: "border border-pink-400" },
+    //     { id: 3, name: shopifylogo, color: "border border-emerald-400" },
+    //     { id: 4, name: slack, color: "border border-violet-400" },
+    //     { id: 9, name: react, color: "border border-cyan-400" },
+    //     { id: 10, name: magento, color: "border border-orange-400" },
+    //     { id: 13, name: vue, color: "border border-green-400" },
+    //     {id:15, name:stripe,color:'border border-purple-400'},
+    //     {id:17, name:nodejs,color:'border border-green-400'},
+    //      {id: 19, name: redis, color: "border border-red-400" },
+    //      {id: 21, name: drupal, color: "border border-blue-400" },
+
+    // ];
+
+    // const bottomRow = [
+    //     { id: 5, name: zapier, color: "border border-orange-400" },
+    //     { id: 6, name: elementor, color: "border border-red-400" },
+    //     { id: 7, name: wordpress, color: "border border-indigo-400" },
+    //     { id: 8, name: nextjs, color: "border border-teal-400" },
+    //     {id: 11, name:frappe,color:'border border-sky-400'},
+    //     {id: 12, name: python, color: "border border-yellow-400" },
+    //     {id: 14, name: nuxt, color: "border border-teal-400" },
+    //     {id:16, name:razorpay,color:'border border-blue-600'},
+    //      {id: 18, name: docker, color: "border border-blue-400" },
+    //       {id: 20, name: mongo, color: "border border-green-600" },
+    //      {id: 22, name: hostinger, color: "border border-purple-400" },  
+    // ];
 
 gsap.registerPlugin(MotionPathPlugin);
 
@@ -29,12 +90,15 @@ const HomeIntegrationMindMap = () => {
     const iconSize = 112;
 
     const topRow = [
-        { id: 1, name: googleadslogo, color: "border border-sky-400" },
+        { id: 1, name: googleadslogo, color: "border border-blue-400" },
         { id: 2, name: woo, color: "border border-pink-400" },
         { id: 3, name: shopifylogo, color: "border border-emerald-400" },
         { id: 4, name: slack, color: "border border-violet-400" },
         { id: 9, name: react, color: "border border-cyan-400" },
         { id: 10, name: magento, color: "border border-orange-400" },
+        { id: 13, name: vue, color: "border border-green-400" },
+        {id:15, name:stripe,color:'border border-purple-400'},
+        
     ];
 
     const bottomRow = [
@@ -42,6 +106,10 @@ const HomeIntegrationMindMap = () => {
         { id: 6, name: elementor, color: "border border-red-400" },
         { id: 7, name: wordpress, color: "border border-indigo-400" },
         { id: 8, name: nextjs, color: "border border-teal-400" },
+        {id: 11, name:frappe,color:'border border-sky-400'},
+        {id: 12, name: python, color: "border border-yellow-400" },
+        {id: 14, name: nuxt, color: "border border-teal-400" },
+        {id:16, name:razorpay,color:'border border-blue-600'}
     ];
 
 

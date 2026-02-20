@@ -16,12 +16,24 @@ import mailchimp from '@/assets/mailchimp-svgrepo-com.png'
 import nextjs from '@/assets/dango-inner-2.webp'
 import wordpress from '@/assets/wordpress-color-svgrepo-com.png'
 import elementor from '@/assets/Elementor-Logo-Symbol-Red.png'
+import frappe from '@/assets/technologies/frappe.png'
+import python from '@/assets/technologies/python-symbol.png'
+import vue from '@/assets/technologies/vue-symbol.png'
+import nuxt from '@/assets/technologies/nuxt-symbol.png'
+import razorpay from '@/assets/technologies/razorpay-symbol.png'
+import stripe from '@/assets/Stripe_Logo,_revised_2016.svg.png'
 import notion from '@/assets/Notion-logo.svg.png'
 import next from "next";
 
 gsap.registerPlugin(MotionPathPlugin);
 
-const IntegrationMindMap = () => {
+interface MindMapProps {
+heading: React.ReactNode;
+description: string;
+bg?:string
+}
+
+const IntegrationMindMap = ({heading,description,bg='bg-black'}:MindMapProps) => {
   const linesRef = useRef<SVGPathElement[]>([]);
   const dotsRef = useRef<HTMLDivElement[][]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -29,20 +41,27 @@ const IntegrationMindMap = () => {
   const iconSize = 112;
 
   const topRow = [
-    { id: 1, name: googleadslogo, color: "border border-sky-400" },
-    { id: 2, name: woo, color: "border border-pink-400" },
-    { id: 3, name: shopifylogo, color: "border border-emerald-400" },
-    { id: 4, name: slack, color: "border border-violet-400" },
-    { id: 9, name: react, color: "border border-cyan-400" },
-    { id: 10, name: magento, color: "border border-orange-400" },
-  ];
+        { id: 1, name: googleadslogo, color: "border border-blue-400" },
+        { id: 2, name: woo, color: "border border-pink-400" },
+        { id: 3, name: shopifylogo, color: "border border-emerald-400" },
+        { id: 4, name: slack, color: "border border-violet-400" },
+        { id: 9, name: react, color: "border border-cyan-400" },
+        { id: 10, name: magento, color: "border border-orange-400" },
+        { id: 13, name: vue, color: "border border-green-400" },
+        {id:15, name:stripe,color:'border border-purple-400'},
+        
+    ];
 
-  const bottomRow = [
-    { id: 5, name: zapier, color: "border border-orange-400" },
-    { id: 6, name: elementor, color: "border border-red-400" },
-    { id: 7, name: wordpress, color: "border border-indigo-400" },
-    { id: 8, name: nextjs, color: "border border-teal-400" },
-  ];
+    const bottomRow = [
+        { id: 5, name: zapier, color: "border border-orange-400" },
+        { id: 6, name: elementor, color: "border border-red-400" },
+        { id: 7, name: wordpress, color: "border border-indigo-400" },
+        { id: 8, name: nextjs, color: "border border-teal-400" },
+        {id: 11, name:frappe,color:'border border-sky-400'},
+        {id: 12, name: python, color: "border border-yellow-400" },
+        {id: 14, name: nuxt, color: "border border-teal-400" },
+        {id:16, name:razorpay,color:'border border-blue-600'}
+    ];
 
 
   const [iconPositions, setIconPositions] = useState<{ x: number; y: number }[]>([]);
@@ -173,26 +192,32 @@ const IntegrationMindMap = () => {
     return `M ${startX} ${startY} C ${control1X} ${control1Y}, ${control2X} ${control2Y}, ${end.x} ${end.y}`;
   };
 
+  const isWhite = bg.includes('white') 
+
   return (
-    <section className="relative hidden lg:block bg-black py-10 px-6 overflow-hidden">
+    <section className={`relative hidden lg:block ${bg} py-10 px-6 overflow-hidden`}>
       <div ref={containerRef} className="max-w-7xl mx-auto relative min-h-[800px]">
         {/* Title */}
         <div className="text-center mb-6">
-          <h2 className="text-white text-6xl font-bold">
-            Your Digital Storefront <span className="text-blue-400">Perfected</span>
+          <h2 className={` text-6xl font-bold ${
+            isWhite? 'text-black': 'text-white'
+          }`}>
+            {heading}
           </h2>
-          <p className="text-gray-400 mt-6 text-xl">
-            Building online stores that sell more, convert faster, and grow endlessly.
+          <p className={`mt-6 text-xl ${
+            isWhite? 'text-gray-600': 'text-gray-400'
+          }`}>
+            {description}
           </p>
         </div>
 
         {/* SVG paths - behind everything */}
         <svg className="absolute inset-0 w-full h-full pointer-events-none z-0">
           <defs>
-<linearGradient id="mapLine" x1="0%" y1="0%" x2="100%" y2="100%">
-  <stop offset="0%" stopColor="#fff" />    {/* Vivid Yellow */}
-{/* Light Pink */}
-</linearGradient>
+        <linearGradient id="mapLine" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor={`${isWhite ? '#d5d5d5': '#fff'}`} />    {/* Vivid Yellow */}
+        {/* Light Pink */}
+        </linearGradient>
 
           </defs>
           {iconPositions.map((pos, i) => (

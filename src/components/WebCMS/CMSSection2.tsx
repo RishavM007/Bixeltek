@@ -82,6 +82,10 @@ By separating the backend (content) from the frontend (experience), we deliver i
   ];
 
   useEffect(() => {
+    const isMobile = window.innerWidth < 768;
+
+  // Skip GSAP stacking on mobile — use CSS only
+  if (isMobile) return;
     const spacer = 100; // gap between stacked cards
     const ctx = gsap.context(() => {
       cardsRef.current.forEach((card, index) => {
@@ -115,7 +119,7 @@ By separating the backend (content) from the frontend (experience), we deliver i
   return (
     <section
       ref={sectionRef}
-      className="relative flex flex-col items-center justify-start  text-white py-20"
+      className="relative flex flex-col items-center justify-start  text-white pb-10 md:py-20"
     >
       <div className="stacking w-full flex flex-col items-center">
         {cards.map((card, index) => {
@@ -132,7 +136,7 @@ By separating the backend (content) from the frontend (experience), we deliver i
               ref={(el) => {
                 if (el) cardsRef.current[index] = el;
               }}
-              className={`stacking__card relative lg:w-[85%] w-[95%] mx-auto flex flex-col lg:flex-row justify-between items-center rounded-3xl backdrop-blur-sm shadow-2xl p-8 lg:p-12 mb-[25vh] border ${gradientClass} transition-transform duration-500 hover:scale-[1.02]`}
+              className={`stacking__card relative lg:w-[85%] w-[95%] mx-auto flex flex-col lg:flex-row justify-between items-center rounded-3xl backdrop-blur-sm shadow-2xl p-8 lg:p-12 mb-8 border ${gradientClass} transition-transform duration-500`}
             >
               {/* Text Section */}
               <div className="lg:w-1/2 space-y-4">

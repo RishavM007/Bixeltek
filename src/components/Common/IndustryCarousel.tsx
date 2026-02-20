@@ -155,7 +155,9 @@ export default function DynamicIndustrySection({
                     className="object-cover"
                   />
 
-                  <div className="absolute inset-0 bg-black/5 z-10 group-hover:bg-black/20 transition" />
+                  <div className={`absolute inset-0 bg-black/5 z-10 transition ${
+                    isCenter ? 'bg-black/5 group-hover:bg-black/20' : 'bg-black/50'
+                  }`} />
 
                   <div className={`absolute bottom-0 left-0 w-full z-20 p-6 text-white ${backgroundColor.includes('white')? "bg-gradient-to-t from-black/95 via-black/70 to-transparent":""}`}>
                     <h3 className="text-2xl font-bold mb-3">

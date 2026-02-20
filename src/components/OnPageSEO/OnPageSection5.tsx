@@ -48,7 +48,7 @@ export default function VisibilityToVelocity() {
                 </div>
 
                 {/* Right Image */}
-                <div className="lg:w-1/2 flex justify-center mt-12 md:mt-0">
+                <div className="lg:w-1/2 flex justify-center mb-12 md:mt-0">
                     <div className="relative w-[90%] md:w-[85%] overflow-hidden">
                         <Image
                             src={velocityImg}

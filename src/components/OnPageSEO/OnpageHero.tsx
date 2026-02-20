@@ -34,7 +34,7 @@ export default function HeroOnPageSEO() {
 
         {/* ✅ Content */}
         <div className="flex justify-center items-center">
-          <div className="relative z-10 mt-24 max-w-7xl">
+          <div className="relative z-10 mt-28 md:mt-24 max-w-7xl">
             {/* H1 */}
             <h1 className="text-3xl md:text-6xl font-medium leading-tight text-white">
               On-Page SEO That Turns Every Paragraph{" "}

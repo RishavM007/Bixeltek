@@ -98,6 +98,10 @@ export default function SEOStacked() {
   ];
 
   useEffect(() => {
+     const isMobile = window.innerWidth < 768;
+
+  // Skip GSAP stacking on mobile — use CSS only
+  if (isMobile) return;
     const spacer = 20;
     const ctx = gsap.context(() => {
       cardsRef.current.forEach((card, index) => {
@@ -131,7 +135,7 @@ export default function SEOStacked() {
   return (
     <section
       ref={sectionRef}
-      className="relative flex flex-col items-center justify-start text-gray-900 py-28 bg-black"
+      className="relative flex flex-col items-center justify-start text-gray-900 pt-20 md:py-28 bg-black"
     >
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(100,100,255,0.05),_transparent_70%)] pointer-events-none" />
       <div className="stacking w-full flex flex-col items-center">
@@ -144,11 +148,11 @@ export default function SEOStacked() {
               ref={(el : any) => (cardsRef.current[index] = el)}
               className={`stacking__card relative lg:w-[85%] w-[95%] mx-auto flex flex-col ${
                 isReversed ? "lg:flex-row-reverse" : "lg:flex-row"
-              } justify-between items-center rounded-3xl backdrop-blur-md shadow-xl p-10 md:p-14 mb-[40vh] border border-gray-200 ${card.color.gradient} transition-transform duration-500 hover:scale-[1.015]`}
+              } justify-between items-center rounded-3xl backdrop-blur-md shadow-xl p-8 md:p-14 mb-8 md:mb-[40vh] border border-gray-200 ${card.color.gradient} transition-transform duration-500 hover:scale-[1.015]`}
             >
               <div className="lg:w-1/2 space-y-5">
                 <span
-                  className={`inline-block ${card.color.tag} text-white text-sm font-semibold px-4 py-1 rounded-full shadow-md`}
+                  className={`inline-block ${card.color.tag} text-white text-sm font-semibold px-4 py-2 rounded-full shadow-md`}
                 >
                   {card.tag}
                 </span>

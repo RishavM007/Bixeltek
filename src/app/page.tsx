@@ -53,6 +53,7 @@ import lawncare from "@/assets/digital marketing for lawn care services.jpg"
 import blackcar from "@/assets/digital marketing for car detailers.jpg"
 import healthcare from "@/assets/digital marketing for health care practices.jpg"
 import DynamicIndustrySection from "@/components/Common/IndustryCarousel";
+import IntegrationMindMap from "@/components/Common/IntegratedMindMap";
 
 const industries = [
                         {
@@ -147,7 +148,16 @@ export default function Home() {
       {/* <Testimonials />
       <CallToAction /> */}
       <GooglePartner />
-      <HomeIntegrationMindMap/>
+      {/* <HomeIntegrationMindMap/> */}
+      <IntegrationMindMap 
+      bg='bg-white'
+      heading={
+        <span>
+          Technologies We Work With
+        </span>
+      }
+      description='We leverage cutting-edge tools and frameworks to craft scalable, high-performing digital solutions effortlessly.'
+      />
       <Tech2 />
       {/* <Casestudy /> */}
       <FAQSection/>
