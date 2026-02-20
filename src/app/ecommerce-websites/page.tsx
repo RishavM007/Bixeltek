@@ -4,8 +4,8 @@ import EcomProcessWorkflow from '@/components/EcommerceWeb/EcomProcess'
 import EcommerceSystemSection from '@/components/EcommerceWeb/EcomSection'
 import EcommercePlatforms from '@/components/EcommerceWeb/EcomSection2'
 import EcomStackedCards from '@/components/EcommerceWeb/EcomSection2'
-import IntegrationMindMap from '@/components/EcommerceWeb/EcomSection3'
-import TechnologiesSection from '@/components/EcommerceWeb/EcomSection3'
+import IntegrationMindMap from '@/components/Common/IntegratedMindMap'
+import TechnologiesSection from '@/components/Common/IntegratedMindMap'
 import EcomPerformanceSection from '@/components/EcommerceWeb/EcomSection4'
 import DesignPsychologySection from '@/components/EcommerceWeb/EcomSection5'
 import GrowthAfterGoLive from '@/components/EcommerceWeb/EcomSection6'
@@ -239,7 +239,14 @@ export default function page() {
       <EcommerceHeroSection />
       <EcommerceSystemSection />
       <EcommercePlatforms />
-      <IntegrationMindMap />
+      <IntegrationMindMap 
+      heading={
+        <span>
+          Your Digital Storefront <span className="text-blue-400">Perfected</span>
+        </span>
+      }
+      description='Building online stores that sell more, convert faster, and grow endlessly.'
+      />
       <MobileTechGrid/>
       <EcomPerformanceSection />
       {/* <EcomProcessWorkflow /> */}

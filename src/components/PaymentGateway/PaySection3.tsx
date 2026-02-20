@@ -79,6 +79,10 @@ Bixeltek ensures these systems integrate deeply with your backend for compliant,
   ];
 
   useEffect(() => {
+     const isMobile = window.innerWidth < 768;
+
+  // Skip GSAP stacking on mobile — use CSS only
+  if (isMobile) return;
     const spacer = 80; // gap between stacked cards
     const ctx = gsap.context(() => {
       cardsRef.current.forEach((card, index) => {
@@ -112,7 +116,7 @@ Bixeltek ensures these systems integrate deeply with your backend for compliant,
   return (
     <section
       ref={sectionRef}
-      className="relative flex flex-col items-center justify-start text-white py-20"
+      className="relative flex flex-col items-center justify-start text-white pt-20 pb-10 md:py-20 px-4"
     >
       <div className="stacking w-full flex flex-col items-center">
         {cards.map((card, index) => {
@@ -130,9 +134,9 @@ Bixeltek ensures these systems integrate deeply with your backend for compliant,
               ref={(el) => {
                 if (el) cardsRef.current[index] = el;
               }}
-              className={`stacking__card relative lg:w-[85%] w-[95%] mx-auto flex flex-col ${
+              className={`stacking__card relative lg:w-[85%] md:w-[95%] mx-auto flex flex-col ${
                 isReversed ? "lg:flex-row-reverse" : "lg:flex-row"
-              } justify-between items-center rounded-3xl backdrop-blur-sm shadow-2xl p-8 md:p-12 mb-[30vh] border ${gradientClass} transition-transform duration-500 hover:scale-[1.02]`}
+              } justify-between items-center rounded-3xl backdrop-blur-sm shadow-2xl p-8 md:p-12 mb-8 md:mb-[30vh] border ${gradientClass} transition-transform duration-500 hover:scale-[1.02]`}
             >
               {/* Text Section */}
               <div className="lg:w-1/2 space-y-4">

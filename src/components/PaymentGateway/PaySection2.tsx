@@ -6,7 +6,7 @@ import bgCheckout from "@/assets/2-49.jpg"; // Replace with your background imag
 
 export default function CheckoutTrustBanner() {
   return (
-    <section className="relative w-full flex justify-center py-10 md:py-20">
+    <section className="relative w-full flex justify-center pt-10 md:py-20">
       {/* Background Image with Overlay */}
       <div className="relative w-[95%] lg:w-[85%] h-[600px] lg:h-[500px]  rounded-3xl overflow-hidden shadow-2xl">
         <Image

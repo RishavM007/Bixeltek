@@ -97,6 +97,10 @@ Visibility without metrics is guesswork, so we turn engagement into measurable g
   ];
 
   useEffect(() => {
+     const isMobile = window.innerWidth < 768;
+
+  // Skip GSAP stacking on mobile — use CSS only
+  if (isMobile) return;
     const spacer = 80;
     const ctx = gsap.context(() => {
       cardsRef.current.forEach((card, index) => {
@@ -142,7 +146,7 @@ Visibility without metrics is guesswork, so we turn engagement into measurable g
               ref={(el : any ) => (cardsRef.current[index] = el)}
               className={`stacking__card relative lg:w-[85%] w-[95%] mx-auto flex flex-col ${
                 isReversed ? "lg:flex-row-reverse" : "lg:flex-row"
-              } justify-between items-center rounded-3xl backdrop-blur-sm shadow-2xl p-8 md:p-12 mb-[30vh] border ${card.color.gradient} transition-transform duration-500 hover:scale-[1.02]`}
+              } justify-between items-center rounded-3xl backdrop-blur-sm shadow-2xl p-8 md:p-12 mb-8 md:mb-[30vh] border ${card.color.gradient} transition-transform duration-500 hover:scale-[1.02]`}
             >
               {/* Text Section */}
               <div className="lg:w-1/2 space-y-4">
