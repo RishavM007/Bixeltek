@@ -105,7 +105,7 @@ export function A_Testimonials (){
               }
             `}
           >
-            "{t.quote}"
+            &quot;{t.quote}&quot;
           </p>
 
           {/* Author */}

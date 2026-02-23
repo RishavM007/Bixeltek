@@ -45,7 +45,7 @@ export function B_CTA() {
             Everything You Need.
             <br />
             <span style={{ color: "#2D7A5F" }}>
-              Nothing You Don't.
+              Nothing You Don&quot;t.
             </span>
           </h2>
 
@@ -61,7 +61,7 @@ export function B_CTA() {
                 "all .8s cubic-bezier(.4,0,.2,1) .1s",
             }}
           >
-            We don't sell add-ons or upsells. You get a complete, fully managed dental marketing system focused on one thing — growing your revenue.
+            We don&quot;t sell add-ons or upsells. You get a complete, fully managed dental marketing system focused on one thing — growing your revenue.
           </p>
 
           {/* Responsive Grid */}
@@ -229,7 +229,7 @@ export function B_CTA() {
                 marginTop: "12px",
               }}
             >
-              Practices that invest in the right marketing system see measurable ROI within 90 days. Let's build yours.
+              Practices that invest in the right marketing system see measurable ROI within 90 days. Let&quot;s build yours.
             </p>
           </div>
 

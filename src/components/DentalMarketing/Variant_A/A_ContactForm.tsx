@@ -198,7 +198,7 @@ export function A_ContactForm() {
             {/* Bottom quote */}
             <div className="mt-12 pt-8 border-t border-[#F5F0E8]/8">
               <p className="font-['Playfair_Display',serif] text-[#F5F0E8]/45 text-[13px] italic leading-relaxed">
-                "The audit alone showed us three gaps we hadn't considered."
+                &quot;The audit alone showed us three gaps we hadn&quot;t considered.&quot;
               </p>
               <div className="flex items-center gap-2 mt-3">
                 <div className="w-6 h-6 rounded-full bg-[#C9A84C]/20 flex items-center justify-center text-[#C9A84C] text-[10px] font-bold flex-shrink-0">

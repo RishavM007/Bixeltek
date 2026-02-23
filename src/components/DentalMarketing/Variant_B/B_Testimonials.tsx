@@ -101,7 +101,7 @@ export function B_Testiomonials() {
             >
               {/* Quote Mark */}
               <div className="absolute top-5 right-6 font-serif text-[60px] text-[#D4EBE0] leading-none select-none">
-                "
+                &quot;
               </div>
 
               {/* Stars */}
@@ -116,7 +116,7 @@ export function B_Testiomonials() {
 
               {/* Quote */}
               <p className="font-['Nunito',sans-serif] text-[15px] text-[#2d4a38] leading-[1.75] mb-6 italic">
-                "{t.quote}"
+                &quot;{t.quote}&quot;
               </p>
 
               {/* Footer */}

@@ -127,7 +127,7 @@ export function A_Reality(){
           mb-6
           lg:mb-8
         ">
-          If your practice isn't ranking, your ads aren't converting, and your website isn't built to drive appointments — you're funding your competitors' growth. Here's what that gap looks like in real numbers.
+          If your practice isn&quot;t ranking, your ads aren&quot;t converting, and your website isn&quot;t built to drive appointments — you&quot;re funding your competitors&quot; growth. Here&quot;s what that gap looks like in real numbers.
         </p>
 
         <div className="flex flex-col gap-4">

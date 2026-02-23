@@ -54,7 +54,7 @@ export function A_Hero() {
         {/* Bottom Quote */}
         <div className="absolute bottom-6 sm:bottom-10 left-6 sm:left-12 right-6">
           <p className="text-white/80 text-xs sm:text-sm leading-relaxed font-sans font-light italic border-l-2 border-[#C9A84C] pl-4">
-            "From 15 new patients a month to over 60 — in 90 days."
+            &quot;From 15 new patients a month to over 60 — in 90 days.&quot;
           </p>
           <p className="text-[#C9A84C] text-[10px] sm:text-xs mt-2 font-sans tracking-widest uppercase">
             — Dr. Rob Dennis, Ohio
