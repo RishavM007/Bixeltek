@@ -157,7 +157,7 @@ export function A_Process(){
         {/* CTA */}
         <div className="border-t border-[rgba(245,240,232,.08)] pt-8">
           <a
-            href="#"
+            href="#contact"
             className="
               inline-block
               bg-[#C9A84C]
