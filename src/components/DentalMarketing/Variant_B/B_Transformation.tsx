@@ -291,7 +291,7 @@ const fi = (inView: boolean, delay = 0) => ({
         </div>
 
         <a
-          href="#"
+          href="#contact"
           style={{
             background: "#2D7A5F",
             color: "white",

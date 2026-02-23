@@ -217,7 +217,7 @@ export function B_HowItWorks() {
 
             {/* CTA */}
             <div className="cta-wrap" style={{ marginTop: "8px", paddingLeft: "76px" }}>
-              <a href="#" style={{
+              <a href="#contact" style={{
                 display: "inline-flex", alignItems: "center", gap: "8px",
                 background: "#2D7A5F", color: "white",
                 borderRadius: "12px", padding: "14px 32px",

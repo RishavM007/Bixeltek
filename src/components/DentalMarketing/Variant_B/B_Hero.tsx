@@ -51,7 +51,7 @@ export function B_Hero() {
           {/* Buttons */}
           <div className="flex flex-col md:flex-row gap-3 mb-10 justify-center lg:justify-start">
             <a
-              href="#"
+              href="#contact"
               className="bg-[#2D7A5F] text-white rounded-xl px-8 py-4 font-bold text-sm hover:bg-[#1a5a42] transition-all duration-300 shadow-lg shadow-[#2D7A5F]/25 flex items-center justify-center gap-2"
             >
               See How It Works <span>→</span>
@@ -156,7 +156,7 @@ export function B_Hero() {
           </div>
 
           <a
-            href="#"
+            href="#contact"
             className="bg-[#2D7A5F] text-white rounded-xl px-6 py-3 text-sm font-semibold hover:bg-[#1a5a42] transition-all"
           >
             Book Audit →

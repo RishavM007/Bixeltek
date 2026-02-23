@@ -245,7 +245,7 @@ export function B_CTA() {
             }}
           >
             <a
-              href="#"
+              href="#contact"
               style={{
                 background: "#2D7A5F",
                 color: "white",

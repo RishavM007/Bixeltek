@@ -141,10 +141,10 @@ export function A_Hero() {
         {/* BUTTONS */}
         <div className="flex flex-col md:flex-row gap-4 mt-12 sm:mt-16">
           <a
-            href="#"
+            href="#contact"
             className="bg-[#1a0f00] text-[#F5F0E8] px-6 sm:px-8 py-3 sm:py-4 text-xs sm:text-sm tracking-widest uppercase font-sans hover:bg-[#C9A84C] hover:text-[#1a0f00] transition-all duration-300 text-center"
           >
-            Start How →
+            Start Now →
           </a>
 
           {/* <a

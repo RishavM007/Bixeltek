@@ -119,7 +119,7 @@ export function A_Comparison() {
       </div>
 
       <a
-        href="#"
+        href="#contact"
         className="
           bg-[#C9A84C] text-[#1a0f00]
           py-[16px] md:py-[18px]

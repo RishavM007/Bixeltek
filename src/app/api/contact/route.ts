@@ -2,117 +2,95 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(req: Request) {
-  try {
-    const data = await req.json();
+    try {
+        const data = await req.json();
+        console.log("Received Form Data:", data);
 
-    const {
-      firstName,
-      lastName,
-      name,
-      email,
-      phone,
-      company,
-      country,
-      marketingBudget,
-      services,
-      website,
-      message,
-      websiteType,
-      seoGoals,
-      ppcPlatform,
-      city,
-    } = data;
+        const {
+            firstName,
+            lastName,
+            name,
+            email,
+            phone,
+            company,
+            country,
+            marketingBudget,
+            services,
+            website,
+            message,
+            websiteType,
+            seoGoals,
+            ppcPlatform,
+            city
+        } = data;
 
-    const fullName =
-      firstName && lastName
+        const fullName =
+    firstName && lastName
         ? `${firstName} ${lastName}`
         : name || "N/A";
+        const Location = country || city ;
 
-    const location = country || city || "Unknown";
+        let transporter = nodemailer.createTransport({
+            host: "smtp.hostinger.com",
+            port: 587,
+            secure: false,
+            auth: {
+                user: process.env.MAILER_USER,
+                pass: process.env.MAILER_PASS,
+            },
+        });
 
-    /* ---------------- EMAIL ---------------- */
-
-    const transporter = nodemailer.createTransport({
-      host: "smtp.hostinger.com",
-      port: 587,
-      secure: false,
-      auth: {
-        user: process.env.MAILER_USER!,
-        pass: process.env.MAILER_PASS!,
-      },
-    });
-
-    await transporter.sendMail({
-      from: '"Bixeltek Support" <noreply@bixeltek.com>',
-      to: "zee@bixeltek.com",
-      subject: "New Contact Form Submission",
-      text: `
-Name: ${fullName}
-Email: ${email}
-Phone: ${phone}
-Company: ${company}
-Location: ${location}
-Budget: ${marketingBudget || "N/A"}
-Service: ${services}
-Website: ${website}
-
-Message:
-${message}
-      `,
-    });
-
-    /* ---------------- FRAPPE CRM LEAD ---------------- */
-
-    const frappeLeadPayload = {
-      lead_name: fullName,
-      email_id: email,
-      mobile_no: phone || "",
-      company_name: company || "",
-      source: services || "Website",
-      website: website || "",
-      notes: `
-    Location: ${location}
-    Marketing Budget: ${marketingBudget || "N/A"}
-    Service: ${services}
-
-    Message:
-    ${message}
-        `,
-        };
-
-    try {
-      const frappeRes = await fetch(
-        `${process.env.FRAPPE_URL}/api/resource/Lead`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `token ${process.env.FRAPPE_API_KEY}:${process.env.FRAPPE_API_SECRET}`,
-          },
-          body: JSON.stringify(frappeLeadPayload),
+        try {
+            await transporter.verify();
+            console.log("✅ SMTP Connection Successful!");
+        } catch (error) {
+            console.error("❌ SMTP Connection Failed:", error);
+            return NextResponse.json(
+                { error: "SMTP connection failed", details: error },
+                { status: 500 }
+            );
         }
-      );
 
-      const frappeData = await frappeRes.json();
+        let serviceDetails = "";
+        if (services === "Web Design and Development" && websiteType) {
+            serviceDetails += `\nWebsite Type: ${websiteType}`;
+        }
+        if (services === "SEO Optimization" && seoGoals) {
+            serviceDetails += `\nSEO Goals: ${seoGoals}`;
+        }
+        if (services === "PPC Campaigns" && ppcPlatform) {
+            serviceDetails += `\nPPC Platform: ${ppcPlatform}`;
+        }
 
-      if (!frappeRes.ok) {
-        console.error("❌ Frappe CRM Lead Error:", frappeData);
-      } else {
-        console.log("✅ Lead stored in Frappe CRM:", frappeData.data.name);
-      }
-    } catch (err) {
-      console.error("❌ Frappe CRM API failed:", err);
+        const mailOptions = {
+            from: '"Bixeltek Support" <noreply@bixeltek.com>',
+            to: "zee@bixeltek.com",
+            subject: "Bixeltek - New Contact Form Submission",
+            text: `
+            Name: ${fullName}
+            Email: ${email}
+            Phone: ${phone}
+            Company: ${company}
+            Country/City: ${Location}
+            Marketing Budget: ${marketingBudget || "N/A"}
+            Interested Service: ${services}${serviceDetails}
+            Message: ${message}
+            Website: ${website}
+                        `,
+                    };
+
+        let info = await transporter.sendMail(mailOptions);
+        console.log("📩 Email Sent:", info.response);
+
+        return NextResponse.json(
+            { message: "Email sent successfully!" },
+            { status: 200 }
+        );
+    } catch (error: any) {
+        console.error("❌ Server Error:", error);
+        return NextResponse.json(
+            { error: error.message || "Failed to send email" },
+            { status: 500 }
+        );
     }
-
-    return NextResponse.json(
-      { message: "Form submitted successfully" },
-      { status: 200 }
-    );
-  } catch (error: any) {
-    return NextResponse.json(
-      { error: error.message || "Server error" },
-      { status: 500 }
-    );
-  }
 }
-

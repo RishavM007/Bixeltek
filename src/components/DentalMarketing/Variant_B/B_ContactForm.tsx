@@ -1,4 +1,80 @@
+'use client'
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+import toast from "react-hot-toast";
+
 export function B_ContactForm() {
+  const router = useRouter();
+
+  const [formData, setFormData] = useState({
+    company: "",
+    name: "",
+    email: "",
+    phone: "",
+    website: "",
+    city: "",
+    message: "",
+    services: "Dental Marketing", 
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (
+      !formData.company ||
+      !formData.name ||
+      !formData.email ||
+      !formData.phone ||
+      !formData.website ||
+      !formData.city
+    ) {
+      toast.error("Please fill in all required fields.");
+      return;
+    }
+
+    const loadingToast = toast.loading("Submitting your form...");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || "Submission failed");
+
+      toast.success("Thank you! Our team will contact you shortly.", {
+        id: loadingToast,
+      });
+
+      setFormData({
+        company: "",
+        name: "",
+        email: "",
+        phone: "",
+        website: "",
+        city: "",
+        message: "",
+        services: "Dental Marketing",
+      });
+
+      setTimeout(() => {
+        router.push("/thank-you");
+      }, 1000);
+    } catch (error: any) {
+      toast.error(error.message || "Something went wrong", {
+        id: loadingToast,
+      });
+    }
+  };
   return (
     <section
       id="contact"
@@ -33,158 +109,150 @@ export function B_ContactForm() {
         </div>
 
         {/* ── Form card ── */}
-        <div className="bg-white rounded-3xl border border-[#E8F4EE] shadow-xl shadow-[#0d2b20]/5 overflow-hidden">
+        <form onSubmit={handleSubmit}>
+  <div className="bg-white rounded-3xl border border-[#E8F4EE] shadow-xl shadow-[#0d2b20]/5 overflow-hidden">
 
-          {/* Card top accent bar */}
-          <div className="h-1.5 bg-gradient-to-r from-[#2D7A5F] via-[#5DAF8C] to-[#B8D8C4]" />
+    {/* Card top accent bar */}
+    <div className="h-1.5 bg-gradient-to-r from-[#2D7A5F] via-[#5DAF8C] to-[#B8D8C4]" />
 
-          <div className="p-8 md:p-12">
+    <div className="p-8 md:p-12">
+      <div className="flex flex-col gap-6">
 
-            <div className="flex flex-col gap-6">
+        {/* Row 1 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="flex flex-col gap-2">
+            <label className="text-[#0d2b20] text-[13px] font-extrabold">
+              Dental Practice Name <span className="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              name="company"
+              value={formData.company}
+              onChange={handleChange}
+              placeholder="Smile Dental Studio"
+              className="w-full rounded-xl border border-[#D4EBE0] bg-[#F3F8F4] text-[#0d2b20] placeholder:text-[#9abfaf] text-sm px-4 py-3.5 outline-none focus:border-[#2D7A5F] focus:bg-white focus:ring-2 focus:ring-[#2D7A5F]/15 transition-all duration-200"
+            />
+          </div>
 
-              {/* Row 1: Practice Name + Full Name */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                <div className="flex flex-col gap-2">
-                  <label className="text-[#0d2b20] text-[13px] font-extrabold">
-                    Dental Practice Name <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Smile Dental Studio"
-                    className="w-full rounded-xl border border-[#D4EBE0] bg-[#F3F8F4] text-[#0d2b20] placeholder:text-[#9abfaf] text-sm px-4 py-3.5 outline-none focus:border-[#2D7A5F] focus:bg-white focus:ring-2 focus:ring-[#2D7A5F]/15 transition-all duration-200"
-                  />
-                </div>
-                <div className="flex flex-col gap-2">
-                  <label className="text-[#0d2b20] text-[13px] font-extrabold">
-                    Full Name <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Dr. Jane Smith"
-                    className="w-full rounded-xl border border-[#D4EBE0] bg-[#F3F8F4] text-[#0d2b20] placeholder:text-[#9abfaf] text-sm px-4 py-3.5 outline-none focus:border-[#2D7A5F] focus:bg-white focus:ring-2 focus:ring-[#2D7A5F]/15 transition-all duration-200"
-                  />
-                </div>
-              </div>
-
-              {/* Row 2: Email + Phone */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                <div className="flex flex-col gap-2">
-                  <label className="text-[#0d2b20] text-[13px] font-extrabold">
-                    Email <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="email"
-                    placeholder="jane@smiledental.com"
-                    className="w-full rounded-xl border border-[#D4EBE0] bg-[#F3F8F4] text-[#0d2b20] placeholder:text-[#9abfaf] text-sm px-4 py-3.5 outline-none focus:border-[#2D7A5F] focus:bg-white focus:ring-2 focus:ring-[#2D7A5F]/15 transition-all duration-200"
-                  />
-                </div>
-                <div className="flex flex-col gap-2">
-                  <label className="text-[#0d2b20] text-[13px] font-extrabold">
-                    Phone Number <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="tel"
-                    placeholder="+1 (555) 000-0000"
-                    className="w-full rounded-xl border border-[#D4EBE0] bg-[#F3F8F4] text-[#0d2b20] placeholder:text-[#9abfaf] text-sm px-4 py-3.5 outline-none focus:border-[#2D7A5F] focus:bg-white focus:ring-2 focus:ring-[#2D7A5F]/15 transition-all duration-200"
-                  />
-                </div>
-              </div>
-
-              {/* Row 3: Website + City */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                <div className="flex flex-col gap-2">
-                  <label className="text-[#0d2b20] text-[13px] font-extrabold">
-                    Website <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="url"
-                    placeholder="www.smiledental.com"
-                    className="w-full rounded-xl border border-[#D4EBE0] bg-[#F3F8F4] text-[#0d2b20] placeholder:text-[#9abfaf] text-sm px-4 py-3.5 outline-none focus:border-[#2D7A5F] focus:bg-white focus:ring-2 focus:ring-[#2D7A5F]/15 transition-all duration-200"
-                  />
-                </div>
-                <div className="flex flex-col gap-2">
-                  <label className="text-[#0d2b20] text-[13px] font-extrabold">
-                    City <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Atlanta"
-                    className="w-full rounded-xl border border-[#D4EBE0] bg-[#F3F8F4] text-[#0d2b20] placeholder:text-[#9abfaf] text-sm px-4 py-3.5 outline-none focus:border-[#2D7A5F] focus:bg-white focus:ring-2 focus:ring-[#2D7A5F]/15 transition-all duration-200"
-                  />
-                </div>
-              </div>
-
-              {/* Row 4: Specialty dropdown */}
-              {/* <div className="flex flex-col gap-2">
-                <label className="text-[#0d2b20] text-[13px] font-extrabold">
-                  Practice Specialty <span className="text-red-500">*</span>
-                </label>
-                <div className="relative">
-                  <select className="w-full appearance-none rounded-xl border border-[#D4EBE0] bg-[#F3F8F4] text-[#0d2b20] text-sm px-4 py-3.5 outline-none focus:border-[#2D7A5F] focus:bg-white focus:ring-2 focus:ring-[#2D7A5F]/15 transition-all duration-200 cursor-pointer pr-10">
-                    <option value="">Select your specialty</option>
-                    <option value="general">General Dentistry</option>
-                    <option value="cosmetic">Cosmetic Dentistry</option>
-                    <option value="orthodontics">Orthodontics</option>
-                    <option value="pediatric">Pediatric Dentistry</option>
-                    <option value="oral-surgery">Oral Surgery</option>
-                    <option value="periodontics">Periodontics</option>
-                    <option value="endodontics">Endodontics</option>
-                    <option value="multi">Multi-Specialty</option>
-                  </select>
-                  <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-[#2D7A5F]">
-                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none">
-                      <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </div>
-                </div>
-              </div> */}
-
-              {/* Row 5: Message textarea */}
-              <div className="flex flex-col gap-2">
-                <label className="text-[#0d2b20] text-[13px] font-extrabold">
-                  Current Challenges
-                </label>
-                <textarea
-                  rows={4}
-                  placeholder="Tell us about your current marketing situation, monthly patient volume, and what you're hoping to achieve..."
-                  className="w-full rounded-xl border border-[#D4EBE0] bg-[#F3F8F4] text-[#0d2b20] placeholder:text-[#9abfaf] text-sm px-4 py-3.5 outline-none focus:border-[#2D7A5F] focus:bg-white focus:ring-2 focus:ring-[#2D7A5F]/15 transition-all duration-200 resize-none leading-relaxed"
-                />
-              </div>
-
-              {/* ── 3-col trust chips ── */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                {[
-                  ["🔒", "100% Confidential"],
-                  ["⚡", "Response in 24 hrs"],
-                  ["✓",  "No obligation"],
-                ].map(([icon, text]) => (
-                  <div key={text} className="flex items-center gap-2.5 bg-[#F3F8F4] rounded-xl px-4 py-3 border border-[#D4EBE0]">
-                    <span className="text-[#2D7A5F] text-base flex-shrink-0">{icon}</span>
-                    <span className="text-[#2d4a38] text-xs font-bold">{text}</span>
-                  </div>
-                ))}
-              </div>
-
-              {/* Submit */}
-              <button
-                type="submit"
-                className="w-full bg-[#2D7A5F] text-white font-extrabold text-sm rounded-2xl py-4 hover:bg-[#1a5a42] active:scale-[.99] transition-all duration-300 shadow-lg shadow-[#2D7A5F]/25 flex items-center justify-center gap-3 group"
-              >
-                Subscribe
-                <span className="group-hover:translate-x-1 transition-transform duration-200">→</span>
-              </button>
-
-              {/* Legal */}
-              <p className="text-[#6a8a7a] text-[11px] leading-relaxed text-center">
-                By submitting, you consent to receive informational SMS and appointment reminders from BixelTek. Msg & data rates may apply. Msg frequency varies. Unsubscribe at any time by replying STOP. Reply HELP for help.{" "}
-                <a href="/privacy-policy" className="underline underline-offset-2 hover:text-[#2D7A5F] transition-colors font-semibold">
-                  Privacy Policy & Terms.
-                </a>
-              </p>
-
-            </div>
+          <div className="flex flex-col gap-2">
+            <label className="text-[#0d2b20] text-[13px] font-extrabold">
+              Full Name <span className="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Dr. Jane Smith"
+              className="w-full rounded-xl border border-[#D4EBE0] bg-[#F3F8F4] text-[#0d2b20] placeholder:text-[#9abfaf] text-sm px-4 py-3.5 outline-none focus:border-[#2D7A5F] focus:bg-white focus:ring-2 focus:ring-[#2D7A5F]/15 transition-all duration-200"
+            />
           </div>
         </div>
+
+        {/* Row 2 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="flex flex-col gap-2">
+            <label className="text-[#0d2b20] text-[13px] font-extrabold">
+              Email <span className="text-red-500">*</span>
+            </label>
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="jane@smiledental.com"
+              className="w-full rounded-xl border border-[#D4EBE0] bg-[#F3F8F4] text-[#0d2b20] placeholder:text-[#9abfaf] text-sm px-4 py-3.5 outline-none focus:border-[#2D7A5F] focus:bg-white focus:ring-2 focus:ring-[#2D7A5F]/15 transition-all duration-200"
+            />
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <label className="text-[#0d2b20] text-[13px] font-extrabold">
+              Phone Number <span className="text-red-500">*</span>
+            </label>
+            <input
+              type="tel"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              placeholder="+1 (555) 000-0000"
+              className="w-full rounded-xl border border-[#D4EBE0] bg-[#F3F8F4] text-[#0d2b20] placeholder:text-[#9abfaf] text-sm px-4 py-3.5 outline-none focus:border-[#2D7A5F] focus:bg-white focus:ring-2 focus:ring-[#2D7A5F]/15 transition-all duration-200"
+            />
+          </div>
+        </div>
+
+        {/* Row 3 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="flex flex-col gap-2">
+            <label className="text-[#0d2b20] text-[13px] font-extrabold">
+              Website <span className="text-red-500">*</span>
+            </label>
+            <input
+              type="url"
+              name="website"
+              value={formData.website}
+              onChange={handleChange}
+              placeholder="www.smiledental.com"
+              className="w-full rounded-xl border border-[#D4EBE0] bg-[#F3F8F4] text-[#0d2b20] placeholder:text-[#9abfaf] text-sm px-4 py-3.5 outline-none focus:border-[#2D7A5F] focus:bg-white focus:ring-2 focus:ring-[#2D7A5F]/15 transition-all duration-200"
+            />
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <label className="text-[#0d2b20] text-[13px] font-extrabold">
+              City <span className="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              name="city"
+              value={formData.city}
+              onChange={handleChange}
+              placeholder="Atlanta"
+              className="w-full rounded-xl border border-[#D4EBE0] bg-[#F3F8F4] text-[#0d2b20] placeholder:text-[#9abfaf] text-sm px-4 py-3.5 outline-none focus:border-[#2D7A5F] focus:bg-white focus:ring-2 focus:ring-[#2D7A5F]/15 transition-all duration-200"
+            />
+          </div>
+        </div>
+
+        {/* Message */}
+        <div className="flex flex-col gap-2">
+          <label className="text-[#0d2b20] text-[13px] font-extrabold">
+            Current Challenges
+          </label>
+          <textarea
+            rows={4}
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            placeholder="Tell us about your current marketing situation, monthly patient volume, and what you're hoping to achieve..."
+            className="w-full rounded-xl border border-[#D4EBE0] bg-[#F3F8F4] text-[#0d2b20] placeholder:text-[#9abfaf] text-sm px-4 py-3.5 outline-none focus:border-[#2D7A5F] focus:bg-white focus:ring-2 focus:ring-[#2D7A5F]/15 transition-all duration-200 resize-none leading-relaxed"
+          />
+        </div>
+
+        {/* Trust chips (unchanged) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          {[
+            ["🔒", "100% Confidential"],
+            ["⚡", "Response in 24 hrs"],
+            ["✓", "No obligation"],
+          ].map(([icon, text]) => (
+            <div key={text} className="flex items-center gap-2.5 bg-[#F3F8F4] rounded-xl px-4 py-3 border border-[#D4EBE0]">
+              <span className="text-[#2D7A5F] text-base flex-shrink-0">{icon}</span>
+              <span className="text-[#2d4a38] text-xs font-bold">{text}</span>
+            </div>
+          ))}
+        </div>
+
+        {/* Submit */}
+        <button
+          type="submit"
+          className="w-full bg-[#2D7A5F] text-white font-extrabold text-sm rounded-2xl py-4 hover:bg-[#1a5a42] active:scale-[.99] transition-all duration-300 shadow-lg shadow-[#2D7A5F]/25 flex items-center justify-center gap-3 group"
+        >
+          Subscribe
+          <span className="group-hover:translate-x-1 transition-transform duration-200">→</span>
+        </button>
+
+      </div>
+    </div>
+  </div>
+</form>
 
       </div>
     </section>
