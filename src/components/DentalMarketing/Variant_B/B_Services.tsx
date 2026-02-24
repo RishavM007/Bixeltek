@@ -1,5 +1,13 @@
 'use client'
 import { useInView } from "@/lib/inView";
+import {
+  FiGlobe,
+  FiMapPin,
+  FiTarget,
+  FiStar,
+  FiSmartphone,
+  FiMessageCircle
+} from "react-icons/fi";
 
 export function B_Services() {
 
@@ -12,40 +20,40 @@ const fi = (inView: boolean, delay = 0) => ({
   const { ref, inView } = useInView();
 
   const normalCards = [
-    {
-      icon: "📍",
-      title: " Google Ads (PPC)",
-      sub: "Rank #1 near you",
-      desc: "Every dollar tracked. We run data-driven paid campaigns targeting high-intent local patients, optimized continuously for the lowest cost-per-appointment.",
-    },
-    {
-      icon: "🎯",
-      title: "Google & Map Ads",
-      sub: "Managed for you",
-      desc: "Own your local market. We position your practice at the top of Google Maps and local search so nearby patients find you first.",
-    },
-  ];
+  {
+    icon: FiMapPin,
+    title: "Google Ads (PPC)",
+    sub: "Rank #1 near you",
+    desc: "Every dollar tracked. We run data-driven paid campaigns targeting high-intent local patients, optimized continuously for the lowest cost-per-appointment.",
+  },
+  {
+    icon: FiTarget,
+    title: "Google & Map Ads",
+    sub: "Managed for you",
+    desc: "Own your local market. We position your practice at the top of Google Maps and local search so nearby patients find you first.",
+  },
+];
 
-  const bottomCards = [
-    {
-      icon: "⭐",
-      title: "Review Generation",
-      sub: "Automated post-visit",
-      desc: "More 5-star reviews, more trust, more bookings. We systematically grow your online reputation to convert searchers into scheduled patients.",
-    },
-    {
-      icon: "📱",
-      title: "Reputation Monitoring",
-      sub: "24/7 coverage",
-      desc: "Your brand, protected. We monitor and manage your online presence so a strong reputation works in your favor around the clock.",
-    },
-    {
-      icon: "💬",
-      title: "Patient Reactivation",
-      sub: "Win-back campaigns",
-      desc: "Revenue hiding in plain sight. We re-engage your existing patient base to drive appointments without increasing your ad spend.",
-    },
-  ];
+const bottomCards = [
+  {
+    icon: FiStar,
+    title: "Review Generation",
+    sub: "Automated post-visit",
+    desc: "More 5-star reviews, more trust, more bookings. We systematically grow your online reputation to convert searchers into scheduled patients.",
+  },
+  {
+    icon: FiSmartphone,
+    title: "Reputation Monitoring",
+    sub: "24/7 coverage",
+    desc: "Your brand, protected. We monitor and manage your online presence so a strong reputation works in your favor around the clock.",
+  },
+  {
+    icon: FiMessageCircle,
+    title: "Patient Reactivation",
+    sub: "Win-back campaigns",
+    desc: "Revenue hiding in plain sight. We re-engage your existing patient base to drive appointments without increasing your ad spend.",
+  },
+]
 
   return (
     <section
@@ -128,88 +136,74 @@ const fi = (inView: boolean, delay = 0) => ({
     </div>
 
     {/* ── Responsive Grid ── */}
-    <div
-      style={{
-        display: "grid",
-        gap: "16px",
-        gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))"
-      }}
-    >
-      {/* Website Card */}
-      <div
-        style={{
-          background: "#0d2b20",
-          borderRadius: "24px",
-          padding: "clamp(28px,4vw,40px)",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-          minHeight: "320px",
-          position: "relative",
-          overflow: "hidden",
-          ...fi(inView, 0)
-        }}
-      >
-        <div>
-          <div style={{ marginBottom: "24px", fontSize: "32px" }}>🌐</div>
+    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
-          <div
-            style={{
-              fontFamily: "'Nunito',sans-serif",
-              fontWeight: 900,
-              fontSize: "22px",
-              color: "white",
-              marginBottom: "12px"
-            }}
-          >
-            Custom Website
-          </div>
+  {/* WEBSITE CARD */}
+  <div
+    className="
+      group bg-[#0d2b20] rounded-3xl p-8 md:p-10
+      flex flex-col justify-between min-h-[320px]
+      relative overflow-hidden
+      transition duration-500 ease-out
+      hover:-translate-y-2 hover:scale-[1.02]
+      hover:shadow-2xl
+    "
+  >
+    {/* Soft Hover Glow */}
+    <div className="absolute inset-0 bg-gradient-to-br from-[#4f9f83]/0 to-[#4f9f83]/10 opacity-0 group-hover:opacity-100 transition duration-500" />
 
-          <div style={{ fontSize: "14px", color: "rgba(255,255,255,.6)", lineHeight: 1.75 }}>
-            Built to convert. Your website becomes your highest-performing patient acquisition tool — fast, mobile-optimized, and designed specifically for dental practices.
-          </div>
-        </div>
+    <div className="relative z-10">
+      <div className="mb-6 text-[#7dd3b0]">
+        <FiGlobe size={32} />
       </div>
 
-      {/* Normal Cards */}
-      {[...normalCards, ...bottomCards].map((s, i) => (
-        <div
-          key={i}
-          style={{
-            background: "white",
-            borderRadius: "20px",
-            padding: "clamp(24px,3vw,32px)",
-            border: "1px solid #E8F4EE",
-            boxShadow: "0 2px 16px rgba(0,0,0,.04)",
-            ...fi(inView, i * 0.1 + 0.1)
-          }}
-        >
-          <span style={{ fontSize: "28px", display: "block", marginBottom: "18px" }}>
-            {s.icon}
-          </span>
-          <div style={{
-            fontFamily: "'Nunito',sans-serif",
-            fontWeight: 800,
-            fontSize: "17px",
-            color: "#0d2b20",
-            marginBottom: "4px"
-          }}>
-            {s.title}
-          </div>
-          <div style={{
-            fontSize: "12px",
-            color: "#2D7A5F",
-            fontWeight: 700,
-            marginBottom: "12px"
-          }}>
-            {s.sub}
-          </div>
-          <div style={{ fontSize: "13px", color: "#4a6b5a", lineHeight: 1.7 }}>
-            {s.desc}
-          </div>
-        </div>
-      ))}
+      <h3 className="font-[Nunito] font-extrabold text-xl text-white mb-3">
+        Custom Website
+      </h3>
+
+      <p className="text-white/70 text-sm leading-relaxed">
+        Built to convert. Your website becomes your highest-performing
+        patient acquisition tool — fast, mobile-optimized, and designed
+        specifically for dental practices.
+      </p>
     </div>
+  </div>
+
+  {/* OTHER CARDS */}
+  {[...normalCards, ...bottomCards].map((s, i) => {
+    const Icon = s.icon;
+
+    return (
+      <div
+        key={i}
+        className="
+          group bg-white rounded-2xl p-6 md:p-8
+          border border-[#E8F4EE]
+          shadow-sm
+          transition duration-500 ease-out
+          hover:-translate-y-2 hover:scale-[1.02]
+          hover:shadow-xl
+        "
+      >
+        <div className="mb-5 text-[#4f9f83] group-hover:scale-110 transition duration-300">
+          <Icon size={28} />
+        </div>
+
+        <h4 className="font-[Nunito] font-bold text-lg text-[#0d2b20] mb-1">
+          {s.title}
+        </h4>
+
+        <p className="text-[#2D7A5F] text-xs font-semibold mb-3">
+          {s.sub}
+        </p>
+
+        <p className="text-[#4a6b5a] text-sm leading-relaxed">
+          {s.desc}
+        </p>
+      </div>
+    );
+  })}
+</div>
   </div>
 </section>
   );

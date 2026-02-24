@@ -2,6 +2,7 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import toast from "react-hot-toast";
+import { FaLock, FaBolt, FaCheckCircle } from "react-icons/fa";
 
 export function B_ContactForm() {
   const router = useRouter();
@@ -228,17 +229,24 @@ export function B_ContactForm() {
 
         {/* Trust chips (unchanged) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-          {[
-            ["🔒", "100% Confidential"],
-            ["⚡", "Response in 24 hrs"],
-            ["✓", "No obligation"],
-          ].map(([icon, text]) => (
-            <div key={text} className="flex items-center gap-2.5 bg-[#F3F8F4] rounded-xl px-4 py-3 border border-[#D4EBE0]">
-              <span className="text-[#2D7A5F] text-base flex-shrink-0">{icon}</span>
-              <span className="text-[#2d4a38] text-xs font-bold">{text}</span>
-            </div>
-          ))}
+        {[
+        [<FaLock />, "100% Confidential"],
+        [<FaBolt />, "Response in 24 hrs"],
+        [<FaCheckCircle />, "No obligation"],
+      ].map(([Icon, text], i) => (
+        <div
+          key={i}
+          className="flex items-center gap-2.5 bg-[#F3F8F4] rounded-xl px-4 py-3 border border-[#D4EBE0]"
+        >
+          <span className="text-[#2D7A5F] text-base flex-shrink-0">
+            {Icon}
+          </span>
+          <span className="text-[#2d4a38] text-xs font-bold">
+            {text}
+          </span>
         </div>
+      ))}
+      </div>
 
         {/* Submit */}
         <button
