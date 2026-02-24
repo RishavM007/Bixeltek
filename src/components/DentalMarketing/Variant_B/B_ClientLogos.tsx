@@ -154,7 +154,7 @@ export function B_ClientLogos() {
             </h3>
 
             <p className="text-white text-sm leading-relaxed max-w-md">
-              Google Ads, Web Design, and SEO — all working together, all accountable to your production revenue. Book a strategy call and we'll show you exactly what's possible for your market.
+              Google Ads, Web Design, and SEO — all working together, all accountable to your production revenue. Book a strategy call and we&apos;ll show you exactly what&apos;s possible for your market.
             </p>
           </div>
 
