@@ -1,10 +1,13 @@
+import { FiSmile, FiTrendingUp, FiTarget, FiCalendar } from "react-icons/fi";
+
+
 export function B_Hero() {
     const features = [
-    { icon: "🦷", title: "Custom Website", desc: "Built free, owned by you" },
-    { icon: "📈", title: "Google Ranking", desc: "SEO that actually works" },
-    { icon: "🎯", title: "Targeted Ads", desc: "ROI tracked to the dollar" },
-    { icon: "📅", title: "Auto-Booking", desc: "PMS synced in real-time" },
-  ];
+  { icon: FiSmile, title: "Custom Website", desc: "Built free, owned by you" },
+  { icon: FiTrendingUp, title: "Google Ranking", desc: "SEO that actually works" },
+  { icon: FiTarget, title: "Targeted Ads", desc: "ROI tracked to the dollar" },
+  { icon: FiCalendar, title: "Auto-Booking", desc: "PMS synced in real-time" },
+];
   return (
     <div
       className="relative min-h-screen overflow-hidden bg-[#F3F8F4] pt-24 md:pt-28 lg:pt-32"
@@ -117,20 +120,29 @@ export function B_Hero() {
 
           {/* Feature cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
-            {features.map((f) => (
-              <div
-                key={f.title}
-                className="bg-white rounded-2xl p-4 shadow-sm border border-[#E8F4EE] flex items-center gap-3"
-              >
-                <div className="w-10 h-10 rounded-xl bg-[#F0F8F4] flex items-center justify-center text-xl">
-                  {f.icon}
+              {features.map((f) => {
+              const Icon = f.icon;
+
+              return (
+                <div
+                  key={f.title}
+                  className="bg-white rounded-2xl p-4 shadow-sm border border-[#E8F4EE] flex items-center gap-3 transition hover:shadow-md"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-[#F0F8F4] flex items-center justify-center text-[#4f9f83]">
+                    <Icon size={20} />
+                  </div>
+
+                  <div>
+                    <div className="text-[#0d2b20] font-bold text-sm">
+                      {f.title}
+                    </div>
+                    <div className="text-[#4a6b5a] text-xs">
+                      {f.desc}
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <div className="text-[#0d2b20] font-bold text-sm">{f.title}</div>
-                  <div className="text-[#4a6b5a] text-xs">{f.desc}</div>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           {/* Floating Social Proof (hidden on small screens to prevent overlap) */}

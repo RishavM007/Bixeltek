@@ -1,15 +1,47 @@
 'use client'
 import { useInView } from "@/lib/inView";
+import {
+  FiAward,
+  FiEdit3,
+  FiBarChart2,
+  FiFileText,
+  FiLink,
+  FiUsers
+} from "react-icons/fi";
 
 
-const trustItems: { icon: string; title: string; desc: string }[] = [
-        { icon: "🏆", title: "Dedicated Account Manager", desc: "If we don't bring new patients, you don't pay" },
-        { icon: "📋", title: "Ad Copywriting & Creative", desc: "Month-to-month, cancel anytime with 30 days notice" },
-        { icon: "🆓", title: "Real-Time Analytics Dashboard", desc: "Custom designed site included, zero upfront cost" },
-        { icon: "📊", title: "Transparent Monthly Reporting", desc: "Real-time dashboard tied to your actual production data" },
-        { icon: "🔗", title: "SEO Content & Link Building", desc: "Connects with Dentrix, Eaglesoft, Open Dental & more" },
-        { icon: "🤝", title: "Dedicated Account Teams", desc: "A real human who knows your practice, not a helpdesk" },
-      ];
+const trustItems = [
+  {
+    icon: FiAward,
+    title: "Dedicated Account Manager",
+    desc: "If we don't bring new patients, you don't pay",
+  },
+  {
+    icon: FiEdit3,
+    title: "Ad Copywriting & Creative",
+    desc: "Month-to-month, cancel anytime with 30 days notice",
+  },
+  {
+    icon: FiBarChart2,
+    title: "Real-Time Analytics Dashboard",
+    desc: "Custom designed site included, zero upfront cost",
+  },
+  {
+    icon: FiFileText,
+    title: "Transparent Monthly Reporting",
+    desc: "Real-time dashboard tied to your actual production data",
+  },
+  {
+    icon: FiLink,
+    title: "SEO Content & Link Building",
+    desc: "Connects with Dentrix, Eaglesoft, Open Dental & more",
+  },
+  {
+    icon: FiUsers,
+    title: "Dedicated Account Teams",
+    desc: "A real human who knows your practice, not a helpdesk",
+  },
+];
 
 
 export function B_CTA() {
@@ -68,67 +100,76 @@ export function B_CTA() {
           <div
           className="grid grid-cols-[1fr] md:grid-cols-[1fr 1fr] lg:grid-cols-[1fr,1fr,1fr] gap-[16px]"
           >
-            {trustItems.map((item, i) => (
-              <div
-                key={i}
-                style={{
-                  background: "white",
-                  borderRadius: "16px",
-                  padding: "28px 24px",
-                  border: "1px solid #E8F4EE",
-                  boxShadow:
-                    "0 2px 12px rgba(0,0,0,.04)",
-                  display: "flex",
-                  alignItems: "flex-start",
-                  gap: "16px",
-                  opacity: ctaIn ? 1 : 0,
-                  transform: ctaIn
-                    ? "translateY(0)"
-                    : "translateY(30px)",
-                  transition: `all .7s cubic-bezier(.4,0,.2,1) ${
-                    i * 0.08
-                  }s`,
-                }}
-              >
-                <div
-                  style={{
-                    width: "44px",
-                    height: "44px",
-                    borderRadius: "12px",
-                    background: "#F0F8F4",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontSize: "20px",
-                    flexShrink: 0,
-                  }}
-                >
-                  {item.icon}
-                </div>
+  {trustItems.map((item, i) => {
+    const Icon = item.icon;
 
-                <div>
-                  <div
-                    style={{
-                      fontWeight: 800,
-                      fontSize: "15px",
-                      color: "#0d2b20",
-                      marginBottom: "6px",
-                    }}
-                  >
-                    {item.title}
-                  </div>
-                  {/* <div
-                    style={{
-                      fontSize: "13px",
-                      color: "#4a6b5a",
-                      lineHeight: 1.6,
-                    }}
-                  >
-                    {item.desc}
-                  </div> */}
-                </div>
-              </div>
-            ))}
+    return (
+      <div
+        key={i}
+        className="
+          group relative bg-white rounded-2xl
+          p-6 md:p-7
+          border border-[#E8F4EE]
+          shadow-sm
+          overflow-hidden
+          transition-all duration-500 ease-out
+          hover:shadow-lg
+        "
+      >
+        {/* Animated Left Border */}
+        <div className="
+          absolute left-0 top-0 h-full w-1
+          bg-[#4f9f83]
+          scale-y-0 origin-top
+          transition-transform duration-500
+          group-hover:scale-y-100
+        " />
+
+        {/* Soft Background Sweep */}
+        <div className="
+          absolute inset-0
+          bg-gradient-to-r from-[#4f9f83]/5 to-transparent
+          opacity-0
+          transition duration-500
+          group-hover:opacity-100
+        " />
+
+        <div className="relative flex items-start gap-4">
+
+          {/* Icon */}
+          <div
+            className="
+              w-11 h-11 rounded-xl
+              bg-[#F0F8F4]
+              flex items-center justify-center
+              text-[#4f9f83]
+              transition-all duration-500
+              group-hover:bg-[#4f9f83]
+              group-hover:text-white
+              group-hover:rotate-6
+            "
+          >
+            <Icon size={20} />
+          </div>
+
+          {/* Content */}
+          <div>
+            <h4 className="font-[Nunito] font-extrabold text-[15px] text-[#0d2b20] mb-1 transition duration-300 group-hover:text-[#163d32]">
+              {item.title}
+            </h4>
+
+            {/* Uncomment if needed */}
+            {/* 
+            <p className="text-sm text-[#4a6b5a] leading-relaxed">
+              {item.desc}
+            </p> 
+            */}
+          </div>
+
+        </div>
+      </div>
+    );
+  })}
           </div>
         </div>
 
